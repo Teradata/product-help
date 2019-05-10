@@ -1,3 +1,3 @@
 # # README
 
-Not all features are real features.
+すべての機能が実際の機能とは限りません。
