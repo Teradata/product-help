@@ -14,4 +14,6 @@ With a bulleted list
 |Unity   | Allows multiple systems | Allows passive routing  |
 
 Learn more at www.docs.teradata.com
+Unity UI help is here: https://docs.teradata.com/access/sources/dita/topic?dita:topicPath=nuc1539192176142.dita
+
 
