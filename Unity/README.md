@@ -13,3 +13,5 @@ With a bulleted list
 |--|--|--|
 |Unity   | Allows multiple systems | Allows passive routing  |
 
+Learn more at www.docs.teradata.com
+
