@@ -16,4 +16,4 @@ With a bulleted list
 Learn more at www.docs.teradata.com
 Unity UI help is here: https://docs.teradata.com/access/sources/dita/topic?dita:topicPath=nuc1539192176142.dita
 
-
+http://bit.ly/2WrqRev
