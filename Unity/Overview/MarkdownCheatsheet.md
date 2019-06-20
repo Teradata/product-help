@@ -24,6 +24,9 @@ If you do not plan ahead, you will have to rework later.
 - Unity 
 - This is a test
 - Trying again
+Testing inline icon: 
+![alt text] (https://github.com/Teradata/product-help/blob/master/Unity/Images/btn-grayhamburg-newlogo.png "Menu icon")
+
 
 
 
