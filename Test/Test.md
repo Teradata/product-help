@@ -49,12 +49,9 @@ public class HelloWorld
   - [ ] Buy Lotto ticket
   - [ ] Take dog for a walk
   - [ ] Practice piano
-- Item
-- Item
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=oTbTuiIT0mU
-" target="_blank"><img src="http://img.youtube.com/vi/UCw0Peuah9Gmb184cW_syhNA.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/oTbTuiIT0mU/default.jpg" 
 alt="Which is better Target or Walmart" width="240" height="180" border="10" /></a>
 
 
-~~~
