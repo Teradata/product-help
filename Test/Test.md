@@ -33,7 +33,7 @@ public class HelloWorld
 ```
 __________
 
-More Rihanna
+Kanye West, Paul McCartney, and Rihanna with line breaks
 'Cause all of my kindness
 Is taken for weakness
 ------------
