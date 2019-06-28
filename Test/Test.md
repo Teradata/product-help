@@ -33,7 +33,7 @@ public class HelloWorld
 ```
 __________
 
-I might do a little time
+More Rihanna
 'Cause all of my kindness
 Is taken for weakness
 ------------
