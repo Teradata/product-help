@@ -53,7 +53,7 @@ public class HelloWorld
 - Item
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=oTbTuiIT0mU
-" target="_blank"><img src="http://img.youtube.com/vi/oTbTuiIT0mU&t=218s/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/UCw0Peuah9Gmb184cW_syhNA.jpg" 
 alt="Which is better Target or Walmart" width="240" height="180" border="10" /></a>
 
 
