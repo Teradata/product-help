@@ -53,8 +53,8 @@ public class HelloWorld
 - Item
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=oTbTuiIT0mU
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+" target="_blank"><img src="http://img.youtube.com/vi/oTbTuiIT0mU&t=218s/0.jpg" 
+alt="Which is better Target or Walmart" width="240" height="180" border="10" /></a>
 
 
 ~~~
