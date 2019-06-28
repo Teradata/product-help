@@ -18,7 +18,7 @@ Like dolphins can swim, Bowie - Italics*
 > “Sometimes you have to get to know someone really well to realize you’re really strangers.” Mary Tyler Moore - Quote
 
 ```
-[Here is everything you ever wanted to know - hyperlink](docs.teradata.com "All of them")
+[Here is everything you ever wanted to know - hyperlink](http://docs.teradata.com "All of them")
 
 ```
 /* HelloWorld.java - Code Block
