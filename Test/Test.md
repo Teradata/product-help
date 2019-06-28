@@ -37,7 +37,7 @@ More Rihanna
 'Cause all of my kindness
 Is taken for weakness
 ------------
-********
+
 
 | a table | b | c |
 |--|--|--|
