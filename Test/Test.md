@@ -6,7 +6,7 @@
 
 ### The kind you find in a second hand store, Prince - Heading 3
 
-**So shine bright, tonight, you and I
+**So shine **bright**, tonight, you and I
 We're beautiful like diamonds in the sky, Rihanna - Bold**
 
 
