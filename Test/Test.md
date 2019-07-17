@@ -6,7 +6,7 @@
 
 ### The kind you find in a second hand store, Prince - Heading 3
 
-**So shine **bright**, tonight, you and I
+**So shine bright, tonight, you and I
 We're beautiful like diamonds in the sky, Rihanna - Bold**
 
 
@@ -19,6 +19,7 @@ Like dolphins can swim, Bowie - Italics*
 
 ```
 [Here is everything you ever wanted to know - hyperlink](http://docs.teradata.com "All of them")
+<Url type="text/html" method="get" template="http://wynnnetherland.com/?s={searchTerms}"/>
 
 ```
 /* HelloWorld.java - Code Block
