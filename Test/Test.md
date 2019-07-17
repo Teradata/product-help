@@ -19,6 +19,8 @@ Like dolphins can swim, Bowie - Italics*
 
 ```
 [Here is everything you ever wanted to know - hyperlink](http://docs.teradata.com "All of them")
+
+[Here is a test] (http://wynnnetherland.com/?s={searchTerms}
 <Url type="text/html" method="get" template="http://wynnnetherland.com/?s={searchTerms}"/>
 
 ```
