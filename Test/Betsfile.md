@@ -1,4 +1,17 @@
-### Adding a User
+### Managing Users
+
+Site Super Admins and Site Access Managers can change user settings.
+
+- [Types of Users](#types-of-users)
+- [Displaying Users](#displaying-users)
+- [Adding a User](#adding-a-user)
+- [Changing your User Role](#changing-your-user-role)
+
+#### Displaying Users
+
+1. Select **Users** from the Welcome page or the menu.
+
+#### Adding a User
 
 With the right permissions, add a user:
 
