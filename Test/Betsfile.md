@@ -1,10 +1,4 @@
-### Managing Users
-
-#### Displaying Users
-
-1. Select **Users** from the Welcome page or the menu.
-
-#### Adding a User
+### Adding a User
 
 With the right permissions, add a user:
 
