@@ -11,7 +11,7 @@ Site Super Admins and Site Access Managers can change user settings.
 
 
 | Service Portal | Access | Console | Access |
-|--|--|--|
+|--|--|--|--|
 | Service Owner | Full | Site Super Admin | Full |
 | Security Manager | Read-Only | Site Access Manager  | Full |
 | Access Manager | Read-Only | Site Access Manager | Full |
