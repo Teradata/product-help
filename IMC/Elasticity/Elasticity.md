@@ -10,7 +10,7 @@ Adjust your TCore consumption by starting and stopping the Vantage instance. Sto
 
 #### Scale Up/Down
 
-Scale up or down your instance to **Small**, **Medium**, or **Large**. Just be aware that scaling up incurs more cost.
+Scale up or down your instance to **Small**, **Medium**, or **Large**. Be aware that scaling up incurs more cost.
 
 #### Node Operations
 
