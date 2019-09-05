@@ -1,9 +1,11 @@
 ### Getting Email Notifications
 
-You can view all notifications in the Notifications center at the top of the console, but if you want to receive emails too, do the following.
+You can configure and receive email notifications at the email address for the account you logged on with. The email contain a digest of the notification events you choose to receive. You won't receive any email notifications unless you set them, and you can change your choice at any time. 
+
+Notifications display in the notification hub regardless of whether or not you configure email notifications
 
 1. Under Global, turn on **Allow email notifications**. It must be on to receive any notifications.
-1. Work through the page, enabling any notifications you want to receive.
+1. Work through the page, enabling the notifications you want.
 
 
 
