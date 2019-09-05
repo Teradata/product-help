@@ -1,7 +1,10 @@
-### Email Notifications
+### Getting Email Notifications
 
+You can configure and receive email notifications at the email address for the account you logged on with. The email contain a digest of the notification events you choose to receive. You won't receive any email notifications unless you set them, and you can change your choice at any time. 
 
-1. Under Global, turn on **Allow email notifications**. This option must be on to receive any notifications.
+Notifications display in the notification hub regardless of whether or not you configure email notifications
+
+1. Under Global, turn on **Allow email notifications**. It must be on to receive any notifications.
 1. Work through the page, enabling the notifications you want.
 
 
