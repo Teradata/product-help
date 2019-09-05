@@ -1,13 +1,13 @@
-### Managing Users
+### User Management
 
 Site Super Admins and Site Access Managers can change user settings.
 
-- [Types of Users](#types-of-users)
+- [User Access Levels](#user-access-levels)
 - [Displaying Users](#displaying-users)
 - [Adding a User](#adding-a-user)
 - [Changing your User Role](#changing-your-user-role)
 
-#### Types of Users
+#### User Access Levels
 
 | Service Portal | Access | Console | Access |
 |--|--|--|--|
@@ -25,7 +25,7 @@ Site Super Admins and Site Access Managers can change user settings.
 
 With the right permissions, add a user:
 
-1. Display the users by selecting **Users** from the Welcome page or the menu..
+1. Display the users by selecting **Users** from the Welcome page or the menu.
 1. Click **Create User**.
 1. Complete the fields and submit.
 

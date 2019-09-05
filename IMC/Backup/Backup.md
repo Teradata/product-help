@@ -1,4 +1,4 @@
-### Managing Backups
+### Backup Management
 Site Admins and Super Site Admins can manage backups. 
 
 By default, Teradata backs up your site daily and retains the two most recent full backups.
