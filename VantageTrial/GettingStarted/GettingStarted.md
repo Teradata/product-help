@@ -1,13 +1,11 @@
 #### Getting Started with Vantage Trial
 
-**this is still  DRAFT  content**
-
 Here are things you can do with your trial:
 * Click ![play.png](play.png) to watch a short video about Vantage Trial.
 * See the FAQ for answers to common questions.
 * Use Vantage Developer: See TechBytes videos. Use the Editor to run SQL queries, including those in the use cases. Learn from Use Cases. Use the API Catalog to test RESTful APIs.
 * Use Vantage Analyst: Discover analytics using Workflows, Rules, Model, and Path.
-* Use Vantage Operations: **temptext**: Manage and monitor your site
+* Use Vantage Operations: Manage and monitor your site
      
 
 
