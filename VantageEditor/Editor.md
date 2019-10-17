@@ -10,7 +10,7 @@ The Results pane is below the Script pane.
 
 * Editor - Returns you to the landing page.
 * Scripts - Allows you to search for scripts.
-* History - Allows you to compare something****
+* History - Allows you to compare _____
 
 
 #### Object browser
@@ -34,7 +34,7 @@ You can also paste a script into the pane and either run or modify from there.
 To use a table from the database in your script, simply drag it into the script pane.
 
 ##### Working with parameters
-* Enclose parameters in **${parameter}**.
+* Enclose parameters in **${ }**.
   Each parameter displays in a list.
 * To define the parameter type, select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Edit_.
 * To reorder the parameters, select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Move_.
