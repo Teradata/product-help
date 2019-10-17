@@ -17,7 +17,7 @@ The Results pane is below the Script pane.
 The object browser contains your available databases. 
 
 1. Expand the database to see the tables.
-2. Select ![btn_vp_kabob.png](btn_vp_kabob.png), > _Insights_ to see the contents of the tables.
+2. Select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Insights_ to see the contents of the tables.
 
 You can select the table and drag it into the script in the editing window.
 
