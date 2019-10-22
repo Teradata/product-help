@@ -1,41 +1,37 @@
-### User Management
+### User Roles
 
-Site Super Admins and Site Access Managers can change user settings.
 
 - [User Access Levels](#user-access-levels)
-- [Displaying Users](#displaying-users)
-- [Adding a User](#adding-a-user)
 - [Changing your User Role](#changing-your-user-role)
+- [Requesting Access to a User Role](#requesting-access-to-a-user-role)
 
 #### User Access Levels
 
-| Service Portal | Access | Console | Access |
-|--|--|--|--|
-| Service Owner | Full | Site Super Admin | Full |
-| Security Manager | Read-Only | Site Access Manager  | Full |
-| Access Manager | Read-Only | Site Access Manager | Full |
-| Technical Contact | Full | Site Admin | Full |
-| Support Contact (default) | Read-Only | Read-Only Site Admin (default) | Read-only |
+Your user role is set automatically according to your account type in the Service Portal, but more roles can be added afterwards. Here's a summary of the role relationships and their access levels.
 
-#### Displaying Users
+| Service Portal | Console | Access | User management? |
+|--|--|--|
+| Service Owner | Site Super Admin | Full | Yes |
+| Security Manager | Site Access Manager  | Read-only | Yes |
+| Access Manager | Site Access Manager | Read-only | Yes |
+| Technical Contact | Site Admin | Full | No |
+| Support Contact (default) | Read-Only Site Admin (default) | Read-only | No |
 
-1. Select **Users** from the Welcome page or the menu.
-
-#### Adding a User
-
-With the right permissions, add a user:
-
-1. Display the users by selecting **Users** from the Welcome page or the menu.
-1. Click **Create User**.
-1. Complete the fields and submit.
 
 #### Changing your User Role
 
-If you need additional permissions, request a new role in the Service Portal. 
+You can change your user role to any other role for which you have permissions.
 
-1. Access the Service Portal: 
-[https://support.teradatacloud.com](https://support.teradatacloud.com)
-1. Under **Service Requests**, step through the fields needed to request the new role.
-1. If the request is approved, you will see the new role at the top of the console menu.
+1. Select the main menu > **Change** and select a role from the list.Item
+If the role you need does not appear in the list, request access to it in the Service Portal.
 
 
+#### Requesting Access to a User Role
+
+If you need additional permissions, request a new role in the Service Portal.
+1. Log in to the Service Portal at https://support.teradatacloud.com.
+2. Under Service Requests, select Request Access to Service.
+3. Select a user.
+4. From the Available list, select a role and add it to Selected.
+5. Enter a reason for needing access to the role, then submit the request.
+Once the Site Access Manager approves the request you are associated with the new role in the Console.
