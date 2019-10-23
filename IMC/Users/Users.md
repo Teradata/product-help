@@ -9,13 +9,15 @@
 
 Your user role is set automatically according to your account type in the Service Portal, but more roles can be added afterwards. Here's a summary of the role relationships and their access levels.
 
-| Service Portal | Console | Access | User Management? |
-|--|--|--|--|
-| Service Owner | Site Super Admin | Full | Yes |
-| Security Manager | Site Access Manager  | Read-only | Yes |
-| Access Manager | Site Access Manager | Read-only | Yes |
-| Technical Contact | Site Admin | Full | No |
-| Support Contact (default) | Read-Only Site Admin (default) | Read-only | No |
+| Service Portal | Console | Access |
+|--|--|--|
+| Service Owner | Site Super Admin* | Full |
+| Security Manager | Site Access Manager*  | Read-only |
+| Access Manager | Site Access Manager* | Read-only |
+| Technical Contact | Site Admin | Full |
+| Support Contact (default) | Read-Only Site Admin (default) | Read-only |
+| * Includes full user management permissions |
+
 
 
 #### Changing your User Role
