@@ -9,8 +9,8 @@
 
 Your user role is set automatically according to your account type in the Service Portal, but more roles can be added afterwards. Here's a summary of the role relationships and their access levels.
 
-| Service Portal | Console | Access | User management? |
-|--|--|--|
+| Service Portal | Console | Access | User Management? |
+|--|--|--|--|
 | Service Owner | Site Super Admin | Full | Yes |
 | Security Manager | Site Access Manager  | Read-only | Yes |
 | Access Manager | Site Access Manager | Read-only | Yes |
@@ -22,7 +22,7 @@ Your user role is set automatically according to your account type in the Servic
 
 You can change your user role to any other role for which you have permissions.
 
-1. Select the main menu > **Change** and select a role from the list.Item
+1. Select the main menu > **Change** and select a role from the list.
 If the role you need does not appear in the list, request access to it in the Service Portal.
 
 
