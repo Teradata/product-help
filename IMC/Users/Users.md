@@ -16,7 +16,7 @@ Your user role is set automatically according to your account type in the Servic
 | Access Manager | Site Access Manager* | Read-only |
 | Technical Contact | Site Admin | Full |
 | Support Contact (default) | Read-Only Site Admin (default) | Read-only |
-| * Includes full user management permissions |
+ * Includes full user management permissions 
 
 
 
