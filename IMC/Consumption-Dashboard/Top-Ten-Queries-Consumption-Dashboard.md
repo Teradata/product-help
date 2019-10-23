@@ -1,4 +1,4 @@
-# Top 10 Queries
+### Top 10 Queries
 
 Displays the 10 completed queries that consumed the greatest number of Vantage Units in the last 1 to 2 hours.
 

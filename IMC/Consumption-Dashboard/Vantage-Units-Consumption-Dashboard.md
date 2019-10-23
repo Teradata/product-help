@@ -1,4 +1,4 @@
-# Vantage Units
+### Vantage Units
 
 Vantage Units reflect all compute resources used to run queries and functions other than queries and functions that:
 
