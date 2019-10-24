@@ -8,9 +8,12 @@ The Results pane is below the Script pane.
 
 #### Views
 
-* Editor - Returns you to the landing page.
-* Scripts - Allows you to search for scripts.
-* History - Allows you to compare _____
+* 
+![btn_Editor_main.png](btn_Editor_main.png) Editor - Returns you to the Editor page.
+* 
+![btn_Scripts_Editor.png](btn_Scripts_Editor.png) Scripts - Allows you to search for scripts.
+* 
+![btn_History_Editor.png](btn_History_Editor.png) History - Allows you to compare the last execution of the script with the changes you've been making.
 
 
 #### Object browser
@@ -35,7 +38,7 @@ To use a table from the database in your script, simply drag it into the script 
 
 ##### Working with parameters
 * Enclose parameters in **${ }**.
-  Each parameter displays in a list.
+  Each parameter displays in a list to the right.
 * To define the parameter type, select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Edit_.
 * To reorder the parameters, select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Move_.
 
@@ -44,5 +47,5 @@ To use a table from the database in your script, simply drag it into the script 
 Once you have data in the Result pane, use (![btn_vp_kabob.png](btn_vp_kabob.png) > _More_) to download results as either CSV or JSON.
 
 ##### Opened Scripts
-This area under the object browser lists the currently open (saved scripts).
+The area under the object browser lists the currently open (saved scripts).
 
