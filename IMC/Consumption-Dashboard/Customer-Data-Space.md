@@ -1,16 +1,14 @@
 ### Customer Data Space
 
-Indicates the number of terabytes of uncompressed storage currently used by your system. This value is updated weekly.
+Indicates the number of terabytes of uncompressed storage your system uses. This number is updated weekly.
 
 CDS includes space used for:
-
-- user-defined tables
-- Primary indexes
-- Secondary indexes
+- User-defined tables
+- Primary, secondary, and join and hash indexes
 
 It doesn't include:
 - RAID
 - Spool
 - Teradata system generated databases (sysemfe, syslib, and dbc)
 
-Select **CDS DETAILS** to use filters to set the view period and date range.
+Select **CDS Details** to filter the time period and date range.
