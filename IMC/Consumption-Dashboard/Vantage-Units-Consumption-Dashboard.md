@@ -7,4 +7,4 @@ Vantage Units reflect all compute resources used to run queries and functions, m
 
 You can export Vantage Unit data to .csv format by selecting the export button.
 
-Select **Vantage Units Details** to filter by engine, period, and department and to see the 10 queries that consumed the most Vantage Units.
+Select **Vantage Units Details** to filter by engine, time period, and department and to see the 10 queries that consumed the most Vantage Units.
