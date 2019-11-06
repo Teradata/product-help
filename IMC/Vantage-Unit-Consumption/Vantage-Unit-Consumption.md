@@ -10,5 +10,6 @@ Select **Consumption Dashboard** to see more detail about CPU and storage used.
 #### Setting a monthly consumption threshold alert
 
 1. From the main menu, select **Site Monitoring**.
-1. Under **Alert Settings**, select the pencil icon and enter a monthly consumption threshold.
+1. Under **Alert Settings**, select the 
+![Pencil icon](../Images/cov-icn-pencil-gray.png)and enter a monthly consumption threshold.
 
