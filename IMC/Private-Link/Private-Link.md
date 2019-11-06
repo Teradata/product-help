@@ -10,12 +10,12 @@ After you add an account, you must set up an AWS service endpoint for it using t
 1. From the Amazon VPC console, go to **Security Groups** in the **Security** section.
 1. Update the database security group to allow the inbound ports for the database (port 1025)
 and Teradata Viewpoint (ports 80 and 443) from the VPC CIDR.
-1. Go to **Endpoint** > **Create Endpoint**.
+1. Go to **Endpoints** > **Create Endpoint**.
 1. In **Service Category**, select **Find service by name**.
 1. In **Service Name**, paste or type the **Endpoint** displayed in the Console.
-1. Click **Verify**. If the PrivateLink Service Endpoint is active, the message **Service name found** appears.
+1. Select **Verify**. If the PrivateLink Service Endpoint is active, the message **Service name found** appears.
 1. Select the VPC, subnet, and security group you’ll use to connect.
-1. Click **Create Endpoin**t.
+1. Select **Create Endpoin**t.
 1. Report the status by logging a support ticket.
 1. After the status shows available, use telnet to validate connectivity between your VPC and the
 Vantage site for each port number using the format *telnet DNSName PortNumber*.
