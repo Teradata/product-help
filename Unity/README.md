@@ -6,5 +6,7 @@ Testing use of git staging plugin for Oxygen.
 7/2019 Overview added to Unity Covalent UI for POC. 
 In monthly efix release. 
 7/26 tested editing.
+11/7
+Updating for new release.
 Update README.md
-test
+
