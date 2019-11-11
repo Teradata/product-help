@@ -7,7 +7,6 @@ CDS includes space used for:
 - Primary, secondary, and join and hash indexes
 
 It doesn't include:
-- RAID
 - Spool
 - Teradata system generated databases (sysemfe, syslib, and dbc)
 
