@@ -1,6 +1,6 @@
 ### Site Elasticity
 
-Site Admins or Super Site Admins can click **Edit** in the **NewSQL Engine** window to adjust site elasticity.
+Site Admins or Super Site Admins can select **Change** in the **Advanced SQL Engine** card to adjust site elasticity.
 
 Be aware that your site is not available during elastic options. Schedule this at a time that minimally impacts your users.
 
