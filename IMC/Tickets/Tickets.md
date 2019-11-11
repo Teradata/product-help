@@ -1,10 +1,12 @@
 ### Tickets
 
+Lists all tickets submitted. Click the column headings to change the display order, and click a ticket number to view details and post comments.
+
 Site Admins and Super Site Admins can open tickets for three reasons: 
 
-- [Reporting a problem or incident](#report-a-problem-or-incident) 
-- [Requesting a change](#request-a-change)
-- [Submitting a question](#ask-a-question)
+- [Report a problem or incident](#report-a-problem-or-incident) 
+- [Request a change](#request-a-change)
+- [Submit a question](#ask-a-question)
 
 Tickets you create in the Console are no different than those you create in the Service Portal. The Console just provides a streamlined way to manage them.
 
