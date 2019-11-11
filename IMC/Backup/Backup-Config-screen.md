@@ -1,7 +1,5 @@
 ### Backups
 
-By default, Teradata backs up your site daily or weekly and retains the two most recent full backups.
-
 #### Managing Backups
 
 1. Turn a job on or off by selecting or deselecting the toggle in the job's row.
