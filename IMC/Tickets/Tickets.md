@@ -1,7 +1,5 @@
 ### Tickets
 
-Lists all tickets submitted. Click the column headings to change the display order, and click a ticket number to view details and post comments.
-
 Site Admins and Super Site Admins can open tickets for three reasons: 
 
 - [Report a problem or incident](#report-a-problem-or-incident) 
