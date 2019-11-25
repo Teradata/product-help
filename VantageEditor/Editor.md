@@ -1,6 +1,6 @@
 ## Editor
 
-#### Parts of the landing page
+#### Parts of the Landing Page
 
 From left to right, Views, the Object Browser, and the Script pane. 
 Functions and Opened Scripts are below the Object Browser.
@@ -11,40 +11,40 @@ The Results pane is below the Script pane.
 * 
 ![btn_Editor_main.png](btn_Editor_main.png) Editor - Returns you to the Editor page.
 * 
-![btn_Scripts_Editor.png](btn_Scripts_Editor.png) Scripts - Allows you to search for scripts.
+![btn_Scripts_Editor.png](btn_Scripts_Editor.png) Scripts - Allows you to search for scripts (public scripts in addition to yours).
 * 
-![btn_History_Editor.png](btn_History_Editor.png) History - Allows you to compare the last execution of the script with the changes you've been making.
+![btn_History_Editor.png](btn_History_Editor.png) History - Shows a comparison of the last execution of the script with the current changes (only displays executions for the current session).
 
 
-#### Object browser
-The object browser contains your available databases. 
+#### Object Browser
+The object browser (left panel) displays the objects (databases, users, tables, views) that you have access to as well as the functions (macros, procedures, analytic functions, and so on) that are available. 
 
-1. Expand the database to see the tables.
-2. Select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Insights_ to see the contents of the tables.
+1. Expand the database to see the tables or views.
+2. Select ![btn_vp_kabob.png](btn_vp_kabob.png) > **Insights** to see the row count, column types, and DDL for the table or view.
 
-You can select the table and drag it into the script in the editing window.
+You can select an object and drag it into the Editor to insert the qualified object name.
 
-#### Working with a script
+#### Working with Scripts
 In the Script pane, you can:
-_Run_
-_Save_
-_Download Script_ (![btn_vp_kabob.png](btn_vp_kabob.png) > _More_)
-_Upload Script_ (![btn_vp_kabob.png](btn_vp_kabob.png) > _More_)
-_+ New Script_ 
+**Run**
+**Save**
+**Download Script** (![btn_vp_kabob.png](btn_vp_kabob.png) > **More**)
+**Upload Script** (![btn_vp_kabob.png](btn_vp_kabob.png) > **More**)
+**+ New Script** 
 
 You can also paste a script into the pane and either run or modify from there.
 
-To use a table from the database in your script, simply drag it into the script pane.
+To use an object from the Object Browser, simply drag it into the Editor to insert the qualified object name.
 
 ##### Working with parameters
 * Enclose parameters in **${ }**.
   Each parameter displays in a list to the right.
-* To define the parameter type, select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Edit_.
-* To reorder the parameters, select ![btn_vp_kabob.png](btn_vp_kabob.png) > _Move_.
+* To define the parameter type, select ![btn_vp_kabob.png](btn_vp_kabob.png) > **Edit**.
+* To reorder the parameters, select ![btn_vp_kabob.png](btn_vp_kabob.png) > **Move**.
 
 ##### The Results pane
 
-Once you have data in the Result pane, use (![btn_vp_kabob.png](btn_vp_kabob.png) > _More_) to download results as either CSV or JSON.
+Once you have data in the Result pane, use (![btn_vp_kabob.png](btn_vp_kabob.png) > **More**) to download results as either CSV or JSON.
 
 ##### Opened Scripts
 The area under the object browser lists the currently open (saved scripts).
