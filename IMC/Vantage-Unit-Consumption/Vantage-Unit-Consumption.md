@@ -5,7 +5,7 @@ Vantage Units reflect all compute resources used to run queries and functions, m
 - Measure system performance or consumption
 - Don't return a result due to a system error or failure
 
-Select **Consumption Dashboard** to see more detail about CPU and storage used. 
+Select **Consumption Dashboard** for more detail, including consumption by department.
 
 #### Setting a monthly consumption threshold alert
 
