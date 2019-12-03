@@ -5,6 +5,7 @@ Indicates the actual availability of the site in the past four months. Teradata 
 - Scheduled downtime
 - Network connectivity issues
 
-A green icon indicates that the SLA has been met.
+
+![../../../../Users/ep186008/OneDrive%20-%20Teradata/Cloud/IMC_/cov-icon-greencheckmark.png](../../../../Users/ep186008/OneDrive%20-%20Teradata/Cloud/IMC_/cov-icon-greencheckmark.png)indicates the SLA has been met.
 
   
