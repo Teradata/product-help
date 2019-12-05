@@ -6,6 +6,6 @@ Indicates the actual availability of the site in the past four months. Teradata 
 - Network connectivity issues
 
 
-![../../../../Users/ep186008/OneDrive%20-%20Teradata/Cloud/IMC_/cov-icon-greencheckmark.png](../../../../Users/ep186008/OneDrive%20-%20Teradata/Cloud/IMC_/cov-icon-greencheckmark.png)indicates the SLA has been met.
+A green checkmark indicates that the SLA has been met.
 
   
