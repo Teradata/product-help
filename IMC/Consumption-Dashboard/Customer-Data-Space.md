@@ -10,6 +10,7 @@ It doesn't include:
 - Spool
 - Teradata system generated databases (systemfe, syslib, and dbc)
 
-Select the export button to export the data to .csv format.
+Select 
+![icn-export.png](icn-export.png)to export the data to .csv format.
 
 Select **CDS Details** to filter the time period and date range.
