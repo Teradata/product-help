@@ -11,6 +11,6 @@ It doesn't include:
 - Teradata system generated databases (systemfe, syslib, and dbc)
 
 Select 
-![icn-export.png](icn-export.png)to export the data to .csv format.
+![cov-icn-export.png](cov-icn-export.png) to export the data to .csv format.
 
 Select **CDS Details** to filter the time period and date range.
