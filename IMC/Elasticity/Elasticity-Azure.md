@@ -1,17 +1,11 @@
-### Site Elasticity
+### Advanced SQL Engine Operations
 
-Site Admins or Super Site Admins can select **Change** in the **Advanced SQL Engine** card to adjust site elasticity.
+Site Admins and Super Site Admins can select **Change** to perform SQL Engine operations.
+
 Be aware that your site is not available during elastic options. Schedule this at a time that minimally impacts your users.
 
-#### Start/Stop
-Start or stop the database. Stopped instances do not incur compute costs, but they continue to incur storage costs (measured in TB).
+Keep in mind that:
 
-#### Scale Up/Down
-Adjust the instance size. Just be aware that scaling up incurs more cost.
-
-#### Scale Out/In
-Adjust the your instance quantity. Scaling out incurs additional cost.
-
-#### Expand Storage
-Increase the amount of raw, permanent storage in your system by 1 TB increments, up to 64 TB per instance.
-
+- Scaling up or out and expanding volume may incur additional costs.
+- Once you expand storage volume you can't decrease it.
+- Your site isn't available during these operations, so schedule them at a time that minimally impacts users.
