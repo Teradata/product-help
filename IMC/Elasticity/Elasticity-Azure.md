@@ -2,8 +2,6 @@
 
 Site Admins and Super Site Admins can select **Change** to perform SQL Engine operations.
 
-Be aware that your site is not available during elastic options. Schedule this at a time that minimally impacts your users.
-
 Keep in mind that:
 
 - Scaling up or out and expanding volume may incur additional costs.
