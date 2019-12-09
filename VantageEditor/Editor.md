@@ -36,6 +36,8 @@ You can also paste a script into the pane and either run or modify from there.
 
 To use an object from the Object Browser, simply drag it into the Editor to insert the qualified object name.
 
+**Note:** If you do a `select *`, the output is limited to 10,000 rows. 
+
 ##### Working with parameters
 * Enclose parameters in **${ }**.
   Each parameter displays in a list to the right.
