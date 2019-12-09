@@ -46,7 +46,7 @@ To use an object from the Object Browser, simply drag it into the Editor to inse
 
 ##### The Results pane
 
-Once you have data in the Result pane, use (![btn_vp_kabob.png](btn_vp_kabob.png) > **More**) to download results as either CSV or JSON.
+Once you have data in the Results pane, use (![btn_vp_kabob.png](btn_vp_kabob.png) > **More**) to download results as either CSV or JSON.
 
 ##### Opened Scripts
 The area under the object browser lists the currently open (saved scripts).
