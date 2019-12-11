@@ -7,6 +7,3 @@ Keep in mind that:
 - Scaling up or out and expanding volume may incur additional costs.
 - Once you expand storage volume you can't decrease it.
 - Your site isn't available during these operations, so schedule them at a time that minimally impacts users.
-
-
-
