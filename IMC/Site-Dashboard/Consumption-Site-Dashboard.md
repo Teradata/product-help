@@ -8,4 +8,4 @@
 
 **Customer Data Space (CDS)** is the number of terabytes of uncompressed storage used by your system. It's updated weekly.
 
-Select **Consumption Dashboard** to see more detail about CPU and storage used and consumption by department.
+Select **Consumption Dashboard** for more detail, including consumption by department.
