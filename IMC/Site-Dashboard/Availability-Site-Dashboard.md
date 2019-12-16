@@ -6,6 +6,7 @@ Indicates the actual availability of the site in the past four months. Teradata 
 - Network connectivity issues
 
 
-A green checkmark indicates that the SLA has been met.
+
+![cov-icn-green-checkmark.png](cov-icn-green-checkmark.png) indicates that the SLA has been met.
 
   
