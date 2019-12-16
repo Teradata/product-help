@@ -1,6 +1,6 @@
 
 ### Configuration
 
-Displays the current configuration of your system. 
+Displays configuration information about your system. 
 
-**Status** indicates the current state. It shows as **Provisioning** while it's being set up and **Operational** when it's ready for use.
+**Status** indicates the current system state. It shows as **Provisioning** while it's being set up and **Operational** when it's ready for use.
