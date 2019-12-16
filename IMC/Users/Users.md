@@ -25,6 +25,7 @@ Your user role is set automatically according to your account type in the Servic
 You can change your user role to any other role you have permissions for.
 
 1. Select the main menu > **Change** and select a role from the list.
+
 If the role you need doesn't appear, request access to it in the Service Portal.
 
 
@@ -37,4 +38,5 @@ If you need additional permissions, request a new role in the Service Portal.
 3. Select the user.
 4. From the **Available** list, select a role and add it to **Selected**.
 5. Enter the reason you need access, then submit the request.
-Once the Site Access Manager approves the request you are associated with the new role in the Console.
+
+Once the Site Access Manager approves the request, it is assigned to you in the Console.
