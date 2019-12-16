@@ -9,7 +9,7 @@ Select **Consumption Dashboard** for more detail, including consumption by depar
 
 #### Setting a monthly consumption threshold alert
 
-1. From the main menu, select **Site Monitoring**.
+1. From ![../VantageUnitConsumption/cov-icn-hamburger.png](../VantageUnitConsumption/cov-icn-hamburger.png), select **Site Monitoring**.
 1. Under **Alert Settings**, select the 
 ![Pencil icon](../Images/cov-icn-pencil-gray.png)and enter a monthly consumption threshold.
 
