@@ -1,0 +1,10 @@
+<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="zfa1507236147591" id="zfa1507236147591"><h1 class="title topictitle1" id="ariaid-title1">TextClassifierEvaluator (ML Engine)</h1><div class="body conbody">
+<p class="p">The TextClassifierEvaluator function evaluates the precision, recall, and F-measure of the trained model output by the function <a href="lhi1558542137898.md#mdp1507235149305">TextClassifier (ML Engine)</a>.</p></div><div class="topic reference nested1" aria-labelledby="ariaid-title2" topicindex="2" topicid="ofo1507236256881" xml:lang="en-us" lang="en-us" id="ofo1507236256881">
+<h2 class="title topictitle2" id="ariaid-title2">TextClassifierEvaluator Syntax</h2><div class="body refbody"><div class="section" id="ofo1507236256881__section_N1000E_N1000C_N10001">
+<h3 class="title sectiontitle">Version 1.3</h3><pre class="pre codeblock" xml:space="preserve"><code>SELECT * FROM TextClassifierEvaluator (
+  <span>ON { <var class="keyword varname">table</var> | <var class="keyword varname">view</var> | (<var class="keyword varname">query</var>) }</span> PARTITION BY 1
+  USING
+  ObservationColumn ('<var class="keyword varname">observation_column</var>')
+  PredictColumn ('<var class="keyword varname">predicted_column</var>')
+) AS <var class="keyword varname">alias</var>;</code></pre></div></div></div><div class="topic reference nested1" aria-labelledby="ariaid-title3" topicindex="3" topicid="pfb1507236373839" xml:lang="en-us" lang="en-us" id="pfb1507236373839">
+<h2 class="title topictitle2" id="ariaid-title3">TextClassifierEvaluator Syntax Elements</h2><div class="body refbody"><div class="section" id="pfb1507236373839__section_N10011_N1000E_N10001"><dl class="dl parml"><dt class="dt pt dlterm">ObservationColumn</dt><dd class="dd pd">Specify the name of the input column that contains the expected (correct) category.</dd><dt class="dt pt dlterm">PredictColumn</dt><dd class="dd pd">Specify the name of the input column that contains the predicted category (assigned by the function TextClassifier).</dd></dl></div></div></div></div></body></html>

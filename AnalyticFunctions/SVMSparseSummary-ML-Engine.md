@@ -1,0 +1,11 @@
+<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="igx1507913009828" id="igx1507913009828"><h1 class="title topictitle1" id="ariaid-title1">SVMSparseSummary (ML Engine)</h1><div class="body conbody">
+<p class="p">The SVMSparseSummary function takes the training data and the model output by the function <a href="kjz1558533259127.md#swn1507915086903">SVMSparse (ML Engine)</a> and displays specified information.</p></div><div class="topic reference nested1" aria-labelledby="ariaid-title2" topicindex="2" topicid="scu1507913089002" xml:lang="en-us" lang="en-us" id="scu1507913089002">
+<h2 class="title topictitle2" id="ariaid-title2">SVMSparseSummary Syntax</h2><div class="body refbody"><div class="section" id="scu1507913089002__section_N1000E_N1000C_N10001">
+<h3 class="title sectiontitle">Version 1.5</h3><pre class="pre codeblock" xml:space="preserve"><code>SELECT DISTINCT * FROM SVMSparseSummary (
+  <span>ON { <var class="keyword varname">table</var> | <var class="keyword varname">view</var> | (<var class="keyword varname">query</var>) }</span> AS InputTable PARTITION BY 1
+  <span>ON { <var class="keyword varname">table</var> | <var class="keyword varname">view</var> | (<var class="keyword varname">query</var>) }</span> AS Model DIMENSION
+  USING
+  AttributeNameColumn ('<var class="keyword varname">attribute_name_column</var>')
+  [ OutputSummary (<span><b>{'true'|'t'|'yes'|'y'|'1'|'false'|'f'|'no'|'n'|'0'}</b></span>) ]
+) AS <var class="keyword varname">alias</var>;</code></pre></div></div></div><div class="topic reference nested1" aria-labelledby="ariaid-title3" topicindex="3" topicid="eol1507913093114" xml:lang="en-us" lang="en-us" id="eol1507913093114">
+<h2 class="title topictitle2" id="ariaid-title3">SVMSparseSummary Syntax Elements</h2><div class="body refbody"><div class="section" id="eol1507913093114__section_N10011_N1000E_N10001"><dl class="dl parml"><dt class="dt pt dlterm">AttributeNameColumn</dt><dd class="dd pd">Specify the name of the InputTable column that contains the attribute names.</dd><dt class="dt pt dlterm">OutputSummary</dt><dd class="dd pd">[Optional] Specify whether the output is a summary of the model.</dd><dd class="dd pd ddexpand">Default: 'false' (The output is the weight of each attribute in the model.)</dd></dl></div></div></div></div></body></html>

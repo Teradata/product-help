@@ -1,0 +1,17 @@
+<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="pin1507820879472" id="pin1507820879472"><h1 class="title topictitle1" id="ariaid-title1">URIUnpack (ML Engine)</h1><div class="body conbody">
+<p class="p">The URIUnpack function unpacks hierarchical uniform resource identifiers
+			(URIs); that is, it outputs their constituent components and the values of specified
+			query parameters.</p>
+<p class="p">To repack the unpacked URIs, input the URIUnpack output to the function <a href="uef1558453296430.md#yxe1507821337957">URIPack (ML Engine)</a>.</p></div><div class="topic reference nested1" aria-labelledby="ariaid-title2" topicindex="2" topicid="wiu1507820915286" xml:lang="en-us" lang="en-us" id="wiu1507820915286">
+<h2 class="title topictitle2" id="ariaid-title2">URIUnpack Syntax</h2><div class="body refbody"><div class="section" id="wiu1507820915286__section_N1000E_N1000C_N10001">
+<h3 class="title sectiontitle">Version 1.5</h3><pre class="pre codeblock" xml:space="preserve"><code>SELECT * FROM URIUnpack (
+  <span>ON { <var class="keyword varname">table</var> | <var class="keyword varname">view</var> | (<var class="keyword varname">query</var>) }</span>
+  USING
+  URIColumn ('<var class="keyword varname">uri_column</var>')
+  [ Queries ('<var class="keyword varname">query_parameter</var>' [,...]) ]
+  [ OutputType ({ 'scheme' | 'host' | 'path' | 'fragment' }) ]
+  <code class="ph codeph">[ Accumulate ({ '<var class="keyword varname">accumulate_column</var>' | <var class="keyword varname">accumulate_column_range</var> }[,...]) ]</code>
+  [ PrintNullQueries (<span><b>{'true'|'t'|'yes'|'y'|'1'|'false'|'f'|'no'|'n'|'0'}</b></span>) ]
+) AS <var class="keyword varname">alias</var>;</code></pre></div></div><div class="related-links"><div class="linklistheader"><p></p><b>Related Information</b></div>
+<ul class="linklist linklist relinfo"><div class="linklistmember"><a href="ndv1557782188375.md">Column Specification Syntax Elements</a></div></ul></div></div><div class="topic reference nested1" aria-labelledby="ariaid-title3" topicindex="3" topicid="dfi1507820919773" xml:lang="en-us" lang="en-us" id="dfi1507820919773">
+<h2 class="title topictitle2" id="ariaid-title3">URIUnpack Syntax Elements</h2><div class="body refbody"><div class="section" id="dfi1507820919773__section_N10011_N1000E_N10001"><dl class="dl parml"><dt class="dt pt dlterm">URIColumn</dt><dd class="dd pd">Specify the name of the input table column that contains the URIs to unpack. Malformed URIs are ignored.</dd><dt class="dt pt dlterm">Queries</dt><dd class="dd pd">[Optional] Specify the names of the query parameters whose values to extract from the URIs. </dd><dt class="dt pt dlterm">OutputType</dt><dd class="dd pd">[Optional] Specify the URI components (outside the query) to output. If you specify 'path', the function outputs the URI path in normalized form (for example, it reduces <span><i>/./bar/baz</i></span> to <span><i>/bar/baz</i></span>.</dd><dd class="dd pd ddexpand">Default: All four components</dd><dt class="dt pt dlterm">Accumulate</dt><dd class="dd pd">[Optional] Specify the names of the input table columns to copy to the output table.</dd><dt class="dt pt dlterm">PrintNullQueries</dt><dd class="dd pd">[Optional] Specify whether to output URIs that contain none of the parameters specified by the Queries syntax element.</dd><dd class="dd pd ddexpand">Default: 'true'</dd></dl></div></div></div></div></body></html>

@@ -1,0 +1,13 @@
+<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="eju1507835240829" id="eju1507835240829"><h1 class="title topictitle1" id="ariaid-title1">MultiCaseMatch (ML Engine)</h1><div class="body conbody">
+<p class="p">The MultiCaseMatch function extends the capability of the SQL CASE statement by supporting matches to multiple criteria in a single row.</p>
+<p class="p">When SQL CASE finds a match, it outputs the result and immediately
+			proceeds to the next row without searching for more matches in the current row.</p>
+<p class="p">The MultiCaseMatch function iterates through the input data set only once and outputs matches whenever a match occurs. If multiple matches occur for a given input row, the function outputs one output row for each match.</p>
+<p class="p">Use the MultiCaseMatch function when the conditions in your CASE statement do not form a mutually exclusive set.</p></div><div class="topic reference nested1" aria-labelledby="ariaid-title2" topicindex="2" topicid="mdj1507835568043" xml:lang="en-us" lang="en-us" id="mdj1507835568043">
+<h2 class="title topictitle2" id="ariaid-title2">MultiCaseMatch Syntax</h2><div class="body refbody"><div class="section" id="mdj1507835568043__section_N1000E_N1000C_N10001">
+<h3 class="title sectiontitle">Version 1.5</h3><pre class="pre codeblock" xml:space="preserve"><code>SELECT * FROM MultiCaseMatch (
+  ON (SELECT t.*, <var class="keyword varname">condition</var> AS <var class="keyword varname">case</var> [,...] FROM { <var class="keyword varname">table</var> | <var class="keyword varname">view</var> | (<var class="keyword varname">query</var>) } AS t)
+  USING
+  Labels ('<var class="keyword varname">case</var> AS "<var class="keyword varname">label</var>"' [,...])
+) AS <var class="keyword varname">alias</var>;</code></pre></div></div></div><div class="topic reference nested1" aria-labelledby="ariaid-title3" topicindex="3" topicid="xqa1507835573379" xml:lang="en-us" lang="en-us" id="xqa1507835573379">
+<h2 class="title topictitle2" id="ariaid-title3">MultiCaseMatch Syntax Elements</h2><div class="body refbody"><div class="section" id="xqa1507835573379__section_N10011_N1000E_N10001"><dl class="dl parml"><dt class="dt pt dlterm">Labels</dt><dd class="dd pd">Specify a label for each <var class="keyword varname">case</var>. Each case corresponds to a <var class="keyword varname">condition</var>, which is a SQL predicate that includes input column names. When an input value satisfies <var class="keyword varname">condition</var>, that is a match, and the function outputs the input row and the corresponding label.</dd></dl></div></div></div></div></body></html>
