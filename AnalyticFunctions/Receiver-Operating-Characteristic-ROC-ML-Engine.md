@@ -1,4 +1,4 @@
-<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="gbr1507740693525" id="gbr1507740693525"><h1 class="title topictitle1" id="ariaid-title1">Receiver Operating Characteristic (ROC) (ML Engine)</h1><div class="body conbody">
+<div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="gbr1507740693525" id="gbr1507740693525"><h1 class="title topictitle1" id="ariaid-title1">Receiver Operating Characteristic (ROC) (ML Engine)</h1><div class="body conbody">
 <p class="p">A receiver operating characteristic (ROC) curve shows the performance of a binary classification model as its discrimination threshold varies. For a range of thresholds, the curve plots the true positive rate against the false positive rate.</p><div class="p">The Receiver Operating Characteristic (ROC) function takes a set of prediction-actual pairs for a binary classification model and calculates the following values for a range of discrimination thresholds:
 <ul class="ul" id="gbr1507740693525__ul_ewq_tkh_tx">
 <li class="li">True positive rate (TPR)</li>
@@ -40,4 +40,4 @@
 <li class="li">Specify AUC only, Gini only, or AUC and Gini only, and ROCValues ('true').
 <p class="p">(When specifying AUC only, Gini only, or AUC and Gini only, ROCValues is false by default.)</p></li>
 <li class="li">Specify an invalid combination (such as ROCValues ('true') and AUC ('true'), or all three 'false').</li>
-<li class="li">Specify ROCTable and also specify any of AUC, Gini, or ROCValues.</li></ul></dd></dl></div></div></div></div></body></html>
+<li class="li">Specify ROCTable and also specify any of AUC, Gini, or ROCValues.</li></ul></dd></dl></div></div></div></div>

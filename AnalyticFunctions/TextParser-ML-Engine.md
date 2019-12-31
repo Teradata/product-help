@@ -1,4 +1,4 @@
-<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="vfj1507567716845" id="vfj1507567716845"><h1 class="title topictitle1" id="ariaid-title1">TextParser (ML Engine)</h1><div class="body conbody">
+<div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="vfj1507567716845" id="vfj1507567716845"><h1 class="title topictitle1" id="ariaid-title1">TextParser (ML Engine)</h1><div class="body conbody">
 <p class="p">The TextParser function tokenizes an input stream of words, optionally <dfn class="term">stems</dfn> them (reduces them to their root forms), and then outputs them. The function can either output all words in one row or output each word in its own row with (optionally) the number of times that the word appears.</p>
 <p class="p">The TextParser function uses Porter2 as the stemming algorithm.</p>
 <p class="p">The TextParser function reads a document into a memory buffer and creates a hash table. The dictionary for the document must not exceed available memory; however, a million-word dictionary with an average word length of ten bytes requires only 10 MB of memory.</p>
@@ -39,4 +39,4 @@ and
 this 
 with 
 but 
-will</code></pre></dd><dd class="dd pd ddexpand">Default: No stop words</dd></dl></div></div></div></div></body></html>
+will</code></pre></dd><dd class="dd pd ddexpand">Default: No stop words</dd></dl></div></div></div></div>

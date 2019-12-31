@@ -1,4 +1,4 @@
-<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="jtk1507069294341" id="jtk1507069294341"><h1 class="title topictitle1" id="ariaid-title1">ShapleySortCombinations (ML Engine)</h1><div class="body conbody">
+<div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="jtk1507069294341" id="jtk1507069294341"><h1 class="title topictitle1" id="ariaid-title1">ShapleySortCombinations (ML Engine)</h1><div class="body conbody">
 <p class="p">The ShapleySortCombinations function takes a table of combinations, output by either the ShapleyGenerateCombination function or a SQL statement, and outputs a table of sorted combinations that can be input to <a href="ugs1558448732652.md#ihm1507069875331">ShapleyAddOnePlayer (ML Engine)</a>.</p></div><div class="topic reference nested1" aria-labelledby="ariaid-title2" topicindex="2" topicid="too1507069351965" xml:lang="en-us" lang="en-us" id="too1507069351965">
 <h2 class="title topictitle2" id="ariaid-title2">ShapleySortCombinations Syntax</h2><div class="body refbody"><div class="section" id="too1507069351965__section_N1000E_N1000C_N10001">
 <h3 class="title sectiontitle">Version <span>1.5</span></h3><pre class="pre codeblock" xml:space="preserve"><code>SELECT * FROM ShapleySortCombinations (
@@ -14,4 +14,4 @@
 <li class="li">'#' (pound sign)</li>
 <li class="li">'$' (dollar sign)</li>
 <li class="li">'%' (percent sign)</li>
-<li class="li">'&amp;' (ampersand)</li></ul></dd></dl></div></div></div></div></body></html>
+<li class="li">'&amp;' (ampersand)</li></ul></dd></dl></div></div></div></div>

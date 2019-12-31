@@ -1,4 +1,4 @@
-<html><head></head><body><div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="ulp1514493205765" id="ulp1514493205765"><h1 class="title topictitle1" id="ariaid-title1">UnivariateStatistics (ML Engine)</h1><div class="body conbody"><div class="section" id="ulp1514493205765__section_N10011_N1000E_N10001">
+<div class="nested0" aria-labelledby="ariaid-title1" topicindex="1" topicid="ulp1514493205765" id="ulp1514493205765"><h1 class="title topictitle1" id="ariaid-title1">UnivariateStatistics (ML Engine)</h1><div class="body conbody"><div class="section" id="ulp1514493205765__section_N10011_N1000E_N10001">
 <p class="p">The UnivariateStatistics function calculates descriptive statistics for a set of target columns.</p></div></div><div class="topic reference nested1" aria-labelledby="ariaid-title2" topicindex="2" topicid="qiy1514493216143" xml:lang="en-us" lang="en-us" id="qiy1514493216143">
 <h2 class="title topictitle2" id="ariaid-title2">UnivariateStatistics Syntax</h2><div class="body refbody"><div class="section" id="qiy1514493216143__section_N10011_N1000E_N10001">
 <h3 class="title sectiontitle">Version <span>1.2</span></h3><pre class="pre codeblock" xml:space="preserve"><code>SELECT * FROM UnivariateStatistics (
@@ -46,4 +46,4 @@
 <ul class="ul" id="mtu1514493208025__ul_bxh_bpr_tcb">
 <li class="li">Minimum and maximum values</li>
 <li class="li">1st, 5th, 10th, 25th, 50th, 75th, 90th, 95th, and 99th percentiles</li></ul></td></tr></tbody></table></div>
-<p class="p">Default behavior: The function calculates all three groups of statistics.</p></dd></dl></div></div></div></div></body></html>
+<p class="p">Default behavior: The function calculates all three groups of statistics.</p></dd></dl></div></div></div></div>

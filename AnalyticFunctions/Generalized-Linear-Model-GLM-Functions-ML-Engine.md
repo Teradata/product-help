@@ -25,4 +25,4 @@
 <li class="li">
 <p class="p"><cite class="cite">Friedman, J., Hastie, T., and Tibshirani, R. (2010). Regularization Paths for Generalized Linear Models via Coordinate Descent. Journal of Statistical Software, 33(1), 1 - 22.doi</cite> (<a class="xref" href="http://dx.doi.org/10.18637/jss.v033.i01" target="_blank" title="" shape="rect">GLM regularization paths article</a>)</p></li>
 <li class="li">
-<p class="p"><cite class="cite">Tibshirani, R., Bien, J., Friedman, J., Hastie, T., Simon, N., Taylor, J. and Tibshirani, R. J. (2012), Strong rules for discarding predictors in lasso-type problems. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 74: 245–266. doi:10.1111/j.1467-9868.2011.01004.x</cite></p></li></ul></div></div></body></html>
+<p class="p"><cite class="cite">Tibshirani, R., Bien, J., Friedman, J., Hastie, T., Simon, N., Taylor, J. and Tibshirani, R. J. (2012), Strong rules for discarding predictors in lasso-type problems. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 74: 245–266. doi:10.1111/j.1467-9868.2011.01004.x</cite></p></li></ul></div></div>
