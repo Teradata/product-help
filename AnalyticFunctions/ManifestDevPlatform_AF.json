@@ -705,11 +705,11 @@
     "title": "distnmatchmultipleinput", 
     "children": [
       {
-        "title": "distnmatchmultipleinput",
+        "title": "Hypothesis-Test Mode",
         "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Hypothesis-Test-Mode-ML-Engine.md"
       },
       {
-        "title": "distnmatchmultipleinput",
+        "title": "Best-Match Mode",
         "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Best-Match-Mode-ML-Engine.md"
       }
     ]
@@ -718,11 +718,11 @@
     "title": "distnmatchreduce",   
     "children": [
       {
-        "title": "distnmatchreduce",
+        "title": "Hypothesis-Test Mode",
         "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Hypothesis-Test-Mode-ML-Engine.md"
       },
       {
-        "title": "distnmatchreduce",
+        "title": "Best-Match Mode",
         "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Best-Match-Mode-ML-Engine.md"
       }
     ]
@@ -731,11 +731,11 @@
     "title": "attribution", 
     "children": [
       {
-        "title": "attribution",
+        "title": "Single Input",
         "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Single-Input-Attribution_MLE-ML-Engine.md"
       },
       {
-        "title": "attribution",
+        "title": "Multiple Input",
         "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Multiple-Input-Attribution_MLE-ML-Engine.md"
       }
     ]
