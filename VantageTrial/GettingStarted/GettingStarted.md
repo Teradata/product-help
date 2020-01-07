@@ -13,6 +13,5 @@ Here are things you can do with your trial:
 Currently the book is internal only, go to 
 [https://docs.teradata.com/](https://docs.teradata.com/) and **Sign In** as a Teradata Employee, then click the book link below.
 
-Go to 
-[docs.teradata.com](docs.teradata.com) and sign in as a Teradata employee, then see the _[Teradata Vantage Trial on AWS Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=jzh1567636979792.ditamap)_ 
+See the _[Teradata Vantage Trial on AWS Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=jzh1567636979792.ditamap)_ 
 
