@@ -1,6 +1,9 @@
 ## Editor
 
-#### Parts of the Landing Page
+Select the system and log in to see the main page.
+
+
+#### Parts of the Editor
 
 From left to right, Views, the Object Browser, and the Script pane. 
 Functions and Opened Scripts are below the Object Browser.
