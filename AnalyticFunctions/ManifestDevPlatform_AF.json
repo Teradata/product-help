@@ -84,6 +84,10 @@
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/ConfusionMatrix-ML-Engine.md"
   },
   {
+    "title": "correlation",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Correlation-ML-Engine.md"
+  },
+  {
     "title": "coxph",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/CoxPH-ML-Engine.md"
   },
@@ -135,9 +139,17 @@
     "title": "forest_analyze",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/DecisionForestEvaluator-ML-Engine.md"
   },
+   {
+    "title": "decisionforestpersegment",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/DecisionForestPerSegment-ML-Engine.md"
+  },
   {
     "title": "forest_predict",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/DecisionForestPredict_MLE-ML-Engine.md"
+  },
+  {
+    "title": "decisionforestpredictpersegment",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/DecisionForestPredictPerSegment-ML-Engine.md"
   },
   {
     "title": "single_tree_drive",
@@ -187,6 +199,10 @@
     "title": "glm",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/GLM-ML-Engine.md"
   },
+   {
+    "title": "glmpersegment",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/GLMPerSegment-ML-Engine.md"
+  },
   {
     "title": "glm2",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/GLM2-ML-Engine.md"
@@ -206,6 +222,10 @@
   {
     "title": "glmpredict",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/GLMPredict_MLE-ML-Engine.md"
+  },
+  {
+    "title": "glmpredictpersegment",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/GLMPredictPerSegment-ML-Engine.md"
   },
   {
     "title": "gmmfit",
@@ -380,6 +400,10 @@
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/NGramSplitter_MLE-ML-Engine.md"
   },
   {
+    "title": "naivebayes",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/NaiveBayes-ML-Engine.md"
+  },
+  {
     "title": "naivebayespredict",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/NaiveBayesPredict_MLE-ML-Engine.md"
   },
@@ -490,6 +514,10 @@
   {
     "title": "roc",
     "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/Receiver-Operating-Characteristic-ROC-ML-Engine.md"
+  },
+  {
+    "title": "forest_data_distn",
+    "url": "https://github.com/Teradata/product-help/blob/master/AnalyticFunctions/RowDistribution-Function-ML-Engine.md"
   },
   {
     "title": "sax2",
