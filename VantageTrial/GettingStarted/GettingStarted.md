@@ -5,7 +5,7 @@ Here are things you can do with your trial:
 
 
 * See the FAQ for answers to common questions.
-* Use Vantage Developer: See TechBytes videos. Use the Editor to run SQL queries, including those in the use cases. Learn from Use Cases. Use the API Catalog to test RESTful APIs.
+* Use Vantage Developer: See TechBytes videos. Use the Editor to run SQL queries, including those in the use cases. Learn from Use Cases.
 * Use Vantage Analyst: Discover analytics using Workflows, Rules, Model, and Path.
 * Use Vantage Operations: The Site Dashboard provides information about your site, the Advanced SQL Engine, instance information, object storage, and much more.
      
