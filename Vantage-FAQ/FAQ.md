@@ -22,8 +22,8 @@
 
 #### What are the key features of Editor?
 
-- Data exploration
 - SQL development (supports parameters)
+- Explore your data; for example, with the use cases
 
 #### Does the Editor support running R and Python?
 
@@ -44,11 +44,6 @@ The first release of Editor will be available as an app in AppCenter as a part o
 - Seamless operationalization: Reuse process workflows from discovery to production.
 - Team collaboration: Share and reuse proven analytic processes, best practices, and results.
 
-#### What Vantage components are needed for Vantage Analyst?
-
-- Teradata Vantage with Advanced SQL Engine and Teradata Machine Learning and Graph Engines (analytic nodes)
-- AppCenter
-
 #### What is Console?
 
 The Console is an easy-to-use web interface for monitoring and managing as-a-service systems. There is no additional charge for the Console and all as-a-service deployment types and regions are supported.
@@ -60,7 +55,7 @@ The Console is an easy-to-use web interface for monitoring and managing as-a-ser
 - Cost optimization: Stop/Start
 - Storage expansion
 
-#### What is the recommended browser?
+#### What is the supported browser?
 
 Google Chrome
 
