@@ -1,6 +1,6 @@
 ## Editor
 
-Select the system and log in to see the main page.
+Select the system and **Use current session** to connect and view the main page.
 
 
 #### Parts of the Editor
