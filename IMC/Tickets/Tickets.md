@@ -2,9 +2,9 @@
 
 Site Admins and Super Site Admins can open tickets for three reasons: 
 
-- [Report a problem or incident](#report-a-problem-or-incident) 
-- [Request a change](#request-a-change)
-- [Submit a question](#ask-a-question)
+- [Report a problem or incident](#reporting-a-problem-or-incident) 
+- [Request a change](#requesting-a-change)
+- [Submit a question](#submitting-a-question)
 
 Tickets you create in the Console are no different than those you create in the Service Portal. The Console just provides a streamlined way to manage them.
 
