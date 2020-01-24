@@ -15,5 +15,5 @@ Here are things you can do with Vantage:
 The book is internal only, go to 
 [https://docs.teradata.com/](https://docs.teradata.com/) and **Sign In** > **Teradata Employee Sign In**, then click the book link below.
 
-See the _[Teradata Vantage LIVE Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=zvu1578697453001.ditamap)_ 
+See the _[Teradata Vantage LIVE Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=zvu1578697453001.ditamap&dita:ditavalPath=Teradata_Vantage™_LIVE_Quick_Start_Guide_Upload/xdh1578848858107.ditaval)_ 
 
