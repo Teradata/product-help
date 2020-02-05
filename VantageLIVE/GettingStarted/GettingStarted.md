@@ -1,6 +1,6 @@
 #### Getting Started with Vantage
 
-Here are things you can do with Vantage:
+Here are things you can do with Vantagedd:
 * Click ![play.png](play.png) to watch a short video about Vantage.
 
 
