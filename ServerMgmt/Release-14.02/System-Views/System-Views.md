@@ -1,4 +1,4 @@
-### Operational Status
+### System Views
 
 Tailor your view by selecting a System, VM Host, or CMIC, then selecting cabinets.
 
