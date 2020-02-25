@@ -16,6 +16,6 @@ You can connnect (SSH or BMC), power off, power on, or reset, depending on the c
 ![critical.png](critical.png) - Critical. Cannot continue in this state. Take immediate action.
 
 
-![fatal.png](fatal.png)- Fatal; Failed. Take immediate action.
+![fatal.png](fatal.png)- Fatal. Failed. Take immediate action.
 
 
