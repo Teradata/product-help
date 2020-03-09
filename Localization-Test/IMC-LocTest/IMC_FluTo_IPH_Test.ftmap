@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ft:map ft:lang="en-US" xmlns:ft="http://ref.fluidtopics.com/v3/ft#">
+    <ft:metas>
+        <ft:meta key="brand" type="string">Teradata Vantage</ft:meta>
+        <ft:meta key="prodname" type="string">The Console</ft:meta>
+        <ft:meta key="category" type="string">Product Help</ft:meta>
+    </ft:metas>
+ </ft:map>
