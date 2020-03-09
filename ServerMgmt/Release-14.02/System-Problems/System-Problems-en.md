@@ -12,6 +12,8 @@ The CMIC collects events for the components it manages, then correlates them wit
 
 Use the buttons to connected to the chassis, view details, or clear the system problem.
 
-(paperclip icon) means the alert has auto-generated support data.
 
-(comment icon) indicates someone has commented on the alert.
+![Paperclip](paperclip.png) means the alert has auto-generated support data.
+
+
+![Comment Box](comment.png) indicates someone has commented on the alert.
