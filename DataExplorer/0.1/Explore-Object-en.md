@@ -6,6 +6,8 @@ In-product help for Data Explorer
 
 ### Table
 
+### JSON
+
 ### Raw
 
 ## JSON
