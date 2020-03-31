@@ -6,7 +6,7 @@ View the content of the object store. Depending on the object selected, you may 
 - Schema
 - Metadata
 
-o create a foreign table for the selected object, choose 
+To create a foreign table for the selected object, choose 
 ![Images/kebab-menu.png](Images/kebab-menu.png) > **Create foreign table**.
 
 ## Preview
@@ -19,6 +19,7 @@ Displays a preview of the CSV or JSON data from the object store. Depending on t
 
 
 ## Schema
+Not used in this release.
 
 ## Metadata
 
