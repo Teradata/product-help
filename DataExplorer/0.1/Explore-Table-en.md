@@ -8,7 +8,7 @@ You can select the following tabs:
 - Metadata
 - Permissions
 
-## Perview
+## Preview
 
 Displays a preview of data stored externally.
 
