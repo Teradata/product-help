@@ -14,10 +14,15 @@ Displays a preview of data stored externally.
 
 ## Schema
 
-Displays the schema (columns and data types).
+Not used in this release.
 
 ## Metadata
+Displays information about the selected object, including:
+- Name
+- Type
+- Path
+- Size
 
-## Permissions
+## Privleges
 
 Allows you to grant privileges to new users and roles for the data source, or to revoke access. 
