@@ -18,10 +18,12 @@ Not used in this release.
 
 ## Metadata
 Displays information about the selected object, including:
-- Name
+- Location
+- Description
+- Manifest
 - Type
 - Path
-- Size
+- Row format
 
 ## Privleges
 
