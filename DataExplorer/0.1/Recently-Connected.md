@@ -1,6 +1,6 @@
 # Recently connected
 
-Shows the most recently connected object stores, allowing you to easily reconnect.
+Shows the most recently connected object stores, allowing you to easily reconnect. Select ![Images/kebab-menu.png](Images/kebab-menu.png) > **Explore**.
 
 Click **Clear All** to clear the list.
 
