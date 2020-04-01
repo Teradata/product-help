@@ -25,6 +25,6 @@ Displays information about the selected object, including:
 - Path
 - Row format
 
-## Privleges
+## Privileges
 
 Allows you to grant privileges to new users and roles for the data source, or to revoke access. 
