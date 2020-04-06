@@ -32,7 +32,7 @@ Displays mapping information from the selected foreign table, including:
 - Type
 - Path
 - Row format
-- 
+
 <a name="privileges" />
 
 ## Privileges
