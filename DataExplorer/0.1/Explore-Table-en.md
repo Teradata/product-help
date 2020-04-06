@@ -5,18 +5,24 @@ Foreign tables allow you to query external data stored in an object store, from 
 
 You can select the following tabs:
 
-- Preview
-- Schema
-- Metadata
-- Permissions
+- [Preview](#preview)
+- [Schema](#schema)
+- [Metadata](#metadata)
+- [Privileges](#rivileges)
+
+<a name="preview" />
 
 ## Preview
 
 Displays a sample of the data from the object store.
 
+<a name="schema" />
+
 ## Schema
 
 Not used in this release.
+
+<a name="metadata" />
 
 ## Metadata
 Displays mapping information from the selected foreign table, including:
@@ -26,6 +32,8 @@ Displays mapping information from the selected foreign table, including:
 - Type
 - Path
 - Row format
+- 
+<a name="privileges" />
 
 ## Privileges
 
