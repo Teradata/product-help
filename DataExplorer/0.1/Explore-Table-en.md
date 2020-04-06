@@ -5,10 +5,10 @@ Foreign tables allow you to query external data stored in an object store, from 
 
 You can select the following tabs:
 
-- [Preview](#preview)
-- [Schema](#schema)
-- [Metadata](#metadata)
-- [Privileges](#rivileges)
+- [Preview](#Preview)
+- [Schema](#Schema)
+- [Metadata](#Metadata)
+- [Privileges](#Privileges)
 
 <a name="preview" />
 
