@@ -1,5 +1,7 @@
-# Explore table
-View the details of a table, after mapping the source to the foreign table.
+# View foreign table
+Use to manage your foreign tables.
+
+Foreign tables allow you to query external data stored in an object store, from the Advanced SQL Engine. You can make the data available in a structured relational format. 
 
 You can select the following tabs:
 
@@ -10,14 +12,14 @@ You can select the following tabs:
 
 ## Preview
 
-Displays a preview of data stored externally.
+Displays a sample of the data from the object store.
 
 ## Schema
 
 Not used in this release.
 
 ## Metadata
-Displays information about the selected object, including:
+Displays mapping information from the selected foreign table, including:
 - Location
 - Description
 - Manifest
@@ -27,4 +29,4 @@ Displays information about the selected object, including:
 
 ## Privileges
 
-Allows you to grant privileges to new users and roles for the data source, or to revoke access. 
+Allows you to manage and control privilege access to your external data.
