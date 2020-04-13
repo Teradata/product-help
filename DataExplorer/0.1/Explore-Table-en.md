@@ -20,7 +20,10 @@ Displays a sample of the data from the object store.
 
 ## Schema
 
-Not used in this release.
+Displays the schema for a CSV file, when defined, including:
+- Name
+- Field delimiter
+- Field names
 
 <a name="metadata" />
 
@@ -38,3 +41,10 @@ Displays mapping information from the selected foreign table, including:
 ## Privileges
 
 Allows you to manage and control privilege access to your external data.
+
+To add a new user or role to the table, select **+**, then assign **Select** or **Select With Grant Option** to a specific user or role.
+
+Select ![Images/kebab-menu.png](Images/kebab-menu.png) > **Edit** to update the privileges for specific user or role.
+
+Select ![Images/kebab-menu.png](Images/kebab-menu.png) > **Revoke** to remove a user or role from the table.
+
