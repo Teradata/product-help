@@ -1,4 +1,4 @@
-# View foreign table
+# Explore
 Use to manage your foreign tables.
 
 Foreign tables allow you to query external data stored in an object store, from the Advanced SQL Engine. You can make the data available in a structured relational format. 
@@ -42,7 +42,9 @@ Displays mapping information from the selected foreign table, including:
 
 Allows you to manage and control privilege access to your external data.
 
-To add a new user or role to the table, select **+**, then assign **Select** or **Select With Grant Option** to a specific user or role.
+To add a new user or role to the table, select **+**, then assign:
+- **Select** or **Select With Grant Option** to a specific user 
+- **Select** to a role
 
 Select ![Images/kebab-menu.png](Images/kebab-menu.png) > **Edit** to update the privileges for specific user or role.
 
