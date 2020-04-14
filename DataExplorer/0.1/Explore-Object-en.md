@@ -10,8 +10,8 @@ To create a foreign table for the selected object, select
 ![Images/kebab-menu.png](Images/kebab-menu.png) > **Create foreign table**.
 
 1. Enter the foreign table information, including **Database**, **Table name**, and **Table description**.
-1. [Optional] Create or select an authorization for the new foreign table.
-1. [Optional] Create or select a schema for the new foreign table.
+1. \[Optional] Create or select an authorization for the new foreign table.
+1. \[Optional] Create or select a schema for the new foreign table.
 1. Click **Create**.
 
 
@@ -27,8 +27,8 @@ Displays a preview of the CSV or JSON data from the object store. Depending on t
 ## Schema
 Displays the schema for a CSV file, when defined, including: 
 - Name
-- Field delimiter
-- Field names
+- Field delimiter (optional)
+- Field names (optional)
 
 ## Metadata
 

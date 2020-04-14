@@ -22,8 +22,8 @@ Displays a sample of the data from the object store.
 
 Displays the schema for a CSV file, when defined, including:
 - Name
-- Field delimiter
-- Field names
+- Field delimiter (optional)
+- Field names (optional)
 
 <a name="metadata" />
 
