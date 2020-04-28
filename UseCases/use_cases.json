@@ -1,20 +1,12 @@
 [
   {
-    "title": "Use Case 1",
-    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/fake/fake.md"
-  },
-  {
-    "title": "Use Case 2",
-    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/fake2/fake.md"
-  }
-  {
     "title": "nPath",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/npath/README.md"
-  }
+  },
   {
     "title": "Path Analysis",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/path-analysis/README.md"
-  }
+  },
   {
     "title": "Consumer Complaints",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/consumer-complaints/README.md"
