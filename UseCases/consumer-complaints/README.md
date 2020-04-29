@@ -3,10 +3,9 @@
 - [Introduction](#introduction)
 - [Experience](#experience)
   - [Running SQL Code on Vantage](#Running-sql-code-on-vantage)
-  - [Walkthrough](#walkthrough)
-    - [Step 1: Querying the Data](#step-1-querying-the-data)
-    - [Step 2: Visualizing the Data](#step-2-visualizing-the-data)
-    - [Step 3: Extracting Insights from the Data](#step-3-extracting-insights-from-the-data)
+  - [Step 1: Querying the Data](#step-1-querying-the-data)
+  - [Step 2: Visualizing the Data](#step-2-visualizing-the-data)
+  - [Step 3: Extracting Insights from the Data](#step-3-extracting-insights-from-the-data)
 - [Dataset](#dataset)
 - [Explore](#explore)
 
@@ -23,15 +22,13 @@ By answering questions like the ones above, we gain a deeper understanding of th
 
 The **Experience** section takes about 3 minutes to run.
 
-### Running SQL Code on Vantage
+## Running SQL Code on Vantage
 
 1. Click to open the <a href="/editor">Editor</a>.
 1. Copy the SQL in each section below into the Editor and click **Run**.
 1. View query results in the result panel.
 
-### Walkthrough
-
-#### Step 1: Querying the Data
+## Step 1: Querying the Data
 
 Start by counting the number of rows in the table.
 
@@ -49,7 +46,7 @@ select TOP 100 * from [%_PREFIX_%]FinancialProtection.consumer_complaints;
 
 <div class = "td-resultset-table-div" style = "max-height: 537px; overflow-y: auto"><table><thead><tr style= "background: #efefef;"><th>date_received</th><th>product</th><th>sub_product</th><th>issue</th><th>sub_issue</th><th>consumer_complaint_narrative</th><th>company_public_response</th><th>company</th><th>state</th><th>zip_code</th><th>tags</th><th>consumer_consent_provided</th><th>submitted_via</th><th>date_sent_to_company</th><th>company_response_to_consumer</th><th>timely_response</th><th>consumer_disputed</th><th>complaint_id</th></tr></thead><tr><td>2013-09-19</td><td>Bank account or service</td><td>Checking account</td><td>Making/receiving payments, sending money</td><td></td><td></td><td></td><td>CAPITAL ONE FINANCIAL CORPORATION</td><td>NY</td><td>10312</td><td></td><td></td><td>Phone</td><td>2013-09-20</td><td>Closed with monetary relief</td><td>Yes</td><td>N</td><td>534309</td></tr><tr><td>2013-12-31</td><td>Credit reporting</td><td></td><td>Unable to get credit report/credit score</td><td>Problem getting my free annual report</td><td></td><td></td><td>EQUIFAX, INC.</td><td>NY</td><td>10452</td><td>Older American</td><td></td><td>Web</td><td>2013-12-30</td><td>Closed with non-monetary relief</td><td>Yes</td><td>Y</td><td>650462</td></tr><tr><td>2013-05-17</td><td>Mortgage</td><td>Other mortgage</td><td>Loan modification,collection,foreclosure</td><td></td><td></td><td></td><td>JPMORGAN CHASE & CO.</td><td>AL</td><td>36605</td><td></td><td></td><td>Phone</td><td>2013-05-20</td><td>Closed with explanation</td><td>Yes</td><td>N</td><td>410426</td></tr><tr><td>2012-10-09</td><td>Mortgage</td><td>FHA mortgage</td><td>Loan modification,collection,foreclosure</td><td></td><td></td><td></td><td>BANK OF AMERICA, NATIONAL ASSOCIATION</td><td>MA</td><td>011XX</td><td>Servicemember</td><td></td><td>Phone</td><td>2012-10-10</td><td>Closed with explanation</td><td>Yes</td><td>N</td><td>167855</td></tr><tr><td>2012-11-28</td><td>Bank account or service</td><td>Checking account</td><td>Deposits and withdrawals</td><td></td><td></td><td></td><td>U.S. BANCORP</td><td>PA</td><td>15132</td><td></td><td></td><td>Web</td><td>2012-11-28</td><td>Closed with non-monetary relief</td><td>Yes</td><td>N</td><td>198805</td></tr></table></div><br>
 
-#### Step 2: Visualizing the Data
+## Step 2: Visualizing the Data
 
 From the query above, we notice that this dataset has a lot of information. To derive some insights, we need to start grouping the data.
 
@@ -84,7 +81,7 @@ order by month_date;
 
 Looking at complaints over month and year, we see a clear upward trend. One hypothesis is that as time progresses, people get more conscious and spread the word. The media can also advertise the complaint channels over time. Through this chart we can see clearly the spikes that we saw above were in January 2017 and September 2017. Let's dive deeper into these dates and draw some insights on the next step.
 
-#### Step 3: Extracting Insights from the Data
+## Step 3: Extracting Insights from the Data
 
 Let's narrow down the two spikes above and see exactly where they are happening. We can do this by ploting another time series plot, this time only in 2017.
 

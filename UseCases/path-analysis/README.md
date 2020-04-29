@@ -4,7 +4,7 @@
 - [Telco Churn Example](#telco-churn-example)
 - [Experience](#experience)
   - [Running Path](#running-path)
-  - [Adding Additional Parameters](#addingh-additional-parameteres)
+  - [Adding Additional Parameters](#adding-additional-parameteres)
   - [Exporting Results](#exporting-results)
     - [Example 1: Export a List of Customers on the Path to Churn](#example-1:-export-a-list-of-customers-on-the-path-to-churn)
     - [Example 2: Save the Model Query](#example-2:-save-the-model-query)
