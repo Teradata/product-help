@@ -2,7 +2,7 @@
 
 - [Introduction](#introduction)
 - [Experience](#experience)
-  - [Quick Start](#quick-start)
+  - [Running SQL Code on Vantage](#Running-sql-code-on-vantage)
   - [Walkthrough](#walkthrough)
     - [Step 1: Querying the Data](#step-1-querying-the-data)
     - [Step 2: Visualizing the Data](#step-2-visualizing-the-data)
@@ -12,7 +12,7 @@
 
 # Introduction
 
-How can we use **Vantage** to extract insights and tell a story behind a dataset? In this use case, you will see how powerful and simple it is to extract answers from a public dataset available through `Data.gov`. We use SQL and a visualization tool to analyze the number of complaints over time to answer the following questions:
+How can we use **Vantage** to extract insights and tell a story behind a dataset? This use case shows how powerful and simple it is to extract answers from a public dataset available through `Data.gov`. We use SQL and a visualization tool to analyze the number of complaints over time to answer the following questions:
 
 _What are the trends of complaints over time?_  
 _How can we interpret the outliers in the dataset?_
@@ -67,7 +67,7 @@ This is great; we now have the number of complaints (`counts`) by time (`date_re
 
 ![](images/time-series.png)
 
-By visualizing the data above, we can see that the number of complaints varies a lot over time, and there also seem to be more complaints as time progresses. There are also some unusual spikes in 2017. Let's understand more about our data. We start by looking at the general trend.
+By visualizing the data above, we see that the number of complaints varies a lot over time. Complaints also increase as time progresses. There are also some unusual spikes in 2017. Let's understand more about our data. We start by looking at the general trend.
 
 Let's group the data by month and replot the graph above.
 
@@ -82,7 +82,7 @@ order by month_date;
 
 ![png](images/output_22_0.png)
 
-Looking at complaints over month and year, we see there is clearly an upward trend. One hypothesis is that as time progresses, people get more conscious and spread the word. The media can also advertise the complaint channels over time. Through this chart we can see clearly the spikes that we saw above were in January 2017 and September 2017. Let's dive deeper into these dates and draw some insights on the next step.
+Looking at complaints over month and year, we see a clear upward trend. One hypothesis is that as time progresses, people get more conscious and spread the word. The media can also advertise the complaint channels over time. Through this chart we can see clearly the spikes that we saw above were in January 2017 and September 2017. Let's dive deeper into these dates and draw some insights on the next step.
 
 #### Step 3: Extracting Insights from the Data
 
@@ -157,7 +157,7 @@ order by counts desc;
 
 <div class = "td-resultset-table-div" style = "max-height: 197px; overflow-y: auto"><table><thead><tr style= "background: #efefef;"><th>company</th><th>product</th><th>issue</th><th>counts</th></tr></thead><tr><td>Navient Solutions, LLC.</td><td>Student loan</td><td>Dealing with my lender or servicer</td><td>1107</td></tr><tr><td>Navient Solutions, LLC.</td><td>Student loan</td><td>Can't repay my loan</td><td>968</td></tr><tr><td>Navient Solutions, LLC.</td><td>Student loan</td><td>Getting a loan</td><td>9</td></tr><tr><td>Navient Solutions, LLC.</td><td>Debt collection</td><td>Cont'd attempts collect debt not owed</td><td>2</td></tr><tr><td>Navient Solutions, LLC.</td><td>Debt collection</td><td>False statements or representation</td><td>2</td></tr><tr><td>Navient Solutions, LLC.</td><td>Consumer Loan</td><td>Managing the loan or lease</td><td>1</td></tr><tr><td>Navient Solutions, LLC.</td><td>Debt collection</td><td>Communication tactics</td><td>1</td></tr></table></div><br>
 
-We can see the top two issues represent the majority of complaint counts against Navient Solutions. Furthermore, by looking at the product and issue columns we can infer that they are indeed related to the lawsuit regarding student loans. Now let's do the same analysis for the Equifax issues.
+We can see the top two issues represent the majority of complaint counts against Navient Solutions. Furthermore, by looking at the product and issue columns, we can infer that they are indeed related to the lawsuit regarding student loans. Now let's do the same analysis for the Equifax issues.
 
 ```sql
 -- analyze top issues reported against Navient Soultions on 2017-01-19 and 2017-01-20
@@ -182,7 +182,7 @@ Here we can also confirm our hypothesis. The top issues talk about improper use 
 
 # Dataset
 
-The Consumer Complaints Database has complaints data that was received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, which include but are not limited to bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans and other types of consumer credit. The dataset is refreshed daily and contains information on the provider, the complaint, date, ZIP code and more. More information about the dataset can be found in the _Consumer_ section of the `Data.gov` website.
+The Consumer Complaints Database has complaints data that was received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, which can include bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans and other types of consumer credit. The dataset is refreshed daily and contains information on the provider, complaint, date, ZIP code and more. More information about the dataset is in the _Consumer_ section of the `Data.gov` website.
 
 The `[%_PREFIX_%]FinancialProtection.consumer_complaints` dataset has 1,273,782 rows, each representing a unique consumer complaint, and 18 columns, representing the following features:
 
@@ -211,7 +211,7 @@ Through this notebook, we saw the power and simplicity of running queries in the
 
 You can continue to explore Vantage to extract more insights and find answers to other questions by using the preloaded dataset. Here are some suggestions:
 
-- **What are the most common types of complaints?** By grouping the `product` category, we can arrive at this answer. How does this change over time?
-- **How are customers submitting their complaints?** The column `submitted_via` can also be grouped to answer for this question.
+- **What are the most common types of complaints?** Group the `product` category to arrive at this answer. How does this change over time?
+- **How are customers submitting their complaints?** To answer this, group the `submitted_via` column. 
 - **What proportion of the customer complaints are disputed?** By aggregating counts of `customer_disputed` we can answer this question.
 - **Is there seasonality in the data? What is the reason for the seasonality?** If we subtract the trend from the series we can analyze the seasonality in the dataset. Are most of the complaints filed during the week or on the weekends?
