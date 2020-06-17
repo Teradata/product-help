@@ -26,5 +26,9 @@
   {
     "title": "Deep History",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/SalesOffload/README.md"
+  },
+  {
+    "title": "External Object Store",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/ExternalObjectStore/README.md"
   }
 ]
