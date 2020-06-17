@@ -19,4 +19,8 @@
     "title": "Knee Replacement",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/KneeReplacement/README.md"
   }
+  {
+    "title": "Manufacturing Defect Analysis",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/ManufacturingDefects/README.md"
+  }
 ]
