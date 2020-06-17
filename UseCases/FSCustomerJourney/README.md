@@ -147,7 +147,7 @@ For the digital channels - overall we can see that the homepage ads did the best
 
 Using a BI tool we can take this analysis to another level:
 
-![image.png](attachment:image.png)
+![png](AttributionDashboard.png)
 
 Now we can see the promotions and their success across the various channels. We can see an interesting insight that the MoneySupermarket promotion and the Gold Card Promotion II were our most effective promotions. It is interesting to compare Gold Card II to the first Gold Card Promotion. Looking down at our channels we can see that the first Gold Card promotion was only run over email and the Gold Card Promotion II was run on multiple channels and it was a lot more effective for the same exact product. 
 
@@ -203,11 +203,11 @@ SELECT * FROM nPath (
 
 A visualization of this gives us lots of insight into the most common paths that users are taking when opening Wealth Management accounts:
 
-![image.png](attachment:image.png)
+![png](AdoptionPaths.png)
 
 We can filter it down to the most popular paths:
 
-![image.png](attachment:image.png)
+![png](AdoptionPathsFiltered.png)
 
 Now that we have a better view of what is happening let’s look at the main drivers in each case. 
   
