@@ -10,17 +10,21 @@
   {
     "title": "Time Series - Consumer Complaints",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/TimeSeriesAnalysis/README.md"
-  }
+  },
   {
     "title": "Financial Services Customer Journey",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/FSCustomerJourney/README.md"
-  }
+  },
   {
     "title": "Knee Replacement",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/KneeReplacement/README.md"
-  }
+  },
   {
     "title": "Manufacturing Defect Analysis",
     "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/ManufacturingDefects/README.md"
+  },
+  {
+    "title": "Deep History",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/SalesOffload/README.md"
   }
 ]
