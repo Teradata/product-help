@@ -13,6 +13,10 @@
   }
   {
     "title": "Financial Services Customer Journey",
-    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/FSCustomer`Journey/README.md"
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/FSCustomerJourney/README.md"
+  }
+  {
+    "title": "Knee Replacement",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/KneeReplacement/README.md"
   }
 ]
