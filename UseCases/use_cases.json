@@ -1,14 +1,18 @@
 [
   {
-    "title": "nPath",
-    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/npath/README.md"
+    "title": "Path Analysis",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/nPath/README.md"
   },
   {
-    "title": "Path Analysis",
-    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/path-analysis/README.md"
+    "title": "Vantage Path",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/VantagePath/README.md"
   },
   {
     "title": "Time Series - Consumer Complaints",
-    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/consumer-complaints/README.md"
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/TimeSeriesAnalysis/README.md"
+  }
+  {
+    "title": "Financial Services Customer Journey",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases/FSCustomer`Journey/README.md"
   }
 ]
