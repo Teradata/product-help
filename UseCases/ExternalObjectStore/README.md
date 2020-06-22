@@ -1,17 +1,16 @@
 ## Querying Data on External Object Storage
 
-
 ### Introduction
 
-The following examples show how to access different formats of data stored in an Amazon S3 bucket. We will be using a sample river flow data set from the U.S Geological Survey. Copy and modify the example queries below to access your own datasets.
+The following is a summary of how to access different formats of data stored in an external object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
 
-You can use the same SQL to access your own external object store. Simply replace the following:
-* __LOCATION__ - Replace with the location of your object store. The location must begin with /s3 (Amazon) or /az (Azure).
-* __USER__ or __ACCESS_ID__ - Replace with the user name for your external object store.
-* __PASSWORD__ or __ACCESS_KEY__ - Replace with the password of the user on your external object store.
+You can use similar SQL to access your own external object store. Simply replace the following:
+* __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon) or /az/ (Azure).
+* __USER__ or __ACCESS_ID__ - Add the user name for your external object store.
+* __PASSWORD__ or __ACCESS_KEY__ - Add the password of the user on your external object store.
+* Uncomment the EXTERNAL SECURITY clause as necessary
 
-Your external object store must be configured to allow access.
-When you configure external storage, you set the credentials that are used in SQL statements by . The supported credentials for USER and PASSWORD (used in the CREATE AUTHORIZATION command) and ACCESS_ID and ACCESS_KEY (used in the READ_NOS command) correspond to the values shown in the following table:
+When modifying to access your data - your external object store must be configured to allow access from the Vantage environment. Provide your credentials in USER and PASSWORD (used in the CREATE AUTHORIZATION command) and ACCESS_ID and ACCESS_KEY (used in the READ_NOS command).
 
 ### Accessing External Object Storage
 
@@ -21,6 +20,7 @@ There are two ways to read data from an external object store:
 
 READ_NOS allows you to do the following:
 * Perform an ad hoc query on data that is in CSV and JSON formats with the data in-place on an external object store
+* Examine the schema of PARQUET formatted data
 * Bypass creating a foreign table in the database
 
 #### Foreign Tables
@@ -31,40 +31,48 @@ Using a foreign table in gives you the ability to:
 * Join external data to data stored in the database
 * Filter the data
 * Use views to simplify how the data appears to your users
-Data read through a foreign server is not automatically stored on disk and the data can only be seen by that query. Data can be loaded into the database by accessing a foreign table in the CREATE TABLE AS ...WITH DATA command.can use Vantage and the structured and semi-structured data that we capture in the manufacturing process order to isolate and address this issue.
 
-### Accessing CSV Data Stored on Amazon S3 with READ_NOS
+Data read through a foreign server is not automatically stored on disk and the data can only be seen by that query. 
 
-```sql
-SELECT TOP 2 payload..* FROM READ_NOS(
-ON ( SELECT CAST( NULL AS DATASET STORAGE FORMAT CSV ) ) USING
-LOCATION('/s3/s3.amazonaws.com/td-usgs/CSVDATA/')
-ACCESS_ID ( 'AKIAXOX5JIKEOTFWW4UL' )
-ACCESS_KEY ( 'HD9ld0x9nGaU2M8c2OnzINsn4Xjp7vt+RIAJJCIO' ) ) AS D
-```
+Data can be loaded into the database by selecting from READ_NOS or a Foreign Table in a CREATE TABLE AS ... WITH DATA statement. 
 
+### When accessing your own data
 
-### Accessing CSV Data Stored on Amazon S3 with CREATE FOREIGN TABLE
-
-Create an authorization object to contain the credentials to the external object store:
+Create an authorization object to contain the credentials to your external object store, and uncomment the EXTERNAL SECURITY clauses in the statements below to use.
 
 
 ```sql
 CREATE AUTHORIZATION InvAuth
 AS INVOKER TRUSTED
-USER 'AKIAXOX5JIKEOTFWW4UL'
-PASSWORD 'HD9ld0x9nGaU2M8c2OnzINsn4Xjp7vt+RIAJJCIO';
+USER 'ACCESS_KEY_ID'
+PASSWORD 'SECRET_ACCESS_KEY';
 ```
+
+### Accessing CSV Data Stored on Amazon S3 with READ_NOS
+
+Select data from external object store using READ_NOS:
+
+
+```sql
+SELECT TOP 2 payload..* FROM READ_NOS(
+ON ( SELECT CAST( NULL AS DATASET STORAGE FORMAT CSV ) ) USING
+LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/')
+--ACCESS_ID ( 'ACCESS_KEY_ID' )
+--ACCESS_KEY ( 'SECRET_ACCESS_KEY' ) 
+) AS D;
+```
+
+### Accessing CSV Data Stored on Amazon S3 with CREATE FOREIGN TABLE
 
 Create a foreign table:
 
 
 ```sql
-CREATE FOREIGN TABLE riverflow_csv
-, EXTERNAL SECURITY INVOKER TRUSTED InvAuth
+CREATE FOREIGN TABLE sample_csv
+--, EXTERNAL SECURITY INVOKER TRUSTED InvAuth
 ( Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC, Payload DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV
 )
-USING (LOCATION('/s3/s3.amazonaws.com/td-usgs/CSVDATA/'));
+USING (LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'));
 ```
 
 View some data using the foreign table:
@@ -72,7 +80,55 @@ View some data using the foreign table:
 
 ```sql
 SELECT TOP 2 payload
-FROM riverflow_csv;
+FROM sample_csv;
+```
+
+### Import data into Vantage from CSV data stored on Amazon S3
+
+To persist the data from an external object store we can use a CREATE TABLE AS statement as follows:
+
+First we need a schema to apply to the data:
+
+
+```sql
+CREATE CSV SCHEMA sample_csv_schema AS
+'{"field_delimiter":",","field_names":["date", "time", "epoch", "moteid", "temperature", "humidity", "light", "voltage"]}';
+```
+
+Create a foreign table that uses that schema:
+
+
+```sql
+CREATE FOREIGN TABLE sample_csv_ft
+( Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC, 
+  Payload DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV WITH SCHEMA sample_csv_schema
+)
+USING (LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/data.csv'));
+```
+
+Create a view that splits out the CSV into individual columns:
+
+
+```sql
+REPLACE VIEW sample_csv_view
+  AS 
+    (SELECT
+      CAST(payload.."date" AS DATE FORMAT 'YYYY-MM-DD') sensdate,
+      CAST(payload.."time" AS TIME(6) FORMAT 'HH:MI:SSDS(F)') senstime,
+      CAST(payload..epoch AS INTEGER) epoch,
+      CAST(payload..moteid AS INTEGER) moteid,
+      CAST(payload..temperature AS FLOAT) ( FORMAT '-ZZZ9.99') temperature,
+      CAST(payload..humidity AS FLOAT) ( FORMAT '-ZZZ9.99') humidity,
+      CAST(payload..light AS FLOAT) ( FORMAT '-ZZZ9.99') light,
+      CAST(payload..voltage AS FLOAT) ( FORMAT '-ZZZ9.99') voltage,
+      CAST(payload.."date" || ' ' || payload.."time" AS TIMESTAMP FORMAT 'YYYY-MM-DDBHH:MI:SSDS(F)') sensdatetime
+  FROM sample_csv_ft);
+```
+
+
+```sql
+SELECT TOP 2 *
+FROM sample_csv_view;
 ```
 
 ### Accessing JSON Data Stored on Amazon S3 with READ_NOS
@@ -84,11 +140,11 @@ Select data from external object store using READ_NOS:
 SELECT TOP 2 payload.* FROM READ_NOS (
 ON ( SELECT CAST( NULL AS JSON ) )
 USING
-LOCATION ('/S3/s3.amazonaws.com/td-usgs/JSONDATA/')
-ACCESS_ID ( 'AKIAXOX5JIKEOTFWW4UL' )
-ACCESS_KEY ( 'HD9ld0x9nGaU2M8c2OnzINsn4Xjp7vt+RIAJJCIO' ) ) AS D
+LOCATION ('/S3/s3.amazonaws.com/trial-datasets/EVCarBattery/')
+--ACCESS_ID ( 'ACCESS_KEY_ID' )
+--ACCESS_KEY ( 'SECRET_ACCESS_KEY' ) 
+) AS D
 ```
-
 
 ### Accessing JSON Data Stored on Amazon S3 with CREATE FOREIGN TABLE
 
@@ -96,22 +152,20 @@ Create a foreign table:
 
 
 ```sql
-CREATE FOREIGN TABLE riverflow_json
-, EXTERNAL SECURITY INVOKER TRUSTED InvAuth
+CREATE FOREIGN TABLE sample_json
+--, EXTERNAL SECURITY INVOKER TRUSTED InvAuth
 (
 LOCATION VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC , Payload JSON INLINE LENGTH 32000 CHARACTER SET UNICODE )
 USING(
-LOCATION('/S3/s3.amazonaws.com/td-usgs/JSONDATA/') )
+LOCATION('/S3/s3.amazonaws.com/trial-datasets/EVCarBattery/') )
 ```
-
 
 View some data using the foreign table:
 
 
 ```sql
-SELECT TOP 2 * FROM riverflow_json
+SELECT TOP 2 * FROM sample_json
 ```
-
 
 ### Exploring Parquet Data Stored on Amazon S3 with READ_NOS
 
@@ -123,13 +177,13 @@ SELECT location(char(255)), ObjectLength
 FROM read_nos (
 ON (select cast(NULL AS DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV))
 USING 
- LOCATION  ('/S3/s3.amazonaws.com/td-usgs/PARQUETDATA/')
+ LOCATION  ('/S3/s3.amazonaws.com/trial-datasets/SalesOffload/')
  RETURNTYPE ('NOSREAD_KEYS')
- ACCESS_ID ( 'AKIAXOX5JIKEOTFWW4UL' )
- ACCESS_KEY ( 'HD9ld0x9nGaU2M8c2OnzINsn4Xjp7vt+RIAJJCIO' ) ) AS D
+ --ACCESS_ID ( 'ACCESS_KEY_ID' )
+ --ACCESS_KEY ( 'SECRET_ACCESS_KEY' ) 
+) AS D
 ORDER BY 1
 ```
-
 
 See what the schema of the data is (specify one file - assuming all files in the bucket are formatted the same):
 
@@ -137,11 +191,12 @@ See what the schema of the data is (specify one file - assuming all files in the
 ```sql
 SELECT * FROM READ_NOS (
       USING
-      LOCATION  ('/S3/s3.amazonaws.com/td-usgs/PARQUETDATA/09394500/2018/06/27.parquet')
+      LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet')
       RETURNTYPE ('NOSREAD_PARQUET_SCHEMA')
       FULLSCAN ('TRUE')
-      ACCESS_ID ( 'AKIAXOX5JIKEOTFWW4UL' )
-      ACCESS_KEY ( 'HD9ld0x9nGaU2M8c2OnzINsn4Xjp7vt+RIAJJCIO' ) ) AS D
+      --ACCESS_ID ( 'ACCESS_KEY_ID' )
+      --ACCESS_KEY ( 'SECRET_ACCESS_KEY' ) 
+) AS D
 ```
 
 ### Accessing Parquet Data Stored on Amazon S3 with CREATE FOREIGN TABLE
@@ -150,30 +205,33 @@ Create a foreign table:
 
 
 ```sql
-CREATE FOREIGN TABLE riverflow_parquet
-, EXTERNAL SECURITY INVOKER TRUSTED InvAuth
+CREATE FOREIGN TABLE sample_parquet
+--, EXTERNAL SECURITY INVOKER TRUSTED InvAuth
 (
-Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC
-, GageHeight2 DOUBLE PRECISION FORMAT '-ZZZ9.99'
-, Flow DOUBLE PRECISION FORMAT '-ZZZZ9.99'
-, site_no BIGINT
-, datetime VARCHAR(16) CHARACTER SET UNICODE CASESPECIFIC
-, Precipitation DOUBLE PRECISION FORMAT '-ZZZ9.99'
-, GageHeight DOUBLE PRECISION FORMAT '-ZZZ9.99'
+Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
+TheYear INTEGER,
+TheMonth INTEGER,
+sales_date DATE FORMAT 'YY/MM/DD',
+customer_id INTEGER,
+store_id INTEGER,
+basket_id INTEGER,
+product_id INTEGER,
+sales_quantity INTEGER,
+discount_amount FLOAT FORMAT '-ZZZ9.99'
 )
 USING (
-LOCATION ('/S3/s3.amazonaws.com/td-usgs/PARQUETDATA/') STOREDAS ('PARQUET')
-) NO PRIMARY INDEX
-, PARTITION BY COLUMN 
+LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
+STOREDAS  ('PARQUET'))
+NO PRIMARY INDEX
+PARTITION BY COLUMN
 ```
 
 View some data using the foreign table:
 
 
 ```sql
-SELECT TOP 2 * FROM riverflow_parquet
+SELECT TOP 2 * FROM sample_parquet
 ```
-
 
 ### Clean-up
 
@@ -181,17 +239,29 @@ Drop the objects we created in our own database schema.
 
 
 ```sql
-DROP AUTHORIZATION InvAuth
+DROP AUTHORIZATION InvAuth;
 ```
 
 ```sql
-DROP TABLE riverflow_csv
+DROP TABLE sample_csv;
 ```
 
 ```sql
-DROP TABLE riverflow_json
+DROP VIEW sample_csv_view;
 ```
 
 ```sql
-DROP TABLE riverflow_parquet
+DROP TABLE sample_csv_ft;
+```
+
+```sql
+DROP CSV SCHEMA sample_csv_schema;
+```
+
+```sql
+DROP TABLE sample_json;
+```
+
+```sql
+DROP TABLE sample_parquet;
 ```
