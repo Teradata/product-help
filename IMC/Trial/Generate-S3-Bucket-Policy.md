@@ -1,10 +1,10 @@
 ### Generate S3 Bucket Policy
 
-Your Cloud admin may enforce stricter policies on your S3 bucket requests originating from external sources. Therefore, granting access to the S3 bucket may require an additional policy.
+Your Cloud admin may enforce stricter policies on your S3 bucket requests originating from external sources. Therefore, granting access to the S3 bucket may require an additional policy snippet.
 
 Click **Register Storage** to use an existing S3 bucket in your account.  Enter the URI of the existing bucket, and click Submit to generate the S3 bucket policy.
 
-Click **Copy Policy** to copy an existing policy to the clipboard to edit.
+Click **Copy Policy** to copy an existing S3 bucket policy to the clipboard to edit.
 
 Click **Test Connection** to confirm the read and write permissions work.
 

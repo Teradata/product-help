@@ -8,6 +8,8 @@ Site Admins and Super Site Admins can open tickets for three reasons:
 
 Tickets you create in the Console are no different than those you create in the Service Portal. The Console just provides a streamlined way to manage them.
 
+Trial Users: You can only create tickets through this pane. You don't have access to the Service Portal.
+
 #### Reporting a Problem or Incident
 
 1. On the **Tickets** screen, select **Create Ticket**.
