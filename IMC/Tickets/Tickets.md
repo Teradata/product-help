@@ -16,7 +16,7 @@ Trial Users: You can only create tickets through this pane. You don't have acces
 1. At **Request Type**, select **Report a Problem/Open an Incident**.
 1. At **Impact**, select:
 
-     - **Critical** for S1 incidents, where a production system is down or degraded and needs immediate attention. Critical tickets require Teradata to contact you immediately. If you're not available, Teradata downgrades the incident.
+     - **Critical** for S1 incidents, where a production system is down or degraded and needs immediate attention. Critical tickets require Teradata to contact you immediately. If you're not available, Teradata downgrades the incident. If you submit an S1 incident, Teradata contacts appropriate escalation personnel. If they aren't available, Teradata changes the incident to S2.
       
      - **Significant** when a production system is operational but a problem is causing a severe impact. Also select this when a non-production system is down.
      - **Minor** for all other incidents. 

@@ -1,6 +1,6 @@
 ### Edit Job
 
-Use this to edit the details of a backup job.
+With the right privileges, use this to edit the details of a backup job.
 
 #### Job Priority
 
