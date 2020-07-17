@@ -79,7 +79,7 @@ View some data using the foreign table:
 
 
 ```sql
-SELECT TOP 2 CAST(payload AS VARCHAR(64000))
+SELECT TOP 2 payload
 FROM sample_csv;
 ```
 
