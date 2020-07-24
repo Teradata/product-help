@@ -1,5 +1,7 @@
 ### User Roles
 
+Use this to edit Console users and their roles. This does not affect Vantage users.
+
 
 - [User Access Levels](#user-access-levels)
 - [Creating a User](#creating-a-user)
