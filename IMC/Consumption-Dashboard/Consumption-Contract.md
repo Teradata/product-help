@@ -1,4 +1,4 @@
-### Consumption - Contract
+### Consumption for Contract
 
 Displays contract details, including 
 

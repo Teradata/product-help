@@ -1,4 +1,4 @@
-### Vantage Units
+### Vantage Units Consumption
 
 Vantage Units reflect all compute resources used to run queries and functions, measured to the millisecond and collected hourly. They don't include queries and functions that:
 - Monitor the system

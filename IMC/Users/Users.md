@@ -1,7 +1,10 @@
 ### User Roles
 
+Use this to edit Console users and their roles. This does not affect Vantage users.
+
 
 - [User Access Levels](#user-access-levels)
+- [Creating a User](#creating-a-user)
 - [Changing your User Role](#changing-your-user-role)
 - [Requesting Access to a User Role](#requesting-access-to-a-user-role)
 
@@ -18,7 +21,11 @@ Your user role is set automatically according to your account type in the Servic
 | Support Contact (default) | Read-Only Site Admin (default) | Read-only |
  * Includes full user management permissions 
 
+#### Creating a User
 
+With the proper user role, you can add users by clicking **Add User** and completing the fields.
+
+Trial Users: You can add up to 10 users in your Trial site.
 
 #### Changing your User Role
 
@@ -26,12 +33,15 @@ You can change your user role to any other role you have permissions for.
 
 1. Select the main menu > **Change** and select a role from the list.
 
-If the role you need doesn't appear, request access to it in the Service Portal.
+If the role you need doesn't appear, request access to it through **Tickets**.
 
 
 #### Requesting Access to a User Role
 
-If you need additional permissions, request a new role in the Service Portal.
+Use the Console's **Tickets** pane to request access for yourself or another user.
+
+You can also use the Service Portal:
+
 1. Log in to the Service Portal at
 [https://support.teradatacloud.com](https://support.teradatacloud.com).
 2. Select **Access Request**, then **Request Access to Service**.
@@ -40,3 +50,5 @@ If you need additional permissions, request a new role in the Service Portal.
 5. Enter the reason you need access, then submit the request.
 
 Once the Site Access Manager approves the request, it is assigned to you in the Console.
+
+Trial Users: You must use the Console's **Tickets** pane.

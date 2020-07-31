@@ -4,4 +4,7 @@ A TCore is a metric used to price Teradata Vantage software. TCores are CPU core
 
 TCore-Hours is a metric that represents the availability of TCores on the underlying infrastructure, by the hour.
 
-In Trial, Teradata provides free credits in the form of a block of TCore-Hours. Teradata uses this metric to provide you with a limited capacity during the trial. The rate of draw depends on the number, type, and TCore ratings of provisioned instances. When your TCore-Hours end your trial is over even if the number of calendar days is not exhausted.
+In Trial, Teradata provides free credits in the form of a block of TCore-Hours. Teradata uses this metric to provide you with a limited capacity during the trial. The rate of draw depends on the number, type, and TCore ratings of provisioned instances. When your TCore-Hours end your trial is over even if the number of calendar days is not exhausted. 
+
+For more information, see the 
+[TCore FAQ](https://tcore-hours-calculator.intellicloud.teradata.com/#/faqs)
