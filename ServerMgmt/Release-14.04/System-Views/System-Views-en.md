@@ -1,11 +1,9 @@
 ### System Views
 
-Tailor your view by selecting a System, VM Host, or CMIC, then selecting cabinets.
+Tailor your view by selecting an option, then selecting cabinets.
 
 Click 
-![kebob.png](kebob.png) to connect, start, stop, or reset the component, depending on the chassis type.
-
-You can connnect (SSH or BMC), power off, power on, or reset, depending on the chassis type.
+![kebob-15px.svg](kebob-15px.svg) to connect, start, stop, or reset the component, depending on the chassis type.
 
  
 ![ok.png](ok.png) - Operating normally.
