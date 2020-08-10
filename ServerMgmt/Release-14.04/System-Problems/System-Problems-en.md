@@ -8,10 +8,17 @@ The CMIC collects events for the components it manages, then correlates them wit
 
 **Summary Alerts/System Problem** - A group of alerts that all occur during a system incident. Close system problems once the problem conditions are resolved
 
-Use the buttons to connect to the chassis, view details, or clear the system problem.
 
+Use the buttons to the right to:
 
-![Paperclip](paperclip.png) means the alert has auto-generated support data.
+![cov-icn-ssh-con_video-15px.svg](cov-icn-ssh-con_video-15px.svg) connect to the chassis and enter your credentials. Private keys are required for public cloud deployments.
 
+![cov-icn-more_3dots-horiz-15px.svg](cov-icn-more_3dots-horiz-15px.svg) view details of the system problem, get support data, and add a comment.
 
-![Comment Box](comment.png) indicates someone has commented on the alert.
+(icon) clear the system problem.
+
+If icons appear next to the title of the alert, select them to:
+
+(paperclip icon) view auto-generated support data.
+
+(comment icon) view the comments.
