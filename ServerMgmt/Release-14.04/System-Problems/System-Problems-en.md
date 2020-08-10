@@ -15,10 +15,13 @@ Use the buttons to the right to:
 
 ![cov-icn-more_3dots-horiz-15px.svg](cov-icn-more_3dots-horiz-15px.svg) view details of the system problem, get support data, and add a comment.
 
-(icon) clear the system problem.
+
+![cov-icn_delete_trashcan-15px.svg](cov-icn_delete_trashcan-15px.svg) clear the system problem.
 
 If icons appear next to the title of the alert, select them to:
 
-(paperclip icon) view auto-generated support data.
 
-(comment icon) view the comments.
+![cov-icn_attachment_paperclip-horiz-15px.svg](cov-icn_attachment_paperclip-horiz-15px.svg) view auto-generated support data.
+
+
+![cov-icn_chat_comment-15px.svg](cov-icn_chat_comment-15px.svg) view the comments.
