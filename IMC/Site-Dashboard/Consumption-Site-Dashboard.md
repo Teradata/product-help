@@ -6,6 +6,6 @@
 - Measure system performance or consumption
 - Don't return a result due to a system error or failure
 
-**Terabyte Hours Consumed** is the number of hours of uncompressed data consumed. It's updated weekly.
+**Terabyte Hours Consumed** is the number of hours of uncompressed data consumed. It's updated weekly, beginning on the first of the month..
 
 Select **Consumption Dashboard** for more detail, including consumption by department.
