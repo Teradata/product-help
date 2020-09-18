@@ -1,3 +1,0 @@
-### Viewpointの構成
-
-最大5つのViewpointサーバーを定義してアラートを受信し、Teradata アラート ビューで表示できるようにし、Viewpointの共通アラート サービスを通じて通知をトリガーします。 Server Managementドメイン内でViewpointサーバーを使用すると、CMICフェールオーバーの場合にすべてのCMICがサーバーに平等にアクセスできます。
