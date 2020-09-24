@@ -1,16 +1,8 @@
-### Customer Data Space (CDS)
+### Terabytes Consumed
 
-Indicates the number of terabytes of storage your system is using. It's updated weekly.
-
-CDS includes space used for:
-- User-defined tables
-- Primary, secondary, and join and hash indexes
-
-It doesn't include:
-- Spool
-- Teradata system generated databases (systemfe, syslib, and dbc)
+Indicates the total amount of storage consumed. It's updated weekly.
 
 Select 
 ![cov-icn-export.png](cov-icn-export.png) to export the data to .csv format.
 
-Select **CDS Details** to filter the time period and date range.
+Select **View** to filter the time period and date range.
