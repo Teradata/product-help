@@ -1,5 +1,5 @@
-### Support Tickets
+### Support Incidents
 
-Lists the five highest severity tickets most recently submitted. Select a ticket to view its details and post comments.
+Lists the five highest severity incidents most recently submitted. Select an incident to view its details and post comments.
 
-Select **View All** to display all tickets.
+Select **View All** to display all incidents.

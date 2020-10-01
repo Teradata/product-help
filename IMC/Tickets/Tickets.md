@@ -1,18 +1,18 @@
-### Tickets
+### Incidents
 
-Site Admins and Super Site Admins can open tickets for three reasons: 
+Site Admins and Super Site Admins can open incidents for three reasons: 
 
 - [Report a problem or incident](#reporting-a-problem-or-incident) 
 - [Request a change](#requesting-a-change)
 - [Submit a question](#submitting-a-question)
 
-Tickets you create in the Console are no different than those you create in the Service Portal. The Console just provides a streamlined way to manage them.
+Incidents you create in the Console are no different from those you create in the Service Portal. The Console just provides a streamlined way to manage them.
 
-Trial Users: You can only create tickets through this pane. You don't have access to the Service Portal.
+Vantage Trial Users: You should only create incidents through this pane; do not use the Service Portal.
 
 #### Reporting a Problem or Incident
 
-1. On the **Tickets** screen, select **Create Ticket**.
+1. On the **Incident** screen, select **Create Incident**.
 1. At **Request Type**, select **Report a Problem/Open an Incident**.
 1. At **Impact**, select:
 
@@ -22,19 +22,19 @@ Trial Users: You can only create tickets through this pane. You don't have acces
      - **Minor** for all other incidents. 
 1. At **Urgency**, select how quickly the problem must be resolved: immediately, next business day, or within a few days. Teradata considers both Urgency and Impact to address your issue appropriately.  
 1. Select the **Database Site Impacted**, then tell us what's wrong. 
-1. Submit the ticket. 
+1. Submit the incident. 
 
 #### Requesting a Change
 
-1. On the **Tickets** screen, select **Create Ticket**.
+1. On the **Incidents** screen, select **Create Incident**.
 1. At **Request Type**, select **Request a Change**.
 1. Select a **Priority** based on how much your business needs this change.
 1. Describe the change you want. Be as specific as possible.
-1. Submit the ticket.
+1. Submit the incident.
 
 #### Submitting a Question
 
-1. On the **Tickets** screen, select **Create Ticket**.
+1. On the **Incidents** screen, select **Create Incident**.
 1. At **Request Type**, select **Ask a Question**.
-1. Tell us what's on your mind. Remember, Teradata treats questions as S4 severity and you may not hear back for several days or longer.
+1. Tell us what's on your mind. Remember, Teradata treats questions as S4 severity so you may not hear back for several days or longer.
 

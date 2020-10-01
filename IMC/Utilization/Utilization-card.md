@@ -1,4 +1,4 @@
-### CPU Utilization
+### Utilization
 
 Displays the percentage of CPU and storage used across all Advanced SQL Engine nodes.
 
