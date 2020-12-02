@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Path Analysis",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/nPath/README.md"
+  },
+  {
+    "title": "Vantage Path",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/VantagePath/README.md"
+  },
+  {
+    "title": "Time Series - Consumer Complaints",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/TimeSeriesAnalysis/README.md"
+  },
+  {
+    "title": "Financial Services Customer Journey",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/FSCustomerJourney/README.md"
+  },
+  {
+    "title": "Knee Replacement",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/KneeReplacement/README.md"
+  },
+  {
+    "title": "Manufacturing Defect Analysis",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/ManufacturingDefects/README.md"
+  },
+  {
+    "title": "Deep History",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/SalesOffload/README.md"
+  },
+  {
+    "title": "External Object Store",
+    "url": "https://raw.githubusercontent.com/Teradata/product-help/master/UseCases-LIVE/ExternalObjectStore/README.md"
+  }
+]

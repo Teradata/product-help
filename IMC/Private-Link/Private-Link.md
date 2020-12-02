@@ -17,7 +17,7 @@ and Teradata Viewpoint (ports 80 and 443) from the VPC CIDR.
 1. Select **Verify**. If the PrivateLink Service Endpoint is active, the message **Service name found** appears.
 1. Select the VPC, subnet, and security group you’ll use to connect.
 1. Select **Create Endpoin**t.
-1. If the status shows pending, log a support ticket.
+1. If the status shows pending, log a support incident.
 1. After the status shows available, use telnet to validate connectivity between your VPC and the
 Vantage site for each port number using the format *telnet DNSName PortNumber*.
 

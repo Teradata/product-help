@@ -1,11 +1,9 @@
 ### Create New Snapshot
 
+Caution: Do not perform ETL operations while creating a snapshot to maintain data integrity and avoid extended recovery times.
+
 To create a snapshot:
 
-1. Stop the database.
 1. Name your new snapshot.
-1. Check the box to indicate the database is shut down.
-1. Check the box to acknowledge the target system will be unavailable during the snapshot process.
+1. Check the box to acknowledge the target system will be unavailable during the snapshot process. The database pauses and resumes automatically during the snapshot operation.
 1. Click **Create Snapshot**.
-
-Caution: Snapshots interfere with any backup or other ETL operations that are running or scheduled to occur while the snapshot is in progress.
