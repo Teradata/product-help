@@ -1,3 +1,3 @@
-### Add Remote Access Device
+### Add Remote Device
 
-At Model, use the default device name if possible. Otherwise, make sure the name starts with the SiteID and describes the connection endpoint or device model.
+At Model, use the default device name, if possible. Otherwise, make sure the name starts with the SiteID and describes the connection endpoint or device model.
