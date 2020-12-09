@@ -10,6 +10,6 @@ Remote authentication is a user service (RADIUS) networking protocol, operating 
 
 **Request Retries** - 0 to 10.
 
-**Request Timeout** - Type the number of seconds for the Agent to wait before the RADIUS server responds and the Agent retries the request.
+**Request Timeout** - The number of seconds for the Agent to wait before the RADIUS server responds and the Agent retries the request.
 
-**Shared Secret** - Type the shared secret that the RADIUS server uses to validate the Agent requesting the remote session.
+**Shared Secret** - The shared secret that the RADIUS server uses to validate the Agent requesting the remote session.
