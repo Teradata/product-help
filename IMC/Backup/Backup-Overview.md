@@ -1,7 +1,11 @@
-### Backup Overview
+### Overview
 
-Use the options on this page to access the Settings, Schedule, and History of a backup job.
+Here you can review and edit backup job settings and schedule, and run or abort a backup job.  
 
-The action card allows you to either run or abort a job.
+Select **Edit** to change backup job settings.
 
-Use the drop-down at the top to view a different backup job.
+Select **View Schedules** to add or modify backup schedule information.
+
+Select **????** to abort a running job.
+
+Use the drop-down at the top to select a different backup job.
