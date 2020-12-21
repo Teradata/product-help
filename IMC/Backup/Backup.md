@@ -1,5 +1,5 @@
-### Recent Backups
+### Backup jobs
 
-Displays the type and status of recent backup jobs.
+These are the most recent backup jobs for the site, including type and status.
 
-Select **View All** to display more detail, change backup settings. and view backup history, activity, and errors.
+Select **View All** to see more backup jobs and details, and access options for objects, history, settings, and schedule.
