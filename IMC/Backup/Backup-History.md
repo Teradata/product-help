@@ -1,10 +1,9 @@
-### Backup History
+### History
 
-Displays the previous backup jobs that have run or failed.
+These are the previous backup jobs that have run successfully or failed.
 
-Click 
-![more_vert_kebob-15px.svg](more_vert_kebob-15px.svg) > **Mark Protected** to protect a backup job. Protected jobs are not deleted.
+Select ![more_vert_kebob-15px.svg](more_vert_kebob-15px.svg)>**View details** to display detailed information about a job, including execution time, errors, warnings, and skipped objects. Skipped objects can be excluded from future runs of the job.
 
-At least one backup must remain unprotected for subsequent runs. If you only keep two backups, and one is protected, you must confirm your choice to designate a new protected backup.
+Select ![more_vert_kebob-15px.svg](more_vert_kebob-15px.svg)>**Mark protected** to protect a backup job. Protected jobs are not deleted.
 
-For example, if you run a backup on the last day of the month, you may choose to protect that copy, and then replace the daily backup whenever it runs.
+At least one backup must remain unprotected for subsequent runs. If you keep only two backups and one is protected, you must designate a new protected backup. For example, if you run a backup on the last day of the month, you can choose to protect that copy, then replace the daily backup whenever it runs.
