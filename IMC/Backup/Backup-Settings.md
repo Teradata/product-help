@@ -1,25 +1,26 @@
-### Backup Settings
+### Settings
 
-**Job Status**
+[Job Status](#job-status)
+[Retained copies](#retained-copies)
+[Job priority](#job-priority)
+[Auto-abort](#auto-abort)
 
-Enable or disable the backup job.
+#### Job Status
 
-**Retention Count**
+Select **Enable** or **Disable** to enable or disable the backup job.
 
-The number of backup copies maintained.
+#### Retained copies
 
-Remember that adding more backups may result in additional usage charges.
+Select the number of backup copies to be maintained, between 1 and 30. Adding more backups may result in additional usage charges. If you reduce the number of retained backups, the next complete backup process deletes those excess backups. Deleted excess backups cannot be recovered.
 
-If you reduce the number of retained backups, the next complete backup process deletes those excess backups. They cannot be recovered.
+#### Job priority
 
-**Priority**
-
-When two jobs are scheduled to run at the same time, the job with the higher Priority (1 to 5, where 1 is the highest) runs. Here's how it works:
+When two jobs are scheduled to run at the same time, the job with the higher priority runs, where 1 is the highest and 5 is the lowest.  Here's how it works:
 
 - By default, every job is assigned a priority of 5.
 - If two jobs with different priorities are scheduled to run at the same time, the job with the higher priority runs; the lower-priority job does not.
-- If two jobs with the same priority are scheduled to run at the same time, they both run. 
+- If two jobs with the same priority are scheduled to run at the same time, they both run.
 
-**Auto Abort**
+#### Auto-abort
 
-Set this to automatically abort a backup job after a certain amount of time. 
+To automatically abort a backup job after a certain amount of time, select the time.
