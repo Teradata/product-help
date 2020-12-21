@@ -1,8 +1,11 @@
 ### Settings
 
 [Job Status](#job-status)
+
 [Retained copies](#retained-copies)
+
 [Job priority](#job-priority)
+
 [Auto-abort](#auto-abort)
 
 #### Job Status
