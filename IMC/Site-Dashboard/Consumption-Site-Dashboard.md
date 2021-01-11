@@ -1,6 +1,6 @@
-### Consumption Summary
+### Consumption summary
 
-**Vantage Units Consumed** reflect all compute resources used to run queries and functions, in the current month, measured in logical IO to the kilobyte granularity and collected hourly. 
+**Vantage Units consumed** reflects all compute resources used to run queries and functions in the current month, measured in logical IO to the kilobyte granularity and collected hourly. 
 
 It doesn't include queries and functions that:
 
