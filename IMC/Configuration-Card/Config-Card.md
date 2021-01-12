@@ -1,6 +1,6 @@
 
-### Configuration
+### Site details
 
-Displays information about your system configuration. 
+Review current status and configuration of your system.
 
-**Status** indicates the current system state. It shows as **Provisioning** while it's being set up and **Operational** when it's ready for use.
+Status is **Provisioning** while the system is being set up, **Operational** when ready for use.
