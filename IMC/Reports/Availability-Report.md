@@ -1,6 +1,6 @@
 ### Site availability reports
 
-Review the target SLA and actual availability for each site during the last 12 calendar months, plus the current month. Reports are available by the 10th of each month for the previous month.
+Review target SLA and actual availability for each site during the last 12 calendar months, plus the current month. Reports are available by the 10th of each month for the previous month.
 
 Select the availability percentage for the desired site and month.
 
