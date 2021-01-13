@@ -1,14 +1,19 @@
 ### PrivateLink
 
-AWS PrivateLink lets you access AWS and third-party services hosted within AWS privately and securely. Add AWS accounts to allow traffic between your Virtual Private Cloud (VPC) and your Vantage site.
+- [Overview](#overview)
+- [Set Up AWS Service Endpoint](#set-up-aws-service-endpoint)
+
+#### Overview
+
+Access AWS and third-party services hosted within AWS privately and securely. Add AWS accounts to allow traffic between your Virtual Private Cloud (VPC) and your Vantage site.
 
 After you add an account, you must set up an AWS service endpoint for it using the Amazon VPC console. Endpoints allow secure network connectivity between AWS VPCs.
 
-#### Setting Up an AWS Service Endpoint
+#### Set Up AWS Service Endpoint
 
 1. Log on to the target AWS account.
 1. Log into the 
-[Amazon VPC Management Console](https://console.aws.amazon.com/vps) then go to **Security Groups** in the **Security** section.
+[Amazon VPC Management Console](https://console.aws.amazon.com/vpc) then go to **Security Groups** in the **Security** section.
 1. Update the database security group to allow the inbound ports for the database (port 1025)
 and Teradata Viewpoint (ports 80 and 443) from the VPC CIDR.
 1. Go to **Endpoints** > **Create Endpoint**.

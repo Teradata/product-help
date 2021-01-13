@@ -1,9 +1,7 @@
 ### Snapshots
 
-Snapshots are full-system backups used for data protection. They allow you to perform a full system backup and restore data into target public cloud Teradata systems with minimal downtime.
+Get fast and full-system backups for data protection and recovery. Restore data into target public cloud Teradata systems with minimal downtime. Snapshots cannot perform object-level backups.
 
-Snapshots cannot perform object-level backups.
+Select **Manage** to create, rename, or restore snapshot copies.
 
-Click **Manage** to create, rename, or restore snapshot copies.
-
-Caution: Do not perform ETL operations while creating a snapshot to maintain data integrity and avoid extended recovery times.
+**Notice**: To maintain data integrity and avoid extended recovery times, do not perform ETL operations while creating a snapshot.
