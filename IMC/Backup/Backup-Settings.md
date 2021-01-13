@@ -1,6 +1,6 @@
 ### Settings
 
-Adding more backups may result in additional usage charges. If you reduce the number of retained backups, the next complete backup process deletes those excess backups. Deleted excess backups cannot be recovered.
+Adding more backups may result in additional usage charges. If you reduce the number of retained backups, the next complete backup process deletes those excess backups. Deleted backups cannot be recovered.
 
 #### Job priority
 
