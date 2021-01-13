@@ -14,6 +14,6 @@ Select ![more_vert_kebob-15px.svg](more_vert_kebob-15px.svg), then any of the fo
 
 You must submit an incident to:
 
-- Enable auto-restart to rerun failed backups
-- Receive weekly email backup reports
-- Restore from a backup
+- Enable auto-restart to rerun failed backups.
+- Receive weekly email backup reports.
+- Restore from a backup.
