@@ -2,7 +2,7 @@
 
 Retained snapshot copies result in recurring storage costs. 
 
-Review the existing snapshots that you can rename, restore, or delete. 
+Review existing snapshots that you can rename, restore, or delete. 
 
 Select 
 ![Kebob](more_vert_kebob-15px.svg), then one of the following: 
