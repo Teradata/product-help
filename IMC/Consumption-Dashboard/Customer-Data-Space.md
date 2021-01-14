@@ -1,6 +1,6 @@
 ### Terabytes Consumed
 
-Review the total amount of storage consumed. It's updated weekly.
+Review the total amount of backup storage consumed. It's updated weekly.
 
 Select 
 ![cov-icn-export.png](cov-icn-export.png) to export the data in .csv format.
