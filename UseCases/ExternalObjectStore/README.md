@@ -255,7 +255,8 @@ Before running the following examples, replace the following fields in the examp
 ### Example 1 
 This first example will select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
 
-```SELECT * FROM WRITE_NOS (
+```sql
+SELECT * FROM WRITE_NOS (
     ON ( SELECT * FROM sample_csv_local )
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample1/')
@@ -268,7 +269,8 @@ This first example will select all rows in local sample_csv_local to copy the da
 
 This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
-```SELECT * FROM WRITE_NOS (
+```sql
+SELECT * FROM WRITE_NOS (
     ON ( SELECT
             sensdate
             ,senstime
