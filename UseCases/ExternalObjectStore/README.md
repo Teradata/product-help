@@ -233,6 +233,71 @@ View some data using the foreign table:
 SELECT TOP 2 * FROM sample_parquet
 ```
 
+# Writing Data to an External Object Store
+    
+## Introduction
+
+The following is a summary of how to copy data from Vantage to an external object store. You must provide your own bucket to execute the example queries below."
+
+## WRITE_NOS
+
+WRITE_NOS allows you to do the following:
+* Copy / write data directly to an object store
+* Convert the data in uncompressed Parquet format unless Snappy compression is specified by the user
+* Specify one or more columns in the source table as partition attributes in the target object store
+* Create and update of manifest files with all objects created during the copy process
+
+Before running the following examples, replace the following fields in the example scripts:
+* *YourBucketName* : with the name of your bucket
+* *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
+* *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+
+### Example 1 
+This first example will select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
+
+```sql
+SELECT * FROM WRITE_NOS (
+    ON ( SELECT * FROM sample_csv_local )
+    USING
+        LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample1/')
+        AUTHORIZATION ('{\"Access_ID\":\"AccessID\",\"Access_Key\":\"AccessKey\"}')
+        STOREDAS ('PARQUET')
+) AS d;
+```
+
+### Example 2 
+
+This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
+
+```sql
+SELECT * FROM WRITE_NOS (
+    ON ( SELECT
+            sensdate
+            ,senstime
+            ,epoch
+            ,moteid
+            ,temperature
+            ,humidity
+            ,light
+            ,voltage
+            ,sensdatetime
+            ,year(sensdate) TheYear
+         FROM sample_csv_local )
+    PARTITION BY TheYear ORDER BY TheYear
+    USING
+        LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample2/')
+        AUTHORIZATION ('{\"Access_ID\":\"AccessID\",\"Access_Key\":\"AccessKey\"}')
+        NAMING ('DISCRETE')
+        INCLUDE_ORDERING ('FALSE')
+        STOREDAS ('PARQUET')
+ AS d;
+```
+
+### Validate your WRITE_NOS results
+
+You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentails and then creating a foreign table for accessing Parquet data as described in the examples in the above section. 
+
+
 ### Clean-up
 
 Drop the objects we created in our own database schema.
