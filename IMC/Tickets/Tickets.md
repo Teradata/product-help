@@ -25,7 +25,7 @@ The **Impact** and **Urgency** options include the following:
 
 | Severity Ranking | Impact | Urgency | Description |
 | --------------- | --------------- | --------------- | --------------- |
-| **1** | **Critical** | **High** | Mission-critical production system is down, corrupted, or severely degraded or unusable and requires immediate attention to return the system to service.<br/><br/>If you submit an S1 incident, Teradata contacts appropriate escalation personnel. If they aren't available, Teradata changes the incident to S2. |
+| **1** | **Critical** | **High** | Mission-critical production system is down, corrupted, or severely degraded or unusable and requires immediate attention to return the system to service. If you submit an S1 incident, Teradata contacts appropriate escalation personnel. If they aren't available, Teradata changes the incident to S2. |
 | **2** | **Significant** | **High** | Production system is up and operational, but the incident has severe, ongoing, daily impact to operations; a non-mission critical system is down and requires expedited engagement and urgent resolution. |
 | **3** | **Critical** | **Medium** or **Low**| Incident has medium impact to operations; resolution efforts can occur over the next several days.|
 | **3** | **Significant** | **Medium** | Incident has medium impact to operations; resolution efforts can occur over the next several days. |
