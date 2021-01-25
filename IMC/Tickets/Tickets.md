@@ -3,7 +3,7 @@
 Site Admins and Super Site Admins can open incidents for three reasons: 
 
 - [Overview](#overview)
-- [Report a problem/Open an Incident](#report-problem-/-open-an-incident) 
+- [Report a problem/Open an Incident](#report-a-problem-/-open-an-incident) 
 - [Request a Change](#request-a-change)
 - [Ask a Question](#ask-a-question)
 
