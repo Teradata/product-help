@@ -19,7 +19,7 @@ Teradata responds to incidents based on severity ranking.
 
 #### Report a Problem/Open an Incident
 
-Report a problem that is preventing or downgrading service.
+Report a problem that is preventing or downgrading service. 
 
 The **Impact** and **Urgency** options include the following:
 
