@@ -2,8 +2,8 @@
 
 Review the 10 completed queries that consumed the greatest number of Vantage Units, in descending order. 
 
-Use **Filters** to review the top 10 queries for the selected engine and time period.
+Select **Filters** to filter the top 10 queries by engine and time period.
 
-User **Alerts** to...
+Select **Alerts** to set an alert threshold for notification.
 
 Contact your enterprise Database Administrator for more information about a particular query.
