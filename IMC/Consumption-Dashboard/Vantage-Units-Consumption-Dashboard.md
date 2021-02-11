@@ -1,6 +1,6 @@
 ### Vantage Units consumption
 
-Review compute resources used to run queries and functions, measured in logical IO to the kilobyte granularity and collected hourly.
+Review current and forecasted compute resources used to run queries and functions, measured in logical IO to the kilobyte granularity and collected hourly.
 
 Resources don't include queries and functions that:
 
@@ -11,4 +11,8 @@ Resources don't include queries and functions that:
 Select 
 ![cov-icn-export.png](cov-icn-export.png) to export the data in .csv format.
 
-Select **View** to filter by engine and time period, and see the ten queries that consumed the most Vantage Units.
+Select **View** to do the following:
+
+- Filter consumption by engine and time period.
+- Set an alert threshold for notification.
+- See the ten queries that consumed the most Vantage Units.
