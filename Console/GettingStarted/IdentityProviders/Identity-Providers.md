@@ -1,6 +1,6 @@
 # Identity Providers
 
-Review the current identity providers and add new OpenID Connect or SAM 2.0 providers.
+Review the current identity providers and add a new OpenID Connect or SAM 2.0 provider.
 
 Select 
 ![../../Images/IdPFilter.png](../../Images/IdPFilter.png) fo filter what columns appear.
