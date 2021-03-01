@@ -1,11 +1,7 @@
-# Identity Providers
+# Configure Identity Provider
 
-Review the current identity providers and add a new OpenID Connect or SAM 2.0 provider.
+Configure an identity provider (such as Okta, Ping, or Auth0) for SSO authentication with Vantage.
 
-Select 
-![../../Images/IdPFilter.png](../../Images/IdPFilter.png) fo filter what columns appear.
+After you save the provider, you must log out of Console then log back in using SSO.
 
-Select 
-![../../Images/MoreOptions.png](../../Images/MoreOptions.png) to remove a provider.
-
-Select the provider to view details.
+TAKE ME THERE
