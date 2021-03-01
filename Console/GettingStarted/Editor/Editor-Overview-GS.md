@@ -8,23 +8,22 @@ Editor is a powerful interface that offers the following capabilities ad more:
 
 * Experience guided tours of key features, and run demo use cases that access preloaded datasets.
 
-<hr style="border:3px solid gray"> </hr>
-________________________________________________________________
+_______________________________________________________
 
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png)Create and Run
 
 Create database tables and run ad-hoc queries.
 
-<hr style="border:1px solid gray"> </hr>
+_______________________________________________________
     
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png)Upload Data
 
 Upload data to Teradata Vantage.
 
-<hr style="border:1px solid gray"> </hr>
+_______________________________________________________
    
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png)Write Data
 
 Write data to external object stores.
 
-<hr style="border:1px solid gray"> </hr>
+_______________________________________________________
