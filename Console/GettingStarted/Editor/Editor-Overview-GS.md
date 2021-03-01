@@ -8,7 +8,7 @@ Editor is a powerful interface that offers the following capabilities ad more:
 
 * Experience guided tours of key features, and run demo use cases that access preloaded datasets.
 
----
+- - -
 
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Create and Run
 
