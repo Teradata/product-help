@@ -7,6 +7,7 @@ Editor is a powerful interface that offers the following capabilities ad more:
 * Upload CSV data without using SQL commands, and download results in CSV or JSON format.
 
 * Experience guided tours of key features, and run demo use cases that access preloaded datasets.
+
 <hr style="border:2px solid gray"> </hr>
 
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Create and Run
