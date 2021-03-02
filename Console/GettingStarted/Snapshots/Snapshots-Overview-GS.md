@@ -1,4 +1,5 @@
-### Snapshots
+### 
+![../Images/cov-icn-snapshot.png](../Images/cov-icn-snapshot.png) Snapshots
 
 Get fast and full-system backups for data protection and recovery, and restore data into public cloud Teradata systems with minimal downtime.
 
