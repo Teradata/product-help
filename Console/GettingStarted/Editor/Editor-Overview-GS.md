@@ -12,12 +12,12 @@ Editor is a powerful interface that offers the following capabilities ad more:
 
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Create and Run
 
-Create database tables and run ad-hoc queries.
+    Create database tables and run ad-hoc queries.
     
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Upload Data
 
-Upload data to Teradata Vantage.
+    Upload data to Teradata Vantage.
   
 #### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Write Data
 
-Write data to external object stores.
+    Write data to external object stores.
