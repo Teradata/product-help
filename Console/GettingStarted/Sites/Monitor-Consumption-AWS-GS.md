@@ -8,4 +8,4 @@ From your site dashboard, monitor monthly, daily, or hourly TCore-Hour usage and
 
 #### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
-[Monitor Consumption](https://docs.teradata.com/r/tbvLSsoCQvCojnTHqrCyzQ/1EF0x3NCpUDx9kkv287ifQ)
+* [Monitor Consumption](https://docs.teradata.com/r/tbvLSsoCQvCojnTHqrCyzQ/1EF0x3NCpUDx9kkv287ifQ)
