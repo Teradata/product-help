@@ -6,7 +6,7 @@ Welcome to Teradata Vantage!
 
 Create database tables, run ad-hoc queries, and upload data.
     
-#### ![Sites](Images/cov-icon-sitesw.png) [Sites](./Sites/Sites-Overview-GS.md)
+#### ![Sites](Images/cov-icon-sites.png) [Sites](./Sites/Sites-Overview-GS.md)
 
 Monitor monthly, daily, or hourly usage and total running instance hours for your system.
   
