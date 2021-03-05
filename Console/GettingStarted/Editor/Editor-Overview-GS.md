@@ -1,4 +1,5 @@
-### ![../Images/editor-icn-overview.png](../Images/editor-icn-overview.png) Editor
+### 
+![../Images/editor-icn-overview.png](../Images/editor-icn-overview.png) Editor
 
 Editor is a powerful interface that offers the following capabilities ad more:
 
