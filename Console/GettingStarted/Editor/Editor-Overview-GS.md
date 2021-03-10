@@ -10,14 +10,14 @@ Editor is a powerful interface that offers the following capabilities ad more:
 
 - - -
 
-#### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Create and Run
+#### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) [Create and Run](Editor-Create-DB-Tables-Queries-GS.md)
 
 Create database tables and run ad-hoc queries.
     
-#### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Upload Data
+#### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) [Upload Data](Editor-Upload-Data-GS.md)
 
 Upload data to Teradata Vantage.
   
-#### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) Write Data
+#### ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) [Write Data](Editor-Write-Data-External-Object-Store-GS.md)
 
 Write data to external object stores.
