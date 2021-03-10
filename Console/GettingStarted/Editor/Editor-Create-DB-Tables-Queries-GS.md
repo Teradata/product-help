@@ -11,4 +11,4 @@ Use either Editor or Jupyter.
 #### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
 * [Teradata Vantage™ - Database Introduction](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=qia1556235689628.ditamap)
-* [Editor](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/E_Y7lej97C_G_EnczQ8gaA)
+* [Editor](https://docs.teradata.com/r/qF~LThr04x1N0iPNyw~dAg/OYc3Blo3Xg1Wwie13TRR7w)
