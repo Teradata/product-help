@@ -1,5 +1,5 @@
 # Identity Provider
 
-You can authenticate Vantage Console users using Federated Authentication through SAML and OIDC compliant Identity Providers (IDPs). Once configured, your users will be able to securely initiate sessions in Vantage without the need to log into Vantage Console directly. 
+You can authenticate Vantage Console users using Federated Authentication through a SAML- or OIDC-compliant Identity Provider (IDP). Once configured, users will be able to securely initiate sessions in Vantage without the need to log into Vantage Console directly. 
 
-To configure your SSO, work with the system security or cloud administrator to set up Identity Provider information (such as Okta, Ping, or Auth0) in Vantage Console and test the SSO configuration.
+Work with your system security or cloud administrator to set up an IDP in Vantage Console and test the SSO.
