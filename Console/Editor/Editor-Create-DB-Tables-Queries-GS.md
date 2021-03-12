@@ -3,7 +3,7 @@
 Use either Editor or Jupyter.
 
 * Start the Editor guided tour.
-* Check out the Jupyter GettingStarted Notebook tutorial.
+* Check out the Jupyter Getting Started Notebook tutorial.
 * Watch a quick video on creating tables.
 
 - - -
