@@ -1,11 +1,10 @@
-### Schedule Snapshot
+### Schedule
 
-The snapshot jobs scheduled to run.
+Review any snapshot jobs scheduled to run.
 
-Click **Create** to add a schedule or Edit to change the schedule.
+Select **Create** to add a schedule or **Edit** to change a schedule.
 
-When scheduling a snapshot:
+Keep in mind that:
 
-- Select the dates and times you want the snapshot operation to run.
-- Note that times are in UTC.
-- You can only have one snapshot process scheduled per site.
+- Times are in UTC.
+- You can schedule only one snapshot  job per site.

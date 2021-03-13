@@ -24,7 +24,7 @@ If applicable, Hot-Standby Nodes (HSN)s for high availability are listed.
 
 **Vantage Trial and LIVE Users**: You can scale out from three nodes to four nodes and scale in from four nodes to three nodes.
 
-For scaling up and down, m5.4xlarge and m5.8xlarge is available.
+For scaling up and down, m5.4xlarge and m5.8xlarge are available.
 
 **Vantage Trial and LIVE Users**: Because elasticity operations affect other users on the system, perform this only when needed. Remember to scale down any systems you scale up. When you scale down or scale in, you consume fewer TCore-Hours because a smaller amount of compute resources are used.   
 

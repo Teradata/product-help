@@ -1,8 +1,10 @@
-### Vantage Units Consumption by Department
+### Vantage Units consumption by department
 
-Displays the number of Vantage Units used by department based on the departments users were assigned to in the database. The data is refreshed every hour and kept for four months.
+Review the number of Vantage units used by department based on department users were assigned to the database. 
+
+Data is refreshed every hour and kept for four months.
+
+Usage for users not assigned to a department appears as **Unknown**.
 
 Select 
-![cov-icn-export.png](cov-icn-export.png) to export the data to .csv format.
-
-The usage of users not assigned to a department displays as "Unknown."
+![cov-icn-export.png](cov-icn-export.png) to export the data in .csv format.

@@ -37,4 +37,3 @@ Vantage Trial Users: You should only create incidents through this pane; do not 
 1. On the **Incidents** screen, select **Create Incident**.
 1. At **Request Type**, select **Ask a Question**.
 1. Tell us what's on your mind. Remember, Teradata treats questions as S4 severity so you may not hear back for several days or longer.
-
