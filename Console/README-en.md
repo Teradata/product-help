@@ -1,3 +1,3 @@
 # Vantage Console
 
-In-product help for Console.
+In-product help for Vantage Console.
