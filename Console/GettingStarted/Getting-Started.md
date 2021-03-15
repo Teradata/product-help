@@ -10,12 +10,10 @@ Create database tables, run ad-hoc queries, and upload data.
 
 Monitor monthly, daily, or hourly usage and total running instance hours for your system.
   
-#### ![Identity Providers](../Images/cov-icon-identity.png) [Identity Providers](../IdentityProviders/Identity-Providers-Configure.md)
+#### ![Identity Provider](../Images/cov-icon-identity.png) [Identity Provider](../IdentityProviders/Identity-Providers-Configure.md)
 
-Configure an identity provider (such as Okta, Ping, or Auth0) for SSO authentication.
+Configure an identity provider for SSO authentication.
 
 #### ![Object Storage](../Images/object-icn-storage.png) [Object Storage](../ObjectStorage/Object-Storage-Overview-GS.md)
 
-Explore and analyze CSV, JSON, or Parquet data sets located on external object stores. 
-
-
+Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.

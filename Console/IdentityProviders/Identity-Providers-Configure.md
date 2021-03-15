@@ -1,7 +1,5 @@
-# Configure Identity Provider
+# Add Identity Provider
 
-Configure an identity provider (such as Okta, Ping, or Auth0) for SSO authentication with Vantage.
+Add a SAML 2.0- or OIDC-compliant identity provider for SSO.
 
 After you save the provider, you must log out of Console then log back in using SSO.
-
-**[TAKE ME THERE](./iam/idp/edit/new?help=true)**
