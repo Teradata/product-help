@@ -12,15 +12,15 @@
       "children": [
         {
           "title": "Create and Run",
-          "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md",
+          "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
         },
         {
           "title": "Upload Data",
-          "url": "Console/Editor/Editor-Upload-Data-GS.md",
+          "url": "Console/Editor/Editor-Upload-Data-GS.md"
         },
         {
           "title": "Write Data",
-          "url": "Console/Editor/Editor-Write-Data-External-Object-Store-GS.md",
+          "url": "Console/Editor/Editor-Write-Data-External-Object-Store-GS.md"
         }
       ]
     },
