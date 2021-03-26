@@ -1,8 +1,18 @@
 ### Monitor Consumption
 
-From your site dashboard, monitor monthly, daily, or hourly TCore-Hour usage and total running instance hours for your system.
+Review current and forecasted compute resources used to run queries and functions, measured in logical IO to the kilobyte granularity and collected hourly.
 
-* View consumption.
+Resources don't include queries and functions that:
+
+- Monitor the system
+- Measure system performance or consumption
+- Don't return a result due to a system error or failure
+
+Select 
+![../Images/FilterIcon.png](../Images/FilterIcon.png) to filter by report and chart type, time, and department.
+
+Select 
+![../Images/ConsumptionExport.png](../Images/ConsumptionExport.png) to export the data in .csv format.
 
 - - -
 
