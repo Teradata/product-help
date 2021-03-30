@@ -1,4 +1,4 @@
-### Configure S3 Bucket Policy
+# Configure S3 Bucket Policy
 
 To allow Teradata Vantage access to your Amazon S3 data, your Cloud Administrator must ensure your Amazon S3 bucket policy is configured with the following actions for the role that allows access to the bucket:
 
@@ -10,6 +10,6 @@ To allow Teradata Vantage access to your Amazon S3 data, your Cloud Administrato
 
 - - -
 
-#### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
+## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
 * [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/ZoppFkelEPzGKiDT1A~Jbw)
