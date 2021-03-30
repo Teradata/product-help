@@ -1,5 +1,4 @@
-# 
-![../Images/object-icn-storage.png](../Images/object-icn-storage.png) Object Storage
+# ![../Images/object-icn-storage.png](../Images/object-icn-storage.png) Object Storage
 
 NOS makes it easy to explore and analyze CSV, JSON, or Parquet data sets located on external object stores. 
 
