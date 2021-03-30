@@ -1,4 +1,4 @@
-### Upload Data to Teradata Vantage
+# Upload Data to Teradata Vantage
 
 Use Editor to upload CSV data from your laptop or PC without running SQL commands.
 
@@ -9,7 +9,7 @@ Use NOS with Editor or Jupyter to run SQL commands to upload CSV, JSON, or Parqu
 
 - - -
 
-#### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
+## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
 * [NOS](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/YfguBQWE24~TxcyMikon6g)
 * [Examples of Loading External Data into the Database](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/4BhGlMfxVHlZ4JMDUNG3tg)
