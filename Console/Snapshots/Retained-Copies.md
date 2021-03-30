@@ -1,4 +1,4 @@
-### Retained Copies
+# Retained Copies
 
 Retained snapshot copies result in recurring storage costs. 
 

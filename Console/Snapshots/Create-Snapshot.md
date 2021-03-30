@@ -1,4 +1,4 @@
-### Snapshots
+# Snapshots
 
 A snapshot is a virtual copy of data. It is not complete until it has been replicated to another storage system. For example, you might use a snapshot to replicate a full system copy and bring up a second system in another region or zone.
 
