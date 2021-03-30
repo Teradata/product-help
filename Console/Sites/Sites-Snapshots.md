@@ -1,4 +1,4 @@
-### Snapshots
+# Snapshots
 
 Snapshots give you fast and full-system backups for data protection and recovery. Restore data into target public cloud Teradata systems with minimal downtime. Snapshots cannot perform object-level backups.
 
@@ -8,6 +8,6 @@ Select **Create Snapshot** to create a snapshot.
 
 - - -
 
-#### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
+## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
 * [Backups](https://docs.teradata.com/r/yvHydfa0yCRWG8y0pk4dIQ/6iUMkdwVlxZh6_lUW9ixOg)
