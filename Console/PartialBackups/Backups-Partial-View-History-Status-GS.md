@@ -1,4 +1,4 @@
-### View Job History and Status
+# View Job History and Status
 
 Review partial backup jobs that have run successfully or failed.
 
@@ -6,6 +6,6 @@ You can select a specific backup job to review its specific history and details,
 
 - - -
 
-#### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
+## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
 * TBD

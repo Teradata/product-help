@@ -1,4 +1,4 @@
-### Create and Schedule Partial Backups
+# Create and Schedule Partial Backups
 
 When creating and scheduling backup backup jobs, you can do the following:
 
@@ -10,6 +10,6 @@ When creating and scheduling backup backup jobs, you can do the following:
 
 - - -
 
-#### ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
+## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
  
 * TBD
