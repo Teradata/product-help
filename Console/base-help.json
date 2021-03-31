@@ -13,7 +13,7 @@
       "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md",
       "children": [
         {
-          "title": "Create and Run"
+          "title": "Create and Run",
           "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
         }
         {
@@ -39,7 +39,7 @@
       "url": "Console/Sites/Sites-Overview-GS.md",
        "children": [
         {
-          "title": "First TAB"
+          "title": "First TAB",
           "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
         }
       ]
