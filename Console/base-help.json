@@ -36,7 +36,21 @@
       "id": "sites",
       "title": "Sites",
       "description": "Review the list of your production, development, and testing sites",
-      "url": "Console/Sites/Sites-Overview-GS.md"
+      "url": "Console/Sites/Sites-Overview-GS.md",
+      "children": [
+        {
+          "title": "Consumption",
+          "url": "Console/Sites-Monitor-Consumption-GS.md"
+        },
+        {
+          "title": "Snapshots",
+          "url": "Console/Sites/Sites-Snapshots.md"
+        },
+        {
+          "title": "Data Sources",
+          "url": "Console/Sites/Sites-Data-Storage.md"
+        }
+      ]
     },
     {
       "id": "objectStorage",
