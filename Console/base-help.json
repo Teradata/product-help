@@ -1,62 +1,97 @@
 {
-  "items": [
-    {
-      "id": "gettingStarted",
-      "title": "Getting Started",
-      "description": "Onboard quickly so you can go to work",
-      "url": "Console/GettingStarted/Getting-Started.md"
-    },
-    {
-      "id": "editor",
-      "title": "Editor",
-      "description": "Create database tables, run ad-hoc queries, and upload data",
-      "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md",
-      "children": [
-        {
-          "title": "Create and Run",
-          "url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
-        },
-        {
-          "title": "Upload Data",
-          "url": "Console/Editor/Editor-Upload-Data-GS.md"
-        },
-        {
-          "title": "Write Data",
-          "url": "Console/Editor/Editor-Write-Data-External-Object-Store-GS.md"
-        }
-      ]
-    },
-    {
-      "id": "identityProviders",
-      "title": "Identity Providers",
-      "description": "Configure an identity provider for SSO authentication",
-      "url": "Console/IdentityProviders/Identity-Providers-Configure.md"
-    },
-    {
-      "id": "sites",
-      "title": "Sites",
-      "description": "Review the list of your production, development, and testing sites",
-      "url": "Console/Sites/Sites-Overview-GS.md",
-      "children": [
-        {
-          "title": "Consumption",
-          "url": "Console/Sites/Sites-Monitor-Consumption-GS.md"
-        },
-        {
-          "title": "Snapshots",
-          "url": "Console/Sites/Sites-Snapshots.md"
-        },
-        {
-          "title": "Data Sources",
-          "url": "Console/Sites/Sites-Data-Storage.md"
-        }
-      ]
-    },
-    {
-      "id": "objectStorage",
-      "title": "Object Storage",
-      "description": "Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.",
-      "url": "Console/ObjectStorage/Object-Storage-Overview-GS.md"
-    }
-  ]
+	"items": [{
+			"id": "gettingStarted",
+			"title": "Getting Started",
+			"description": "Onboard quickly so you can go to work",
+			"url": "Console/GettingStarted/Getting-Started.md"
+		},
+		{
+			"id": "editor",
+			"title": "Editor",
+			"description": "Create database tables, run ad-hoc queries, and upload data",
+			"url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md",
+			"children": [{
+					"title": "Create and Run",
+					"url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
+				},
+				{
+					"title": "Upload Data",
+					"url": "Console/Editor/Editor-Upload-Data-GS.md"
+				},
+				{
+					"title": "Write Data",
+					"url": "Console/Editor/Editor-Write-Data-External-Object-Store-GS.md"
+				}
+			]
+		},
+		{
+			"id": "identityProviders",
+			"title": "Identity Providers",
+			"description": "Configure an identity provider for SSO authentication",
+			"url": "Console/IdentityProviders/Identity-Providers-Configure.md"
+		},
+		{
+			"id": "sites",
+			"title": "Sites",
+			"description": "Review the list of your production, development, and testing sites",
+			"url": "Console/Sites/Sites-Overview-GS.md",
+			"children": [{
+					"title": "Consumption",
+					"url": "Console/Sites/Sites-Monitor-Consumption.md",
+					"children": [{
+							"title": "Monthly",
+							"url": "Console/Consumption/Consumption-Monthly-View.md"
+						},
+						{
+							"title": "Monthly by Department",
+							"url": "Console/Consumption/Consumption-Monthly-By-Department-View.md"
+						},
+						{
+							"title": "Up to Date",
+							"url": "Console/Consumption/Consumption-Up-To-Date-View.md"
+						},
+						{
+							"title": "By Terabytes",
+							"url": "Console/Consumption/Consumption-By-Terabytes-View.md"
+						},
+						{
+							"title": "Summary",
+							"url": "Console/Consumption/Consumption-Summary-View.md"
+						}
+					]
+				},
+				{
+					"title": "Snapshots",
+					"url": "Console/Sites/Sites-Snapshots.md",
+					"children": [{
+							"title": "Create Snapshot",
+							"url": "Console/Snapshots/Create-Snapshot.md"
+						},
+						{
+							"title": "Retained Copies",
+							"url": "Console/Snapshots/Snapshot-Retained-Copies.md"
+						},
+						{
+							"title": "Schedule",
+							"url": "Console/Snapshots/Snapshot-Schedule.md"
+						},
+						{
+							"title": "History",
+							"url": "Console/Snapshots/Snapshot-History.md"
+						}
+					]
+				},
+				{
+					"title": "Data Sources",
+					"url": "Console/Sites/Sites-Data-Storage.md"
+				}
+			]
+		},
+		{
+			"id": "objectStorage",
+			"title": "Object Storage",
+			"description": "Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.",
+			"url": "Console/ObjectStorage/Object-Storage-Overview-GS.md"
+		}
+	]
 }
