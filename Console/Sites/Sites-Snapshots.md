@@ -6,6 +6,12 @@ Review your retained copies, history, and schedule information.
 
 Select **Create Snapshot** to create a snapshot.
 
+Get more snapshot help here:
+
+- [Retained Copies](../Snapshots/Snapshots-Retained-Copies.md) 
+- [Schedule](../Snapshots/Snapshot-Schedule.md)
+- [History](../Snapshots/Snapshot-History.md)
+
 - - -
 
 ## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
