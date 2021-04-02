@@ -37,7 +37,7 @@
 			"url": "Console/Sites/Sites-Overview-GS.md",
 			"children": [{
 					"title": "Consumption",
-					"url": "Console/Sites/Sites-Monitor-Consumption.md",
+					"url": "Console/Sites/Sites-Consumption.md",
 					"children": [{
 							"title": "Monthly",
 							"url": "Console/Consumption/Consumption-Monthly-View.md"
