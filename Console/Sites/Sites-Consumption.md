@@ -2,15 +2,10 @@
 
 Review valuable consumption metrics, including monthly consumption by units, department, term, and terabytes, and consumption summary details for the current month.
 
-Select **View** to get more details about a particular consumption metric.
-
-Get more consumption help here:
+Select **View** to get more details about:
 
 - [Consumption monthly](../Consumption/Consumption-Monthly-View.md)
 - [Consumption monthly by department](../Consumption/Consumption-Monthly-By-Department-View.md) 
-- [Consumption up to date](../Consumption/Consumption-Up-To-Date-View.md)
-- [Consumption by terabytes](../Consumption/Consumption-By-Terabytes-View.md)
-- [Consumption summary](../Consumption/Consumption-Summary-View.md)
 
 - - -
 
