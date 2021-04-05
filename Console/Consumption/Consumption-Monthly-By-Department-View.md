@@ -6,6 +6,6 @@ Data is refreshed every hour and kept for four months.
 
 Consumption for users not assigned to a department appears as **Unknown**.
 
-Use filters (![FilterIcon.png](../Images/FilterIcon.png)) to customize the monthly department consumption display.
+Use filters, ![FilterIcon.png](../Images/FilterIcon.png), to customize the monthly department consumption display.
 
-Select  (![ConsumptionExport.png](../Images/ConsumptionExport.png)to export the data in .csv format.
+Select  ![ConsumptionExport.png](../Images/ConsumptionExport.png)to export the data in .csv format.
