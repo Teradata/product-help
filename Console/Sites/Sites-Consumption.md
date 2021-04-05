@@ -1,18 +1,16 @@
-# Monitor Consumption
+# Consumption
 
-Review current and forecasted compute resources used to run queries and functions, measured in logical IO to the kilobyte granularity and collected hourly.
+Review valuable consumption metrics, including monthly consumption by units, department, term, and terabytes, and consumption summary details for the current month.
 
-Resources don't include queries and functions that:
+Select **View** to get more details about a particular consumption metric.
 
-- Monitor the system
-- Measure system performance or consumption
-- Don't return a result due to a system error or failure
+Get more consumption help here:
 
-Select 
-![../Images/FilterIcon.png](../Images/FilterIcon.png) to filter by report and chart type, time, and department.
-
-Select 
-![../Images/ConsumptionExport.png](../Images/ConsumptionExport.png) to export the data in .csv format.
+- Link
+- Link
+- Link
+- Link
+- Link
 
 - - -
 
