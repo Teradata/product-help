@@ -6,11 +6,11 @@ Select **View** to get more details about a particular consumption metric.
 
 Get more consumption help here:
 
-- Link
-- Link
-- Link
-- Link
-- Link
+- [Consumption monthly](../Consumption/Consumption-Monthly-View.md)
+- [Consumption monthly by department](../Consumption/Consumption-Monthly-By-Department-View.md) 
+- [Consumption up to date](../Consumption/Consumption-Up-To-Date-View.md)
+- [Consumption by terabytes](../Consumption/Consumption-By-Terabytes-View.md)
+- [Consumption summary](../Consumption/Consumption-Summary-View.md)
 
 - - -
 
