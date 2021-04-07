@@ -45,18 +45,6 @@
 						{
 							"title": "Monthly by Department",
 							"url": "Console/Consumption/Consumption-Monthly-By-Department-View.md"
-						},
-						{
-							"title": "Up to Date",
-							"url": "Console/Consumption/Consumption-Up-To-Date-View.md"
-						},
-						{
-							"title": "By Terabytes",
-							"url": "Console/Consumption/Consumption-By-Terabytes-View.md"
-						},
-						{
-							"title": "Summary",
-							"url": "Console/Consumption/Consumption-Summary-View.md"
 						}
 					]
 				},
