@@ -47,12 +47,12 @@
 					"url": "Console/Sites/Sites-Consumption.md",
 					"children": [{
 							"id": "consumptionMonthlyView",
-							"title": "Monthly",
+							"title": "Consumption monthly",
 							"url": "Console/Consumption/Consumption-Monthly-View.md"
 						},
 						{
 							"id": "consumptionMonthlyByDepartment",
-							"title": "Monthly by Department",
+							"title": "Consumption monthly by Ddpartment",
 							"url": "Console/Consumption/Consumption-Monthly-By-Department-View.md"
 						}
 					]
