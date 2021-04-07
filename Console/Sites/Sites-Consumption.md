@@ -2,11 +2,6 @@
 
 Review valuable consumption metrics, including monthly consumption by units, department, term, and terabytes, and consumption summary details for the current month.
 
-Select **View** to get more details about:
-
-- [Consumption monthly](../Consumption/Consumption-Monthly-View.md)
-- [Consumption monthly by department](../Consumption/Consumption-Monthly-By-Department-View.md) 
-
 - - -
 
 ## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
