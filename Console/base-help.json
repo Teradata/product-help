@@ -36,12 +36,12 @@
 			"description": "Review the list of your production, development, and testing sites",
 			"url": "Console/Sites/Sites-Overview-GS.md",
 			"children": [{
-			         "id": "sitesOverview",
-			         "title": "Overview",
-			         "url": "Console/Sites/Sites-Overview.md"
-			},
-			
-			         {
+					"id": "sitesOverview",
+					"title": "Overview",
+					"url": "Console/Sites/Sites-Overview.md"
+				},
+
+				{
 					"id": "siteConsumption",
 					"title": "Consumption",
 					"url": "Console/Sites/Sites-Consumption.md",
@@ -52,7 +52,7 @@
 						},
 						{
 							"id": "consumptionMonthlyByDepartment",
-							"title": "Consumption monthly by department,
+							"title": "Consumption monthly by department",
 							"url": "Console/Consumption/Consumption-Monthly-By-Department-View.md"
 						}
 					]
