@@ -26,7 +26,7 @@
 		},
 		{
 			"id": "identityProviders",
-			"title": "Identity Providers",
+			"title": "Identity Provider",
 			"description": "Configure an identity provider for SSO authentication",
 			"url": "Console/IdentityProviders/Identity-Providers-Configure.md"
 		},
@@ -66,7 +66,7 @@
 							"url": "Console/Snapshots/Create-Snapshot.md"
 						},
 						{
-							"title": "Retained Copies",
+							"title": "Retained copies",
 							"url": "Console/Snapshots/Snapshot-Retained-Copies.md"
 						},
 						{
