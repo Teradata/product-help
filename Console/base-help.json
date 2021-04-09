@@ -82,7 +82,11 @@
 				{
 					"id": "dataSources",
 					"title": "Data Sources",
-					"url": "Console/Sites/Sites-Data-Sources.md"
+					"url": "Console/Sites/Sites-Data-Sources.md",
+					"children": [{
+						"title": "New Policy",
+						"url": "Console/DataSources/Data-Sources-New-Policy.md"
+					}]
 				}
 			]
 		},
