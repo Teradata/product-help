@@ -6,8 +6,7 @@ Data Sources are Native Object Stores (NOS) you configure to use standard Terada
 - Write data stored on Vantage to external S3-compatible object storage platforms
 
 Select **New Policy** to configure your Amazon S3 bucket policy for access to your S3 data.
-- - -
 
-## ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) Resources
+![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
 * [Teradata Vantage™ - Native Object Store Getting Started Guide](https://docs.teradata.com/....)
