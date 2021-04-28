@@ -6,7 +6,7 @@ We recommend that you start out by exploring the capabilities with a demo use ca
 
 * Start the Editor guided tour.
 
-![../Images/cov-icn-tip.png](../Images/cov-icn-tip.png) If you use NOS while running demo use cases, you don't need to configure the policy because you are accessing a Teradata-managed Amazon S3 bucket.
+**Tip**: If you use NOS while running demo use cases, you don't need to configure the policy because you are accessing a Teradata-managed Amazon S3 bucket.
 
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
