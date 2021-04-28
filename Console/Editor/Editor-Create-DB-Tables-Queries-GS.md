@@ -10,5 +10,3 @@ Use Editor or Jupyter.
 
 * [Teradata Vantage™ - Database Introduction](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=qia1556235689628.ditamap)
 * [Editor](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/E_Y7lej97C_G_EnczQ8gaA)
-
-- - -
