@@ -90,10 +90,10 @@ FROM sample_csv;
 To persist the data from an external object store we can use a CREATE TABLE AS statement as follows:
 
 First we need a schema to apply to the data:
-
+Please provide username as an input to make the schema name unique.
 
 ```sql
-CREATE CSV SCHEMA sample_csv_schema AS
+CREATE CSV SCHEMA sample_csv_schema_${username} AS
 '{"field_delimiter":",","field_names":["date", "time", "epoch", "moteid", "temperature", "humidity", "light", "voltage"]}';
 ```
 
@@ -103,7 +103,7 @@ Create a foreign table that uses that schema:
 ```sql
 CREATE FOREIGN TABLE sample_csv_ft
 ( Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC, 
-  Payload DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV WITH SCHEMA sample_csv_schema
+  Payload DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV WITH SCHEMA sample_csv_schema_${username}
 )
 USING (LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/data.csv'));
 ```
