@@ -90,6 +90,7 @@ FROM sample_csv;
 To persist the data from an external object store we can use a CREATE TABLE AS statement as follows:
 
 First we need a schema to apply to the data:
+
 Please provide username as an input to make the schema name unique.
 
 ```sql
