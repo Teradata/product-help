@@ -102,13 +102,13 @@
 						}
 					]
 				},
-				{
-					"id": "WriteDataData",
-					"title": "Write Data to a Cloud Object Store",
-					"url": "Console/DataSources/Write-Data-Cloud-Object-Storage.md"
-				}
-			]
-		}, {
+				        {
+					       "id": "WriteDataData",
+					       "title": "Write Data to a Cloud Object Store",
+				       	"url": "Console/DataSources/Write-Data-Cloud-Object-Storage.md"
+				        }
+			         ]
+		        }, {
 			"id": "objectStorage",
 			"title": "Object Storage",
 			"description": "Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.",
