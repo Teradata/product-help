@@ -4,6 +4,8 @@
 
 The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, datasets are are provided by a public access bucket that does not require setup or credentials.
 
+**Tip**:  For examples that demonstrate how to copy data from Vantage to a cloud object store, see: [Write Data to a Cloud Object Store](../DataSources/Write-Data-Cloud-Object-Storage.md).
+
 To use SQL to access your own cloud object store, replace the following:
 * **LOCATION** - Replace with the location of your object store. The location must begin with /s3/ (Amazon) or /az/ (Azure).
 * **AUTHORIXATION** - Replace the empty **USER** and **PASSWORD** credentials with your **ACCESS_KEY_ID** and **SECRET_ACCESS-KEY**.

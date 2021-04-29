@@ -4,6 +4,8 @@
 
 The following examples demonstrate how to copy data from Vantage to a cloud object store. You must provide your own bucket to execute the example queries below.
 
+**Tip**:  For examples that demonstrate how to access data stored on cloud object stores, see: [Query Data on External Object Storage](../DataSources/Query-Data-Cloud-Object-Storage.md).
+
 ## WRITE_NOS
 
 WRITE_NOS allows you to do the following:
@@ -66,7 +68,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials, then creating a foreign table for accessing Parquet data as shown in the examples here: [Query Data on External Object Storage](../DataSources/Query-Data-Cloud-Object-Storage.md). 
+You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials, then creating a foreign table for accessing Parquet data as shown in the examples here: [Query Data on External Object Storage](../DataSources/Query-Data-Cloud-Object-Storage.md).
 
 
 ### Clean Up
