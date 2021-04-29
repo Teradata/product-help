@@ -114,11 +114,6 @@
 			"title": "Object Storage",
 			"description": "Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.",
 			"url": "Console/ObjectStorage/Object-Storage-Overview-GS.md"
-		}, {
-			"id": "ieTest",
-			"title": "IE Test",
-			"description": "IE Test location.",
-			"url": "Console/IETest/IE-Test.md"
 		}
 	]
 }
