@@ -96,16 +96,16 @@
 							"url": "Console/DataSources/Data-Sources-New-Policy.md"
 						},
 						{
-							"id": "QueryData",
-							"title": "Query Data on External Object Storage",
-							"url": "Console/DataSources/Query-Data-Cloud-Object-Storage.md"
+							"id": "queryWriteData",
+							"title": "Query and Write Data on Cloud Object Storage",
+							"url": "Console/DataSources/QQuery-Write-Data-Cloud-Object-Storage.md"
 						}
 					]
 				},
 				        {
-					       "id": "WriteDataData",
-					       "title": "Write Data to a Cloud Object Store",
-					       "url": "Console/DataSources/Write-Data-Cloud-Object-Storage.md"
+					       "id": "DELETECHILD",
+					       "title": "DeleteChild",
+					       "url": "Console/DataSources/DeleteChild.md"
 				        }
 			         ]
 		        }, 
