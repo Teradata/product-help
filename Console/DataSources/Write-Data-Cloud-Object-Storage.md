@@ -1,4 +1,4 @@
-# Writing Data to a Cloud Object Store
+# Write Data to a Cloud Object Store
     
 ## Introduction
 
@@ -20,21 +20,23 @@ Before running the following examples, replace the following fields in the examp
 **Tip**:  As an alternative to the *AccessID* and *AccessKey* lines above, you can create an authorization object to securely hide the credentials of your cloud object store.
 
 ### Example 1 
-This first example will select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
+This example selects all rows in local sample_data_local to copy the dataset to the object store's *sample1* partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
-    ON ( SELECT * FROM sample_csv_local )
+    ON ( SELECT * FROM sample_data_local )
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample1/')
         AUTHORIZATION ('{\"Access_ID\":\"AccessID\",\"Access_Key\":\"AccessKey\"}')
+        --if using the authorization object, replace the line above with the line below minus the two dashes in front of the line:
+        --AUTHORIZATION (authorization_object_name)        
         STOREDAS ('PARQUET')
 ) AS d;
 ```
 
 ### Example 2 
 
-This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
+This example copies the same dataset by partitioning by the sensor date year under the *sample2* partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
@@ -49,51 +51,29 @@ SELECT * FROM WRITE_NOS (
             ,voltage
             ,sensdatetime
             ,year(sensdate) TheYear
-         FROM sample_csv_local )
+         FROM sample_data_local )
     PARTITION BY TheYear ORDER BY TheYear
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample2/')
         AUTHORIZATION ('{\"Access_ID\":\"AccessID\",\"Access_Key\":\"AccessKey\"}')
+        --if using the authorization object, replace the line above with the line below minus the two dashes in front of the line:
+        --AUTHORIZATION (authorization_object_name)              
         NAMING ('DISCRETE')
         INCLUDE_ORDERING ('FALSE')
         STOREDAS ('PARQUET')
  AS d;
 ```
 
-### Validate your WRITE_NOS results
+### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentails and then creating a foreign table for accessing Parquet data as described in the examples in the above section. 
-
-
-### Clean-up
-
-Drop the objects we created in our own database schema.
+You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials, then creating a foreign table for accessing Parquet data as shown in the examples here: [Query Data on External Object Storage](../DataSources/Query-Data-Cloud-Object-Storage.md). 
 
 
-```sql
-DROP AUTHORIZATION InvAuth;
-```
+### Clean Up
 
-```sql
-DROP TABLE sample_csv;
-```
+Drop the objects created in your own database schema:
 
-```sql
-DROP VIEW sample_csv_view;
-```
-
-```sql
-DROP TABLE sample_csv_ft;
-```
-
-```sql
-DROP CSV SCHEMA sample_csv_schema;
-```
-
-```sql
-DROP TABLE sample_json;
-```
-
-```sql
-DROP TABLE sample_parquet;
+```DROP AUTHORIZATION InvAuth;
+DROP TABLE sample_data;
+DROP TABLE sample_data_local;
 ```
