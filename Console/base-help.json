@@ -98,7 +98,7 @@
 						{
 							"id": "queryWriteData",
 							"title": "Query and Write Data on Cloud Object Storage",
-							"url": "Console/DataSources/QQuery-Write-Data-Cloud-Object-Storage.md"
+							"url": "Console/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
 						}
 					]
 				},
