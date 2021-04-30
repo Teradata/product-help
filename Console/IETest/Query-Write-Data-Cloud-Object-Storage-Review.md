@@ -113,7 +113,7 @@ Before running the following examples, replace the following fields in the examp
 * *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
 * *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-**Tip**:  As an alternative to the *AccessID* and *AccessKey* lines above, you can create an authorization object to securely hide the credentials of your cloud object store.
+**Tip**:  As an alternative to the *AccessID* and *AccessKey* lines, you can create an authorization object to securely hide the credentials of your cloud object store.
 
 #### Example 1 
 This example selects all rows in local sample_data_local to copy the dataset to the object store's *sample1* partition:
