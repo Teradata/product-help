@@ -102,7 +102,7 @@ The following examples demonstrate how to copy data from Vantage to a cloud obje
 
 ### WRITE_NOS
 
-WRITE_NOS allows you to do the following:
+With WRITE_NOS, you can do the following:
 * Copy / write data directly to a cloud object store
 * Convert the data in uncompressed Parquet format unless Snappy compression is specified by the user
 * Specify one or more columns in the source table as partition attributes in the target cloud object store
