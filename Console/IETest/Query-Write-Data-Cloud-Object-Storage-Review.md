@@ -1,4 +1,4 @@
-# Query and Write Data on Cloud Object Storage
+# Query Data on Cloud Object Storage and Write Data to a Cloud Oject Store
 
 - [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 - [Write Data to a Cloud Object Store](#write-data-to-a-cloud-object-store)
