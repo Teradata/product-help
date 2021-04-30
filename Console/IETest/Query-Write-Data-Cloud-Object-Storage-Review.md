@@ -6,7 +6,7 @@
 
 ### Introduction
 
-The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, datasets are provided through a public access bucket that does not require setup or credentials.
+The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, sample datasets are provided through a public access bucket that does not require setup or credentials.
 
 To use SQL to access your own cloud object store, replace the following:
 * **LOCATION** - Replace with the location of your object store. The location must begin with /s3/ (Amazon) or /az/ (Azure).
