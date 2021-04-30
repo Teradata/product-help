@@ -1,5 +1,4 @@
-# Query Data on Cloud Object Storage and Write Data to a Cloud Oject Store
-
+# Native Object Store Integration With Cloud Object Storage
 - [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 - [Write Data to a Cloud Object Store](#write-data-to-a-cloud-object-store)
 
@@ -7,11 +6,13 @@
 
 ### Introduction
 
-The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, datasets are provided by a public access bucket that does not require setup or credentials.
+The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, datasets are provided through a public access bucket that does not require setup or credentials.
 
 To use SQL to access your own cloud object store, replace the following:
 * **LOCATION** - Replace with the location of your object store. The location must begin with /s3/ (Amazon) or /az/ (Azure).
 * **AUTHORIZATION** - Replace the empty **USER** and **PASSWORD** credentials with your **ACCESS_KEY_ID** and **SECRET_ACCESS-KEY**.
+
+**Note**: The AUTHORIZATION parameter is required only if you are not using IAM roles and policies to manage security. 
 
 ## Reading Cloud Object Storage Data
 
@@ -37,11 +38,11 @@ Data can be loaded into the database using INSERT SELECT and CREATE TABLE AS ...
 
 ### Set Up Secured Credentials Using an Authorization Object
 
-Create an authorization object to contain the credentials to your external object store, and uncomment the EXTERNAL SECURITY clauses in the statements below to use.
+Creating an authorization object enables you to securely store and reference the credentials to your cloud object store within Vantage. Keep in mind that our sample datasets are provided to you by a public access bucket for which no credentials are required.
 
 ```CREATE AUTHORIZATION InvAuth
-USER 
-PASSWORD;
+USER ''
+PASSWORD '';
 ```
 
 ### Read Data Stored on Amazon S3 Using READ_NOS
@@ -62,7 +63,7 @@ Select only the schema of the data from the cloud object store using READ_NOS:
 LOCATION='/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'
 AUTHORIZATION=InvAuth
 RETURNTYPE='NOSREAD_SCHEMA'
-) AS D;
+) AS d;
 ```
 
 ### Read Data Stored on Amazon S3 Using CREATE FOREIGN TABLE
@@ -70,13 +71,11 @@ RETURNTYPE='NOSREAD_SCHEMA'
 Create a foreign table:
 
 ```CREATE FOREIGN TABLE sample_data
-, EXTERNAL SECURITY InvAuth
-USING (LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'));
-Select data using the foreign table:
-SELECT TOP 2*
-FROM sample_data;
+,EXTERNAL SECURITY InvAuth
+USING ( LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/') );
+```
 
-## Import Data into Vantage from Data Stored on Amazon S3
+### Import Data into Vantage from Data Stored on Amazon S3
 
 To persist data from a cloud object store, you can use a CREATE TABLE AS statement as follows:
 
@@ -149,11 +148,11 @@ SELECT * FROM WRITE_NOS (
  AS d;
 ```
 
-#### Validate WRITE_NOS results
+### Validate WRITE_NOS results
 
 You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials, then creating a foreign table for accessing Parquet data as shown in the examples here: [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 
-#### Clean Up
+### Clean Up
 
 Drop the objects created in your own database schema:
 
