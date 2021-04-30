@@ -38,7 +38,7 @@ Data can be loaded into the database using INSERT SELECT and CREATE TABLE AS ...
 
 ### Set Up Secured Credentials Using an Authorization Object
 
-Creating an authorization object enables you to securely store and reference the credentials to your cloud object store within Vantage. Keep in mind that our sample datasets are provided to you by a public access bucket for which no credentials are required.
+Creating an authorization object enables you to securely store and reference the credentials to your cloud object store within Vantage. Keep in mind that our sample datasets are provided to you through a public access bucket for which no credentials are required.
 
 ```
 CREATE AUTHORIZATION InvAuth
