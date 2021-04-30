@@ -164,7 +164,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials, then creating a foreign table for accessing Parquet data as shown in the examples here: [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
+You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 
 ### Clean Up
 
