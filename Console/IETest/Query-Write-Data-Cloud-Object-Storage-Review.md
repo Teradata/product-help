@@ -88,7 +88,7 @@ FROM sample_data;
 
 ### Import Data into Vantage from Data Stored on Amazon S3
 
-To persist data from a cloud object store, you can use a CREATE TABLE AS statement as follows:
+To persist data from a cloud object store, use a CREATE TABLE AS statement as follows:
 
 ```
 CREATE TABLE AS sample_data_local ( SELECT * FROM sample_data ) WITH DATA;
