@@ -98,7 +98,7 @@ CREATE TABLE AS sample_data_local ( SELECT * FROM sample_data ) WITH DATA;
     
 ### Introduction
 
-The following examples demonstrate how to copy data from Vantage to a cloud object store. You must provide your own bucket to execute the example queries below.
+The following examples demonstrate how to copy data from Vantage to a cloud object store. You must provide your own bucket to execute the example queries.
 
 ### WRITE_NOS
 
