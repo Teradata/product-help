@@ -108,7 +108,7 @@ With WRITE_NOS, you can do the following:
 * Specify one or more columns in the source table as partition attributes in the target cloud object store
 * Create and update a manifest file with all objects created during the copy process
 
-Before running the following examples, replace the following fields in the example scripts:
+Before running the examples, replace the following fields in the example scripts:
 * *YourBucketName* : with the name of your bucket
 * *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
 * *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
