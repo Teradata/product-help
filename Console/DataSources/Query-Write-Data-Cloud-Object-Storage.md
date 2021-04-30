@@ -6,7 +6,7 @@
 
 ### Introduction
 
-The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, datasets are provided through a public access bucket that does not require setup or credentials.
+The following examples demonstrate how to access data stored on cloud object stores. You can copy and modify the example queries below to access your own datasets. For simplicity, sample datasets are provided through a public access bucket that does not require setup or credentials.
 
 To use SQL to access your own cloud object store, replace the following:
 * **LOCATION** - Replace with the location of your object store. The location must begin with /s3/ (Amazon) or /az/ (Azure).
@@ -38,9 +38,10 @@ Data can be loaded into the database using INSERT SELECT and CREATE TABLE AS ...
 
 ### Set Up Secured Credentials Using an Authorization Object
 
-Creating an authorization object enables you to securely store and reference the credentials to your cloud object store within Vantage. Keep in mind that our sample datasets are provided to you by a public access bucket for which no credentials are required.
+Creating an authorization object enables you to securely store and reference the credentials to your cloud object store within Vantage. Keep in mind that our sample datasets are provided to you through a public access bucket for which no credentials are required.
 
-```CREATE AUTHORIZATION InvAuth
+```
+CREATE AUTHORIZATION InvAuth
 USER ''
 PASSWORD '';
 ```
@@ -49,7 +50,8 @@ PASSWORD '';
 
 Select data from the cloud object store using READ_NOS:
 
-```SELECT TOP 2* FROM(
+```
+SELECT TOP 2* FROM(
 LOCATION='/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'
 AUTHORIZATION=InvAuth
 ) AS D;
@@ -59,7 +61,8 @@ AUTHORIZATION=InvAuth
 
 Select only the schema of the data from the cloud object store using READ_NOS:
 
-```SELECT TOP 1 * FROM (
+```
+SELECT TOP 1 * FROM (
 LOCATION='/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'
 AUTHORIZATION=InvAuth
 RETURNTYPE='NOSREAD_SCHEMA'
@@ -70,43 +73,53 @@ RETURNTYPE='NOSREAD_SCHEMA'
 
 Create a foreign table:
 
-```CREATE FOREIGN TABLE sample_data
+```
+CREATE FOREIGN TABLE sample_data
 ,EXTERNAL SECURITY InvAuth
 USING ( LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/') );
 ```
 
+Select data using the foreign table:
+
+```
+SELECT TOP 2
+FROM sample_data;
+```
+
 ### Import Data into Vantage from Data Stored on Amazon S3
 
-To persist data from a cloud object store, you can use a CREATE TABLE AS statement as follows:
+To persist data from a cloud object store, use a CREATE TABLE AS statement:
 
-```CREATE TABLE AS sample_data_local ( SELECT * FROM sample_data ) WITH DATA;
+```
+CREATE TABLE AS sample_data_local ( SELECT * FROM sample_data ) WITH DATA;
 ```
 
 ## Write Data to a Cloud Object Store
     
 ### Introduction
 
-The following examples demonstrate how to copy data from Vantage to a cloud object store. You must provide your own bucket to execute the example queries below.
+The following examples demonstrate how to copy data from Vantage to a cloud object store. You must provide your own bucket to execute the example queries.
 
 ### WRITE_NOS
 
-WRITE_NOS allows you to do the following:
+With WRITE_NOS, you can do the following:
 * Copy / write data directly to a cloud object store
 * Convert the data in uncompressed Parquet format unless Snappy compression is specified by the user
 * Specify one or more columns in the source table as partition attributes in the target cloud object store
 * Create and update a manifest file with all objects created during the copy process
 
-Before running the following examples, replace the following fields in the example scripts:
+Before running the examples, replace the following fields in the example scripts:
 * *YourBucketName* : with the name of your bucket
 * *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
 * *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-**Tip**:  As an alternative to the *AccessID* and *AccessKey* lines above, you can create an authorization object to securely hide the credentials of your cloud object store.
+**Tip**:  As an alternative to the *AccessID* and *AccessKey* lines, you can create an authorization object to securely hide the credentials of your cloud object store.
 
 #### Example 1 
 This example selects all rows in local sample_data_local to copy the dataset to the object store's *sample1* partition:
 
-```sql
+```
+sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT * FROM sample_data_local )
     USING
@@ -122,7 +135,8 @@ SELECT * FROM WRITE_NOS (
 
 This example copies the same dataset by partitioning by the sensor date year under the *sample2* partition:
 
-```sql
+```
+sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
             sensdate
@@ -150,13 +164,14 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials, then creating a foreign table for accessing Parquet data as shown in the examples here: [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
+You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 
 ### Clean Up
 
 Drop the objects created in your own database schema:
 
-```DROP AUTHORIZATION InvAuth;
+```
+DROP AUTHORIZATION InvAuth;
 DROP TABLE sample_data;
 DROP TABLE sample_data_local;
 ```
