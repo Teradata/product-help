@@ -40,7 +40,8 @@ Data can be loaded into the database using INSERT SELECT and CREATE TABLE AS ...
 
 Creating an authorization object enables you to securely store and reference the credentials to your cloud object store within Vantage. Keep in mind that our sample datasets are provided to you by a public access bucket for which no credentials are required.
 
-```CREATE AUTHORIZATION InvAuth
+```
+CREATE AUTHORIZATION InvAuth
 USER ''
 PASSWORD '';
 ```
@@ -49,7 +50,8 @@ PASSWORD '';
 
 Select data from the cloud object store using READ_NOS:
 
-```SELECT TOP 2* FROM(
+```
+SELECT TOP 2* FROM(
 LOCATION='/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'
 AUTHORIZATION=InvAuth
 ) AS D;
@@ -59,7 +61,8 @@ AUTHORIZATION=InvAuth
 
 Select only the schema of the data from the cloud object store using READ_NOS:
 
-```SELECT TOP 1 * FROM (
+```
+SELECT TOP 1 * FROM (
 LOCATION='/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'
 AUTHORIZATION=InvAuth
 RETURNTYPE='NOSREAD_SCHEMA'
@@ -70,7 +73,8 @@ RETURNTYPE='NOSREAD_SCHEMA'
 
 Create a foreign table:
 
-```CREATE FOREIGN TABLE sample_data
+```
+CREATE FOREIGN TABLE sample_data
 ,EXTERNAL SECURITY InvAuth
 USING ( LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/') );
 ```
@@ -79,7 +83,8 @@ USING ( LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/') );
 
 To persist data from a cloud object store, you can use a CREATE TABLE AS statement as follows:
 
-```CREATE TABLE AS sample_data_local ( SELECT * FROM sample_data ) WITH DATA;
+```
+CREATE TABLE AS sample_data_local ( SELECT * FROM sample_data ) WITH DATA;
 ```
 
 ## Write Data to a Cloud Object Store
@@ -106,7 +111,8 @@ Before running the following examples, replace the following fields in the examp
 #### Example 1 
 This example selects all rows in local sample_data_local to copy the dataset to the object store's *sample1* partition:
 
-```sql
+```
+sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT * FROM sample_data_local )
     USING
@@ -122,7 +128,8 @@ SELECT * FROM WRITE_NOS (
 
 This example copies the same dataset by partitioning by the sensor date year under the *sample2* partition:
 
-```sql
+```
+sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
             sensdate
@@ -156,7 +163,8 @@ You can validate the results of your WRITE_NOS use cases by creating an authoriz
 
 Drop the objects created in your own database schema:
 
-```DROP AUTHORIZATION InvAuth;
+```
+DROP AUTHORIZATION InvAuth;
 DROP TABLE sample_data;
 DROP TABLE sample_data_local;
 ```
