@@ -1,4 +1,4 @@
-# Native Object Store Integration With Cloud Object Storage
+# Native Object Store Integration with Cloud Object Storage
 - [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 - [Write Data to a Cloud Object Store](#write-data-to-a-cloud-object-store)
 
@@ -51,7 +51,7 @@ PASSWORD '';
 Select data from the cloud object store using READ_NOS:
 
 ```
-SELECT TOP 2* FROM(
+SELECT TOP 2 * FROM (
 LOCATION='/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/'
 AUTHORIZATION=InvAuth
 ) AS D;
@@ -82,7 +82,7 @@ USING ( LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/') );
 Select data using the foreign table:
 
 ```
-SELECT TOP 2
+SELECT TOP 2 *
 FROM sample_data;
 ```
 
@@ -119,7 +119,6 @@ Before running the examples, replace the following fields in the example scripts
 This example selects all rows in local sample_data_local to copy the dataset to the object store's *sample1* partition:
 
 ```
-sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT * FROM sample_data_local )
     USING
@@ -136,7 +135,6 @@ SELECT * FROM WRITE_NOS (
 This example copies the same dataset by partitioning by the sensor date year under the *sample2* partition:
 
 ```
-sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
             sensdate
@@ -164,7 +162,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
+You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Query Data on Cloud Object Storage](#read-data-stored-on-amazon-s3-using-read_nos)
 
 ### Clean Up
 
