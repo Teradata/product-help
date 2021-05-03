@@ -13,4 +13,4 @@ Use NOS with Editor or Jupyter to run SQL commands to upload CSV, JSON, or Parqu
 * [Editor](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/E_Y7lej97C_G_EnczQ8gaA)
 * [NOS](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/YfguBQWE24~TxcyMikon6g)
 * [Shared and Dedicated Space in Vantage Trial](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/UmQujb3EfWY8JG7oPc70~g)
-* [Risks](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/tgkv~vhW_w8Z0ACvtp28iA)
+* [Risks](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/pTx2lXHCDGAYkuS6MxOzlA)
