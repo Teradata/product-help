@@ -162,7 +162,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Query Data on Cloud Object Storage](#read-data-stored-on-amazon-s3-using-read_nos)
+You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Read Data Stored on Amazong S3 Using READ_NOS](#read-data-stored-on-amazon-s3-using-read_nos)
 
 ### Clean Up
 
