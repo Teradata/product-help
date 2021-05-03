@@ -9,4 +9,4 @@ Select **New Policy** to configure your Amazon S3 bucket policy for access to yo
 
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
-* [Teradata Vantage™ - Native Object Store Getting Started Guide](https://docs.teradata.com/....)
+* [Teradata Vantage™ - Native Object Store Getting Started Guide](https://docs.teradata.com/r/2mw8ooFr~xX0EaaGFaDW8A/root)
