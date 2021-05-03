@@ -82,8 +82,7 @@ USING ( LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/') );
 Select data using the foreign table:
 
 ```
-SELECT TOP 2 *
-FROM sample_data;
+SELECT TOP 2 * FROM sample_data;
 ```
 
 ### Import Data into Vantage from Data Stored on Amazon S3
