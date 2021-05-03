@@ -10,4 +10,4 @@ To allow Teradata Vantage access to your Amazon S3 data, your Cloud Administrato
 
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
-* [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/ZoppFkelEPzGKiDT1A~Jbw)
+* [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/qrI_KuFo_qRLVNOTe8WjMw)
