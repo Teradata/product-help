@@ -2,8 +2,8 @@
 
 Use NOS with Editor or Jupyter to write CSV, JSON, and Parquet data to your external object stores.
 
-* Start the Editor guided tour.
-* Check out the Jupyter GettingStarted Notebook tutorial.
+<!-- * Start the Editor guided tour. -->
+<!--* Check out the Jupyter Getting Started Notebook tutorial. -->
 
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
