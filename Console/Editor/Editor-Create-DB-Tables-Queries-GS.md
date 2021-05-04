@@ -2,9 +2,9 @@
 
 Use Editor or Jupyter.
 
-* Start the Editor guided tour.
-* Check out the Jupyter Getting Started Notebook tutorial.
-* Watch a quick video on creating tables.
+<!-- * Start the Editor guided tour. -->
+<!--* Check out the Jupyter Getting Started Notebook tutorial. -->
+<!--* Watch a quick video on creating tables. -->
 
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
 
