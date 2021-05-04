@@ -36,7 +36,7 @@ And I will leave the Min # events, Max # events and Allow overlap as the default
 
 For this demo scenario I do not need to limit the date range (however this filter could be useful in other situations)
 
-Finally, I need to select the session column (entity_id) to tell path analysis which events belong in the same path.  Some path analysis such as paths on a website will be collated by session_id, in this scenario the session_id is equal to the patient (entity_id)
+Finally, I need to select the session column (memberid) to tell path analysis which events belong in the same path.  Some path analysis such as paths on a website will be collated by session_id, in this scenario the session_id is equal to the patient (memberid)
 
 Once all the information required by the query has been entered, I can select the Run button, at which point a query is dynamically generated and sent to the Vantage system and in short order a visualization will be returned to us here in the interface.
 

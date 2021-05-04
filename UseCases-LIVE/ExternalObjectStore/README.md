@@ -91,9 +91,10 @@ To persist the data from an external object store we can use a CREATE TABLE AS s
 
 First we need a schema to apply to the data:
 
+Please provide username as an input to make the schema name unique.
 
 ```sql
-CREATE CSV SCHEMA sample_csv_schema AS
+CREATE CSV SCHEMA sample_csv_schema_${username} AS
 '{"field_delimiter":",","field_names":["date", "time", "epoch", "moteid", "temperature", "humidity", "light", "voltage"]}';
 ```
 
@@ -103,7 +104,7 @@ Create a foreign table that uses that schema:
 ```sql
 CREATE FOREIGN TABLE sample_csv_ft
 ( Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC, 
-  Payload DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV WITH SCHEMA sample_csv_schema
+  Payload DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV WITH SCHEMA sample_csv_schema_${username}
 )
 USING (LOCATION('/s3/s3.amazonaws.com/trial-datasets/IndoorSensor/data.csv'));
 ```
@@ -257,7 +258,8 @@ Before running the following examples, replace the following fields in the examp
 ### Example 1 
 This first example will select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
 
-```SELECT * FROM WRITE_NOS (
+```sql
+SELECT * FROM WRITE_NOS (
     ON ( SELECT * FROM sample_csv_local )
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample1/')
@@ -270,7 +272,8 @@ This first example will select all rows in local sample_csv_local to copy the da
 
 This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
-```SELECT * FROM WRITE_NOS (
+```sql
+SELECT * FROM WRITE_NOS (
     ON ( SELECT
             sensdate
             ,senstime

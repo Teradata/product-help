@@ -11,14 +11,17 @@
 			"description": "Create database tables, run ad-hoc queries, and upload data",
 			"url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md",
 			"children": [{
+					"id": "createRun",
 					"title": "Create and Run",
 					"url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
 				},
 				{
+					"id": "uploadData",
 					"title": "Upload Data",
 					"url": "Console/Editor/Editor-Upload-Data-GS.md"
 				},
 				{
+					"id": "writeData",
 					"title": "Write Data",
 					"url": "Console/Editor/Editor-Write-Data-External-Object-Store-GS.md"
 				}
@@ -62,18 +65,22 @@
 					"title": "Snapshots",
 					"url": "Console/Sites/Sites-Snapshots.md",
 					"children": [{
+							"id": "createSnapshot",
 							"title": "Create Snapshot",
 							"url": "Console/Snapshots/Create-Snapshot.md"
 						},
 						{
+							"id": "retainedCopies",
 							"title": "Retained copies",
 							"url": "Console/Snapshots/Snapshot-Retained-Copies.md"
 						},
 						{
+							"id": "schedule",
 							"title": "Schedule",
 							"url": "Console/Snapshots/Snapshot-Schedule.md"
 						},
 						{
+							"id": "history",
 							"title": "History",
 							"url": "Console/Snapshots/Snapshot-History.md"
 						}
@@ -84,10 +91,16 @@
 					"title": "Data Sources",
 					"url": "Console/Sites/Sites-Data-Sources.md",
 					"children": [{
-					    "id": "newPolicy",
-						"title": "New Policy",
-						"url": "Console/DataSources/Data-Sources-New-Policy.md"
-					}]
+							"id": "newPolicy",
+							"title": "New Policy",
+							"url": "Console/DataSources/Data-Sources-New-Policy.md"
+						},
+						{
+							"id": "queryWriteData",
+							"title": "Query and Write Data on Cloud Object Storage",
+							"url": "Console/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+						}
+					]
 				}
 			]
 		},
@@ -96,12 +109,6 @@
 			"title": "Object Storage",
 			"description": "Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.",
 			"url": "Console/ObjectStorage/Object-Storage-Overview-GS.md"
-		},
-		{
-			"id": "ieTest",
-			"title": "IE Test",
-			"description": "IE Test location.",
-			"url": "Console/IETest/IE-Test.md"
 		}
 	]
 }
