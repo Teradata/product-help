@@ -2,8 +2,8 @@
 
 Use Editor or Jupyter to run SQL commands to query database tables and access external object storage.
 
-* Start the Editor guided tour.
-* Check out the Jupyter Getting Started Notebook tutorial.
+<!-- * Start the Editor guided tour. -->
+<!--* Check out the Jupyter Getting Started Notebook tutorial. -->
 
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
