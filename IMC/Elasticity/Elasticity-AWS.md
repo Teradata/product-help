@@ -22,9 +22,9 @@ If applicable, Hot-Standby Nodes (HSN)s for high availability are listed.
 - **Scale Out/In**: Adjust the instance quantity. Scaling out incurs additional cost.
 - **Expand Storage**: Increase the EBS volume (raw, permanent storage) in 1 TB increments. After you expand storage, you cannot decrease it.
 
-**Vantage Trial and LIVE Users**: You can scale out from three nodes to four nodes and scale in from four nodes to three nodes.
+**Vantage Trial Users**: You can scale out from three nodes to four nodes and scale in from four nodes to three nodes.
 
 For scaling up and down, m5.4xlarge and m5.8xlarge are available.
 
-**Vantage Trial and LIVE Users**: Because elasticity operations affect other users on the system, perform this only when needed. Remember to scale down any systems you scale up. When you scale down or scale in, you consume fewer TCore-Hours because a smaller amount of compute resources are used.   
+**Vantage Trial Users**: Because elasticity operations affect other users on the system, perform this only when needed. Remember to scale down any systems you scale up. When you scale down or scale in, you consume fewer TCore-Hours because a smaller amount of compute resources are used.   
 

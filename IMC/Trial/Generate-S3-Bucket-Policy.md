@@ -9,4 +9,4 @@ Click **Copy Policy** to copy an existing S3 bucket policy to the clipboard to e
 Click **Test Connection** to confirm the read and write permissions work.
 
 For more information, see the  
-[Teradata Vantage Trial Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=jzh1567636979792.ditamap&dita:ditavalPath=pnw1578847806387.ditaval) or the [Teradata Vantage LIVE Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=zvu1578697453001.ditamap&dita:ditavalPath=xdh1578848858107.ditaval).
+[Teradata Vantage Trial Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=jzh1567636979792.ditamap&dita:ditavalPath=pnw1578847806387.ditaval).
