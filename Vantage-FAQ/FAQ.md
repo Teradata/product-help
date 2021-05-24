@@ -58,11 +58,3 @@ The Console is an easy-to-use web interface for monitoring and managing as-a-ser
 #### What is the supported browser?
 
 Google Chrome
-
----
-
-See the _[Teradata Vantage LIVE Quick Start Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=Teradata_Vantage™_LIVE_Quick_Start_Guide_Upload/zvu1578697453001.ditamap&dita:ditaval/xdh1578848858107.ditaval)_. This book is internal only. After you click the link, you'll get an error. Go to the upper right and click **Sign In** then **Teradata Employee Sign In** to open the book. Use your Teradata email address and password to sign in. 
-
-Make sure you click **Teradata Employee Sign In** first.
-
-There is an attached PDF that you can download from the left pane.
