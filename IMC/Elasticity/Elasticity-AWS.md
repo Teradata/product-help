@@ -27,4 +27,3 @@ If applicable, Hot-Standby Nodes (HSN)s for high availability are listed.
 For scaling up and down, m5.4xlarge and m5.8xlarge are available.
 
 **Vantage Trial Users**: Because elasticity operations affect other users on the system, perform this only when needed. Remember to scale down any systems you scale up. When you scale down or scale in, you consume fewer TCore-Hours because a smaller amount of compute resources are used.   
-
