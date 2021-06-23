@@ -41,5 +41,5 @@ Once the Site Access Manager approves the request, it is assigned to you in the 
 
 Only Access Managers and Site Super Admins can revoke a user's access in console.
 
-1. Next to the user's record, click 
+1. Next to the user's record, select 
 ![more_vert_kebob-15px.svg](more_vert_kebob-15px.svg) > Offboard User.
