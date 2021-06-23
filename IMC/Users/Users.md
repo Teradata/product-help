@@ -1,11 +1,11 @@
 ### Users
 
-- [Creating a User](#creating-a-user)
+- [Create User](#creating-a-user)
 - [User Access Levels](#user-access-levels)
-- [Requesting Access to a User Role](#requesting-access-to-a-user-role)
-- [Offboarding a User](#offboarding-a-user)
+- [Request Access to User Role](#requesting-access-to-a-user-role)
+- [Offboard User](#offboarding-a-user)
 
-#### Creating a User
+#### Create a User
 
 With the proper user role, you can add users by clicking **Create User** and completing the fields.
 
@@ -22,7 +22,7 @@ Your user role is set automatically according to your account type in the Servic
 | Support Contact (default) | Read-Only Site Admin (default) | Read-only |
 
 
-#### Requesting Access to a User Role
+#### Request Access to a User Role
 
 Use the Console's **Incidents** pane to request access for yourself or another user.
 
@@ -37,7 +37,7 @@ You can also use the Service Portal:
 
 Once the Site Access Manager approves the request, it is assigned to you in the Console.
 
-#### Offboarding a User
+#### Offboard User
 
 Only Access Managers and Site Super Admins can revoke a user's access in console.
 
