@@ -2,57 +2,57 @@
 	"items": [{
 	   "id": "videoOverview",
 	   "title": "Vantage App Launcher",
-	   "description": "See the Vantage App Launcher, its features and navigation",
-	   "url": "Videos/AppLauncher/App-Launcher.md"
+	   "description": "See the Vantage App Launcher, its features, and navigation",
+	   "url": "Videos/AppLauncher/App-Launcher-en.md"
 	},
 	{
 	   "id": "videoEditor",
 	   "title": "Exploring Editor",
-	   "description": " ",
-	   "url": " "
+	   "description": "Get an overview of the Vantage Editor, its features, and its interface.",
+	   "url": "Videos/Editor/Exploring-Editor-en.md"
 	},
 	{
 	   "id": "advancedSQLsyntax",
 	   "title": "Syntax for Advanced SQL Engine Functions",
 	   "description": "Learn the differences between Teradata Vantage SQL syntax and ANSI SQL syntax for Advanced SQL Functions",
-	   "url": "Videos/Syntax/Advanced-SQL-Engine-Functions.md"
+	   "url": "Videos/Syntax/Advanced-SQL-Engine-Functions-en.md"
 	},
 	{
 	   "id": "videoFileUpload",
-	   "title": "Uploading Files",
-	   "description": " ",
-	   "url": " "
+	   "title": "Uploading Data",
+	   "description": "Upload a file from your PC to populate a database table.",
+	   "url": "Videos/Editor/Uploading-Data-en.md "
 	},
 	{
 	   "id": "videoJupyter",
 	   "title": "Learning About Jupyter Notebooks",
-	   "description": " ",
-	   "url": "Videos/Jupyter/Learning-About-Jupyter.md" 
+	   "description": "Use Jupyter Lab and Jupyter Notebook on Teradata Vantage for sharing and collaborating your code.",
+	   "url": "Videos/Jupyter/Learning-About-Jupyter-en.md" 
 	},
 	{
 	   "id": "videoPivot",
 	   "title": "Pivot",
-	   "description": "These examples explain how to use the PIVOT operator",
-	   "url": "Videos/Pivot/Pivot-Overview.md",
+	   "description": "These examples explain how to use the PIVOT operator.",
+	   "url": "Videos/Pivot/Pivot-Overview-en.md",
 	   "children": [{
 	       "id": "videoPivotBasics",
 	       "title": "Understanding the Basics",
-	       "url": "Videos/Pivot/Pivot-Basics.md"
+	       "url": "Videos/Pivot/Pivot-Basics-en.md"
 	   },
 	   {
 	       "id": "videoPivotAggregating",
 	       "title": "Aggregating the Generated Column",
-	       "url": ""	   
+	       "url": "Videos/Pivot/Pivot-Aggregating-en.md"	   
 	   },
 	   {
 	       "id": "videoPivotSubqueries",
 	       "title": "Issuing Subqueries in Pivot In-List",
-	       "url": ""
+	       "url": "Videos/Pivot/Pivot-Subqueries-en.md"
 	   },
 	   {
 	       "id": "videoUnpivot",
 	       "title": "Working with Unpivot",
-	       "url": ""	   
+	       "url": "Videos/Pivot/Pivot-Unpivot-en.md"	   
 	   }
 	   ]
 	},
@@ -71,13 +71,7 @@
 	{
 	   "id": "videoCreateTables",
 	   "title": "Creating Tables",
-	   "description": " ",
-	   "url": " "	
-	},
-	{
-	   "id": "videoReanameTables",
-	   "title": "Renaming Tables",
-	   "description": " ",
-	   "url": " "
+	   "description": "Create database tables usin the Advanced SQL Engine. ",
+	   "url": "Videos/Editor/Create-Tables-en.md "	
 	}]
 }

@@ -1,0 +1,2 @@
+# Aggregating the Generated Column
+

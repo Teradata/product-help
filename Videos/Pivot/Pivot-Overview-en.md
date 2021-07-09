@@ -1,4 +1,4 @@
-# Pivot
+# Using the Pivot Operator
 
 These examples explain how to use the **PIVOT** operator to:
 - Transform rows into columns
