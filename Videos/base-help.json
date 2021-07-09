@@ -2,7 +2,7 @@
 	"items": [{
 	   "id": "videoOverview",
 	   "title": "Vantage App Launcher",
-	   "description": "See the Vantage App Launcher, its features, and navigation",
+	   "description": "See the Vantage App Launcher, its features, and navigation.",
 	   "url": "Videos/AppLauncher/App-Launcher-en.md"
 	},
 	{
@@ -14,7 +14,7 @@
 	{
 	   "id": "advancedSQLsyntax",
 	   "title": "Syntax for Advanced SQL Engine Functions",
-	   "description": "Learn the differences between Teradata Vantage SQL syntax and ANSI SQL syntax for Advanced SQL Functions",
+	   "description": "Learn the differences between Teradata Vantage SQL syntax and ANSI SQL syntax for Advanced SQL Functions.",
 	   "url": "Videos/Syntax/Advanced-SQL-Engine-Functions-en.md"
 	},
 	{
@@ -59,19 +59,19 @@
 	{
 	   "id": "videoSubstring",
 	   "title": "Using the Substring Function",
-	   "description": "Learn how to retrieve a portion of a string expression, based on position",
+	   "description": "Learn how to retrieve a portion of a string expression, based on position.",
 	   "url": "Videos/Substring/Substring.md"
 	},
 	{
 	   "id": "videoDateFormat",
 	   "title": "Formatting Dates",
-	   "description": "Learn how to format dates and times on result sets",
+	   "description": "Learn how to format dates and times on result sets.",
 	   "url": "Videos/DateFormats/Date-Formats.md "	
 	},
 	{
 	   "id": "videoCreateTables",
 	   "title": "Creating Tables",
-	   "description": "Create database tables usin the Advanced SQL Engine. ",
+	   "description": "Create database tables usin the Advanced SQL Engine.",
 	   "url": "Videos/Editor/Create-Tables-en.md "	
 	}]
 }
