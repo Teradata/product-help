@@ -4,7 +4,7 @@ Add a SAML 2.0- or OIDC-compliant identity provider for SSO.
 
 | **Option** | **Description** |
 |--|--|
-| **Domain** | Domain of the email client<br>For example: mycompany.com |
+| **Domain** | Domain of the email client<br>For example: 'mycompany.com' |
 | **SSO Protocol** | OpenID Connect or SAML 2.0 |
 | **Claims** | Email attributes to establish user mapping |
  
