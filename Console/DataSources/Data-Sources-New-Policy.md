@@ -12,3 +12,4 @@ To allow Teradata Vantage read and write access to your Amazon S3 data, your Clo
 ![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
  
 * [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/qrI_KuFo_qRLVNOTe8WjMw)
+* 
