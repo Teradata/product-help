@@ -9,7 +9,7 @@
 			"id": "editor",
 			"title": "Editor",
 			"description": "Create database tables, run ad-hoc queries, and upload data",
-			"url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md",
+			"url": "Console/Editor/Editor-Overview-GS.md",
 			"children": [{
 					"id": "createRun",
 					"title": "Create and Run",
