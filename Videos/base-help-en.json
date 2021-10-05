@@ -1,30 +1,35 @@
 {
 	"items": [{
 	   "id": "videoOverview",
+	   "icon": "play_circle_filled",
 	   "title": "Vantage App Launcher",
 	   "description": "See the Vantage App Launcher, its features, and navigation.",
 	   "url": "Videos/AppLauncher/App-Launcher-en.md"
 	},
 	{
 	   "id": "videoEditor",
+	   "icon": "play_circle_filled",
 	   "title": "Exploring Editor",
 	   "description": "Get an overview of the Vantage Editor, its features, and its interface.",
 	   "url": "Videos/Editor/Exploring-Editor-en.md"
 	},
 	{
 	   "id": "advancedSQLsyntax",
+	   "icon": "play_circle_filled",
 	   "title": "Syntax for Advanced SQL Engine Functions",
 	   "description": "Learn the differences between Teradata Vantage SQL syntax and ANSI SQL syntax for Advanced SQL Functions.",
 	   "url": "Videos/Syntax/Advanced-SQL-Engine-Functions-en.md"
 	},
 	{
 	   "id": "videoFileUpload",
+	   "icon": "play_circle_filled",
 	   "title": "Uploading Data",
 	   "description": "Upload a file from your PC to populate a database table.",
 	   "url": "Videos/Editor/Uploading-Data-en.md "
 	},
 	{
 	   "id": "videoJupyter",
+	   "icon": "play_circle_filled",
 	   "title": "Learning About Jupyter Notebooks",
 	   "description": "Use Jupyter Lab and Jupyter Notebook on Teradata Vantage for sharing and collaborating your code.",
 	   "url": "Videos/Jupyter/Learning-About-Jupyter-en.md" 
@@ -36,21 +41,25 @@
 	   "url": "Videos/Pivot/Pivot-Overview-en.md",
 	   "children": [{
 	       "id": "videoPivotBasics",
+		   "icon": "play_circle_filled",
 	       "title": "Understanding the Basics",
 	       "url": "Videos/Pivot/Pivot-Basics-en.md"
 	   },
 	   {
 	       "id": "videoPivotAggregating",
+		   "icon": "play_circle_filled",
 	       "title": "Aggregating the Generated Column",
 	       "url": "Videos/Pivot/Pivot-Aggregating-en.md"	   
 	   },
 	   {
 	       "id": "videoPivotSubqueries",
+		   "icon": "play_circle_filled",
 	       "title": "Issuing Subqueries in Pivot In-List",
 	       "url": "Videos/Pivot/Pivot-Subqueries-en.md"
 	   },
 	   {
 	       "id": "videoUnpivot",
+		   "icon": "play_circle_filled",
 	       "title": "Working with Unpivot",
 	       "url": "Videos/Pivot/Pivot-Unpivot-en.md"	   
 	   }
@@ -58,18 +67,21 @@
 	},
 	{
 	   "id": "videoSubstring",
+	   "icon": "play_circle_filled",
 	   "title": "Using the Substring Function",
 	   "description": "Learn how to retrieve a portion of a string expression, based on position.",
 	   "url": "Videos/Substring/Substring.md"
 	},
 	{
 	   "id": "videoDateFormat",
+	   "icon": "play_circle_filled",
 	   "title": "Formatting Dates",
 	   "description": "Learn how to format dates and times on result sets.",
 	   "url": "Videos/DateFormats/Date-Formats.md "	
 	},
 	{
 	   "id": "videoCreateTables",
+	   "icon": "play_circle_filled",
 	   "title": "Creating Tables",
 	   "description": "Create database tables usin the Advanced SQL Engine.",
 	   "url": "Videos/Editor/Create-Tables-en.md "	
