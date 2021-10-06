@@ -1,6 +1,6 @@
 ### System Problems
 
-PSIMs collect events from managed nodes and correlate them to provide an overoll problem summary.
+PSIMs collect events from managed nodes and correlate them to provide an overall problem summary.
 
 **Events** - A system condition change that may require attention.
 

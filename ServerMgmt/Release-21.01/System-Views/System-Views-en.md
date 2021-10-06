@@ -1,6 +1,6 @@
 ### System Views
 
-Tailor your view by selecting an option.
+Tailor your view by selecting a drop-down option.
 
 ![cov-icn_OK_check_circle-15px.svg](cov-icn_OK_check_circle-15px.svg) - Operating normally.
 

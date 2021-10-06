@@ -4,7 +4,7 @@ The Asset Baseline:
 
 - Is a snapshot of asset inventory, including model and part numbers, configurations, and revision levels.
 - Should be collected after any changes to configurations or addressing.
-- Can only run when the tool can communicate with the chassis sending information.
+- Can only run when the tool can communicate with the node sending information.
 
 When run, the Asset Baseline:
 
