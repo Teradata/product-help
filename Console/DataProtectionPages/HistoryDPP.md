@@ -11,5 +11,5 @@ Select
 
 At least one backup must remain unprotected for subsequent runs. If you keep only two backups and one is protected, you must designate a new protected backup. For example, if you run a backup on the last day of the month, you can choose to protect that copy, then replace the daily backup whenever it runs.
 
-The **Execution Details ** lists the errors and skipped objects.
+The **Execution Details** lists the errors and skipped objects.
 
