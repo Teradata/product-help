@@ -139,7 +139,8 @@
 					"title": "Settings in Data Protection Pages",
 					"url": "Console/DataProtectionPages/SettingsDPP.md"
 				},
-	    }
+			]
+	    },
 		{
 			"id": "objectStorage",
 			"title": "Object Storage",
