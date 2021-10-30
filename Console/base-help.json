@@ -104,6 +104,42 @@
 				}
 			]
 		},
+	    {
+	       "id": "dataProtectionPages",
+	       "title": "Data Protection",
+	       "description": "Review and create data protection pages.",
+	       "url": "Console/DataProtectionPages/DataProtection.md"
+	       "children": [{
+					"id": "overviewOfDataProtection",
+					"title": "Overview of Data Protection Page",
+					"url": "Console/DataProtectionPages/OverviewDPP.md"
+				},
+				{
+				    "id": "objectsInDataProtection",
+					"title": "Database Objects in Data Protection",
+					"url": "Console/DataProtectionPages/ObjectsDPP.md"
+				},
+				{
+				    "id": "scheduleDataProtection",
+					"title": "Schedules in Data Protection",
+					"url": "Console/DataProtectionPages/SchedulesDPP.md"
+				},
+				{
+				    "id": "historyOfDataProtection",
+					"title": "History of Data Protection Pages",
+					"url": "Console/DataProtectionPages/HistoryDPP.md"
+				},
+				{
+				    "id": "reatinedCopiesOfDataProtection",
+					"title": "Retained Copies of Backup Jobs",
+					"url": "Console/DataProtectionPages/RetainedCopiesDPP.md"
+				},
+				{
+				    "id": "settingsInDataProtection",
+					"title": "Settings in Data Protection Pages",
+					"url": "Console/DataProtectionPages/SettingsDPP.md"
+				},
+	    },
 		{
 			"id": "objectStorage",
 			"title": "Object Storage",
