@@ -108,7 +108,7 @@
 	       "id": "dataProtectionPages",
 	       "title": "Data Protection",
 	       "description": "Review and create data protection pages.",
-	       "url": "Console/DataProtectionPages/DataProtection.md"
+	       "url": "Console/DataProtectionPages/DataProtection.md",
 	       "children": [{
 					"id": "overviewOfDataProtection",
 					"title": "Overview of Data Protection Page",
@@ -138,7 +138,7 @@
 				    "id": "settingsInDataProtection",
 					"title": "Settings in Data Protection Pages",
 					"url": "Console/DataProtectionPages/SettingsDPP.md"
-				},
+				}
 			]
 	    },
 		{
