@@ -108,36 +108,36 @@
 	       "id": "dataProtectionPages",
 	       "title": "Data Protection",
 	       "description": "Review and create data protection pages.",
-	       "url": "Console/DataProtectionPages/DataProtection.md",
+	       "url": "Console/DataProtectionPages/Data-Protection-Pages.md",
 	       "children": [{
 					"id": "overviewOfDataProtection",
 					"title": "Overview of Data Protection Page",
-					"url": "Console/DataProtectionPages/OverviewDPP.md"
+					"url": "Console/DataProtectionPages/Overview-Of-Data-Protection.md"
 				},
 				{
 				    "id": "objectsInDataProtection",
 					"title": "Database Objects in Data Protection",
-					"url": "Console/DataProtectionPages/ObjectsDPP.md"
+					"url": "Console/DataProtectionPages/Objects-In-Data-Protection.md"
 				},
 				{
 				    "id": "scheduleDataProtection",
 					"title": "Schedules in Data Protection",
-					"url": "Console/DataProtectionPages/SchedulesDPP.md"
+					"url": "Console/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
 				},
 				{
 				    "id": "historyOfDataProtection",
 					"title": "History of Data Protection Pages",
-					"url": "Console/DataProtectionPages/HistoryDPP.md"
+					"url": "Console/DataProtectionPages/History-Of-Backup-Jobs.md"
 				},
 				{
 				    "id": "reatinedCopiesOfDataProtection",
 					"title": "Retained Copies of Backup Jobs",
-					"url": "Console/DataProtectionPages/RetainedCopiesDPP.md"
+					"url": "Console/DataProtectionPages/Retained-Copies-Of-Backups.md"
 				},
 				{
 				    "id": "settingsInDataProtection",
 					"title": "Settings in Data Protection Pages",
-					"url": "Console/DataProtectionPages/SettingsDPP.md"
+					"url": "Console/DataProtectionPages/Settings-Of-Backup-Jobs.md"
 				}
 			]
 	    },
