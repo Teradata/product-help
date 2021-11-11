@@ -4,7 +4,7 @@ Organization admins can view, create, edit, and delete organizational admins tha
 
 The Organization Admins tab lists existing admins, including name, username, and email.
 
-## ![fluto-icn-resources](Images/fluto-icn-resources.png) Resources
+## ![img alt=â€œâ€?](Images/oog1624305882178.png)Resources
 
 -   Creating Administrators to Manage COG Resources
 
