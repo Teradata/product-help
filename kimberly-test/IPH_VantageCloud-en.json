@@ -1,16 +1,15 @@
 {  "items":[
     { 
        "id":"vnn1631294176713", 
-       "title":"Accounts", 
+       "title":"myCustomTitleHere", 
        "description":"", 
-       "icon":"", 
+       "icon":"myCustomIconName", 
        "url":"vnn1631294176713.md", 
        "children":[
           { 
              "id":"ulr1631294289262", 
              "title":"Create", 
              "description":"", 
-             "icon":"", 
              "url":"ulr1631294289262.md"
              }
           , 
@@ -18,7 +17,6 @@
              "id":"dns1631294217386", 
              "title":"Overview", 
              "description":"General description of the Accounts Overview Card", 
-             "icon":"", 
              "url":"dns1631294217386.md"
              }
           , 
@@ -26,21 +24,18 @@
              "id":"rbw1631294249615", 
              "title":"Compute Groups", 
              "description":"Overview of compute groups", 
-             "icon":"", 
              "url":"rbw1631294249615.md", 
              "children":[
                 { 
                    "id":"yyu1631635579235", 
                    "title":"Create Compute Group", 
                    "description":"", 
-                   "icon":"", 
                    "url":"yyu1631635579235.md", 
                    "children":[
                       { 
                          "id":"xtc1631635765911", 
                          "title":"Create Profile", 
                          "description":"", 
-                         "icon":"", 
                          "url":"xtc1631635765911.md"
                          }
 
@@ -56,14 +51,12 @@
              "id":"sox1631294316092", 
              "title":"Queries", 
              "description":"General overview of queries", 
-             "icon":"", 
              "url":"sox1631294316092.md", 
              "children":[
                 { 
                    "id":"opy1631294340170", 
                    "title":"Current", 
                    "description":"Overview of current queries and options", 
-                   "icon":"", 
                    "url":"opy1631294340170.md"
                    }
                 , 
@@ -71,7 +64,6 @@
                    "id":"bbn1631294364467", 
                    "title":"Completed", 
                    "description":"", 
-                   "icon":"", 
                    "url":"bbn1631294364467.md"
                    }
 
@@ -87,14 +79,12 @@
        "id":"moe1631634446976", 
        "title":"Editor", 
        "description":"Create database tables, run ad-hoc queries, and upload data", 
-       "icon":"", 
        "url":"moe1631634446976.md", 
        "children":[
           { 
              "id":"bcg1631634679779", 
              "title":"Create and Run", 
              "description":"Create and Run", 
-             "icon":"", 
              "url":"bcg1631634679779.md"
              }
           , 
@@ -102,7 +92,6 @@
              "id":"uqn1631634845829", 
              "title":"Upload Data", 
              "description":"How to upload CSV data", 
-             "icon":"", 
              "url":"uqn1631634845829.md"
              }
           , 
@@ -110,7 +99,6 @@
              "id":"rll1631634960085", 
              "title":"Write Data", 
              "description":"Use NOS to write data to external object stores", 
-             "icon":"", 
              "url":"rll1631634960085.md"
              }
 
@@ -122,14 +110,12 @@
        "id":"uca1631294586647", 
        "title":"Organizations", 
        "description":"", 
-       "icon":"", 
        "url":"uca1631294586647.md", 
        "children":[
           { 
              "id":"xdw1631294735053", 
              "title":"Overview", 
              "description":"Description of the Organizations Overview tab", 
-             "icon":"", 
              "url":"xdw1631294735053.md"
              }
           , 
@@ -137,7 +123,6 @@
              "id":"dse1631294766729", 
              "title":"Admins", 
              "description":"Overview of organization admins", 
-             "icon":"", 
              "url":"dse1631294766729.md"
              }
           , 
@@ -145,7 +130,6 @@
              "id":"sxw1631294789057", 
              "title":"Accounts", 
              "description":"", 
-             "icon":"", 
              "url":"sxw1631294789057.md"
              }
 
@@ -157,7 +141,6 @@
        "id":"uya1631635403876", 
        "title":"Identity Provider", 
        "description":"Configure an identity provider for SSO authentication.", 
-       "icon":"", 
        "url":"uya1631635403876.md"
        }
     , 
@@ -165,7 +148,6 @@
        "id":"fuw1631635134724", 
        "title":"Private Link", 
        "description":"Secure your network traffic over private endpoint accounts.", 
-       "icon":"", 
        "url":"fuw1631635134724.md"
        }
     , 
@@ -173,7 +155,6 @@
        "id":"ovf1634672007523", 
        "title":"Videos", 
        "description":"Grab your popcorn.", 
-       "icon":"", 
        "url":"ovf1634672007523.md"
        }
     , 
@@ -181,7 +162,6 @@
        "id":"zwa1634672075014", 
        "title":"Guided Tours", 
        "description":"Let our professionals show you how Vantage can work for you.", 
-       "icon":"", 
        "url":"zwa1634672075014.md"
        }
     , 
@@ -189,7 +169,6 @@
        "id":"lxh1634672170950", 
        "title":"Use Cases", 
        "description":"Want some ideas about how to implement? Let these use cases guide you.", 
-       "icon":"", 
        "url":"lxh1634672170950.md"
        }
 
