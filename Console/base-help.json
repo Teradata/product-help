@@ -28,6 +28,28 @@
 			]
 		},
 		{
+		    "id": "overviewOfSandbox",
+		    "title": "Sandbox",
+		    "description": "Sandboxes are delicated child sites for testing and analytics.",
+		    "url": "Console/Sandbox/Overview-Of-Sandbox.md",
+		    "children": [{
+		          "id": "createSandbox",
+		          "title": "Creation of Sandbox",
+		          "url": "Console/Sandbox/Create-A-Sandbox.md"
+		          },
+		          {
+		              "id": "notificationsInSandbox",
+		              "title": "Notifications in Sandbox",
+		              "url": "Console/Sandbox/Notifications-In-Sandbox.md"
+		          },
+		          {
+		              "id": "createConnection",
+		              "title": "Create a Sandbox Connection",
+		              "url": "Console/Sandbox/Create-Sandbox-Connection.md"
+		          }
+            ]
+		},
+		{
 			"id": "identityProviders",
 			"title": "Identity Provider",
 			"description": "Configure an identity provider for SSO authentication",
