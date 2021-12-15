@@ -4,6 +4,6 @@ Snapshots give you fast and full-system backups for data protection and recovery
 
 Review your retained copies, history, and schedule information.
 
-![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
+**Resources**
  
 * [Backups](https://docs.teradata.com/r/yvHydfa0yCRWG8y0pk4dIQ/6iUMkdwVlxZh6_lUW9ixOg)
