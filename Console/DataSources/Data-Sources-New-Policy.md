@@ -9,6 +9,6 @@ To allow Teradata Vantage read and write access to your Amazon S3 data, your Clo
 
 <!-- **Tip**: If you use NOS while running demo use cases, you don't need to configure the policy because you are accessing a Teradata-managed Amazon S3 bucket. -->
 
-![../Images/fluto-icn-resources.png](../Images/fluto-icn-resources.png) **Resources**
+**Resources**
  
 * [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/qrI_KuFo_qRLVNOTe8WjMw)
