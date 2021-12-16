@@ -1,15 +1,173 @@
-{
-	"items": [{
-			"id": "test",
-			"title": "Lorem ipsum",
-			"description": "Test topic",
-			"url": "Vantage/Test/Test-en.md"
-		},
-		 {
-			"id": "test2",
-			"title": "Lorem ipsum",
-			"description": "Test topic",
-			"url": "Vantage/Test/Test-en.md"
-		} 
-	]
-}
+{  "items":[
+    { 
+       "id":"ipm1638950267555", 
+       "title":"myCustomTitleHere", 
+       "url":"ipm1638950267555.md", 
+       "children":[
+          { 
+             "id":"awz1638950267708", 
+             "title":"Create", 
+             "url":"awz1638950267708.md"
+             }
+          , 
+          { 
+             "id":"rvk1638950267567", 
+             "title":"Overview", 
+             "description":"A glimpse of the Accounts Overview Card", 
+             "url":"rvk1638950267567.md"
+             }
+          , 
+          { 
+             "id":"szu1638950268264", 
+             "title":"Compute Groups", 
+             "description":"Overview of compute groups", 
+             "url":"szu1638950268264.md", 
+             "children":[
+                { 
+                   "id":"xvq1638950268162", 
+                   "title":"Create Compute Group", 
+                   "url":"xvq1638950268162.md", 
+                   "children":[
+                      { 
+                         "id":"nww1638950267592", 
+                         "title":"Create Profile", 
+                         "url":"nww1638950267592.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"bln1638950267720", 
+             "title":"Queries", 
+             "description":"General overview of queries", 
+             "url":"bln1638950267720.md", 
+             "children":[
+                { 
+                   "id":"tbs1638950267605", 
+                   "title":"Current", 
+                   "description":"Overview of current queries and options", 
+                   "url":"tbs1638950267605.md", 
+                   "children":[
+                      { 
+                         "id":"yyg1638950267579", 
+                         "title":"Completed", 
+                         "url":"yyg1638950267579.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"zfd1638950267743", 
+       "title":"Editor", 
+       "description":"Create tables, run ad-hoc queries, upload data", 
+       "url":"zfd1638950267743.md", 
+       "children":[
+          { 
+             "id":"yhc1638950267531", 
+             "title":"Create and Run", 
+             "description":"Create and Run", 
+             "url":"yhc1638950267531.md"
+             }
+          , 
+          { 
+             "id":"ykp1638950267617", 
+             "title":"Upload Data", 
+             "description":"How to upload CSV data", 
+             "url":"ykp1638950267617.md"
+             }
+          , 
+          { 
+             "id":"qut1638950268237", 
+             "title":"Write Data", 
+             "description":"Use NOS to write data to external object stores", 
+             "url":"qut1638950268237.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xcy1638950267543", 
+       "title":"Organizations", 
+       "url":"xcy1638950267543.md", 
+       "children":[
+          { 
+             "id":"hla1638950268212", 
+             "title":"Overview", 
+             "description":"Description of the Organizations Overview tab", 
+             "url":"hla1638950268212.md"
+             }
+          , 
+          { 
+             "id":"uce1638950268200", 
+             "title":"Admins", 
+             "description":"Overview of organization admins", 
+             "url":"uce1638950268200.md"
+             }
+          , 
+          { 
+             "id":"ujq1638950267754", 
+             "title":"Accounts", 
+             "url":"ujq1638950267754.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"lii1638950267697", 
+       "title":"Identity Provider", 
+       "description":"Use an identity provider for SSO authentication", 
+       "url":"lii1638950267697.md"
+       }
+    , 
+    { 
+       "id":"eqi1638950268189", 
+       "title":"Private Link", 
+       "description":"Use private endpoint accounts for security", 
+       "url":"eqi1638950268189.md"
+       }
+    , 
+    { 
+       "id":"rqw1638950267731", 
+       "title":"Videos", 
+       "description":"Grab your buttered popcorn", 
+       "icon":"play_circle_filled", 
+       "url":"rqw1638950267731.md"
+       }
+    , 
+    { 
+       "id":"pov1638950268176", 
+       "title":"Guided Tours", 
+       "description":"See how Vantage can work for you", 
+       "url":"pov1638950268176.md"
+       }
+    , 
+    { 
+       "id":"bbs1638950268249", 
+       "title":"Use Cases", 
+       "description":"Let these use cases guide you", 
+       "url":"bbs1638950268249.md"
+       }
+
+    ]
+
+ }
