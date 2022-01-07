@@ -1,67 +1,225 @@
 {  "items":[
     { 
-       "id":"ipm1638950267555", 
-       "title":"Test", 
-       "url":"Vantage/Test/Test-en.md", 
+       "id":"sbt1640280496980", 
+       "title":"Accounts", 
+       "url":"sbt1640280496980.md", 
        "children":[
           { 
-             "id":"awz1638950267708", 
-             "title":"Create", 
-             "url":"awz1638950267708.md"
+             "id":"qiv1640281527006", 
+             "title":"Creating Accounts", 
+             "url":"qiv1640281527006.md"
              }
           , 
           { 
-             "id":"rvk1638950267567", 
+             "id":"yus1640281591781", 
              "title":"Overview", 
-             "description":"A glimpse of the Accounts Overview Card", 
-             "url":"rvk1638950267567.md"
+             "url":"yus1640281591781.md"
              }
           , 
           { 
-             "id":"szu1638950268264", 
+             "id":"bia1640281629192", 
              "title":"Compute Groups", 
-             "description":"Overview of compute groups", 
-             "url":"szu1638950268264.md", 
-             "children":[
-                { 
-                   "id":"xvq1638950268162", 
-                   "title":"Create Compute Group", 
-                   "url":"xvq1638950268162.md", 
-                   "children":[
-                      { 
-                         "id":"nww1638950267592", 
-                         "title":"Create Profile", 
-                         "url":"nww1638950267592.md"
-                         }
-
-                      ]
-
-                   }
-
-                ]
-
+             "url":"bia1640281629192.md"
              }
           , 
           { 
-             "id":"bln1638950267720", 
+             "id":"bgo1640281661111", 
              "title":"Queries", 
-             "description":"General overview of queries", 
-             "url":"bln1638950267720.md", 
+             "url":"bgo1640281661111.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"apw1640280478763", 
+       "title":"Organizations", 
+       "url":"apw1640280478763.md", 
+       "children":[
+          { 
+             "id":"sja1640281381091", 
+             "title":"Overview", 
+             "url":"sja1640281381091.md"
+             }
+          , 
+          { 
+             "id":"hrv1640281410572", 
+             "title":"Admins", 
+             "url":"hrv1640281410572.md"
+             }
+          , 
+          { 
+             "id":"sny1640281499378", 
+             "title":"Accounts", 
+             "url":"sny1640281499378.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xbg1640280430669", 
+       "title":"Editor", 
+       "url":"xbg1640280430669.md", 
+       "children":[
+          { 
+             "id":"iau1640281096340", 
+             "title":"Vantage SQL Editor", 
+             "url":"iau1640281096340.md"
+             }
+          , 
+          { 
+             "id":"juo1640281123239", 
+             "title":"Create connection", 
+             "url":"juo1640281123239.md"
+             }
+          , 
+          { 
+             "id":"dgd1640281158386", 
+             "title":"New script", 
+             "url":"dgd1640281158386.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"vyb1640280456714", 
+       "title":"Scripts", 
+       "url":"vyb1640280456714.md"
+       }
+    , 
+    { 
+       "id":"mqu1640280532737", 
+       "title":"COG Management", 
+       "url":"mqu1640280532737.md", 
+       "children":[
+          { 
+             "id":"dvl1640281718303", 
+             "title":"Profiles", 
+             "url":"dvl1640281718303.md"
+             }
+          , 
+          { 
+             "id":"wdz1640281743091", 
+             "title":"Access", 
+             "url":"wdz1640281743091.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"ajr1640280560519", 
+       "title":"Queries", 
+       "url":"Vantage/ajr1640280560519.md", 
+       "children":[
+          { 
+             "id":"kfe1640281774004", 
+             "title":"Current", 
+             "url":"kfe1640281774004.md"
+             }
+          , 
+          { 
+             "id":"fcd1640281818081", 
+             "title":"Historical", 
+             "url":"fcd1640281818081.md"
+             }
+          , 
+          { 
+             "id":"yjt1640281857373", 
+             "title":"Filters and Column Management", 
+             "url":"yjt1640281857373.md"
+             }
+          , 
+          { 
+             "id":"hds1640281899484", 
+             "title":"Details", 
+             "url":"Vantage/hds1640281899484.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"laq1640280582810", 
+       "title":"PrivateLink", 
+       "url":"laq1640280582810.md", 
+       "children":[
+          { 
+             "id":"fnz1640281997171", 
+             "title":"Network", 
+             "url":"fnz1640281997171.md"
+             }
+          , 
+          { 
+             "id":"lzf1640282016608", 
+             "title":"Enabling", 
+             "url":"lzf1640282016608.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"gmy1640280632324", 
+       "title":"QueryGrid", 
+       "url":"gmy1640280632324.md", 
+       "children":[
+          { 
+             "id":"wrw1640282047881", 
+             "title":"Deployment", 
+             "url":"wrw1640282047881.md", 
              "children":[
                 { 
-                   "id":"tbs1638950267605", 
-                   "title":"Current", 
-                   "description":"Overview of current queries and options", 
-                   "url":"tbs1638950267605.md", 
-                   "children":[
-                      { 
-                         "id":"yyg1638950267579", 
-                         "title":"Completed", 
-                         "url":"yyg1638950267579.md"
-                         }
+                   "id":"znp1640282079399", 
+                   "title":"Data Source", 
+                   "url":"znp1640282079399.md"
+                   }
 
-                      ]
+                ]
 
+             }
+          , 
+          { 
+             "id":"lzm1640282103875", 
+             "title":"Management", 
+             "url":"lzm1640282103875.md", 
+             "children":[
+                { 
+                   "id":"vhb1640282164870", 
+                   "title":"Data Sources", 
+                   "url":"vhb1640282164870.md"
+                   }
+                , 
+                { 
+                   "id":"goh1640282193934", 
+                   "title":"Fabric Overview", 
+                   "url":"goh1640282193934.md"
+                   }
+                , 
+                { 
+                   "id":"zxp1640282246701", 
+                   "title":"Settings", 
+                   "url":"zxp1640282246701.md"
+                   }
+                , 
+                { 
+                   "id":"uee1640282265780", 
+                   "title":"Issues", 
+                   "url":"uee1640282265780.md"
+                   }
+                , 
+                { 
+                   "id":"oiw1640282294248", 
+                   "title":"Operations", 
+                   "url":"oiw1640282294248.md"
                    }
 
                 ]
@@ -73,30 +231,32 @@
        }
     , 
     { 
-       "id":"zfd1638950267743", 
-       "title":"Editor", 
-       "description":"Create tables, run ad-hoc queries, upload data", 
-       "url":"zfd1638950267743.md", 
+       "id":"yzw1640280651472", 
+       "title":"Metrics", 
+       "url":"yzw1640280651472.md"
+       }
+    , 
+    { 
+       "id":"auw1640280669500", 
+       "title":"Streaming", 
+       "url":"auw1640280669500.md", 
        "children":[
           { 
-             "id":"yhc1638950267531", 
-             "title":"Create and Run", 
-             "description":"Create and Run", 
-             "url":"yhc1638950267531.md"
+             "id":"luq1640282345986", 
+             "title":"Create New Stream", 
+             "url":"luq1640282345986.md"
              }
           , 
           { 
-             "id":"ykp1638950267617", 
-             "title":"Upload Data", 
-             "description":"How to upload CSV data", 
-             "url":"ykp1638950267617.md"
+             "id":"xsl1640282387360", 
+             "title":"Streams", 
+             "url":"xsl1640282387360.md"
              }
           , 
           { 
-             "id":"qut1638950268237", 
-             "title":"Write Data", 
-             "description":"Use NOS to write data to external object stores", 
-             "url":"qut1638950268237.md"
+             "id":"wsa1640282405363", 
+             "title":"Edit Streams", 
+             "url":"wsa1640282405363.md"
              }
 
           ]
@@ -104,28 +264,38 @@
        }
     , 
     { 
-       "id":"xcy1638950267543", 
-       "title":"Organizations", 
-       "url":"xcy1638950267543.md", 
+       "id":"jrq1640280690304", 
+       "title":"Data Protection", 
+       "url":"jrq1640280690304.md"
+       }
+    , 
+    { 
+       "id":"bkm1640280721917", 
+       "title":"Trials Use Cases", 
+       "url":"bkm1640280721917.md"
+       }
+    , 
+    { 
+       "id":"arh1640280750562", 
+       "title":"User Preferences", 
+       "url":"arh1640280750562.md"
+       }
+    , 
+    { 
+       "id":"njp1640280774994", 
+       "title":"Notifications", 
+       "url":"njp1640280774994.md"
+       }
+    , 
+    { 
+       "id":"jwq1640280796024", 
+       "title":"OAF", 
+       "url":"jwq1640280796024.md", 
        "children":[
           { 
-             "id":"hla1638950268212", 
-             "title":"Overview", 
-             "description":"Description of the Organizations Overview tab", 
-             "url":"hla1638950268212.md"
-             }
-          , 
-          { 
-             "id":"uce1638950268200", 
-             "title":"Admins", 
-             "description":"Overview of organization admins", 
-             "url":"uce1638950268200.md"
-             }
-          , 
-          { 
-             "id":"ujq1638950267754", 
-             "title":"Accounts", 
-             "url":"ujq1638950267754.md"
+             "id":"hlt1640282439628", 
+             "title":"Scripts", 
+             "url":"hlt1640282439628.md"
              }
 
           ]
@@ -133,39 +303,15 @@
        }
     , 
     { 
-       "id":"lii1638950267697", 
-       "title":"Identity Provider", 
-       "description":"Use an identity provider for SSO authentication", 
-       "url":"lii1638950267697.md"
+       "id":"kqr1640280954140", 
+       "title":"Backup and Restore", 
+       "url":"kqr1640280954140.md"
        }
     , 
     { 
-       "id":"eqi1638950268189", 
-       "title":"Private Link", 
-       "description":"Use private endpoint accounts for security", 
-       "url":"eqi1638950268189.md"
-       }
-    , 
-    { 
-       "id":"rqw1638950267731", 
-       "title":"Videos", 
-       "description":"Grab your buttered popcorn", 
-       "icon":"play_circle_filled", 
-       "url":"rqw1638950267731.md"
-       }
-    , 
-    { 
-       "id":"pov1638950268176", 
-       "title":"Guided Tours", 
-       "description":"See how Vantage can work for you", 
-       "url":"pov1638950268176.md"
-       }
-    , 
-    { 
-       "id":"bbs1638950268249", 
-       "title":"Use Cases", 
-       "description":"Let these use cases guide you", 
-       "url":"bbs1638950268249.md"
+       "id":"xkf1640280993658", 
+       "title":"Billing and Account Usage", 
+       "url":"xkf1640280993658.md"
        }
 
     ]
