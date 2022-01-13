@@ -7,31 +7,31 @@
           { 
              "id":"qiv1640281527006", 
              "title":"Creating Accounts", 
-             "url":"qiv1640281527006.md"
+             "url":"Vantage/qiv1640281527006.md"
              }
           , 
           { 
              "id":"yus1640281591781", 
              "title":"Overview", 
-             "url":"yus1640281591781.md"
+             "url":"Vantage/yus1640281591781.md"
              }
           , 
           { 
              "id":"bia1640281629192", 
              "title":"Compute Groups", 
-             "url":"bia1640281629192.md"
+             "url":"Vantage/bia1640281629192.md"
              }
           , 
           { 
              "id":"bgo1640281661111", 
              "title":"Queries", 
-             "url":"bgo1640281661111.md"
+             "url":"Vantage/bgo1640281661111.md"
              }
           , 
           { 
              "id":"tdd1641923756548", 
              "title":"Network", 
-             "url":"tdd1641923756548.md"
+             "url":"Vantage/tdd1641923756548.md"
              }
 
           ]
@@ -46,19 +46,19 @@
           { 
              "id":"sja1640281381091", 
              "title":"Configuration", 
-             "url":"sja1640281381091.md"
+             "url":"Vantage/sja1640281381091.md"
              }
           , 
           { 
              "id":"hrv1640281410572", 
              "title":"Organization Admins", 
-             "url":"hrv1640281410572.md"
+             "url":"Vantage/hrv1640281410572.md"
              }
           , 
           { 
              "id":"sny1640281499378", 
              "title":"Accounts", 
-             "url":"sny1640281499378.md"
+             "url":"Vantage/sny1640281499378.md"
              }
 
           ]
@@ -73,19 +73,19 @@
           { 
              "id":"iau1640281096340", 
              "title":"Vantage SQL Editor", 
-             "url":"iau1640281096340.md"
+             "url":"Vantage/iau1640281096340.md"
              }
           , 
           { 
              "id":"juo1640281123239", 
              "title":"Create connection", 
-             "url":"juo1640281123239.md"
+             "url":"Vantage/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
              "title":"New script", 
-             "url":"dgd1640281158386.md"
+             "url":"Vantage/dgd1640281158386.md"
              }
 
           ]
@@ -106,7 +106,7 @@
           { 
              "id":"dvl1640281718303", 
              "title":"Profiles", 
-             "url":"dvl1640281718303.md"
+             "url":"Vantage/dvl1640281718303.md"
              }
           , 
           { 
@@ -117,7 +117,7 @@
                 { 
                    "id":"mfh1641925209789", 
                    "title":"Users and Roles", 
-                   "url":"mfh1641925209789.md"
+                   "url":"Vantage/mfh1641925209789.md"
                    }
 
                 ]
@@ -136,19 +136,19 @@
           { 
              "id":"kfe1640281774004", 
              "title":"Current", 
-             "url":"kfe1640281774004.md"
+             "url":"Vantage/kfe1640281774004.md"
              }
           , 
           { 
              "id":"fcd1640281818081", 
              "title":"Completed", 
-             "url":"fcd1640281818081.md"
+             "url":"Vantage/fcd1640281818081.md"
              }
           , 
           { 
              "id":"yjt1640281857373", 
              "title":"Filters and Column Management", 
-             "url":"yjt1640281857373.md"
+             "url":"Vantage/yjt1640281857373.md"
              }
           , 
           { 
@@ -159,19 +159,19 @@
                 { 
                    "id":"cbk1640281929055", 
                    "title":"Overview", 
-                   "url":"cbk1640281929055.md"
+                   "url":"Vantage/cbk1640281929055.md"
                    }
                 , 
                 { 
                    "id":"ikc1640281945868", 
                    "title":"SQL", 
-                   "url":"ikc1640281945868.md"
+                   "url":"Vantage/ikc1640281945868.md"
                    }
                 , 
                 { 
                    "id":"fpa1640281964956", 
                    "title":"Explain", 
-                   "url":"fpa1640281964956.md"
+                   "url":"Vantage/fpa1640281964956.md"
                    }
 
                 ]
@@ -190,13 +190,13 @@
           { 
              "id":"fnz1640281997171", 
              "title":"Network", 
-             "url":"fnz1640281997171.md"
+             "url":"Vantage/fnz1640281997171.md"
              }
           , 
           { 
              "id":"lzf1640282016608", 
              "title":"Enabling", 
-             "url":"lzf1640282016608.md"
+             "url":"Vantage/lzf1640282016608.md"
              }
 
           ]
@@ -216,7 +216,7 @@
                 { 
                    "id":"znp1640282079399", 
                    "title":"Data Source", 
-                   "url":"znp1640282079399.md"
+                   "url":"Vantage/znp1640282079399.md"
                    }
 
                 ]
@@ -231,31 +231,31 @@
                 { 
                    "id":"vhb1640282164870", 
                    "title":"Data Sources", 
-                   "url":"vhb1640282164870.md"
+                   "url":"Vantage/vhb1640282164870.md"
                    }
                 , 
                 { 
                    "id":"goh1640282193934", 
                    "title":"Fabric Overview", 
-                   "url":"goh1640282193934.md"
+                   "url":"Vantage/goh1640282193934.md"
                    }
                 , 
                 { 
                    "id":"zxp1640282246701", 
                    "title":"Settings", 
-                   "url":"zxp1640282246701.md"
+                   "url":"Vantage/zxp1640282246701.md"
                    }
                 , 
                 { 
                    "id":"uee1640282265780", 
                    "title":"Issues", 
-                   "url":"uee1640282265780.md"
+                   "url":"Vantage/uee1640282265780.md"
                    }
                 , 
                 { 
                    "id":"oiw1640282294248", 
                    "title":"Operations", 
-                   "url":"oiw1640282294248.md"
+                   "url":"Vantage/oiw1640282294248.md"
                    }
 
                 ]
@@ -280,19 +280,19 @@
           { 
              "id":"luq1640282345986", 
              "title":"Create New Stream", 
-             "url":"luq1640282345986.md"
+             "url":"Vantage/luq1640282345986.md"
              }
           , 
           { 
              "id":"xsl1640282387360", 
              "title":"Streams", 
-             "url":"xsl1640282387360.md"
+             "url":"Vantage/xsl1640282387360.md"
              }
           , 
           { 
              "id":"wsa1640282405363", 
              "title":"Edit Streams", 
-             "url":"wsa1640282405363.md"
+             "url":"Vantage/wsa1640282405363.md"
              }
 
           ]
@@ -331,7 +331,7 @@
           { 
              "id":"hlt1640282439628", 
              "title":"Scripts", 
-             "url":"hlt1640282439628.md"
+             "url":"Vantage/hlt1640282439628.md"
              }
 
           ]
