@@ -1,11 +1,5 @@
 {
-	"items": [{
-	   "id": "videoOverview",
-	   "icon": "play_circle_filled",
-	   "title": "Vantage App Launcher",
-	   "description": "See the Vantage App Launcher, its features, and navigation.",
-	   "url": "Videos/AppLauncher/App-Launcher-en.md"
-	},
+	"items": [
 	{
 	   "id": "videoEditor",
 	   "icon": "play_circle_filled",
