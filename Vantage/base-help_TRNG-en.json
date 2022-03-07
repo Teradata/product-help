@@ -1,0 +1,327 @@
+{  "items":[
+    { 
+       "id":"sbt1640280496980", 
+       "title":"Accounts", 
+       "description":"This is the summary for the Accounts feature.", 
+       "url":"sbt1640280496980.md", 
+       "children":[
+          { 
+             "id":"qiv1640281527006", 
+             "title":"Creating Accounts", 
+             "description":"This is a child topic for Accounts and the summary for that topic.", 
+             "url":"qiv1640281527006.md"
+             }
+          , 
+          { 
+             "id":"yus1640281591781", 
+             "title":"Overview", 
+             "description":"This overview is a child topic of accounts.", 
+             "url":"yus1640281591781.md"
+             }
+          , 
+          { 
+             "id":"bia1640281629192", 
+             "title":"Compute Groups", 
+             "url":"bia1640281629192.md"
+             }
+          , 
+          { 
+             "id":"bgo1640281661111", 
+             "title":"Queries", 
+             "url":"bgo1640281661111.md"
+             }
+          , 
+          { 
+             "id":"tdd1641923756548", 
+             "title":"Network", 
+             "url":"tdd1641923756548.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"apw1640280478763", 
+       "title":"Organizations", 
+       "url":"apw1640280478763.md", 
+       "children":[
+          { 
+             "id":"sja1640281381091", 
+             "title":"Configuration", 
+             "url":"sja1640281381091.md"
+             }
+          , 
+          { 
+             "id":"hrv1640281410572", 
+             "title":"Organization Admins", 
+             "url":"hrv1640281410572.md"
+             }
+          , 
+          { 
+             "id":"sny1640281499378", 
+             "title":"Accounts", 
+             "url":"sny1640281499378.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xbg1640280430669", 
+       "title":"Editor", 
+       "url":"xbg1640280430669.md", 
+       "children":[
+          { 
+             "id":"iau1640281096340", 
+             "title":"Vantage SQL Editor", 
+             "url":"iau1640281096340.md"
+             }
+          , 
+          { 
+             "id":"juo1640281123239", 
+             "title":"Create connection", 
+             "url":"juo1640281123239.md"
+             }
+          , 
+          { 
+             "id":"dgd1640281158386", 
+             "title":"New script", 
+             "url":"dgd1640281158386.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"vyb1640280456714", 
+       "title":"Scripts", 
+       "url":"vyb1640280456714.md"
+       }
+    , 
+    { 
+       "id":"mqu1640280532737", 
+       "title":"COG Management", 
+       "description":"This is the COG management TOC summary.", 
+       "url":"mqu1640280532737.md", 
+       "children":[
+          ""          , 
+          ""
+          ]
+
+       }
+    , 
+    { 
+       "id":"ajr1640280560519", 
+       "title":"Queries", 
+       "url":"ajr1640280560519.md", 
+       "children":[
+          { 
+             "id":"kfe1640281774004", 
+             "title":"Current", 
+             "url":"kfe1640281774004.md"
+             }
+          , 
+          { 
+             "id":"fcd1640281818081", 
+             "title":"Completed", 
+             "url":"fcd1640281818081.md"
+             }
+          , 
+          { 
+             "id":"yjt1640281857373", 
+             "title":"Filters and Column Management", 
+             "url":"yjt1640281857373.md"
+             }
+          , 
+          { 
+             "id":"hds1640281899484", 
+             "title":"Details", 
+             "url":"hds1640281899484.md", 
+             "children":[
+                { 
+                   "id":"cbk1640281929055", 
+                   "title":"Overview", 
+                   "url":"cbk1640281929055.md"
+                   }
+                , 
+                { 
+                   "id":"ikc1640281945868", 
+                   "title":"SQL", 
+                   "url":"ikc1640281945868.md"
+                   }
+                , 
+                { 
+                   "id":"fpa1640281964956", 
+                   "title":"Explain", 
+                   "url":"fpa1640281964956.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"laq1640280582810", 
+       "title":"PrivateLink", 
+       "url":"laq1640280582810.md", 
+       "children":[
+          ""          , 
+          ""
+          ]
+
+       }
+    , 
+    { 
+       "id":"gmy1640280632324", 
+       "title":"QueryGrid", 
+       "url":"gmy1640280632324.md", 
+       "children":[
+          { 
+             "id":"wrw1640282047881", 
+             "title":"Deployment", 
+             "url":"wrw1640282047881.md", 
+             "children":[
+                { 
+                   "id":"znp1640282079399", 
+                   "title":"Data Source", 
+                   "url":"znp1640282079399.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"lzm1640282103875", 
+             "title":"Management", 
+             "url":"lzm1640282103875.md", 
+             "children":[
+                { 
+                   "id":"vhb1640282164870", 
+                   "title":"Data Sources", 
+                   "url":"vhb1640282164870.md"
+                   }
+                , 
+                { 
+                   "id":"goh1640282193934", 
+                   "title":"Fabric Overview", 
+                   "url":"goh1640282193934.md"
+                   }
+                , 
+                { 
+                   "id":"zxp1640282246701", 
+                   "title":"Settings", 
+                   "url":"zxp1640282246701.md"
+                   }
+                , 
+                { 
+                   "id":"uee1640282265780", 
+                   "title":"Issues", 
+                   "url":"uee1640282265780.md"
+                   }
+                , 
+                { 
+                   "id":"oiw1640282294248", 
+                   "title":"Operations", 
+                   "url":"oiw1640282294248.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"yzw1640280651472", 
+       "title":"Metrics", 
+       "url":"yzw1640280651472.md"
+       }
+    , 
+    { 
+       "id":"auw1640280669500", 
+       "title":"Streaming", 
+       "url":"auw1640280669500.md", 
+       "children":[
+          { 
+             "id":"luq1640282345986", 
+             "title":"Create New Stream", 
+             "url":"luq1640282345986.md"
+             }
+          , 
+          { 
+             "id":"xsl1640282387360", 
+             "title":"Streams", 
+             "url":"xsl1640282387360.md"
+             }
+          , 
+          { 
+             "id":"wsa1640282405363", 
+             "title":"Edit Streams", 
+             "url":"wsa1640282405363.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jrq1640280690304", 
+       "title":"Data Protection", 
+       "url":"jrq1640280690304.md"
+       }
+    , 
+    { 
+       "id":"bkm1640280721917", 
+       "title":"Trials Use Cases", 
+       "url":"bkm1640280721917.md"
+       }
+    , 
+    { 
+       "id":"arh1640280750562", 
+       "title":"User Preferences", 
+       "url":"arh1640280750562.md"
+       }
+    , 
+    { 
+       "id":"njp1640280774994", 
+       "title":"Notifications", 
+       "url":"njp1640280774994.md"
+       }
+    , 
+    { 
+       "id":"jwq1640280796024", 
+       "title":"OAF", 
+       "url":"jwq1640280796024.md", 
+       "children":{ 
+          "id":"hlt1640282439628", 
+          "title":"Scripts", 
+          "url":"hlt1640282439628.md"
+          }
+
+       }
+    , 
+    { 
+       "id":"kqr1640280954140", 
+       "title":"Backup and Restore", 
+       "url":"kqr1640280954140.md"
+       }
+    , 
+    { 
+       "id":"xkf1640280993658", 
+       "title":"Billing and Account Usage", 
+       "url":"xkf1640280993658.md"
+       }
+
+    ]
+
+ }
