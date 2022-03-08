@@ -2,17 +2,20 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Accounts", 
+       "description":"This is the summary for the Accounts feature.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
              "id":"qiv1640281527006", 
              "title":"Creating Accounts", 
+             "description":"This is a child topic for Accounts and summary.", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
           { 
              "id":"yus1640281591781", 
              "title":"Overview", 
+             "description":"This overview is a child of Accounts.", 
              "url":"Vantage/yus1640281591781.md"
              }
           , 
@@ -101,6 +104,7 @@
     { 
        "id":"mqu1640280532737", 
        "title":"COG Management", 
+       "description":"This is the COG management TOC summary.", 
        "url":"Vantage/mqu1640280532737.md", 
        "children":[
           ""          , 
