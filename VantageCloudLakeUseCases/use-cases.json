@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Path Analysis",
+        "content_url": "content/nPath/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    },
+    {
+        "name": "Vantage Path",
+        "content_url": "content/VantagePath/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    },
+    {
+        "name": "Time Series - Consumer Complaints",
+        "content_url": "content/TimeSeriesAnalysis/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    },
+    {
+        "name": "Financial Services Customer Journey",
+        "content_url": "content/FSCustomerJourney/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    },
+    {
+        "name": "Knee Replacement",
+        "content_url": "content/KneeReplacement/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    },
+    {
+        "name": "Manufacturing Defect Analysis",
+        "content_url": "content/ManufacturingDefects/README.md",
+        "enabled": true,
+        "industries": [
+            "Manufacturing",
+            "Automobile"
+        ]
+    },
+    {
+        "name": "Deep History",
+        "content_url": "content/SalesOffload/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    },
+    {
+        "name": "External Object Store",
+        "content_url": "content/ExternalObjectStore/README.md",
+        "enabled": true,
+        "industries": [
+        ]
+    }
+]

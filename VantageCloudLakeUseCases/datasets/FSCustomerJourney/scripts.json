@@ -1,0 +1,14 @@
+[
+  {
+    "script_name": "create complaints table",
+    "url": "scripts/complaints.sql"
+  },
+  {
+    "script_name": "create customers table",
+    "url": "scripts/customers.sql"
+  },
+  {
+    "script_name": "create ich banking table",
+    "url": "scripts/ich_banking.sql"
+  }
+]
