@@ -11,7 +11,7 @@ Add a SAML 2.0- or OIDC-compliant identity provider for SSO with the following c
 
 - **Claims**: Vantage account user name and Email attributes to establish user mapping
 
--   - Subject claim: Use `sub` for OIDC and `SAML_SUBJECT` for SAML 2.0
+  - Subject claim: Use `sub` for OIDC and `SAML_SUBJECT` for SAML 2.0
 
 
  
