@@ -69,16 +69,10 @@
     , 
     { 
        "id":"xbg1640280430669", 
-       "title":"SQL Editor", 
+       "title":"Editor", 
        "description":"Write, modify, import, and export scripts, and load data.", 
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
-          { 
-             "id":"iau1640281096340", 
-             "title":"Vantage SQL Editor", 
-             "url":"Vantage/iau1640281096340.md"
-             }
-          , 
           { 
              "id":"juo1640281123239", 
              "title":"Create connection", 
