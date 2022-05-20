@@ -50,6 +50,12 @@
             ]
 		},
 		{
+			"id": "notificationSettings",
+			"title": "Notification Settings",
+			"description": "Enable or disable necessary notification settings",
+			"url": "Console/Account/Notification-Settings.md"
+		},
+		{
 			"id": "identityProviders",
 			"title": "Identity Provider",
 			"description": "Configure an identity provider for SSO authentication",
@@ -65,7 +71,16 @@
 					"title": "Overview",
 					"url": "Console/Sites/Sites-Overview.md"
 				},
-
+				{
+				    "id": "sitesNetowrk",
+				    "title": "Network",
+				    "url": "Console/Sites/Sites-Network.md"
+				},
+                {
+				    "id": "sitesEngine",
+				    "title": "Engine",
+				    "url": "Console/Sites/Sites-Engine.md"
+				},
 				{
 					"id": "siteConsumption",
 					"title": "Consumption",
