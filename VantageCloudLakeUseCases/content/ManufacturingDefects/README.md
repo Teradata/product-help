@@ -15,7 +15,7 @@ The Experience section takes about 15 minutes to run.
 
 ### Setup
 
-Select Load Assets to create the tables and load the data required into your account (Teradata database instance) for this use case.
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case.
 [Load Assets](#data={"id":"EVCarBattery"})
 
 ### Walkthrough
