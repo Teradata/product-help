@@ -15,7 +15,8 @@ The Experience section takes about 10 minutes to run.
 
 ### Setup
 
-Click [Load Assets](#data={"id":"SalesOffload"}) to create the tables and load the data required into your account (Teradata database instance) for this use case.
+Select Load Assets to create the tables and load the data required into your account (Teradata database instance) for this use case.
+[Load Assets](#data={"id":"SalesOffload"})
 
 ### Walkthrough
 
