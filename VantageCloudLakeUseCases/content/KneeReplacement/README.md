@@ -14,7 +14,8 @@ First step is to open <a href="/path-analyzer">Vantage Path</a>.
 
 ### Setup
 
-Click [Load Assets](#data={"id":"KneeReplacement"}) to create the tables and load the data required into your account (Teradata database instance) for this use case.
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case.
+[Load Assets](#data={"id":"KneeReplacement"})
 
 
 ### Walkthrough
