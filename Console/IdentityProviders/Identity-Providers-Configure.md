@@ -18,3 +18,5 @@ Add a SAML 2.0- or OIDC-compliant identity provider for SSO with the following c
 After you configure the identity provider, you must log out of Console then log back in using your corporate credentials.
 
 See [Configuring Federated Authentication](https://docs.teradata.com/search/all?query=Configuring+Federated+Authentication&content-lang=en-US)for more details.
+
+[Show me](./?pendo=OW2au31hwnAshk03eRo5oh4UVGQ)
