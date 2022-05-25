@@ -19,4 +19,4 @@ After you configure the identity provider, you must log out of Console then log 
 
 See [Configuring Federated Authentication](https://docs.teradata.com/search/all?query=Configuring+Federated+Authentication&content-lang=en-US)for more details.
 
-[Show me](./?pendo=OW2au31hwnAshk03eRo5oh4UVGQ)
+[Show me](?pendo=OW2au31hwnAshk03eRo5oh4UVGQ)
