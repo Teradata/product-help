@@ -1,4 +1,4 @@
-# Title
+# Notification Settings
 
 	
 Enable or disable the notifications you want to see. 
