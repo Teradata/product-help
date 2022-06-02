@@ -1,5 +1,5 @@
 # Overview of Data Protection Pages
-Review and edit data protection plan (backup) settings, schedule jobs, and run or abort the data protection plan.
+View the summary of data protection plan, such as, settings, schedule jobs, history, and so on.
 
 Choose to run the data protection plan as full or delta.
 

@@ -1,7 +1,7 @@
 # Settings in Data Protection Pages
 Configure the backup jobs with various settings.
 
-**Note:** Adding more backups may result in additional usage charges. If you reduce the number of retained backups, the next complete backup process deletes those excess backups. Deleted backups cannot be recovered.
+**Note:** Retaining more backups may result in additional usage charges. If you reduce the number of retained backups, the next complete backup process deletes those excess backups. Deleted backups cannot be recovered.
 
 Choose a job priority value between the highest priority of 1 and the lowest of 5. Here's how it works:
 
