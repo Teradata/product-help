@@ -75,13 +75,13 @@
        "children":[
           { 
              "id":"juo1640281123239", 
-             "title":"Create connection", 
+             "title":"Add Connection", 
              "url":"Vantage/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
-             "title":"Create a script", 
+             "title":"Create script", 
              "url":"Vantage/dgd1640281158386.md"
              }
 
