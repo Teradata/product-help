@@ -7,13 +7,6 @@
         ]
     },
     {
-        "name": "Vantage Path",
-        "content_url": "content/VantagePath/README.md",
-        "enabled": true,
-        "industries": [
-        ]
-    },
-    {
         "name": "Time Series - Consumer Complaints",
         "content_url": "content/TimeSeriesAnalysis/README.md",
         "enabled": true,
