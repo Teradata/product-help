@@ -1,4 +1,5 @@
 DROP TABLE retail_sample_data.bof_acct_bustouts ;
+
 CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_acct_bustouts ,FALLBACK ,
      EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
      MAP = TD_MAP1
@@ -14,6 +15,6 @@ USING
       STOREDAS  ('TEXTFILE')
       HEADER  ('FALSE')
       STRIP_EXTERIOR_SPACES  ('FALSE')
-      STRIP_ENCLOSING_CHAR  ('NONE')
+      STRIP_ENCLOSING_CHAR  ('"')
 )
 NO PRIMARY INDEX ;

@@ -66,7 +66,7 @@ SELECT * FROM npath
          ACCUMULATE (event of any(A) ) AS path
      )
 )
-SAMPLE 1000 
+SAMPLE 1000
 ;
 ```
 
@@ -213,12 +213,6 @@ SAMPLE 100
 ;
 ```
 
-
-# Explore
-
-Tired of writing SQL for data analysis? See how <a href="/path/">Path</a> enables business users to self-sufficiently leverage the path analysis capabilities of Vantage, using point and click, without writing any code to explore and analyze customer data.
-
-Or try <a href="/path/">Path</a> yourself today!
 
 ## Dataset
 ***

@@ -34,9 +34,5 @@
   {
     "script_name": "create badbatts table",
     "url": "scripts/badbatts.sql"
-  },
-  {
-    "script_name": "create batteries nos table",
-    "url": "scripts/batteries_nos.sql"
   }
 ]

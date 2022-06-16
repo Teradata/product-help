@@ -68,7 +68,7 @@ Find out what battery cells are installed in the cars with bad batteries:
 
 ```sql
 SELECT DISTINCT bom.part_no, p.description, count(*)
-FROM retail_sample_data.ev_bom, retail_sample_data.ev_badbatts bb, retail_sample_data.ev_parts p
+FROM retail_sample_data.ev_bom bom, retail_sample_data.ev_badbatts bb, retail_sample_data.ev_parts p
 WHERE bb.vin = bom.vin
 AND bom.part_no = p.part_no
 AND p.description LIKE 'Battery Cell%'
@@ -114,31 +114,33 @@ Create a foreign table to access the JSON formatted data in Amazon S3:
 
 
 ```sql
-CREATE FOREIGN TABLE test_reports
+
+CREATE FOREIGN TABLE retail_sample_data.test_reports , FALLBACK ,
+     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS
 (
     Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
     payload JSON(16776192) INLINE LENGTH 64000 CHARACTER SET LATIN)
 USING (
-    Location ('/s3/s3.amazonaws.com/trial-datasets/retail_sample_data')
-), NO PRIMARY INDEX
+    Location ('/s3/s3.amazonaws.com/trial-datasets/EVCarBattery/')
+), NO PRIMARY INDEX;
 ```
 
 
 ```sql
 SELECT TOP 10 *
-FROM test_reports
+FROM retail_sample_data.test_reports
 ```
 
 Put a user friendly view on top of the foreign table to shred the files and make the test report data easier to access:
 
 
 ```sql
-REPLACE VIEW test_reports_v AS
+REPLACE VIEW retail_sample_data.test_reports_v AS
 (SELECT vin, part_no, lot_no, CAST(test_report AS JSON) test_report
 FROM TD_JSONSHRED(
     ON (
                 SELECT payload.vin as vin, payload
-                FROM test_reports)
+                FROM retail_sample_data.test_reports)
             USING
             ROWEXPR('parts')
             COLEXPR('part_no', 'lot_no', 'test_report') 
@@ -149,7 +151,7 @@ FROM TD_JSONSHRED(
 
 ```sql
 SELECT TOP 10 *
-FROM test_reports_v
+FROM retail_sample_data.test_reports_v
 ```
 
 #### Step 3: Access and join the JSON manufacturing test data natively in Vantage
@@ -159,7 +161,7 @@ That looks good, now lets take a look at what is in the test reports. Various pa
 
 ```sql
 SELECT TOP 1 test_report
-FROM test_reports_v
+FROM retail_sample_data.test_reports_v
 WHERE part_no = '11400zn'
 ```
 
@@ -168,7 +170,7 @@ In contrast, the test report for a battery has detailed data on the performance 
 
 ```sql
 SELECT TOP 1 test_report
-FROM test_reports_v
+FROM retail_sample_data.test_reports_v
 WHERE part_no = '20rdS0'
 ```
 
@@ -180,7 +182,7 @@ We want to compare the rated and measured capacities along with part/lot numbers
 SELECT TOP 10 tr.part_no, p.description, tr.lot_no, 
 tr.test_report."Rated Capacity" AS rated_capacity,
 tr.test_report."Static Capacity Test"."Measured Average Capacity" AS measured_capacity
-FROM retail_sample_data.parts p, test_reports_v tr
+FROM retail_sample_data.ev_parts p, retail_sample_data.test_reports_v tr
 WHERE  p.part_no = tr.part_no
 AND p.description LIKE 'Battery Cell%'
 ```
