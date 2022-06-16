@@ -14,9 +14,6 @@ Monitor monthly, daily, or hourly usage and total running instance hours for you
 
 Configure an identity provider for SSO authentication.
 
-[Show me](https://pendo.vantage.teradatacloud.io/iam/idp?pendo=OW2au31hwnAshk03eRo5oh4UVGQ)
-
-
 ## ![Object Storage](../Images/object-icn-storage.png) [Object Storage](../ObjectStorage/Object-Storage-Overview-GS.md)
 
 Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.

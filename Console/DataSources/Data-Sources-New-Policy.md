@@ -11,4 +11,4 @@ To allow Teradata Vantage read and write access to your Amazon S3 data, your Clo
 
 **Resources**
  
-* [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/qrI_KuFo_qRLVNOTe8WjMw)
+* [Granting Access to Your Amazon S3 Bucket](https://docs.teradata.com/search/all?query=Access+to+Your+Amazon+S3+Bucket&content-lang=en-US)

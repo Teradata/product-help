@@ -7,5 +7,5 @@ Use NOS with Editor or Jupyter to write CSV, JSON, and Parquet data to your exte
 
 **Resources**
  
-* [Editor](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/E_Y7lej97C_G_EnczQ8gaA)
-* [NOS](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/YfguBQWE24~TxcyMikon6g)
+* [Editor](https://docs.teradata.com/search/all?query=Editor&content-lang=en-US)
+* [NOS](https://docs.teradata.com/search/all?query=NOS&content-lang=en-US)

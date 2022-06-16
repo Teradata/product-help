@@ -7,5 +7,5 @@ Use Editor or Jupyter to run SQL commands to query database tables and access ex
 
 **Resources**
  
-* [Accessing the Teradata-Managed Object Store](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/jL9fm7cdFONqKe84pZoYZw)
-* [Access Your External Object Store](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/zQ9k2on1UJ~i7uDS~VVTQg)
+* [Accessing the Teradata-Managed Object Store](https://docs.teradata.com/search/all?query=Accessing+the+Teradata-Managed+Object+Store&content-lang=en-US)
+* [Access Your External Object Store](https://docs.teradata.com/search/all?query=Access+Your+External+Object+Store&content-lang=en-US)

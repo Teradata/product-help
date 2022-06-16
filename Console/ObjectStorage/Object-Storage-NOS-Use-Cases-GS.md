@@ -4,4 +4,4 @@ NOS makes it easy for you to explore and analyze CSV, JSON, or Parquet data set
 
 **Resources**
  
-* [Access Your External Object Store](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/zQ9k2on1UJ~i7uDS~VVTQg)
+* [Access Your External Object Store](https://docs.teradata.com/search/all?query=Access+Your+External+Object+Store&content-lang=en-US)

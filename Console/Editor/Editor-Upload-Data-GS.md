@@ -9,7 +9,8 @@ Use NOS with Editor or Jupyter to run SQL commands to upload CSV, JSON, or Parqu
 
 **Resources**
 
-* [Teradata Vantage™ - Database Introduction](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=qia1556235689628.ditamap)
-* [Editor](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/E_Y7lej97C_G_EnczQ8gaA)
-* [NOS](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/YfguBQWE24~TxcyMikon6g)
-* [Risks](https://docs.teradata.com/r/dLArVI09J62c8byzVbHMtw/pTx2lXHCDGAYkuS6MxOzlA)
+
+* [Teradata Vantage™ - Database Introduction](https://docs.teradata.com/search/all?query=Teradata+Vantage%25E2%2584%25A2+-+Database+Introduction&content-lang=en-US)
+* [Editor](https://docs.teradata.com/search/all?query=Editor&content-lang=en-US)
+* [NOS](https://docs.teradata.com/search/all?query=NOS&content-lang=en-US)
+* [Risks](https://docs.teradata.com/search/all?query=Risks&content-lang=en-US)

@@ -8,5 +8,5 @@ We recommend that you start out by exploring the capabilities with a demo use ca
 
 **Resources**
  
-* [Teradata Vantage™ - Native Object Store Getting Started Guide](https://docs.teradata.com/access/sources/dita/map?dita:mapPath=zws1595641486108.ditamap)
-* [Teradata Vantage™ Native Object Store - Advanced SQL Engine 17.0 (Orange Book)](https://docs.teradata.com/access/sources/ud/document?ud:id=OB_Native_Object_Store&ft:vrm_release=17.00), Requires login to Teradata Documentation site
+* [Teradata Vantage™ - Native Object Store Getting Started Guide](https://docs.teradata.com/search/all?query=Teradata+Vantage%25E2%2584%25A2+-+Native+Object+Store+Getting+Started+Guide&content-lang=en-US)
+* [Teradata Vantage™ Native Object Store - Advanced SQL Engine 17.0 (Orange Book)](https://docs.teradata.com/search/all?query=Teradata+Vantage%25E2%2584%25A2+Native+Object+Store+Orange+Book&content-lang=en-US), Requires login to Teradata Documentation site
