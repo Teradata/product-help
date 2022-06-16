@@ -3,29 +3,19 @@
         "name": "Path Analysis",
         "content_url": "content/nPath/README.md",
         "enabled": true,
-        "industries": [
-        ]
+        "industries": []
     },
     {
         "name": "Time Series - Consumer Complaints",
         "content_url": "content/TimeSeriesAnalysis/README.md",
         "enabled": true,
-        "industries": [
-        ]
+        "industries": []
     },
     {
         "name": "Financial Services Customer Journey",
         "content_url": "content/FSCustomerJourney/README.md",
         "enabled": true,
-        "industries": [
-        ]
-    },
-    {
-        "name": "Knee Replacement",
-        "content_url": "content/KneeReplacement/README.md",
-        "enabled": true,
-        "industries": [
-        ]
+        "industries": []
     },
     {
         "name": "Manufacturing Defect Analysis",
@@ -37,17 +27,9 @@
         ]
     },
     {
-        "name": "Deep History",
-        "content_url": "content/SalesOffload/README.md",
-        "enabled": true,
-        "industries": [
-        ]
-    },
-    {
         "name": "External Object Store",
         "content_url": "content/ExternalObjectStore/README.md",
         "enabled": true,
-        "industries": [
-        ]
+        "industries": []
     }
 ]
