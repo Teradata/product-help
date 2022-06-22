@@ -25,11 +25,5 @@
             "Manufacturing",
             "Automobile"
         ]
-    },
-    {
-        "name": "External Object Store",
-        "content_url": "content/ExternalObjectStore/README.md",
-        "enabled": true,
-        "industries": []
     }
 ]
