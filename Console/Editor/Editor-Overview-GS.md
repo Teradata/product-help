@@ -9,6 +9,7 @@ Editor is a powerful interface that offers the following capabilities and more:
 * Experience guided tours of key features, and run demo use cases that access preloaded datasets.
 
 **Create Connection**
+
 You can create a connection using current session or enter your own credentials.
 
 - Use current session: Use an existing value from the list..
