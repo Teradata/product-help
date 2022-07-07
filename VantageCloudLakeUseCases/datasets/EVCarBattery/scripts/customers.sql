@@ -1,7 +1,7 @@
 DROP TABLE retail_sample_data.ev_customers ;
 
 CREATE MULTISET FOREIGN TABLE retail_sample_data.ev_customers , FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       Id INTEGER NOT NULL,

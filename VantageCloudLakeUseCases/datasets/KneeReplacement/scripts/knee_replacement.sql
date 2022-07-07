@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.knee_replacement ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.knee_replacement ,FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
      memberid INTEGER,

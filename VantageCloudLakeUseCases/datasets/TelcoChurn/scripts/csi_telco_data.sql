@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.tc_csi_telco_data ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.tc_csi_telco_data ,FALLBACK ,
-    EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+    EXTERNAL SECURITY DEMO_AUTH_NOS ,
     MAP = TD_MAP1
     (
       customerid INTEGER NOT NULL,

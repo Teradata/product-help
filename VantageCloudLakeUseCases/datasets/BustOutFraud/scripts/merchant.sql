@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.bof_merchant ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_merchant ,FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       merchant_id INTEGER,

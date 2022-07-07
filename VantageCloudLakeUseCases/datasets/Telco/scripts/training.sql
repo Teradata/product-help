@@ -1,7 +1,7 @@
 DROP TABLE retail_sample_data.telco_training ;
 
 CREATE MULTISET FOREIGN TABLE retail_sample_data.telco_training , FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       cust_id VARCHAR(20) CHARACTER SET LATIN NOT CASESPECIFIC,

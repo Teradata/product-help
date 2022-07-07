@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.demo_equip_training ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.demo_equip_training ,FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
 (
     equipment_id              VARCHAR(20),
