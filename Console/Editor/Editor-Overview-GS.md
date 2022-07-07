@@ -8,6 +8,12 @@ Editor is a powerful interface that offers the following capabilities and more:
 
 * Experience guided tours of key features, and run demo use cases that access preloaded datasets.
 
+**Create Connection**
+
+You can create a connection using current session or enter your own credentials.
+
+- Use current session: Use an existing value from the list..
+- Enter Credentials:  Enter the hostname or IP address to allow custom configurations from private connections.
 - - -
 
 ## ![../Images/cov-icn-ovw_toc.png](../Images/cov-icn-ovw_toc.png) [Create and Run](Editor-Create-DB-Tables-Queries-GS.md)
