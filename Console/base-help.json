@@ -94,6 +94,16 @@
 							"id": "consumptionMonthlyByDepartment",
 							"title": "Consumption monthly by department",
 							"url": "Console/Consumption/Consumption-Monthly-By-Department-View.md"
+						},
+						{
+							"id": "consumptionMonthlyUnits",
+							"title": "Consumption Monthly Units",
+							"url": "Console/Sites/Sites-Consumption-Monthly-Units.md"
+						},
+						{
+							"id": "consumptionUnits",
+							"title": "Consumption Units",
+							"url": "Console/Sites/Sites-Consumption-Units.md"
 						}
 					]
 				},
