@@ -3,27 +3,27 @@
 			"id": "gettingStarted",
 			"title": "Getting Started",
 			"description": "Onboard quickly so you can go to work",
-			"url": "Console/GettingStarted/Getting-Started.md"
+			"url": "Console/en/GettingStarted/Getting-Started.md"
 		},
 		{
 			"id": "editor",
 			"title": "Editor",
 			"description": "Create database tables, run ad-hoc queries, and upload data",
-			"url": "Console/Editor/Editor-Overview-GS.md",
+			"url": "Console/en/Editor/Editor-Overview-GS.md",
 			"children": [{
 					"id": "createRun",
 					"title": "Create and Run",
-					"url": "Console/Editor/Editor-Create-DB-Tables-Queries-GS.md"
+					"url": "Console/en/Editor/Editor-Create-DB-Tables-Queries-GS.md"
 				},
 				{
 					"id": "uploadData",
 					"title": "Upload Data",
-					"url": "Console/Editor/Editor-Upload-Data-GS.md"
+					"url": "Console/en/Editor/Editor-Upload-Data-GS.md"
 				},
 				{
 					"id": "writeData",
 					"title": "Write Data",
-					"url": "Console/Editor/Editor-Write-Data-External-Object-Store-GS.md"
+					"url": "Console/en/Editor/Editor-Write-Data-External-Object-Store-GS.md"
 				}
 			]
 		},
@@ -31,21 +31,21 @@
 		    "id": "overviewOfSandbox",
 		    "title": "Sandbox",
 		    "description": "Sandboxes are delicated child sites for testing and analytics.",
-		    "url": "Console/Sandbox/Overview-Of-Sandbox.md",
+		    "url": "Console/en/Sandbox/Overview-Of-Sandbox.md",
 		    "children": [{
 		          "id": "createSandbox",
 		          "title": "Creation of Sandbox",
-		          "url": "Console/Sandbox/Create-A-Sandbox.md"
+		          "url": "Console/en/Sandbox/Create-A-Sandbox.md"
 		          },
 		          {
 		              "id": "notificationsInSandbox",
 		              "title": "Notifications in Sandbox",
-		              "url": "Console/Sandbox/Notifications-In-Sandbox.md"
+		              "url": "Console/en/Sandbox/Notifications-In-Sandbox.md"
 		          },
 		          {
 		              "id": "createConnection",
 		              "title": "Create a Sandbox Connection",
-		              "url": "Console/Sandbox/Create-Sandbox-Connection.md"
+		              "url": "Console/en/Sandbox/Create-Sandbox-Connection.md"
 		          }
             ]
 		},
@@ -53,99 +53,99 @@
 			"id": "notificationSettings",
 			"title": "Notification Settings",
 			"description": "Enable or disable necessary notification settings",
-			"url": "Console/Account/Notification-Settings.md"
+			"url": "Console/en/Account/Notification-Settings.md"
 		},
 		{
 			"id": "identityProviders",
 			"title": "Identity Provider",
 			"description": "Configure an identity provider for SSO authentication",
-			"url": "Console/IdentityProviders/Identity-Providers-Configure.md"
+			"url": "Console/en/IdentityProviders/Identity-Providers-Configure.md"
 		},
 		{
 			"id": "sites",
 			"title": "Sites",
 			"description": "Review the list of your production, development, and testing sites",
-			"url": "Console/Sites/Sites-Overview-GS.md",
+			"url": "Console/en/Sites/Sites-Overview-GS.md",
 			"children": [{
 					"id": "sitesOverview",
 					"title": "Overview",
-					"url": "Console/Sites/Sites-Overview.md"
+					"url": "Console/en/Sites/Sites-Overview.md"
 				},
 				{
 				    "id": "sitesNetwork",
 				    "title": "Network",
-				    "url": "Console/Sites/Sites-Network.md"
+				    "url": "Console/en/Sites/Sites-Network.md"
 				},
                 {
 				    "id": "sitesEngine",
 				    "title": "Engine",
-				    "url": "Console/Sites/Sites-Engine.md"
+				    "url": "Console/en/Sites/Sites-Engine.md"
 				},
 				{
 					"id": "siteConsumption",
 					"title": "Consumption",
-					"url": "Console/Sites/Sites-Consumption.md",
+					"url": "Console/en/Sites/Sites-Consumption.md",
 					"children": [{
 							"id": "consumptionMonthlyView",
 							"title": "Consumption monthly",
-							"url": "Console/Consumption/Consumption-Monthly-View.md"
+							"url": "Console/en/Consumption/Consumption-Monthly-View.md"
 						},
 						{
 							"id": "consumptionMonthlyByDepartment",
 							"title": "Consumption monthly by department",
-							"url": "Console/Consumption/Consumption-Monthly-By-Department-View.md"
+							"url": "Console/en/Consumption/Consumption-Monthly-By-Department-View.md"
 						},
 						{
 							"id": "consumptionMonthlyUnits",
 							"title": "Consumption Monthly Units",
-							"url": "Console/Sites/Sites-Consumption-Monthly-Units.md"
+							"url": "Console/en/Sites/Sites-Consumption-Monthly-Units.md"
 						},
 						{
 							"id": "consumptionUnits",
 							"title": "Consumption Units",
-							"url": "Console/Sites/Sites-Consumption-Units.md"
+							"url": "Console/en/Sites/Sites-Consumption-Units.md"
 						}
 					]
 				},
 				{
 					"id": "snapshots",
 					"title": "Snapshots",
-					"url": "Console/Sites/Sites-Snapshots.md",
+					"url": "Console/en/Sites/Sites-Snapshots.md",
 					"children": [{
 							"id": "createSnapshot",
 							"title": "Create Snapshot",
-							"url": "Console/Snapshots/Create-Snapshot.md"
+							"url": "Console/en/Snapshots/Create-Snapshot.md"
 						},
 						{
 							"id": "retainedCopies",
 							"title": "Retained copies",
-							"url": "Console/Snapshots/Snapshot-Retained-Copies.md"
+							"url": "Console/en/Snapshots/Snapshot-Retained-Copies.md"
 						},
 						{
 							"id": "schedule",
 							"title": "Schedule",
-							"url": "Console/Snapshots/Snapshot-Schedule.md"
+							"url": "Console/en/Snapshots/Snapshot-Schedule.md"
 						},
 						{
 							"id": "history",
 							"title": "History",
-							"url": "Console/Snapshots/Snapshot-History.md"
+							"url": "Console/en/Snapshots/Snapshot-History.md"
 						}
 					]
 				},
 				{
 					"id": "dataSources",
 					"title": "Data Sources",
-					"url": "Console/Sites/Sites-Data-Sources.md",
+					"url": "Console/en/Sites/Sites-Data-Sources.md",
 					"children": [{
 							"id": "newPolicy",
 							"title": "New Policy",
-							"url": "Console/DataSources/Data-Sources-New-Policy.md"
+							"url": "Console/en/DataSources/Data-Sources-New-Policy.md"
 						},
 						{
 							"id": "queryWriteData",
 							"title": "Query and Write Data on Cloud Object Storage",
-							"url": "Console/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+							"url": "Console/en/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
 						}
 					]
 				}
@@ -155,36 +155,36 @@
 	       "id": "dataProtectionPages",
 	       "title": "Data Protection",
 	       "description": "Review and create data protection pages.",
-	       "url": "Console/DataProtectionPages/Data-Protection-Pages.md",
+	       "url": "Console/en/DataProtectionPages/Data-Protection-Pages.md",
 	       "children": [{
 					"id": "overviewOfDataProtection",
 					"title": "Overview of Data Protection Page",
-					"url": "Console/DataProtectionPages/Overview-Of-Data-Protection.md"
+					"url": "Console/en/DataProtectionPages/Overview-Of-Data-Protection.md"
 				},
 				{
 				    "id": "objectsInDataProtection",
 					"title": "Database Objects in Data Protection",
-					"url": "Console/DataProtectionPages/Objects-In-Data-Protection.md"
+					"url": "Console/en/DataProtectionPages/Objects-In-Data-Protection.md"
 				},
 				{
 				    "id": "scheduleDataProtection",
 					"title": "Schedules in Data Protection",
-					"url": "Console/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
+					"url": "Console/en/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
 				},
 				{
 				    "id": "historyOfDataProtection",
 					"title": "History of Data Protection Pages",
-					"url": "Console/DataProtectionPages/History-Of-Backup-Jobs.md"
+					"url": "Console/en/DataProtectionPages/History-Of-Backup-Jobs.md"
 				},
 				{
 				    "id": "reatinedCopiesOfDataProtection",
 					"title": "Retained Copies of Backup Jobs",
-					"url": "Console/DataProtectionPages/Retained-Copies-Of-Backups.md"
+					"url": "Console/en/DataProtectionPages/Retained-Copies-Of-Backups.md"
 				},
 				{
 				    "id": "settingsInDataProtection",
 					"title": "Settings in Data Protection Pages",
-					"url": "Console/DataProtectionPages/Settings-Of-Backup-Jobs.md"
+					"url": "Console/en/DataProtectionPages/Settings-Of-Backup-Jobs.md"
 				}
 			]
 	    },
@@ -192,7 +192,7 @@
 			"id": "objectStorage",
 			"title": "Object Storage",
 			"description": "Explore and analyze CSV, JSON, or Parquet data sets located on external object stores.",
-			"url": "Console/ObjectStorage/Object-Storage-Overview-GS.md"
+			"url": "Console/en/ObjectStorage/Object-Storage-Overview-GS.md"
 		}
 	]
 }
