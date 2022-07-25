@@ -1,0 +1,198 @@
+﻿{
+	"items": [{
+			"id": "gettingStarted",
+			"title": "作業の開始",
+			"description": "迅速なオンボーディングによりすぐに仕事を始めることができます",
+			"url": "Console/ja/GettingStarted/Getting-Started.md"
+		},
+		{
+			"id": "editor",
+			"title": "エディタ",
+			"description": "データベース テーブルを作成し、アドホック クエリを実行して、データをアップロードします。",
+			"url": "Console/ja/Editor/Editor-Overview-GS.md",
+			"children": [{
+					"id": "createRun",
+					"title": "作成および実行",
+					"url": "Console/ja/Editor/Editor-Create-DB-Tables-Queries-GS.md"
+				},
+				{
+					"id": "uploadData",
+					"title": "データのアップロード",
+					"url": "Console/ja/Editor/Editor-Upload-Data-GS.md"
+				},
+				{
+					"id": "writeData",
+					"title": "データの書き込み",
+					"url": "Console/ja/Editor/Editor-Write-Data-External-Object-Store-GS.md"
+				}
+			]
+		},
+		{
+		    "id": "overviewOfSandbox",
+		    "title": "サンドボックス",
+		    "description": "サンドボックスはテストおよび分析の専用子サイトです。",
+		    "url": "Console/ja/Sandbox/Overview-Of-Sandbox.md",
+		    "children": [{
+		          "id": "createSandbox",
+		          "title": "サンドボックスの作成",
+		          "url": "Console/ja/Sandbox/Create-A-Sandbox.md"
+		          },
+		          {
+		              "id": "notificationsInSandbox",
+		              "title": "サンドボックスの通知",
+		              "url": "Console/ja/Sandbox/Notifications-In-Sandbox.md"
+		          },
+		          {
+		              "id": "createConnection",
+		              "title": "サンドボックス接続の作成",
+		              "url": "Console/ja/Sandbox/Create-Sandbox-Connection.md"
+		          }
+            ]
+		},
+		{
+			"id": "notificationSettings",
+			"title": "通知の設定",
+			"description": "必要な通知設定を有効または無効にします",
+			"url": "Console/ja/Account/Notification-Settings.md"
+		},
+		{
+			"id": "identityProviders",
+			"title": "ID プロバイダ",
+			"description": "SSO 認証用の ID プロバイダを設定します",
+			"url": "Console/ja/IdentityProviders/Identity-Providers-Configure.md"
+		},
+		{
+			"id": "sites",
+			"title": "サイト",
+			"description": "実働サイト、開発サイト、テスト サイトのリストを確認します",
+			"url": "Console/ja/Sites/Sites-Overview-GS.md",
+			"children": [{
+					"id": "sitesOverview",
+					"title": "概要",
+					"url": "Console/ja/Sites/Sites-Overview.md"
+				},
+				{
+				    "id": "sitesNetwork",
+				    "title": "ネットワーク",
+				    "url": "Console/ja/Sites/Sites-Network.md"
+				},
+                {
+				    "id": "sitesEngine",
+				    "title": "エンジン",
+				    "url": "Console/ja/Sites/Sites-Engine.md"
+				},
+				{
+					"id": "siteConsumption",
+					"title": "消費",
+					"url": "Console/ja/Sites/Sites-Consumption.md",
+					"children": [{
+							"id": "consumptionMonthlyView",
+							"title": "毎月の消費量",
+							"url": "Console/ja/Consumption/Consumption-Monthly-View.md"
+						},
+						{
+							"id": "consumptionMonthlyByDepartment",
+							"title": "部門による毎月の消費量",
+							"url": "Console/ja/Consumption/Consumption-Monthly-By-Department-View.md"
+						},
+						{
+							"id": "consumptionMonthlyUnits",
+							"title": "毎月の消費単位数",
+							"url": "Console/ja/Sites/Sites-Consumption-Monthly-Units.md"
+						},
+						{
+							"id": "consumptionUnits",
+							"title": "消費単位数",
+							"url": "Console/ja/Sites/Sites-Consumption-Units.md"
+						}
+					]
+				},
+				{
+					"id": "snapshots",
+					"title": "スナップショット",
+					"url": "Console/ja/Sites/Sites-Snapshots.md",
+					"children": [{
+							"id": "createSnapshot",
+							"title": "スナップショットを作成",
+							"url": "Console/ja/Snapshots/Create-Snapshot.md"
+						},
+						{
+							"id": "retainedCopies",
+							"title": "保存されるコピー数",
+							"url": "Console/ja/Snapshots/Snapshot-Retained-Copies.md"
+						},
+						{
+							"id": "schedule",
+							"title": "スケジュール",
+							"url": "Console/ja/Snapshots/Snapshot-Schedule.md"
+						},
+						{
+							"id": "history",
+							"title": "履歴",
+							"url": "Console/ja/Snapshots/Snapshot-History.md"
+						}
+					]
+				},
+				{
+					"id": "dataSources",
+					"title": "データ ソース",
+					"url": "Console/ja/Sites/Sites-Data-Sources.md",
+					"children": [{
+							"id": "newPolicy",
+							"title": "新しいポリシー",
+							"url": "Console/ja/DataSources/Data-Sources-New-Policy.md"
+						},
+						{
+							"id": "queryWriteData",
+							"title": "クラウド オブジェクト ストレージでデータをクエリおよび書き込み",
+							"url": "Console/ja/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+						}
+					]
+				}
+			]
+		},
+	    {
+	       "id": "dataProtectionPages",
+	       "title": "データ保護",
+	       "description": "データ保護ページを確認および作成",
+	       "url": "Console/ja/DataProtectionPages/Data-Protection-Pages.md",
+	       "children": [{
+					"id": "overviewOfDataProtection",
+					"title": "データ保護ページの [概要]",
+					"url": "Console/ja/DataProtectionPages/Overview-Of-Data-Protection.md"
+				},
+				{
+				    "id": "objectsInDataProtection",
+					"title": "データ保護の [データベース オブジェクト]",
+					"url": "Console/ja/DataProtectionPages/Objects-In-Data-Protection.md"
+				},
+				{
+				    "id": "scheduleDataProtection",
+					"title": "データ保護の [スケジュール]",
+					"url": "Console/ja/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "historyOfDataProtection",
+					"title": "データ保護ページの [履歴]",
+					"url": "Console/ja/DataProtectionPages/History-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "reatinedCopiesOfDataProtection",
+					"title": "バックアップ ジョブの保持されたコピー",
+					"url": "Console/ja/DataProtectionPages/Retained-Copies-Of-Backups.md"
+				},
+				{
+				    "id": "settingsInDataProtection",
+					"title": "データ保護ページの [設定]",
+					"url": "Console/ja/DataProtectionPages/Settings-Of-Backup-Jobs.md"
+				}
+			]
+	    },
+		{
+			"id": "objectStorage",
+			"title": "オブジェクト ストレージ",
+			"description": "外部オブジェクト ストアに配置されている CSV、JSON、または Parquet データセットを探索して分析します。",
+			"url": "Console/ja/ObjectStorage/Object-Storage-Overview-GS.md"
+		}
+	]
+}
