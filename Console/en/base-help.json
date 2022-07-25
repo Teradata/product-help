@@ -82,6 +82,23 @@
 				    "url": "Console/en/Sites/Sites-Engine.md"
 				},
 				{
+					"id": "siteUnitsConsumption",
+					"title": "Consumption(Units)",
+					"url": "Console/en/Sites/Sites-Consumption.md",
+					"children": [
+						{
+							"id": "consumptionMonthlyUnits",
+							"title": "Consumption Monthly Units",
+							"url": "Console/en/Sites/Sites-Consumption-Monthly-Units.md"
+						},
+						{
+							"id": "consumptionUnits",
+							"title": "Consumption Units",
+							"url": "Console/en/Sites/Sites-Consumption-Units.md"
+						}
+					]
+				},
+				{
 					"id": "siteConsumption",
 					"title": "Consumption",
 					"url": "Console/en/Sites/Sites-Consumption.md",
@@ -94,16 +111,6 @@
 							"id": "consumptionMonthlyByDepartment",
 							"title": "Consumption monthly by department",
 							"url": "Console/en/Consumption/Consumption-Monthly-By-Department-View.md"
-						},
-						{
-							"id": "consumptionMonthlyUnits",
-							"title": "Consumption Monthly Units",
-							"url": "Console/en/Sites/Sites-Consumption-Monthly-Units.md"
-						},
-						{
-							"id": "consumptionUnits",
-							"title": "Consumption Units",
-							"url": "Console/en/Sites/Sites-Consumption-Units.md"
 						}
 					]
 				},
