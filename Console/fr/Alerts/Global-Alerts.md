@@ -1,0 +1,2 @@
+Alertes globales
+================

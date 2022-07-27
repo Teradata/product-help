@@ -1,0 +1,6 @@
+Planifications des pages de protection des données
+==================================================
+
+Sélectionnez **+**, puis l’heure d’ajout d’une planification de la sauvegarde. **Remarque :** Vous ne pouvez pas ajouter une planification pour un instantané.
+
+Sélectionnez ![](../Images/more_vert_kebob-15px.svg) \> **Modifier** ou ![](../Images/more_vert_kebob-15px.svg) \> **Supprimer** pour modifier ou supprimer une planification de la sauvegarde respectivement. - **Exécution différentielle** est une sauvegarde incrémentielle qui ne comprend que des modifications. **Exécution complète** sauvegarde tout. La première fois que vous exécutez la tâche, il s’agira d’une sauvegarde complète, même si vous sélectionnez Exécution différentielle. - Sélectionnez l’heure au format UTC et la fréquence d’exécution souhaitée de la sauvegarde. Si vous sélectionnez **Dernier jour du mois**, vous ne pourrez pas indiquer d’autres jours. Pour exécuter une sauvegarde un jour autre que le dernier du mois, créez une deuxième sauvegarde. - Lorsque vous ajoutez une nouvelle planification, le système vous avertit en cas de conflits avec d’autres planifications. Si vous ne les corrigez pas, des sauvegardes peuvent être ignorées ou d’autres problèmes.

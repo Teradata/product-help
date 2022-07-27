@@ -1,0 +1,198 @@
+﻿{
+	"items": [{
+			"id": "gettingStarted",
+			"title": "入门",
+			"description": "迅速载入，以便开始工作",
+			"url": "Console/zh-cn/GettingStarted/Getting-Started.md"
+		},
+		{
+			"id": "editor",
+			"title": "编辑器",
+			"description": "创建数据库表，运行即席查询和上传数据",
+			"url": "Console/zh-cn/Editor/Editor-Overview-GS.md",
+			"children": [{
+					"id": "createRun",
+					"title": "创建和运行",
+					"url": "Console/zh-cn/Editor/Editor-Create-DB-Tables-Queries-GS.md"
+				},
+				{
+					"id": "uploadData",
+					"title": "上传数据",
+					"url": "Console/zh-cn/Editor/Editor-Upload-Data-GS.md"
+				},
+				{
+					"id": "writeData",
+					"title": "写入数据",
+					"url": "Console/zh-cn/Editor/Editor-Write-Data-External-Object-Store-GS.md"
+				}
+			]
+		},
+		{
+		    "id": "overviewOfSandbox",
+		    "title": "沙盒",
+		    "description": "沙盒是用于测试和分析的专用子站点。",
+		    "url": "Console/zh-cn/Sandbox/Overview-Of-Sandbox.md",
+		    "children": [{
+		          "id": "createSandbox",
+		          "title": "创建沙盒",
+		          "url": "Console/zh-cn/Sandbox/Create-A-Sandbox.md"
+		          },
+		          {
+		              "id": "notificationsInSandbox",
+		              "title": "沙盒中的通知",
+		              "url": "Console/zh-cn/Sandbox/Notifications-In-Sandbox.md"
+		          },
+		          {
+		              "id": "createConnection",
+		              "title": "创建沙盒连接",
+		              "url": "Console/zh-cn/Sandbox/Create-Sandbox-Connection.md"
+		          }
+            ]
+		},
+		{
+			"id": "notificationSettings",
+			"title": "通知设置",
+			"description": "启用或禁用必要的通知设置",
+			"url": "Console/zh-cn/Account/Notification-Settings.md"
+		},
+		{
+			"id": "identityProviders",
+			"title": "身份提供程序",
+			"description": "配置用于 SSO 身份验证的身份提供程序",
+			"url": "Console/zh-cn/IdentityProviders/Identity-Providers-Configure.md"
+		},
+		{
+			"id": "sites",
+			"title": "站点",
+			"description": "查看你的生产、开发和测试站点列表",
+			"url": "Console/zh-cn/Sites/Sites-Overview-GS.md",
+			"children": [{
+					"id": "sitesOverview",
+					"title": "概览",
+					"url": "Console/zh-cn/Sites/Sites-Overview.md"
+				},
+				{
+				    "id": "sitesNetwork",
+				    "title": "网络",
+				    "url": "Console/zh-cn/Sites/Sites-Network.md"
+				},
+                {
+				    "id": "sitesEngine",
+				    "title": "引擎",
+				    "url": "Console/zh-cn/Sites/Sites-Engine.md"
+				},
+				{
+					"id": "siteConsumption",
+					"title": "消耗量",
+					"url": "Console/zh-cn/Sites/Sites-Consumption.md",
+					"children": [{
+							"id": "consumptionMonthlyView",
+							"title": "每月消耗量",
+							"url": "Console/zh-cn/Consumption/Consumption-Monthly-View.md"
+						},
+						{
+							"id": "consumptionMonthlyByDepartment",
+							"title": "每月消耗量（按部门）",
+							"url": "Console/zh-cn/Consumption/Consumption-Monthly-By-Department-View.md"
+						},
+						{
+							"id": "consumptionMonthlyUnits",
+							"title": "每月消耗单位数",
+							"url": "Console/zh-cn/Sites/Sites-Consumption-Monthly-Units.md"
+						},
+						{
+							"id": "consumptionUnits",
+							"title": "消耗单位数",
+							"url": "Console/zh-cn/Sites/Sites-Consumption-Units.md"
+						}
+					]
+				},
+				{
+					"id": "snapshots",
+					"title": "快照",
+					"url": "Console/zh-cn/Sites/Sites-Snapshots.md",
+					"children": [{
+							"id": "createSnapshot",
+							"title": "创建快照",
+							"url": "Console/zh-cn/Snapshots/Create-Snapshot.md"
+						},
+						{
+							"id": "retainedCopies",
+							"title": "保留的副本",
+							"url": "Console/zh-cn/Snapshots/Snapshot-Retained-Copies.md"
+						},
+						{
+							"id": "schedule",
+							"title": "调度",
+							"url": "Console/zh-cn/Snapshots/Snapshot-Schedule.md"
+						},
+						{
+							"id": "history",
+							"title": "历史记录",
+							"url": "Console/zh-cn/Snapshots/Snapshot-History.md"
+						}
+					]
+				},
+				{
+					"id": "dataSources",
+					"title": "数据源",
+					"url": "Console/zh-cn/Sites/Sites-Data-Sources.md",
+					"children": [{
+							"id": "newPolicy",
+							"title": "新策略",
+							"url": "Console/zh-cn/DataSources/Data-Sources-New-Policy.md"
+						},
+						{
+							"id": "queryWriteData",
+							"title": "在云对象存储中查询和写入数据",
+							"url": "Console/zh-cn/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+						}
+					]
+				}
+			]
+		},
+	    {
+	       "id": "dataProtectionPages",
+	       "title": "数据保护",
+	       "description": "检查和创建数据保护页面。",
+	       "url": "Console/zh-cn/DataProtectionPages/Data-Protection-Pages.md",
+	       "children": [{
+					"id": "overviewOfDataProtection",
+					"title": "数据保护页面概览",
+					"url": "Console/zh-cn/DataProtectionPages/Overview-Of-Data-Protection.md"
+				},
+				{
+				    "id": "objectsInDataProtection",
+					"title": "数据保护中的数据库对象",
+					"url": "Console/zh-cn/DataProtectionPages/Objects-In-Data-Protection.md"
+				},
+				{
+				    "id": "scheduleDataProtection",
+					"title": "数据保护中的调度",
+					"url": "Console/zh-cn/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "historyOfDataProtection",
+					"title": "数据保护页面的历史记录",
+					"url": "Console/zh-cn/DataProtectionPages/History-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "reatinedCopiesOfDataProtection",
+					"title": "保留的备份作业副本",
+					"url": "Console/zh-cn/DataProtectionPages/Retained-Copies-Of-Backups.md"
+				},
+				{
+				    "id": "settingsInDataProtection",
+					"title": "数据保护页面中的设置",
+					"url": "Console/zh-cn/DataProtectionPages/Settings-Of-Backup-Jobs.md"
+				}
+			]
+	    },
+		{
+			"id": "objectStorage",
+			"title": "对象存储",
+			"description": "浏览和分析位于外部对象库上的 CSV、JSON 或 Parquet 数据集。",
+			"url": "Console/zh-cn/ObjectStorage/Object-Storage-Overview-GS.md"
+		}
+	]
+}

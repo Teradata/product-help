@@ -1,0 +1,198 @@
+﻿{
+	"items": [{
+			"id": "gettingStarted",
+			"title": "Introducción",
+			"description": "Completa rápidamente la incorporación para comenzar a trabajar",
+			"url": "Console/es/GettingStarted/Getting-Started.md"
+		},
+		{
+			"id": "editor",
+			"title": "Editor",
+			"description": "Crea tablas de bases de datos, ejecuta consultas ad hoc y carga datos",
+			"url": "Console/es/Editor/Editor-Overview-GS.md",
+			"children": [{
+					"id": "createRun",
+					"title": "Crear y ejecutar",
+					"url": "Console/es/Editor/Editor-Create-DB-Tables-Queries-GS.md"
+				},
+				{
+					"id": "uploadData",
+					"title": "Cargar datos",
+					"url": "Console/es/Editor/Editor-Upload-Data-GS.md"
+				},
+				{
+					"id": "writeData",
+					"title": "Escribir datos",
+					"url": "Console/es/Editor/Editor-Write-Data-External-Object-Store-GS.md"
+				}
+			]
+		},
+		{
+		    "id": "overviewOfSandbox",
+		    "title": "Espacio aislado",
+		    "description": "Los espacios aislados son sitios secundarios delicados destinados a pruebas y análisis.",
+		    "url": "Console/es/Sandbox/Overview-Of-Sandbox.md",
+		    "children": [{
+		          "id": "createSandbox",
+		          "title": "Creación de espacio aislado",
+		          "url": "Console/es/Sandbox/Create-A-Sandbox.md"
+		          },
+		          {
+		              "id": "notificationsInSandbox",
+		              "title": "Notificaciones en un espacio aislado",
+		              "url": "Console/es/Sandbox/Notifications-In-Sandbox.md"
+		          },
+		          {
+		              "id": "createConnection",
+		              "title": "Crear una conexión con el espacio aislado",
+		              "url": "Console/es/Sandbox/Create-Sandbox-Connection.md"
+		          }
+            ]
+		},
+		{
+			"id": "notificationSettings",
+			"title": "Configuración de notificaciones",
+			"description": "Activa o desactiva las opciones de configuración de notificaciones pertinentes",
+			"url": "Console/es/Account/Notification-Settings.md"
+		},
+		{
+			"id": "identityProviders",
+			"title": "Proveedor de identidad",
+			"description": "Configura un proveedor de identidad para la autenticación SSO",
+			"url": "Console/es/IdentityProviders/Identity-Providers-Configure.md"
+		},
+		{
+			"id": "sites",
+			"title": "Sitios",
+			"description": "Revisa tu lista de sitios de producción, desarrollo y pruebas",
+			"url": "Console/es/Sites/Sites-Overview-GS.md",
+			"children": [{
+					"id": "sitesOverview",
+					"title": "Resumen",
+					"url": "Console/es/Sites/Sites-Overview.md"
+				},
+				{
+				    "id": "sitesNetwork",
+				    "title": "Red",
+				    "url": "Console/es/Sites/Sites-Network.md"
+				},
+                {
+				    "id": "sitesEngine",
+				    "title": "Motor",
+				    "url": "Console/es/Sites/Sites-Engine.md"
+				},
+				{
+					"id": "siteConsumption",
+					"title": "Consumo",
+					"url": "Console/es/Sites/Sites-Consumption.md",
+					"children": [{
+							"id": "consumptionMonthlyView",
+							"title": "Consumo mensual",
+							"url": "Console/es/Consumption/Consumption-Monthly-View.md"
+						},
+						{
+							"id": "consumptionMonthlyByDepartment",
+							"title": "Consumo mensual por departamento",
+							"url": "Console/es/Consumption/Consumption-Monthly-By-Department-View.md"
+						},
+						{
+							"id": "consumptionMonthlyUnits",
+							"title": "Unidades mensuales de consumo",
+							"url": "Console/es/Sites/Sites-Consumption-Monthly-Units.md"
+						},
+						{
+							"id": "consumptionUnits",
+							"title": "Unidades de consumo",
+							"url": "Console/es/Sites/Sites-Consumption-Units.md"
+						}
+					]
+				},
+				{
+					"id": "snapshots",
+					"title": "Instantáneas",
+					"url": "Console/es/Sites/Sites-Snapshots.md",
+					"children": [{
+							"id": "createSnapshot",
+							"title": "Crea una instantánea",
+							"url": "Console/es/Snapshots/Create-Snapshot.md"
+						},
+						{
+							"id": "retainedCopies",
+							"title": "Copias conservadas",
+							"url": "Console/es/Snapshots/Snapshot-Retained-Copies.md"
+						},
+						{
+							"id": "schedule",
+							"title": "Planificación",
+							"url": "Console/es/Snapshots/Snapshot-Schedule.md"
+						},
+						{
+							"id": "history",
+							"title": "Historial",
+							"url": "Console/es/Snapshots/Snapshot-History.md"
+						}
+					]
+				},
+				{
+					"id": "dataSources",
+					"title": "Fuentes de datos",
+					"url": "Console/es/Sites/Sites-Data-Sources.md",
+					"children": [{
+							"id": "newPolicy",
+							"title": "Nueva política",
+							"url": "Console/es/DataSources/Data-Sources-New-Policy.md"
+						},
+						{
+							"id": "queryWriteData",
+							"title": "Consulta y escribe datos en el almacenamiento de objetos en la nube",
+							"url": "Console/es/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+						}
+					]
+				}
+			]
+		},
+	    {
+	       "id": "dataProtectionPages",
+	       "title": "Protección de datos",
+	       "description": "Revisa y crea páginas de protección de datos.",
+	       "url": "Console/es/DataProtectionPages/Data-Protection-Pages.md",
+	       "children": [{
+					"id": "overviewOfDataProtection",
+					"title": "Vista general de página de protección de datos",
+					"url": "Console/es/DataProtectionPages/Overview-Of-Data-Protection.md"
+				},
+				{
+				    "id": "objectsInDataProtection",
+					"title": "Objetos de base de datos en protección de datos",
+					"url": "Console/es/DataProtectionPages/Objects-In-Data-Protection.md"
+				},
+				{
+				    "id": "scheduleDataProtection",
+					"title": "Programaciones en protección de datos",
+					"url": "Console/es/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "historyOfDataProtection",
+					"title": "Historial de páginas de protección de datos",
+					"url": "Console/es/DataProtectionPages/History-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "reatinedCopiesOfDataProtection",
+					"title": "Copias retenidas de trabajos de copia de seguridad",
+					"url": "Console/es/DataProtectionPages/Retained-Copies-Of-Backups.md"
+				},
+				{
+				    "id": "settingsInDataProtection",
+					"title": "Ajustes en páginas de protección de datos",
+					"url": "Console/es/DataProtectionPages/Settings-Of-Backup-Jobs.md"
+				}
+			]
+	    },
+		{
+			"id": "objectStorage",
+			"title": "Almacenamiento de objetos",
+			"description": "Explora y analiza conjuntos de datos CSV, JSON o Parquet ubicados en almacenes de objetos externos.",
+			"url": "Console/es/ObjectStorage/Object-Storage-Overview-GS.md"
+		}
+	]
+}
