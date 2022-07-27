@@ -1,0 +1,6 @@
+Zeitpläne in Datensicherungsseiten
+==================================
+
+Wählen Sie **+** und dann den Zeitpunkt zum Hinzufügen eines Sicherungszeitplans aus. **Hinweis:** Sie können keinen Zeitplan für eine Momentaufnahme hinzufügen.
+
+Wählen Sie ![](../Images/more_vert_kebob-15px.svg) \> **Bearbeiten** oder ![](../Images/more_vert_kebob-15px.svg) \> **Löschen** aus, um einen Sicherungsplan zu bearbeiten bzw. zu löschen. – **Delta-Ausführung** ist eine inkrementelle Sicherung, die nur Änderungen enthält. **Vollständige Ausführung** sichert alles. Wenn Sie den Auftrag zum ersten Mal ausführen, handelt es sich um eine vollständige Sicherung, auch wenn Sie die Option „Delta-Ausführung“ auswählen. – Wählen Sie die Zeit in UTC und die Häufigkeit aus, mit der die Sicherung ausgeführt werden soll. Wenn Sie **Letzter Tag des Monats** auswählen, können Sie keine anderen Tage angeben. Wenn Sie auch eine Sicherung an einem Tag durchführen möchten, der nicht der letzte Tag des Monats ist, erstellen Sie eine zweite Sicherung. – Beim Hinzufügen eines neuen Zeitplans gibt das System eine Warnung aus, wenn es Konflikte mit anderen Zeitplänen gibt. Wenn Sie diese nicht korrigieren, kann es zu übersprungenen Sicherungen oder anderen Problemen kommen.

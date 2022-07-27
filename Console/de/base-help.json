@@ -1,0 +1,198 @@
+﻿{
+	"items": [{
+			"id": "gettingStarted",
+			"title": "Erste Schritte",
+			"description": "Schnelles Onboarding, um mit der Arbeit zu beginnen",
+			"url": "Console/de/GettingStarted/Getting-Started.md"
+		},
+		{
+			"id": "editor",
+			"title": "Editor",
+			"description": "Datenbanktabellen erstellen, Ad-hoc-Abfragen durchführen und Daten hochladen",
+			"url": "Console/de/Editor/Editor-Overview-GS.md",
+			"children": [{
+					"id": "createRun",
+					"title": "Erstellen und Ausführen",
+					"url": "Console/de/Editor/Editor-Create-DB-Tables-Queries-GS.md"
+				},
+				{
+					"id": "uploadData",
+					"title": "Daten hochladen",
+					"url": "Console/de/Editor/Editor-Upload-Data-GS.md"
+				},
+				{
+					"id": "writeData",
+					"title": "Daten schreiben",
+					"url": "Console/de/Editor/Editor-Write-Data-External-Object-Store-GS.md"
+				}
+			]
+		},
+		{
+		    "id": "overviewOfSandbox",
+		    "title": "Sandbox",
+		    "description": "Bei Sandboxes handelt es sich um dedizierte untergeordnete Sites zu Test- und Analysezwecken.",
+		    "url": "Console/de/Sandbox/Overview-Of-Sandbox.md",
+		    "children": [{
+		          "id": "createSandbox",
+		          "title": "Erstellung von Sandboxes",
+		          "url": "Console/de/Sandbox/Create-A-Sandbox.md"
+		          },
+		          {
+		              "id": "notificationsInSandbox",
+		              "title": "Benachrichtigungen in Sandbox",
+		              "url": "Console/de/Sandbox/Notifications-In-Sandbox.md"
+		          },
+		          {
+		              "id": "createConnection",
+		              "title": "Sandbox-Verbindung erstellen",
+		              "url": "Console/de/Sandbox/Create-Sandbox-Connection.md"
+		          }
+            ]
+		},
+		{
+			"id": "notificationSettings",
+			"title": "Benachrichtigungseinstellungen",
+			"description": "Notwendige Benachrichtigungseinstellungen aktivieren oder deaktivieren",
+			"url": "Console/de/Account/Notification-Settings.md"
+		},
+		{
+			"id": "identityProviders",
+			"title": "Identitätsanbieter",
+			"description": "Identitätsanbieter für die SSO-Authentifizierung konfigurieren",
+			"url": "Console/de/IdentityProviders/Identity-Providers-Configure.md"
+		},
+		{
+			"id": "sites",
+			"title": "Sites",
+			"description": "Die Liste der Produktions-, Entwicklungs- und Test-Sites überprüfen",
+			"url": "Console/de/Sites/Sites-Overview-GS.md",
+			"children": [{
+					"id": "sitesOverview",
+					"title": "Übersicht",
+					"url": "Console/de/Sites/Sites-Overview.md"
+				},
+				{
+				    "id": "sitesNetwork",
+				    "title": "Netzwerk",
+				    "url": "Console/de/Sites/Sites-Network.md"
+				},
+                {
+				    "id": "sitesEngine",
+				    "title": "Engine",
+				    "url": "Console/de/Sites/Sites-Engine.md"
+				},
+				{
+					"id": "siteConsumption",
+					"title": "Verbrauch",
+					"url": "Console/de/Sites/Sites-Consumption.md",
+					"children": [{
+							"id": "consumptionMonthlyView",
+							"title": "Verbrauch monatlich",
+							"url": "Console/de/Consumption/Consumption-Monthly-View.md"
+						},
+						{
+							"id": "consumptionMonthlyByDepartment",
+							"title": "Monatlicher Verbrauch nach Abteilungen",
+							"url": "Console/de/Consumption/Consumption-Monthly-By-Department-View.md"
+						},
+						{
+							"id": "consumptionMonthlyUnits",
+							"title": "Monatliche Verbrauchseinheiten",
+							"url": "Console/de/Sites/Sites-Consumption-Monthly-Units.md"
+						},
+						{
+							"id": "consumptionUnits",
+							"title": "Verbrauchseinheiten",
+							"url": "Console/de/Sites/Sites-Consumption-Units.md"
+						}
+					]
+				},
+				{
+					"id": "snapshots",
+					"title": "Momentaufnahmen",
+					"url": "Console/de/Sites/Sites-Snapshots.md",
+					"children": [{
+							"id": "createSnapshot",
+							"title": "Momentaufnahme erstellen",
+							"url": "Console/de/Snapshots/Create-Snapshot.md"
+						},
+						{
+							"id": "retainedCopies",
+							"title": "Aufbewahrte Kopien",
+							"url": "Console/de/Snapshots/Snapshot-Retained-Copies.md"
+						},
+						{
+							"id": "schedule",
+							"title": "Zeitplan",
+							"url": "Console/de/Snapshots/Snapshot-Schedule.md"
+						},
+						{
+							"id": "history",
+							"title": "Verlauf",
+							"url": "Console/de/Snapshots/Snapshot-History.md"
+						}
+					]
+				},
+				{
+					"id": "dataSources",
+					"title": "Datenquellen",
+					"url": "Console/de/Sites/Sites-Data-Sources.md",
+					"children": [{
+							"id": "newPolicy",
+							"title": "Neue Richtlinie",
+							"url": "Console/de/DataSources/Data-Sources-New-Policy.md"
+						},
+						{
+							"id": "queryWriteData",
+							"title": "Daten in einen Cloud-Objektspeicher schreiben und darin abfragen",
+							"url": "Console/de/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+						}
+					]
+				}
+			]
+		},
+	    {
+	       "id": "dataProtectionPages",
+	       "title": "Datensicherung",
+	       "description": "Datensicherungsseiten überprüfen und erstellen.",
+	       "url": "Console/de/DataProtectionPages/Data-Protection-Pages.md",
+	       "children": [{
+					"id": "overviewOfDataProtection",
+					"title": "Übersicht über die Datensicherungsseite",
+					"url": "Console/de/DataProtectionPages/Overview-Of-Data-Protection.md"
+				},
+				{
+				    "id": "objectsInDataProtection",
+					"title": "Datenbankobjekte in der Datensicherung",
+					"url": "Console/de/DataProtectionPages/Objects-In-Data-Protection.md"
+				},
+				{
+				    "id": "scheduleDataProtection",
+					"title": "Zeitpläne in der Datensicherung",
+					"url": "Console/de/DataProtectionPages/Schedule-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "historyOfDataProtection",
+					"title": "Verlauf der Datensicherungsseiten",
+					"url": "Console/de/DataProtectionPages/History-Of-Backup-Jobs.md"
+				},
+				{
+				    "id": "reatinedCopiesOfDataProtection",
+					"title": "Beibehaltene Kopien von Sicherungsaufträgen",
+					"url": "Console/de/DataProtectionPages/Retained-Copies-Of-Backups.md"
+				},
+				{
+				    "id": "settingsInDataProtection",
+					"title": "Einstellungen in Datensicherungsseiten",
+					"url": "Console/de/DataProtectionPages/Settings-Of-Backup-Jobs.md"
+				}
+			]
+	    },
+		{
+			"id": "objectStorage",
+			"title": "Objektspeicherung",
+			"description": "Untersuchen und analysieren Sie CSV-, JSON- oder Parquet-Datensätze, die sich in externen Objektspeichern befinden.",
+			"url": "Console/de/ObjectStorage/Object-Storage-Overview-GS.md"
+		}
+	]
+}

@@ -1,0 +1,6 @@
+Programaciones en las páginas de protección de datos
+====================================================
+
+Selecciona **+**, después selecciona la fecha y la hora para agregar una programación de copia de seguridad. **Nota:** No puedes agregar una programación para una instantánea.
+
+Selecciona respectivamente ![](../Images/more_vert_kebob-15px.svg) \> **Editar** o ![](../Images/more_vert_kebob-15px.svg) \> **Eliminar** para editar o eliminar una programación de copia de seguridad. - **Ejecución delta** es una copia de seguridad incremental que incluye solo los cambios. **Ejecución completa** hace una copia de seguridad de todo. La primera vez que se ejecuta el trabajo, se realiza una copia de seguridad completa, aunque se seleccione Ejecución delta. - Selecciona la hora en UTC y la frecuencia con la que deseas que se ejecute la copia de seguridad. Si seleccionas **Último día del mes**, no podrás seleccionar ningún otro día. Si también deseas ejecutar una copia de seguridad un día que no sea el último del mes, deberás crear una segunda copia de seguridad. - Al añadir una nueva programación, el sistema te avisa si se producen conflictos con otras programaciones. Si no los corriges, podrían omitirse las copias de seguridad o surgir otros problemas.
