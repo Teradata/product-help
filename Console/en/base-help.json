@@ -40,6 +40,12 @@
         "title": "Query and Write Data",
         "description": "Native Object Store integration with cloud object storage",
         "url": "Console/en/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+    },
+    {
+        "id": "additionalResources",
+        "title": "Additional Resources",
+        "description": "Useful links to help you get started with Vantage",
+        "url": "Console/en/Resources/Additional-Resources"
     }
 	]
 }
