@@ -65,11 +65,9 @@ We know the bucket where the offloaded sales data is located, so let's take a lo
 
 ```sql
 SELECT location(char(255)), ObjectLength 
-FROM read_nos (
-ON (select cast(NULL AS DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV))
-USING 
- LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
- RETURNTYPE ('NOSREAD_KEYS')
+FROM (
+ LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
+ RETURNTYPE='NOSREAD_KEYS'
 ) as d 
 ORDER BY 1
 ```
@@ -80,11 +78,9 @@ How many files and directories are there total?
 
 ```sql
 SELECT COUNT(location(char(255))) as NumFiles
-FROM read_nos (
-ON (select cast(NULL AS DATASET INLINE LENGTH 64000 STORAGE FORMAT CSV))
-USING 
- LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
- RETURNTYPE ('NOSREAD_KEYS')
+FROM (
+ LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
+ RETURNTYPE='NOSREAD_KEYS'
 ) as d 
 ORDER BY 1
 ```
@@ -94,11 +90,9 @@ Let's take a look at one of the files to get a better understanding of the file 
 
 
 ```sql
-SELECT * FROM READ_NOS (
-      USING
-      LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet')
-      RETURNTYPE ('NOSREAD_PARQUET_SCHEMA')
-      FULLSCAN ('TRUE')
+SELECT * FROM (
+      LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet'
+      RETURNTYPE='NOSREAD_PARQUET_SCHEMA'
       )
 AS d
 ```
@@ -108,30 +102,16 @@ AS d
 
 Create a foreign table and a view in Vantage to allow business analysts and other users to easily access the offloaded historical data:
 
-Note, you will need to list all the columns in the foreign table definition
-
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
-       (
-Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
-TheYear INTEGER,
-TheMonth INTEGER,
-sales_date DATE FORMAT 'YY/MM/DD',
-customer_id INTEGER,
-store_id INTEGER,
-basket_id INTEGER,
-product_id INTEGER,
-sales_quantity INTEGER,
-discount_amount FLOAT FORMAT '-ZZZ9.99'
-)
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
 STOREDAS  ('PARQUET')
        )
 NO PRIMARY INDEX
-PARTITION BY COLUMN
+PARTITION BY COLUMN;
 ```
 
 Lets take a look at some of the rows that are in the offloaded files. 
@@ -139,7 +119,7 @@ Lets take a look at some of the rows that are in the offloaded files.
 
 ```sql
 SELECT TOP 10 *
-FROM sales_fact_offload
+FROM sales_fact_offload;
 ```
 
 How much data do we have out there?
@@ -147,7 +127,7 @@ How much data do we have out there?
 
 ```sql
 SELECT COUNT(*)
-FROM sales_fact_offload
+FROM sales_fact_offload;
 ```
 
 
@@ -164,7 +144,7 @@ SELECT
     product_id,
     sales_quantity,
     discount_amount
-FROM sales_fact_offload)
+FROM sales_fact_offload);
 ```
 
 
@@ -173,7 +153,7 @@ Now we can query the data like any other table in Teradata Vantage, but the data
 
 ```sql
 SELECT TOP 10 *
-FROM sales_fact_offload_v
+FROM sales_fact_offload_v;
 ```
 
 That looks nice! Now our users can access all the historical data we have in the object store!
@@ -188,23 +168,11 @@ We have a lot of data in S3! Let's optimize the foreign table so that we minimiz
 
 
 ```sql
-DROP TABLE sales_fact_offload
+DROP TABLE sales_fact_offload;
 ```
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
-       (
-Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
-TheYear INTEGER,
-TheMonth INTEGER,
-sales_date DATE FORMAT 'YY/MM/DD',
-customer_id INTEGER,
-store_id INTEGER,
-basket_id INTEGER,
-product_id INTEGER,
-sales_quantity INTEGER,
-discount_amount FLOAT FORMAT '-ZZZ9.99'
-)
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
@@ -212,7 +180,7 @@ PATHPATTERN ('$dir1/$year/$month')
 STOREDAS  ('PARQUET')
        )
 NO PRIMARY INDEX
-PARTITION BY COLUMN
+PARTITION BY COLUMN;
 ```
 
 We have re-defined our foreign table to include a <b>PATHPATTERN</b> clause. When looking at historical data by date, this allows us to read only the files we need!
@@ -232,7 +200,7 @@ SELECT
     product_id,
     sales_quantity,
     discount_amount
-FROM sales_fact_offload)
+FROM sales_fact_offload);
 ```
 
 
@@ -240,7 +208,7 @@ FROM sales_fact_offload)
 SELECT TOP 10 *
 FROM sales_fact_offload_v
 WHERE sales_year = '2010'
-AND sales_month = '9'
+AND sales_month = '9';
 ```
 
 This is great for use cases where we know the date at least to the month. Suppose we need to see what a customer bought many years ago. Or maybe we want to report on historical store sales. The business analyst can easily query this with no IT intervention, no going to backups or other hard to reach data silos!
@@ -254,7 +222,7 @@ FROM sales_fact_offload_v
 WHERE store_id = 6
 AND sales_year = '2012'
 AND sales_month = '8'
-GROUP BY 1
+GROUP BY 1;
 ```
 
 
@@ -280,7 +248,7 @@ SELECT
     product_id,
     sales_quantity,
     discount_amount
-FROM sales_fact_offload_v)
+FROM sales_fact_offload_v);
 ```
 
 
@@ -291,7 +259,7 @@ Final thing we will do is re-run our sales over time report, code is unchanged f
 SELECT sales_date, sum(sales_quantity) as total 
 FROM sales_fact_all
 GROUP BY sales_date
-ORDER BY sales_date ASC
+ORDER BY sales_date ASC;
 ```
 
 
@@ -307,17 +275,17 @@ Drop the objects we created in our own database schema.
 
 
 ```sql
-DROP VIEW sales_fact_all
+DROP VIEW sales_fact_all;
 ```
 
 
 ```sql
-DROP VIEW sales_fact_offload_v
+DROP VIEW sales_fact_offload_v;
 ```
 
 
 ```sql
-DROP TABLE sales_fact_offload
+DROP TABLE sales_fact_offload;
 ```
 
 ## Dataset
