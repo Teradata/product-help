@@ -1,6 +1,6 @@
 # Create and Schedule Partial Backups
 
-When creating and scheduling backup backup jobs, you can do the following:
+When creating and scheduling backup jobs, you can do the following:
 
 * Enable or disable the job.
 * Select objects to include or exclude.
