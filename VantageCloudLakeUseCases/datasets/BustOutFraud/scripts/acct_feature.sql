@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.bof_acct_feature ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_acct_feature ,FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       acct_no VARCHAR(19) CHARACTER SET LATIN NOT CASESPECIFIC,

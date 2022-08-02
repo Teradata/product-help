@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.im_ref_golden_cust ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.im_ref_golden_cust ,FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       CUST_ID INTEGER,
