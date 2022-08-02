@@ -25,5 +25,17 @@
             "Manufacturing",
             "Automobile"
         ]
+    },
+    {
+        "name": "External Object Store",
+        "content_url": "content/ExternalObjectStore/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "name": "Deep History",
+        "content_url": "content/SalesOffload/README.md",
+        "enabled": true,
+        "industries": []
     }
 ]
