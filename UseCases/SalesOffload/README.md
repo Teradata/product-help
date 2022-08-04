@@ -13,6 +13,14 @@ Keeping historical and current data in separate systems can make it a challenge 
 
 The Experience section takes about 10 minutes to run.
 
+First, create an AUTHORIZATION object named MyAuth with your credentials. An alternative to this is to use the AUTHORIZATION simple syntax commented in certain queries.
+
+```sql
+CREATE AUTHORIZATION MyAuth
+USER 'ACCESS_KEY_ID'
+PASSWORD 'SECRET_ACCESS_KEY';
+```
+
 
 ### Walkthrough
 
@@ -64,6 +72,8 @@ SELECT location(char(255)), ObjectLength
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
  RETURNTYPE='NOSREAD_KEYS'
+ AUTHORIZATION=MyAuth
+ --AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'
 ) as d
 ORDER BY 1
 ```
@@ -77,6 +87,8 @@ SELECT COUNT(location(char(255))) as NumFiles
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
  RETURNTYPE='NOSREAD_KEYS'
+ AUTHORIZATION=MyAuth
+ --AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'
 ) as d
 ORDER BY 1
 ```
@@ -89,6 +101,8 @@ Let's take a look at one of the files to get a better understanding of the file 
 SELECT * FROM (
       LOCATION ='/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet'
       RETURNTYPE='NOSREAD_PARQUET_SCHEMA'
+      AUTHORIZATION=MyAuth
+      --AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'
       )
 AS d
 ```
@@ -101,6 +115,7 @@ Create a foreign table and a view in Vantage to allow business analysts and othe
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
+, EXTERNAL SECURITY MyAuth
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
@@ -169,6 +184,7 @@ DROP TABLE sales_fact_offload;
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
+, EXTERNAL SECURITY MyAuth
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
@@ -269,6 +285,9 @@ Now we see that 2019 in the broader context was an off year, we will need to do 
 
 Drop the objects we created in our own database schema.
 
+```sql
+DROP AUTHORIZATION MyAuth;
+```
 
 ```sql
 DROP VIEW sales_fact_all;
