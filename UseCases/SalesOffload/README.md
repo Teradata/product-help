@@ -1,19 +1,19 @@
-## Deep History - Offloading cold historical data to an object store
+## Deep History - Offloading Cold Historical Data to an Object Store
 
 
 ### Introduction
 
-Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance over many years. Although the most frequently accessed data is the latest or most current data, that doesn’t mean that the older information is not useful or relevant. Historical data that’s been compiled over the years gives a rich perspective of the business, such as long-term trends and cyclical patterns.
+Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance for many years. Although the most frequently accessed data is the latest or most current data, that doesn’t mean that older information is not useful or relevant. Historical data that has been compiled over the years gives a rich perspective of the business, such as long-term trends and cyclical patterns.
 
-Teradata Vantage provides unmatched concurrency and performance for the world's largest and most demanding enterprises to analyze their data. Analysis and concurrency needs for older information is generally substantially less as data ages, and over time there is much more history data that accumulates than current 'hot' data, it makes sense to store it somewhere that has different performance and price characteristics: for example an object store such as Amazon S3 or Azure Blob storage.
+Teradata Vantage provides unmatched concurrency and performance for the world's largest and most demanding enterprises to analyze their data. Analysis and concurrency needs for older information are generally substantially less as data ages. Over time, there is much more history data that accumulates than current 'hot' data. It makes sense to store that data somewhere that has different performance and price characteristics, like Amazon S3 or Azure Blob storage.
 
-Keeping historical and current data in separate systems can make it a challenge to gain unique insights that are possible only by analyzing the information together. But not any longer. Now, Teradata Vantage can be used to seamlessly join together all the historical and current information across the data warehouse AND object storage, without having to change the basic data structures and queries. This makes it possible to cost-effectively answer questions that could not be previously addressed so decision makers can better plan for the future.
+Keeping historical and current data in separate systems can make it a challenge to gain unique insights that are possible only by analyzing the information together. But not any longer. Now, Teradata Vantage can be used to seamlessly join together all the historical and current information across the data warehouse and object storage, without having to change the basic data structures and queries. This makes it possible to cost-effectively answer questions that could not be answered previously and enable decision makers to plan better for the future.
 
 ### Experience
 
 The Experience section takes about 10 minutes to run.
 
-First, create an AUTHORIZATION object named MyAuth with your credentials. An alternative to this is to use the AUTHORIZATION simple syntax commented in certain queries.
+First, create an AUTHORIZATION object named MyAuth with your credentials. Alternatively, you can use the AUTHORIZATION simple syntax commented in certain queries:
 
 ```sql
 CREATE AUTHORIZATION MyAuth
@@ -24,9 +24,9 @@ PASSWORD 'SECRET_ACCESS_KEY';
 
 ### Walkthrough
 
-#### Step 1: Querying the Data
+#### Step 1: Query the data.
 
-Here is our current sales data. Lets grab some sample rows, we can see in this example we have customer, store, basket and discount information.
+Here is your current sales data. Grab some sample rows. This example includes customer, store, basket, and discount information:
 
 
 ```sql
@@ -51,7 +51,7 @@ ORDER BY sales_date ASC
 SELECT MIN(sales_date) AS min_date, MAX(sales_date) AS max_date FROM SalesOffload.sales_fact
 ```
 
-How many records do we have in the data warehouse (2019 data)?
+How many records do you have in the data warehouse (2019 data)?
 
 
 ```sql
@@ -60,11 +60,11 @@ FROM SalesOffload.sales_fact
 ```
 
 
-#### Step 2: Explore the offloaded historical data
+#### Step 2: Explore offloaded historical data.
 
-As you have seen we only have 1 year of sales data in our data warehouse as this is by far the most queried, but for compliance many companies need to keep up to 10 years of historical data. The older data has been exported from Vantage on a monthly basis and loaded into Amazon S3 for long term storage. With Teradata Vantage we can seamlessly access this offloaded data and join with the rest of the data to get insights over long term trends and handle audit requests with ease. This includes using existing queries and reports that would otherwise need to be re-written!
+You have only one year of sales data in the data warehouse because this is by far the most queried. For compliance, many companies need to keep up to 10 years of historical data. The older data is exported from Vantage on a monthly basis and loaded into Amazon S3 for long-term storage. With Teradata Vantage, you can seamlessly access this offloaded data and join it with the rest of the data to get insights over long-term trends and handle audit requests with ease. This includes using existing queries and reports that would otherwise need to be rewritten!
 
-We know the bucket where the offloaded sales data is located, so let's take a look at some of the data that is there - using the READ_NOS function we can get the list of files and their sizes.
+You know the bucket where the offloaded sales data is located, so look at some of the data there. Use the READ_NOS function to get the list of files and their sizes:
 
 
 ```sql
@@ -108,7 +108,7 @@ AS d
 ```
 
 
-#### Step 3: Create a simple abstraction layer for easy access
+#### Step 3: Create a simple abstraction layer for easy access.
 
 Create a foreign table and a view in Vantage to allow business analysts and other users to easily access the offloaded historical data:
 
@@ -125,7 +125,7 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-Lets take a look at some of the rows that are in the offloaded files. 
+Take a look at some of the rows that are in the offloaded files: 
 
 
 ```sql
@@ -133,7 +133,7 @@ SELECT TOP 10 *
 FROM sales_fact_offload;
 ```
 
-How much data do we have out there?
+How much data do you have out there?
 
 
 ```sql
@@ -142,7 +142,7 @@ FROM sales_fact_offload;
 ```
 
 
-Ok, we are close! We want the data to look like a native table. So lets put a view on top to split it out into colummns. With CSV formatted data we need to reference the column names with 2 dots. 
+Ok, you are close! Now you want the data to look like a native table. So put a view on top to split it out into columns. With CSV-formatted data, you need to reference the column names with two dots: 
 
 
 ```sql
@@ -159,7 +159,7 @@ FROM sales_fact_offload);
 ```
 
 
-Now we can query the data like any other table in Teradata Vantage, but the data is pulled at query runtime directly from the object store! We now have a seamless analytic experience by supporting the correlation of object store-based data sets with structured data sets in Teradata relational tables using existing SQL skills and workflows. 
+Now, you can query the data like any other table in Teradata Vantage, but the data is pulled at query runtime directly from the object store! You have a seamless analytic experience by supporting the correlation of object store-based data sets with structured data sets in Teradata relational tables using existing SQL skills and workflows: 
 
 
 ```sql
@@ -167,15 +167,15 @@ SELECT TOP 10 *
 FROM sales_fact_offload_v;
 ```
 
-That looks nice! Now our users can access all the historical data we have in the object store!
+That looks great! Now your users can access all the historical data you have in the object store!
 
-You can do everything in a view over a foreign table that you would do with a standard database view. This includes returning only a subset of the underlying table columns, as well as adding a WHERE clause in the view to limit what rows are made available using the view.
+You can do everything in a view over a foreign table that you would do with a standard database view. This includes returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
 
-Often we want to be able to look at just a portion of this vast amount of data at a time, which is why we have stored it by year and month. Let's re-define the foreign table to allow us to pre-filter the data when reading it.
+To make it easy to look at just a portion of the vast amount of data at any time, it's stored by year and month. Now, redefine the foreign table so you can prefilter the data when reading it.
 
-#### Step 4: Optimize the foreign table and view for efficient access
+#### Step 4: Optimize the foreign table and view for efficient access.
 
-We have a lot of data in S3! Let's optimize the foreign table so that we minimize the data we have to read when querying the object store. Designing an object store bucket and path structure is an important first step when creating an object store. It requires knowledge of the business needs, the expected patterns in accessing the data, an understanding of the data, and a sensitivity to the tradeoffs. In our case we will often know the approximate date we are looking at, so will use this to our advantage.
+You have a lot of data in S3! Let's optimize the foreign table to minimize the data you have to read when querying the object store. Designing an object store bucket and path structure is an important first step when creating an object store. It requires knowledge of the business needs, the expected patterns in accessing the data, an understanding of the data, and a sensitivity to the tradeoffs. In this case, you will often know the approximate date you are looking at and can use it to your advantage.
 
 
 ```sql
@@ -195,9 +195,9 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-We have re-defined our foreign table to include a <b>PATHPATTERN</b> clause. When looking at historical data by date, this allows us to read only the files we need!
+You have re-defined your foreign table to include a <b>PATHPATTERN</b> clause. When looking at historical data by date, this allows you to read only the files you need!
 
-Now let's re-create our user-friendly view that allows for this path filtering...
+Now, recreate your user-friendly view that allows for path filtering:
 
 
 ```sql
@@ -223,9 +223,9 @@ WHERE sales_year = '2010'
 AND sales_month = '9';
 ```
 
-This is great for use cases where we know the date at least to the month. Suppose we need to see what a customer bought many years ago. Or maybe we want to report on historical store sales. The business analyst can easily query this with no IT intervention, no going to backups or other hard to reach data silos!
+This is great for use cases where you know the date at least to the month. Suppose you need to see what a customer bought many years ago. Or maybe you want to report on historical store sales. The business analyst can easily query this with no IT intervention and no going to backups or other hard to reach data silos!
 
-Let's take a look at what store 6 did for sales back in August 2012:
+Look at what store 6 did for sales back in August 2012:
 
 
 ```sql
@@ -238,7 +238,7 @@ GROUP BY 1;
 ```
 
 
-Let's join the historical data with the current data so we can see the full picture:
+Join the historical data with the current data so you can see the full picture:
 
 
 ```sql
@@ -263,8 +263,7 @@ SELECT
 FROM sales_fact_offload_v);
 ```
 
-
-Final thing we will do is re-run our sales over time report, code is unchanged from the one above, we are now able to analyse all the sales data and not just the most recent year.
+Lastly, rerun the sales over time report. The code is not different, but now you are able to analyze all sales data and not just the most recent year:
 
 
 ```sql
@@ -279,11 +278,11 @@ ORDER BY sales_date ASC;
 
 
 
-Now we see that 2019 in the broader context was an off year, we will need to do further digging to see what happened. But thanks to Teradata Vantage we can cost-effectively analyse all our data by offloading the colder less queried data to object storage for safe keeping.
+Now you see that in the broader context, 2019 as an off year, and you need to do more digging to see what happened. Thanks to Teradata Vantage, you can cost-effectively analyze all your data by offloading the colder, less-queried data to object storage for safe keeping.
 
-#### Step 5: Clean-up
+#### Step 5: Cleanup
 
-Drop the objects we created in our own database schema.
+Drop the objects you created in your own database schema:
 
 ```sql
 DROP AUTHORIZATION MyAuth;
@@ -308,10 +307,10 @@ DROP TABLE sales_fact_offload;
 
 The <b>sales_fact</b> dataset has approximately 43 million rows of sample sales data:
 
-- `sales_date`: date the order was processed
-- `customer_id`: customer identifier
-- `store_id`: store identifier where the order was taken
-- `basket_id`: grouping or order number
-- `product_id`: identifier of the product
-- `sales_quantity`: quantity of the product sold
-- `discount_amount`: how much of a discount was given on this line item
+- `sales_date` - Date the order was processed
+- `customer_id` - Customer identifier
+- `store_id` - Store identifier where the order was taken
+- `basket_id` - Grouping or order number
+- `product_id` - Identifier of the product
+- `sales_quantity` - Quantity of the product sold
+- `discount_amount` - How much of a discount was given on this line item
