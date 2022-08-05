@@ -105,11 +105,19 @@ Taking this analysis even further, we want to understand how we can detect bad b
 
 Using Teradata Vantage we can natively pull in this data and use it for our analysis!
 
+Create an authorization object and uncomment the EXTERNAL SECURITY clauses in the statements below to use.
+```sql
+CREATE AUTHORIZATION MyAuth
+USER 'ACCESS_KEY_ID'
+PASSWORD 'SECRET_ACCESS_KEY';
+```
+
 Create a foreign table to access the JSON formatted data in Amazon S3:
 
 
 ```sql
 CREATE FOREIGN TABLE test_reports
+-- , EXTERNAL SECURITY MyAuth
 (
     Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
     payload JSON(16776192) INLINE LENGTH 64000 CHARACTER SET LATIN)
@@ -197,6 +205,10 @@ DROP TABLE test_reports;
 
 ```sql
 DROP VIEW test_reports_v;
+```
+
+```sql
+DROP AUTHORIZATION MyAuth
 ```
 
 
