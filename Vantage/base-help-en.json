@@ -2,37 +2,145 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Accounts", 
-       "description":"Create, view, and manage accounts, and create Compute Groups.", 
+       "description":"Understand accounts, including creation and feature tips.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
+             "id":"nmr1658424425362", 
+             "title":"Account Basics", 
+             "description":"What you can do with an account and its components.", 
+             "url":"Vantage/nmr1658424425362.md"
+             }
+          , 
+          { 
              "id":"qiv1640281527006", 
-             "title":"Create", 
+             "title":"Create an Account", 
              "url":"Vantage/qiv1640281527006.md"
              }
-          , 
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"kqr1640280954140", 
+       "title":"Backup and Restore", 
+       "description":"Set up backup and restore options for stored data.", 
+       "url":"Vantage/kqr1640280954140.md"
+       }
+    , 
+    { 
+       "id":"xkf1640280993658", 
+       "title":"Billing and Account Usage", 
+       "url":"Vantage/xkf1640280993658.md"
+       }
+    , 
+    { 
+       "id":"mqu1640280532737", 
+       "title":"Compute Groups", 
+       "description":"Create, view, modify, and drop Compute Groups. ", 
+       "url":"Vantage/mqu1640280532737.md"
+       }
+    , 
+    { 
+       "id":"pia1659047719497", 
+       "title":"Consumption", 
+       "url":"Vantage/pia1659047719497.md", 
+       "children":[
           { 
-             "id":"yus1640281591781", 
-             "title":"Overview", 
-             "url":"Vantage/yus1640281591781.md"
+             "id":"pbu1659047908042", 
+             "title":"Consumption Basics", 
+             "url":"Vantage/pbu1659047908042.md"
              }
           , 
           { 
-             "id":"bia1640281629192", 
-             "title":"Compute Groups", 
-             "url":"Vantage/bia1640281629192.md"
+             "id":"nag1659050536098", 
+             "title":"View and Export Units Consumed", 
+             "url":"Vantage/nag1659050536098.md"
              }
           , 
           { 
-             "id":"bgo1640281661111", 
-             "title":"Queries", 
-             "url":"Vantage/bgo1640281661111.md"
+             "id":"dgw1659050598219", 
+             "title":"Consumption Feature Tips", 
+             "url":"Vantage/dgw1659050598219.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jrq1640280690304", 
+       "title":"Data Protection", 
+       "description":"Create and maintain data protection plans for backup, recovery, and data transfer.", 
+       "url":"Vantage/jrq1640280690304.md", 
+       "children":[
+          { 
+             "id":"aqo1659046659258", 
+             "title":"Data Protection Basics", 
+             "url":"Vantage/aqo1659046659258.md"
              }
           , 
           { 
-             "id":"tdd1641923756548", 
-             "title":"Network", 
-             "url":"Vantage/tdd1641923756548.md"
+             "id":"qmb1659046927155", 
+             "title":"Create a Full or Partial Backup", 
+             "url":"Vantage/qmb1659046927155.md"
+             }
+          , 
+          { 
+             "id":"sus1659047241965", 
+             "title":"Review Backup History", 
+             "url":"Vantage/sus1659047241965.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xbg1640280430669", 
+       "title":"Editor", 
+       "description":"Write, modify, import, and export scripts, and load data. ", 
+       "url":"Vantage/xbg1640280430669.md", 
+       "children":[
+          { 
+             "id":"xti1659380438762", 
+             "title":"Editor Basics", 
+             "url":"Vantage/xti1659380438762.md"
+             }
+          , 
+          { 
+             "id":"juo1640281123239", 
+             "title":"Add a Connection", 
+             "url":"Vantage/juo1640281123239.md"
+             }
+          , 
+          { 
+             "id":"dgd1640281158386", 
+             "title":"Create and Run a Script", 
+             "url":"Vantage/dgd1640281158386.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"njp1640280774994", 
+       "title":"Notifications", 
+       "url":"Vantage/njp1640280774994.md"
+       }
+    , 
+    { 
+       "id":"jwq1640280796024", 
+       "title":"OAF", 
+       "description":" Use Open Analytics Framework to manage specialized analytic Compute Operational Groups that run open-source analytic models within a Teradata workload.", 
+       "url":"Vantage/jwq1640280796024.md", 
+       "children":[
+          { 
+             "id":"hlt1640282439628", 
+             "title":"Scripts", 
+             "url":"Vantage/hlt1640282439628.md"
              }
 
           ]
@@ -46,61 +154,46 @@
        "url":"Vantage/apw1640280478763.md", 
        "children":[
           { 
-             "id":"sja1640281381091", 
-             "title":"Configuration", 
-             "url":"Vantage/sja1640281381091.md"
+             "id":"bbi1659385111806", 
+             "title":"Organization Basics", 
+             "url":"Vantage/bbi1659385111806.md"
              }
           , 
           { 
              "id":"hrv1640281410572", 
-             "title":"Organization Admins", 
+             "title":"Manage Organization Admins", 
              "url":"Vantage/hrv1640281410572.md"
              }
           , 
           { 
-             "id":"sny1640281499378", 
-             "title":"Accounts", 
-             "url":"Vantage/sny1640281499378.md"
+             "id":"wgi1659385607989", 
+             "title":"Organization Feature Tips", 
+             "url":"Vantage/wgi1659385607989.md", 
+             "children":[
+                { 
+                   "id":"sja1640281381091", 
+                   "title":"Configuration", 
+                   "url":"Vantage/sja1640281381091.md"
+                   }
+                , 
+                { 
+                   "id":"lvw1659385669139", 
+                   "title":"Organization Admins", 
+                   "url":"Vantage/lvw1659385669139.md"
+                   }
+                , 
+                { 
+                   "id":"sny1640281499378", 
+                   "title":"Accounts", 
+                   "url":"Vantage/sny1640281499378.md"
+                   }
+
+                ]
+
              }
 
           ]
 
-       }
-    , 
-    { 
-       "id":"xbg1640280430669", 
-       "title":"Editor", 
-       "description":"Write, modify, import, and export scripts, and load data.", 
-       "url":"Vantage/xbg1640280430669.md", 
-       "children":[
-          { 
-             "id":"juo1640281123239", 
-             "title":"Add Connection", 
-             "url":"Vantage/juo1640281123239.md"
-             }
-          , 
-          { 
-             "id":"dgd1640281158386", 
-             "title":"Create script", 
-             "url":"Vantage/dgd1640281158386.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"vyb1640280456714", 
-       "title":"Scripts", 
-       "description":"Create and download scripts that query the selected account.", 
-       "url":"Vantage/vyb1640280456714.md"
-       }
-    , 
-    { 
-       "id":"mqu1640280532737", 
-       "title":"Compute Groups", 
-       "description":"Create, view, modify, and drop Compute Groups.", 
-       "url":"Vantage/mqu1640280532737.md"
        }
     , 
     { 
@@ -110,38 +203,19 @@
        "url":"Vantage/ajr1640280560519.md", 
        "children":[
           { 
-             "id":"kfe1640281774004", 
-             "title":"Current", 
-             "url":"Vantage/kfe1640281774004.md"
+             "id":"aow1659389241176", 
+             "title":"Queries Basics", 
+             "url":"Vantage/aow1659389241176.md"
              }
           , 
           { 
              "id":"fcd1640281818081", 
-             "title":"Completed", 
+             "title":"View Current and Completed Queries", 
              "url":"Vantage/fcd1640281818081.md"
-             }
-          , 
-          { 
-             "id":"yjt1640281857373", 
-             "title":"Filters and Column Management", 
-             "url":"Vantage/yjt1640281857373.md"
-             }
-          , 
-          { 
-             "id":"hds1640281899484", 
-             "title":"View Details", 
-             "url":"Vantage/hds1640281899484.md"
              }
 
           ]
 
-       }
-    , 
-    { 
-       "id":"laq1640280582810", 
-       "title":"Network", 
-       "description":"Use Internet or Private link to connect to the POG router across accounts.", 
-       "url":"Vantage/laq1640280582810.md"
        }
     , 
     { 
@@ -150,6 +224,12 @@
        "description":"Connect an account to QueryGrid.", 
        "url":"Vantage/gmy1640280632324.md", 
        "children":[
+          { 
+             "id":"vyx1659391025497", 
+             "title":"QueryGrid Basics", 
+             "url":"Vantage/vyx1659391025497.md"
+             }
+          , 
           { 
              "id":"wrw1640282047881", 
              "title":"Deployment", 
@@ -183,12 +263,6 @@
                    }
                 , 
                 { 
-                   "id":"zxp1640282246701", 
-                   "title":"Settings", 
-                   "url":"Vantage/zxp1640282246701.md"
-                   }
-                , 
-                { 
                    "id":"uee1640282265780", 
                    "title":"Issues", 
                    "url":"Vantage/uee1640282265780.md"
@@ -198,6 +272,12 @@
                    "id":"oiw1640282294248", 
                    "title":"Operations", 
                    "url":"Vantage/oiw1640282294248.md"
+                   }
+                , 
+                { 
+                   "id":"zxp1640282246701", 
+                   "title":"Settings", 
+                   "url":"Vantage/zxp1640282246701.md"
                    }
 
                 ]
@@ -209,17 +289,17 @@
        }
     , 
     { 
-       "id":"yzw1640280651472", 
-       "title":"Metrics", 
-       "url":"Vantage/yzw1640280651472.md"
-       }
-    , 
-    { 
        "id":"auw1640280669500", 
-       "title":"Streaming", 
+       "title":"Streams", 
        "description":"View stream execution details, including flow and status of incoming data.", 
        "url":"Vantage/auw1640280669500.md", 
        "children":[
+          { 
+             "id":"geh1659041833397", 
+             "title":"Stream Basics", 
+             "url":"Vantage/geh1659041833397.md"
+             }
+          , 
           { 
              "id":"luq1640282345986", 
              "title":"Create New Stream", 
@@ -227,14 +307,8 @@
              }
           , 
           { 
-             "id":"xsl1640282387360", 
-             "title":"Streams", 
-             "url":"Vantage/xsl1640282387360.md"
-             }
-          , 
-          { 
              "id":"wsa1640282405363", 
-             "title":"Edit Streams", 
+             "title":"Manage Streams", 
              "url":"Vantage/wsa1640282405363.md"
              }
 
@@ -243,40 +317,32 @@
        }
     , 
     { 
-       "id":"jrq1640280690304", 
-       "title":"Data Protection", 
-       "description":"Create and maintain data protection plans for backup, recovery, and data transfer.", 
-       "url":"Vantage/jrq1640280690304.md"
-       }
-    , 
-    { 
-       "id":"bkm1640280721917", 
-       "title":"Sample Use Cases", 
-       "url":"https://raw.githubusercontent.com/Teradata/product-help/master/VantageCloudLakeUseCases/use-cases-en.json"
-       }
-    , 
-    { 
        "id":"arh1640280750562", 
-       "title":"User Preferences", 
-       "url":"Vantage/arh1640280750562.md"
-       }
-    , 
-    { 
-       "id":"njp1640280774994", 
-       "title":"Notifications", 
-       "url":"Vantage/njp1640280774994.md"
-       }
-    , 
-    { 
-       "id":"jwq1640280796024", 
-       "title":"OAF", 
-       "description":"Use Open Analytics Framework to manage specialized analytic Compute Operational Groups that run open-source analytic models within a Teradata workload.", 
-       "url":"Vantage/jwq1640280796024.md", 
+       "title":"Users", 
+       "url":"Vantage/arh1640280750562.md", 
        "children":[
           { 
-             "id":"hlt1640282439628", 
-             "title":"Scripts", 
-             "url":"Vantage/hlt1640282439628.md"
+             "id":"hnc1659392455718", 
+             "title":"User Basics", 
+             "url":"Vantage/hnc1659392455718.md"
+             }
+          , 
+          { 
+             "id":"wax1659392556096", 
+             "title":"Create User", 
+             "url":"Vantage/wax1659392556096.md"
+             }
+          , 
+          { 
+             "id":"cvn1659392640675", 
+             "title":"View Users", 
+             "url":"Vantage/cvn1659392640675.md"
+             }
+          , 
+          { 
+             "id":"wxe1659392685092", 
+             "title":"Manage Users", 
+             "url":"Vantage/wxe1659392685092.md"
              }
 
           ]
@@ -284,16 +350,9 @@
        }
     , 
     { 
-       "id":"kqr1640280954140", 
-       "title":"Backup and Restore", 
-       "description":"Set up backup and restore options for stored data.", 
-       "url":"Vantage/kqr1640280954140.md"
-       }
-    , 
-    { 
-       "id":"xkf1640280993658", 
-       "title":"Billing and Account Usage", 
-       "url":"Vantage/xkf1640280993658.md"
+       "id":"bkm1640280721917", 
+       "title":"Use Cases", 
+       "url":"https://raw.githubusercontent.com/Teradata/product-help/master/VantageCloudLakeUseCases/use-cases-en.json"
        }
 
     ]
