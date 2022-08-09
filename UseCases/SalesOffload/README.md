@@ -17,8 +17,8 @@ First, create an AUTHORIZATION object named MyAuth with your credentials. An alt
 
 ```sql
 CREATE AUTHORIZATION MyAuth
-USER 'ACCESS_KEY_ID'
-PASSWORD 'SECRET_ACCESS_KEY';
+USER ''
+PASSWORD '';
 ```
 
 
