@@ -108,8 +108,8 @@ Using Teradata Vantage we can natively pull in this data and use it for our anal
 Create an authorization object and uncomment the EXTERNAL SECURITY clauses in the statements below to use.
 ```sql
 CREATE AUTHORIZATION MyAuth
-USER 'ACCESS_KEY_ID'
-PASSWORD 'SECRET_ACCESS_KEY';
+USER ''
+PASSWORD '';
 ```
 
 Create a foreign table to access the JSON formatted data in Amazon S3:

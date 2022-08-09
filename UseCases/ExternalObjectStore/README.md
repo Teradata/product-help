@@ -45,8 +45,8 @@ Create an authorization object that contains the credentials for your external o
 
 ```sql
 CREATE AUTHORIZATION MyAuth
-USER 'ACCESS_KEY_ID'
-PASSWORD 'SECRET_ACCESS_KEY';
+USER ''
+PASSWORD '';
 ```
 
 ### Accessing Data Stored on Amazon S3 with READ_NOS
