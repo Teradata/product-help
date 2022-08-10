@@ -352,7 +352,7 @@
     { 
        "id":"bkm1640280721917", 
        "title":"Use Cases", 
-       "url":".../VantageCloudLakeUseCases/use-cases.json"
+       "url":"../VantageCloudLakeUseCases/use-cases.json"
        }
 
     ]
