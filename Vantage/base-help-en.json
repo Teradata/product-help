@@ -164,33 +164,6 @@
              "title":"Manage Organization Admins", 
              "url":"Vantage/hrv1640281410572.md"
              }
-          , 
-          { 
-             "id":"wgi1659385607989", 
-             "title":"Organization Feature Tips", 
-             "url":"Vantage/wgi1659385607989.md", 
-             "children":[
-                { 
-                   "id":"sja1640281381091", 
-                   "title":"Configuration", 
-                   "url":"Vantage/sja1640281381091.md"
-                   }
-                , 
-                { 
-                   "id":"lvw1659385669139", 
-                   "title":"Organization Admins", 
-                   "url":"Vantage/lvw1659385669139.md"
-                   }
-                , 
-                { 
-                   "id":"sny1640281499378", 
-                   "title":"Accounts", 
-                   "url":"Vantage/sny1640281499378.md"
-                   }
-
-                ]
-
-             }
 
           ]
 
