@@ -1,27 +1,27 @@
 [
     {
-        "id":"pat3195117161214"
+        "id":"pat3195117161214",
         "name": "Path Analysis",
         "content_url": "content/nPath/README.md",
         "enabled": true,
         "industries": []
     },
     {
-        "id":"tim1214716511319"
+        "id":"tim1214716511319",
         "name": "Time Series - Consumer Complaints",
         "content_url": "content/TimeSeriesAnalysis/README.md",
         "enabled": true,
         "industries": []
     },
     {
-        "id":"fin7111215511319"
+        "id":"fin7111215511319",
         "name": "Financial Services Customer Journey",
         "content_url": "content/FSCustomerJourney/README.md",
         "enabled": true,
         "industries": []
     },
     {
-        "id":"man5111214716319"
+        "id":"man5111214716319",
         "name": "Manufacturing Defect Analysis",
         "content_url": "content/ManufacturingDefects/README.md",
         "enabled": true,
@@ -31,14 +31,14 @@
         ]
     },
     {
-        "id":"ext0319577090308"
+        "id":"ext0319577090308",
         "name": "External Object Store",
         "content_url": "content/ExternalObjectStore/README.md",
         "enabled": true,
         "industries": []
     },
     {
-        "id":"dee1986198319573"
+        "id":"dee1986198319573",
         "name": "Deep History",
         "content_url": "content/SalesOffload/README.md",
         "enabled": true,
