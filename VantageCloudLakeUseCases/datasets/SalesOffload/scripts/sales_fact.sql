@@ -1,7 +1,7 @@
 DROP TABLE retail_sample_data.so_sales_fact ;
 
 CREATE MULTISET FOREIGN TABLE retail_sample_data.so_sales_fact ,FALLBACK ,
-    EXTERNAL SECURITY DEMO_AUTH_NOS ,
+    EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
     MAP = TD_MAP1
     (
     sales_date DATE FORMAT 'YY/MM/DD' NOT NULL,
