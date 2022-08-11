@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.demo_titan_telco_events ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.demo_titan_telco_events ,FALLBACK ,
-     EXTERNAL SECURITY DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1 
 	( 
 	entity_id 	VARCHAR(20),

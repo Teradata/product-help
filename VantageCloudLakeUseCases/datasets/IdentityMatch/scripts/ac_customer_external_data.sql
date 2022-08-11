@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.im_ac_customer_external_data ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.im_ac_customer_external_data ,FALLBACK ,
-     EXTERNAL SECURITY DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       COOKIE VARCHAR(255) CHARACTER SET UNICODE NOT CASESPECIFIC,

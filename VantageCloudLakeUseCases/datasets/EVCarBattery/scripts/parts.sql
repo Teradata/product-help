@@ -1,7 +1,7 @@
 DROP TABLE retail_sample_data.ev_parts ;
 
 CREATE MULTISET FOREIGN TABLE retail_sample_data.ev_parts , FALLBACK ,
-     EXTERNAL SECURITY DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
       part_no VARCHAR(20) CHARACTER SET UNICODE NOT NULL,

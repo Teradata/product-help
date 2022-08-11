@@ -1,6 +1,6 @@
 DROP TABLE retail_sample_data.fscj_customers ;
 CREATE MULTISET FOREIGN TABLE retail_sample_data.fscj_customers ,FALLBACK ,
-     EXTERNAL SECURITY DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
      id BIGINT,

@@ -1,7 +1,7 @@
 DROP TABLE retail_sample_data.ev_badbatts ;
 
 CREATE MULTISET FOREIGN TABLE retail_sample_data.ev_badbatts , FALLBACK ,
-     EXTERNAL SECURITY DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
          vin CHAR(17) CHARACTER SET LATIN NOT CASESPECIFIC
