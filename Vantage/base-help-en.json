@@ -121,6 +121,7 @@
     { 
        "id":"njp1640280774994", 
        "title":"Notifications", 
+       "description":"Learn about account changes and how to get more details.", 
        "url":"Vantage/njp1640280774994.md"
        }
     , 
@@ -303,7 +304,7 @@
     { 
        "id":"bkm1640280721917", 
        "title":"Use Cases", 
-       "description":"Run use cases to explore  capabilities.", 
+       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
        "url":"https://raw.githubusercontent.com/Teradata/product-help/master/VantageCloudLakeUseCases/use-cases-en.json"
        }
 
