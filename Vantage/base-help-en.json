@@ -59,7 +59,7 @@
     { 
        "id":"jrq1640280690304", 
        "title":"Data Protection", 
-       "description":"Create and maintain data protection plans for backup, recovery, and data transfer.", 
+       "description":"Protect data with backup, recovery, and data transfer.", 
        "url":"Vantage/jrq1640280690304.md", 
        "children":[
           { 
@@ -121,14 +121,14 @@
     { 
        "id":"njp1640280774994", 
        "title":"Notifications", 
-       "description":"Learn about account changes and how to get more details.", 
+       "description":"See recent changes for your account.", 
        "url":"Vantage/njp1640280774994.md"
        }
     , 
     { 
        "id":"apw1640280478763", 
        "title":"Organization", 
-       "description":"View company information and create and manage organization administrators.", 
+       "description":"View company information and manage administrators.", 
        "url":"Vantage/apw1640280478763.md", 
        "children":[
           { 
@@ -150,7 +150,7 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
-       "description":"View current or completed queries on the account, and use optional filters.", 
+       "description":"View current or completed queries on the account.", 
        "url":"Vantage/ajr1640280560519.md", 
        "children":[
           { 
@@ -242,7 +242,7 @@
     { 
        "id":"auw1640280669500", 
        "title":"Streams", 
-       "description":"View stream execution details, including flow and status of incoming data.", 
+       "description":"View stream execution, including incoming data.", 
        "url":"Vantage/auw1640280669500.md", 
        "children":[
           { 
@@ -304,7 +304,7 @@
     { 
        "id":"bkm1640280721917", 
        "title":"Use Cases", 
-       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+       "description":"Run use cases to explore  capabilities.", 
        "url":"https://raw.githubusercontent.com/Teradata/product-help/master/VantageCloudLakeUseCases/use-cases-en.json"
        }
 
