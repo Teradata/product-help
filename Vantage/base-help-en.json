@@ -32,7 +32,43 @@
        "id":"mqu1640280532737", 
        "title":"Compute Groups", 
        "description":"Create, view, modify, and drop Compute Groups. ", 
-       "url":"Vantage/mqu1640280532737.md"
+       "url":"Vantage/mqu1640280532737.md", 
+       "children":[
+          { 
+             "id":"ixo1658772101054", 
+             "title":"Compute Group Key Concepts", 
+             "url":"Vantage/ixo1658772101054.md"
+             }
+          , 
+          { 
+             "id":"xrr1658772541186", 
+             "title":"Create a Compute Group", 
+             "url":"Vantage/xrr1658772541186.md", 
+             "children":[
+                { 
+                   "id":"dvl1640281718303", 
+                   "title":"Profiles", 
+                   "url":"Vantage/dvl1640281718303.md"
+                   }
+                , 
+                { 
+                   "id":"wdz1640281743091", 
+                   "title":"User Roles and Access", 
+                   "url":"Vantage/wdz1640281743091.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"sqv1658772608902", 
+             "title":"Manage Compute Groups", 
+             "url":"Vantage/sqv1658772608902.md"
+             }
+
+          ]
+
        }
     , 
     { 
