@@ -45,8 +45,8 @@ Create an authorization object to contain the credentials to your external objec
 
 ```sql
 CREATE AUTHORIZATION MyAuth
-USER 'ACCESS_KEY_ID'
-PASSWORD 'SECRET_ACCESS_KEY';
+USER ''
+PASSWORD '';
 ```
 
 ### Accessing Data Stored on Amazon S3 with READ_NOS
@@ -71,7 +71,7 @@ Create a foreign table:
 
 ```sql
 CREATE FOREIGN TABLE sample_table
---, EXTERNAL SECURITY MyAuth
+, EXTERNAL SECURITY MyAuth
 USING (LOCATION('/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'));
 ```
 
@@ -86,12 +86,14 @@ SELECT TOP 2 * FROM sample_table;
 
 To persist the data from an object store we can use a CREATE TABLE AS statement as follows:
 
+```sql
 CREATE MULTISET TABLE sample_local_table AS (
   SELECT * FROM (
     LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'
     AUTHORIZATION=MyAuth
   ) AS D
 ) WITH DATA;
+```
 
 
 # Writing Data to an Object Store

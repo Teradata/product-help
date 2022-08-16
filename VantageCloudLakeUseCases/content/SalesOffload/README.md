@@ -67,6 +67,7 @@ We know the bucket where the offloaded sales data is located, so let's take a lo
 SELECT location(char(255)), ObjectLength 
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
+ AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
  RETURNTYPE='NOSREAD_KEYS'
 ) as d 
 ORDER BY 1
@@ -80,6 +81,7 @@ How many files and directories are there total?
 SELECT COUNT(location(char(255))) as NumFiles
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
+ AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
  RETURNTYPE='NOSREAD_KEYS'
 ) as d 
 ORDER BY 1
@@ -92,6 +94,7 @@ Let's take a look at one of the files to get a better understanding of the file 
 ```sql
 SELECT * FROM (
       LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet'
+      AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
       RETURNTYPE='NOSREAD_PARQUET_SCHEMA'
       )
 AS d
@@ -105,6 +108,7 @@ Create a foreign table and a view in Vantage to allow business analysts and othe
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
+, EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
@@ -173,6 +177,7 @@ DROP TABLE sales_fact_offload;
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
+, EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
