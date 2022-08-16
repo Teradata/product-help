@@ -45,7 +45,7 @@ We will create some tables that allow us to send large numbers of parameters pro
 
 
 ```sql
-DATABASE retail_sample_data;
+DATABASE <database_name>;
 
 CREATE TABLE FSCJ_conversion_events
    (conversion_event   VARCHAR(55))
