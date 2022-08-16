@@ -16,6 +16,13 @@
              "title":"Create an Account", 
              "url":"Vantage/qiv1640281527006.md"
              }
+          , 
+          { 
+             "id":"laq1640280582810", 
+             "title":"Enable Private Link", 
+             "description":"Use Internet or Private link to connect to the POG router across accounts.", 
+             "url":"Vantage/laq1640280582810.md"
+             }
 
           ]
 
