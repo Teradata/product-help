@@ -199,11 +199,11 @@ Drop the objects we created in our own database schema.
 
 
 ```sql
-DROP TABLE test_reports;
+DROP TABLE retail_sample_data.test_reports;
 ```
 
 ```sql
-DROP VIEW test_reports_v;
+DROP VIEW retail_sample_data.test_reports_v;
 ```
 
 
