@@ -44,6 +44,8 @@ Create an authorization object to contain the credentials to your external objec
 
 
 ```sql
+DATABASE <database_name>;
+
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
