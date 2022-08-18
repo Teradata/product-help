@@ -1,5 +1,9 @@
 ## Deep History - Offloading cold historical data to an object store
 
+### Before you begin
+
+You must have the Vantage Editor open to complete this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

@@ -1,5 +1,9 @@
 ## Time Series Analysis - Analyzing Consumer Complaints Over Time
 
+### Before you begin
+
+You must have the Vantage Editor open to complete this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

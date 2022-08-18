@@ -1,5 +1,9 @@
 ## Path Analysis using nPath - Predict Behaviors Based on Patterns
 
+### Before you begin
+
+You must have the Vantage Editor open to complete this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

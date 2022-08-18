@@ -1,5 +1,9 @@
 ## Total Knee Replacement - Path Analysis
 
+### Before you begin
+
+You must have the Vantage Editor open to complete this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

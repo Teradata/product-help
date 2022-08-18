@@ -1,5 +1,10 @@
 ## Querying Data on External Object Storage
 
+### Before you begin
+
+You must have the Vantage Editor open to complete this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
+
 ### Introduction
 
 The following is a summary of how to access different formats of data stored in an object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
