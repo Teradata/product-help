@@ -1,8 +1,8 @@
 ## Manufacturing Defect Analysis
 
-### Before you begin
+### Before You Begin
 
-You must have the Vantage Editor open to complete this use case.
+Open Editor to proceed with this use case.
 [LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
