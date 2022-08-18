@@ -2,7 +2,7 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Accounts", 
-       "description":"Learn about accounts, including how to create one.", 
+       "description":"Create an environment to load sample data, run queries, view query data, and more.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
@@ -19,8 +19,7 @@
           , 
           { 
              "id":"laq1640280582810", 
-             "title":"Enable Private Link", 
-             "description":"Use Internet or Private link to connect to the POG router across accounts.", 
+             "title":"Configure Account Connection", 
              "url":"Vantage/laq1640280582810.md"
              }
 
@@ -74,7 +73,7 @@
     { 
        "id":"pia1659047719497", 
        "title":"Consumption", 
-       "description":"Learn how to view units consumed and export data.", 
+       "description":"View units consumed and export data.", 
        "url":"Vantage/pia1659047719497.md", 
        "children":[
           { 
@@ -215,7 +214,7 @@
     { 
        "id":"gmy1640280632324", 
        "title":"QueryGrid", 
-       "description":"Connect an account to QueryGrid.", 
+       "description":"Deploy and manage QueryGrid data analystics fabric.", 
        "url":"Vantage/gmy1640280632324.md", 
        "children":[
           { 
