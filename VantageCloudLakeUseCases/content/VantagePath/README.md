@@ -1,5 +1,9 @@
 ## Vantage Path - Using path analysis for behavior analysis with no coding
 
+### Before You Begin
+
+Open Editor to proceed with this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

@@ -1,5 +1,9 @@
 ## Time Series Analysis - Analyzing Consumer Complaints Over Time
 
+### Before You Begin
+
+Open Editor to proceed with this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

@@ -1,5 +1,9 @@
 ## Path Analysis using nPath - Predict Behaviors Based on Patterns
 
+### Before You Begin
+
+Open Editor to proceed with this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 

@@ -1,5 +1,9 @@
 ## Deep History - Offloading cold historical data to an object store
 
+### Before You Begin
+
+Open Editor to proceed with this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
 ### Introduction
 
