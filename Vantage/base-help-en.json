@@ -31,7 +31,7 @@
     { 
        "id":"mqu1640280532737", 
        "title":"Compute Groups", 
-       "description":"Create, view, modify, and drop Compute Groups. ", 
+       "description":"Create, view, and manage Compute Groups. ", 
        "url":"Vantage/mqu1640280532737.md", 
        "children":[
           { 
@@ -204,7 +204,7 @@
           , 
           { 
              "id":"fcd1640281818081", 
-             "title":"View Current and Completed Queries", 
+             "title":"Load Current and Completed Queries", 
              "url":"Vantage/fcd1640281818081.md"
              }
 
