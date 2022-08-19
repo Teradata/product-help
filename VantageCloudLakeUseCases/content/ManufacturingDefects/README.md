@@ -120,7 +120,7 @@ Create a foreign table to access the JSON formatted data in Amazon S3:
 ```sql
 
 CREATE FOREIGN TABLE retail_sample_data.test_reports , FALLBACK ,
-     EXTERNAL SECURITY DEFINER TRUSTED DEMO_AUTH_NOS
+     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 (
     Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
     payload JSON(16776192) INLINE LENGTH 64000 CHARACTER SET LATIN)
@@ -203,11 +203,11 @@ Drop the objects we created in our own database schema.
 
 
 ```sql
-DROP TABLE test_reports;
+DROP TABLE retail_sample_data.test_reports;
 ```
 
 ```sql
-DROP VIEW test_reports_v;
+DROP VIEW retail_sample_data.test_reports_v;
 ```
 
 
