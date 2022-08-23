@@ -227,3 +227,6 @@ SAMPLE 100
 - `datestamp`: time and date of the event
 - `session_id`: session identifier
 - `event`: event or customer interaction
+
+
+
