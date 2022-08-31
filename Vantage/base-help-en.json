@@ -161,13 +161,6 @@
        }
     , 
     { 
-       "id":"njp1640280774994", 
-       "title":"Notifications", 
-       "description":"See recent changes for your account.", 
-       "url":"Vantage/njp1640280774994.md"
-       }
-    , 
-    { 
        "id":"apw1640280478763", 
        "title":"Organization", 
        "description":"View company information and manage administrators.", 
@@ -289,19 +282,19 @@
        "children":[
           { 
              "id":"geh1659041833397", 
-             "title":"Stream Key Concepts", 
+             "title":"Streams Key Concepts", 
              "url":"Vantage/geh1659041833397.md"
              }
           , 
           { 
              "id":"luq1640282345986", 
-             "title":"Create New Stream", 
+             "title":"Create a New Stream", 
              "url":"Vantage/luq1640282345986.md"
              }
           , 
           { 
              "id":"wsa1640282405363", 
-             "title":"Manage Streams", 
+             "title":"View and Manage Streams", 
              "url":"Vantage/wsa1640282405363.md"
              }
 
