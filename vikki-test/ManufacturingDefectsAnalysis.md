@@ -1,4 +1,8 @@
-# Compute Groups
+## Manufacturing Defect Analysis
+
+### Introduction
+
+You are an analyst at a major auto manufacturer. While running regular financial reports on Teradata Vantage we have discovered a serious business issue with increasing warranty repairs:
 
 Group admins can create, edit, and delete Compute Groups (COGs).
 
