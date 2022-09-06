@@ -2,7 +2,7 @@
 
 ### Introduction
 
-You are an analyst at a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discovered a serious business issue with increasing warranty repairs:
+You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discovered a serious business issue with increasing warranty repairs:
 
 ![png](costs.png)
 
@@ -14,11 +14,12 @@ The issue is primarily driven by battery pack replacements. For an EV manufactur
 
 2. Load the built-in data set assets.
 
+
 ### Walkthrough
 
 This use case takes approximately 15 minutes.
 
 Each main step includes multiple-related actions to prepare you for the next step.
 
-## Step 1: Determine the Root Cause
+#### Step 1: Determine the Root Cause
 
