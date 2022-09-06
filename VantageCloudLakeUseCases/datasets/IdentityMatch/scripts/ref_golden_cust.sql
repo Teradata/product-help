@@ -25,7 +25,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.im_ref_golden_cust ,FALLBACK ,
       ELEC_ADDR_SBTYPE_CD VARCHAR(50) CHARACTER SET LATIN NOT CASESPECIFIC)
 USING
 (
-     LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/IdentityMatch/ref_golden_cust.csv')
+     LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/IdentityMatch/ref_golden_cust.csv')
      MANIFEST  ('FALSE')
      ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
      STOREDAS  ('TEXTFILE')

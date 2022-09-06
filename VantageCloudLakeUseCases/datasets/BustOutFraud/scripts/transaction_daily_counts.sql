@@ -11,7 +11,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_transaction_daily_counts ,F
       trans_cnt INTEGER)
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/BustOutFraud/transaction_daily_counts.csv')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/BustOutFraud/transaction_daily_counts.csv')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

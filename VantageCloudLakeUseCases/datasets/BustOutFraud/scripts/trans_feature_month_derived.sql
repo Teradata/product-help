@@ -14,7 +14,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_trans_feature_month_derived
       MAX_UTILIZATION_05_MTH DECIMAL(20,5))
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/BustOutFraud/trans_feature_month_derived.csv')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/BustOutFraud/trans_feature_month_derived.csv')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

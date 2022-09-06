@@ -13,7 +13,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.tc_csi_telco_data ,FALLBACK ,
       timegroup VARCHAR(11) CHARACTER SET LATIN CASESPECIFIC)
 USING
 (
-     LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/TelcoChurn/csi_telco_data/')
+     LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/TelcoChurn/csi_telco_data/')
      MANIFEST  ('FALSE')
      ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
      STOREDAS  ('TEXTFILE')

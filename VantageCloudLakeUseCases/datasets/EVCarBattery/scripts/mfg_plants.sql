@@ -18,7 +18,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.ev_mfg_plants , FALLBACK ,
      )  
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/EVCarBattery/mfg_plants.csv')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/EVCarBattery/mfg_plants.csv')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

@@ -23,7 +23,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.fp_consumer_complaints ,FALLBAC
       complaint_id INTEGER)
 USING
 (
-     LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/FinancialProtection/consumer_complaints/')
+     LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/FinancialProtection/consumer_complaints/')
      MANIFEST  ('FALSE')
      ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
      STOREDAS  ('TEXTFILE')

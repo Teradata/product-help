@@ -10,7 +10,7 @@ CREATE MULTISET FOREIGN TABLE retail_sample_data.demo_titan_telco_events ,FALLBA
 	event     	VARCHAR(100) )
 USING
 (
-	LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/Demo/titan_telco_events/')
+	LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/Demo/titan_telco_events/')
 	MANIFEST  ('FALSE')
 	ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
 	STOREDAS  ('TEXTFILE')
