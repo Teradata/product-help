@@ -2,7 +2,7 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Accounts", 
-       "description":"Create an environment to load sample data, run queries, view query data, and more.", 
+       "description":"Create an environment to load sample data, run queries, and more.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
@@ -28,9 +28,33 @@
        }
     , 
     { 
+       "id":"lyi1662583368110", 
+       "title":"Compute workers", 
+       "description":"", 
+       "url":"Vantage/lyi1662583368110.md", 
+       "children":[
+          { 
+             "id":"aix1662583909152", 
+             "title":"Compute worker key concepts", 
+             "description":"", 
+             "url":"Vantage/aix1662583909152.md"
+             }
+          , 
+          { 
+             "id":"azi1662584068628", 
+             "title":"Create a compute worker", 
+             "description":"", 
+             "url":"Vantage/azi1662584068628.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"mqu1640280532737", 
        "title":"Compute groups", 
-       "description":"Create, view, and manage Compute Groups. ", 
+       "description":"Create, view, and manage Compute groups. ", 
        "url":"Vantage/mqu1640280532737.md", 
        "children":[
           { 
@@ -375,7 +399,7 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"VantageCloudLakeUseCases/use-cases-en.json"
+       "url":"https://raw.githubusercontent.com/Teradata/product-help/master/VantageCloudLakeUseCases/use-cases-en.json"
        }
 
     ]
