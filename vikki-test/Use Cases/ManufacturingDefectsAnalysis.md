@@ -2,11 +2,9 @@
 
 ### Introduction
 
-You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discovered a serious business issue with increasing warranty repairs:
+You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discover a serious business issue with increasing warranty repairs. The issue is primarily driven by battery pack replacements, which are one of the most expensive and critical components in the product. With Vantage and the data captured in the manufacturing process, you can isolate and resolve this issue.
 
 ![png](costs.png)
-
-The issue is primarily driven by battery pack replacements, which are one of the most expensive and critical components in the product. With Vantage and the structured and semi-structured data captured in the manufacturing process, you will isolate and resolve this issue.
 
 ### Before You Begin
 
@@ -19,7 +17,7 @@ The issue is primarily driven by battery pack replacements, which are one of the
 
 This use case takes approximately 15 minutes.
 
-Each main step involves multiple actions to prepare you for the next step.
+Each main step involves multiple actions that prepare you for the next step.
 
 #### Step 1: Determine the Root Cause
 
@@ -34,7 +32,7 @@ AND v.dealer_id = d.id
 GROUP BY d.company order by 2 desc
 ```
 
-The company uses the same set of battery parts in several different models across the product line. Let's find out which car models have those batteries: 
+Your company uses the same set of battery parts in several different models across the product line. Let's find out which car models have those batteries: 
 
 
 ```sql
@@ -56,7 +54,7 @@ AND v.mfg_plant_id = mfg.id
 GROUP BY mfg.company order by 2 desc
 ```
 
-A very high number of faulty cars came from the same assembly plant! Find out what battery cells are installed in the cars with bad batteries:
+A very high number of cars with the battery-pack issue came from the same assembly plant. Find out what battery cells are installed in the cars with bad batteries:
 
 
 ```sql
@@ -68,9 +66,7 @@ AND p.description LIKE 'Battery Cell%'
 GROUP BY bom.part_no, p.description
 ```
 
-There is an issue with part_no '20rd0'! 
-
-Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
+There is an issue with part_no '20rd0'! Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
 
 
 ```sql
@@ -83,7 +79,7 @@ GROUP BY bom.part_no, bom.lot_no, p.description
 ORDER BY count(*) DESC
 ```
 
-Okay, now we know the underlying issue with part_no '20rd0' - the majority of the failures are frrom battery lot '4012' (which turns out to have been delivered to the Jackson Plant) has a huge number of the faulty batteries that are driving our warranty replacements. These insights show up even better on our dashboard in our favourite BI tool which connects directly to Vantage and allows interactive & iterative analysis:
+Now you know the underlying issue with part_no '20rd0'. The majority of failures are from battery lot '4012', which has delivered to the Jackson Plant and has a huge number of the faulty batteries that are driving warranty replacements. These insights show up even better on our dashboard in our favourite BI tool which connects directly to Vantage and allows interactive & iterative analysis:
 
 ![png](dashboard.png)
 
