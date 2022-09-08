@@ -2,7 +2,7 @@
 
 ### Introduction
 
-You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discover a serious business issue with increasing warranty repairs. The issue is primarily driven by battery pack replacements, which are one of the most expensive and critical components in the product. With Vantage and the data captured in the manufacturing process, you can isolate and resolve this issue.
+You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discover a serious business issue with increasing warranty repairs primarily driven by battery pack replacements. The Battery pack is one of the most expensive and critical components in the vheicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve this issue.
 
 ![png](costs.png)
 
@@ -10,18 +10,21 @@ You are an analyst for a major electric vehicle (EV) manufacturer. While running
 
 1. Open Editor and log in using your DBC credentials.
 
+   [LAUNCH EDITOR]
+
 2. Load the built-in data set assets.
 
+   [LOAD ASSETS]
 
 ### Walkthrough
 
 This use case takes approximately 15 minutes.
 
-Each main step involves multiple actions that prepare you for the next step.
+Each step involves multiple actions that prepare you for the next step.
 
-#### Step 1: Determine the Root Cause
+#### Step 1: Determine the root cause.
 
-Add intro:
+Find out the vehicle identification number (VIN) of all cars that required a battery replacement under warranty:
 
 ```sql
 SELECT d.company, count(*)
@@ -32,8 +35,7 @@ AND v.dealer_id = d.id
 GROUP BY d.company order by 2 desc
 ```
 
-Your company uses the same set of battery parts in several different models across the product line. Let's find out which car models have those batteries: 
-
+Your company uses the same set of battery parts in several different models across the product line. Find out which car models have those batteries: 
 
 ```sql
 SELECT v.model, count(*)
@@ -42,7 +44,7 @@ WHERE bb.vin = v.vin
 GROUP BY v.model order by 2 desc
 ```
 
-There's nothing significant here, so let's look at the assembly plants the cars are coming from:
+There's nothing significant here. Identify the assembly plants the cars with battery issues are coming from:
 
 
 ```sql
@@ -54,7 +56,7 @@ AND v.mfg_plant_id = mfg.id
 GROUP BY mfg.company order by 2 desc
 ```
 
-A very high number of cars with the battery-pack issue came from the same assembly plant. Find out what battery cells are installed in the cars with bad batteries:
+A very high number of cars with the battery-pack issue came from the same assembly plant. Find out exactly what battery cells are installed in the cars with bad batteries:
 
 
 ```sql
@@ -66,8 +68,7 @@ AND p.description LIKE 'Battery Cell%'
 GROUP BY bom.part_no, p.description
 ```
 
-There is an issue with part_no '20rd0'! Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
-
+You discover there is an issue with part_no '20rd0'. Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
 
 ```sql
 SELECT bom.part_no, bom.lot_no, p.description, count(*)
@@ -79,28 +80,23 @@ GROUP BY bom.part_no, bom.lot_no, p.description
 ORDER BY count(*) DESC
 ```
 
-Now you know the underlying issue with part_no '20rd0'. The majority of failures are from battery lot '4012', which has delivered to the Jackson Plant and has a huge number of the faulty batteries that are driving warranty replacements. These insights show up even better on our dashboard in our favourite BI tool which connects directly to Vantage and allows interactive & iterative analysis:
+Now you know the underlying issue with part_no '20rd0'. The majority of failures are from battery lot '4012', which was delivered to the Jackson Plant and is associated with a huge number of faulty batteries causing warranty replacements. These insights will show up even better in the dashboard of your favorite BI tool that is connected directly to Vantage. You can perform interactive and iterative analysis:
 
 ![png](dashboard.png)
 
-Our modern connected EV cars provide detailed sensor data as well. We can also look at the temperature sensor data for the battery lot in question:
+Your modern-connected EV cars provide detailed sensor data as well. Look at the temperature sensor data for the battery lot in question:
 
 ![png](4102temps.png)
 
-Compare that to an average battery lot:
+Compare that data to an average battery lot:
 
 ![png](avgtemps.png)
 
-You can clearly see the occurances of higher temperatures / overheating in our battery packs depending on the battery pack model / lot no. So we now see what is the underlying cause of our increased warranty costs, but we want to dig deeper into the issue - back when the cars were assembled and tested so we can prevent it in the future.
+The occurances of higher temperatures and overheating in your battery packs depend on the battery pack model and lot number. Now you know the underlying cause of the increased warranty costs, but you want to dig deeper.  
 
-#### Step 2: We need additional data - Access test results from our Data Lake
+#### Step 2: Access test results from the Data Lake.
 
-Taking this analysis even further, we want to understand how we can detect bad batteries before they end up in our customers' cars. This will help us avoid expensive warranty repair cycles and poor customer satisfaction in the future. When the cars are manufactured we store detailed test reports for the various parts and subsystems that comprise the vehicle. These are voluminous semi-structured data and are loaded directly into our Data Lake which is housed in an object store.
-
-Using Teradata Vantage we can natively pull in this data and use it for our analysis!
-
-Create a foreign table to access the JSON formatted data in Amazon S3:
-
+You want to understand how to detect bad batteries before they end up in customers' cars and avoid expensive warranty repair cycles and poor customer satisfaction in the future. During the manufacturing process, you store detailed test reports for the various parts and subsystems that comprise the vehicle. These reports are voluminous, semi-structured data that is loaded directly into your Data Lake and housed in an object store. With Teradata Vantage, you can natively pull in and analyze this data. Create a foreign table to access the JSON-formatted data in Amazon S3:
 
 ```sql
 
@@ -120,7 +116,7 @@ SELECT TOP 10 *
 FROM retail_sample_data.test_reports
 ```
 
-Put a user friendly view on top of the foreign table to shred the files and make the test report data easier to access:
+Put a user-friendly view on top of the foreign table to shred the files and make the test report data easier to access:
 
 
 ```sql
@@ -143,9 +139,9 @@ SELECT TOP 10 *
 FROM retail_sample_data.test_reports_v
 ```
 
-#### Step 3: Access and join the JSON manufacturing test data natively in Vantage
+#### Step 3: Access and join JSON manufacturing test data natively in Vantage.
 
-That looks good, now lets take a look at what is in the test reports. Various parts will have different data that gets reported when testing, the test results for the simplest parts look like this:
+During testing, various vehicle parts result in different data being reported. Check out the test results for the simplest parts:
 
 
 ```sql
@@ -154,7 +150,7 @@ FROM retail_sample_data.test_reports_v
 WHERE part_no = '11400zn'
 ```
 
-In contrast, the test report for a battery has detailed data on the performance of the battery after it is assembled but before it goes into the vehicle:
+In contrast, look at the detailed data on the performance of the battery after it is assembled, but before it goes into the vehicle:
 
 
 ```sql
@@ -163,9 +159,7 @@ FROM retail_sample_data.test_reports_v
 WHERE part_no = '20rdS0'
 ```
 
-
-We want to compare the rated and measured capacities along with part/lot numbers for just the batteries - we can easily drill into the JSON data using simple dot notation to access the test resuls we need.
-
+You can easily drill into the JSON data using simple dot notation to access important test results. Compare the rated and measured capacities and part and lot numbers for just the batteries: 
 
 ```sql
 SELECT TOP 10 tr.part_no, p.description, tr.lot_no, 
@@ -176,16 +170,13 @@ WHERE  p.part_no = tr.part_no
 AND p.description LIKE 'Battery Cell%'
 ```
 
-Visualising this in our BI tool we can see that these battery packs are actually within the spec, but the range is much lower than the other battery lots. With this insight we can tighten up our acceptance criteria as well as do proactive analysis like this to identify possible quality issues before the cars are completed and delivered to our customers. These initiatives will increase product quality and make sure this doesn't happen again!
+By visualizing this in your BI tool, you can see that these battery packs are actually within specifications, but the range is much lower than the other battery lots. With this insight, you can tighten up acceptance criteria and do proactive analysis to identify possible quality issues before the cars are completed and delivered to customers. These initiatives will increase product quality and make sure this doesn't happen again. Using Teradata Vantage to analyze both your integrated data and the Data Lake, you can get to the bottom of virtually any business problem quickly and easily!
 
 ![png](batterylotcapacity.png)
 
-By using Teradata Vantage to analyse both our integrated data and the Data Lake we can get to the bottom of virtually any business problem quickly and easily!
+#### Step 4: Clean up objects.
 
-#### Step 4: Clean-up
-
-Drop the objects we created in our own database schema.
-
+Drop the objects you created in your database schema:
 
 ```sql
 DROP TABLE retail_sample_data.test_reports;
@@ -195,20 +186,20 @@ DROP TABLE retail_sample_data.test_reports;
 DROP VIEW retail_sample_data.test_reports_v;
 ```
 
+### Dataset
 
-## Dataset
-***
+The collection of data used in this use case includes the following:
 
-<b>bom</b> - Bill of materials - Contains all major parts that make up each vehicle:
+#### bom: Bill of materials that contains all major parts of each vehicle
 
 - `id`: unique identifier
 - `vin`: vehicle identification number
 - `part_no`: part number
-- `vendor_id`: vendor the part was produced by (unused)
+- `vendor_id`: vendor who produced the part (unused)
 - `lot_no`: lot number from the vendor
-- `quantity`: how many of this part are in the vehicle
+- `quantity`: quantity of this part in the vehicle
 
-<b>dealers</b> - Vehicle sales and distributors:
+#### dealers: Vehicle sales and distributors
 
 - `id`: unique identifier
 - `Company`: company name
@@ -223,7 +214,7 @@ DROP VIEW retail_sample_data.test_reports_v;
 - `Latitude`: latitude (location)
 - `Longitude`: longitude (location
 
-<b>mfg_plants</b> - Manufacturing facilities:
+#### mfg_plants: Manufacturing facilities
 
 - `id`: unique identifier
 - `Company`: facility name
@@ -238,13 +229,12 @@ DROP VIEW retail_sample_data.test_reports_v;
 - `Latitude`: latitude (location)
 - `Longitude`: longitude (location
 
-<b>parts</b> - Master list of parts for all vehicles:
+#### parts: Master list of parts for all vehnicles
 
 - `part_no`: unique part number
 - `description`: part description
 
-
-<b>vehicles</b> - Vehicles we have built/are building:
+#### vehnicles: Vehicles Built or Being Built
 
 - `vin`: unique identifier
 - `yr`: model year
