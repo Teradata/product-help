@@ -2,7 +2,7 @@
 
 ### Introduction
 
-You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discover a serious business issue with increasing warranty repairs primarily driven by battery pack replacements. The Battery pack is one of the most expensive and critical components in the vheicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve this issue.
+You are an analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports on Teradata Vantage, you discover a serious business issue with increasing warranty repairs, primarily driven by battery pack replacements. The Battery pack is one of the most expensive and critical components in the vheicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve this issue.
 
 ![png](costs.png)
 
