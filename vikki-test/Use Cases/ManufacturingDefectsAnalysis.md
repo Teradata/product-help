@@ -44,7 +44,7 @@ WHERE bb.vin = v.vin
 GROUP BY v.model order by 2 desc
 ```
 
-There's nothing significant here. Identify the assembly plants the cars with battery issues are coming from:
+There's nothing significant here. Identify the assembly plants from which the cars with battery issues are coming:
 
 
 ```sql
