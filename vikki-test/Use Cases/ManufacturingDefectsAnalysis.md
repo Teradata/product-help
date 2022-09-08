@@ -68,7 +68,7 @@ AND p.description LIKE 'Battery Cell%'
 GROUP BY bom.part_no, p.description
 ```
 
-There is an issue with part_no '20rd0'. Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
+There is an issue with part_no 20rd0. Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
 
 ```sql
 SELECT bom.part_no, bom.lot_no, p.description, count(*)
@@ -80,7 +80,7 @@ GROUP BY bom.part_no, bom.lot_no, p.description
 ORDER BY count(*) DESC
 ```
 
-Now you know the underlying issue with part_no '20rd0'. The majority of failures are from battery lot '4012', which was delivered to the Jackson Plant and is associated with a huge number of faulty batteries causing warranty replacements. These insights will show up even better in the dashboard of your favorite BI tool that is connected directly to Vantage. You can perform interactive and iterative analysis:
+Now you know the underlying issue with part_no 20rd0. The majority of failures are from battery lot 4012, which was delivered to the Jackson Plant and is associated with a huge number of faulty batteries causing warranty replacements. These insights will show up even better in the dashboard of your favorite BI tool that is connected directly to Vantage. You can perform interactive and iterative analysis:
 
 ![png](dashboard.png)
 
