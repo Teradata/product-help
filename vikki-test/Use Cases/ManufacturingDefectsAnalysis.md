@@ -68,7 +68,7 @@ AND p.description LIKE 'Battery Cell%'
 GROUP BY bom.part_no, p.description
 ```
 
-You discover there is an issue with part_no '20rd0'. Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
+There is an issue with part_no '20rd0'. Using detailed manufacturing data stored in your integrated data warehouse, find out if there is a correlation with lot numbers for those battery cells:
 
 ```sql
 SELECT bom.part_no, bom.lot_no, p.description, count(*)
