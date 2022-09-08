@@ -18,9 +18,9 @@ You are an analyst for a major electric vehicle (EV) manufacturer. While running
 
 ### Walkthrough
 
-This use case takes approximately 15 minutes.
-
-Each step involves multiple actions that prepare you for the next step.
+* This use case takes approximately 15 minutes.
+* Each step involves multiple actions that prepare you for the next step.
+* Copy and paste the code in Editor to follow along.
 
 #### Step 1: Determine the root cause.
 
