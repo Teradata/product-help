@@ -21,6 +21,7 @@ You are a business analyst for a major electric vehicle (EV) manufacturer. While
 * This use case takes approximately 15 minutes.
 * Each step involves multiple actions that prepare you for the next step.
 * Copy, paste, and run the code in Editor to follow along.
+* You can check out the collection of data used in the use case [here](datasetreference).
 
 #### Step 1: Determine the root cause.
 
@@ -181,7 +182,7 @@ DROP TABLE retail_sample_data.test_reports;
 DROP VIEW retail_sample_data.test_reports_v;
 ```
 
-### Dataset
+### Dataset Reference
 
 The collection of data used in this use case includes the following:
 
