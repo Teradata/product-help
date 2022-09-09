@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.fp_consumer_complaints ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.fp_consumer_complaints ,FALLBACK ,
+DROP TABLE fp_consumer_complaints ;
+CREATE MULTISET FOREIGN TABLE fp_consumer_complaints ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
