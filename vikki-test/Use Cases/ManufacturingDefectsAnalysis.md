@@ -24,7 +24,6 @@ You are a business analyst for a major electric vehicle (EV) manufacturer. While
 * This use case takes approximately 15 minutes.
 * Each step involves multiple actions that prepare you for the next step.
 * Copy, paste, and run the code in Editor to follow along.
-* You can check out the collection of data for this use case [here](#dataset-reference).
 
 ### Step 1: Determine the root cause.
 
