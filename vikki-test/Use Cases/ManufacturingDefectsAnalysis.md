@@ -1,9 +1,9 @@
-* [Manufacturing Defect Analysis Introduction](#manufacturing-defect-analysis-introduction)
+* [Manufacturing Defect Analysis Overview](#manufacturing-defect-analysis-overview)
 * [Before You Begin](#before-you-begin)
 * [Walkthrough](#walkthrough)
 * [Dataset Reference](#dataset-reference)
 
-## Manufacturing Defect Analysis Introduction
+## Manufacturing Defect Analysis Overview
 
 You are a business analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports using Teradata Vantage, you discover a serious issue with increasing warranty repairs, primarily driven by battery pack replacements. The Battery pack is one of the most expensive and critical components in the vehicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve the issue.
 
