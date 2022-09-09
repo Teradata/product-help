@@ -5,7 +5,7 @@
 
 ## Manufacturing Defect Analysis
 
-You are a business analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports using Teradata Vantage, you discover a serious issue with increasing warranty repairs, primarily driven by battery pack replacements. The battery pack is one of the most expensive and critical components in the vehicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve the issue.
+You are a business analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports using Teradata Vantage, you discover a serious issue with increasing warranty repairs, primarily driven by battery pack replacements. The battery pack is one of the most expensive and critical components in a vehicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve the issue.
 
 ![png](costs.png)
 
