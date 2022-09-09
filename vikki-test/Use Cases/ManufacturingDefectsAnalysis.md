@@ -25,6 +25,8 @@ You are a business analyst for a major electric vehicle (EV) manufacturer. While
 
 #### Step 1: Determine the root cause.
 
+#### 1. Determine the root cause.
+
 Find out the vehicle identification number (VIN) for all cars that required a battery replacement under warranty:
 
 ```sql
