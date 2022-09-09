@@ -1,12 +1,15 @@
-## Manufacturing Defect Analysis
+## Table of Contents
 
-### Introduction
+* [Manufacturing Defect Analysis](#manufacturing-defect-analysis)
+* [Manufacturing Defect Analysis](#manufacturing-defect-analysis)
+
+## Manufacturing Defect Analysis
 
 You are a business analyst for a major electric vehicle (EV) manufacturer. While running regular financial reports using Teradata Vantage, you discover a serious issue with increasing warranty repairs, primarily driven by battery pack replacements. The Battery pack is one of the most expensive and critical components in the vehicle. Using Vantage and the data captured during the manufacturing process, you can determine the root cause and resolve the issue.
 
 ![png](costs.png)
 
-### Before You Begin
+## Before You Begin
 
 1. Open Editor and log in using your DBC credentials.
 
@@ -16,16 +19,14 @@ You are a business analyst for a major electric vehicle (EV) manufacturer. While
 
    [LOAD ASSETS]
 
-### Walkthrough
+## Walkthrough
 
 * This use case takes approximately 15 minutes.
 * Each step involves multiple actions that prepare you for the next step.
 * Copy, paste, and run the code in Editor to follow along.
 * You can check out the collection of data for this use case [here](#dataset-reference).
 
-#### Step 1: Determine the root cause.
-
-#### 1. Determine the root cause.
+### Step 1: Determine the root cause.
 
 Find out the vehicle identification number (VIN) for all cars that required a battery replacement under warranty:
 
@@ -96,7 +97,7 @@ Compare tgat temperature sensor data to an average battery lot:
 
 The occurances of higher temperatures and overheating in your battery packs depend on the battery pack model and lot number. You know the underlying cause of the increased warranty costs, but you need to dig deeper.  
 
-#### Step 2: Access test results from the Data Lake.
+### Step 2: Access test results from the Data Lake.
 
 You want to detect bad batteries before they end up in customers' cars and avoid expensive warranty repair cycles and poor customer satisfaction. During the manufacturing process, you store detailed test reports for the various parts and subsystems that comprise the vehicle. These reports are voluminous, semi-structured data that is loaded directly into your Data Lake and housed in an object store. With Teradata Vantage, you can natively pull in and analyze this data. Create a foreign table to access the JSON-formatted data in Amazon S3:
 
@@ -139,7 +140,7 @@ SELECT TOP 10 *
 FROM retail_sample_data.test_reports_v
 ```
 
-#### Step 3: Access and join JSON manufacturing test data natively in Vantage.
+### Step 3: Access and join JSON manufacturing test data natively in Vantage.
 
 During testing, various vehicle parts result in different data being reported. Check out the test results for the simplest parts:
 
@@ -172,7 +173,7 @@ By visualizing results in your BI tool, you can see that these battery packs are
 
 ![png](batterylotcapacity.png)
 
-#### Step 4: Clean up objects.
+### Step 4: Clean up objects.
 
 Drop the objects you created in your database schema:
 
@@ -184,11 +185,11 @@ DROP TABLE retail_sample_data.test_reports;
 DROP VIEW retail_sample_data.test_reports_v;
 ```
 
-### Dataset Reference
+## Dataset Reference
 
 The collection of data used in this use case includes the following:
 
-#### bom: Bill of materials that contains all major parts of each vehicle
+### bom: Bill of materials that contains all major parts of each vehicle
 
 - `id`: unique identifier
 - `vin`: vehicle identification number
@@ -197,15 +198,7 @@ The collection of data used in this use case includes the following:
 - `lot_no`: lot number from the vendor
 - `quantity`: quantity of this part in the vehicle
 
-| Value  | Description |
-| --------  | -------- |
-| `id`      | unique identifier |
-| `vin`     | vehicle identification number |
-| `part_no` | part number |
-| `vendor_id` | vendor who produced the part (unused) |
-| `lot_no` | quantity of this part in the vehicle |
-
-#### dealers: Vehicle sales and distributors
+### dealers: Vehicle sales and distributors
 
 - `id`: unique identifier
 - `Company`: company name
@@ -220,7 +213,7 @@ The collection of data used in this use case includes the following:
 - `Latitude`: latitude (location)
 - `Longitude`: longitude (location
 
-#### mfg_plants: Manufacturing facilities
+### mfg_plants: Manufacturing facilities
 
 - `id`: unique identifier
 - `Company`: facility name
@@ -235,12 +228,12 @@ The collection of data used in this use case includes the following:
 - `Latitude`: latitude (location)
 - `Longitude`: longitude (location
 
-#### parts: Master list of parts for all vehnicles
+### parts: Master list of parts for all vehnicles
 
 - `part_no`: unique part number
 - `description`: part description
 
-#### vehnicles: Vehicles Built or Being Built
+### vehnicles: Vehicles Built or Being Built
 
 - `vin`: unique identifier
 - `yr`: model year
