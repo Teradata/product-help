@@ -1,7 +1,9 @@
 ## Table of Contents
 
 * [Manufacturing Defect Analysis](#manufacturing-defect-analysis)
-* [Manufacturing Defect Analysis](#manufacturing-defect-analysis)
+* [Before You Begin](#before-you-begin)
+* [Walkthrough](#walkthrough)
+* [Dataset Reference](#dataset-reference)
 
 ## Manufacturing Defect Analysis
 
