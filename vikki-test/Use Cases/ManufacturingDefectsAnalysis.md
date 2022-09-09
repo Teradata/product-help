@@ -90,7 +90,7 @@ Your modern-connected EV cars provide detailed sensor data as well. Look at the 
 
 ![png](4102temps.png)
 
-Compare tgat temperature sensor data to an average battery lot:
+Compare the temperature sensor data to an average battery lot:
 
 ![png](avgtemps.png)
 
@@ -141,7 +141,7 @@ FROM retail_sample_data.test_reports_v
 
 ### Step 3: Access and join JSON manufacturing test data natively in Vantage.
 
-During testing, various vehicle parts result in different data being reported. Check out the test results for the simplest parts:
+Different data is reported during testing for the various vehicle parts. Check out the test results for the simplest parts:
 
 ```sql
 SELECT TOP 1 test_report
