@@ -197,6 +197,14 @@ The collection of data used in this use case includes the following:
 - `lot_no`: lot number from the vendor
 - `quantity`: quantity of this part in the vehicle
 
+| Value  | Description |
+| --------  | -------- |
+| `id`      | unique identifier |
+| `vin`     | vehicle identification number |
+| `part_no` | part number |
+| `vendor_id` | vendor who produced the part (unused) |
+| `lot_no` | quantity of this part in the vehicle |
+
 #### dealers: Vehicle sales and distributors
 
 - `id`: unique identifier
