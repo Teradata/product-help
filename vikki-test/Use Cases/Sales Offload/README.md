@@ -1,33 +1,32 @@
-## Deep History - Offloading cold historical data to an object store
+
+
+## Historical Data Offload
+
+Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance for many years. Although the data you access most frequently is the latest data, older data is still useful and relevant. Historical data compiled over the years gives a rich perspective of your business, such as long-term trends and cyclical patterns.
+
+Teradata Vantage provides unmatched concurrency and performance for the world's largest and most demanding enterprises to analyze data. Analysis and concurrency needs for older information lessens substantially as the data ages. Because there is much more history data that accumulates than current  or "hot" data over time, it makes sense to store history data somewhere that has different performance and price characteristics, for example an object store such as Amazon S3 or Azure Blob storage.
+
+Typically, keeping historical and current data in separate systems makes it a challenge to gain valuable insights. Teradata Vantage solves that challenge. You can seamlessly join together all historical and current information across the data warehouse and object storage, without having to change the basic data structures and queries. This makes it possible to cost-effectively answer questions that could not be previously addressed, allowing decision makers to better plan for the future.
 
 ### Before You Begin
 
-Open Editor to proceed with this use case.
-[LAUNCH EDITOR](#data={"navigateTo":"editor"})
+1. Open Editor and log in using your DBC credentials.
 
-### Introduction
+   [LAUNCH EDITOR]
 
-Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance over many years. Although the most frequently accessed data is the latest or most current data, that doesn’t mean that the older information is not useful or relevant. Historical data that’s been compiled over the years gives a rich perspective of the business, such as long-term trends and cyclical patterns.
+2. Load the built-in data set assets.
 
-Teradata Vantage provides unmatched concurrency and performance for the world's largest and most demanding enterprises to analyze their data. Analysis and concurrency needs for older information is generally substantially less as data ages. Over time there is much more history data that accumulates than current 'hot' data, it makes sense to store it somewhere that has different performance and price characteristics: for example an object store such as Amazon S3 or Azure Blob storage.
+   [LOAD ASSETS]
 
-Keeping historical and current data in separate systems can make it a challenge to gain unique insights that are possible only by analyzing the information together. But not any longer. Now, Teradata Vantage can be used to seamlessly join together all the historical and current information across the data warehouse AND object storage, without having to change the basic data structures and queries. This makes it possible to cost-effectively answer questions that could not be previously addressed so decision makers can better plan for the future.
+## Walkthrough
 
-### Experience
+* This use case takes approximately 10 minutes.
+* Each step involves multiple actions that prepare you for the next step.
+* Copy, paste, and run the code in Editor to follow along.
 
-The Experience section takes about 10 minutes to run.
+#### Step 1: Query the data.
 
-### Setup
-
-Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case.
-[Load Assets](#data={"id":"SalesOffload"})
-
-### Walkthrough
-
-#### Step 1: Querying the Data
-
-Here is our current sales data. Lets grab some sample rows, we can see in this example we have customer, store, basket and discount information.
-
+Grab some sample rows from the current sales data to see customer, store, basket, and discount information:
 
 ```sql
 SELECT TOP 10 * 
@@ -51,21 +50,19 @@ ORDER BY sales_date ASC
 SELECT MIN(sales_date) AS min_date, MAX(sales_date) AS max_date FROM retail_sample_data.so_sales_fact
 ```
 
-How many records do we have in the data warehouse (2019 data)?
-
+Find out how many records you have in the data arehouse:
 
 ```sql
 SELECT COUNT(*)
 FROM retail_sample_data.so_sales_fact
 ```
+You have only have one year of sales data in your data warehouse because that was the data queried the most.
 
+#### Step 2: Explore the offloaded historical data.
 
-#### Step 2: Explore the offloaded historical data
+Although that year of data was queried the most, many companies need to keep up to 10 years of historical data for compliance. Vantage exports the older data on a monthly basis and loads into Amazon S3 for long-term storage. With Teradata Vantage, you can seamlessly access the offloaded data and join it with the rest of the data to get insights over long-term trends and handle audit requests with ease. This includes using existing queries and reports that would otherwise need to be rewritten.
 
-As you have seen we only have 1 year of sales data in our data warehouse as this is by far the most queried, but for compliance many companies need to keep up to 10 years of historical data. The older data has been exported from Vantage on a monthly basis and loaded into Amazon S3 for long-term storage. With Teradata Vantage we can seamlessly access this offloaded data and join with the rest of the data to get insights over long-term trends and handle audit requests with ease. This includes using existing queries and reports that would otherwise need to be re-written!
-
-We know the bucket where the offloaded sales data is located, so let's take a look at some of the data that is there - using the READ_NOS function we can get the list of files and their sizes.
-
+Use the READ_NOS function to get a list of files and sizes from the offloaded data:
 
 ```sql
 SELECT location(char(255)), ObjectLength 
@@ -76,10 +73,7 @@ FROM (
 ) as d 
 ORDER BY 1
 ```
-
-
-How many files and directories are there total?
-
+Find out the total number of files and directories:
 
 ```sql
 SELECT COUNT(location(char(255))) as NumFiles
@@ -91,8 +85,7 @@ FROM (
 ORDER BY 1
 ```
 
-
-Let's take a look at one of the files to get a better understanding of the file format:
+To get a better understanding of the file format, take a look at one of the files:
 
 
 ```sql
@@ -104,11 +97,9 @@ SELECT * FROM (
 AS d
 ```
 
+#### Step 3: Create a simple abstraction layer for easy access.
 
-#### Step 3: Create a simple abstraction layer for easy access
-
-Create a foreign table and a view in Vantage to allow business analysts and other users to easily access the offloaded historical data:
-
+Create a foreign table with a view in Vantage that allows business analysts and other users to easily access the offloaded historical data:
 
 ```sql
 CREATE FOREIGN TABLE retail_sample_data.sales_fact_offload
@@ -122,25 +113,21 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-Lets take a look at some of the rows that are in the offloaded files. 
-
+Take a look at some of the rows in the offloaded files: 
 
 ```sql
 SELECT TOP 10 *
 FROM retail_sample_data.sales_fact_offload;
 ```
 
-How much data do we have out there?
-
+Find out how much data you have out there:
 
 ```sql
 SELECT COUNT(*)
 FROM retail_sample_data.sales_fact_offload;
 ```
 
-
-Ok, we are close! We want the data to look like a native table. So let's put a view on top to split it out into colummns.
-
+You're getting close. Apply a view to split the data into colummns so it looks like a native table:
 
 ```sql
 REPLACE VIEW retail_sample_data.sales_fact_offload_v as (  
@@ -155,8 +142,7 @@ SELECT
 FROM retail_sample_data.sales_fact_offload);
 ```
 
-
-Now we can query the data like any other table in Teradata Vantage, but the data is pulled at query runtime directly from the object store! We now have a seamless analytic experience by supporting the correlation of object store-based data sets with structured data sets in Teradata relational tables using existing SQL skills and workflows. 
+Now you can query the data like any other table in Teradata Vantage and have the data pulled directly from the object store at query runtime! Now you have a seamless analytic experience by supporting the correlation of object store-based data sets with structured data sets in Teradata relational tables using existing SQL skills and workflows. 
 
 
 ```sql
