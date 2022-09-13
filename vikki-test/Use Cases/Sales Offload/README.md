@@ -138,6 +138,8 @@ SELECT
 FROM retail_sample_data.sales_fact_offload);
 ```
 
+Now you can query the data like any other table in Teradata Vantage, but the data is pulled at query runtime directly from the object store! Because correlation of object store-based data sets with structured data sets is supported in Teradata relational tables using existing SQL skills and workflows, you have a seamless analytic experience.
+
 Now you can query the data like any other table in Teradata Vantage and the data is pulled directly from the object store at query runtime. By supporting the correlation of object store-based data sets with structured data sets in Teradata relational tables using existing SQL skills and workflows, you have a seamless analytic experience.
 
 ```sql
