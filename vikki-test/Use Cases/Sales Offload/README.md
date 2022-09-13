@@ -151,7 +151,7 @@ That looks great! Now you can access all the historical data in the object store
 
 You can do everything with a view over a foreign table that you could do with a standard database view, including returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
 
-You want to be able to look at a portion of the vast amount of data at any given point in time. This is why data is stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
+You want the ability to look at just a portion of the vast amount of data at any point in time. This is why data is stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
 
 #### Step 4: Optimize the foreign table and view for efficient access.
 
@@ -198,7 +198,7 @@ WHERE sales_year = '2010'
 AND sales_month = '9';
 ```
 
-This is great when you know the date, at least to the month. Suppose you need to see what a customer bought many years ago or you want to report on historical store sales. The business analyst can easily query this with no IT intervention and no going to backups or other hard-to-reach data silos. Take a look at what store 6 did for sales back in August 2012:
+This is great for use cases when you know the date, at least to the month. Suppose you need to see what a customer bought many years ago or you want to report on historical store sales. You can easily query this with no IT intervention and no going to backups or other hard-to-reach data silos. Take a look at what store 6 did for sales back in August 2012:
 
 ```sql
 SELECT store_id, SUM(sales_quantity)
