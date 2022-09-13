@@ -149,11 +149,11 @@ That looks great! Now you can access all the historical data in the object store
 
 You can do everything in a view over a foreign table that you would do with a standard database view. This includes returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
 
-Frequently, you want to be able to look at just a portion of the vast amount of data, which is why it's stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
+Frequently, you want to be look at just a portion of the vast amount of data, which is why it's stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
 
 #### Step 4: Optimize the foreign table and view for efficient access.
 
-When creating an object store, designing an object store bucket and path structure is an important first step. It requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and sensitivity to the tradeoffs. Typically, you know the approximate date you are looking at, which can be an advantage. You have a lot of data in S3. Optimize the foreign table and view to minimize the data you have to read when querying the object store: 
+When creating an object store, designing an object store bucket and path structure is an important first step. It requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and a sensitivity to the tradeoffs. In this case, you know the approximate date you're are looking at and can use that to your advantage. You have a lot of data in S3. To minimize the data you have to read when querying the object store, optimize the foreign table and view: 
 
 ```sql
 DROP TABLE retail_sample_data.sales_fact_offload;
