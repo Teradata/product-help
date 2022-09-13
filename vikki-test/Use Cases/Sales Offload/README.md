@@ -9,7 +9,7 @@ As a business analyst, you are aware of the increasing compliance regulations ab
 
 Teradata Vantage provides unmatched concurrency and performance analysis for the world's largest and most demanding enterprises. Analysis and concurrency needs for older information lessens substantially as the data ages. Because there is more accumulation of historical data that current or "hot" data over time, it makes sense to store historical data somewhere that has different performance and price characteristics, for example an object store such as Amazon S3 or Azure Blob storage.
 
-Typically, keeping historical and current data in separate systems makes it a challenge to gain valuable insights. Teradata Vantage solves that challenge. You can seamlessly join together all historical and current information across the data warehouse and object storage, without having to change the basic data structures and queries. You can cost-effectively answer questions that could not be answered before and plan better for the future.
+Typically, keeping historical and current data in separate systems makes it a challenge to gain valuable insights. Teradata Vantage solves that challenge. You can seamlessly join together all historical and current information across the data warehouse and object storage, without having to change the basic data structures and queries. You can answer questions cost-effectively that could not be answered before and plan better for the future.
 
 ### Before You Begin
 
