@@ -149,7 +149,7 @@ That looks great! Now you can access all the historical data in the object store
 
 You can do everything with a view over a foreign table that you could do with a standard database view, including returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
 
-It's important to be able to look at just a portion of this vast amount of data at a given point in time, which is why data is stored by year and month. Redefine the foreign table so you can pre-filter data when reading it:
+You want to be able to look at a portion of the vast amount of data at any given point in time. This is why data is stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
 
 #### Step 4: Optimize the foreign table and view for efficient access.
 
