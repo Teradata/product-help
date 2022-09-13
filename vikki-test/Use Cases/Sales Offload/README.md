@@ -5,7 +5,7 @@
 
 ## Historical Data Offload
 
-As a business analyst, you are aware of the increasing compliance regulations about data being kept online and accessible for many years. Although the data accessed most frequently is the latest or most-common data, older data is still useful and relevant. Historical data compiled over the years provides a rich perspective of your business, such as long-term trends and cyclical patterns.
+As a business analyst, you are aware of the increasing compliance regulations about keeping data online and accessible for many years. Although the data accessed most frequently is the latest or most-common data, older data is still useful and relevant. Historical data compiled over the years provides a rich perspective of your business, such as long-term trends and cyclical patterns.
 
 Teradata Vantage provides the world's largest and most demanding enterprises with unmatched concurrency and performance for data analysis. Analysis and concurrency needs for older information lessens substantially as the data ages. Because there is more accumulation of historical data that current or "hot" data over time, it makes sense to store historical data somewhere that has different performance and price characteristics, for example an object store such as Amazon S3 or Azure Blob storage.
 
