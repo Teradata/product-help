@@ -149,13 +149,13 @@ FROM retail_sample_data.sales_fact_offload_v;
 
 That looks great! Now you can access all the historical data in the object store.
 
-In a view over a foreign table, you can do everything you could do with a standard database view. This includes returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
+You can do everything in a view over a foreign table that you would do with a standard database view. This includes returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
 
-So you have the ability to look at just a portion of the vast amount of data at any point in time, the data is stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
+Frequently, you want to be able to look at just a portion of the vast amount of data, which is why it's stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
 
 #### Step 4: Optimize the foreign table and view for efficient access.
 
-Designing an object store bucket and path structure is an important first step when creating an object store. It requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and sensitivity to the tradeoffs. Typically, you know the approximate date you are looking at, which can be an advantage. You have a lot of data in S3. Optimize the foreign table to minimize the data you have to read when querying the object store: 
+When creating an object store, designing an object store bucket and path structure are important first steps. That requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and sensitivity to the tradeoffs. Typically, you know the approximate date you are looking at, which can be an advantage. You have a lot of data in S3. Optimize the foreign table and view to minimize the data you have to read when querying the object store: 
 
 ```sql
 DROP TABLE retail_sample_data.sales_fact_offload;
