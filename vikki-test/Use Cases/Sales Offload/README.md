@@ -36,7 +36,6 @@ SELECT TOP 10 *
 FROM retail_sample_data.so_sales_fact
 ```
 
-
 ```sql
 SELECT sales_date, sum(sales_quantity) as total 
 FROM retail_sample_data.so_sales_fact
@@ -44,9 +43,7 @@ GROUP BY sales_date
 ORDER BY sales_date ASC
 ```
 
-
 ![png](output_7_0.png)
-
 
 
 ```sql
@@ -154,7 +151,7 @@ You can do everything with a view over a foreign table that you could do with a 
 
 It's important to be able to look at just a portion of this vast amount of data at a given point in time, which is why data is stored by year and month. Redefine the foreign table so you can pre-filter data when reading it:
 
-#### Step 3: Optimize the foreign table and view for efficient access.
+#### Step 4: Optimize the foreign table and view for efficient access.
 
 Designing an object store bucket and path structure is an important first step when creating an object store. It requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and sensitivity to the tradeoffs. Typically, you know the approximate date you are looking at, which can be an advantage. You have a lot of data in S3. Optimize the foreign table to minimize the data you have to read when querying the object store: 
 
