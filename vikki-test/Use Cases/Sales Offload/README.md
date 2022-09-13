@@ -140,8 +140,6 @@ FROM retail_sample_data.sales_fact_offload);
 
 Now you can query the data like any other table in Teradata Vantage, but the data is pulled at query runtime directly from the object store! Because correlation of object store-based data sets with structured data sets is supported in Teradata relational tables using existing SQL skills and workflows, you have a seamless analytic experience.
 
-Now you can query the data like any other table in Teradata Vantage and the data is pulled directly from the object store at query runtime. By supporting the correlation of object store-based data sets with structured data sets in Teradata relational tables using existing SQL skills and workflows, you have a seamless analytic experience.
-
 ```sql
 SELECT TOP 10 *
 FROM retail_sample_data.sales_fact_offload_v;
@@ -155,7 +153,7 @@ Frequently, you want to be able to look at just a portion of the vast amount of 
 
 #### Step 4: Optimize the foreign table and view for efficient access.
 
-When creating an object store, designing an object store bucket and path structure are important first steps. That requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and sensitivity to the tradeoffs. Typically, you know the approximate date you are looking at, which can be an advantage. You have a lot of data in S3. Optimize the foreign table and view to minimize the data you have to read when querying the object store: 
+When creating an object store, designing an object store bucket and path structure is an important first step. It requires knowledge of the business needs, expected patterns in accessing the data, understanding of the data, and sensitivity to the tradeoffs. Typically, you know the approximate date you are looking at, which can be an advantage. You have a lot of data in S3. Optimize the foreign table and view to minimize the data you have to read when querying the object store: 
 
 ```sql
 DROP TABLE retail_sample_data.sales_fact_offload;
