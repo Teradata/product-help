@@ -59,7 +59,7 @@ FROM retail_sample_data.so_sales_fact
 
 #### Step 2: Explore the offloaded historical data.
 
-You have only have one year of sales data in your data warehouse, which is the data queried the most. Like many companies, you need to keep up to 10 years of historical data for compliance. Vantage exports the older data on a monthly basis and loads into Amazon S3 for long-term storage. With Teradata Vantage, you can seamlessly access the offloaded data and join it with the rest of the data to get insights over long-term trends and handle audit requests with ease. You can use existing queries and reports that would otherwise need to be rewritten. Use the READ_NOS function to get a list of files and sizes from the offloaded data:
+You have only have one year of sales data in your data warehouse, which is the data you query the most. Like many companies, you need to keep up to 10 years of historical data for compliance. Vantage exports the older data on a monthly basis and loads into Amazon S3 for long-term storage. With Teradata Vantage, you can seamlessly access the offloaded data and join it with the rest of the data to get insights over long-term trends and handle audit requests with ease. You can use existing queries and reports that would otherwise need to be rewritten. Use the READ_NOS function to get a list of files and sizes from the offloaded data:
 
 ```sql
 SELECT location(char(255)), ObjectLength 
