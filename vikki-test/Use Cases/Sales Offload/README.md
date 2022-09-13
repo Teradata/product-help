@@ -231,7 +231,7 @@ SELECT
 FROM retail_sample_data.sales_fact_offload_v);
 ```
 
-Rerun your sales over time report to analyze all the sales data, not just the most recent year.
+Run the sales report again to analyze all the sales data, not just the most recent year:
 
 
 ```sql
