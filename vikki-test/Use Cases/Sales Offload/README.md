@@ -95,7 +95,7 @@ AS d
 
 #### Step 3: Create a simple abstraction layer for easy access.
 
-Create a foreign table with a view in Vantage so business analysts and other users can easily access the offloaded historical data:
+Create a foreign table with a view in Vantage so you can easily access the offloaded historical data:
 
 ```sql
 CREATE FOREIGN TABLE retail_sample_data.sales_fact_offload
