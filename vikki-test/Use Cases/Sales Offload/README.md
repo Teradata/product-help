@@ -264,7 +264,7 @@ DROP TABLE retail_sample_data.sales_fact_offload;
 
 ## Dataset Reference
 
-The collection of data used in this use case includes approximately 43 million rows of sample sales data:
+The collection of data used in this use case includes the following:
 
 - `sales_date`: date the order was processed
 - `customer_id`: customer identifier
