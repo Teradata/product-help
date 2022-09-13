@@ -149,9 +149,9 @@ FROM retail_sample_data.sales_fact_offload_v;
 
 That looks great! Now you can access all the historical data in the object store.
 
-You can do everything with a view over a foreign table that you could do with a standard database view, including returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
+In a view over a foreign table, you can do everything you could do with a standard database view. This includes returning only a subset of the underlying table columns and adding a WHERE clause in the view to limit what rows are made available using the view.
 
-You want the ability to look at just a portion of the vast amount of data at any point in time. This is why data is stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
+So you have the ability to look at just a portion of the vast amount of data at any point in time, the data is stored by year and month. In the next step, you will redefine the foreign table so you can pre-filter data when reading it.
 
 #### Step 4: Optimize the foreign table and view for efficient access.
 
