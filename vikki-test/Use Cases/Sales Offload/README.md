@@ -2,9 +2,9 @@
 
 ## Historical Data Offload
 
-Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance for many years. Although the data you access most frequently is the latest data, older data is still useful and relevant. Historical data compiled over the years gives a rich perspective of your business, such as long-term trends and cyclical patterns.
+Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance for many years. Although the data you access most frequently is the latest data, older data is still useful and relevant. Historical data compiled over the years gives you a rich perspective of your business, such as long-term trends and cyclical patterns.
 
-Teradata Vantage provides unmatched concurrency and performance for the world's largest and most demanding enterprises to analyze data. Analysis and concurrency needs for older information lessens substantially as the data ages. Because there is much more history data that accumulates than current  or "hot" data over time, it makes sense to store history data somewhere that has different performance and price characteristics, for example an object store such as Amazon S3 or Azure Blob storage.
+Teradata Vantage provides unmatched concurrency and performance for the world's largest and most demanding enterprises to analyze data. Analysis and concurrency needs for older information lessens substantially as the data ages. Because there is more accumulation of historical data that current or "hot" data over time, it makes sense to store historical data somewhere that has different performance and price characteristics, for example an object store such as Amazon S3 or Azure Blob storage.
 
 Typically, keeping historical and current data in separate systems makes it a challenge to gain valuable insights. Teradata Vantage solves that challenge. You can seamlessly join together all historical and current information across the data warehouse and object storage, without having to change the basic data structures and queries. This makes it possible to cost-effectively answer questions that could not be previously addressed, allowing decision makers to better plan for the future.
 
