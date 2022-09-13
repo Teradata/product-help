@@ -243,7 +243,7 @@ ORDER BY sales_date ASC;
 
 ![png](output_43_0.png)
 
-In the broader context, you can see that 2019 was an off year. You need to dig further to see what happened. Thanks to Teradata Vantage, you can cost-effectively analyze all your data by offloading the colder, less-queried data to object storage for safe keeping.
+In the broader context, you can see that 2019 was an off year. You need to dig further to see what happened. With Teradata Vantage, you can cost-effectively analyze all your data by offloading the colder, less-queried data to object storage for safe keeping.
 
 #### Step 5: Clean up objects.
 
