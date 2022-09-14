@@ -3,7 +3,7 @@
 * [Walkthrough](#walkthrough)
 * [Dataset Reference](#dataset-reference)
 
-## Historical Data Offload
+## Historical Sales Data Offload
 
 You are a business analyst who is aware of the increasing compliance regulations about keeping data online and accessible for many years. Although the data you access most frequently is the latest or most-common data, older data is still useful and relevant. Historical data provides a rich perspective of your business, such as long-term trends and cyclical patterns.
 
