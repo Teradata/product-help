@@ -36,14 +36,14 @@
           { 
              "id":"aix1662583909152", 
              "title":"Compute worker key concepts", 
-             "description":"", 
+             "description":"Compute worker definition, purpose, and characteristics", 
              "url":"Vantage/aix1662583909152.md"
              }
           , 
           { 
              "id":"azi1662584068628", 
              "title":"Create a compute worker", 
-             "description":"", 
+             "description":"When computer workers are created and how many", 
              "url":"Vantage/azi1662584068628.md"
              }
 
@@ -60,27 +60,27 @@
           { 
              "id":"ixo1658772101054", 
              "title":"Compute group key concepts", 
-             "description":"", 
+             "description":"Compute group description and characteristics", 
              "url":"Vantage/ixo1658772101054.md"
              }
           , 
           { 
              "id":"xrr1658772541186", 
              "title":"Create a compute group", 
-             "description":"", 
+             "description":"How query strategy affects compute group", 
              "url":"Vantage/xrr1658772541186.md", 
              "children":[
                 { 
                    "id":"dvl1640281718303", 
                    "title":"Profiles", 
-                   "description":"", 
+                   "description":"Instance size, MIN_COMPUTE_COUNT, and MAX_COMPUTE_COUNT", 
                    "url":"Vantage/dvl1640281718303.md"
                    }
                 , 
                 { 
                    "id":"wdz1640281743091", 
                    "title":"User roles and access", 
-                   "description":"", 
+                   "description":"How users can access compute groups", 
                    "url":"Vantage/wdz1640281743091.md"
                    }
 
@@ -171,7 +171,7 @@
     { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
-       "description":"Write, modify, import, and export scripts, and load data. ", 
+       "description":"Write, run, modify, import, and export SQL statements and scripts. ", 
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
           { 
@@ -190,7 +190,7 @@
           , 
           { 
              "id":"dgd1640281158386", 
-             "title":"Create and run a script", 
+             "title":"Create and run a SQL statement or script", 
              "description":"", 
              "url":"Vantage/dgd1640281158386.md"
              }
@@ -371,20 +371,6 @@
              }
           , 
           { 
-             "id":"wax1659392556096", 
-             "title":"Create user", 
-             "description":"", 
-             "url":"Vantage/wax1659392556096.md"
-             }
-          , 
-          { 
-             "id":"cvn1659392640675", 
-             "title":"View users", 
-             "description":"", 
-             "url":"Vantage/cvn1659392640675.md"
-             }
-          , 
-          { 
              "id":"wxe1659392685092", 
              "title":"Manage users", 
              "description":"", 
@@ -399,7 +385,7 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"VantageCloudLakeUseCases/use-cases-en.json"
+       "url":" \"url\":\"VantageCloudLakeUseCases/use-cases-en.json\""
        }
 
     ]
