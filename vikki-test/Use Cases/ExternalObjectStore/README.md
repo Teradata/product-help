@@ -1,22 +1,26 @@
 ## Querying Data on External Object Storage
 
+You are a business analyst who wants to access different formats of data in an object store and copy or write data to an object store. With this use case, you can use the sample datasets provided without credentials or modify the samples to acess your own datasets with your credentials. 
+
+If you want to modify the sample datsets to access your own data, your object store must be configured to allow access from the Vantage environment. Provide your credentials one of the following ways:
+
+* USER and PASSWORD (in the CREATE AUTHORIZATION command)
+* AUTHORIZATION simple syntax (in the READ_NOS command to skip the Authorization Object)
+
+You can use similar SQL to access your own object stores by replacing the following:
+
+* __LOCATION__: Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
+* __USER__ or __ACCESS_ID__: Add the username for your object store.
+* __PASSWORD__ or __ACCESS_KEY__: Add the password of the user on your object store.
+* __SESSION_TOKEN__: [Optionl]: Add a session token if you're  AWS Service Token Service to provide the access credentials.
+* Uncomment the EXTERNAL SECURITY clause if necessary.
+
 ### Before You Begin
 
 Open Editor to proceed with this use case.
 [LAUNCH EDITOR](#data={"navigateTo":"editor"})
 
-### Introduction
 
-The following is a summary of how to access different formats of data stored in an object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
-
-You can use similar SQL to access your own object stores. Simply replace the following:
-* __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
-* __USER__ or __ACCESS_ID__ - Add the user name for your object store.
-* __PASSWORD__ or __ACCESS_KEY__ - Add the password of the user on your object store.
-* __SESSION_TOKEN__ - You can also add an optional session token if using AWS Service Token Service to provide you with the access credentials.
-* Uncomment the EXTERNAL SECURITY clause as necessary
-
-When modifying to access your data - your object store must be configured to allow access from the Vantage environment. Provide your credentials in USER and PASSWORD (used in the CREATE AUTHORIZATION command) or AUTHORIZATION simple syntax (used in the READ_NOS command if you don't wish to use the Authorization Object).
 
 ### Accessing Object Storage
 
