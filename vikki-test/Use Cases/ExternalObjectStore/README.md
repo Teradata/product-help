@@ -29,7 +29,7 @@ Uncomment the EXTERNAL SECURITY clause if necessary.
 ## Walkthrough
 
 * This use case takes approximately 15 minutes, depending on the dataset you use.
-* This use case includes both examples that can be done in any order and examples with steps in a particular order. When you are finished, clean up the objects.
+* This use case includes examples that can be done in any order and examples with steps in a particular order. When you are finished, clean up the objects.
 * Copy, paste, optionally edit, and run the code in Editor to follow along.
   
 ### Example 1: Access object storage.
