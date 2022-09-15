@@ -129,7 +129,7 @@ You must provide your own bucket to execute the sample queries. Before running t
 * [optionally] *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
 * [optionally] *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-#### Step 1: Select all rows and copy the data set.
+### Step 1: Select all rows and copy the data set.
 
 Select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
 
