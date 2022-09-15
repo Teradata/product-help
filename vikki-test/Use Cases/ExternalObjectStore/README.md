@@ -2,7 +2,7 @@
 * [Before You Begin](#before-you-begin)
 * [Walkthrough](#walkthrough)
 * [Dataset Reference](#dataset-reference)
-* 
+
 ## Data on an External Object Store
 
 As a business analyst, there's times you want to access different formats of data in an object store or copy and write data to an object store. You can use the sample datasets provided in this use case without credentials or modify the samples to acess your own datasets with your credentials. 
