@@ -1,6 +1,6 @@
 ## Querying Data on External Object Storage
 
-You are a business analyst who wants to access different formats of data in an object store and copy or write data to an object store. With this use case, you can use the sample datasets provided without credentials or modify the samples to acess your own datasets with your credentials. 
+You are a business analyst who wants to access different formats of data in an object store and copy or write data to an object store. You can use the sample datasets provided in this use case without credentials or modify the samples to acess your own datasets with your credentials. 
 
 If you want to modify the sample datsets to access your own data, your object store must be configured to allow access from the Vantage environment. Provide your credentials one of the following ways:
 
