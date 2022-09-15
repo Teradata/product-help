@@ -29,6 +29,7 @@ Uncomment the EXTERNAL SECURITY clause if necessary.
 ## Walkthrough
 
 * This use case takes approximately 15 minutes, depending on the dataset you use.
+* This use case includes both examples that can be done in any order and examples with steps in a particular order. When you are finished, clean up the objects.
 * Copy, paste, optionally edit, and run the code in Editor to follow along.
   
 ### Example 1: Access object storage.
@@ -59,7 +60,7 @@ Data read through a foreign server is not persisted and can be seen by only that
 
 Data can be loaded into the database by selecting from READ_NOS or a foreign table in a CREATE TABLE AS ... WITH DATA statement. 
 
-### Example 2: Acess your own data.
+### Exmaple 2: Acess your own data.
 
 Create an authorization object that the credentials for your external object store and uncomment the EXTERNAL SECURITY clauses in the following statements:
 
@@ -132,7 +133,7 @@ Before running the examples, replace the following fields in the example scripts
 * [optionally] *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
 * [optionally] *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-#### Example 1: Select all rows and copy the data set.
+#### Step 1: Select all rows and copy the data set.
 
 Select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
 
@@ -147,7 +148,7 @@ SELECT * FROM WRITE_NOS (
 ) AS d;
 ```
 
-### Example 2: Copy the dataset:
+### Step 2: Copy the dataset:
 
 Copy the same dataset and partition by the sensor date year under the *sample2* partition:
 
@@ -176,9 +177,9 @@ SELECT * FROM WRITE_NOS (
  AS d;
 ```
 
-### Validate WRITE_NOS results
+### Step 3: Validate WRITE_NOS results.
 
-You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentails and then creating a foreign table for accessing Parquet data as described in the examples in the above section. 
+You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentails, then creating a foreign table for accessing Parquet data as described in the previous examples. 
 
 ### Clean up objects. 
 
