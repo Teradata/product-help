@@ -113,12 +113,8 @@ CREATE MULTISET TABLE sample_local_table AS (
 ) WITH DATA;
 ```
 
-## Writing Data to an Object Store
+## Write or Copy Data Using WRITE_NOS
     
-You can copy data from Vantage to an object store. You must provide your own bucket to execute the following queries.
-
-### WRITE_NOS
-
 WRITE_NOS allows you to do the following:
 
 * Copy and write data directly to an object store.
@@ -126,7 +122,7 @@ WRITE_NOS allows you to do the following:
 * Specify one or more columns in the source table as partition attributes in the target object store.
 * Create and update of manifest files with all objects created during the copy process.
 
-Before running the examples, replace the following fields in the example scripts:
+You must provide your own bucket to execute the sample queries. Before running the examples, replace the following fields in the example scripts:
 
 * *YourBucketName* : with the name of your bucket
 * *YourAuthObject* : your authorization object containing your storage credentials
