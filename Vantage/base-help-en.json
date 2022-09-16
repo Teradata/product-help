@@ -19,7 +19,7 @@
           , 
           { 
              "id":"laq1640280582810", 
-             "title":"Configure account connection", 
+             "title":"Configure connection settings", 
              "url":"Vantage/laq1640280582810.md"
              }
 
@@ -385,7 +385,7 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"VantageCloudLakeUseCases/use-cases-en.json"
+       "url":" \"url\":\"VantageCloudLakeUseCases/use-cases-en.json\""
        }
 
     ]
