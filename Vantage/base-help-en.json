@@ -8,18 +8,21 @@
           { 
              "id":"nmr1658424425362", 
              "title":"Account key concepts", 
+             "description":"Account description, including key components", 
              "url":"Vantage/nmr1658424425362.md"
              }
           , 
           { 
              "id":"qiv1640281527006", 
              "title":"Create an account", 
+             "description":"Key considerations for creating an account", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
           { 
              "id":"laq1640280582810", 
              "title":"Configure connection settings", 
+             "description":"Account connection settings for Internet or Private link", 
              "url":"Vantage/laq1640280582810.md"
              }
 
