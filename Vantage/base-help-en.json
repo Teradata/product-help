@@ -391,7 +391,7 @@
        "url":"VantageCloudLakeUseCases/use-cases-en.json"
        }
     , 
-    { 
+{ 
        "id":"sgo1663603241862", 
        "title":"Welcome tour", 
        "description":"Learn the basics", 
@@ -399,10 +399,10 @@
        }
     , 
     { 
-       "id":"resourceCenter", 
-       "title":"Guided Tours", 
-       "description":"Learn the basics", 
-       "url":"./"
+       "id":"auc1663612875046", 
+       "title":"Guided tours", 
+       "description":"These will teach you the basics", 
+       "url":"Vantage/auc1663612875046.md"
        }
 
     ]
