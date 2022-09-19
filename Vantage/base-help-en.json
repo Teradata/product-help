@@ -390,6 +390,13 @@
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
        "url":"VantageCloudLakeUseCases/use-cases-en.json"
        }
+    ,
+     { 
+       "id":"sgo1663603241862", 
+       "title":"Welcome tour", 
+       "description":"Get started with Vantage" 
+       }
+
 
     ]
 
