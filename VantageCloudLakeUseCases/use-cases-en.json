@@ -49,5 +49,12 @@
         "content_url": "content/SalesOffload/README.md",
         "enabled": true,
         "industries": []
+    },
+    {
+        "name": "Compute Cluster Management with SQL",
+        "description": "Compute cluster management with SQL",
+        "content_url": "content/ComputeClusterManagement/README.md",
+        "enabled": true,
+        "industries": []
     }
 ]
