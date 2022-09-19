@@ -389,7 +389,14 @@
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
        "url":"VantageCloudLakeUseCases/use-cases-en.json"
+       },
+     { 
+       "id":"welcomeTour", 
+       "title":"Welcome tour", 
+       "description":"Learn the basics"
+       
        }
+
 
     ]
 
