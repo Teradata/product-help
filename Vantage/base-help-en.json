@@ -393,8 +393,9 @@
      { 
        "id":"welcomeTour", 
        "title":"Welcome tour", 
-       "description":"Learn the basics"
-       
+       "description":"Learn the basics",
+       "url":"."
+
        }
 
 
