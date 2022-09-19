@@ -90,7 +90,7 @@ CREATE TABLE FSCJ_marketing_attribution AS (
                 customer_identifier, interaction_timestamp, interaction_type, customer_days_active, customer_type,
                 marketing_placement, marketing_description, marketing_category,
                 interaction_type || product_category AS interaction_product
-            FROM retail_sample_data.fscj_ich_banking
+            FROM fscj_ich_banking
             WHERE
                 interaction_type IN ('ACCOUNT_BOOKED_OFFLINE','ACCOUNT_BOOKED_ONLINE','CLICK','REFERRAL','BROWSE')
                 AND product_category <> '-1'
@@ -184,7 +184,7 @@ SELECT * FROM nPath (
 	    SELECT customer_identifier, interaction_timestamp, interaction_type, product_category, interaction_type || '_' || product_category AS event, 
                 marketing_category, marketing_description, marketing_placement, sales_channel, 
                 conversion_sales, conversion_cost, conversion_margin
-            FROM retail_sample_data.fscj_ich_banking
+            FROM fscj_ich_banking
             WHERE
                 product_category <> '-1'
                 AND interaction_type || '_' || product_category <> 'STARTS_APPLICATION_WEALTH MANAGEMENT'

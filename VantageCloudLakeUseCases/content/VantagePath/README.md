@@ -36,7 +36,7 @@ The entire use case takes about 5 minutes to run.
 
 1. Open the <a href="/path-analyzer">Vantage Path</a>.
 2. Select the system connection and authenticate.
-3. Select the following "Event database": retail_sample_data.
+3. Select the following "Event database": 
 4. Select the following "Event table": telco_events.
 5. Select additional parameters or just click "RUN" and analyze the results.
 

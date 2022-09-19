@@ -31,14 +31,14 @@ Start by counting the number of rows in the table.
 
 
 ```sql
-select count(*) from retail_sample_data.fp_consumer_complaints;
+select count(*) from fp_consumer_complaints;
 ```
 
 There are just under 1.3 million rows. Not a problem to analyze large datasets using Vantage, let's take a look at a sample of the data.
 
 
 ```sql
-select TOP 100 * from retail_sample_data.fp_consumer_complaints;
+select TOP 100 * from fp_consumer_complaints;
 ```
 
 #### Step 2: Visualizing the Data
@@ -50,7 +50,7 @@ The first column is <b>date_received</b>. This is the date the complaints were r
 
 ```sql
 select date_received, count(complaint_id) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 where date_received BETWEEN DATE '2017-03-01'
 AND DATE '2019-03-01'
 group by date_received;
@@ -70,7 +70,7 @@ Let's group the data by month and replot the graph above.
 
 ```sql
 select extract(year from date_received) || extract(month from date_received) as month_date, count(complaint_id) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 group by month_date
 order by month_date;
 ```
@@ -87,7 +87,7 @@ Let's narrow down the two spikes above and see exactly where they are happening.
 
 ```sql
 select date_received, count(complaint_id) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 where year(date_received) = 2017
 group by date_received
 order by date_received;
@@ -105,7 +105,7 @@ As we look at the peaks, we find that they occurred from January 15th to 21st an
 select date_received,
     month(date_received) as month_date,
     count(complaint_id) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 where year(date_received) = 2017 and month_date in (1, 9)
 group by date_received
 having counts >= 1500
@@ -117,7 +117,7 @@ Let's look at some of the issues that were reported during these dates.
 
 ```sql
 select date_received, company, count(company) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 where date_received in (
     date '2017-01-19',
     date '2017-01-20',
@@ -144,7 +144,7 @@ Let's now look at the top issues for Navient Solutions and Equifax during those 
 ```sql
 -- analyze top issues reported agains Navient Soultions on 2017-01-19 and 2017-01-20
 select company, product, issue, count(issue) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 where date_received in (
     date '2017-01-19',
     date '2017-01-20') and
@@ -163,7 +163,7 @@ select
     product,
     issue,
     count(issue) as counts
-from retail_sample_data.fp_consumer_complaints
+from fp_consumer_complaints
 where date_received in (
     date '2017-09-08',
     date '2017-09-09',
@@ -180,7 +180,7 @@ Here we can also confirm our hypothesis. The top issues talk about improper use 
 
 The Consumer Complaints Database has complaints data that was received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, which include but are not limited to bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans and other types of consumer credit. The dataset is refreshed daily and contains information on the provider, the complaint, date, ZIP code and more. More information about the dataset can be found in the Consumer section of the <a href="data.gov">Data.gov</a> website.
 
-The <b>retail_sample_data.fp_consumer_complaints</b> dataset has 1,273,782 rows, each representing a unique consumer complaint, and 18 columns, representing the following features:
+The <b>fp_consumer_complaints</b> dataset has 1,273,782 rows, each representing a unique consumer complaint, and 18 columns, representing the following features:
 
 - `date_received`: date that CFPB received the complaint
 - `product`: type of product the consumer identified in the complaint
