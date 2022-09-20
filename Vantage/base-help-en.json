@@ -2,7 +2,7 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Accounts", 
-       "description":"Prepare to load data, run queries, and more.", 
+       "description":"Load data, run queries, and more.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
@@ -356,7 +356,7 @@
     { 
        "id":"auw1640280669500", 
        "title":"Streams", 
-       "description":"Prepare to load data from a compatible object store.", 
+       "description":"Load data from a compatible object store.", 
        "url":"Vantage/auw1640280669500.md", 
        "children":[
           { 
