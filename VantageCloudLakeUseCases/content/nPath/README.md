@@ -54,7 +54,7 @@ The Pattern can also be tuned for better focus, for example, to control the numb
 ```sql
 SELECT * FROM npath
 ( 
-   ON retail_sample_data.telco_events
+   ON telco_events
    PARTITION BY entity_id,session_id
    ORDER BY datestamp
    USING 
@@ -86,7 +86,7 @@ We're using a Pattern 'Events leading to BILL DISPUTE, with minimum of 2 and max
 SELECT *
 FROM npath
 (
-   ON (select top 100000 * from retail_sample_data.telco_events)  -- using select to control input records, use full table syntax when pattern finalized
+   ON (select top 100000 * from telco_events)  -- using select to control input records, use full table syntax when pattern finalized
    PARTITION BY entity_id,session_id
    ORDER BY datestamp  
    USING
@@ -125,7 +125,7 @@ By simply changing the Pattern to A.O{1,3} we can now find paths taken after the
 SELECT *
 FROM npath
 (
-   ON (select top 100000 * from retail_sample_data.telco_events)  -- using select to control input records, use full table syntax when pattern finalized
+   ON (select top 100000 * from telco_events)  -- using select to control input records, use full table syntax when pattern finalized
    PARTITION BY entity_id,session_id
    ORDER BY datestamp  
    USING
@@ -166,7 +166,7 @@ Also, notice the nPath PATTERN syntax. Here we're filtering by paths that have a
 SELECT path, count(*) as cnt
 FROM npath
 (
-   ON retail_sample_data.telco_events
+   ON telco_events
    PARTITION BY entity_id,session_id
    ORDER BY datestamp  
    USING
@@ -205,7 +205,7 @@ The function is useful both for sessionization and for detecting web crawler (bo
 select *
 from Sessionize
 (
-    on (select * from retail_sample_data.telco_events where event = 'BILL DISPUTE' and entity_id = '353329')
+    on (select * from telco_events where event = 'BILL DISPUTE' and entity_id = '353329')
     partition by entity_id
     order by datestamp
     using

@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.demo_equip_training ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.demo_equip_training ,FALLBACK ,
+DROP TABLE demo_equip_training ;
+CREATE MULTISET FOREIGN TABLE demo_equip_training ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
 (

@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.tc_csi_telco_data ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.tc_csi_telco_data ,FALLBACK ,
+DROP TABLE tc_csi_telco_data ;
+CREATE MULTISET FOREIGN TABLE tc_csi_telco_data ,FALLBACK ,
     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
     MAP = TD_MAP1
     (

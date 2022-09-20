@@ -31,13 +31,13 @@ Here is our current sales data. Lets grab some sample rows, we can see in this e
 
 ```sql
 SELECT TOP 10 * 
-FROM retail_sample_data.so_sales_fact
+FROM so_sales_fact
 ```
 
 
 ```sql
 SELECT sales_date, sum(sales_quantity) as total 
-FROM retail_sample_data.so_sales_fact
+FROM so_sales_fact
 GROUP BY sales_date
 ORDER BY sales_date ASC
 ```
@@ -48,7 +48,7 @@ ORDER BY sales_date ASC
 
 
 ```sql
-SELECT MIN(sales_date) AS min_date, MAX(sales_date) AS max_date FROM retail_sample_data.so_sales_fact
+SELECT MIN(sales_date) AS min_date, MAX(sales_date) AS max_date FROM so_sales_fact
 ```
 
 How many records do we have in the data warehouse (2019 data)?
@@ -56,7 +56,7 @@ How many records do we have in the data warehouse (2019 data)?
 
 ```sql
 SELECT COUNT(*)
-FROM retail_sample_data.so_sales_fact
+FROM so_sales_fact
 ```
 
 
@@ -111,7 +111,7 @@ Create a foreign table and a view in Vantage to allow business analysts and othe
 
 
 ```sql
-CREATE FOREIGN TABLE retail_sample_data.sales_fact_offload
+CREATE FOREIGN TABLE sales_fact_offload
 , EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 USING
        (
@@ -127,7 +127,7 @@ Lets take a look at some of the rows that are in the offloaded files.
 
 ```sql
 SELECT TOP 10 *
-FROM retail_sample_data.sales_fact_offload;
+FROM sales_fact_offload;
 ```
 
 How much data do we have out there?
@@ -135,7 +135,7 @@ How much data do we have out there?
 
 ```sql
 SELECT COUNT(*)
-FROM retail_sample_data.sales_fact_offload;
+FROM sales_fact_offload;
 ```
 
 
@@ -143,7 +143,7 @@ Ok, we are close! We want the data to look like a native table. So let's put a v
 
 
 ```sql
-REPLACE VIEW retail_sample_data.sales_fact_offload_v as (  
+REPLACE VIEW sales_fact_offload_v as (  
 SELECT 
     sales_date,
     customer_id,
@@ -152,7 +152,7 @@ SELECT
     product_id,
     sales_quantity,
     discount_amount
-FROM retail_sample_data.sales_fact_offload);
+FROM sales_fact_offload);
 ```
 
 
@@ -161,7 +161,7 @@ Now we can query the data like any other table in Teradata Vantage, but the data
 
 ```sql
 SELECT TOP 10 *
-FROM retail_sample_data.sales_fact_offload_v;
+FROM sales_fact_offload_v;
 ```
 
 That looks nice! Now our users can access all the historical data we have in the object store!
@@ -176,11 +176,11 @@ We have a lot of data in S3! Let's optimize the foreign table so that we minimiz
 
 
 ```sql
-DROP TABLE retail_sample_data.sales_fact_offload;
+DROP TABLE sales_fact_offload;
 ```
 
 ```sql
-CREATE FOREIGN TABLE retail_sample_data.sales_fact_offload
+CREATE FOREIGN TABLE sales_fact_offload
 , EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 USING
        (
@@ -198,7 +198,7 @@ Now let's re-create our user-friendly view that allows for this path filtering..
 
 
 ```sql
-REPLACE VIEW retail_sample_data.sales_fact_offload_v as (  
+REPLACE VIEW sales_fact_offload_v as (  
 SELECT 
     CAST($path.$year AS CHAR(4)) sales_year,
     CAST($path.$month AS CHAR(2)) sales_month,
@@ -209,13 +209,13 @@ SELECT
     product_id,
     sales_quantity,
     discount_amount
-FROM retail_sample_data.sales_fact_offload);
+FROM sales_fact_offload);
 ```
 
 
 ```sql
 SELECT TOP 10 *
-FROM retail_sample_data.sales_fact_offload_v
+FROM sales_fact_offload_v
 WHERE sales_year = '2010'
 AND sales_month = '9';
 ```
@@ -227,7 +227,7 @@ Let's take a look at what store 6 did for sales back in August 2012:
 
 ```sql
 SELECT store_id, SUM(sales_quantity)
-FROM retail_sample_data.sales_fact_offload_v
+FROM sales_fact_offload_v
 WHERE store_id = 6
 AND sales_year = '2012'
 AND sales_month = '8'
@@ -239,7 +239,7 @@ Let's join the historical data with the current data so we can see the full pict
 
 
 ```sql
-REPLACE VIEW retail_sample_data.sales_fact_all as (
+REPLACE VIEW sales_fact_all as (
 SELECT sales_date,
     customer_id,
     store_id,
@@ -247,7 +247,7 @@ SELECT sales_date,
     product_id,
     sales_quantity,
     discount_amount
-    FROM retail_sample_data.so_sales_fact
+    FROM so_sales_fact
     UNION ALL
 SELECT 
     sales_date,
@@ -257,7 +257,7 @@ SELECT
     product_id,
     sales_quantity,
     discount_amount
-FROM retail_sample_data.sales_fact_offload_v);
+FROM sales_fact_offload_v);
 ```
 
 
@@ -266,7 +266,7 @@ Final thing we will do is re-run our sales over time report, code is unchanged f
 
 ```sql
 SELECT sales_date, sum(sales_quantity) as total 
-FROM retail_sample_data.sales_fact_all
+FROM sales_fact_all
 GROUP BY sales_date
 ORDER BY sales_date ASC;
 ```
@@ -284,17 +284,17 @@ Drop the objects we created in our own database schema.
 
 
 ```sql
-DROP VIEW retail_sample_data.sales_fact_all;
+DROP VIEW sales_fact_all;
 ```
 
 
 ```sql
-DROP VIEW retail_sample_data.sales_fact_offload_v;
+DROP VIEW sales_fact_offload_v;
 ```
 
 
 ```sql
-DROP TABLE retail_sample_data.sales_fact_offload;
+DROP TABLE sales_fact_offload;
 ```
 
 ## Dataset

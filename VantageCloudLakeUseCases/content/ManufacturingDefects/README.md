@@ -33,8 +33,8 @@ We have done some preliminary analysis and run a report of all the VIN (vehicle 
 
 ```sql
 SELECT d.company, count(*)
-FROM retail_sample_data.ev_dealers d, retail_sample_data.ev_badbatts bb,
-retail_sample_data.ev_vehicles v
+FROM ev_dealers d, ev_badbatts bb,
+ev_vehicles v
 WHERE bb.vin = v.vin
 AND v.dealer_id = d.id
 GROUP BY d.company order by 2 desc
@@ -46,7 +46,7 @@ Next let's look at the various car models the batteries are in. We use the same 
 
 ```sql
 SELECT v.model, count(*)
-FROM retail_sample_data.ev_vehicles v, retail_sample_data.ev_badbatts bb
+FROM ev_vehicles v, ev_badbatts bb
 WHERE bb.vin = v.vin
 GROUP BY v.model order by 2 desc
 ```
@@ -58,8 +58,8 @@ Now take a look at the assembly plants that the cars are from:
 
 ```sql
 SELECT mfg.company, count(*)
-FROM retail_sample_data.ev_mfg_plants mfg, retail_sample_data.ev_badbatts bb,
-retail_sample_data.ev_vehicles v
+FROM ev_mfg_plants mfg, ev_badbatts bb,
+ev_vehicles v
 WHERE bb.vin = v.vin
 AND v.mfg_plant_id = mfg.id
 GROUP BY mfg.company order by 2 desc
@@ -72,7 +72,7 @@ Find out what battery cells are installed in the cars with bad batteries:
 
 ```sql
 SELECT DISTINCT bom.part_no, p.description, count(*)
-FROM retail_sample_data.ev_bom bom, retail_sample_data.ev_badbatts bb, retail_sample_data.ev_parts p
+FROM ev_bom bom, ev_badbatts bb, ev_parts p
 WHERE bb.vin = bom.vin
 AND bom.part_no = p.part_no
 AND p.description LIKE 'Battery Cell%'
@@ -86,7 +86,7 @@ We store detailed manufacturing data in our integrated data warehouse. See if th
 
 ```sql
 SELECT bom.part_no, bom.lot_no, p.description, count(*)
-FROM retail_sample_data.ev_bom bom, retail_sample_data.ev_badbatts bb, retail_sample_data.ev_parts p
+FROM ev_bom bom, ev_badbatts bb, ev_parts p
 WHERE bb.vin = bom.vin
 AND p.part_no = bom.part_no
 AND p.description LIKE 'Battery Cell%'
@@ -119,7 +119,7 @@ Create a foreign table to access the JSON formatted data in Amazon S3:
 
 ```sql
 
-CREATE FOREIGN TABLE retail_sample_data.test_reports , FALLBACK ,
+CREATE FOREIGN TABLE test_reports , FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 (
     Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
@@ -132,19 +132,19 @@ USING (
 
 ```sql
 SELECT TOP 10 *
-FROM retail_sample_data.test_reports
+FROM test_reports
 ```
 
 Put a user friendly view on top of the foreign table to shred the files and make the test report data easier to access:
 
 
 ```sql
-REPLACE VIEW retail_sample_data.test_reports_v AS
+REPLACE VIEW test_reports_v AS
 (SELECT vin, part_no, lot_no, CAST(test_report AS JSON) test_report
 FROM TD_JSONSHRED(
     ON (
                 SELECT payload.vin as vin, payload
-                FROM retail_sample_data.test_reports)
+                FROM test_reports)
             USING
             ROWEXPR('parts')
             COLEXPR('part_no', 'lot_no', 'test_report') 
@@ -155,7 +155,7 @@ FROM TD_JSONSHRED(
 
 ```sql
 SELECT TOP 10 *
-FROM retail_sample_data.test_reports_v
+FROM test_reports_v
 ```
 
 #### Step 3: Access and join the JSON manufacturing test data natively in Vantage
@@ -165,7 +165,7 @@ That looks good, now lets take a look at what is in the test reports. Various pa
 
 ```sql
 SELECT TOP 1 test_report
-FROM retail_sample_data.test_reports_v
+FROM test_reports_v
 WHERE part_no = '11400zn'
 ```
 
@@ -174,7 +174,7 @@ In contrast, the test report for a battery has detailed data on the performance 
 
 ```sql
 SELECT TOP 1 test_report
-FROM retail_sample_data.test_reports_v
+FROM test_reports_v
 WHERE part_no = '20rdS0'
 ```
 
@@ -186,7 +186,7 @@ We want to compare the rated and measured capacities along with part/lot numbers
 SELECT TOP 10 tr.part_no, p.description, tr.lot_no, 
 tr.test_report."Rated Capacity" AS rated_capacity,
 tr.test_report."Static Capacity Test"."Measured Average Capacity" AS measured_capacity
-FROM retail_sample_data.ev_parts p, retail_sample_data.test_reports_v tr
+FROM ev_parts p, test_reports_v tr
 WHERE  p.part_no = tr.part_no
 AND p.description LIKE 'Battery Cell%'
 ```
@@ -203,11 +203,11 @@ Drop the objects we created in our own database schema.
 
 
 ```sql
-DROP TABLE retail_sample_data.test_reports;
+DROP TABLE test_reports;
 ```
 
 ```sql
-DROP VIEW retail_sample_data.test_reports_v;
+DROP VIEW test_reports_v;
 ```
 
 

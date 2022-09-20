@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.is_connectivity ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.is_connectivity ,FALLBACK ,
+DROP TABLE is_connectivity ;
+CREATE MULTISET FOREIGN TABLE is_connectivity ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
