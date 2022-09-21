@@ -127,7 +127,7 @@ Examples include:
 ## Dataset
 ***
 
-The <b>retail_sample_data.knee_replacement</b> dataset has 289,839 rows, each representing a procedure that a patient has undertaken. The dataset is denormalized so some patient information is repeated in each row:
+The <b>knee_replacement</b> dataset has 289,839 rows, each representing a procedure that a patient has undertaken. The dataset is denormalized so some patient information is repeated in each row:
 
 - `memberid`: unique patient identifier
 - `proccode`: procedure identifier

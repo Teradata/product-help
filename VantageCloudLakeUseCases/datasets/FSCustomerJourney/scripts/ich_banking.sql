@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.fscj_ich_banking ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.fscj_ich_banking ,FALLBACK ,
+DROP TABLE fscj_ich_banking ;
+CREATE MULTISET FOREIGN TABLE fscj_ich_banking ,FALLBACK ,
     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
 	MAP = TD_MAP1  
 	( 

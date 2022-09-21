@@ -1,6 +1,6 @@
-DROP TABLE retail_sample_data.ev_vehicles ;
+DROP TABLE ev_vehicles ;
 
-CREATE MULTISET FOREIGN TABLE retail_sample_data.ev_vehicles , FALLBACK ,
+CREATE MULTISET FOREIGN TABLE ev_vehicles , FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (

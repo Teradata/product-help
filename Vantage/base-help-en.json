@@ -2,25 +2,52 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Accounts", 
-       "description":"Create an environment to load sample data, run queries, view query data, and more.", 
+       "description":"Load data, run queries, and more.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
              "id":"nmr1658424425362", 
              "title":"Account key concepts", 
+             "description":"Account description, components, and characteristics", 
              "url":"Vantage/nmr1658424425362.md"
              }
           , 
           { 
              "id":"qiv1640281527006", 
              "title":"Create an account", 
+             "description":"Considerations for creating an account", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
           { 
              "id":"laq1640280582810", 
-             "title":"Configure account connection", 
+             "title":"Configure connection settings", 
+             "description":"Considerations for using Internet or Private link", 
              "url":"Vantage/laq1640280582810.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"lyi1662583368110", 
+       "title":"Compute workers", 
+       "description":"Create nodes for heavy-processing.", 
+       "url":"Vantage/lyi1662583368110.md", 
+       "children":[
+          { 
+             "id":"aix1662583909152", 
+             "title":"Compute worker key concepts", 
+             "description":"Compute worker description, components, and characteristics", 
+             "url":"Vantage/aix1662583909152.md"
+             }
+          , 
+          { 
+             "id":"azi1662584068628", 
+             "title":"Create a compute worker", 
+             "description":"Considerations for creating a Compute worker", 
+             "url":"Vantage/azi1662584068628.md"
              }
 
           ]
@@ -30,33 +57,33 @@
     { 
        "id":"mqu1640280532737", 
        "title":"Compute groups", 
-       "description":"Create, view, and manage Compute Groups. ", 
+       "description":"Create, view, and manage Compute groups. ", 
        "url":"Vantage/mqu1640280532737.md", 
        "children":[
           { 
              "id":"ixo1658772101054", 
              "title":"Compute group key concepts", 
-             "description":"", 
+             "description":"Compute group description, components, and characteristics", 
              "url":"Vantage/ixo1658772101054.md"
              }
           , 
           { 
              "id":"xrr1658772541186", 
              "title":"Create a compute group", 
-             "description":"", 
+             "description":"Considerations for creating a Compute group", 
              "url":"Vantage/xrr1658772541186.md", 
              "children":[
                 { 
                    "id":"dvl1640281718303", 
                    "title":"Profiles", 
-                   "description":"", 
+                   "description":"Profile description and characteristics", 
                    "url":"Vantage/dvl1640281718303.md"
                    }
                 , 
                 { 
                    "id":"wdz1640281743091", 
                    "title":"User roles and access", 
-                   "description":"", 
+                   "description":"User roles and access descriptions and characteristics", 
                    "url":"Vantage/wdz1640281743091.md"
                    }
 
@@ -67,7 +94,7 @@
           { 
              "id":"sqv1658772608902", 
              "title":"Manage compute groups", 
-             "description":"", 
+             "description":"Considerations for viewing and editing compute groups", 
              "url":"Vantage/sqv1658772608902.md"
              }
 
@@ -84,21 +111,21 @@
           { 
              "id":"pbu1659047908042", 
              "title":"Consumption key concepts", 
-             "description":"", 
+             "description":"Consumption description, components, and characteristics", 
              "url":"Vantage/pbu1659047908042.md"
              }
           , 
           { 
              "id":"xkf1640280993658", 
-             "title":"Billing and account usage", 
-             "description":"", 
+             "title":"Account Usage and Billing", 
+             "description":"Considerations for account usage and billing", 
              "url":"Vantage/xkf1640280993658.md"
              }
           , 
           { 
              "id":"nag1659050536098", 
              "title":"View and export units consumed", 
-             "description":"", 
+             "description":"Considerations for managing consumption data", 
              "url":"Vantage/nag1659050536098.md"
              }
 
@@ -115,29 +142,53 @@
           { 
              "id":"aqo1659046659258", 
              "title":"Data protection key concepts", 
-             "description":"", 
+             "description":"Data protection description, components, and characteristics", 
              "url":"Vantage/aqo1659046659258.md"
              }
           , 
           { 
              "id":"qmb1659046927155", 
              "title":"Create a full or partial backup", 
-             "description":"", 
+             "description":"Considerations for creating a backup", 
              "url":"Vantage/qmb1659046927155.md"
              }
           , 
           { 
              "id":"kqr1640280954140", 
              "title":"Restore data", 
-             "description":"", 
+             "description":"Considerations for restoring from a backup", 
              "url":"Vantage/kqr1640280954140.md"
              }
           , 
           { 
              "id":"sus1659047241965", 
              "title":"Review backup history", 
-             "description":"", 
+             "description":"Considerations for reviewing backup history", 
              "url":"Vantage/sus1659047241965.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jlf1663616946889", 
+       "title":"Data sharing", 
+       "description":"Share data with other users, including tables and views.", 
+       "url":"Vantage/jlf1663616946889.md", 
+       "children":[
+          { 
+             "id":"pgt1663616908716", 
+             "title":"Data sharing key concepts", 
+             "description":"Dating sharing description, components, and characteristics", 
+             "url":"Vantage/pgt1663616908716.md"
+             }
+          , 
+          { 
+             "id":"vlk1663617148666", 
+             "title":"Create data share", 
+             "description":"Considerations for creating a data share", 
+             "url":"Vantage/vlk1663617148666.md"
              }
 
           ]
@@ -147,27 +198,27 @@
     { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
-       "description":"Write, modify, import, and export scripts, and load data. ", 
+       "description":"Write and run SQL queries.", 
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
           { 
              "id":"xti1659380438762", 
              "title":"Editor key concepts", 
-             "description":"", 
+             "description":"Editor description, components, and characteristics", 
              "url":"Vantage/xti1659380438762.md"
              }
           , 
           { 
              "id":"juo1640281123239", 
              "title":"Add a connection", 
-             "description":"", 
+             "description":"Considerations for connecting to an account", 
              "url":"Vantage/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
-             "title":"Create and run a script", 
-             "description":"", 
+             "title":"Create and run a SQL statement or script", 
+             "description":"Considerations for running SQL", 
              "url":"Vantage/dgd1640281158386.md"
              }
 
@@ -184,14 +235,14 @@
           { 
              "id":"bbi1659385111806", 
              "title":"Organization Key Concepts", 
-             "description":"", 
+             "description":"Organization description, components, and characteristics", 
              "url":"Vantage/bbi1659385111806.md"
              }
           , 
           { 
              "id":"hrv1640281410572", 
              "title":"Manage organization admins", 
-             "description":"", 
+             "description":"Considerations for managing organization admins", 
              "url":"Vantage/hrv1640281410572.md"
              }
 
@@ -208,14 +259,14 @@
           { 
              "id":"aow1659389241176", 
              "title":"Queries key concepts", 
-             "description":"", 
+             "description":"Queries description, components, and characteristics", 
              "url":"Vantage/aow1659389241176.md"
              }
           , 
           { 
              "id":"fcd1640281818081", 
              "title":"Load current and completed queries", 
-             "description":"", 
+             "description":"Considerations for loading queries", 
              "url":"Vantage/fcd1640281818081.md"
              }
 
@@ -226,26 +277,26 @@
     { 
        "id":"gmy1640280632324", 
        "title":"QueryGrid", 
-       "description":"Deploy and manage QueryGrid data analystics fabric.", 
+       "description":"Deploy and manage QueryGrid data analytics fabric.", 
        "url":"Vantage/gmy1640280632324.md", 
        "children":[
           { 
              "id":"vyx1659391025497", 
              "title":"QueryGrid key concepts", 
-             "description":"", 
+             "description":"QueryGrid description, components, and characteristics", 
              "url":"Vantage/vyx1659391025497.md"
              }
           , 
           { 
              "id":"wrw1640282047881", 
              "title":"Deployment", 
-             "description":"", 
+             "description":"Considerations for deploying QueryGrid", 
              "url":"Vantage/wrw1640282047881.md", 
              "children":[
                 { 
                    "id":"znp1640282079399", 
                    "title":"Data source", 
-                   "description":"", 
+                   "description":"Considerations for QueryGrid data source", 
                    "url":"Vantage/znp1640282079399.md"
                    }
 
@@ -256,41 +307,41 @@
           { 
              "id":"lzm1640282103875", 
              "title":"Management", 
-             "description":"", 
+             "description":"Considerations for QueryGrid management", 
              "url":"Vantage/lzm1640282103875.md", 
              "children":[
                 { 
                    "id":"vhb1640282164870", 
                    "title":"Data sources", 
-                   "description":"", 
+                   "description":"Considerations for data source management", 
                    "url":"Vantage/vhb1640282164870.md"
                    }
                 , 
                 { 
                    "id":"goh1640282193934", 
-                   "title":"Fabric overview", 
-                   "description":"", 
+                   "title":"Fabric", 
+                   "description":"Fabric description, components, and characteristics", 
                    "url":"Vantage/goh1640282193934.md"
                    }
                 , 
                 { 
                    "id":"uee1640282265780", 
                    "title":"Issues", 
-                   "description":"", 
+                   "description":"Considerations for reviewing QueryGrid issues", 
                    "url":"Vantage/uee1640282265780.md"
                    }
                 , 
                 { 
                    "id":"oiw1640282294248", 
                    "title":"Operations", 
-                   "description":"", 
+                   "description":"Considerations for QueryGrid operations", 
                    "url":"Vantage/oiw1640282294248.md"
                    }
                 , 
                 { 
                    "id":"zxp1640282246701", 
                    "title":"Settings", 
-                   "description":"", 
+                   "description":"Considerations for QueryGrid settings", 
                    "url":"Vantage/zxp1640282246701.md"
                    }
 
@@ -305,27 +356,27 @@
     { 
        "id":"auw1640280669500", 
        "title":"Streams", 
-       "description":"View stream execution, including incoming data.", 
+       "description":"Load data from a compatible object store.", 
        "url":"Vantage/auw1640280669500.md", 
        "children":[
           { 
              "id":"geh1659041833397", 
              "title":"Streams key concepts", 
-             "description":"", 
+             "description":"Streams description, components, and characteristics", 
              "url":"Vantage/geh1659041833397.md"
              }
           , 
           { 
              "id":"luq1640282345986", 
-             "title":"Create a new stream", 
-             "description":"", 
+             "title":"Create a stream", 
+             "description":"Considerations for creating a stream", 
              "url":"Vantage/luq1640282345986.md"
              }
           , 
           { 
              "id":"wsa1640282405363", 
-             "title":"View and manage streams", 
-             "description":"", 
+             "title":"Manage streams", 
+             "description":"Considerations for viewing and editing streams.", 
              "url":"Vantage/wsa1640282405363.md"
              }
 
@@ -342,28 +393,14 @@
           { 
              "id":"hnc1659392455718", 
              "title":"User key concepts", 
-             "description":"", 
+             "description":"User description, components, and characteristics", 
              "url":"Vantage/hnc1659392455718.md"
-             }
-          , 
-          { 
-             "id":"wax1659392556096", 
-             "title":"Create user", 
-             "description":"", 
-             "url":"Vantage/wax1659392556096.md"
-             }
-          , 
-          { 
-             "id":"cvn1659392640675", 
-             "title":"View users", 
-             "description":"", 
-             "url":"Vantage/cvn1659392640675.md"
              }
           , 
           { 
              "id":"wxe1659392685092", 
              "title":"Manage users", 
-             "description":"", 
+             "description":"Considerations for viewing, adding, and editing users", 
              "url":"Vantage/wxe1659392685092.md"
              }
 
@@ -376,6 +413,20 @@
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
        "url":"VantageCloudLakeUseCases/use-cases-en.json"
+       }
+    , 
+    { 
+       "id":"sgo1663603241862", 
+       "title":"Welcome tour", 
+       "description":"Learn the basics", 
+       "url":"Vantage/sgo1663603241862.md"
+       }
+    , 
+    { 
+       "id":"auc1663612875046", 
+       "title":"Guided tours", 
+       "description":"These will teach you the basics", 
+       "url":"Vantage/auc1663612875046.md"
        }
 
     ]

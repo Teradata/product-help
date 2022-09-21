@@ -1,6 +1,6 @@
-DROP TABLE retail_sample_data.bof_acct_bustouts ;
+DROP TABLE bof_acct_bustouts ;
 
-CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_acct_bustouts ,FALLBACK ,
+CREATE MULTISET FOREIGN TABLE bof_acct_bustouts ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (

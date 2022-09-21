@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.bof_trans_feature ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.bof_trans_feature ,FALLBACK ,
+DROP TABLE bof_trans_feature ;
+CREATE MULTISET FOREIGN TABLE bof_trans_feature ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (

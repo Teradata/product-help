@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.im_ref_golden_cust ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.im_ref_golden_cust ,FALLBACK ,
+DROP TABLE im_ref_golden_cust ;
+CREATE MULTISET FOREIGN TABLE im_ref_golden_cust ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (

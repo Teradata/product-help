@@ -1,5 +1,5 @@
-DROP TABLE retail_sample_data.is_sensor_locations ;
-CREATE MULTISET FOREIGN TABLE retail_sample_data.is_sensor_locations ,FALLBACK ,
+DROP TABLE is_sensor_locations ;
+CREATE MULTISET FOREIGN TABLE is_sensor_locations ,FALLBACK ,
      EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
      MAP = TD_MAP1
      (
