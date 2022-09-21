@@ -1,0 +1,53 @@
+[
+    {
+        "id":"pat3195117161214",
+        "name": "Path Analysis",
+        "description":"Patterns that predict behaviors", 
+        "content_url": "content/nPath/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"tim1214716511319",
+        "name": "Time Series - Consumer Complaints",
+        "description":"Insights from customer complaints over time", 
+        "content_url": "content/TimeSeriesAnalysis/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"fin7111215511319",
+        "name": "Financial Services Customer Journey",
+        "description":"Interactions during customer financial journey", 
+        "content_url": "content/FSCustomerJourney/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"man5111214716319",
+        "name": "Manufacturing Defect Analysis",
+        "description":"Increased warranty repair cause and resolution",
+        "content_url": "content/ManufacturingDefects/README.md",
+        "enabled": true,
+        "industries": [
+            "Manufacturing",
+            "Automobile"
+        ]
+    },
+    {
+        "id":"ext0319577090308",
+        "name": "External Object Store",
+        "description":"External data query and writing",
+        "content_url": "content/ExternalObjectStore/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"dee1986198319573",
+        "name": "Deep History",
+        "description":"Combined historial and current data",
+        "content_url": "content/SalesOffload/README.md",
+        "enabled": true,
+        "industries": []
+    }
+]
