@@ -1,4 +1,3 @@
-# Consumption Monthly Units
 Review the number of total units consumed per month.
 
 Data is refreshed every hour and kept for four months.

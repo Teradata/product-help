@@ -1,5 +1,3 @@
-# Retained Copies
-
 Retained snapshot copies result in recurring storage costs. 
 
 Review existing snapshots that you can rename, restore, or delete.

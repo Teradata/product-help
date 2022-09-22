@@ -1,5 +1,3 @@
-# Configure S3 Bucket Policy
-
 To allow Teradata Vantage read and write access to your Amazon S3 data, your Cloud Administrator must ensure your Amazon S3 bucket policy is configured with the following actions for the role that allows access to the bucket:
 
 * S3:GetObject

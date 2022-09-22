@@ -1,5 +1,3 @@
-# Add Identity Provider
-
 Add a SAML 2.0- or OIDC-compliant identity provider for SSO with the following considerations:
 
 - **Domain**: Domain of the email client

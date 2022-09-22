@@ -1,8 +1,6 @@
-# Run Data Lake Analytics Using NOS
+Use Editor with object file system to run SQL commands that join external data with data stored in cloud data lakes.
 
-Use Editor with NOS to run SQL commands that join external data with data stored in cloud data lakes.
-
-We recommend that you start out by exploring the capabilities with a demo use case that is specific to data lake analytics. After the demo, you'll be prepared to use SQL commands in Editor to join external data with data stored in cloud data lakes using NOS.
+We recommend that you start out by exploring the capabilities with a demo use case that is specific to data lake analytics. After the demo, you'll be prepared to use SQL commands in Editor to join external data with data stored in cloud data lakes using object file system.
 
 <!-- * Start the Editor guided tour. -->
 

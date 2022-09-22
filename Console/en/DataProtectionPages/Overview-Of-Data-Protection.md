@@ -1,4 +1,3 @@
-# Overview of Data Protection Pages
 View the summary of data protection plan, such as, settings, schedule jobs, history, and so on.
 
 Choose to run the data protection plan as full or delta.

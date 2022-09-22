@@ -1,5 +1,3 @@
-# Network
-
 View the various Azure applications, node types, and IP addresses.
 
 You can access Azure and third-party services hosted within Azure privately and securely.

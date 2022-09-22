@@ -1,5 +1,3 @@
-# Consumption
-
 Review valuable consumption metrics, including monthly consumption by units, department, term, and terabytes, and consumption summary details for the current month.
 
 **Resources**

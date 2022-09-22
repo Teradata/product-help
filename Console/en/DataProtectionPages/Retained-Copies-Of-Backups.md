@@ -1,4 +1,3 @@
-# Retained Copies in Data Protection Pages
 View the retained backups.
 
 Select 

@@ -1,4 +1,3 @@
-# History in Data Protection Pages
 Review previous backup jobs that have run successfully or failed.
 
 Use the list at the top to select a different backup job and review its history.

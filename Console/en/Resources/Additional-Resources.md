@@ -1,6 +1,3 @@
-# Additional Resources
-
-
 ## Documentation
 Learn about features. Find how-tos for common tasks. Explore sample source code:
 

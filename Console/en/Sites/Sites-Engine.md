@@ -1,5 +1,3 @@
-# Title
-
 Site Admins and Super Site Admins can select Change to perform SQL Engine operations, such as starting and stopping the database and scaling the instance size.
 
 

@@ -1,4 +1,3 @@
-# Schedules in Data Protection Pages
 Select **+**,  then select the time to add a backup schedule.
 **Note:** You can't add a schedule for a snapshot. 
 

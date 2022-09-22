@@ -1,5 +1,3 @@
-# Create Databases and Tables and Run Ad-Hoc Queries
-
 Use Editor or Jupyter.
 
 <!-- * Start the Editor guided tour. -->

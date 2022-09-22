@@ -1,5 +1,3 @@
-# Schedule
-
 Review any snapshot jobs scheduled to run.
 
 Select **Create** to add a schedule or **Edit** to change a schedule.
