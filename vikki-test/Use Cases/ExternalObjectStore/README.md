@@ -197,7 +197,3 @@ DROP TABLE sample_table;
 ```sql
 DROP TABLE sample_local_table;
 ```
-
-## Dataset Reference
-
-Do we want to list the data used in this use case for consistency with other use cases?
