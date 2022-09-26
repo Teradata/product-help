@@ -17,7 +17,7 @@ Typically, keeping historical and current data in separate systems makes it a ch
 
    [LAUNCH EDITOR]
 
-2. Load the built-in data set assets.
+2. Load the built-in dataset assets.
 
    [LOAD ASSETS]
 
