@@ -15,11 +15,11 @@ Typically, keeping historical and current data in separate systems makes it a ch
 
 1. Open Editor and log in using your DBC credentials.
 
-   [LAUNCH EDITOR]
+  [LAUNCH EDITOR BUTTON HERE]
 
 2. Load the built-in dataset assets.
 
-   [LOAD ASSETS]
+   [LOAD ASSETS BUTTON HERE]
 
 ## Walkthrough
 
