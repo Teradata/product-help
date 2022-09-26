@@ -15,7 +15,7 @@ You are a business analyst for a major electric vehicle (EV) manufacturer. While
 
    [LAUNCH EDITOR]
 
-2. Load the built-in data set assets.
+2. Load the built-in dataset assets.
 
    [LOAD ASSETS]
 
