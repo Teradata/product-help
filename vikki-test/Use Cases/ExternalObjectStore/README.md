@@ -27,7 +27,7 @@ Uncomment the EXTERNAL SECURITY clause if necessary.
 
    [LAUNCH EDITOR]
 
-2. Load the built-in data set assets.
+2. Load the built-in dataset assets.
 
    [LOAD ASSETS]
    
