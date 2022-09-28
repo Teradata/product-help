@@ -1,5 +1,10 @@
 ## Compute Cluster Management with SQL
 
+### Before You Begin
+
+Open Editor to proceed with this use case.
+[LAUNCH EDITOR](#data={"navigateTo":"editor"})
+
 ### Introduction
 
 The following is a summary of how to manage Compute Clusters in Vantage CloudLake with SQL.
