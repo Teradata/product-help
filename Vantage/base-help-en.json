@@ -412,15 +412,15 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
-        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       "url":"Vantage/bkm1640280721917.md"
+	   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
     , 
     { 
        "id":"sgo1663603241862", 
        "title":"Welcome tour", 
-       "description":"Learn the basics",
-       "url":"?help_panel_opened=false"
+       "description":"Learn the basics", 
+       "url":"Vantage/sgo1663603241862.md"
        }
     , 
     { 
