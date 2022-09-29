@@ -53,7 +53,7 @@
     {
         "id":"dee1986198319573",
         "name": "Deep History",
-        "description":"Combined historial and current data",
+        "description":"Combined historical and current data",
         "content_url": "content/SalesOffload/README.md",
         "enabled": true,
         "industries": []
