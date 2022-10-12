@@ -45,7 +45,7 @@ We will use the powerful marketing Attribution function in Vantage to look at th
 
 This will allow us to quantify marketing effectiveness of both our promotions and channels (online and offline). Which promotions are most effective? Using this information we can then optimize marketing spend and placement.
 
-We will create some tables that allow us to send large numbers of parameters programatically to the Attribution analytic function.
+We will create some tables that allow us to send large numbers of parameters programmatically to the Attribution analytic function.
 
 
 ```sql
