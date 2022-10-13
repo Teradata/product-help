@@ -112,8 +112,6 @@ AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
 ) WITH DATA;
 ```
 
-Note: If the bucket is public you can use AUTHORIZATION='{"access_id":"","access_key":""}'
-
 Check the data in the new OFS table
 
 ```sql
