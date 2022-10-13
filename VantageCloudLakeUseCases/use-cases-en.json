@@ -51,6 +51,14 @@
         "industries": []
     },
     {
+        "id":"",
+        "name": "Object File Store",
+        "description":"Object File Store",
+        "content_url": "content/ObjectFileStore/README.md",
+        "enabled": true,
+        "industries": []
+    }
+    {
         "id":"dee1986198319573",
         "name": "Deep History",
         "description":"Combined historical and current data",
