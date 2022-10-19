@@ -40,6 +40,12 @@
 			"title": "Consulta y escribe datos en el almacenamiento de objetos en la nube",
 			"description": "Integración del almacén de objetos nativo con el almacenamiento de objetos en la nube",
 			"url": "Console/es/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+		},
+		{
+			"id": "apiUserGuide",
+			"title": "",
+			"description": "",
+			"url": "Console/es/API/Api_User_Guide.md"
 		}
 	]
 }

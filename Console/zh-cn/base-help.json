@@ -40,6 +40,12 @@
 			"title": "数据源",
 			"description": "本机对象库与云对象存储集成",
 			"url": "Console/zh-cn/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+		},
+		{
+			"id": "apiUserGuide",
+			"title": "",
+			"description": "",
+			"url": "Console/zh-cn/API/Api_User_Guide.md"
 		}
 	]
 }

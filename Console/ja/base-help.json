@@ -6,6 +6,12 @@
 			"url": "Console/ja/GettingStarted/Getting-Started.md"
 		},
 		{
+			"id": "apiUserGuide",
+			"title": "",
+			"description": "",
+			"url": "Console/ja/API/Api_User_Guide.md"
+		},
+		{
 			"id": "editor",
 			"title": "エディタ",
 			"description": "データベース テーブルを作成し、アドホック クエリを実行して、データをアップロードします。",
