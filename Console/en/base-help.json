@@ -46,6 +46,12 @@
         "title": "Additional Resources",
         "description": "Useful links to help you get started with Vantage",
         "url": "Console/en/Resources/Additional-Resources.md"
+    },
+    {
+        "id": "apiUserGuide",
+        "title": "API User Guide",
+        "description": "Review GraphQL API access and use patterns",
+        "url": "Console/en/API/Api_User_Guide.md"
     }
 	]
 }
