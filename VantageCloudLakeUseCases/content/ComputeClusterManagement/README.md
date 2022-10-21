@@ -10,6 +10,21 @@ Open Editor to proceed with this use case.
 The following is a summary of how to manage Compute Clusters in Vantage CloudLake with SQL.
 
 
+### Setup 
+
+The following permissions are required for this use case. 
+
+```sql
+GRANT CREATE COMPUTE GROUP TO "${username}";
+GRANT DROP COMPUTE GROUP TO "${username}";
+
+GRANT CREATE ROLE TO "${username}";
+GRANT DROP ROLE TO "${username}";
+
+GRANT CREATE COMPUTE PROFILE TO "${username}";
+GRANT DROP COMPUTE PROFILE TO "${username}";
+```
+
 ### Create a resource group for new research project
 
 A Compute Cluster group contains one or more Compute Clusters and is used to form an association between the users and the resources for the user's queries.
