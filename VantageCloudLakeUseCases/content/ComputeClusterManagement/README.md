@@ -23,6 +23,12 @@ GRANT DROP ROLE TO "${username}";
 
 GRANT CREATE COMPUTE PROFILE TO "${username}";
 GRANT DROP COMPUTE PROFILE TO "${username}";
+
+GRANT SELECT ON DBC.ComputeGroupsV TO "${username}";
+GRANT SELECT ON DBC.ComputeProfilesV TO "${username}";
+GRANT SELECT ON DBC.ComputeStatusV TO "${username}";
+GRANT SELECT ON DBC.ComputeMaps TO "${username}";
+GRANT SELECT ON DBC.ComputeMapsV TO "${username}";
 ```
 
 ### Create a resource group for new research project
