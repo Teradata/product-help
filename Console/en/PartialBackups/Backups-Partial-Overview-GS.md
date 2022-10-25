@@ -1,4 +1,3 @@
-# 
 ![../Images/cov-icn-backup.png](../Images/cov-icn-backup.png) Partial Backups
 
 Create partial backups with selected objects that run on a schedule.

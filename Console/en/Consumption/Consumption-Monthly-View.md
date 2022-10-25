@@ -1,4 +1,3 @@
-# Consumption monthly
 
 Review the number of Vantage units consumed per month, including total units consumed, assigned, rolled over, and consumed on-demand.
 

@@ -1,4 +1,3 @@
-# Native Object Store Integration with Cloud Object Storage
 - [Query Data on Cloud Object Storage](#query-data-on-cloud-object-storage)
 - [Write Data to a Cloud Object Store](#write-data-to-a-cloud-object-store)
 
@@ -161,8 +160,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples here: [Read Data Stored on Amazong S3 Using READ_NOS](#read-data-stored-on-amazon-s3-using-read_nos)
-
+You can validate the results of your WRITE_NOS use cases by reading your Parquet data as described in the READ_NOS examples.
 ### Clean Up
 
 Drop the objects created in your own database schema:

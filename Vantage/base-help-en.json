@@ -117,15 +117,15 @@
           , 
           { 
              "id":"xkf1640280993658", 
-             "title":"Account Usage and Billing", 
-             "description":"Considerations for account usage and billing", 
+             "title":"View and download consumption units", 
+             "description":"Analyze current and remaining unit consumption", 
              "url":"Vantage/xkf1640280993658.md"
              }
           , 
           { 
              "id":"nag1659050536098", 
-             "title":"View and export units consumed", 
-             "description":"Considerations for managing consumption data", 
+             "title":"View and download storage data", 
+             "description":"Analyze storage-related consumption data", 
              "url":"Vantage/nag1659050536098.md"
              }
 
@@ -412,7 +412,8 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"VantageCloudLakeUseCases/use-cases-en.json"
+       "url":"Vantage/bkm1640280721917.md",
+       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
     , 
     { 

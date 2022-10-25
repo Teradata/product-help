@@ -40,6 +40,12 @@
 			"title": "Objektspeicherung",
 			"description": "Native Object Store-Integration mit Cloud-Objektspeicher",
 			"url": "Console/de/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+		},
+		{
+			"id": "apiUserGuide",
+			"title": "",
+			"description": "",
+			"url": "Console/de/API/Api_User_Guide.md"
 		}
 	]
 }

@@ -1,5 +1,3 @@
-# Explore Data in Object Stores
-
 Use Editor or Jupyter to run SQL commands to query database tables and access external object storage.
 
 <!-- * Start the Editor guided tour. -->

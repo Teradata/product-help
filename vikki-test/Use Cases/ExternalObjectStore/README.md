@@ -25,11 +25,11 @@ Uncomment the EXTERNAL SECURITY clause if necessary.
 
 1. Open Editor and log in using your DBC credentials.
 
-   [LAUNCH EDITOR]
+    [LAUNCH EDITOR BUTTON HERE]
 
-2. Load the built-in data set assets.
+2. Load the built-in dataset assets.
 
-   [LOAD ASSETS]
+   [LOAD ASSETS BUTTON HERE]
    
 ## Walkthrough
 
@@ -197,7 +197,3 @@ DROP TABLE sample_table;
 ```sql
 DROP TABLE sample_local_table;
 ```
-
-## Dataset Reference
-
-Do we want to list the data used in this use case for consistency with other use cases?

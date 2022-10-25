@@ -1,5 +1,3 @@
-# Overview
-
 Review the system and instance details, data protections, usage metrics, and elasticity actions for this site.   
 
 In **Data protection**, select **Manage** to view retained copies and history, and add or edit a schedule.

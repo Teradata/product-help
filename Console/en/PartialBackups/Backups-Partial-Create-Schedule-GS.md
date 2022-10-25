@@ -1,5 +1,3 @@
-# Create and Schedule Partial Backups
-
 When creating and scheduling backup jobs, you can do the following:
 
 * Enable or disable the job.

@@ -38,18 +38,18 @@ The entire use case takes about 10 minutes to run.
 Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case.
 [Load Assets](#data={"id":"FSCustomerJourney"})
 
-### Customer Aquisition
+### Customer Acquisition
 
 This is the first part of our journey. We will focus on the opening of a credit card account. We want to figure out where our customers are coming from and how can we maximize our marketing return on investment (ROI)?
 We will use the powerful marketing Attribution function in Vantage to look at the multi-channel data.
 
 This will allow us to quantify marketing effectiveness of both our promotions and channels (online and offline). Which promotions are most effective? Using this information we can then optimize marketing spend and placement.
 
-We will create some tables that allow us to send large numbers of parameters programatically to the Attribution analytic function.
+We will create some tables that allow us to send large numbers of parameters programmatically to the Attribution analytic function.
 
 
 ```sql
-DATABASE <database_name>;
+--DATABASE <database_name>;
 
 CREATE TABLE FSCJ_conversion_events
    (conversion_event   VARCHAR(55))

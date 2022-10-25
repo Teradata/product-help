@@ -40,6 +40,12 @@
 			"title": "Interroger et écrire des données dans le stockage d’objets du cloud",
 			"description": "Intégration de la banque d'objets natifs à l'aide du stockage d'objets du cloud",
 			"url": "Console/fr/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+		},
+		{
+			"id": "apiUserGuide",
+			"title": "",
+			"description": "",
+			"url": "Console/fr/API/Api_User_Guide.md"
 		}
 	]
 }
