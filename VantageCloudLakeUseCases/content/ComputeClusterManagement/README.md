@@ -7,12 +7,12 @@ Open Editor to proceed with this use case.
 
 ### Introduction
 
-The following is a summary of how to manage Compute Clusters in Vantage CloudLake with SQL.
+This use case guides you through management of Compute Clusters in VantageCloud Lake with SQL.
 
 
 ### Setup 
 
-The following permissions are required for this use case. 
+The following permissions are required for this use case:
 
 ```sql
 GRANT CREATE COMPUTE GROUP TO "${username}";
@@ -41,9 +41,9 @@ The Query+Strategy policy is provided for future use.
 CREATE COMPUTE GROUP Research_Group USING QUERY_STRATEGY ('STANDARD');
 ```
 
-### Creating roles for the project
+### Create roles for the project
 
-Two roles are provided. 
+Two roles are provided: 
 * An admin role to administrate the Compute Cluster group and the users in the group
 * A user role which permits access to the Compute Cluster resources
 
@@ -59,11 +59,11 @@ CREATE ROLE Research_Role;
 GRANT COMPUTE GROUP Research_Group TO Research_Role;
 ```
 
-### Associating users with Compute Cluster resources
+### Associate users with Compute Cluster resources
 
 Users can access Compute Cluster resources by having the user associated with a Compute Cluster group.
 The user can be created or modified to have a default association.
-The user also can just be granted access and set it directly.
+The user can be granted access and set it directly.
 
 ```sql
 -- Create a new user
@@ -93,9 +93,9 @@ A Compute Cluster consists of one or more instances defined using min and max.
 Min represents always available count of instances or rank.
 Max represents the elastic portion of instances that can be used.
 Each instance represents a number of VM nodes such as EC2 instances. 
-The number of VM nodes is controlled by the instance size descriptor such as Small, Medium, Large.
+The number of VM nodes is controlled by the instance size descriptor such as Small, Medium, or Large.
 Each size has twice the number of VM nodes over the previous size: 2, 4, 8, 16, etc.
-There are other options that can be specified for the policy
+There are other options that can be specified for the policy:
 * initially_suspended hibernates the Compute Cluster after configuration until the user manually RESUMEs the Compute Cluster
 * Start and End times can be specified for when the Compute Cluster is operational using cron tab format
 * cooldown_period specifies how long the Compute Cluster continues to run after the End time so that queries can complete
