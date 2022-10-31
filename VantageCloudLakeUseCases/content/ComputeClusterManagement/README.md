@@ -9,6 +9,7 @@ Open Editor to proceed with this use case.
 
 This use case guides you through management of Compute Clusters in VantageCloud Lake with SQL.
 
+***Tip**: When you're ready to create your own Compute Cluster group, you can use SQL with Editor or the Vantage Console UI.*
 
 ### Setup 
 
