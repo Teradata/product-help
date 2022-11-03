@@ -1,11 +1,5 @@
 {
 	"items": [{
-        "id": "overviewOfSandbox",
-        "title": "Sandbox",
-        "description": "Sandboxes are delicated child sites for testing and analytics",
-        "url": "Console/en/Sandbox/Overview-Of-Sandbox.md"
-    },
-    {
         "id": "notificationSettings",
         "title": "Notification Settings",
         "description": "Enable or disable necessary notification settings",
