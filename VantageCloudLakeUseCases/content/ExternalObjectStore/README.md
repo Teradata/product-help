@@ -18,6 +18,14 @@ You can use similar SQL to access your own object stores. Simply replace the fol
 
 When modifying to access your data - your object store must be configured to allow access from the Vantage environment. Provide your credentials in USER and PASSWORD (used in the CREATE AUTHORIZATION command) or AUTHORIZATION simple syntax (used in the READ_NOS command if you don't wish to use the Authorization Object).
 
+### Setup 
+
+To use this option you would need EXECUTE permission on TD_SYSFNLIB.READ_NOS. Which can be granted by following statement, work with your Database administrator to get the permission.
+
+```sql
+GRANT EXECUTE FUNCTION on TD_SYSFNLIB.READ_NOS to <username>;
+```
+
 ### Accessing Object Storage
 
 There are two ways to read data from an object store:
@@ -45,26 +53,21 @@ Data can be loaded into the database by selecting from READ_NOS or a Foreign Tab
 
 ### When accessing your own data
 
-Create an authorization object to contain the credentials to your external object store, and uncomment the EXTERNAL SECURITY clauses in the statements below to use.
-
+Following statement can be used to create an authorization object to contain the credentials to your external object store.
 
 ```sql
-DATABASE <database_name>;
-
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
 ```
 
+
 ### Accessing Data Stored on Amazon S3 with READ_NOS
-
-Select data from external object store using READ_NOS:
-
 
 ```sql
 SELECT TOP 2 * FROM (
 LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'
-AUTHORIZATION=MyAuth
+AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
 --AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'  --[optional AUTHORIZATION using direct credentials]
 --RETURNTYPE='NOSREAD_KEY'  --[optional if wanting to list the layout of the object store]
 --RETURNTYPE='NOSREAD_SCHEMA'  --[optional if wanting to display the schema of the data files] 
@@ -83,7 +86,6 @@ USING (LOCATION('/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'));
 ```
 
 View some data using the foreign table:
-
 
 ```sql
 SELECT TOP 2 * FROM sample_table;
