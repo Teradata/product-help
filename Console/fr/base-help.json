@@ -1,12 +1,6 @@
 ﻿{
 	"items": [{
-		    "id": "overviewOfSandbox",
-		    "title": "Sandbox",
-		    "description": "Les sandboxs sont des sites enfants dédiés pour les tests et les analyses.",
-		    "url": "Console/fr/Sandbox/Overview-Of-Sandbox.md"
-		},
-		{
-			"id": "notificationSettings",
+		    "id": "notificationSettings",
 			"title": "Paramètres de notification",
 			"description": "Activer ou désactiver les paramètres de notification nécessaires",
 			"url": "Console/fr/Account/Notification-Settings.md"

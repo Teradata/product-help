@@ -1,12 +1,6 @@
 ﻿{
 	"items": [{
-		    "id": "overviewOfSandbox",
-		    "title": "沙盒",
-		    "description": "沙盒是用于测试和分析的专用子站点。",
-		    "url": "Console/zh-cn/Sandbox/Overview-Of-Sandbox.md"
-		},
-		{
-			"id": "notificationSettings",
+		    "id": "notificationSettings",
 			"title": "通知设置",
 			"description": "启用或禁用必要的通知设置",
 			"url": "Console/zh-cn/Account/Notification-Settings.md"

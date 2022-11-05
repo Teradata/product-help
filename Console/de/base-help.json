@@ -1,12 +1,6 @@
 ﻿{
 	"items": [{
-		    "id": "overviewOfSandbox",
-		    "title": "Sandbox",
-		    "description": "Bei Sandboxes handelt es sich um dedizierte untergeordnete Sites zu Test- und Analysezwecken.",
-		    "url": "Console/de/Sandbox/Overview-Of-Sandbox.md"
-		},
-		{
-			"id": "notificationSettings",
+		   "id": "notificationSettings",
 			"title": "Benachrichtigungseinstellungen",
 			"description": "Notwendige Benachrichtigungseinstellungen aktivieren oder deaktivieren",
 			"url": "Console/de/Account/Notification-Settings.md"

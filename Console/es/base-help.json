@@ -1,12 +1,6 @@
 ﻿{
 	"items": [{
-		    "id": "overviewOfSandbox",
-		    "title": "Espacio aislado",
-		    "description": "Los espacios aislados son sitios secundarios delicados destinados a pruebas y análisis.",
-		    "url": "Console/es/Sandbox/Overview-Of-Sandbox.md"
-		},
-		{
-			"id": "notificationSettings",
+		    "id": "notificationSettings",
 			"title": "Configuración de notificaciones",
 			"description": "Activa o desactiva las opciones de configuración de notificaciones pertinentes",
 			"url": "Console/es/Account/Notification-Settings.md"
