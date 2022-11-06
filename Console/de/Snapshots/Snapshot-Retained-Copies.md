@@ -1,6 +1,3 @@
-Aufbewahrte Kopien
-==================
-
 Beibehaltene Kopien von Momentaufnahmen führen zu wiederkehrenden Speicherkosten.
 
 Überprüfen Sie vorhandene Momentaufnahmen, die Sie umbenennen, wiederherstellen oder löschen können.

@@ -1,6 +1,3 @@
-Teilsicherungen erstellen und planen
-====================================
-
 Beim Erstellen und Planen von Sicherungsaufträgen können Sie Folgendes tun:
 
 -   Aktivieren oder deaktivieren Sie den Auftrag.

@@ -1,6 +1,3 @@
-Native Object Store-Integration mit Cloud-Objektspeicher
-========================================================
-
 -   [Daten von einem Cloud-Objektspeicher abfragen](#query-data-on-cloud-object-storage)
 -   [Daten in einen Cloud-Objektspeicher schreiben](#write-data-to-a-cloud-object-store)
 
@@ -136,9 +133,7 @@ In diesem Beispiel wird derselbe Datensatz durch Partitionierung nach dem Sensor
 
 ### WRITE\_NOS-Ergebnisse validieren
 
-Sie können die Ergebnisse Ihrer WRITE\_NOS-Anwendungsfälle validieren, indem Sie Ihre Parquet-Daten lesen, wie in den READ\_NOS-Beispielen hier beschrieben: [Auf Amazon S3 gespeicherte Daten mit READ\_NOS lesen](#read-data-stored-on-amazon-s3-using-read_nos)
-
-### Bereinigen
+Sie können die Ergebnisse Ihrer WRITE\_NOS-Anwendungsfälle validieren, indem Sie Ihre Parquet-Daten lesen, wie in den READ\_NOS-Beispielen hier beschrieben. \#\#\# Bereinigen
 
 Löschen Sie die in Ihrem eigenen Datenbankschema erstellten Objekte:
 

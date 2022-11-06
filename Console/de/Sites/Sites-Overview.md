@@ -1,6 +1,3 @@
-Übersicht
-=========
-
 Überprüfen Sie die System- und Instanzdetails, Datensicherungen, Verbrauchsmetriken und Elastizitätsaktionen für diese Site.
 
 Wählen Sie in **Datensicherung** die Option **Verwalten** aus, um aufbewahrte Kopien und die Historie anzuzeigen und einen Zeitplan hinzuzufügen oder zu bearbeiten.

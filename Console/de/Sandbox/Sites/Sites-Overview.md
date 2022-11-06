@@ -1,6 +1,3 @@
-Übersicht
-=========
-
 Überprüfen Sie die Verbrauchsprognose, System- und Instanzdetails sowie Momentaufnahmen für diese Site.
 
 Wählen Sie in **Verbrauchsvorhersage** die Option **Anzeigen** aus, um Details zum Verbrauch abzurufen.

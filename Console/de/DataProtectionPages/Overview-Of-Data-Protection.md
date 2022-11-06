@@ -1,6 +1,3 @@
-Übersicht zu Datensicherungsseiten
-==================================
-
 Zeigen Sie die Übersicht des Datensicherungsplans an, wie z. B. Einstellungen, Zeitplanaufträge, Verlauf usw.
 
 Wählen Sie aus, ob Sie den Datensicherungsplan als vollständig oder als Delta ausführen möchten.

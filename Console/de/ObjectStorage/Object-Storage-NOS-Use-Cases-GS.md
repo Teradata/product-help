@@ -1,7 +1,4 @@
-NOS-Anwendungsfälle
-===================
-
-Mit NOS können Sie CSV-, JSON- oder Parquet-Datensätze, die sich auf externen Objektspeichern befinden, mithilfe von Standard-SQL problemlos untersuchen und analysieren. NOS unterstützt Amazon S3, Azure Blob, ADLS Gen2 und Google Cloud Storage.
+Mit dem Objektdateisystem können Sie CSV-, JSON- oder Parquet-Datensätze, die sich auf externen Objektspeichern befinden, mithilfe von Standard-SQL problemlos untersuchen und analysieren. Das Objektdateisystem unterstützt Amazon S3, Azure Blob, ADLS Gen2 und Google Cloud Storage.
 
 **Ressourcen**
 

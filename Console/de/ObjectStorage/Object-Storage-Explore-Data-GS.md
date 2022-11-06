@@ -1,6 +1,3 @@
-Daten in Objektspeichern untersuchen
-====================================
-
 Verwenden Sie Editor oder Jupyter, um SQL-Befehle zur Abfrage von Datenbanktabellen und zum Zugriff auf externe Objektspeicher auszuführen.
 
 **Ressourcen**

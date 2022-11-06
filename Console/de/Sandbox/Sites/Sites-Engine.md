@@ -1,6 +1,3 @@
-Titel
-=====
-
 Site-Administratoren und Super-Site-Administratoren können „Ändern“ zum Durchführen von SQL-Engine-Vorgängen auswählen, wie z. B. Starten und Anhalten der Datenbank und Skalieren der Instanzgröße.
 
 Beachten Sie Folgendes:

@@ -1,6 +1,3 @@
-Erste Schritte
-==============
-
 Willkommen bei Teradata Vantage!
 
 ![Editor](../Images/editor-icn-overview.png) [Editor](../Editor/Editor-Overview-GS.md)

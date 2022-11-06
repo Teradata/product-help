@@ -1,6 +1,3 @@
-Einstellungen in Datensicherungsseiten
-======================================
-
 Konfigurieren Sie die Sicherungsaufträge mit verschiedenen Einstellungen.
 
 **Hinweis:** Das Beibehalten weiterer Sicherungen kann zusätzliche Nutzungsgebühren verursachen. Wenn Sie die Anzahl der aufbewahrten Sicherungen reduzieren, werden die überschüssigen Sicherungen beim nächsten vollständigen Sicherungsvorgang gelöscht. Gelöschte Sicherungen können nicht wiederhergestellt werden.

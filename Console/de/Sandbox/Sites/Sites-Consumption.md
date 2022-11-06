@@ -1,6 +1,3 @@
-Verbrauch
-=========
-
 Überprüfen Sie wertvolle Verbrauchsmetriken, einschließlich des monatlichen Verbrauchs nach Einheiten, Abteilung, Laufzeit und Terabyte, sowie Details zur Verbrauchsübersicht für den aktuellen Monat.
 
 **Ressourcen**

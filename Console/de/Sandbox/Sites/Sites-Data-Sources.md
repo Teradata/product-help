@@ -1,6 +1,3 @@
-Datenquellen
-============
-
 Datenquellen sind Native Object Stores (NOS), die Sie so konfigurieren, dass sie Standard-SQL und APIs von Teradata verwenden:
 
 -   Durchsuchen und Abfragen von Datensätzen im CSV-, JSON- und Parquet-Format, die sich auf externen S3-kompatiblen Objektspeicherplattformen befinden.

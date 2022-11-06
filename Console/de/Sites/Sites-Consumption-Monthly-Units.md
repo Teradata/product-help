@@ -1,6 +1,3 @@
-Monatliche Verbrauchseinheiten
-==============================
-
 Überprüfen Sie die Gesamtzahl der pro Monat verbrauchten Einheiten.
 
 Die Daten werden jede Stunde aktualisiert und vier Monate lang aufbewahrt.

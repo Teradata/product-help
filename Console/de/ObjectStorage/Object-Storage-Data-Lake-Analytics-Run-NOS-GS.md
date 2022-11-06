@@ -1,9 +1,6 @@
-Data Lake-Analysen mit NOS ausführen
-====================================
+Verwenden Sie Editor mit dem Objektdateisystem, um SQL-Befehle auszuführen, die externe Daten mit in Cloud Data-Lakes gespeicherten Daten verbinden.
 
-Verwenden Sie Editor mit NOS, um SQL-Befehle auszuführen, die externe Daten mit in Cloud Data-Lakes gespeicherten Daten verbinden.
-
-Wir empfehlen Ihnen, die Funktionen zunächst anhand eines Demo-Anwendungsfalls zu erkunden, der sich speziell auf Data Lake-Analysen bezieht. Nachdem Sie das Demo angesehen haben, können Sie SQL-Befehle im Editor verwenden, um externe Daten mit in Cloud Data-Lakes gespeicherten Daten unter Verwendung von NOS zu verbinden.
+Wir empfehlen Ihnen, die Funktionen zunächst anhand eines Demo-Anwendungsfalls zu erkunden, der sich speziell auf Data Lake-Analysen bezieht. Nachdem Sie das Demo angesehen haben, können Sie SQL-Befehle im Editor verwenden, um externe Daten mit in Cloud Data-Lakes gespeicherten Daten unter Verwendung des Objektdateisystems zu verbinden.
 
 **Ressourcen**
 

@@ -1,6 +1,3 @@
-Datenbanken und Tabellen erstellen und Ad-hoc-Abfragen ausführen
-================================================================
-
 Verwenden Sie Editor oder Jupyter.
 
 **Ressourcen**

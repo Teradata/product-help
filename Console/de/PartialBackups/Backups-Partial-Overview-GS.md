@@ -1,20 +1,20 @@
-![](../Images/cov-icn-backup.png) Partial Backups
+![](../Images/cov-icn-backup.png) Teilsicherungen
 
-Create partial backups with selected objects that run on a schedule.
+Erstellen Sie Teilsicherungen mit ausgewählten Objekten, die nach einem Zeitplan ablaufen.
 
 ------------------------------------------------------------------------
 
-![](../Images/cov-icn-ovw_toc.png) Create and Schedule
-------------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) Erstellen und planen
+-------------------------------------------------------
 
-Create and schedule partial backups.
+Erstellen und planen Sie Teilsicherungen.
 
-![](../Images/cov-icn-ovw_toc.png) Select Objects
--------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) Objekte auswählen
+----------------------------------------------------
 
-Select objects t include in the backup.
+Wählen Sie die Objekte aus, die in die Sicherung aufgenommen werden sollen.
 
-![](../Images/cov-icn-ovw_toc.png) View Status
-----------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) Status anzeigen
+--------------------------------------------------
 
-View status of a partial backup.
+Zeigen Sie den Status einer Teilsicherung an.

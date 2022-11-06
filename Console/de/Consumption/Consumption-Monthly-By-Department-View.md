@@ -1,6 +1,3 @@
-Monatlicher Verbrauch nach Abteilungen
-======================================
-
 Überprüfen Sie die Anzahl der Vantage-Einheiten, die von der Abteilung verwendet werden, basierend auf den Abteilungsbenutzern, die der Datenbank zugewiesen sind.
 
 Die Daten werden jede Stunde aktualisiert und vier Monate lang aufbewahrt.

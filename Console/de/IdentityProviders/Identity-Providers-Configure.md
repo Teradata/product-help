@@ -1,6 +1,3 @@
-Identitätsanbieter hinzufügen
-=============================
-
 Fügen Sie einen SAML 2.0- oder OIDC-kompatiblen Identitätsanbieter für SSO hinzu und beachten Sie dabei die folgenden Punkte:
 
 -   **Domäne**: Domäne des E-Mail-Clients
@@ -18,5 +15,3 @@ Fügen Sie einen SAML 2.0- oder OIDC-kompatiblen Identitätsanbieter für SSO hi
     -   Forderung: Verwenden Sie `sub` für OIDC und `SAML_SUBJECT` für SAML 2.0
 
 Nachdem Sie den Identitätsanbieter konfiguriert haben, müssen Sie sich bei der Konsole abmelden und anschließend mit Ihren Unternehmensanmeldeinformationen wieder anmelden.
-
-Weitere Informationen finden Sie unter [Konfigurieren der Verbundauthentifizierung](https://docs.teradata.com/search/all?query=Configuring+Federated+Authentication&content-lang=en-US).

@@ -1,6 +1,3 @@
-Verbrauch monatlich
-===================
-
 Überprüfen Sie die Anzahl der pro Monat verbrauchten Vantage-Einheiten, darunter die insgesamt verbrauchten, zugewiesenen, übertragenen und auf Abruf verbrauchten Einheiten.
 
 Die Daten werden jede Stunde aktualisiert und vier Monate lang aufbewahrt.

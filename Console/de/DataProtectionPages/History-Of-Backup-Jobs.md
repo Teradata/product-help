@@ -1,6 +1,3 @@
-Historie in Datensicherungsseiten
-=================================
-
 Überprüfen Sie frühere Sicherungsaufträge, die erfolgreich ausgeführt wurden oder fehlgeschlagen sind.
 
 Verwenden Sie die Liste oben, um einen anderen Sicherungsauftrag auszuwählen und dessen Historie zu überprüfen.

@@ -1,6 +1,3 @@
-Aufbewahrte Kopien in Datensicherungsseiten
-===========================================
-
 Zeigen Sie die beibehaltenen Sicherungen an.
 
 Wählen Sie ![](../Images/more_vert_kebob-15px.svg) \> ![](../Images/verified_user_protected-15px.svg) aus, um einen Sicherungsauftrag nach Bedarf zu schützen (oder den Schutz aufzuheben). Geschützte Aufträge werden nicht überschrieben.

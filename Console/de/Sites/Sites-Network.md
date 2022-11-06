@@ -1,6 +1,3 @@
-Netzwerk
-========
-
 Zeigen Sie die verschiedenen Azure-Anwendungen, Knotentypen und IP-Adressen an.
 
 Sie können auf Azure- und Drittanbieterdienste zugreifen, die privat und sicher in Azure gehostet werden.
