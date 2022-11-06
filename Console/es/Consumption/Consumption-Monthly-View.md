@@ -1,6 +1,3 @@
-Consumo mensual
-===============
-
 Consulta el número de unidades Vantage consumidas por mes, incluidas las unidades totales consumidas, asignadas, ampliadas y consumidas bajo demanda.
 
 Los datos se actualizan cada hora y se conservan durante cuatro meses.

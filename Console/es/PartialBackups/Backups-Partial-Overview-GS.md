@@ -1,20 +1,20 @@
-![](../Images/cov-icn-backup.png) Partial Backups
+![](../Images/cov-icn-backup.png) Copias de seguridad parciales
 
-Create partial backups with selected objects that run on a schedule.
+Crea copias de seguridad parciales con objetos seleccionados que se ejecutan según una programación.
 
 ------------------------------------------------------------------------
 
-![](../Images/cov-icn-ovw_toc.png) Create and Schedule
+![](../Images/cov-icn-ovw_toc.png) Crear y programar
+----------------------------------------------------
+
+Crea y programa copias de seguridad parciales
+
+![](../Images/cov-icn-ovw_toc.png) Seleccionar objetos
 ------------------------------------------------------
 
-Create and schedule partial backups.
+Selecciona objetos para incluirlos en la copia de seguridad.
 
-![](../Images/cov-icn-ovw_toc.png) Select Objects
--------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) Ver estado
+---------------------------------------------
 
-Select objects t include in the backup.
-
-![](../Images/cov-icn-ovw_toc.png) View Status
-----------------------------------------------
-
-View status of a partial backup.
+Ve el estado de una copia de seguridad parcial.

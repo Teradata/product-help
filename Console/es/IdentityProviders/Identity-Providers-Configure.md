@@ -1,6 +1,3 @@
-Añadir proveedor de identidad
-=============================
-
 Añade un proveedor de identidad compatible con SAML 2.0 u OIDC para el SSO con las siguientes especificaciones:
 
 -   **Dominio**: dominio del cliente de correo electrónico
@@ -18,5 +15,3 @@ Añade un proveedor de identidad compatible con SAML 2.0 u OIDC para el SSO con 
     -   Reclamación de asunto: usa `sub` para OIDC y `SAML_SUBJECT` para SAML 2.0
 
 Después de configurar el proveedor de identidad, debes cerrar la sesión de Console y luego volver a iniciarla con tus credenciales corporativas.
-
-Consulta [Configuración de la autenticación federada](https://docs.teradata.com/search/all?query=Configuring+Federated+Authentication&content-lang=en-US) para obtener más información.

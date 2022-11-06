@@ -1,6 +1,3 @@
-Explorar los datos en almacenes de objetos
-==========================================
-
 Utiliza Editor o Jupyter para ejecutar comandos SQL para consultar tablas de bases de datos y acceder al almacenamiento de objetos externo.
 
 **Recursos**

@@ -1,6 +1,3 @@
-Integración del almacén de objetos nativo con el almacenamiento de objetos en la nube
-=====================================================================================
-
 -   [Consultar datos en el almacenamiento de objetos en la nube](#query-data-on-cloud-object-storage)
 -   [Escribir datos en un almacén de objetos en la nube](#write-data-to-a-cloud-object-store)
 
@@ -136,9 +133,7 @@ Este ejemplo copia el mismo conjunto de datos partiendo por el año de la fecha 
 
 ### Validar los resultados de WRITE\_NOS
 
-Puedes validar los resultados de tus casos de uso de WRITE\_NOS leyendo los datos de Parquet como se describe en los ejemplos de READ\_NOS aquí: [Leer datos almacenados en Amazon S3 utilizando READ\_NOS](#read-data-stored-on-amazon-s3-using-read_nos)
-
-### Limpiar
+Puedes validar los resultados de tus casos de uso de WRITE\_NOS mediante la lectura de los datos de Parquet como se describe en los ejemplos de READ\_NOS.\#\#\# Limpiar
 
 Soltar los objetos creados en tu propio esquema de base de datos:
 

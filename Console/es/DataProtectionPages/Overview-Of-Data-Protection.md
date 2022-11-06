@@ -1,6 +1,3 @@
-Vista general de las páginas de protección de datos
-===================================================
-
 Ve el resumen del plan de protección de datos, como la configuración, los trabajos programados, el historial, etc.
 
 Elige si deseas ejecutar el plan de protección de datos en modo completo o delta.

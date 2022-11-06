@@ -1,9 +1,6 @@
-Planificación
-=============
-
 Revisa los trabajos de instantánea programados para ejecutarse.
 
-Selecciona **Crear** para añadir una programación nueva o **Editar** para cambiar una existente.
+Selecciona **Crear** para añadir una programación nueva o **Editar** para cambiar una existente.
 
 Ten en cuenta que:
 

@@ -1,6 +1,3 @@
-Crear bases de datos y tablas, y ejecutar consultas ad hoc
-==========================================================
-
 Usa Editor o Jupyter.
 
 **Recursos**

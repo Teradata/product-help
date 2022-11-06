@@ -1,6 +1,3 @@
-Red
-===
-
 Ve las diferentes aplicaciones de Azure, los tipos de nodo y las direcciones IP.
 
 Puedes acceder a los servicios de Azure y de terceros alojados en Azure de forma privada y segura.

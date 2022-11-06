@@ -1,9 +1,6 @@
-Ejecutar análisis de lagos de datos con NOS
-===========================================
+Utiliza Editor con el sistema de archivos de objetos para ejecutar comandos SQL que unan datos externos con datos almacenados en lagos de datos en la nube.
 
-Utiliza Editor con NOS para ejecutar comandos SQL que unan datos externos con datos almacenados en lagos de datos en la nube.
-
-Te recomendamos comenzar explorando las capacidades con un caso de uso de demostración específico para el análisis de lagos de datos. La demostración te preparará para utilizar comandos SQL en Editor para unir datos externos con datos almacenados en lagos de datos en la nube utilizando NOS.
+Te recomendamos comenzar explorando las capacidades con un caso de uso de demostración específico para el análisis de lagos de datos. La demostración te preparará para utilizar comandos SQL en Editor para unir datos externos con datos almacenados en lagos de datos en la nube utilizando el sistema de archivos de objetos.
 
 **Recursos**
 

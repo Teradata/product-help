@@ -1,6 +1,3 @@
-Copias retenidas
-================
-
 Las copias de instantáneas retenidas generan costes de almacenamiento recurrentes.
 
 Revisa las instantáneas existentes que puedes renombrar, restaurar o eliminar.

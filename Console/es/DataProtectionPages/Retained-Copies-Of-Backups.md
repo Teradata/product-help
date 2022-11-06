@@ -1,6 +1,3 @@
-Copias retenidas en páginas de protección de datos
-==================================================
-
 Ve las copias de seguridad retenidas.
 
 Selecciona ![](../Images/more_vert_kebob-15px.svg) \> ![](../Images/verified_user_protected-15px.svg) para proteger (o desproteger) un trabajo de copia de seguridad, según sea necesario. Los trabajos protegidos no se sobrescriben.

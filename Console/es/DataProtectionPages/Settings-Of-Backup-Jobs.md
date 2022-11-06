@@ -1,6 +1,3 @@
-Ajustes en páginas de protección de datos
-=========================================
-
 Puedes configurar los trabajos de copia de seguridad con diferentes ajustes.
 
 **Nota:** Retener más copias de seguridad puede dar lugar a cargos de uso adicionales. Si reduces el número de copias de seguridad retenidas, el siguiente proceso de copia de seguridad completa eliminará las copias de seguridad que sobren. Las copias de seguridad eliminadas no se pueden recuperar.

@@ -1,7 +1,4 @@
-Información general
-===================
-
-Revisa el sistema y los detalles de la instancia, las protecciones de datos, las métricas de uso y las acciones de elasticidad del sitio.   
+Revisa el sistema y los detalles de la instancia, las protecciones de datos, las métricas de uso y las acciones de elasticidad del sitio.
 
 En **Protección de datos**, selecciona **Gestionar** para ver las copias retenidas y el historial, y para añadir o editar una programación.
 

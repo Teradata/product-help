@@ -1,6 +1,3 @@
-Consumo
-=======
-
 Revisa las útiles métricas de consumo, como el consumo mensual por unidad, departamento, plazo y terabytes, y los detalles del resumen de consumo del mes actual.
 
 **Recursos**

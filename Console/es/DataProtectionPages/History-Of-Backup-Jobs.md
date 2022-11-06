@@ -1,6 +1,3 @@
-Historial en páginas de protección de datos
-===========================================
-
 Revisa los trabajos anteriores de copia de seguridad ejecutados correctamente o con errores.
 
 Usa la lista de la parte superior para seleccionar un trabajo de copia de seguridad diferente y revisar su historial.

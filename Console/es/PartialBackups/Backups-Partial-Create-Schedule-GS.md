@@ -1,6 +1,3 @@
-Crear y programar copias de seguridad parciales
-===============================================
-
 Al crear y programar trabajos de copia de seguridad, puedes hacer lo siguiente:
 
 -   Activar o desactivar el trabajo.

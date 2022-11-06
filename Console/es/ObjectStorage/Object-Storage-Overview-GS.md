@@ -8,7 +8,7 @@ NOS facilita la exploración y el análisis de conjuntos de datos CSV, JSON o Pa
 ![](../Images/cov-icn-ovw_toc.png) Configurar S3
 ------------------------------------------------
 
-Configura tu política de buckets de Amazon S3 para acceder a tus datos de S3.
+Configura tu política de buckets de Amazon S3 para acceder a tus datos de S3.
 
 ![](../Images/cov-icn-ovw_toc.png) Ejecutar SQL
 -----------------------------------------------

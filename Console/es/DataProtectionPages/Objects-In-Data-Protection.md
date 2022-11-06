@@ -1,6 +1,3 @@
-Objetos de base de datos en páginas de protección de datos
-==========================================================
-
 Selecciona los objetos de la base de datos que quieres incluir o excluir del trabajo de copia de seguridad.
 
 El estado de los objetos puede ser:

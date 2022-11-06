@@ -1,6 +1,3 @@
-Unidades mensuales de consumo
-=============================
-
 Revisa el número de unidades totales consumidas por mes.
 
 Los datos se actualizan cada hora y se conservan durante cuatro meses.

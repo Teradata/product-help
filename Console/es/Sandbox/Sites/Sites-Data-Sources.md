@@ -1,6 +1,3 @@
-Fuentes de datos
-================
-
 Las fuentes de datos son almacenes de objetos nativos (NOS) que se configuran para utilizar SQL y API estándar de Teradata para realizar lo siguiente:
 
 -   Buscar y consultar conjuntos de datos en formato CSV, JSON y Parquet ubicados en plataformas de almacenamiento de objetos externas compatibles con S3.

@@ -1,6 +1,3 @@
-Resumen
-=======
-
 Revisa la previsión del consumo, información del sistema y de las instancias, y las instantáneas de este sitio.
 
 En **Previsión de consumo**, selecciona **Ver** para acceder a la información sobre el consumo.

@@ -1,7 +1,4 @@
-Casos de uso de NOS
-===================
-
-NOS te facilita la exploración y el análisis de conjuntos de datos CSV, JSON o Parquet ubicados en almacenes de objetos externos utilizando SQL estándar. NOS es compatible con Amazon S3, Azure Blob, ADLS Gen2 y Google Cloud Storage.
+El sistema de archivos de objetos te facilita la exploración y el análisis de conjuntos de datos CSV, JSON o Parquet ubicados en almacenes de objetos externos utilizando SQL estándar. El sistema de archivos de objetos es compatible con Amazon S3, Azure Blob, ADLS Gen2 y Google Cloud Storage.
 
 **Recursos**
 
