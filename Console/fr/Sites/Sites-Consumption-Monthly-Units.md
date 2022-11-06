@@ -1,6 +1,3 @@
-Unité mensuelles de consommation
-================================
-
 Examinez le nombre d’unités totales consommées par mois.
 
 Les données sont actualisées toutes les heures et conservées pendant quatre mois.

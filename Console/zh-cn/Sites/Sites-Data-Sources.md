@@ -1,6 +1,3 @@
-数据源
-======
-
 数据源是本机对象库 (NOS)，可以配置为使用标准 Teradata SQL 和 API 执行以下操作：
 
 -   搜索和查询位于与 S3 兼容的外部对象存储平台上的 CSV、JSON 和 Parquet 格式数据集。
@@ -10,4 +7,4 @@
 
 ![](../Images/fluto-icn-resources.png) **资源**
 
--   [Teradata Vantage™ - 本机对象库入门指南](https://docs.teradata.com/search/all?query=Teradata+Vantage%25E2%2584%25A2+-+Native+Object+Store+Getting+Started+Guide&content-lang=en-US)
+-   [Teradata Vantage™ - 本机对象库入门指南](https://docs.teradata.com/r/Teradata-VantageTM-Native-Object-Store-Getting-Started-Guide/June-2022)

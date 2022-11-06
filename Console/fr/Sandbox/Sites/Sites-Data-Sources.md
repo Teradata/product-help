@@ -1,6 +1,3 @@
-Sources de données
-==================
-
 Les sources de données sont des banques d'objets natifs (NOS, Native Object Stores) que vous configurez pour utiliser des API et des fonctionnalités SQL Teradata standard pour :
 
 -   Rechercher et interroger des jeux de données aux formats CSV, JSON et Parquet se trouvant sur des plateformes de stockage d'objets externes compatibles S3.

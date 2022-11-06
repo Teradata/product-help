@@ -1,6 +1,3 @@
-はじめに
-========
-
 Teradata Vantage にようこそ！
 
 ![Editor](../Images/editor-icn-overview.png) [エディタ](../エディタ/エディタ-Overview-GS.md)

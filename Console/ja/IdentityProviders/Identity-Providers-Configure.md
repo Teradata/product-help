@@ -1,6 +1,3 @@
-ID プロバイダを追加
-===================
-
 次のことを考慮して、SSO 用に SAML 2.0 または OIDC に準拠した ID プロバイダを追加します。
 
 -   **ドメイン**: 電子メール クライアントのドメイン
@@ -18,5 +15,3 @@ ID プロバイダを追加
     -   クレーム件名: OIDC には `sub` を、SAML 2.0 には `SAML_SUBJECT` を使用します。
 
 ID プロバイダを設定した後に、コンソールをログアウトしてから、自分の企業認証情報を使用してログインし直す必要があります。
-
-詳細については、[フェデレーション認証の構成](https://docs.teradata.com/search/all?query=Configuring+Federated+Authentication&content-lang=en-US)を参照してください。

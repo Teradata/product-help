@@ -1,9 +1,6 @@
-使用 NOS 运行 Data Lake Analytics
-=================================
+配合使用编辑器和对象文件系统运行 SQL 命令，将外部数据联接到 Cloud Data Lake 中存储的数据。
 
-配合使用编辑器和 NOS 运行 SQL 命令，将外部数据联接到 Cloud Data Lake 中存储的数据。
-
-建议首先通过特定于 Data Lake Analytics 的演示用例探索各种功能。观看演示后，即可在编辑器中使用 SQL 命令，通过 NOS 将外部数据联接到 Cloud Data Lake 中存储的数据。
+建议首先通过特定于 Data Lake Analytics 的演示用例探索各种功能。观看演示后，即可在编辑器中使用 SQL 命令，通过对象文件系统将外部数据联接到 Cloud Data Lake 中存储的数据。
 
 **资源**
 

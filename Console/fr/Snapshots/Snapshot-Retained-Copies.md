@@ -1,6 +1,3 @@
-Copies conservées
-=================
-
 Les copies d'instantanés conservées se traduisent par des coûts de stockage récurrents.
 
 Examinez les instantanés existants que vous pouvez renommer, restaurer ou supprimer.

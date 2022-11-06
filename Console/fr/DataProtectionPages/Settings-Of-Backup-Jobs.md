@@ -1,6 +1,3 @@
-Paramètres des pages de protection des données
-==============================================
-
 Configurez les tâches de sauvegarde à l'aide de différents paramètres.
 
 **Remarque :** L'ajout d'autres sauvegardes risque d'entraîner des frais d'utilisation supplémentaires. Si vous réduisez le nombre de sauvegardes conservées, le processus de sauvegarde complète suivant supprime ces sauvegardes excessives. Vous ne pouvez pas récupérer des sauvegardes supprimées.

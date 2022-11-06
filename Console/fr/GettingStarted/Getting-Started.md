@@ -1,6 +1,3 @@
-Mise en route
-=============
-
 Bienvenue dans Teradata Vantage !
 
 ![Editor](../Images/editor-icn-overview.png) [Éditeur](../Éditeur/Éditeur-Overview-GS.md)

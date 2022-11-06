@@ -1,9 +1,6 @@
-Exécuter Data Lake Analytics à l'aide de NOS
-============================================
+Utilisez Editor avec le système de fichiers d'objets pour exécuter des commandes SQL qui associent des données externes aux données stockées dans les lacs de données du cloud.
 
-Utilisez Editor avec NOS pour exécuter des commandes SQL qui associent des données externes aux données stockées dans les lacs de données du cloud.
-
-Nous vous recommandons de commencer par explorer les fonctionnalités à l'aide d'un cas d'utilisation de démonstration spécifique de Data Lake Analytics. Une fois la démonstration terminée, vous serez prêt pour utiliser les commandes SQL dans Editor afin d'associer les données externes aux données stockées dans les lacs de données du cloud à l'aide de NOS.
+Nous vous recommandons de commencer par explorer les fonctionnalités à l'aide d'un cas d'utilisation de démonstration spécifique de Data Lake Analytics. Une fois la démonstration terminée, vous serez prêt pour utiliser les commandes SQL dans Editor afin d'associer les données externes aux données stockées dans les lacs de données du cloud à l'aide du système de fichiers d'objets.
 
 **Ressources**
 

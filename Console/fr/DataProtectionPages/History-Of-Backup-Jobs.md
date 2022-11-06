@@ -1,6 +1,3 @@
-Historique des pages de protection des données
-==============================================
-
 Examinez les tâches de sauvegarde précédentes qui ont réussi ou échoué.
 
 Utilisez la liste du haut pour sélectionner une autre tâche de sauvegarde et examiner son historique.

@@ -1,20 +1,20 @@
-![](../Images/cov-icn-backup.png) Partial Backups
+![](../Images/cov-icn-backup.png) 部分バックアップ
 
-Create partial backups with selected objects that run on a schedule.
+スケジュールで実行される選択されたオブジェクトを持つ部分バックアップを作成します。
 
 ------------------------------------------------------------------------
 
-![](../Images/cov-icn-ovw_toc.png) Create and Schedule
-------------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) 作成およびスケジュール設定
+-------------------------------------------------------------
 
-Create and schedule partial backups.
+部分バックアップの作成およびスケジュール設定を行います。
 
-![](../Images/cov-icn-ovw_toc.png) Select Objects
--------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) オブジェクトの選択
+-----------------------------------------------------
 
-Select objects t include in the backup.
+バックアップに含めるオブジェクトを選択します。
 
-![](../Images/cov-icn-ovw_toc.png) View Status
-----------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) ステータスの表示
+---------------------------------------------------
 
-View status of a partial backup.
+部分バックアップのステータスを表示します。

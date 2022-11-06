@@ -1,6 +1,3 @@
-Consommation mensuelle
-======================
-
 Examinez le nombre d'unités Vantage consommées par mois, notamment le nombre total d'unités consommées, attribuées, substituées et consommées à la demande.
 
 Les données sont actualisées toutes les heures et conservées pendant quatre mois.

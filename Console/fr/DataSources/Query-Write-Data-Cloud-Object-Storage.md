@@ -1,6 +1,3 @@
-Intégration de la banque d'objets natifs à l'aide du stockage d'objets du cloud
-===============================================================================
-
 -   [Interroger des données dans le stockage d'objets du cloud](#query-data-on-cloud-object-storage)
 -   [Écrire des données dans une banque d'objets du cloud](#write-data-to-a-cloud-object-store)
 
@@ -136,9 +133,7 @@ Cet exemple copie le même jeu de données en le partitionnant selon l'année de
 
 ### Valider les résultats WRITE\_NOS
 
-Vous pouvez valider les résultats des cas d'utilisation WRITE\_NOS en lisant les données Parquet selon les exemples READ\_NOS disponibles ici : [Lire les données stockées sur Amazon S3 à l'aide de READ\_NOS](#read-data-stored-on-amazon-s3-using-read_nos)
-
-### Nettoyer
+Vous pouvez valider les résultats des cas d'utilisation WRITE\_NOS en lisant les données Parquet selon les exemples READ\_NOS disponibles. \#\#\# Nettoyer
 
 Supprimer les objets créés dans votre propre schéma de base de données :
 

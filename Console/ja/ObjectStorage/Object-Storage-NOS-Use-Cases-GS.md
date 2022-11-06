@@ -1,7 +1,4 @@
-NOS ユース ケース
-=================
-
-NOS を使用すると、外部オブジェクト ストアに配置されている CSV、JSON、または Parquet データセットを標準 SQL を使って簡単に探索して分析できるようになります。NOS は Amazon S3、Azure Blob、ADLS Gen2、Google Cloud Storage をサポートしています。
+オブジェクト ファイル システムを使用すると、外部オブジェクト ストアに配置されている CSV、JSON、または Parquet データセットを標準 SQL を使って簡単に探索して分析できるようになります。オブジェクト ファイル システムは Amazon S3、Azure Blob、ADLS Gen2、Google Cloud Storage をサポートしています。
 
 **リソース**
 

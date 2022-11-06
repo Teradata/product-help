@@ -1,6 +1,3 @@
-Présentation
-============
-
 Examinez la prévision de consommation, les détails du système et des instances, ainsi que les instantanés pour ce site.
 
 Dans **Prévision de la consommation**, sélectionnez **Afficher** pour accéder au détails de la consommation.

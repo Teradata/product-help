@@ -1,6 +1,3 @@
-Explorer les données dans les banques d'objets
-==============================================
-
 Exécutez des commandes SQL à l'aide d'Éditeur ou de Jupyter pour interroger les tables de base de données et accéder au stockage d'objets externes.
 
 **Ressources**

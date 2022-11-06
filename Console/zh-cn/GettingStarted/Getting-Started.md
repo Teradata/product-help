@@ -1,6 +1,3 @@
-开始
-====
-
 欢迎使用 Teradata Vantage！
 
 ![Editor](../Images/editor-icn-overview.png) [编辑器](../编辑器/编辑器-Overview-GS.md)

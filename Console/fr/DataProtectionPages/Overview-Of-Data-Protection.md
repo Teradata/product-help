@@ -1,6 +1,3 @@
-Présentation des pages de protection des données
-================================================
-
 Affichez le résumé du plan de protection des données, par exemple les paramètres, les tâches de planification, l‘historique, etc.
 
 Choisissez d'exécuter le plan de protection des données en mode complet ou différentiel.

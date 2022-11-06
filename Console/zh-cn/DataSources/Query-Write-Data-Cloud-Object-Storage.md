@@ -1,6 +1,3 @@
-本机对象库与云对象存储集成
-==========================
-
 -   [在云对象存储中查询数据](#query-data-on-cloud-object-storage)
 -   [将数据写入云对象库](#write-data-to-a-cloud-object-store)
 
@@ -136,9 +133,7 @@ READ\_NOS 允许在不更改数据库的情况下执行以下操作：\* 对云�
 
 ### 验证 WRITE\_NOS 结果
 
-可以通过读取 Parquet 数据来验证 WRITE\_NOS 用例的结果，如此处的 READ\_NOS 示例所述：[使用 READ\_NOS 读取 Amazon S3 中存储的数据](#read-data-stored-on-amazon-s3-using-read_nos)
-
-### 清理
+可以通过读取 Parquet 数据来验证 WRITE\_NOS 用例的结果，如此处的 READ\_NOS 示例所述。\#\#\# 清理
 
 删除在你自己的数据库层次中创建的对象：
 

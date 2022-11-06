@@ -13,8 +13,8 @@
 
 Vous pouvez créer une connexion à l’aide de la session en cours ou entrer vos propres informations d’identification.
 
--   Utiliser la session en cours : utilisez une valeur existante dans la liste.
--   Entrer les informations d’identification : entrez le nom d’hôte ou l’adresse IP pour autoriser les configurations personnalisées à partir de connexions privées. - - -
+-   Utiliser la session en cours : utilisez une valeur existante dans la liste.
+-   Entrer les informations d’identification : entrez le nom d’hôte ou l’adresse IP pour autoriser les configurations personnalisées à partir de connexions privées. - - -
 
 ![](../Images/cov-icn-ovw_toc.png) [Créer et exécuter](Editor-Create-DB-Tables-Queries-GS.md)
 ---------------------------------------------------------------------------------------------

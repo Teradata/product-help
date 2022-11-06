@@ -1,6 +1,3 @@
-添加身份提供程序
-================
-
 添加用于 SSO 的符合 SAML 2.0 或 OIDC 标准的身份提供程序，并注意以下事项：
 
 -   **域**：电子邮件客户端的域
@@ -18,5 +15,3 @@
     -   主题声明: 对于 OIDC，使用 `sub`；对于 SAML 2.0，使用 `SAML_SUBJECT`
 
 配置身份提供程序后，必须从控制台注销，然后使用公司凭据重新登录。
-
-请参见 [配置联合身份验证](https://docs.teradata.com/search/all?query=Configuring+Federated+Authentication&content-lang=en-US) 了解更多详细信息。

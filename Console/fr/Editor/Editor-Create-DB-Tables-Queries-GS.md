@@ -1,6 +1,3 @@
-Créer des bases de données et des tables, et exécuter des requêtes ad hoc
-=========================================================================
-
 Utilisez Éditeur ou Jupyter.
 
 **Ressources**

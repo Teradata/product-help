@@ -1,6 +1,3 @@
-Programmer
-==========
-
 Examinez les travaux d'instantané devant s'exécuter.
 
 Sélectionnez **Créer** pour ajouter une planification ou **Modifier** pour la modifier.

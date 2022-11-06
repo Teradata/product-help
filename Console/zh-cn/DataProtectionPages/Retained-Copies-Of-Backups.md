@@ -1,6 +1,3 @@
-数据保护页面中保留的副本
-========================
-
 查看保留的备份。
 
 根据需要选择 ![](../Images/more_vert_kebob-15px.svg) \> ![](../Images/verified_user_protected-15px.svg) 保护（或取消保护）备份作业。受保护的作业不会被覆盖。

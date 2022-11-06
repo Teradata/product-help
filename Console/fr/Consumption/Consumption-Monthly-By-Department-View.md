@@ -1,6 +1,3 @@
-Consommation mensuelle par département
-======================================
-
 Examinez le nombre d'unités Vantage utilisées par le département selon les utilisateurs de celui-ci, attribués à la base de données.
 
 Les données sont actualisées toutes les heures et conservées pendant quatre mois.

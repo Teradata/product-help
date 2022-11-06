@@ -1,6 +1,3 @@
-Instantanés
-===========
-
 Un instantané est une copie virtuelle de données. Il n'est pas terminé tant qu'il n'a pas été répliqué vers un autre système de stockage. Par exemple, vous pourriez utiliser un instantané pour répliquer une copie système complète et mettre en place un deuxième système dans une autre région ou zone.
 
 La récupération des instantanés varie selon votre installation. Certaines installations possèdent une fonctionnalité de restauration par l'utilisateur, tandis que d'autres impliquent l'ouverture automatique d'un incident.

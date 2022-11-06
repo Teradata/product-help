@@ -1,20 +1,20 @@
-![](../Images/cov-icn-backup.png) Partial Backups
+![](../Images/cov-icn-backup.png) 部分备份
 
-Create partial backups with selected objects that run on a schedule.
+创建包含按调度运行的选定对象的部分备份。
 
 ------------------------------------------------------------------------
 
-![](../Images/cov-icn-ovw_toc.png) Create and Schedule
-------------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) 创建和调度
+---------------------------------------------
 
-Create and schedule partial backups.
+创建和调度部分备份。
 
-![](../Images/cov-icn-ovw_toc.png) Select Objects
--------------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) 选择对象
+-------------------------------------------
 
-Select objects t include in the backup.
+选择要包含在备份中的对象。
 
-![](../Images/cov-icn-ovw_toc.png) View Status
-----------------------------------------------
+![](../Images/cov-icn-ovw_toc.png) 查看状态
+-------------------------------------------
 
-View status of a partial backup.
+查看部分备份的状态。

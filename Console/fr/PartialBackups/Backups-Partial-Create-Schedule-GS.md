@@ -1,7 +1,4 @@
-Créer et planifier des sauvegardes partielles
-=============================================
-
-Lorsque vous créez et planifiez des tâches de sauvegarde, vous pouvez effectuer les opérations suivantes :
+Lorsque vous créez et planifiez des tâches de sauvegarde, vous pouvez effectuer les opérations suivantes :
 
 -   Activer ou désactiver la tâche.
 -   Sélectionner des objets à inclure ou exclure.
