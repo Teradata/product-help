@@ -26,7 +26,7 @@ Select **Load Assets** to create the tables and load the data required into your
 
 #### Step 1: Querying the Data
 
-Here is our current sales data. Lets grab some sample rows, we can see in this example we have customer, store, basket and discount information.
+Here is our current sales data. Let's grab some sample rows, we can see in this example we have customer, store, basket and discount information.
 
 
 ```sql
@@ -71,7 +71,7 @@ We know the bucket where the offloaded sales data is located, so let's take a lo
 SELECT location(char(255)), ObjectLength 
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
- AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
+ AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
  RETURNTYPE='NOSREAD_KEYS'
 ) as d 
 ORDER BY 1
@@ -85,7 +85,7 @@ How many files and directories are there total?
 SELECT COUNT(location(char(255))) as NumFiles
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
- AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
+ AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
  RETURNTYPE='NOSREAD_KEYS'
 ) as d 
 ORDER BY 1
@@ -98,7 +98,7 @@ Let's take a look at one of the files to get a better understanding of the file 
 ```sql
 SELECT * FROM (
       LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet'
-      AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
+      AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
       RETURNTYPE='NOSREAD_PARQUET_SCHEMA'
       )
 AS d
@@ -107,12 +107,20 @@ AS d
 
 #### Step 3: Create a simple abstraction layer for easy access
 
+Following statement can be used to create an authorization object to contain the credentials to your external object store.
+
+```sql
+CREATE AUTHORIZATION MyAuth
+USER ''
+PASSWORD '';
+```
+
 Create a foreign table and a view in Vantage to allow business analysts and other users to easily access the offloaded historical data:
 
 
 ```sql
 CREATE FOREIGN TABLE sales_fact_offload
-, EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
+, EXTERNAL SECURITY MyAuth 
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
@@ -122,7 +130,7 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-Lets take a look at some of the rows that are in the offloaded files. 
+Let's take a look at some of the rows that are in the offloaded files. 
 
 
 ```sql
@@ -170,18 +178,15 @@ You can do everything in a view over a foreign table that you would do with a st
 
 Often we want to be able to look at just a portion of this vast amount of data at a time, which is why we have stored it by year and month. Let's re-define the foreign table to allow us to pre-filter the data when reading it.
 
-#### Step 3: Optimize the foreign table and view for efficient access
+#### Step 4: Optimize the foreign table and view for efficient access
 
 We have a lot of data in S3! Let's optimize the foreign table so that we minimize the data we have to read when querying the object store. Designing an object store bucket and path structure is an important first step when creating an object store. It requires knowledge of the business needs, the expected patterns in accessing the data, an understanding of the data, and a sensitivity to the tradeoffs. In our case we will often know the approximate date we are looking at, so will use this to our advantage.
 
 
 ```sql
 DROP TABLE sales_fact_offload;
-```
-
-```sql
 CREATE FOREIGN TABLE sales_fact_offload
-, EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
+, EXTERNAL SECURITY MyAuth 
 USING
        (
 LOCATION  ('/s3/s3.amazonaws.com/trial-datasets/SalesOffload')
