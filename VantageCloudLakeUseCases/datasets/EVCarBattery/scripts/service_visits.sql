@@ -13,7 +13,7 @@ CREATE MULTISET FOREIGN TABLE ev_service_visits , FALLBACK ,
      )  
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/EVCarBattery/service_visits.csv')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/EVCarBattery/service_visits.csv')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

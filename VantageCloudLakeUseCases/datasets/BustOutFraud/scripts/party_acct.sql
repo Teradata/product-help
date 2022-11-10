@@ -7,7 +7,7 @@ CREATE MULTISET FOREIGN TABLE bof_party_acct ,FALLBACK ,
       acct_no VARCHAR(19) CHARACTER SET LATIN NOT CASESPECIFIC)
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/BustOutFraud/party_acct.csv')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/BustOutFraud/party_acct.csv')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

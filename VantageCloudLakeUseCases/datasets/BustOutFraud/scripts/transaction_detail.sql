@@ -11,7 +11,7 @@ CREATE MULTISET FOREIGN TABLE bof_transaction_detail ,FALLBACK ,
       trans_amt DECIMAL(12,2))
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/BustOutFraud/transaction_detail/')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/BustOutFraud/transaction_detail/')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

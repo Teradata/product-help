@@ -20,7 +20,7 @@ CREATE MULTISET FOREIGN TABLE demo_telco_testing ,FALLBACK ,
 	bill_dispute            	INTEGER 
 	)USING
 (
-	LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/Demo/telco_testing.csv')
+	LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/Demo/telco_testing.csv')
 	MANIFEST  ('FALSE')
 	ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
 	STOREDAS  ('TEXTFILE')

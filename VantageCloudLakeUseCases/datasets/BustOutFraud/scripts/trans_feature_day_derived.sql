@@ -35,7 +35,7 @@ CREATE MULTISET FOREIGN TABLE bof_trans_feature_day_derived ,FALLBACK ,
       PURCASH_SUM_7DAY DECIMAL(13,2))
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/BustOutFraud/trans_feature_day_derived/')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/BustOutFraud/trans_feature_day_derived/')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

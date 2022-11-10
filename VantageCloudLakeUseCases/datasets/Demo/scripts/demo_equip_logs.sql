@@ -9,7 +9,7 @@ CREATE MULTISET FOREIGN TABLE demo_equip_logs ,FALLBACK ,
     description    VARCHAR(500)
 )USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/Demo/demo_equip_logs.txt')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/Demo/demo_equip_logs.txt')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":" ","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

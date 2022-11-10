@@ -10,7 +10,7 @@ CREATE MULTISET FOREIGN TABLE telco_events , FALLBACK ,
       event VARCHAR(100) CHARACTER SET LATIN NOT CASESPECIFIC)
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/Telco/events/')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/Telco/events/')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')

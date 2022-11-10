@@ -18,7 +18,7 @@ CREATE MULTISET FOREIGN TABLE demo_equip_testing ,FALLBACK ,
     breakdown_next_30_ind     INTEGER
 )USING
 (
-	LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/Demo/demo_equip_testing/')
+	LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/Demo/demo_equip_testing/')
 	MANIFEST  ('FALSE')
 	ROWFORMAT  ('{"field_delimiter":" ","record_delimiter":"\n","character_set":"LATIN"}')
 	STOREDAS  ('TEXTFILE')

@@ -106,7 +106,15 @@ Compare that to an average battery lot:
 
 ![png](avgtemps.png)
 
-You can clearly see the occurances of higher temperatures / overheating in our battery packs depending on the battery pack model / lot no. So we now see what is the underlying cause of our increased warranty costs, but we want to dig deeper into the issue - back when the cars were assembled and tested so we can prevent it in the future.
+You can clearly see the occurrences of higher temperatures / overheating in our battery packs depending on the battery pack model / lot no. So we now see what is the underlying cause of our increased warranty costs, but we want to dig deeper into the issue - back when the cars were assembled and tested so we can prevent it in the future.
+
+Following statement can be used to create an authorization object to contain empty credentials.
+
+```sql
+CREATE AUTHORIZATION MyAuth
+USER ''
+PASSWORD '';
+```
 
 #### Step 2: We need additional data - Access test results from our Data Lake
 
@@ -118,9 +126,8 @@ Create a foreign table to access the JSON formatted data in Amazon S3:
 
 
 ```sql
-
 CREATE FOREIGN TABLE test_reports , FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
+     EXTERNAL SECURITY MyAuth
 (
     Location VARCHAR(2048) CHARACTER SET UNICODE CASESPECIFIC,
     payload JSON(16776192) INLINE LENGTH 64000 CHARACTER SET LATIN)
@@ -135,7 +142,7 @@ SELECT TOP 10 *
 FROM test_reports
 ```
 
-Put a user friendly view on top of the foreign table to shred the files and make the test report data easier to access:
+Put a user-friendly view on top of the foreign table to shred the files and make the test report data easier to access:
 
 
 ```sql

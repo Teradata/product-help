@@ -10,7 +10,7 @@ CREATE MULTISET FOREIGN TABLE demo_titan_mortgage_events ,FALLBACK ,
 	)
 USING
 (
-	LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/Demo/titan_mortgage_events/')
+	LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/Demo/titan_mortgage_events/')
 	MANIFEST  ('FALSE')
 	ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
 	STOREDAS  ('TEXTFILE')

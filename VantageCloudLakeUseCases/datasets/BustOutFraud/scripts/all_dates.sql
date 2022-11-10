@@ -8,7 +8,7 @@ CREATE MULTISET FOREIGN TABLE bof_all_dates ,FALLBACK ,
       in_flag CHAR(1) CHARACTER SET LATIN NOT CASESPECIFIC)
 USING
 (
-      LOCATION  ('/s3/s3.amazonaws.com/alpha-data-store-td/retail_sample_data/BustOutFraud/all_dates/')
+      LOCATION  ('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/BustOutFraud/all_dates/')
       MANIFEST  ('FALSE')
       ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
       STOREDAS  ('TEXTFILE')
