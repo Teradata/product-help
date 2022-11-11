@@ -1,45 +1,51 @@
 ﻿{
 	"items": [{
-		   "id": "notificationSettings",
-			"title": "Benachrichtigungseinstellungen",
-			"description": "Notwendige Benachrichtigungseinstellungen aktivieren oder deaktivieren",
-			"url": "Console/de/Account/Notification-Settings.md"
-		},
-		{
-			"id": "identityProviders",
-			"title": "Identitätsanbieter",
-			"description": "Identitätsanbieter für die SSO-Authentifizierung konfigurieren",
-			"url": "Console/de/IdentityProviders/Identity-Providers-Configure.md"
-		},
-		{
-			"id": "sites",
-			"title": "Sites",
-			"description": "Die Liste der Produktions-, Entwicklungs- und Test-Sites überprüfen",
-			"url": "Console/de/Sites/Sites-Overview.md",
-			"children": [{
-					"id": "siteConsumption",
-					"title": "Verbrauch",
-					"url": "Console/de/Sites/Sites-Consumption.md"
-				}
-			]
-		},
-	    {
-	       "id": "dataProtectionPages",
-	       "title": "Datensicherung",
-	       "description": "Datensicherungsseiten überprüfen und erstellen.",
-	       "url": "Console/de/DataProtectionPages/Data-Protection-Pages.md"
-	    },
-		{
-			"id": "queryWriteData",
-			"title": "Objektspeicherung",
-			"description": "Native Object Store-Integration mit Cloud-Objektspeicher",
-			"url": "Console/de/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
-		},
-		{
-			"id": "apiUserGuide",
-			"title": "",
-			"description": "",
-			"url": "Console/de/API/Api_User_Guide.md"
-		}
+        "id": "notificationSettings",
+        "title": "Benachrichtigungseinstellungen",
+        "description": "Notwendige Benachrichtigungseinstellungen aktivieren oder deaktivieren",
+        "url": "Console/de/Account/Notification-Settings.md"
+    },
+    {
+        "id": "identityProviders",
+        "title": "Identitätsanbieter",
+        "description": "Identitätsanbieter für die SSO-Authentifizierung konfigurieren",
+        "url": "Console/de/IdentityProviders/Identity-Providers-Configure.md"
+    },
+    {
+        "id": "sites",
+        "title": "Sites",
+        "description": "Die Liste der Produktions-, Entwicklungs- und Test-Sites überprüfen",
+        "url": "Console/de/Sites/Sites-Overview.md",
+        "children": [{
+                "id": "siteConsumption",
+                "title": "Verbrauch",
+                "url": "Console/de/Sites/Sites-Consumption.md"
+            }
+        ]
+    },
+    {
+        "id": "dataProtectionPages",
+        "title": "Datensicherung",
+        "description": "Datensicherungsseiten überprüfen und erstellen",
+        "url": "Console/de/DataProtectionPages/Data-Protection-Pages.md"
+    },
+    {
+        "id": "queryWriteData",
+        "title": "Daten abfragen und schreiben",
+        "description": "Native Object Store-Integration mit Cloud-Objektspeicher",
+        "url": "Console/de/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+    },
+    {
+        "id": "additionalResources",
+        "title": "Weitere Ressourcen",
+        "description": "Nützliche Links für den Einstieg in Vantage",
+        "url": "Console/de/Resources/Additional-Resources.md"
+    },
+    {
+        "id": "apiUserGuide",
+        "title": "API-Benutzerhandbuch",
+        "description": "GraphQL-API-Zugriff und Nutzungsmuster überprüfen",
+        "url": "Console/de/API/Api_User_Guide.md"
+    }
 	]
 }
