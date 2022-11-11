@@ -1,45 +1,51 @@
 ﻿{
 	"items": [{
-		    "id": "notificationSettings",
-			"title": "通知设置",
-			"description": "启用或禁用必要的通知设置",
-			"url": "Console/zh-cn/Account/Notification-Settings.md"
-		},
-		{
-			"id": "identityProviders",
-			"title": "身份提供程序",
-			"description": "配置用于 SSO 身份验证的身份提供程序",
-			"url": "Console/zh-cn/IdentityProviders/Identity-Providers-Configure.md"
-		},
-		{
-			"id": "sites",
-			"title": "站点",
-			"description": "查看你的生产、开发和测试站点列表",
-			"url": "Console/zh-cn/Sites/Sites-Overview.md",
-			"children": [{
-					"id": "siteConsumption",
-					"title": "消耗量",
-					"url": "Console/zh-cn/Sites/Sites-Consumption.md"
-				}
-			]
-		},
-	    {
-	       "id": "dataProtectionPages",
-	       "title": "数据保护",
-	       "description": "检查和创建数据保护页面。",
-	       "url": "Console/zh-cn/DataProtectionPages/Data-Protection-Pages.md"
-		},
-		{
-			"id": "queryWriteData",
-			"title": "数据源",
-			"description": "本机对象库与云对象存储集成",
-			"url": "Console/zh-cn/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
-		},
-		{
-			"id": "apiUserGuide",
-			"title": "",
-			"description": "",
-			"url": "Console/zh-cn/API/Api_User_Guide.md"
-		}
+        "id": "notificationSettings",
+        "title": "通知设置",
+        "description": "启用或禁用必要的通知设置",
+        "url": "Console/zh-cn/Account/Notification-Settings.md"
+    },
+    {
+        "id": "identityProviders",
+        "title": "身份提供程序",
+        "description": "配置用于 SSO 身份验证的身份提供程序",
+        "url": "Console/zh-cn/IdentityProviders/Identity-Providers-Configure.md"
+    },
+    {
+        "id": "sites",
+        "title": "站点",
+        "description": "查看你的生产、开发和测试站点列表",
+        "url": "Console/zh-cn/Sites/Sites-Overview.md",
+        "children": [{
+                "id": "siteConsumption",
+                "title": "消耗量",
+                "url": "Console/zh-cn/Sites/Sites-Consumption.md"
+            }
+        ]
+    },
+    {
+        "id": "dataProtectionPages",
+        "title": "数据保护",
+        "description": "检查和创建数据保护页面",
+        "url": "Console/zh-cn/DataProtectionPages/Data-Protection-Pages.md"
+    },
+    {
+        "id": "queryWriteData",
+        "title": "查询和写入数据",
+        "description": "本机对象库与云对象存储集成",
+        "url": "Console/zh-cn/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+    },
+    {
+        "id": "additionalResources",
+        "title": "其他资源",
+        "description": "帮助您开始使用 Vantage 的有用链接",
+        "url": "Console/zh-cn/Resources/Additional-Resources.md"
+    },
+    {
+        "id": "apiUserGuide",
+        "title": "API 用户指南",
+        "description": "查看 GraphQL API 访问和使用模式",
+        "url": "Console/zh-cn/API/Api_User_Guide.md"
+    }
 	]
 }
