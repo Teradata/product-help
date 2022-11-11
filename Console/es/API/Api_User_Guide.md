@@ -1,62 +1,69 @@
-# Management Console GraphQL API
+API GraphQL de Management Console
+=================================
 
-## Table of Contents
+Índice
+------
 
-* [Getting Started](#Getting-Started)
-* [Overview](#Overview)
-* [About GraphQL](#About-Graphql)
-* [The GraphQL API Endpoint](#The-GraphQL-API-Endpoint)
-* [Calling the GraphQL API](#Calling-the-GraphQL-API)
-    * [Authentication](#Authentication)
-    * [Request Body](#Request-Body)
-    * [Example API Call](#Example-API-Call)
-* [Supported Queries and Mutations](#Supported-Queries-and-Mutations)
-    * [Queries](#Queries)
-    * [Mutations](#Mutations)
-* [Error Handling](#Error-Handling)
-* [GraphQL Client Libraries](#GraphQL-Client-Libraries)
+-   [Introducción](#Getting-Started)
+-   [Información general](#Información%20general)
+-   [Acerca de GraphQL](#About-Graphql)
+-   [El extremo de la API GraphQL](#The-GraphQL-API-Endpoint)
+-   [Llamando a la API GraphQL](#Calling-the-GraphQL-API)
+    -   [Autenticación](#Autenticación)
+    -   [Cuerpo de la solicitud](#Request-Body)
+    -   [Llamada a la API de ejemplo](#Example-API-Call)
+-   [Consultas y mutaciones admitidas](#Supported-Queries-and-Mutations)
+    -   [Consultas](#Consultas)
+    -   [Mutaciones](#Mutaciones)
+-   [Manejo de errores](#Error-Handling)
+-   [Bibliotecas cliente de GraphQL](#GraphQL-Client-Libraries)
 
-## Getting Started
+Introducción
+------------
 
-This section goes over several hands-on tutorials that can be followed for getting up and running quickly with working examples with the Management Console Public APIs.
+Esta sección repasa varios tutoriales prácticos que se pueden seguir para empezar a trabajar rápidamente. Además, incluye ejemplos de trabajo con las API públicas de Management Console.
 
-* [Postman Tutorial](./appendix/postman/tutorial.md)
-* [NodeJS Tutorial](./appendix/nodejs/tutorial.md)
-* [Python Tutorial](./appendix/python/tutorial.md)
+-   [Tutorial de Postman](./appendix/postman/tutorial.md)
+-   [Tutorial de NodeJS](./appendix/nodejs/tutorial.md)
+-   [Tutorial de Python](./appendix/python/tutorial.md)
 
-## Overview
+Información general
+-------------------
 
-The Vantage Console (VC) API for VantageCloud Enterprise provides programatic access to common database elasticity operations.  With the availability of the new API, authorized users of VantageCloud Enterprise can now create custom scripts/apps (clients) to directly manage their Teradata systems.  For example, an administrator can use the VC Public API to manage costs by starting/stopping a Site's SQL Engine based on usage requirements.
+La API Vantage Console (VC) para VantageCloud Enterprise brinda acceso programático a operaciones comunes de elasticidad de bases de datos. Con la disponibilidad de la nueva API, los usuarios autorizados de VantageCloud Enterprise ahora pueden crear secuencias de comandos/aplicaciones personalizadas (clientes) para administrar directamente sus sistemas Teradata. Por ejemplo, un administrador puede usar la API pública VC para administrar los costes iniciando o deteniendo el motor SQL de un sitio teniendo en cuenta los requisitos de uso.
 
-## About GraphQL
+Acerca de GraphQL
+-----------------
 
-GraphQL is a query language for APIs that:
+GraphQL es un lenguaje de consultas para API que:
 
-* Describes API capabilities through a strongly [Typed Schema](https://graphql.org/learn/schema/)
-    * Learn the supported capabilities of the API through a type schema that describes all entry points (Queries/Mutations) and the schema of the returned data
-    * The GraphQL schema is defined through GraphQL's Schema Definition Language (SDL)
-* Allows clients to Request what is needed through [Queries and Mutations](https://graphql.org/learn/queries/)
-    * GraphQL API calls return exactly what was requested (not more or less)
-    * Clients control the data they require
+-   Describe capacidades de la API con un sólido [Esquema escrito](https://graphql.org/learn/schema/)
+    -   Descubra las capacidades que admite la API a través de un esquema escrito que describe todos los puntos de entrada (consultas/mutaciones) y el esquema de los datos devueltos
+    -   El esquema de GraphQL se establece a través del lenguaje de definición de esquemas (SDL) de GraphQL.
+-   Permite a los clientes solicitar lo que necesitan a través de [Consultas y mutaciones](https://graphql.org/learn/queries/)
+    -   Las llamadas a la API GraphQL devuelven exactamente lo que se solicitó (ni más ni menos)
+    -   Los clientes controlan los datos que requieren
 
-The Official GraphQL specification can be found [here](https://graphql.github.io/graphql-spec/June2018/).
+La especificación oficial de GraphQL se encuentra [aquí](https://graphql.github.io/graphql-spec/June2018/).
 
-## The GraphQL API Endpoint
+El extremo de la API GraphQL
+----------------------------
 
-* Authentiction with Teradata Vantage user credentials.
-* The GraphQL VC Public API endpoint is: `https://api.cloud.vantage.teradata.com/graphql/`
-* The GraphQL Schema Definition Language (SDL) can be downloaded from: `https://api.cloud.vantage.teradata.com/graphql/sdl`
-    * The SDL can be imported in your client to help build custom query/mutations
+-   Autenticación con credenciales de usuario de Teradata Vantage.
+-   El extremo de la API pública VC de GraphQL es: `https://api.cloud.vantage.teradata.com/graphql/`
+-   El esquema de definición de lenguaje (SDL) de GraphQL se puede descargar en: `https://api.cloud.vantage.teradata.com/graphql/sdl`
+    -   El SDL se puede importar a su cliente para crear consultas/mutaciones personalizadas
 
-## Calling the GraphQL API
+Llamando a la API GraphQL
+-------------------------
 
-The GraphQL API is an HTTP endpoint, similar to a REST API.  The difference is in the content of the request (GraphQL Specification - SDL) vs a REST API's endpoint path, headers, and request body.  All calls to the GraphQL endpoint (Queries or Mutations) will use the `POST` HTTP method.
+La API GraphQL es un extremo HTTP, similar a una API REST. La diferencia está en el contenido de la solicitud (especificación de GraphQL - SDL) frente a la ruta de extremo de la API REST, sus encabezados y el cuerpo de la solicitud. Todas las llamadas al extremo de GraphQL (consultas o mutaciones) utilizarán el `POST` método HTTP.
 
-### Authentication
+### Autenticación
 
-The VC GraphQL API is secured with Basic Authentication (see [RFC 7617](https://tools.ietf.org/html/rfc7617)).  To make calls to this API (any GraphQL Query or Mutation), will require the following `Authorization` header:
+La API GraphQL de VC se protege con autenticación básica (consulte [RFC 7617](https://tools.ietf.org/html/rfc7617)). Para realizar llamadas a esta API (cualquier consulta o mutación de GraphQL), se requerirá el siguiente `Authorization` encabezado:
 
-```json
+``` sourceCode
 {
 ...
 "Authorization": "Basic <base64 encoded username:password>"
@@ -64,137 +71,499 @@ The VC GraphQL API is secured with Basic Authentication (see [RFC 7617](https://
 }
 ```
 
-### Request Body
+### Cuerpo de la solicitud
 
-Request body format
+Formato de cuerpo de la solicitud
 
-```json
+``` sourceCode
 {
   "operationName":"myOperationName",
   "query":"query myOperationName {...}"
 }
 ```
 
-### Example API Call with cURL
+### Llamada a la API de ejemplo con cURL
 
-Example SQL Engine Stop call (Mutation) with cURL can be seen below.  Additional tutorials and examples can be found in the [Getting Started](#Getting-Started) section above.
+A continuación se puede ver un ejemplo de llamada de detención del motor SQL (mutación) con cURL. Se pueden encontrar tutoriales y ejemplos adicionales en la sección [Introducción](#Getting-Started) anterior.
 
-```bash
+``` sourceCode
 curl 'https://api.cloud.vantage.teradata.com/graphql' -H 'authorization: Basic <base64 encoded username:password>' -H 'content-type: application/json' --data-binary '{"operationName":"stopSqlEngine","variables":{},"query":"mutation stopSqlEngine { stopSqlEngine(siteId: \"TDICA01780PRD00\") {id, name, status, startTime, endTime, details }}"}'
 ```
 
-## Supported Queries and Mutations (incomplete list)  
-  
-  
-### Queries
+Consultas y mutaciones admitidas (lista incompleta)
+---------------------------------------------------
 
-|Query | Inputs | Details|
-|--- | --- | ---|
-| **General Site APIs** |||
-|api | n/a | API Version Details|
-|user | n/a | Get your User's policy roles|
-|sites | n/a | List your Teradata Sites|
-|site | id (Site ID) | Get Details on a specific site|
-|sqlEngine | siteId | Get details on a specific SQL Engine for a given Site ID|
-|getSqlEngineOperation | siteId, operationId | Get details on a specific SQL Engine operation|
-|mlEngine | siteId | Get details on a specific ML Engine for a given Site ID|
-|getMlEngineOperation | siteId, operationId | Get details on a specific ML Engine operation|
-|privateLink | siteId | Get private link information about a site|
-| **System APIs** |||
-|getSystemUsage | usageQuery(siteId, startTime, endTime, namespace, dataPoints) | Get utilization data for a site|
-|getNotifications | lastSeenNotificationTimestamp, lastEvaluatedKey(notificationId,   userId,   receivedTimestamp) | Get global notifications for a user|
-|getNotificationSettings | receivedTimestamp | Get settings for global email notifications for a user|
-|getAlerts | alertParams ( site_id, activity_type, engine_types, dept_id ) | Get all or a filtered list of threshold alarms for this user|
-|sandboxes | | Get all sandboxes for this user|
-|sandbox | sandboxId | Get information about a sandbox|
-| **Consumption Monitoring** |||
-|getVantageUnits | aggregatesQuery | Get Vantage unit usage data for Vantage Consumption Monitoring enabled sites|
-|getCDSUsage | aggregatesQuery  | Get Consumed data storage data for Vantage Consumption Monitoring enabled sites|
-|getQueryActivity | aggregatesQuery  | Get Vantage query activity and usage data for Vantage Consumption Monitoring enabled sites|
-|getWeeklyStats | aggregatesQuery  | Get Vantage query data for Vantage Consumption Monitoring enabled sites|
-|getTokenUnits | aggregatesQuery  | Get Unit consumption data for Unit Consumption Monitoring enabled sites|
-|getTokenStorage | aggregatesQuery  | Get Unit consumption storage data for Unit Consumption Monitoring enabled sites|
-| *aggregatesQuery (interval_type,  activity_type (STORAGE, UNITS, VANTAGE_UNITS, CDS), site_id,  engine_types,  range_begin,  range_end,  grouping,  dept_id)* | ||
-|getForecast  | siteId, numOfDays | Get forecasted Vantage unit usage data for Vantage Consumption Monitoring enabled sites|
-|getContracts | siteId | Get contract data for Vantage Consumption Monitoring enabled sites|
-|getTokenContracts | siteId | Get contract data for Unit Consumption Monitoring enabled sites|
-| **Data protection, Backup and Restore Job**s|||
-|getSiteDataProtectionPlans | siteId, page (number), pageSize (number) | Get all data protection plans for this site|
-|getCustomerDataProtectionPlans | page (number), pageSize (number) | Get all data protection plans for this user|
-|getCustomerExecutionHistory | siteId, page (number), pageSize (number) | Get history and status of all jobs for this user (can filter by siteId)|
-|getDataProtectionPlanExecutionHistory | siteId, jobId, page (number), pageSize (number) | Get history and status of all runs of a specific job|
-|getDataProtectionPlanDetails | siteId, jobId, includeSettings (boolean) | Get all details of a specific data protection job|
-|getExecutionById | siteId, jobId, executionId | Get details of a specific data protection job run|
-|getDataProtectionPlanSchedules | siteId, jobId | Get list of scheduled run times for a data protection job  |
-|getDataProtectionPlanScheduleDetails | siteId, jobId, scheduleId | Get specific details for a scheduled run of a data protection job  |
-|getNextRuns | siteId, jobId, limit (number) | Get list of upcoming scheduled data protection job runs|
-|getRetainedCopiesForDataProtectionPlan | siteId, jobId, page? (number), pageSize? (number) | Get list of stored successful backups created from a data protection job.|
-|getRetainedCopiesForSite | siteId, page (number), pageSize (number) | Get list of stored successful backups created for all data protection jobs on a particular site. |
-|getRetainedCopies | page (number), pageSize (number) | Get list of stored successful backups created for this user. |
-|getSiteDatabases | siteId | Load list of databases in the site for restoring to a different database.|
-|getDatabaseObjects | siteId, xAuthCredential, objectName, objectType, search, page (number), pageSize (number) | Get list of objects existing on the database to choose which to backup|
-|restoreAuthenticationCheck | siteId | Check whether the user has the proper auth credentials to do a Restore on the selected objects|
-|getDRDetails | siteId, actionType(getTargets,  getDRDetails) |  Get snapshot disaster recovery attempt details for a site|
-|getFailoverDetails | siteId, page (number), pageSize (number) | Get snapshot disaster recovery failover details for a site  |
-|getBackupJobObjects | siteId, jobId, executionId | Get objects saved targeted for a specific DSA backup|
-|getRestoreHistory |  siteId, backupJobId | Get history of all DSA backups for a user, or specific to a site, or for a specific backup job|
-|getRestoreExecutions |  siteId, jobId, executionId, restoreJobId | Get list of execution attempts for a specific backup job/execution|
-|getRestoreExecutionDetails |  siteId, jobId, executionId, restoreExecutionId | Get details of an execution attempt for a DSA restore|   
-   
-   
-   
-  
-   
+### Consultas
 
+<table style="width:99%;">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Consulta</th>
+<th>Entradas</th>
+<th>Detalles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>API de sitio generales</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>api</td>
+<td>n/a</td>
+<td>Detalles de versión de API</td>
+</tr>
+<tr class="odd">
+<td>user</td>
+<td>n/a</td>
+<td>Obtener los roles del usuario en políticas</td>
+</tr>
+<tr class="even">
+<td>sites</td>
+<td>n/a</td>
+<td>Enumerar sus sitios de Teradata</td>
+</tr>
+<tr class="odd">
+<td>site</td>
+<td>id (ID de sitio)</td>
+<td>Obtener detalles de un sitio específico</td>
+</tr>
+<tr class="even">
+<td>sqlEngine</td>
+<td>siteId</td>
+<td>Obtener detalles de un motor SQL específico para un ID de sitio dado</td>
+</tr>
+<tr class="odd">
+<td>getSqlEngineOperation</td>
+<td>siteId, operationId</td>
+<td>Obtener detalles de una operación específica del motor SQL</td>
+</tr>
+<tr class="even">
+<td>mlEngine</td>
+<td>siteId</td>
+<td>Obtener detalles de un motor ML específico para un ID de sitio dado</td>
+</tr>
+<tr class="odd">
+<td>getMlEngineOperation</td>
+<td>siteId, operationId</td>
+<td>Obtener detalles de una operación específica del motor ML</td>
+</tr>
+<tr class="even">
+<td>privateLink</td>
+<td>siteId</td>
+<td>Obtener información de enlace privado sobre un sitio</td>
+</tr>
+<tr class="odd">
+<td><strong>API del sistema</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>getSystemUsage</td>
+<td>usageQuery(siteId, startTime, endTime, namespace, dataPoints)</td>
+<td>Obtener los datos de utilización de un sitio</td>
+</tr>
+<tr class="odd">
+<td>getNotifications</td>
+<td>lastSeenNotificationTimestamp, lastEvaluatedKey(notificationId, userId, receivedTimestamp)</td>
+<td>Obtener notificaciones globales para un usuario</td>
+</tr>
+<tr class="even">
+<td>getNotificationSettings</td>
+<td>receivedTimestamp</td>
+<td>Obtener ajustes para notificaciones de correo electrónico globales para un usuario</td>
+</tr>
+<tr class="odd">
+<td>getAlerts</td>
+<td>alertParams ( site_id, activity_type, engine_types, dept_id )</td>
+<td>Obtener todas las alarmas de umbral de este usuario o una lista filtrada de ellas</td>
+</tr>
+<tr class="even">
+<td>sandboxes</td>
+<td></td>
+<td>Obtener todos los espacios aislados de este usuario</td>
+</tr>
+<tr class="odd">
+<td>sandbox</td>
+<td>sandboxId</td>
+<td>Obtener información sobre un espacio aislado</td>
+</tr>
+<tr class="even">
+<td><strong>Monitorización de consumo</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>getVantageUnits</td>
+<td>aggregatesQuery</td>
+<td>Obtener datos de uso de la unidad Vantage para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="even">
+<td>getCDSUsage</td>
+<td>aggregatesQuery</td>
+<td>Obtener datos de almacenamiento de datos consumidos de los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="odd">
+<td>getQueryActivity</td>
+<td>aggregatesQuery</td>
+<td>Obtener datos de actividad y uso de consultas de Vantage para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="even">
+<td>getWeeklyStats</td>
+<td>aggregatesQuery</td>
+<td>Obtener datos de consulta para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="odd">
+<td>getTokenUnits</td>
+<td>aggregatesQuery</td>
+<td>Obtener datos de consumo de unidad para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="even">
+<td>getTokenStorage</td>
+<td>aggregatesQuery</td>
+<td>Obtener datos de almacenamiento de consumo de unidad para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="odd">
+<td><em>aggregatesQuery (interval_type, activity_type (STORAGE, UNITS, VANTAGE_UNITS, CDS), site_id, engine_types, range_begin, range_end, grouping, dept_id)</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>getForecast</td>
+<td>siteId, numOfDays</td>
+<td>Obtener datos de uso previsto de la unidad Vantage para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="odd">
+<td>getContracts</td>
+<td>siteId</td>
+<td>Obtener datos de contrato para los sitios habilitados para Monitorización de consumo de Vantage</td>
+</tr>
+<tr class="even">
+<td>getTokenContracts</td>
+<td>siteId</td>
+<td>Obtener datos de contrato para los sitios habilitados para Monitorización de consumo de unidad</td>
+</tr>
+<tr class="odd">
+<td><strong>Trabajo de protección de datos, copia de seguridad y restauración</strong>s</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>getSiteDataProtectionPlans</td>
+<td>siteId, page (number), pageSize (number)</td>
+<td>Obtener todos los planes de protección de este sitio</td>
+</tr>
+<tr class="odd">
+<td>getCustomerDataProtectionPlans</td>
+<td>page (number), pageSize (number)</td>
+<td>Obtener todos los planes de protección de este usuario</td>
+</tr>
+<tr class="even">
+<td>getCustomerExecutionHistory</td>
+<td>siteId, page (number), pageSize (number)</td>
+<td>Obtener el historial y el estado de todos los trabajos de este usuario (se puede filtrar por ID de sitio)</td>
+</tr>
+<tr class="odd">
+<td>getDataProtectionPlanExecutionHistory</td>
+<td>siteId, jobId, page (number), pageSize (number)</td>
+<td>Obtener el historial y el estado de todas las ejecuciones de un trabajo específico</td>
+</tr>
+<tr class="even">
+<td>getDataProtectionPlanDetails</td>
+<td>siteId, jobId, includeSettings (boolean)</td>
+<td>Obtener todos los detalles de un trabajo de protección de datos específico</td>
+</tr>
+<tr class="odd">
+<td>getExecutionById</td>
+<td>siteId, jobId, executionId</td>
+<td>Obtener detalles de una ejecución de trabajo de protección de datos específica</td>
+</tr>
+<tr class="even">
+<td>getDataProtectionPlanSchedules</td>
+<td>siteId, jobId</td>
+<td>Obtener una lista de las horas de ejecución programadas para un trabajo de protección de datos</td>
+</tr>
+<tr class="odd">
+<td>getDataProtectionPlanScheduleDetails</td>
+<td>siteId, jobId, scheduleId</td>
+<td>Obtener detalles específicos para una ejecución programada de un trabajo de protección de datos</td>
+</tr>
+<tr class="even">
+<td>getNextRuns</td>
+<td>siteId, jobId, limit (number)</td>
+<td>Obtener una lista de las próximas ejecuciones programadas de trabajos de protección de datos</td>
+</tr>
+<tr class="odd">
+<td>getRetainedCopiesForDataProtectionPlan</td>
+<td>siteId, jobId, page? (number), pageSize? (number)</td>
+<td>Obtener una lista de copias de seguridad correctas almacenadas que se han creado a partir de un trabajo de protección de datos</td>
+</tr>
+<tr class="even">
+<td>getRetainedCopiesForSite</td>
+<td>siteId, page (number), pageSize (number)</td>
+<td>Obtener una lista de copias de seguridad correctas almacenadas que se han creado para todos los trabajos de protección de datos en un sitio en concreto</td>
+</tr>
+<tr class="odd">
+<td>getRetainedCopies</td>
+<td>page (number), pageSize (number)</td>
+<td>Obtener una lista de copias de seguridad correctas almacenadas que se han creado para este usuario</td>
+</tr>
+<tr class="even">
+<td>getSiteDatabases</td>
+<td>siteId</td>
+<td>Cargar la lista de bases de datos en el sitio para restaurar a una base de datos diferente</td>
+</tr>
+<tr class="odd">
+<td>getDatabaseObjects</td>
+<td>siteId, xAuthCredential, objectName, objectType, search, page (number), pageSize (number)</td>
+<td>Obtener una lista de objetos existentes en la base de datos para elegir de cuál hacer la copia de seguridad</td>
+</tr>
+<tr class="even">
+<td>restoreAuthenticationCheck</td>
+<td>siteId</td>
+<td>Comprobar si el usuario tiene las credenciales de autenticación adecuadas para realizar una restauración en los objetos seleccionados</td>
+</tr>
+<tr class="odd">
+<td>getDRDetails</td>
+<td>siteId, actionType(getTargets, getDRDetails)</td>
+<td>Obtener los detalles de intento de recuperación ante desastres con instantánea de un sitio</td>
+</tr>
+<tr class="even">
+<td>getFailoverDetails</td>
+<td>siteId, page (number), pageSize (number)</td>
+<td>Obtener detalles de conmutación por error de recuperación ante desastres con instantánea de un sitio</td>
+</tr>
+<tr class="odd">
+<td>getBackupJobObjects</td>
+<td>siteId, jobId, executionId</td>
+<td>Obtener los objetos guardados destinados a una copia de seguridad de DSA específica</td>
+</tr>
+<tr class="even">
+<td>getRestoreHistory</td>
+<td>siteId, backupJobId</td>
+<td>Obtener el historial de todas las copias de seguridad de DSA para un usuario, específicas de un sitio o para un trabajo de copia de seguridad determinado</td>
+</tr>
+<tr class="odd">
+<td>getRestoreExecutions</td>
+<td>siteId, jobId, executionId, restoreJobId</td>
+<td>Obtener una lista de intentos de ejecución para un trabajo o una ejecución de copia de seguridad específicos</td>
+</tr>
+<tr class="even">
+<td>getRestoreExecutionDetails</td>
+<td>siteId, jobId, executionId, restoreExecutionId</td>
+<td>Obtener los detalles de un intento de ejecución de una restauración de DSA</td>
+</tr>
+</tbody>
+</table>
 
-### Mutations
+### Mutaciones
 
-|Mutation | Inputs | Details|
-|-- | --- | ---|
-| **General Site APIs** |||
-|startSqlEngine | siteId (Site ID for SQL Engine) | Start SQL Engine for given Site ID.|
-|stopSqlEngine | siteId (Site ID for SQL Engine) | Stop SQL Engine for given Site ID.|
-|scaleOutInSqlEngine | siteId (Site ID for SQL Engine), nodeCount (number of nodes to scale up/down to) | Scale Out or In SQL Engine to provided node count for given Site ID.|
-|scaleUpDownSqlEngine | siteId (Site ID for SQL Engine), instanceType (node instance type to change to) | Scale Up or Down SQL Engine to provided instance type for given Site ID.|
-|storageResizeSqlEngine | siteId (Site ID for SQL Engine), value (new storage size value), units (storage size units) | Storage Resize for SQL Engine to provided total value in units.|
-|startMlEngine | siteId (Site ID for ML Engine) | Start ML Engine for given Site ID.|
-|stopMlEngine | siteId (Site ID for ML Engine) | Stop ML Engine for given Site ID.|
-|addPrivateLinkUsers | id, siteId, users (list of users) | Add privatelink users to the allowlist for private link connections|
-|removePrivateLinkUsers | id, siteId, users(list of users) |  Remove privatelink users from the allowlist for private link connections|
-| **System APIs** |||
-|assumeRole | targetRole (ROLE) | Change/Assume role for your user.|
-|createAlert | alert () | Create a threshold alarm|
-|updateAlert | alertId, alert () | Update a threshold alarm|
-|deleteAlerts | alertIds | Delete multiple alarms by list of ids|
-|toggleGlobalNotification | updatedSubscription(email, topicName, channelName) | Subscribe your user to a notification topic|
-|createSandbox | name, parentSiteId (siteId) | Create a sandbox copy of a site|
-|deleteSandbox | sandboxId | Request a sandbox be deleted|
-| **Data protection, Backup and Restore Jobs** |||
-|createDataProtectionPlan | siteId, createInput (name, sourceSite, targetSite, description, active (boolean), priority (number), jobType (BACKUP, RESTORE, REPLICATION), backupMechanism (DSA, CDP, |DSC), retainedCopiesCount (number), autoAbort (boolean), autoAbortInMinutes (number), objects(objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects (objectName, objectType,))
-|targetRetentionCopiesCount (number), backupType(FULL, SNAPSHOT, SNAPSHOT_DR)) | Create a data protection plan for a site|
-|updateDataProtectionSettings | siteId, jobId, updateInput (name, sourceSite, targetSite, description, active (boolean), priority (number), jobType (BACKUP, RESTORE, REPLICATION), backupMechanism |(DSA, CDP, DSC), retainedCopiesCount (number), autoAbort (boolean), autoAbortInMinutes (number), objects(objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects (objectName, objectType))
-|targetRetentionCopiesCount (number), backupType(FULL, SNAPSHOT, SNAPSHOT_DR)) |  Update a data protection plan for a site|
-|deleteDataProtectionPlan | siteId, jobId | Delete a data protection plan|
-|createDataProtectionPlanSchedule | siteId, jobId, scheduleInput (scheduleExpression, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR)) | Create a schedule for a data protection plan|
-|updateDataProtectionPlanSchedule | siteId, jobId, scheduleId, scheduleInput (scheduleExpression, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR)) | Update a schedule for a data protection plan|
-|deleteDataProtectionPlanSchedule | siteId, jobId, scheduleId | Delete a schedule for a data protection plan|
-|previewDataProtectionPlanSchedule | siteId, jobId, scheduleInput (scheduleExpression, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR)) | Preview a schedule for a data protection plan|
-|abortJob | siteId, jobId | Abort a running data protection plan|
-|instantJobRun | siteId, jobId, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR) | Run a data protection plan right now|
-|restoreData | siteId, executionId, jobId, settings (name, abortOnAccessRightsViolation (boolean), runAsCopyJob (boolean), restoreToDifferentDb (boolean), renameRestoredObjects (boolean), |skipStatistics (boolean), skipJoinHashIndexes (boolean), targetDatabase, tableNameSuffix, objects (objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects (objectName, |objectType))) | Restore a retained copy to a site (same site or a different target)|
-|updateRestoreJobSettings | siteId, jobId, backupExecutionId, updateInput(name, abortOnAccessRightsViolation (boolean), runAsCopyJob (boolean), restoreToDifferentDb (boolean), renameRestoredObjects |(boolean), skipStatistics (boolean), skipJoinHashIndexes (boolean), targetDatabase, tableNameSuffix, objects (objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects |(objectName, objectType))) | Update the settings for a restore job|
-|failOverData | siteId, executionId, jobId, failOverInput ( name, sourceSite, targetSite, description, active (boolean), priority (number), jobType (BACKUP, RESTORE, REPLICATION), backupMechanism |(DSA',CDP, DSC), retainedCopiesCount (number), autoAbort (boolean), autoAbortInMinutes (number), objects (objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects |(objectName, objectType)), targetRetentionCopiesCount (number), backupType(FULL, SNAPSHOT, SNAPSHOT_DR)) | Creates failover job with information on failover to be completed.|
-|precheckRestore | siteId, executionId, jobId | Validate a snapshot (against the given site if provided) for its ability to be used as a restore copy|
-|protectRetainCopy | siteId, jobId, backupSetId, isRetained (boolean) | Protect or unprotect a retained copy|
+<table style="width:99%;">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 37%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mutation</th>
+<th>Entradas</th>
+<th>Detalles</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>API de sitio generales</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>startSqlEngine</td>
+<td>siteId (ID de sitio para motor SQL)</td>
+<td>Iniciar motor SQL para el ID de sitio dado</td>
+</tr>
+<tr class="odd">
+<td>stopSqlEngine</td>
+<td>siteId (ID de sitio para motor SQL)</td>
+<td>Detener el motor SQL en un ID de sitio específico</td>
+</tr>
+<tr class="even">
+<td>scaleOutInSqlEngine</td>
+<td>siteId (ID de sitio para motor SQL), nodeCount (número de nodos para ampliar/reducir)</td>
+<td>Ampliar o reducir el motor SQL para proporcionar el recuento de nodos del ID de sitio dado</td>
+</tr>
+<tr class="odd">
+<td>scaleUpDownSqlEngine</td>
+<td>siteId (ID de sitio para motor SQL), instanceType (tipo de instancia de nodo al que cambiar)</td>
+<td>Ampliar o reducir el motor SQL al tipo de instancia proporcionado para el ID de sitio dado</td>
+</tr>
+<tr class="even">
+<td>storageResizeSqlEngine</td>
+<td>siteId (ID de sitio para motor SQL), value (valor de nuevo tamaño de almacenamiento), units (unidades del tamaño del almacenamiento)</td>
+<td>Redimensionamiento del almacenamiento para el motor SQL al valor total indicado en las unidades</td>
+</tr>
+<tr class="odd">
+<td>startMlEngine</td>
+<td>siteId (ID de sitio para motor ML)</td>
+<td>Iniciar motor ML para el ID de sitio dado</td>
+</tr>
+<tr class="even">
+<td>stopMlEngine</td>
+<td>siteId (ID de sitio para motor ML)</td>
+<td>Detener el motor ML en un ID de sitio específico</td>
+</tr>
+<tr class="odd">
+<td>addPrivateLinkUsers</td>
+<td>id, siteId, users (lista de usuarios)</td>
+<td>Agregar usuarios de enlace privado a la lista de permitidos para conexiones de enlace privado</td>
+</tr>
+<tr class="even">
+<td>removePrivateLinkUsers</td>
+<td>id, siteId, users(list of users)</td>
+<td>Quitar usuarios de enlace privado de la lista de permitidos para conexiones de enlace privado</td>
+</tr>
+<tr class="odd">
+<td><strong>API del sistema</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>assumeRole</td>
+<td>targetRole (ROLE)</td>
+<td>Cambiar/Asumir el rol de su usuario</td>
+</tr>
+<tr class="odd">
+<td>createAlert</td>
+<td>alert ()</td>
+<td>Crear una alarma de umbral</td>
+</tr>
+<tr class="even">
+<td>updateAlert</td>
+<td>alertId, alert ()</td>
+<td>Actualizar alarma de umbral</td>
+</tr>
+<tr class="odd">
+<td>deleteAlerts</td>
+<td>alertIds</td>
+<td>Eliminar múltiples alarmas por lista de ID</td>
+</tr>
+<tr class="even">
+<td>toggleGlobalNotification</td>
+<td>updatedSubscription(email, topicName, channelName)</td>
+<td>Suscribir al usuario a un tema de notificaciones</td>
+</tr>
+<tr class="odd">
+<td>createSandbox</td>
+<td>name, parentSiteId (siteId)</td>
+<td>Crear una copia de espacio aislado de un sitio</td>
+</tr>
+<tr class="even">
+<td>deleteSandbox</td>
+<td>sandboxId</td>
+<td>Solicitar que se elimine un espacio aislado</td>
+</tr>
+<tr class="odd">
+<td><strong>Trabajos de protección de datos, copia de seguridad y restauración</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>createDataProtectionPlan</td>
+<td>siteId, createInput (name, sourceSite, targetSite, description, active (boolean), priority (number), jobType (BACKUP, RESTORE, REPLICATION), backupMechanism (DSA, CDP,</td>
+<td>DSC), retainedCopiesCount (number), autoAbort (boolean), autoAbortInMinutes (number), objects(objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects (objectName, objectType,))</td>
+</tr>
+<tr class="odd">
+<td>targetRetentionCopiesCount (number), backupType(FULL, SNAPSHOT, SNAPSHOT_DR))</td>
+<td>Obtener un plan de protección de un sitio</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>updateDataProtectionSettings</td>
+<td>siteId, jobId, updateInput (name, sourceSite, targetSite, description, active (boolean), priority (number), jobType (BACKUP, RESTORE, REPLICATION), backupMechanism</td>
+<td>(DSA, CDP, DSC), retainedCopiesCount (number), autoAbort (boolean), autoAbortInMinutes (number), objects(objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects (objectName, objectType))</td>
+</tr>
+<tr class="odd">
+<td>targetRetentionCopiesCount (number), backupType(FULL, SNAPSHOT, SNAPSHOT_DR))</td>
+<td>Actualizar un plan de protección de datos de un sitio</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>deleteDataProtectionPlan</td>
+<td>siteId, jobId</td>
+<td>Eliminar plan de protección de datos</td>
+</tr>
+<tr class="odd">
+<td>createDataProtectionPlanSchedule</td>
+<td>siteId, jobId, scheduleInput (scheduleExpression, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR))</td>
+<td>Crear un programa para un plan de protección de datos</td>
+</tr>
+<tr class="even">
+<td>updateDataProtectionPlanSchedule</td>
+<td>siteId, jobId, scheduleId, scheduleInput (scheduleExpression, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR))</td>
+<td>Actualizar un programa para un plan de protección de datos</td>
+</tr>
+<tr class="odd">
+<td>deleteDataProtectionPlanSchedule</td>
+<td>siteId, jobId, scheduleId</td>
+<td>Eliminar una programación de un plan de protección de datos</td>
+</tr>
+<tr class="even">
+<td>previewDataProtectionPlanSchedule</td>
+<td>siteId, jobId, scheduleInput (scheduleExpression, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR))</td>
+<td>Obtener una vista previa de una programación de un plan de protección de datos</td>
+</tr>
+<tr class="odd">
+<td>abortJob</td>
+<td>siteId, jobId</td>
+<td>Interrumpir un plan de protección de datos</td>
+</tr>
+<tr class="even">
+<td>instantJobRun</td>
+<td>siteId, jobId, runType (FULL, DELTA, SNAPSHOT, SNAPSHOT_DR)</td>
+<td>Ejecutar un plan de protección de datos ahora mismo</td>
+</tr>
+<tr class="odd">
+<td>restoreData</td>
+<td>siteId, executionId, jobId, settings (name, abortOnAccessRightsViolation (boolean), runAsCopyJob (boolean), restoreToDifferentDb (boolean), renameRestoredObjects (boolean),</td>
+<td>skipStatistics (boolean), skipJoinHashIndexes (boolean), targetDatabase, tableNameSuffix, objects (objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects (objectName,</td>
+</tr>
+<tr class="even">
+<td>updateRestoreJobSettings</td>
+<td>siteId, jobId, backupExecutionId, updateInput(name, abortOnAccessRightsViolation (boolean), runAsCopyJob (boolean), restoreToDifferentDb (boolean), renameRestoredObjects</td>
+<td>(boolean), skipStatistics (boolean), skipJoinHashIndexes (boolean), targetDatabase, tableNameSuffix, objects (objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects</td>
+</tr>
+<tr class="odd">
+<td>failOverData</td>
+<td>siteId, executionId, jobId, failOverInput ( name, sourceSite, targetSite, description, active (boolean), priority (number), jobType (BACKUP, RESTORE, REPLICATION), backupMechanism</td>
+<td>(DSA, CDP, DSC), retainedCopiesCount (number), autoAbort (boolean), autoAbortInMinutes (number), objects (objectName, objectType, parentName, parentType, includeAll (boolean), excludeObjects</td>
+</tr>
+<tr class="even">
+<td>precheckRestore</td>
+<td>siteId, executionId, jobId</td>
+<td>Validar una instantánea (en el sitio dado, si se proporciona) para que esté disponible para su uso como copia de restauración</td>
+</tr>
+<tr class="odd">
+<td>protectRetainCopy</td>
+<td>siteId, jobId, backupSetId, isRetained (boolean)</td>
+<td>Proteger o quitar protección de una copia retenida</td>
+</tr>
+</tbody>
+</table>
 
+Manejo de errores
+-----------------
 
-## Error Handling
+Al igual que las API REST, las llamadas a las API GraphQL también pueden devolver respuestas de error. Algunos ejemplos son los errores por no autorización/prohibición, recurso no encontrado, operación fallida, etc. Los detalles del error de una llamada a la API GraphQL se encuentran en el cuerpo de la respuesta devuelta.
 
-Similar to REST APIs, calls to GraphQL APIs can also return error responses.  Some examples can be unauthorized/forbidden errors, resource not found, operation failed, etc. Error details from a GraphQL API call are contained in the returned response body.
+Dado que una llamada a GraphQL puede abarcar varios servicios, los objetos de error se devuelven en forma de lista en la parte `errors` del cuerpo de la respuesta. La estructura de un objeto de error es la que se describe a continuación:
 
-Since a GraphQL call can span multiple services, error objects are returned as a list in the `errors` portion of the response body.  The structure of an error object is as described below:
-
-```bash
+``` sourceCode
 "error": {
   "message" # message string
   "extensions": {  # additional metadata about the error
@@ -206,13 +575,13 @@ Since a GraphQL call can span multiple services, error objects are returned as a
 }
 ```
 
-The error code is contained in the `extensions` portion of the error object in a field named `code`.
+El código de error se encuentra en la parte `extensions` del objeto de error en un campo llamado `code`.
 
-### Example Unathorized Response
+### Ejemplo de respuesta No autorizada
 
-The response to an unauthorized API call.
+La respuesta a una llamada a la API no autorizada.
 
-```bash
+``` sourceCode
 {
   "errors": [
     {
@@ -225,11 +594,11 @@ The response to an unauthorized API call.
 }
 ```
 
-### Example Not Found Request Response
+### Ejemplo de respuesta Solicitud no encontrada
 
-Trying to get the details of a Site that does not exist.
+Al intentar obtener los detalles de un sitio que no existe.
 
-```bash
+``` sourceCode
 {
   "errors": [
     {
@@ -256,11 +625,11 @@ Trying to get the details of a Site that does not exist.
 }
 ```
 
-### Example Invalid Request Response
+### Ejemplo de respuesta Solicitud no válida
 
-Calling SQL Engine Start operation on a Site where that operation is currently not available (e.g. SQL Engine is already running).
+Al llamar a una operación de inicio del motor SQL en un sitio donde esa operación no está disponible en ese momento (por ejemplo, porque el motor SQL ya se está ejecutando).
 
-```bash
+``` sourceCode
 {
   "errors": [
     {
@@ -293,8 +662,9 @@ Calling SQL Engine Start operation on a Site where that operation is currently n
 }
 ```
 
-## GraphQL Client Libraries
+Bibliotecas cliente de GraphQL
+------------------------------
 
-The list below contains popular client libraries for calling GraphQL APIs:
+La siguiente lista contiene bibliotecas de cliente populares para llamar a las API GraphQL:
 
-[GraphQL Clients](https://graphql.org/code/#graphql-clients)
+[Clientes de GraphQL](https://graphql.org/code/#graphql-clients)

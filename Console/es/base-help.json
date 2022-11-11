@@ -1,45 +1,51 @@
 ﻿{
 	"items": [{
-		    "id": "notificationSettings",
-			"title": "Configuración de notificaciones",
-			"description": "Activa o desactiva las opciones de configuración de notificaciones pertinentes",
-			"url": "Console/es/Account/Notification-Settings.md"
-		},
-		{
-			"id": "identityProviders",
-			"title": "Proveedor de identidad",
-			"description": "Configura un proveedor de identidad para la autenticación SSO",
-			"url": "Console/es/IdentityProviders/Identity-Providers-Configure.md"
-		},
-		{
-			"id": "sites",
-			"title": "Sitios",
-			"description": "Revisa tu lista de sitios de producción, desarrollo y pruebas",
-			"url": "Console/es/Sites/Sites-Overview.md",
-			"children": [{
-					"id": "siteConsumption",
-					"title": "Consumo",
-					"url": "Console/es/Sites/Sites-Consumption.md"
-				}
-			]
-		},
-	    {
-	       "id": "dataProtectionPages",
-	       "title": "Protección de datos",
-	       "description": "Revisa y crea páginas de protección de datos.",
-	       "url": "Console/es/DataProtectionPages/Data-Protection-Pages.md"
-		},
-		{
-			"id": "queryWriteData",
-			"title": "Consulta y escribe datos en el almacenamiento de objetos en la nube",
-			"description": "Integración del almacén de objetos nativo con el almacenamiento de objetos en la nube",
-			"url": "Console/es/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
-		},
-		{
-			"id": "apiUserGuide",
-			"title": "",
-			"description": "",
-			"url": "Console/es/API/Api_User_Guide.md"
-		}
+        "id": "notificationSettings",
+        "title": "Configuración de notificaciones",
+        "description": "Activa o desactiva las opciones de configuración de notificaciones pertinentes",
+        "url": "Console/es/Account/Notification-Settings.md"
+    },
+    {
+        "id": "identityProviders",
+        "title": "Proveedor de identidad",
+        "description": "Configura un proveedor de identidad para la autenticación SSO",
+        "url": "Console/es/IdentityProviders/Identity-Providers-Configure.md"
+    },
+    {
+        "id": "sites",
+        "title": "Sitios",
+        "description": "Revisa tu lista de sitios de producción, desarrollo y pruebas",
+        "url": "Console/es/Sites/Sites-Overview.md",
+        "children": [{
+                "id": "siteConsumption",
+                "title": "Consumo",
+                "url": "Console/es/Sites/Sites-Consumption.md"
+            }
+        ]
+    },
+    {
+        "id": "dataProtectionPages",
+        "title": "Protección de datos",
+        "description": "Revisa y crea páginas de protección de datos",
+        "url": "Console/es/DataProtectionPages/Data-Protection-Pages.md"
+    },
+    {
+        "id": "queryWriteData",
+        "title": "Consulta y escribe datos",
+        "description": "Integración del almacén de objetos nativo con el almacenamiento de objetos en la nube",
+        "url": "Console/es/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+    },
+    {
+        "id": "additionalResources",
+        "title": "Recursos adicionales",
+        "description": "Enlaces útiles para empezar a utilizar Vantage",
+        "url": "Console/es/Resources/Additional-Resources.md"
+    },
+    {
+        "id": "apiUserGuide",
+        "title": "Guía del usuario de la API",
+        "description": "Revisar el acceso a la API GraphQL y los patrones de uso",
+        "url": "Console/es/API/Api_User_Guide.md"
+    }
 	]
 }
