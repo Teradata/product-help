@@ -1,45 +1,51 @@
 ﻿{
 	"items": [{
-		    "id": "notificationSettings",
-			"title": "Paramètres de notification",
-			"description": "Activer ou désactiver les paramètres de notification nécessaires",
-			"url": "Console/fr/Account/Notification-Settings.md"
-		},
-		{
-			"id": "identityProviders",
-			"title": "Fournisseur d'identité",
-			"description": "Configurer un fournisseur d’identité pour l’authentification unique SSO",
-			"url": "Console/fr/IdentityProviders/Identity-Providers-Configure.md"
-		},
-		{
-			"id": "sites",
-			"title": "Sites",
-			"description": "Examiner la liste de vos sites de production, de développement et de test",
-			"url": "Console/fr/Sites/Sites-Overview.md",
-			"children": [{
-					"id": "siteConsumption",
-					"title": "Consommation",
-					"url": "Console/fr/Sites/Sites-Consumption.md"
-				}
-			]
-		},
-	    {
-	       "id": "dataProtectionPages",
-	       "title": "Protection des données",
-	       "description": "Examinez et créez des pages de protection des données.",
-	       "url": "Console/fr/DataProtectionPages/Data-Protection-Pages.md"
-		},
-		{
-			"id": "queryWriteData",
-			"title": "Interroger et écrire des données dans le stockage d’objets du cloud",
-			"description": "Intégration de la banque d'objets natifs à l'aide du stockage d'objets du cloud",
-			"url": "Console/fr/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
-		},
-		{
-			"id": "apiUserGuide",
-			"title": "",
-			"description": "",
-			"url": "Console/fr/API/Api_User_Guide.md"
-		}
+        "id": "notificationSettings",
+        "title": "Paramètres de notification",
+        "description": "Activer ou désactiver les paramètres de notification nécessaires",
+        "url": "Console/fr/Account/Notification-Settings.md"
+    },
+    {
+        "id": "identityProviders",
+        "title": "Fournisseur d'identité",
+        "description": "Configurer un fournisseur d’identité pour l’authentification unique SSO",
+        "url": "Console/fr/IdentityProviders/Identity-Providers-Configure.md"
+    },
+    {
+        "id": "sites",
+        "title": "Sites",
+        "description": "Examiner la liste de vos sites de production, de développement et de test",
+        "url": "Console/fr/Sites/Sites-Overview.md",
+        "children": [{
+                "id": "siteConsumption",
+                "title": "Consommation",
+                "url": "Console/fr/Sites/Sites-Consumption.md"
+            }
+        ]
+    },
+    {
+        "id": "dataProtectionPages",
+        "title": "Protection des données",
+        "description": "Examiner et créer des pages de protection des données",
+        "url": "Console/fr/DataProtectionPages/Data-Protection-Pages.md"
+    },
+    {
+        "id": "queryWriteData",
+        "title": "Interroger et écrire des données",
+        "description": "Intégration de la banque d'objets natifs à l'aide du stockage d'objets du cloud",
+        "url": "Console/fr/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+    },
+    {
+        "id": "additionalResources",
+        "title": "Ressources supplémentaires",
+        "description": "Liens utiles pour la prise en main de Vantage",
+        "url": "Console/fr/Resources/Additional-Resources.md"
+    },
+    {
+        "id": "apiUserGuide",
+        "title": "Guide de l'utilisateur des API",
+        "description": "Examiner les modèles d'accès et d'utilisation des API GraphQL",
+        "url": "Console/fr/API/Api_User_Guide.md"
+    }
 	]
 }
