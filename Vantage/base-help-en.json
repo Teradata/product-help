@@ -31,6 +31,30 @@
        }
     , 
     { 
+       "id":"lyi1662583368110", 
+       "title":"Compute workers", 
+       "description":"Create nodes for heavy processing.", 
+       "url":"Vantage/lyi1662583368110.md", 
+       "children":[
+          { 
+             "id":"aix1662583909152", 
+             "title":"Compute worker key concepts", 
+             "description":"Compute worker description, components, and characteristics", 
+             "url":"Vantage/aix1662583909152.md"
+             }
+          , 
+          { 
+             "id":"azi1662584068628", 
+             "title":"Create a compute worker", 
+             "description":"Considerations for creating a Compute worker", 
+             "url":"Vantage/azi1662584068628.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"mqu1640280532737", 
        "title":"Compute groups", 
        "description":"Create, view, and manage Compute groups. ", 
@@ -72,6 +96,99 @@
              "title":"Manage compute groups", 
              "description":"Considerations for viewing and editing compute groups", 
              "url":"Vantage/sqv1658772608902.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"pia1659047719497", 
+       "title":"Consumption", 
+       "description":"View units consumed and export data.", 
+       "url":"Vantage/pia1659047719497.md", 
+       "children":[
+          { 
+             "id":"pbu1659047908042", 
+             "title":"Consumption key concepts", 
+             "description":"Consumption description, components, and characteristics", 
+             "url":"Vantage/pbu1659047908042.md"
+             }
+          , 
+          { 
+             "id":"xkf1640280993658", 
+             "title":"View and download consumption units", 
+             "description":"Analyze current and remaining unit consumption", 
+             "url":"Vantage/xkf1640280993658.md"
+             }
+          , 
+          { 
+             "id":"nag1659050536098", 
+             "title":"View and download storage data", 
+             "description":"Analyze storage-related consumption data", 
+             "url":"Vantage/nag1659050536098.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jrq1640280690304", 
+       "title":"Data protection", 
+       "description":"Protect data with backup, recovery, and data transfer.", 
+       "url":"Vantage/jrq1640280690304.md", 
+       "children":[
+          { 
+             "id":"aqo1659046659258", 
+             "title":"Data protection key concepts", 
+             "description":"Data protection description, components, and characteristics", 
+             "url":"Vantage/aqo1659046659258.md"
+             }
+          , 
+          { 
+             "id":"qmb1659046927155", 
+             "title":"Create a full or partial backup", 
+             "description":"Considerations for creating a backup", 
+             "url":"Vantage/qmb1659046927155.md"
+             }
+          , 
+          { 
+             "id":"kqr1640280954140", 
+             "title":"Restore data", 
+             "description":"Considerations for restoring from a backup", 
+             "url":"Vantage/kqr1640280954140.md"
+             }
+          , 
+          { 
+             "id":"sus1659047241965", 
+             "title":"Review backup history", 
+             "description":"Considerations for reviewing backup history", 
+             "url":"Vantage/sus1659047241965.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jlf1663616946889", 
+       "title":"Data sharing", 
+       "description":"Share data with other users, including tables and views.", 
+       "url":"Vantage/jlf1663616946889.md", 
+       "children":[
+          { 
+             "id":"pgt1663616908716", 
+             "title":"Data sharing key concepts", 
+             "description":"Dating sharing description, components, and characteristics", 
+             "url":"Vantage/pgt1663616908716.md"
+             }
+          , 
+          { 
+             "id":"vlk1663617148666", 
+             "title":"Create data share", 
+             "description":"Considerations for creating a data share", 
+             "url":"Vantage/vlk1663617148666.md"
              }
 
           ]
@@ -158,6 +275,116 @@
        }
     , 
     { 
+       "id":"gmy1640280632324", 
+       "title":"QueryGrid", 
+       "description":"Deploy and manage QueryGrid data analytics fabric.", 
+       "url":"Vantage/gmy1640280632324.md", 
+       "children":[
+          { 
+             "id":"vyx1659391025497", 
+             "title":"QueryGrid key concepts", 
+             "description":"QueryGrid description, components, and characteristics", 
+             "url":"Vantage/vyx1659391025497.md"
+             }
+          , 
+          { 
+             "id":"wrw1640282047881", 
+             "title":"Deployment", 
+             "description":"Considerations for deploying QueryGrid", 
+             "url":"Vantage/wrw1640282047881.md", 
+             "children":[
+                { 
+                   "id":"znp1640282079399", 
+                   "title":"Data source", 
+                   "description":"Considerations for QueryGrid data source", 
+                   "url":"Vantage/znp1640282079399.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"lzm1640282103875", 
+             "title":"Management", 
+             "description":"Considerations for QueryGrid management", 
+             "url":"Vantage/lzm1640282103875.md", 
+             "children":[
+                { 
+                   "id":"vhb1640282164870", 
+                   "title":"Data sources", 
+                   "description":"Considerations for data source management", 
+                   "url":"Vantage/vhb1640282164870.md"
+                   }
+                , 
+                { 
+                   "id":"goh1640282193934", 
+                   "title":"Fabric", 
+                   "description":"Fabric description, components, and characteristics", 
+                   "url":"Vantage/goh1640282193934.md"
+                   }
+                , 
+                { 
+                   "id":"uee1640282265780", 
+                   "title":"Issues", 
+                   "description":"Considerations for reviewing QueryGrid issues", 
+                   "url":"Vantage/uee1640282265780.md"
+                   }
+                , 
+                { 
+                   "id":"oiw1640282294248", 
+                   "title":"Operations", 
+                   "description":"Considerations for QueryGrid operations", 
+                   "url":"Vantage/oiw1640282294248.md"
+                   }
+                , 
+                { 
+                   "id":"zxp1640282246701", 
+                   "title":"Settings", 
+                   "description":"Considerations for QueryGrid settings", 
+                   "url":"Vantage/zxp1640282246701.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"auw1640280669500", 
+       "title":"Streams", 
+       "description":"Load data from a compatible object store.", 
+       "url":"Vantage/auw1640280669500.md", 
+       "children":[
+          { 
+             "id":"geh1659041833397", 
+             "title":"Streams key concepts", 
+             "description":"Streams description, components, and characteristics", 
+             "url":"Vantage/geh1659041833397.md"
+             }
+          , 
+          { 
+             "id":"luq1640282345986", 
+             "title":"Create a stream", 
+             "description":"Considerations for creating a stream", 
+             "url":"Vantage/luq1640282345986.md"
+             }
+          , 
+          { 
+             "id":"wsa1640282405363", 
+             "title":"Manage streams", 
+             "description":"Considerations for viewing and editing streams.", 
+             "url":"Vantage/wsa1640282405363.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"arh1640280750562", 
        "title":"Users", 
        "description":"View and manage users, including roles and permissions.", 
@@ -181,7 +408,7 @@
 
        }
     , 
-   { 
+    { 
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
