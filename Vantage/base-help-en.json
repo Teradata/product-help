@@ -151,6 +151,92 @@
        }
     , 
     { 
+       "id":"gmy1640280632324", 
+       "title":"QueryGrid", 
+       "description":"Deploy and manage QueryGrid data analytics fabric.", 
+       "url":"Vantage/gmy1640280632324.md", 
+       "children":[
+          { 
+             "id":"vyx1659391025497", 
+             "title":"QueryGrid key concepts", 
+             "description":"QueryGrid description, components, and characteristics", 
+             "url":"Vantage/vyx1659391025497.md"
+             }
+          , 
+          { 
+             "id":"wrw1640282047881", 
+             "title":"Deployment", 
+             "description":"Considerations for deploying QueryGrid", 
+             "url":"Vantage/wrw1640282047881.md", 
+             "children":[
+                { 
+                   "id":"znp1640282079399", 
+                   "title":"Connect data source", 
+                   "description":"Considerations for QueryGrid data source", 
+                   "url":"Vantage/znp1640282079399.md"
+                   }
+                , 
+                { 
+                   "id":"yml1671157089031", 
+                   "title":"Private link change request", 
+                   "description":"How to request a Private Link endpoint for QueryGrid provisioning", 
+                   "url":"Vantage/yml1671157089031.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"lzm1640282103875", 
+             "title":"Management", 
+             "description":"Considerations for QueryGrid management", 
+             "url":"Vantage/lzm1640282103875.md", 
+             "children":[
+                { 
+                   "id":"goh1640282193934", 
+                   "title":"Fabric Overview", 
+                   "description":"Fabric description, components, and characteristics", 
+                   "url":"Vantage/goh1640282193934.md"
+                   }
+                , 
+                { 
+                   "id":"vhb1640282164870", 
+                   "title":"Data sources", 
+                   "description":"Considerations for data source management", 
+                   "url":"Vantage/vhb1640282164870.md"
+                   }
+                , 
+                { 
+                   "id":"zxp1640282246701", 
+                   "title":"Settings", 
+                   "description":"Considerations for QueryGrid settings", 
+                   "url":"Vantage/zxp1640282246701.md"
+                   }
+                , 
+                { 
+                   "id":"uee1640282265780", 
+                   "title":"Issues", 
+                   "description":"Considerations for reviewing QueryGrid issues", 
+                   "url":"Vantage/uee1640282265780.md"
+                   }
+                , 
+                { 
+                   "id":"oiw1640282294248", 
+                   "title":"Operations", 
+                   "description":"Considerations for QueryGrid operations", 
+                   "url":"Vantage/oiw1640282294248.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"arh1640280750562", 
        "title":"Users", 
        "description":"View and manage users, including roles and permissions.", 
