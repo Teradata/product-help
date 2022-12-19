@@ -8,7 +8,7 @@
           { 
              "id":"nmr1658424425362", 
              "title":"Environment key concepts", 
-             "description":"Environment description, components, and characteristics", 
+             "description":"Components of an environment", 
              "url":"Vantage/nmr1658424425362.md"
              }
           , 
@@ -72,6 +72,75 @@
              "title":"Manage compute groups", 
              "description":"Considerations for viewing and editing compute groups", 
              "url":"Vantage/sqv1658772608902.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"pia1659047719497", 
+       "title":"Consumption", 
+       "description":"View units consumed and export data.", 
+       "url":"Vantage/pia1659047719497.md", 
+       "children":[
+          { 
+             "id":"pbu1659047908042", 
+             "title":"Consumption key concepts", 
+             "description":"Consumption description, components, and characteristics", 
+             "url":"Vantage/pbu1659047908042.md"
+             }
+          , 
+          { 
+             "id":"xkf1640280993658", 
+             "title":"View and download consumption units", 
+             "description":"Analyze current and remaining unit consumption", 
+             "url":"Vantage/xkf1640280993658.md"
+             }
+          , 
+          { 
+             "id":"nag1659050536098", 
+             "title":"View and download storage data", 
+             "description":"Analyze storage-related consumption data", 
+             "url":"Vantage/nag1659050536098.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jrq1640280690304", 
+       "title":"Data protection", 
+       "description":"Protect data with backup, recovery, and data transfer.", 
+       "url":"Vantage/jrq1640280690304.md", 
+       "children":[
+          { 
+             "id":"aqo1659046659258", 
+             "title":"Data protection key concepts", 
+             "description":"Data protection description, components, and characteristics", 
+             "url":"Vantage/aqo1659046659258.md"
+             }
+          , 
+          { 
+             "id":"qmb1659046927155", 
+             "title":"Create a full backup", 
+             "description":"Considerations for creating a backup", 
+             "url":"Vantage/qmb1659046927155.md"
+             }
+          , 
+          { 
+             "id":"kqr1640280954140", 
+             "title":"Restore data", 
+             "description":"Considerations for restoring from a backup", 
+             "url":"Vantage/kqr1640280954140.md"
+             }
+          , 
+          { 
+             "id":"sus1659047241965", 
+             "title":"Review backup history", 
+             "description":"Considerations for reviewing backup history", 
+             "url":"Vantage/sus1659047241965.md"
              }
 
           ]
