@@ -33,26 +33,26 @@
     { 
        "id":"mqu1640280532737", 
        "title":"Compute groups", 
-       "description":"Create, view, and manage Compute groups. ", 
+       "description":"Create, view, and manage compute groups. ", 
        "url":"Vantage/mqu1640280532737.md", 
        "children":[
           { 
              "id":"ixo1658772101054", 
              "title":"Compute group key concepts", 
-             "description":"Compute group description, components, and characteristics", 
+             "description":"Compute group capabilities", 
              "url":"Vantage/ixo1658772101054.md"
              }
           , 
           { 
              "id":"xrr1658772541186", 
              "title":"Create a compute group", 
-             "description":"Considerations for creating a Compute group", 
+             "description":"Considerations for creating a compute group", 
              "url":"Vantage/xrr1658772541186.md", 
              "children":[
                 { 
                    "id":"dvl1640281718303", 
-                   "title":"Profiles", 
-                   "description":"Profile description and characteristics", 
+                   "title":"Manage a compute group using profiles", 
+                   "description":"Profile purpose and configuration", 
                    "url":"Vantage/dvl1640281718303.md"
                    }
                 , 
@@ -65,13 +65,6 @@
 
                 ]
 
-             }
-          , 
-          { 
-             "id":"sqv1658772608902", 
-             "title":"Manage compute groups", 
-             "description":"Considerations for viewing and editing compute groups", 
-             "url":"Vantage/sqv1658772608902.md"
              }
 
           ]
