@@ -16,7 +16,7 @@ The following is a summary of how to store data in VantageCloud Lake Edition Obj
 Create a foreign table with data in S3 bucket. 
 The Authorization object, retail_sample_data.DEMO_AUTH_NOS is created at the time of your account provision. It has Read Only access to S3 bucket td-usecases-data-store.
  
-```sql 
+```sql
 CREATE FOREIGN TABLE foreign_csvdata
 ,EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
 USING (location('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/CSVDATA/'));
@@ -33,7 +33,7 @@ SELECT * FROM foreign_csvdata;
 
 If you have an existing foreign table with data in S3 bucket and want to load the data into a new OFS table, you can use the following statement.
 
-```sql 
+```sql
 CREATE MULTISET TABLE ofs_csvdata
 ,STORAGE = TD_OFSSTORAGE
 AS ( SELECT site_no, datetime, Precipitation, GageHeight, Flow, GageHeight2 FROM foreign_csvdata )
