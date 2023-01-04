@@ -51,15 +51,15 @@
              "children":[
                 { 
                    "id":"dvl1640281718303", 
-                   "title":"Manage a compute group using profiles", 
-                   "description":"Profile purpose and configuration", 
+                   "title":"Manage a compute group", 
+                   "description":"Compute profiles and their configuration", 
                    "url":"Vantage/dvl1640281718303.md"
                    }
                 , 
                 { 
                    "id":"wdz1640281743091", 
-                   "title":"User roles and access", 
-                   "description":"User roles and access descriptions and characteristics", 
+                   "title":"Compute group access", 
+                   "description":"Assignment of compute groups", 
                    "url":"Vantage/wdz1640281743091.md"
                    }
 
@@ -155,7 +155,7 @@
           , 
           { 
              "id":"juo1640281123239", 
-             "title":"Add a connection", 
+             "title":"Connect to the environment", 
              "description":"Considerations for connecting to an account", 
              "url":"Vantage/juo1640281123239.md"
              }
@@ -191,20 +191,20 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
-       "description":"View current or completed queries on the account.", 
+       "description":"View current and completed queries.", 
        "url":"Vantage/ajr1640280560519.md", 
        "children":[
           { 
              "id":"aow1659389241176", 
              "title":"Queries key concepts", 
-             "description":"Queries description, components, and characteristics", 
+             "description":"Query types", 
              "url":"Vantage/aow1659389241176.md"
              }
           , 
           { 
              "id":"fcd1640281818081", 
-             "title":"Load current and completed queries", 
-             "description":"Considerations for loading queries", 
+             "title":"View current and completed queries", 
+             "description":"Considerations for viewing queries", 
              "url":"Vantage/fcd1640281818081.md"
              }
 
@@ -301,20 +301,13 @@
     { 
        "id":"arh1640280750562", 
        "title":"Users", 
-       "description":"View and manage users, including roles and permissions.", 
+       "description":"Manage the users of an environment", 
        "url":"Vantage/arh1640280750562.md", 
        "children":[
           { 
-             "id":"hnc1659392455718", 
-             "title":"User key concepts", 
-             "description":"User description, components, and characteristics", 
-             "url":"Vantage/hnc1659392455718.md"
-             }
-          , 
-          { 
              "id":"wxe1659392685092", 
              "title":"Manage users", 
-             "description":"Considerations for viewing, adding, and editing users", 
+             "description":"Considerations for managing users", 
              "url":"Vantage/wxe1659392685092.md"
              }
 
