@@ -143,6 +143,8 @@ SELECT * FROM WRITE_NOS (
 
 This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
+NOTE: "sample_csv_local" used below is a table that exists in your cloud lake environment.
+
 ```sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
@@ -164,7 +166,7 @@ SELECT * FROM WRITE_NOS (
 --      AUTHORIZATION ('{\"Access_ID\":\"AccessID\",\"Access_Key\":\"AccessKey\"}')
         NAMING ('DISCRETE')
         INCLUDE_ORDERING ('FALSE')
-        STOREDAS ('PARQUET')
+        STOREDAS ('PARQUET'))
  AS d;
 ```
 
