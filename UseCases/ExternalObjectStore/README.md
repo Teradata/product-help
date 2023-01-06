@@ -70,16 +70,35 @@ Create a foreign table:
 
 
 ```sql
-CREATE FOREIGN TABLE sample_table
---, EXTERNAL SECURITY MyAuth
-USING (LOCATION('/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'));
+CREATE MULTISET FOREIGN TABLE sample_sensor ,FALLBACK,
+     EXTERNAL SECURITY MyAuth, MAP = TD_MAP1
+    (
+        sensedate DATE,
+        sensetime TIME,
+        epoch INTEGER,
+        moteid INTEGER,
+        temperature FLOAT,
+        humidity FLOAT,
+        light FLOAT,
+        voltage FLOAT
+    )
+USING
+    (
+        LOCATION  ('/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/')
+        MANIFEST  ('FALSE')
+        ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
+        STOREDAS  ('TEXTFILE')
+        HEADER  ('FALSE')
+        STRIP_EXTERIOR_SPACES  ('FALSE')
+    )
+NO PRIMARY INDEX ;
 ```
 
 View some data using the foreign table:
 
 
 ```sql
-SELECT TOP 2 * FROM sample_table;
+SELECT TOP 2 * FROM sample_sensor;
 ```
 
 ### Importing Data Into Vantage From Data Stored on Amazon S3
@@ -120,7 +139,7 @@ Example 1 selects all rows in local sample_csv_local to copy the dataset to the 
 
 ```sql
 SELECT * FROM WRITE_NOS (
-    ON ( SELECT * FROM sample_csv_local )
+    ON ( SELECT * FROM sample_sensor )
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample1/')
         AUTHORIZATION (MyAuth)
@@ -133,22 +152,19 @@ SELECT * FROM WRITE_NOS (
 
 Example 2 copies the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
-NOTE: "sample_csv_local" used below is a table that exists in your cloud lake environment.
-
 ```sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
-            sensdate
-            ,senstime
-            ,epoch
-            ,moteid
-            ,temperature
-            ,humidity
-            ,light
-            ,voltage
-            ,sensdatetime
-            ,year(sensdate) TheYear
-         FROM sample_csv_local )
+            sensedate,
+            sensetime,
+            epoch,
+            moteid,
+            temperature,
+            humidity,
+            light,
+            voltage,
+            year(sensedate) TheYear
+        FROM sample_sensor )
     PARTITION BY TheYear ORDER BY TheYear
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample2/')
@@ -175,7 +191,7 @@ DROP AUTHORIZATION MyAuth;
 ```
 
 ```sql
-DROP TABLE sample_table;
+DROP TABLE sample_sensor;
 ```
 
 ```sql
