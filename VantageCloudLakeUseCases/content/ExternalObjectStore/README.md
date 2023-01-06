@@ -7,7 +7,7 @@ Open Editor to proceed with this use case.
 
 ### Introduction
 
-The following is a summary of how to copy data from VantageCloud Lake to an object store. You must provide your own bucket to execute the example queries below. We are using the __sample_sensor__ table to simulate copying data from a table in your vantage system to the external object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
+This section shows how to copy data from VantageCloud Lake to an object store. To execute the example queries you must provide your own bucket. The __sample_sensor__ table simulates copying data from a table in your Vantage system to the external object store. You can modify these examples to access to your own datasets. Although these example datasets do not require login credentials, you should use login credentials to access your own datasets.
 
 You can use similar SQL to access your own object stores. Simply replace the following:
 * __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
@@ -160,7 +160,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Example 2 
 
-This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
+This example selects all rows in the __sample_sensor__ table to copy the dataset to the object store's sample1 partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
