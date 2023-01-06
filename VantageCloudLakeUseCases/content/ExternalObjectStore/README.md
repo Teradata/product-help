@@ -7,7 +7,7 @@ Open Editor to proceed with this use case.
 
 ### Introduction
 
-The following is a summary of how to access different formats of data stored in an object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
+The following is a summary of how to copy data from VantageCloud Lake to an object store. You must provide your own bucket to execute the example queries below. We are using the __sample_sensor__ table to simulate copying data from a table in your vantage system to the external object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
 
 You can use similar SQL to access your own object stores. Simply replace the following:
 * __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
@@ -145,7 +145,7 @@ Before running the following examples, replace the following fields in the examp
 * [optionally] *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ### Example 1 
-This first example will select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
+This first example will select all rows in sample_sensor to copy the dataset to the object store’s *sample1* partition: 
 
 ```sql
 SELECT * FROM WRITE_NOS (
