@@ -160,7 +160,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Example 2 
 
-This example selects all rows in the __sample_sensor__ table to copy the dataset to the object store's sample1 partition:
+This example copies the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
