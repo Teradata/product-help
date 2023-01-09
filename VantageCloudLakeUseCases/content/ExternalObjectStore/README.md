@@ -7,7 +7,7 @@ Open Editor to proceed with this use case.
 
 ### Introduction
 
-The following is a summary of how to access different formats of data stored in an object store. You can copy and modify the example queries below to access your own datasets. For simplicity the included datasets are setup to not need credentials, but it is highly recommended that you use credentials to access your own datasets.
+This section shows how to copy data from VantageCloud Lake to an object store. To execute the example queries you must provide your own bucket. The __sample_sensor__ table simulates copying data from a table in your Vantage system to the external object store. You can modify these examples to access to your own datasets. Although these example datasets do not require login credentials, you should use login credentials to access your own datasets.
 
 You can use similar SQL to access your own object stores. Simply replace the following:
 * __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
@@ -80,15 +80,34 @@ Create a foreign table:
 
 
 ```sql
-CREATE FOREIGN TABLE sample_table
-, EXTERNAL SECURITY MyAuth
-USING (LOCATION('/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'));
+CREATE MULTISET FOREIGN TABLE sample_sensor ,FALLBACK,
+     EXTERNAL SECURITY MyAuth, MAP = TD_MAP1
+    (
+        sensedate DATE,
+        sensetime TIME,
+        epoch INTEGER,
+        moteid INTEGER,
+        temperature FLOAT,
+        humidity FLOAT,
+        light FLOAT,
+        voltage FLOAT
+    )
+USING
+    (
+        LOCATION  ('/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/')
+        MANIFEST  ('FALSE')
+        ROWFORMAT  ('{"field_delimiter":",","record_delimiter":"\n","character_set":"LATIN"}')
+        STOREDAS  ('TEXTFILE')
+        HEADER  ('FALSE')
+        STRIP_EXTERIOR_SPACES  ('FALSE')
+    )
+NO PRIMARY INDEX ;
 ```
 
 View some data using the foreign table:
 
 ```sql
-SELECT TOP 2 * FROM sample_table;
+SELECT TOP 2 * FROM sample_sensor;
 ```
 
 ### Importing Data Into Vantage From Data Stored on Amazon S3
@@ -126,11 +145,11 @@ Before running the following examples, replace the following fields in the examp
 * [optionally] *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ### Example 1 
-This first example will select all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
+This first example will select all rows in sample_sensor to copy the dataset to the object store’s *sample1* partition: 
 
 ```sql
 SELECT * FROM WRITE_NOS (
-    ON ( SELECT * FROM sample_csv_local )
+    ON ( SELECT * FROM sample_sensor )
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample1/')
         AUTHORIZATION (MyAuth)
@@ -141,22 +160,21 @@ SELECT * FROM WRITE_NOS (
 
 ### Example 2 
 
-This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
+This example selects all rows in the __sample_sensor__ table to copy the dataset to the object store's sample1 partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
-            sensdate
-            ,senstime
-            ,epoch
-            ,moteid
-            ,temperature
-            ,humidity
-            ,light
-            ,voltage
-            ,sensdatetime
-            ,year(sensdate) TheYear
-         FROM sample_csv_local )
+            sensedate,
+            sensetime,
+            epoch,
+            moteid,
+            temperature,
+            humidity,
+            light,
+            voltage,
+            year(sensedate) TheYear
+        FROM sample_sensor )
     PARTITION BY TheYear ORDER BY TheYear
     USING
         LOCATION ('/s3/YourBucketName.s3.amazonaws.com/sample2/')
@@ -164,7 +182,7 @@ SELECT * FROM WRITE_NOS (
 --      AUTHORIZATION ('{\"Access_ID\":\"AccessID\",\"Access_Key\":\"AccessKey\"}')
         NAMING ('DISCRETE')
         INCLUDE_ORDERING ('FALSE')
-        STOREDAS ('PARQUET')
+        STOREDAS ('PARQUET'))
  AS d;
 ```
 
@@ -183,7 +201,7 @@ DROP AUTHORIZATION MyAuth;
 ```
 
 ```sql
-DROP TABLE sample_table;
+DROP TABLE sample_sensor;
 ```
 
 ```sql
