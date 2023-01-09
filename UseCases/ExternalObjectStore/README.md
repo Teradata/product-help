@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Learn how to access different formats of data stored in an object store. You can copy and modify the example queries to access your own datasets. For simplicity, datasets included do not require credentials, but we recommend that you use credentials to access your own datasets.
+This section shows how to copy data from Vantage to an object store. To execute the example queries you must provide your own bucket. The __sample_sensor__ table simulates copying data from a table in your Vantage system to the external object store. You can modify these examples to access to your own datasets. Although these example datasets do not require login credentials, you should use login credentials to access your own datasets.
 
 You can use similar SQL to access your own object stores by replacing the following:
 * __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
@@ -135,7 +135,7 @@ Before running the following examples, replace these fields in the example scrip
 * [optionally] *AccessKey* - From the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ### Example 1 
-Example 1 selects all rows in local sample_csv_local to copy the dataset to the object store's *sample1* partition:
+This example selects all rows in the sample_sensor table to copy the dataset to the object store's sample1 partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
@@ -150,7 +150,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Example 2 
 
-Example 2 copies the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
+This second example will copy the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
