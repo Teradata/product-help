@@ -145,7 +145,7 @@ Before running the following examples, replace the following fields in the examp
 * [optionally] *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ### Example 1 
-This first example will select all rows in sample_sensor to copy the dataset to the object store’s *sample1* partition: 
+This example selects all rows in the __sample_sensor__ table to copy the dataset to the object store's *sample1* partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
@@ -160,7 +160,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Example 2 
 
-This example selects all rows in the __sample_sensor__ table to copy the dataset to the object store's sample1 partition:
+This example copies the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
 
 ```sql
 SELECT * FROM WRITE_NOS (
