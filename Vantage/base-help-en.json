@@ -241,8 +241,22 @@
                 { 
                    "id":"yml1671157089031", 
                    "title":"Private link change request", 
-                   "description":"How to request a Private Link endpoint for QueryGrid provisioning", 
+                   "description":"How to request a interface endpoint for QueryGrid provisioning", 
                    "url":"Vantage/yml1671157089031.md"
+                   }
+                , 
+                { 
+                   "id":"jwz1674078829554", 
+                   "title":"Load balancer network", 
+                   "description":"Steps to create an interface VPC endpoint", 
+                   "url":"Vantage/jwz1674078829554.md"
+                   }
+                , 
+                { 
+                   "id":"vli1674086430361", 
+                   "title":"Data Source Advanced Settings", 
+                   "description":"", 
+                   "url":"Vantage/vli1674086430361.md"
                    }
 
                 ]
@@ -266,14 +280,76 @@
                    "id":"vhb1640282164870", 
                    "title":"Data sources", 
                    "description":"Considerations for data source management", 
-                   "url":"Vantage/vhb1640282164870.md"
+                   "url":"Vantage/vhb1640282164870.md", 
+                   "children":[
+                      { 
+                         "id":"yfd1674158023864", 
+                         "title":"Edit data source", 
+                         "description":"", 
+                         "url":"Vantage/yfd1674158023864.md"
+                         }
+                      , 
+                      { 
+                         "id":"zof1674159380680", 
+                         "title":"Edit connector", 
+                         "description":"", 
+                         "url":"Vantage/zof1674159380680.md"
+                         }
+                      , 
+                      { 
+                         "id":"kzu1674159463068", 
+                         "title":"Edit link", 
+                         "description":"", 
+                         "url":"Vantage/kzu1674159463068.md"
+                         }
+
+                      ]
+
                    }
                 , 
                 { 
                    "id":"zxp1640282246701", 
                    "title":"Settings", 
                    "description":"Considerations for QueryGrid settings", 
-                   "url":"Vantage/zxp1640282246701.md"
+                   "url":"Vantage/zxp1640282246701.md", 
+                   "children":[
+                      { 
+                         "id":"wne1674087932617", 
+                         "title":"Bridge Settings", 
+                         "description":"", 
+                         "url":"Vantage/wne1674087932617.md"
+                         }
+                      , 
+                      { 
+                         "id":"iwx1674087965329", 
+                         "title":"Network settings", 
+                         "description":"", 
+                         "url":"Vantage/iwx1674087965329.md"
+                         }
+                      , 
+                      { 
+                         "id":"zap1674087994421", 
+                         "title":"Communication policies", 
+                         "description":"", 
+                         "url":"Vantage/zap1674087994421.md"
+                         }
+                      , 
+                      { 
+                         "id":"hmn1674088306575", 
+                         "title":"User and role mapping settings", 
+                         "description":"", 
+                         "url":"Vantage/hmn1674088306575.md"
+                         }
+                      , 
+                      { 
+                         "id":"eyz1674088497701", 
+                         "title":"Private link settings", 
+                         "description":"", 
+                         "url":"Vantage/eyz1674088497701.md"
+                         }
+
+                      ]
+
                    }
                 , 
                 { 
