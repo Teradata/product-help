@@ -315,22 +315,22 @@
                    "children":[
                       { 
                          "id":"wne1674087932617", 
-                         "title":"Bridge Settings", 
-                         "description":"", 
+                         "title":"Bridge settings", 
+                         "description":"Add and edit bridge settings", 
                          "url":"Vantage/wne1674087932617.md"
                          }
                       , 
                       { 
                          "id":"iwx1674087965329", 
                          "title":"Network settings", 
-                         "description":"", 
+                         "description":"Adding and removing networks and their settings", 
                          "url":"Vantage/iwx1674087965329.md"
                          }
                       , 
                       { 
                          "id":"zap1674087994421", 
                          "title":"Communication policies", 
-                         "description":"", 
+                         "description":"Add or edit a communication policy", 
                          "url":"Vantage/zap1674087994421.md"
                          }
                       , 
