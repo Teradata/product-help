@@ -16,14 +16,14 @@ This use case guides you through management of Compute Clusters in VantageCloud 
 The following permissions are required for this use case:
 
 ```sql
-GRANT CREATE COMPUTE GROUP TO "${username}";
-GRANT DROP COMPUTE GROUP TO "${username}";
+GRANT CREATE COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
+GRANT DROP COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
 
-GRANT CREATE ROLE TO "${username}";
-GRANT DROP ROLE TO "${username}";
+GRANT CREATE ROLE TO "${username}" WITH GRANT OPTION;
+GRANT DROP ROLE TO "${username}" WITH GRANT OPTION;
 
-GRANT CREATE COMPUTE PROFILE TO "${username}";
-GRANT DROP COMPUTE PROFILE TO "${username}";
+GRANT CREATE COMPUTE PROFILE TO "${username}" WITH GRANT OPTION;
+GRANT DROP COMPUTE PROFILE TO "${username}" WITH GRANT OPTION;
 
 GRANT SELECT ON DBC.ComputeGroupsV TO "${username}";
 GRANT SELECT ON DBC.ComputeProfilesV TO "${username}";
@@ -120,7 +120,7 @@ INITIALLY_SUSPENDED  ('FALSE') START_TIME  ('') END_TIME  ('') COOLDOWN_PERIOD  
 
 ### Query Compute Cluster dictionary & Get status about the COMPUTE CLUSTER
  
-```sql 
+```sql
 -- View existing maps for available Compute Cluster sizes
 SELECT * FROM DBC.ComputeMaps ORDER BY NodeCount;
 
