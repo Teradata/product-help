@@ -237,7 +237,7 @@
                 , 
                 { 
                    "id":"yml1671157089031", 
-                   "title":"Private link change request", 
+                   "title":"PrivateLink change request", 
                    "description":"Request a interface endpoint to enable QueryGrid", 
                    "url":"Vantage/yml1671157089031.md"
                    }
@@ -261,7 +261,7 @@
              "children":[
                 { 
                    "id":"goh1640282193934", 
-                   "title":"Fabric Overview", 
+                   "title":"Fabric overview", 
                    "description":"Views that are available in the fabric graphic", 
                    "url":"Vantage/goh1640282193934.md"
                    }
@@ -340,7 +340,7 @@
                       , 
                       { 
                          "id":"eyz1674088497701", 
-                         "title":"Private link settings", 
+                         "title":"PrivateLink settings", 
                          "description":"AWS endpoint additions", 
                          "url":"Vantage/eyz1674088497701.md"
                          }
