@@ -31,30 +31,6 @@
        }
     , 
     { 
-       "id":"lyi1662583368110", 
-       "title":"Compute workers", 
-       "description":"Create nodes for heavy processing.", 
-       "url":"Vantage/lyi1662583368110.md", 
-       "children":[
-          { 
-             "id":"aix1662583909152", 
-             "title":"Compute worker key concepts", 
-             "description":"Compute worker description, components, and characteristics", 
-             "url":"Vantage/aix1662583909152.md"
-             }
-          , 
-          { 
-             "id":"azi1662584068628", 
-             "title":"Create a compute worker", 
-             "description":"Considerations for creating a Compute worker", 
-             "url":"Vantage/azi1662584068628.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"mqu1640280532737", 
        "title":"Compute groups", 
        "description":"Create, view, and manage compute groups. ", 
@@ -162,30 +138,6 @@
        }
     , 
     { 
-       "id":"jlf1663616946889", 
-       "title":"Data sharing", 
-       "description":"Share data with other users, including tables and views.", 
-       "url":"Vantage/jlf1663616946889.md", 
-       "children":[
-          { 
-             "id":"pgt1663616908716", 
-             "title":"Data sharing key concepts", 
-             "description":"Dating sharing description, components, and characteristics", 
-             "url":"Vantage/pgt1663616908716.md"
-             }
-          , 
-          { 
-             "id":"vlk1663617148666", 
-             "title":"Create data share", 
-             "description":"Considerations for creating a data share", 
-             "url":"Vantage/vlk1663617148666.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries.", 
@@ -222,13 +174,6 @@
        "description":"View company information and manage administrators.", 
        "url":"Vantage/apw1640280478763.md", 
        "children":[
-          { 
-             "id":"bbi1659385111806", 
-             "title":"Organization Key Concepts", 
-             "description":"Organization description, components, and characteristics", 
-             "url":"Vantage/bbi1659385111806.md"
-             }
-          , 
           { 
              "id":"hrv1640281410572", 
              "title":"Manage organization admins", 
@@ -295,13 +240,6 @@
                    "title":"PrivateLink change request", 
                    "description":"Request a interface endpoint to enable QueryGrid", 
                    "url":"Vantage/yml1671157089031.md"
-                   }
-                , 
-                { 
-                   "id":"vli1674086430361", 
-                   "title":"Data source advanced settings", 
-                   "description":"", 
-                   "url":"Vantage/vli1674086430361.md"
                    }
                 , 
                 { 
@@ -434,37 +372,6 @@
 
                 ]
 
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"auw1640280669500", 
-       "title":"Flow", 
-       "description":"Load data from a compatible object store.", 
-       "url":"Vantage/auw1640280669500.md", 
-       "children":[
-          { 
-             "id":"geh1659041833397", 
-             "title":"Flow key concepts", 
-             "description":"Flow description, components, and characteristics", 
-             "url":"Vantage/geh1659041833397.md"
-             }
-          , 
-          { 
-             "id":"luq1640282345986", 
-             "title":"Create a flow", 
-             "description":"Considerations for creating a flow", 
-             "url":"Vantage/luq1640282345986.md"
-             }
-          , 
-          { 
-             "id":"wsa1640282405363", 
-             "title":"Manage flow", 
-             "description":"Considerations for viewing and editing flows.", 
-             "url":"Vantage/wsa1640282405363.md"
              }
 
           ]
