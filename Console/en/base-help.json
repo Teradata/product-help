@@ -27,7 +27,13 @@
         "id": "dataProtectionPages",
         "title": "Data Protection",
         "description": "Review and create data protection pages",
-        "url": "Console/en/DataProtectionPages/Data-Protection-Pages.md"
+        "url": "Console/en/DataProtectionPages/Data-Protection-Pages.md",
+        "children": [{
+                "id": "dataRestoration",
+                "title": "Data Restoration",
+                "url": "Console/en/DataProtectionPages/Data-Restoration.md"
+             }
+         ]
     },
     {
         "id": "queryWriteData",
