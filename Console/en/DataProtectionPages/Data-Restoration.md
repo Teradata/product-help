@@ -4,7 +4,7 @@ Select the necessary settings from the following for restoring your backup.
 |---|---|
 | Continue on access rights violation  |The job proceeds even when the DUMP access rights violation occurs.  |
 | Run as copy job  |Restores data into a database with a different internal database ID than the one in the backup set. **Do not select** this option when the database system is original, and the database ID matches with the saved backups.   |
-| Rename objects during restore on the target site by adding a suffix. |Select to add a suffix for renamed tables to differentiate from the original.   |  
+| Rename objects during restore on the target site by adding a suffix |Select to add a suffix for renamed tables to differentiate from the original.   |  
 |Restore to a different database on the target site|Select to choose the database from the available list.|
 |Skip statistics|Select to skip collecting statistics during a backup or restore job. |
 
