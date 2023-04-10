@@ -35,6 +35,36 @@
              }
          ]
     },
+    { 
+        "id":"editorPages", 
+        "title":"Editor", 
+        "description":"Write and run SQL queries.", 
+        "url":"Console/en/Editor/Editor-Getting-Started.md", 
+        "children":[
+           { 
+              "id":"editorKeyConcepts", 
+              "title":"Editor key concepts", 
+              "description":"Editor description, components, and characteristics", 
+              "url":"Console/en/Editor/Editor-Key-Concepts.md"
+              }
+           , 
+           { 
+              "id":"editorConnection", 
+              "title":"Connect to a site", 
+              "description":"Considerations for connecting to an account", 
+              "url":"Console/en/Editor/Editor-Connection.md.md"
+              }
+           , 
+           { 
+              "id":"editorRunScript", 
+              "title":"Create and run a SQL statement or script", 
+              "description":"Considerations for running SQL", 
+              "url":"Console/en/Editor/Editor-Run-Script.md"
+              } 
+           ]
+ 
+        }
+     , 
     {
         "id": "queryWriteData",
         "title": "Query and Write Data",
