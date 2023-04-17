@@ -340,12 +340,13 @@
              "id":"hnc1681756740573", 
              "title":"Environments (test topic)", 
              "description":"test topic", 
-             "url":"Vantage/hnc1681756740573.md",
-		"childrenurl":"Vantage/sbt1640280496980.md"
+             "url":"Vantage/hnc1681756740573.md"
              }
-	       ]
-    }
-	,
+
+          ]
+
+       }
+    , 
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
