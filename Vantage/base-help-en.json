@@ -346,17 +346,6 @@
 	       ]
     }
 	,
-	{
-       "id":"sbt1640280496980", 
-       "title":"Environments", 
-       "description":"Load data, run queries, and more.", 
-       "url":"Vantage/sbt1640280496980.md", 
-	}
-	,
-
-          ]
-       }
-    , 
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
