@@ -224,13 +224,6 @@
        }
     , 
     { 
-       "id":"fcv1681758902467", 
-       "title":"Access Management", 
-       "description":"", 
-       "url":"Vantage/fcv1681758902467.md"
-       }
-    , 
-    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries.", 
@@ -271,71 +264,9 @@
     { 
        "id":"apw1640280478763", 
        "title":"Organization", 
-       "description":"View company information and manage administrators.", 
+       "description":"Manage your VantageCloud Lake organization.", 
        "url":"Vantage/apw1640280478763.md", 
        "children":[
-          { 
-             "id":"hrv1640281410572", 
-             "title":"Manage organization admins", 
-             "description":"Considerations for managing organization admins", 
-             "url":"Vantage/hrv1640281410572.md"
-             }
-          , 
-          { 
-             "id":"mxq1680183881642", 
-             "title":"Set up single sign-on", 
-             "description":"Configure identity providers and realms", 
-             "url":"Vantage/mxq1680183881642.md", 
-             "children":[
-                { 
-                   "id":"whf1680184025148", 
-                   "title":"Configure an identity provider", 
-                   "description":"", 
-                   "url":"Vantage/whf1680184025148.md", 
-                   "children":[
-                      { 
-                         "id":"lfb1680194800865", 
-                         "title":"OpenID Connect", 
-                         "description":"", 
-                         "url":"Vantage/lfb1680194800865.md"
-                         }
-                      , 
-                      { 
-                         "id":"dhs1680194823192", 
-                         "title":"SAML", 
-                         "description":"", 
-                         "url":"Vantage/dhs1680194823192.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"ruf1680184116601", 
-                   "title":"Create realms", 
-                   "description":"", 
-                   "url":"Vantage/ruf1680184116601.md"
-                   }
-                , 
-                { 
-                   "id":"jbj1680184191443", 
-                   "title":"Associate realms with environments", 
-                   "description":"", 
-                   "url":"Vantage/jbj1680184191443.md"
-                   }
-                , 
-                { 
-                   "id":"qma1680184498880", 
-                   "title":"Single sign-on FAQ", 
-                   "description":"", 
-                   "url":"Vantage/qma1680184498880.md"
-                   }
-
-                ]
-
-             }
-          , 
           { 
              "id":"hnc1681756740573", 
              "title":"Environments (test topic)", 
@@ -574,20 +505,75 @@
     { 
        "id":"fcv1681758902467", 
        "title":"Access Management", 
-       "description":"", 
-       "url":"Vantage/fcv1681758902467.md"
-       }
-    , 
-    { 
-       "id":"arh1640280750562", 
-       "title":"Users", 
-       "description":"Manage the users of an environment", 
-       "url":"Vantage/arh1640280750562.md", 
+       "description":"Set up single sign-on and manage users.", 
+       "url":"Vantage/fcv1681758902467.md", 
        "children":[
           { 
+             "id":"mxq1680183881642", 
+             "title":"Set up single sign-on", 
+             "description":"Configure identity providers and realms", 
+             "url":"Vantage/mxq1680183881642.md", 
+             "children":[
+                { 
+                   "id":"whf1680184025148", 
+                   "title":"Configure an identity provider", 
+                   "description":"", 
+                   "url":"Vantage/whf1680184025148.md", 
+                   "children":[
+                      { 
+                         "id":"lfb1680194800865", 
+                         "title":"OpenID Connect", 
+                         "description":"", 
+                         "url":"Vantage/lfb1680194800865.md"
+                         }
+                      , 
+                      { 
+                         "id":"dhs1680194823192", 
+                         "title":"SAML", 
+                         "description":"", 
+                         "url":"Vantage/dhs1680194823192.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ruf1680184116601", 
+                   "title":"Create realms", 
+                   "description":"", 
+                   "url":"Vantage/ruf1680184116601.md"
+                   }
+                , 
+                { 
+                   "id":"jbj1680184191443", 
+                   "title":"Associate realms with environments", 
+                   "description":"", 
+                   "url":"Vantage/jbj1680184191443.md"
+                   }
+                , 
+                { 
+                   "id":"qma1680184498880", 
+                   "title":"Single sign-on FAQ", 
+                   "description":"", 
+                   "url":"Vantage/qma1680184498880.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"hrv1640281410572", 
+             "title":"Manage organization admins", 
+             "description":"Considerations for managing organization admins", 
+             "url":"Vantage/hrv1640281410572.md"
+             }
+          , 
+          { 
              "id":"wxe1659392685092", 
-             "title":"Manage users", 
-             "description":"Considerations for managing users", 
+             "title":"Manage database users", 
+             "description":"Considerations for managing users of an environment", 
              "url":"Vantage/wxe1659392685092.md"
              }
 
