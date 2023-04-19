@@ -271,7 +271,7 @@
              "id":"hnc1681756740573", 
              "title":"Environments (test topic)", 
              "description":"test topic", 
-             "url":"Vantage/hnc1681756740573.md"
+             "url":"\"url\":\"Vantage/sbt1640280496980.md\""
              }
 
           ]
@@ -505,7 +505,7 @@
     { 
        "id":"fcv1681758902467", 
        "title":"Access Management", 
-       "description":"Set up single sign-on and manage users.", 
+       "description":"Manage access to your VantageCloud Lake organization.", 
        "url":"Vantage/fcv1681758902467.md", 
        "children":[
           { 
@@ -529,7 +529,7 @@
                       , 
                       { 
                          "id":"dhs1680194823192", 
-                         "title":"SAML", 
+                         "title":"SAML 2.0", 
                          "description":"", 
                          "url":"Vantage/dhs1680194823192.md"
                          }
@@ -580,8 +580,7 @@
           ]
 
        }
-    , 
-    { 
+    ,     { 
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
