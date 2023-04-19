@@ -254,7 +254,7 @@
              "id":"iww1680797117120", 
              "title":"Use cases", 
              "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-             "url":"Vantage/bkm1640280721917.md"
+             "url":"Vantage/iww1680797117120.md"
              }
 
           ]
@@ -272,26 +272,6 @@
              "title":"Environments (test topic)", 
              "description":"test topic", 
              "url":"Vantage/sbt1640280496980.md"
-		"children":[
-          { 
-             "id":"nmr1658424425362", 
-             "title":"Environment key concepts", 
-             "description":"Components of an environment", 
-             "url":"Vantage/nmr1658424425362.md"
-             }
-          , 
-          { 
-             "id":"qiv1640281527006", 
-             "title":"Create an environment", 
-             "description":"Considerations for creating an environment", 
-             "url":"Vantage/qiv1640281527006.md"
-             }
-          , 
-          { 
-             "id":"laq1640280582810", 
-             "title":"Configure connection settings", 
-             "description":"Considerations for using Internet or Private link", 
-             "url":"Vantage/laq1640280582810.md"
              }
 
           ]
