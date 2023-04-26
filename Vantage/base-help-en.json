@@ -1,5 +1,12 @@
 {  "items":[
     { 
+       "id":"bab1682536172420", 
+       "title":"What's New", 
+       "description":"", 
+       "url":"Vantage/bab1682536172420.md"
+       }
+    , 
+    { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
        "description":"Load data, run queries, and more.", 
@@ -117,6 +124,54 @@
              "title":"View and download storage data", 
              "description":"Analyze storage-related consumption data", 
              "url":"Vantage/nag1659050536098.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"onj1682104977691", 
+       "title":"Consumption (new)", 
+       "description":"", 
+       "url":"Vantage/onj1682104977691.md", 
+       "children":[
+          { 
+             "id":"tdv1682522711429", 
+             "title":"Compute consumption", 
+             "description":"", 
+             "url":"Vantage/tdv1682522711429.md", 
+             "children":[
+                { 
+                   "id":"qly1682524108665", 
+                   "title":"How compute resources are consumed", 
+                   "description":"", 
+                   "url":"Vantage/qly1682524108665.md"
+                   }
+                , 
+                { 
+                   "id":"qze1682528646873", 
+                   "title":"Review compute consumption", 
+                   "description":"", 
+                   "url":"Vantage/qze1682528646873.md"
+                   }
+                , 
+                { 
+                   "id":"qty1682530889318", 
+                   "title":"Manage compute consumption", 
+                   "description":"", 
+                   "url":"Vantage/qty1682530889318.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"nsc1682522782958", 
+             "title":"Storage consumption", 
+             "description":"", 
+             "url":"Vantage/nsc1682522782958.md"
              }
 
           ]
@@ -504,7 +559,7 @@
     , 
     { 
        "id":"fcv1681758902467", 
-       "title":"Access Management", 
+       "title":"Access management", 
        "description":"Manage access to your VantageCloud Lake organization.", 
        "url":"Vantage/fcv1681758902467.md", 
        "children":[
@@ -588,6 +643,7 @@
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
+    
 
     ]
 
