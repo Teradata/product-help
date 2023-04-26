@@ -27,8 +27,44 @@
         "id": "dataProtectionPages",
         "title": "Protection des données",
         "description": "Examiner et créer des pages de protection des données",
-        "url": "Console/fr/DataProtectionPages/Data-Protection-Pages.md"
+        "url": "Console/fr/DataProtectionPages/Data-Protection-Pages.md",
+        "children": [{
+                "id": "dataRestoration",
+                "title": "Restauration des données",
+                "url": "Console/fr/DataProtectionPages/Data-Restoration.md"
+             }
+         ]
     },
+    { 
+        "id":"editorPages", 
+        "title":"Éditeur", 
+        "description":"Écrivez et exécutez des requêtes SQL.", 
+        "url":"Console/fr/Editor/Editor-Getting-Started.md", 
+        "children":[
+           { 
+              "id":"editorKeyConcepts", 
+              "title":"Concepts clés de l’éditeur", 
+              "description":"Description, composants et caractéristiques de l’éditeur", 
+              "url":"Console/fr/Editor/Editor-Key-Concepts.md"
+              }
+           , 
+           { 
+              "id":"editorConnection", 
+              "title":"Se connecter à un site", 
+              "description":"Considérations relatives à la connexion à un compte", 
+              "url":"Console/fr/Editor/Editor-Connection.md"
+              }
+           , 
+           { 
+              "id":"editorRunScript", 
+              "title":"Créer et exécuter une instruction SQL ou un script", 
+              "description":"Considérations relatives à l’exécution de SQL", 
+              "url":"Console/fr/Editor/Editor-Run-Script.md"
+              } 
+           ]
+ 
+        }
+     , 
     {
         "id": "queryWriteData",
         "title": "Interroger et écrire des données",

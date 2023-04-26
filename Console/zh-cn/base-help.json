@@ -27,8 +27,44 @@
         "id": "dataProtectionPages",
         "title": "数据保护",
         "description": "检查和创建数据保护页面",
-        "url": "Console/zh-cn/DataProtectionPages/Data-Protection-Pages.md"
+        "url": "Console/zh-cn/DataProtectionPages/Data-Protection-Pages.md",
+        "children": [{
+                "id": "dataRestoration",
+                "title": "数据恢复",
+                "url": "Console/zh-cn/DataProtectionPages/Data-Restoration.md"
+             }
+         ]
     },
+    { 
+        "id":"editorPages", 
+        "title":"编辑器", 
+        "description":"编写和运行 SQL 查询。", 
+        "url":"Console/zh-cn/Editor/Editor-Getting-Started.md", 
+        "children":[
+           { 
+              "id":"editorKeyConcepts", 
+              "title":"编辑器主要概念", 
+              "description":"编辑器说明、组件和特性", 
+              "url":"Console/zh-cn/Editor/Editor-Key-Concepts.md"
+              }
+           , 
+           { 
+              "id":"editorConnection", 
+              "title":"连接到站点", 
+              "description":"连接帐户时的注意事项", 
+              "url":"Console/zh-cn/Editor/Editor-Connection.md"
+              }
+           , 
+           { 
+              "id":"editorRunScript", 
+              "title":"创建和运行 SQL 语句或脚本", 
+              "description":"运行 SQL 时的注意事项", 
+              "url":"Console/zh-cn/Editor/Editor-Run-Script.md"
+              } 
+           ]
+ 
+        }
+     , 
     {
         "id": "queryWriteData",
         "title": "查询和写入数据",

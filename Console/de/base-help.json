@@ -27,8 +27,44 @@
         "id": "dataProtectionPages",
         "title": "Datensicherung",
         "description": "Datensicherungsseiten überprüfen und erstellen",
-        "url": "Console/de/DataProtectionPages/Data-Protection-Pages.md"
+        "url": "Console/de/DataProtectionPages/Data-Protection-Pages.md",
+        "children": [{
+                "id": "dataRestoration",
+                "title": "Datenwiederherstellung",
+                "url": "Console/de/DataProtectionPages/Data-Restoration.md"
+             }
+         ]
     },
+    { 
+        "id":"editorPages", 
+        "title":"Editor", 
+        "description":"Schreiben Sie SQL-Abfragen und führen Sie sie aus.", 
+        "url":"Console/de/Editor/Editor-Getting-Started.md", 
+        "children":[
+           { 
+              "id":"editorKeyConcepts", 
+              "title":"Editor – zentrale Begriffe", 
+              "description":"Editor – Beschreibung, Komponenten und Eigenschaften", 
+              "url":"Console/de/Editor/Editor-Key-Concepts.md"
+              }
+           , 
+           { 
+              "id":"editorConnection", 
+              "title":"Mit einer Site verbinden", 
+              "description":"Überlegungen zum Verbinden mit einem Konto", 
+              "url":"Console/de/Editor/Editor-Connection.md"
+              }
+           , 
+           { 
+              "id":"editorRunScript", 
+              "title":"SQL-Anweisung oder Skript erstellen und ausführen", 
+              "description":"Überlegungen zum Ausführen von SQL", 
+              "url":"Console/de/Editor/Editor-Run-Script.md"
+              } 
+           ]
+ 
+        }
+     , 
     {
         "id": "queryWriteData",
         "title": "Daten abfragen und schreiben",
