@@ -133,7 +133,7 @@
     { 
        "id":"onj1682104977691", 
        "title":"Consumption (new)", 
-       "description":"", 
+       "description":"View consumed compute and storage resources.", 
        "url":"Vantage/onj1682104977691.md", 
        "children":[
           { 
@@ -674,7 +674,6 @@
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
-    
 
     ]
 
