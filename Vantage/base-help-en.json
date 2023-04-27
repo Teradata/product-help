@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"What's New", 
-       "description":"Learn about the latest features, enhancements, and updates", 
+       "description":"", 
        "url":"Vantage/bab1682536172420.md"
        }
     , 
@@ -162,6 +162,13 @@
                    "description":"", 
                    "url":"Vantage/qty1682530889318.md"
                    }
+                , 
+                { 
+                   "id":"nzf1682539696119", 
+                   "title":"Compute consumption FAQ", 
+                   "description":"", 
+                   "url":"Vantage/nzf1682539696119.md"
+                   }
 
                 ]
 
@@ -171,7 +178,31 @@
              "id":"nsc1682522782958", 
              "title":"Storage consumption", 
              "description":"", 
-             "url":"Vantage/nsc1682522782958.md"
+             "url":"Vantage/nsc1682522782958.md", 
+             "children":[
+                { 
+                   "id":"pdf1682543766178", 
+                   "title":"How storage is consumed", 
+                   "description":"", 
+                   "url":"Vantage/pdf1682543766178.md"
+                   }
+                , 
+                { 
+                   "id":"vky1682545736669", 
+                   "title":"Review storage consumption", 
+                   "description":"", 
+                   "url":"Vantage/vky1682545736669.md"
+                   }
+                , 
+                { 
+                   "id":"aku1682545782916", 
+                   "title":"Storage consumption FAQ", 
+                   "description":"", 
+                   "url":"Vantage/aku1682545782916.md"
+                   }
+
+                ]
+
              }
 
           ]
