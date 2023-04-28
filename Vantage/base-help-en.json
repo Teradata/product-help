@@ -1,12 +1,5 @@
 {  "items":[
     { 
-       "id":"bab1682536172420", 
-       "title":"What's New", 
-       "description":"", 
-       "url":"Vantage/bab1682536172420.md"
-       }
-    , 
-    { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
        "description":"Load data, run queries, and more.", 
@@ -31,30 +24,6 @@
              "title":"Configure connection settings", 
              "description":"Considerations for using Internet or Private link", 
              "url":"Vantage/laq1640280582810.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"lyi1662583368110", 
-       "title":"Compute workers", 
-       "description":"Create nodes for heavy processing.", 
-       "url":"Vantage/lyi1662583368110.md", 
-       "children":[
-          { 
-             "id":"aix1662583909152", 
-             "title":"Compute worker key concepts", 
-             "description":"Compute worker description, components, and characteristics", 
-             "url":"Vantage/aix1662583909152.md"
-             }
-          , 
-          { 
-             "id":"azi1662584068628", 
-             "title":"Create a compute worker", 
-             "description":"Considerations for creating a Compute worker", 
-             "url":"Vantage/azi1662584068628.md"
              }
 
           ]
@@ -102,13 +71,13 @@
     { 
        "id":"pia1659047719497", 
        "title":"Consumption", 
-       "description":"View units consumed and export data.", 
+       "description":"View consumed compute and storage resources.", 
        "url":"Vantage/pia1659047719497.md", 
        "children":[
           { 
              "id":"pbu1659047908042", 
              "title":"Consumption key concepts", 
-             "description":"Consumption description, components, and characteristics", 
+             "description":"Consumption concepts and ", 
              "url":"Vantage/pbu1659047908042.md"
              }
           , 
@@ -131,88 +100,9 @@
        }
     , 
     { 
-       "id":"onj1682104977691", 
-       "title":"Consumption (new)", 
-       "description":"View consumed compute and storage resources.", 
-       "url":"Vantage/onj1682104977691.md", 
-       "children":[
-          { 
-             "id":"tdv1682522711429", 
-             "title":"Compute consumption", 
-             "description":"", 
-             "url":"Vantage/tdv1682522711429.md", 
-             "children":[
-                { 
-                   "id":"qly1682524108665", 
-                   "title":"How compute resources are consumed", 
-                   "description":"", 
-                   "url":"Vantage/qly1682524108665.md"
-                   }
-                , 
-                { 
-                   "id":"qze1682528646873", 
-                   "title":"Review compute consumption", 
-                   "description":"", 
-                   "url":"Vantage/qze1682528646873.md"
-                   }
-                , 
-                { 
-                   "id":"qty1682530889318", 
-                   "title":"Manage compute consumption", 
-                   "description":"", 
-                   "url":"Vantage/qty1682530889318.md"
-                   }
-                , 
-                { 
-                   "id":"nzf1682539696119", 
-                   "title":"Compute consumption FAQ", 
-                   "description":"", 
-                   "url":"Vantage/nzf1682539696119.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"nsc1682522782958", 
-             "title":"Storage consumption", 
-             "description":"", 
-             "url":"Vantage/nsc1682522782958.md", 
-             "children":[
-                { 
-                   "id":"pdf1682543766178", 
-                   "title":"How storage is consumed", 
-                   "description":"", 
-                   "url":"Vantage/pdf1682543766178.md"
-                   }
-                , 
-                { 
-                   "id":"vky1682545736669", 
-                   "title":"Review storage consumption", 
-                   "description":"", 
-                   "url":"Vantage/vky1682545736669.md"
-                   }
-                , 
-                { 
-                   "id":"aku1682545782916", 
-                   "title":"Storage consumption FAQ", 
-                   "description":"", 
-                   "url":"Vantage/aku1682545782916.md"
-                   }
-
-                ]
-
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"jrq1640280690304", 
        "title":"Data protection", 
-       "description":"Protect data with backup and recovery options", 
+       "description":"Protect data with backup and recovery options.", 
        "url":"Vantage/jrq1640280690304.md", 
        "children":[
           { 
@@ -248,68 +138,6 @@
        }
     , 
     { 
-       "id":"jlf1663616946889", 
-       "title":"Data sharing", 
-       "description":"Share data with other users, including tables and views.", 
-       "url":"Vantage/jlf1663616946889.md", 
-       "children":[
-          { 
-             "id":"pgt1663616908716", 
-             "title":"Data sharing key concepts", 
-             "description":"Dating sharing description, components, and characteristics", 
-             "url":"Vantage/pgt1663616908716.md"
-             }
-          , 
-          { 
-             "id":"vlk1663617148666", 
-             "title":"Create data share", 
-             "description":"Considerations for creating a data share", 
-             "url":"Vantage/vlk1663617148666.md", 
-             "children":[
-                { 
-                   "id":"rfg1681040443995", 
-                   "title":"Add Datasets", 
-                   "description":"Adding datasets", 
-                   "url":"Vantage/rfg1681040443995.md"
-                   }
-                , 
-                { 
-                   "id":"vph1681040670091", 
-                   "title":"Add Subscribers", 
-                   "description":"Adding subscribers", 
-                   "url":"Vantage/vph1681040670091.md"
-                   }
-                , 
-                { 
-                   "id":"vuh1681040768372", 
-                   "title":"Delete Share", 
-                   "description":"Deleting shares", 
-                   "url":"Vantage/vuh1681040768372.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"hdx1681040827922", 
-             "title":"Permissions", 
-             "description":"Data sharing user management", 
-             "url":"Vantage/hdx1681040827922.md"
-             }
-          , 
-          { 
-             "id":"yhq1681040726517", 
-             "title":"Settings", 
-             "description":"Data sharing settings", 
-             "url":"Vantage/yhq1681040726517.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries.", 
@@ -335,13 +163,6 @@
              "description":"Considerations for running SQL", 
              "url":"Vantage/dgd1640281158386.md"
              }
-          , 
-          { 
-             "id":"iww1680797117120", 
-             "title":"Use cases", 
-             "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-             "url":"Vantage/iww1680797117120.md"
-             }
 
           ]
 
@@ -351,17 +172,7 @@
        "id":"apw1640280478763", 
        "title":"Organization", 
        "description":"Manage your VantageCloud Lake organization.", 
-       "url":"Vantage/apw1640280478763.md", 
-       "children":[
-          { 
-             "id":"hnc1681756740573", 
-             "title":"Environments (test topic)", 
-             "description":"test topic", 
-             "url":"Vantage/hnc1681756740573.md"
-             }
-
-          ]
-
+       "url":"Vantage/apw1640280478763.md"
        }
     , 
     { 
@@ -391,7 +202,7 @@
     { 
        "id":"gmy1640280632324", 
        "title":"QueryGrid", 
-       "description":"Deploy and manage QueryGrid data analytics fabric", 
+       "description":"Deploy and manage QueryGrid data analytics fabric.", 
        "url":"Vantage/gmy1640280632324.md", 
        "children":[
           { 
@@ -558,97 +369,11 @@
        }
     , 
     { 
-       "id":"auw1640280669500", 
-       "title":"Flow", 
-       "description":"Load data from a compatible object store.", 
-       "url":"Vantage/auw1640280669500.md", 
-       "children":[
-          { 
-             "id":"geh1659041833397", 
-             "title":"Flow key concepts", 
-             "description":"Flow description, components, and characteristics", 
-             "url":"Vantage/geh1659041833397.md"
-             }
-          , 
-          { 
-             "id":"luq1640282345986", 
-             "title":"Create a flow", 
-             "description":"Considerations for creating a flow", 
-             "url":"Vantage/luq1640282345986.md"
-             }
-          , 
-          { 
-             "id":"wsa1640282405363", 
-             "title":"Manage flow", 
-             "description":"Considerations for viewing and editing flows.", 
-             "url":"Vantage/wsa1640282405363.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"fcv1681758902467", 
        "title":"Access management", 
        "description":"Manage access to your VantageCloud Lake organization.", 
        "url":"Vantage/fcv1681758902467.md", 
        "children":[
-          { 
-             "id":"mxq1680183881642", 
-             "title":"Set up single sign-on", 
-             "description":"Configure identity providers and realms", 
-             "url":"Vantage/mxq1680183881642.md", 
-             "children":[
-                { 
-                   "id":"whf1680184025148", 
-                   "title":"Configure an identity provider", 
-                   "description":"", 
-                   "url":"Vantage/whf1680184025148.md", 
-                   "children":[
-                      { 
-                         "id":"lfb1680194800865", 
-                         "title":"OpenID Connect", 
-                         "description":"", 
-                         "url":"Vantage/lfb1680194800865.md"
-                         }
-                      , 
-                      { 
-                         "id":"dhs1680194823192", 
-                         "title":"SAML 2.0", 
-                         "description":"", 
-                         "url":"Vantage/dhs1680194823192.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"ruf1680184116601", 
-                   "title":"Create realms", 
-                   "description":"", 
-                   "url":"Vantage/ruf1680184116601.md"
-                   }
-                , 
-                { 
-                   "id":"jbj1680184191443", 
-                   "title":"Associate realms with environments", 
-                   "description":"", 
-                   "url":"Vantage/jbj1680184191443.md"
-                   }
-                , 
-                { 
-                   "id":"qma1680184498880", 
-                   "title":"Single sign-on FAQ", 
-                   "description":"", 
-                   "url":"Vantage/qma1680184498880.md"
-                   }
-
-                ]
-
-             }
-          , 
           { 
              "id":"hrv1640281410572", 
              "title":"Manage organization admins", 
@@ -674,7 +399,6 @@
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
-
     ]
 
  }
