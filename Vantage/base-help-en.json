@@ -77,7 +77,7 @@
           { 
              "id":"pbu1659047908042", 
              "title":"Consumption key concepts", 
-             "description":"Consumption concepts and ", 
+             "description":"Resource consumption and managing costs", 
              "url":"Vantage/pbu1659047908042.md"
              }
           , 
@@ -399,6 +399,7 @@
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
+
     ]
 
  }
