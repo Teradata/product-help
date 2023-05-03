@@ -3,7 +3,8 @@
        "id":"bab1682536172420", 
        "title":"What's New", 
        "description":"", 
-       "url":"Vantage/bab1682536172420.md"
+       "url":"Vantage/bab1682536172420.md",
+	   "icon":"release-new"
        }
     , 
     { 
