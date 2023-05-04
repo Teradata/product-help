@@ -2,9 +2,9 @@
     { 
        "id":"bab1682536172420", 
        "title":"What's New", 
-       "description":"Learn about the newest updates", 
-       "url":"Vantage/bab1682536172420.md",
-	   "icon":"new_releases"
+       "description":"Learn about the latest features and updates", 
+       "icon":"new_releases", 
+       "url":"Vantage/bab1682536172420.md"
        }
     , 
     { 
@@ -338,11 +338,10 @@
              }
           , 
           { 
-             "id":"bkm1640280721917", 
+             "id":"iww1680797117120", 
              "title":"Use cases", 
              "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-			 "url":"Vantage/bkm1640280721917.md",
-			 "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+             "url":"Vantage/iww1680797117120.md"
              }
 
           ]
@@ -604,7 +603,7 @@
              "children":[
                 { 
                    "id":"whf1680184025148", 
-                   "title":"Configure an identity provider", 
+                   "title":"Add an identity provider", 
                    "description":"", 
                    "url":"Vantage/whf1680184025148.md", 
                    "children":[
@@ -676,7 +675,6 @@
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
-    
 
     ]
 
