@@ -1,14 +1,14 @@
 [
   {
     "script_name": "create events table",
-    "url": "scripts/events.sql"
+    "url": "scripts/_PLATFORM_/events.sql"
   },
   {
     "script_name": "create testing table",
-    "url": "scripts/testing.sql"
+    "url": "scripts/_PLATFORM_/testing.sql"
   },
   {
     "script_name": "create training table",
-    "url": "scripts/training.sql"
+    "url": "scripts/_PLATFORM_/training.sql"
   }
 ]
