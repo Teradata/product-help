@@ -9,4 +9,3 @@ The disaster recovery feature copies Snapshots from your primary site to a dedic
 To perform recovery, on the site's Data Protection tab, select the retained snapshot you wish to use, and enable the failover.
 
 For Self-service disaster recovery, from Retained Copies, select the snapshot and click Restore.
-Sample test..
