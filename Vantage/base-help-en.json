@@ -1,13 +1,5 @@
 {  "items":[
     { 
-       "id":"bab1682536172420", 
-       "title":"What's New", 
-       "description":"Learn about the latest features and updates", 
-       "icon":"new_releases", 
-       "url":"Vantage/bab1682536172420.md"
-       }
-    , 
-    { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
        "description":"Load data, run queries, and more.", 
@@ -32,30 +24,6 @@
              "title":"Configure connection settings", 
              "description":"Considerations for using Internet or Private link", 
              "url":"Vantage/laq1640280582810.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"lyi1662583368110", 
-       "title":"Compute workers", 
-       "description":"Create nodes for heavy processing.", 
-       "url":"Vantage/lyi1662583368110.md", 
-       "children":[
-          { 
-             "id":"aix1662583909152", 
-             "title":"Compute worker key concepts", 
-             "description":"Compute worker description, components, and characteristics", 
-             "url":"Vantage/aix1662583909152.md"
-             }
-          , 
-          { 
-             "id":"azi1662584068628", 
-             "title":"Create a compute worker", 
-             "description":"Considerations for creating a Compute worker", 
-             "url":"Vantage/azi1662584068628.md"
              }
 
           ]
@@ -218,68 +186,6 @@
        }
     , 
     { 
-       "id":"jlf1663616946889", 
-       "title":"Data sharing", 
-       "description":"Share data with other users, including tables and views.", 
-       "url":"Vantage/jlf1663616946889.md", 
-       "children":[
-          { 
-             "id":"pgt1663616908716", 
-             "title":"Data sharing key concepts", 
-             "description":"Dating sharing description, components, and characteristics", 
-             "url":"Vantage/pgt1663616908716.md"
-             }
-          , 
-          { 
-             "id":"vlk1663617148666", 
-             "title":"Create data share", 
-             "description":"Considerations for creating a data share", 
-             "url":"Vantage/vlk1663617148666.md", 
-             "children":[
-                { 
-                   "id":"rfg1681040443995", 
-                   "title":"Add Datasets", 
-                   "description":"Adding datasets", 
-                   "url":"Vantage/rfg1681040443995.md"
-                   }
-                , 
-                { 
-                   "id":"vph1681040670091", 
-                   "title":"Add Subscribers", 
-                   "description":"Adding subscribers", 
-                   "url":"Vantage/vph1681040670091.md"
-                   }
-                , 
-                { 
-                   "id":"vuh1681040768372", 
-                   "title":"Delete Share", 
-                   "description":"Deleting shares", 
-                   "url":"Vantage/vuh1681040768372.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"hdx1681040827922", 
-             "title":"Permissions", 
-             "description":"Data sharing user management", 
-             "url":"Vantage/hdx1681040827922.md"
-             }
-          , 
-          { 
-             "id":"yhq1681040726517", 
-             "title":"Settings", 
-             "description":"Data sharing settings", 
-             "url":"Vantage/yhq1681040726517.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries.", 
@@ -322,17 +228,7 @@
        "id":"apw1640280478763", 
        "title":"Organization", 
        "description":"Manage your VantageCloud Lake organization.", 
-       "url":"Vantage/apw1640280478763.md", 
-       "children":[
-          { 
-             "id":"hnc1681756740573", 
-             "title":"Environments (test topic)", 
-             "description":"test topic", 
-             "url":"Vantage/hnc1681756740573.md"
-             }
-
-          ]
-
+       "url":"Vantage/apw1640280478763.md"
        }
     , 
     { 
@@ -379,13 +275,6 @@
              "url":"Vantage/wrw1640282047881.md", 
              "children":[
                 { 
-                   "id":"znp1640282079399", 
-                   "title":"Connect data source", 
-                   "description":"Considerations for QueryGrid data source", 
-                   "url":"Vantage/znp1640282079399.md"
-                   }
-                , 
-                { 
                    "id":"yml1671157089031", 
                    "title":"PrivateLink change request", 
                    "description":"Request a interface endpoint to enable QueryGrid", 
@@ -394,9 +283,16 @@
                 , 
                 { 
                    "id":"wgr1674777759031", 
-                   "title":"Upgrade VantageCloud Enterprise QueryGrid Manager", 
-                   "description":"Steps to upgrade VantageCloud Enterprise QGM", 
+                   "title":"Upgrade QueryGrid Manager", 
+                   "description":"Steps to upgrade non-Lake QueryGrid Managers.", 
                    "url":"Vantage/wgr1674777759031.md"
+                   }
+                , 
+                { 
+                   "id":"znp1640282079399", 
+                   "title":"Connect data source", 
+                   "description":"Considerations for QueryGrid data source", 
+                   "url":"Vantage/znp1640282079399.md"
                    }
 
                 ]
@@ -522,37 +418,6 @@
 
                 ]
 
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"auw1640280669500", 
-       "title":"Flow", 
-       "description":"Load data from a compatible object store.", 
-       "url":"Vantage/auw1640280669500.md", 
-       "children":[
-          { 
-             "id":"geh1659041833397", 
-             "title":"Flow key concepts", 
-             "description":"Flow description, components, and characteristics", 
-             "url":"Vantage/geh1659041833397.md"
-             }
-          , 
-          { 
-             "id":"luq1640282345986", 
-             "title":"Create a flow", 
-             "description":"Considerations for creating a flow", 
-             "url":"Vantage/luq1640282345986.md"
-             }
-          , 
-          { 
-             "id":"wsa1640282405363", 
-             "title":"Manage flow", 
-             "description":"Considerations for viewing and editing flows.", 
-             "url":"Vantage/wsa1640282405363.md"
              }
 
           ]
