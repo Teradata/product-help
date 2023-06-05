@@ -1,15 +1,15 @@
 [
     {
         "id":"pat319511716121499",
-        "name": "Compute Cluster Management",
-        "description":"Compute Cluster Management with SQL", 
+        "name": "Compute cluster management",
+        "description":"Compute cluster management with SQL", 
         "content_url": "content/ComputeClusterManagement/README.md",
         "enabled": true,
         "industries": []
     },
     {
         "id":"pat3195117161214",
-        "name": "Path Analysis",
+        "name": "Path analysis",
         "description":"Patterns that predict behaviors", 
         "content_url": "content/nPath/README.md",
         "enabled": true,
@@ -17,7 +17,7 @@
     },
     {
         "id":"tim1214716511319",
-        "name": "Time Series - Consumer Complaints",
+        "name": "Time series - consumer complaints",
         "description":"Insights from customer complaints over time", 
         "content_url": "content/TimeSeriesAnalysis/README.md",
         "enabled": true,
@@ -25,7 +25,7 @@
     },
     {
         "id":"fin7111215511319",
-        "name": "Financial Services Customer Journey",
+        "name": "Financial services customer journey",
         "description":"Interactions during customer financial journey", 
         "content_url": "content/FSCustomerJourney/README.md",
         "enabled": true,
@@ -33,7 +33,7 @@
     },
     {
         "id":"man5111214716319",
-        "name": "Manufacturing Defect Analysis",
+        "name": "Manufacturing defect analysis",
         "description":"Increased warranty repair cause and resolution",
         "content_url": "content/ManufacturingDefects/README.md",
         "enabled": true,
@@ -44,7 +44,7 @@
     },
     {
         "id":"ext0319577090308",
-        "name": "External Object Store",
+        "name": "External object store",
         "description":"External data query and writing",
         "content_url": "content/ExternalObjectStore/README.md",
         "enabled": true,
@@ -52,15 +52,15 @@
     },
     {
         "id":"nol2022042031986",
-        "name": "Object File Store",
-        "description":"Storing data in Object File System",
+        "name": "Object file store",
+        "description":"Storing data in object file system",
         "content_url": "content/ObjectFileStore/README.md",
         "enabled": true,
         "industries": []
     },
     {
         "id":"dee1986198319573",
-        "name": "Deep History",
+        "name": "Deep history",
         "description":"Combined historical and current data",
         "content_url": "content/SalesOffload/README.md",
         "enabled": true,
