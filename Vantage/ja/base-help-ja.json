@@ -1,29 +1,29 @@
-{  "items":[
+﻿{  "items":[
     { 
        "id":"sbt1640280496980", 
-       "title":"Environments", 
-       "description":"Load data, run queries, and more.", 
-       "url":"Vantage/sbt1640280496980.md", 
+       "title":"環境", 
+       "description":"データの読み込み、クエリーの実行などです。", 
+       "url":"Vantage/ja/sbt1640280496980.md", 
        "children":[
           { 
              "id":"nmr1658424425362", 
-             "title":"Environment key concepts", 
-             "description":"Components of an environment", 
-             "url":"Vantage/nmr1658424425362.md"
+             "title":"環境のキー コンセプト", 
+             "description":"環境の構成要素", 
+             "url":"Vantage/ja/nmr1658424425362.md"
              }
           , 
           { 
              "id":"qiv1640281527006", 
-             "title":"Create an environment", 
-             "description":"Considerations for creating an environment", 
-             "url":"Vantage/qiv1640281527006.md"
+             "title":"環境の作成", 
+             "description":"環境を作成する際の注意点", 
+             "url":"Vantage/ja/qiv1640281527006.md"
              }
           , 
           { 
              "id":"laq1640280582810", 
-             "title":"Configure connection settings", 
-             "description":"Considerations for using Internet or Private link", 
-             "url":"Vantage/laq1640280582810.md"
+             "title":"接続設定の構成", 
+             "description":"インターネットまたはプライベート リンクを使用する際の注意点", 
+             "url":"Vantage/ja/laq1640280582810.md"
              }
 
           ]
@@ -32,36 +32,36 @@
     , 
     { 
        "id":"mqu1640280532737", 
-       "title":"Compute groups", 
-       "description":"Create, view, and manage compute groups. ", 
-       "url":"Vantage/mqu1640280532737.md", 
+       "title":"コンピューティング グループ", 
+       "description":"コンピューティング グループを作成、表示、管理します。 ", 
+       "url":"Vantage/ja/mqu1640280532737.md", 
        "children":[
           { 
              "id":"ixo1658772101054", 
-             "title":"Compute group key concepts", 
-             "description":"Compute group capabilities", 
-             "url":"Vantage/ixo1658772101054.md"
+             "title":"コンピューティング グループのキー コンセプト", 
+             "description":"コンピューティング グループの機能", 
+             "url":"Vantage/ja/ixo1658772101054.md"
              }
           , 
           { 
              "id":"xrr1658772541186", 
-             "title":"Create a compute group", 
-             "description":"Considerations for creating a compute group", 
-             "url":"Vantage/xrr1658772541186.md"
+             "title":"コンピューティング グループの作成", 
+             "description":"コンピューティング グループを作成する際の注意点", 
+             "url":"Vantage/ja/xrr1658772541186.md"
              }
           , 
           { 
              "id":"dvl1640281718303", 
-             "title":"Manage a compute group", 
-             "description":"Compute profiles and their configuration", 
-             "url":"Vantage/dvl1640281718303.md"
+             "title":"コンピューティング グループの管理", 
+             "description":"コンピューティング プロファイルとその構成", 
+             "url":"Vantage/ja/dvl1640281718303.md"
              }
           , 
           { 
              "id":"wdz1640281743091", 
-             "title":"Compute group access", 
-             "description":"Assignment of compute groups", 
-             "url":"Vantage/wdz1640281743091.md"
+             "title":"コンピューティング グループ アクセス", 
+             "description":"コンピューティング グループの割り当て", 
+             "url":"Vantage/ja/wdz1640281743091.md"
              }
 
           ]
@@ -70,42 +70,42 @@
     , 
     { 
        "id":"onj1682104977691", 
-       "title":"Consumption", 
-       "description":"View consumed compute and storage resources.", 
-       "url":"Vantage/onj1682104977691.md", 
+       "title":"消費", 
+       "description":"コンピューティングとストレージのリソース消費量を表示します。", 
+       "url":"Vantage/ja/onj1682104977691.md", 
        "children":[
           { 
              "id":"tdv1682522711429", 
-             "title":"Compute consumption", 
+             "title":"コンピューティング消費", 
              "description":"", 
-             "url":"Vantage/tdv1682522711429.md", 
+             "url":"Vantage/ja/tdv1682522711429.md", 
              "children":[
                 { 
                    "id":"qly1682524108665", 
-                   "title":"How compute resources are consumed", 
+                   "title":"コンピューティング リソースの消費状況", 
                    "description":"", 
-                   "url":"Vantage/qly1682524108665.md"
+                   "url":"Vantage/ja/qly1682524108665.md"
                    }
                 , 
                 { 
                    "id":"qze1682528646873", 
-                   "title":"Review compute consumption", 
+                   "title":"コンピューティング消費量の確認", 
                    "description":"", 
-                   "url":"Vantage/qze1682528646873.md"
+                   "url":"Vantage/ja/qze1682528646873.md"
                    }
                 , 
                 { 
                    "id":"qty1682530889318", 
-                   "title":"Manage compute consumption", 
+                   "title":"コンピューティング消費量の管理", 
                    "description":"", 
-                   "url":"Vantage/qty1682530889318.md"
+                   "url":"Vantage/ja/qty1682530889318.md"
                    }
                 , 
                 { 
                    "id":"nzf1682539696119", 
-                   "title":"Compute consumption FAQ", 
+                   "title":"コンピューティング消費に関するよくある質問", 
                    "description":"", 
-                   "url":"Vantage/nzf1682539696119.md"
+                   "url":"Vantage/ja/nzf1682539696119.md"
                    }
 
                 ]
@@ -114,29 +114,29 @@
           , 
           { 
              "id":"nsc1682522782958", 
-             "title":"Storage consumption", 
+             "title":"ストレージ消費", 
              "description":"", 
-             "url":"Vantage/nsc1682522782958.md", 
+             "url":"Vantage/ja/nsc1682522782958.md", 
              "children":[
                 { 
                    "id":"pdf1682543766178", 
-                   "title":"How storage is consumed", 
+                   "title":"ストレージの消費状況", 
                    "description":"", 
-                   "url":"Vantage/pdf1682543766178.md"
+                   "url":"Vantage/ja/pdf1682543766178.md"
                    }
                 , 
                 { 
                    "id":"vky1682545736669", 
-                   "title":"Review storage consumption", 
+                   "title":"ストレージ消費量の確認", 
                    "description":"", 
-                   "url":"Vantage/vky1682545736669.md"
+                   "url":"Vantage/ja/vky1682545736669.md"
                    }
                 , 
                 { 
                    "id":"aku1682545782916", 
-                   "title":"Storage consumption FAQ", 
+                   "title":"ストレージ消費に関するよくある質問", 
                    "description":"", 
-                   "url":"Vantage/aku1682545782916.md"
+                   "url":"Vantage/ja/aku1682545782916.md"
                    }
 
                 ]
@@ -149,36 +149,36 @@
     , 
     { 
        "id":"jrq1640280690304", 
-       "title":"Data protection", 
-       "description":"Protect data with backup and recovery options.", 
-       "url":"Vantage/jrq1640280690304.md", 
+       "title":"データ保護", 
+       "description":"バックアップとリカバリのオプションでデータを保護します。", 
+       "url":"Vantage/ja/jrq1640280690304.md", 
        "children":[
           { 
              "id":"aqo1659046659258", 
-             "title":"Data protection key concepts", 
-             "description":"Data protection description, components, and characteristics", 
-             "url":"Vantage/aqo1659046659258.md"
+             "title":"データ保護のキー コンセプト", 
+             "description":"データ保護の説明、構成、特徴", 
+             "url":"Vantage/ja/aqo1659046659258.md"
              }
           , 
           { 
              "id":"qmb1659046927155", 
-             "title":"Create a full backup", 
-             "description":"Considerations for creating a backup", 
-             "url":"Vantage/qmb1659046927155.md"
+             "title":"フル バックアップの作成", 
+             "description":"バックアップを作成する際の注意点", 
+             "url":"Vantage/ja/qmb1659046927155.md"
              }
           , 
           { 
              "id":"kqr1640280954140", 
-             "title":"Restore data", 
-             "description":"Considerations for restoring from a backup", 
-             "url":"Vantage/kqr1640280954140.md"
+             "title":"データを復元", 
+             "description":"バックアップから復元する際の注意点", 
+             "url":"Vantage/ja/kqr1640280954140.md"
              }
           , 
           { 
              "id":"sus1659047241965", 
-             "title":"Review backup history", 
-             "description":"Considerations for reviewing backup history", 
-             "url":"Vantage/sus1659047241965.md"
+             "title":"バックアップ履歴の確認", 
+             "description":"バックアップ履歴を確認する際の注意点", 
+             "url":"Vantage/ja/sus1659047241965.md"
              }
 
           ]
@@ -187,36 +187,36 @@
     , 
     { 
        "id":"xbg1640280430669", 
-       "title":"Editor", 
-       "description":"Write and run SQL queries.", 
-       "url":"Vantage/xbg1640280430669.md", 
+       "title":"エディタ", 
+       "description":"SQL クエリーを作成、実行します。", 
+       "url":"Vantage/ja/xbg1640280430669.md", 
        "children":[
           { 
              "id":"xti1659380438762", 
-             "title":"Editor key concepts", 
-             "description":"Editor description, components, and characteristics", 
-             "url":"Vantage/xti1659380438762.md"
+             "title":"エディタのキー コンセプト", 
+             "description":"エディタの説明、構成、特徴", 
+             "url":"Vantage/ja/xti1659380438762.md"
              }
           , 
           { 
              "id":"juo1640281123239", 
-             "title":"Connect to the environment", 
-             "description":"Considerations for connecting to an account", 
-             "url":"Vantage/juo1640281123239.md"
+             "title":"環境に接続する", 
+             "description":"アカウントに接続する際の注意点", 
+             "url":"Vantage/ja/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
-             "title":"Create and run a SQL statement or script", 
-             "description":"Considerations for running SQL", 
-             "url":"Vantage/dgd1640281158386.md"
+             "title":"SQL 文またはスクリプトの作成と実行", 
+             "description":"SQL を実行する際の注意点", 
+             "url":"Vantage/ja/dgd1640281158386.md"
              }
           , 
      { 
        "id":"bkm1640280721917", 
-       "title":"Use cases", 
-       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
+       "title":"ユースケース", 
+       "description":"ユースケースを実行して、VantageCloud Lake の機能を探ります。", 
+       "url":"Vantage/ja/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
@@ -226,29 +226,29 @@
     , 
     { 
        "id":"apw1640280478763", 
-       "title":"Organization", 
-       "description":"Manage your VantageCloud Lake organization.", 
-       "url":"Vantage/apw1640280478763.md"
+       "title":"組織", 
+       "description":"VantageCloud Lake利用組織を管理します。", 
+       "url":"Vantage/ja/apw1640280478763.md"
        }
     , 
     { 
        "id":"ajr1640280560519", 
-       "title":"Queries", 
-       "description":"View current and completed queries.", 
-       "url":"Vantage/ajr1640280560519.md", 
+       "title":"Query", 
+       "description":"現在のクエリーと完了したクエリーを表示します。", 
+       "url":"Vantage/ja/ajr1640280560519.md", 
        "children":[
           { 
              "id":"aow1659389241176", 
-             "title":"Queries key concepts", 
-             "description":"Query types", 
-             "url":"Vantage/aow1659389241176.md"
+             "title":"クエリーのキー コンセプト", 
+             "description":"クエリーのタイプ", 
+             "url":"Vantage/ja/aow1659389241176.md"
              }
           , 
           { 
              "id":"fcd1640281818081", 
-             "title":"View current and completed queries", 
-             "description":"Considerations for viewing queries", 
-             "url":"Vantage/fcd1640281818081.md"
+             "title":"現在のクエリーと完了したクエリーの表示", 
+             "description":"クエリーを表示する際の注意点", 
+             "url":"Vantage/ja/fcd1640281818081.md"
              }
 
           ]
@@ -258,41 +258,41 @@
     { 
        "id":"gmy1640280632324", 
        "title":"QueryGrid", 
-       "description":"Deploy and manage QueryGrid data analytics fabric.", 
-       "url":"Vantage/gmy1640280632324.md", 
+       "description":"QueryGridデータ分析ファブリックのデプロイと管理を行います。", 
+       "url":"Vantage/ja/gmy1640280632324.md", 
        "children":[
           { 
              "id":"vyx1659391025497", 
-             "title":"QueryGrid key concepts", 
-             "description":"QueryGrid connectivity options and components", 
-             "url":"Vantage/vyx1659391025497.md"
+             "title":"QueryGrid のキー コンセプト", 
+             "description":"QueryGrid の接続オプションとコンポーネント", 
+             "url":"Vantage/ja/vyx1659391025497.md"
              }
           , 
           { 
              "id":"wrw1640282047881", 
-             "title":"Deployment", 
-             "description":"Considerations for deploying QueryGrid", 
-             "url":"Vantage/wrw1640282047881.md", 
+             "title":"デプロイメント", 
+             "description":"QueryGrid をデプロイする際の注意点", 
+             "url":"Vantage/ja/wrw1640282047881.md", 
              "children":[
                 { 
                    "id":"znp1640282079399", 
-                   "title":"Connect data source", 
-                   "description":"Considerations for QueryGrid data source", 
-                   "url":"Vantage/znp1640282079399.md"
+                   "title":"データ ソースの接続", 
+                   "description":"QueryGrid データ ソースに関する注意点", 
+                   "url":"Vantage/ja/znp1640282079399.md"
                    }
                 , 
                 { 
                    "id":"yml1671157089031", 
-                   "title":"PrivateLink change request", 
-                   "description":"Request a interface endpoint to enable QueryGrid", 
-                   "url":"Vantage/yml1671157089031.md"
+                   "title":"PrivateLink の変更リクエスト", 
+                   "description":"QueryGrid を有効にするためのインターフェイス エンドポイントをリクエストする", 
+                   "url":"Vantage/ja/yml1671157089031.md"
                    }
                 , 
                 { 
                    "id":"wgr1674777759031", 
-                   "title":"Upgrade VantageCloud Enterprise QueryGrid Manager", 
-                   "description":"Steps to upgrade VantageCloud Enterprise QGM", 
-                   "url":"Vantage/wgr1674777759031.md"
+                   "title":"VantageCloud Enterprise QueryGrid マネージャのアップグレード", 
+                   "description":"VantageCloud Enterprise QGM をアップグレードする手順", 
+                   "url":"Vantage/ja/wgr1674777759031.md"
                    }
 
                 ]
@@ -301,49 +301,49 @@
           , 
           { 
              "id":"lzm1640282103875", 
-             "title":"Management", 
-             "description":"Considerations for QueryGrid management", 
-             "url":"Vantage/lzm1640282103875.md", 
+             "title":"管理", 
+             "description":"QueryGrid の管理に関する注意点", 
+             "url":"Vantage/ja/lzm1640282103875.md", 
              "children":[
                 { 
                    "id":"goh1640282193934", 
-                   "title":"Fabric overview", 
-                   "description":"Views that are available in the fabric graphic", 
-                   "url":"Vantage/goh1640282193934.md"
+                   "title":"ファブリックの概要", 
+                   "description":"ファブリック グラフィックで使用可能なビュー", 
+                   "url":"Vantage/ja/goh1640282193934.md"
                    }
                 , 
                 { 
                    "id":"vhb1640282164870", 
-                   "title":"Data sources", 
-                   "description":"Considerations for data source management", 
-                   "url":"Vantage/vhb1640282164870.md", 
+                   "title":"データ ソース", 
+                   "description":"データ ソース管理に関する注意点", 
+                   "url":"Vantage/ja/vhb1640282164870.md", 
                    "children":[
                       { 
                          "id":"yfd1674158023864", 
-                         "title":"Nodes", 
-                         "description":"Edit selected data source", 
-                         "url":"Vantage/yfd1674158023864.md"
+                         "title":"ノード", 
+                         "description":"選択したデータ ソースの編集", 
+                         "url":"Vantage/ja/yfd1674158023864.md"
                          }
                       , 
                       { 
                          "id":"zof1674159380680", 
-                         "title":"Connectors", 
-                         "description":"Edit selected QueryGrid connector", 
-                         "url":"Vantage/zof1674159380680.md"
+                         "title":"コネクタ", 
+                         "description":"選択した QueryGrid コネクタの編集", 
+                         "url":"Vantage/ja/zof1674159380680.md"
                          }
                       , 
                       { 
                          "id":"kzu1674159463068", 
-                         "title":"Links", 
-                         "description":"Options for the Links tab", 
-                         "url":"Vantage/kzu1674159463068.md"
+                         "title":"リンク", 
+                         "description":"[リンク] タブのオプション", 
+                         "url":"Vantage/ja/kzu1674159463068.md"
                          }
                       , 
                       { 
                          "id":"pvy1674785931688", 
-                         "title":"Bridges", 
-                         "description":"Add and edit a QueryGrid bridge", 
-                         "url":"Vantage/pvy1674785931688.md"
+                         "title":"ブリッジ", 
+                         "description":"QueryGrid ブリッジの追加と編集", 
+                         "url":"Vantage/ja/pvy1674785931688.md"
                          }
 
                       ]
@@ -352,50 +352,50 @@
                 , 
                 { 
                    "id":"zxp1640282246701", 
-                   "title":"Settings", 
-                   "description":"Components available in the QueryGrid settings", 
-                   "url":"Vantage/zxp1640282246701.md", 
+                   "title":"設定", 
+                   "description":"QueryGrid の設定で使用可能なコンポーネント", 
+                   "url":"Vantage/ja/zxp1640282246701.md", 
                    "children":[
                       { 
                          "id":"wne1674087932617", 
-                         "title":"Bridge settings", 
-                         "description":"Add and edit bridge settings", 
-                         "url":"Vantage/wne1674087932617.md"
+                         "title":"ブリッジ設定", 
+                         "description":"ブリッジ設定の追加と編集", 
+                         "url":"Vantage/ja/wne1674087932617.md"
                          }
                       , 
                       { 
                          "id":"iwx1674087965329", 
-                         "title":"Network settings", 
-                         "description":"Adding and removing networks and their settings", 
-                         "url":"Vantage/iwx1674087965329.md"
+                         "title":"ネットワーク設定", 
+                         "description":"ネットワークの追加・削除とその設定", 
+                         "url":"Vantage/ja/iwx1674087965329.md"
                          }
                       , 
                       { 
                          "id":"zap1674087994421", 
-                         "title":"Communication policies", 
-                         "description":"Add or edit a communication policy", 
-                         "url":"Vantage/zap1674087994421.md"
+                         "title":"コミュニケーション ポリシー", 
+                         "description":"コミュニケーション ポリシーの追加・編集", 
+                         "url":"Vantage/ja/zap1674087994421.md"
                          }
                       , 
                       { 
                          "id":"hmn1674088306575", 
-                         "title":"User and role mapping settings", 
-                         "description":"Add or edit user and role mappings", 
-                         "url":"Vantage/hmn1674088306575.md"
+                         "title":"ユーザーとロールのマッピング設定", 
+                         "description":"ユーザーとロールのマッピングを追加・編集", 
+                         "url":"Vantage/ja/hmn1674088306575.md"
                          }
                       , 
                       { 
                          "id":"eyz1674088497701", 
-                         "title":"PrivateLink settings", 
-                         "description":"AWS endpoint additions", 
-                         "url":"Vantage/eyz1674088497701.md"
+                         "title":"PrivateLink 設定", 
+                         "description":"AWS エンドポイントの追加", 
+                         "url":"Vantage/ja/eyz1674088497701.md"
                          }
                       , 
                       { 
                          "id":"hfi1674786742869", 
-                         "title":"JDBC drivers", 
-                         "description":"Adding a JDBC driver in QueryGrid settings", 
-                         "url":"Vantage/hfi1674786742869.md"
+                         "title":"JDBC ドライバ", 
+                         "description":"QueryGrid 設定に JDBC ドライバを追加", 
+                         "url":"Vantage/ja/hfi1674786742869.md"
                          }
 
                       ]
@@ -404,16 +404,16 @@
                 , 
                 { 
                    "id":"uee1640282265780", 
-                   "title":"Issues", 
-                   "description":"Considerations for reviewing QueryGrid issues", 
-                   "url":"Vantage/uee1640282265780.md"
+                   "title":"問題", 
+                   "description":"QueryGrid の問題をレビューする際の注意点", 
+                   "url":"Vantage/ja/uee1640282265780.md"
                    }
                 , 
                 { 
                    "id":"oiw1640282294248", 
-                   "title":"Operations", 
-                   "description":"Considerations for QueryGrid operations", 
-                   "url":"Vantage/oiw1640282294248.md"
+                   "title":"動作", 
+                   "description":"QueryGrid の動作に関する注意点", 
+                   "url":"Vantage/ja/oiw1640282294248.md"
                    }
 
                 ]
@@ -426,34 +426,34 @@
     , 
     { 
        "id":"fcv1681758902467", 
-       "title":"Access management", 
-       "description":"Manage access to your VantageCloud Lake organization.", 
-       "url":"Vantage/fcv1681758902467.md", 
+       "title":"アクセス管理", 
+       "description":"VantageCloud Lake利用組織へのアクセスを管理します。", 
+       "url":"Vantage/ja/fcv1681758902467.md", 
        "children":[
           { 
              "id":"mxq1680183881642", 
-             "title":"Set up single sign-on", 
-             "description":"Configure identity providers and realms", 
-             "url":"Vantage/mxq1680183881642.md", 
+             "title":"シングル サインオンの設定", 
+             "description":"IDプロバイダとレルムの構成", 
+             "url":"Vantage/ja/mxq1680183881642.md", 
              "children":[
                 { 
                    "id":"whf1680184025148", 
-                   "title":"Add an identity provider", 
+                   "title":"IDプロバイダの追加", 
                    "description":"", 
-                   "url":"Vantage/whf1680184025148.md", 
+                   "url":"Vantage/ja/whf1680184025148.md", 
                    "children":[
                       { 
                          "id":"lfb1680194800865", 
-                         "title":"OpenID Connect", 
+                         "title":"OpenID接続", 
                          "description":"", 
-                         "url":"Vantage/lfb1680194800865.md"
+                         "url":"Vantage/ja/lfb1680194800865.md"
                          }
                       , 
                       { 
                          "id":"dhs1680194823192", 
                          "title":"SAML 2.0", 
                          "description":"", 
-                         "url":"Vantage/dhs1680194823192.md"
+                         "url":"Vantage/ja/dhs1680194823192.md"
                          }
 
                       ]
@@ -462,23 +462,23 @@
                 , 
                 { 
                    "id":"ruf1680184116601", 
-                   "title":"Create realms", 
+                   "title":"レルムの作成", 
                    "description":"", 
-                   "url":"Vantage/ruf1680184116601.md"
+                   "url":"Vantage/ja/ruf1680184116601.md"
                    }
                 , 
                 { 
                    "id":"jbj1680184191443", 
-                   "title":"Associate realms with environments", 
+                   "title":"環境へのレルムの関連付け", 
                    "description":"", 
-                   "url":"Vantage/jbj1680184191443.md"
+                   "url":"Vantage/ja/jbj1680184191443.md"
                    }
                 , 
                 { 
                    "id":"qma1680184498880", 
-                   "title":"Single sign-on FAQ", 
+                   "title":"シングル サインオンについてよく尋ねられる質問", 
                    "description":"", 
-                   "url":"Vantage/qma1680184498880.md"
+                   "url":"Vantage/ja/qma1680184498880.md"
                    }
 
                 ]
@@ -487,16 +487,16 @@
           , 
           { 
              "id":"hrv1640281410572", 
-             "title":"Manage organization admins", 
-             "description":"Considerations for managing organization admins", 
-             "url":"Vantage/hrv1640281410572.md"
+             "title":"組織管理者の管理", 
+             "description":"組織管理者を管理する際の注意点", 
+             "url":"Vantage/ja/hrv1640281410572.md"
              }
           , 
           { 
              "id":"wxe1659392685092", 
-             "title":"Manage database users", 
-             "description":"Considerations for managing users of an environment", 
-             "url":"Vantage/wxe1659392685092.md"
+             "title":"データベース ユーザーの管理", 
+             "description":"環境のユーザーを管理する際の注意点", 
+             "url":"Vantage/ja/wxe1659392685092.md"
              }
 
           ]
@@ -507,7 +507,7 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
+       "url":"Vantage/ja/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
