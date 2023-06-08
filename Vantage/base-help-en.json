@@ -1,12 +1,4 @@
 {  "items":[
-  { 
-       "id":"bab1682536172420", 
-       "title":"What's New", 
-       "description":"Learn about the latest features and updates", 
-       "icon":"new_releases", 
-       "url":"Vantage/bab1682536172420.md"
-       }
-    , 
     { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
@@ -220,7 +212,7 @@
              "url":"Vantage/dgd1640281158386.md"
              }
           , 
-              { 
+    { 
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
