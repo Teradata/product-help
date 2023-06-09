@@ -224,13 +224,6 @@
        "url":"Vantage/jlf1663616946889.md", 
        "children":[
           { 
-             "id":"pgt1663616908716", 
-             "title":"Data sharing key concepts", 
-             "description":"Dating sharing description, components, and characteristics", 
-             "url":"Vantage/pgt1663616908716.md"
-             }
-          , 
-          { 
              "id":"hdx1681040827922", 
              "title":"Manage data share users", 
              "description":"Data sharing user management", 
@@ -280,13 +273,6 @@
              "title":"Delete a share", 
              "description":"Deleting shares", 
              "url":"Vantage/vuh1681040768372.md"
-             }
-          , 
-          { 
-             "id":"yhq1681040726517", 
-             "title":"Settings", 
-             "description":"Data sharing settings", 
-             "url":"Vantage/yhq1681040726517.md"
              }
           , 
           { 
