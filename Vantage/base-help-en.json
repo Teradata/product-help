@@ -246,7 +246,7 @@
                 { 
                    "id":"rfg1681040443995", 
                    "title":"Manage datasets", 
-                   "description":"Adding datasets", 
+                   "description":"Add and manage datasets", 
                    "url":"Vantage/rfg1681040443995.md"
                    }
                 , 
@@ -264,14 +264,14 @@
           { 
              "id":"vph1681040670091", 
              "title":"Manage subscribers", 
-             "description":"Adding subscribers", 
+             "description":"Add users and roles", 
              "url":"Vantage/vph1681040670091.md"
              }
           , 
           { 
              "id":"vuh1681040768372", 
              "title":"Delete a share", 
-             "description":"Deleting shares", 
+             "description":"Delete shares", 
              "url":"Vantage/vuh1681040768372.md"
              }
           , 
