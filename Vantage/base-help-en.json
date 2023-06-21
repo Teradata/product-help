@@ -240,7 +240,7 @@
           { 
              "id":"gds1686247574408", 
              "title":"Work with datasets", 
-             "description":"", 
+             "description":"Links for providers and subscribers tasks", 
              "url":"Vantage/gds1686247574408.md", 
              "children":[
                 { 
@@ -253,7 +253,7 @@
                 { 
                    "id":"hfx1686247226223", 
                    "title":"View and use datasets", 
-                   "description":"", 
+                   "description":"Conventions on querying data", 
                    "url":"Vantage/hfx1686247226223.md"
                    }
 
@@ -278,7 +278,7 @@
           { 
              "id":"laf1686249149487", 
              "title":"Data sharing FAQ", 
-             "description":"", 
+             "description":"Frequently asked data sharing questions", 
              "url":"Vantage/laf1686249149487.md"
              }
 
@@ -403,7 +403,17 @@
                    "id":"znp1640282079399", 
                    "title":"Connect data source", 
                    "description":"Considerations for QueryGrid data source", 
-                   "url":"Vantage/znp1640282079399.md"
+                   "url":"Vantage/znp1640282079399.md", 
+                   "children":[
+                      { 
+                         "id":"bbw1687364943833", 
+                         "title":"Authorization", 
+                         "description":"", 
+                         "url":"Vantage/bbw1687364943833.md"
+                         }
+
+                      ]
+
                    }
 
                 ]
@@ -649,7 +659,6 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-	   "icon":"book",
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
