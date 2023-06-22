@@ -6,7 +6,15 @@
        "icon":"new_releases", 
        "url":"Vantage/bab1682536172420.md"
        }
-    , 
+    ,
+   { 
+       "id":"tta1687442978234", 
+       "title":"Get Started", 
+       "description":"Complete these tasks first, to get started with VantageCloud Lake", 
+       "icon":"person", 
+       "url":"Vantage/tta1687442978234.md"
+       }
+    , 	
     { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
@@ -659,6 +667,7 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+       "icon":"book",
        "url":"Vantage/bkm1640280721917.md",
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
