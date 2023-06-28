@@ -1,16 +1,16 @@
 {  "items":[
     { 
        "id":"bab1682536172420", 
-       "title":"What's New", 
-       "description":"Learn about the latest features and updates", 
+       "title":"What's new", 
+       "description":"Learn about the latest features and updates.", 
        "icon":"new_releases", 
        "url":"Vantage/bab1682536172420.md"
        }
     , 
     { 
        "id":"tta1687442978234", 
-       "title":"Get Started", 
-       "description":"Complete these tasks first, to get started with VantageCloud Lake", 
+       "title":"Get started", 
+       "description":"Complete these tasks first.", 
        "icon":"person", 
        "url":"Vantage/tta1687442978234.md"
        }
@@ -394,6 +394,23 @@
              "url":"Vantage/wrw1640282047881.md", 
              "children":[
                 { 
+                   "id":"znp1640282079399", 
+                   "title":"Connect data source", 
+                   "description":"Considerations for QueryGrid data source", 
+                   "url":"Vantage/znp1640282079399.md", 
+                   "children":[
+                      { 
+                         "id":"bbw1687364943833", 
+                         "title":"Authorization", 
+                         "description":"Set up authorization for new data source", 
+                         "url":"Vantage/bbw1687364943833.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"yml1671157089031", 
                    "title":"PrivateLink change request", 
                    "description":"Request a interface endpoint to enable QueryGrid", 
@@ -405,23 +422,6 @@
                    "title":"Upgrade QueryGrid Manager", 
                    "description":"Steps to upgrade non-Lake QueryGrid Managers.", 
                    "url":"Vantage/wgr1674777759031.md"
-                   }
-                , 
-                { 
-                   "id":"znp1640282079399", 
-                   "title":"Connect data source", 
-                   "description":"Considerations for QueryGrid data source", 
-                   "url":"Vantage/znp1640282079399.md", 
-                   "children":[
-                      { 
-                         "id":"bbw1687364943833", 
-                         "title":"Authorization", 
-                         "description":"", 
-                         "url":"Vantage/bbw1687364943833.md"
-                         }
-
-                      ]
-
                    }
 
                 ]
@@ -674,3 +674,5 @@
     ]
 
  }
+
+
