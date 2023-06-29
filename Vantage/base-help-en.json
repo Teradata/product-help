@@ -228,7 +228,7 @@
     { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
-       "description":"Share data with other users, including tables and views.", 
+       "description":"Share data with other users, including tables and views", 
        "url":"Vantage/jlf1663616946889.md", 
        "children":[
           { 
@@ -321,11 +321,12 @@
              "url":"Vantage/dgd1640281158386.md"
              }
           , 
+          { 
     { 
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
+       "icon":"book", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
@@ -353,25 +354,8 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
-       "description":"View current and completed queries.", 
-       "url":"Vantage/ajr1640280560519.md", 
-       "children":[
-          { 
-             "id":"aow1659389241176", 
-             "title":"Queries key concepts", 
-             "description":"Query types", 
-             "url":"Vantage/aow1659389241176.md"
-             }
-          , 
-          { 
-             "id":"fcd1640281818081", 
-             "title":"View current and completed queries", 
-             "description":"Considerations for viewing queries", 
-             "url":"Vantage/fcd1640281818081.md"
-             }
-
-          ]
-
+       "description":"View and optimize queries.", 
+       "url":"Vantage/ajr1640280560519.md"
        }
     , 
     { 
@@ -412,7 +396,7 @@
                 , 
                 { 
                    "id":"yml1671157089031", 
-                   "title":"PrivateLink change request", 
+                   "title":"Private link change request", 
                    "description":"Request a interface endpoint to enable QueryGrid", 
                    "url":"Vantage/yml1671157089031.md"
                    }
@@ -667,12 +651,10 @@
        "id":"bkm1640280721917", 
        "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
+       "icon":"book", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
     ]
 
  }
-
-
