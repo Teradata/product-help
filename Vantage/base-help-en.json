@@ -322,11 +322,11 @@
              }
           , 
           { 
-    { 
-       "id":"bkm1640280721917", 
-       "title":"Use cases", 
-       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+		{ 
+		   "id":"bkm1640280721917", 
+		   "title":"Use cases", 
+		   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+		   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
           ]
