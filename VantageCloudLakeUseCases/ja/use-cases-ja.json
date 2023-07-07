@@ -1,0 +1,69 @@
+﻿[
+    {
+        "id":"pat319511716121499",
+        "name": "コンピューティング クラスタ管理",
+        "description":"SQLによるコンピューティング クラスタ管理", 
+        "content_url": "content/ComputeClusterManagement/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"pat3195117161214",
+        "name": "パス分析",
+        "description":"行動を予測するためのパターン", 
+        "content_url": "content/nPath/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"tim1214716511319",
+        "name": "時系列 - 消費者の苦情",
+        "description":"恒常的な消費者の苦情から得られる洞察", 
+        "content_url": "content/TimeSeriesAnalysis/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"fin7111215511319",
+        "name": "金融サービスのカスタマー ジャーニー",
+        "description":"金融カスタマー ジャーニーにおけるインタラクション", 
+        "content_url": "content/FSCustomerJourney/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"man5111214716319",
+        "name": "製造上の欠陥の分析",
+        "description":"増加する保証修理の原因と解決策",
+        "content_url": "content/ManufacturingDefects/README.md",
+        "enabled": true,
+        "industries": [
+            "製造",
+            "自動車"
+        ]
+    },
+    {
+        "id":"ext0319577090308",
+        "name": "外部オブジェクト ストア",
+        "description":"外部データのクエリーおよび書き込み",
+        "content_url": "content/ExternalObjectStore/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"nol2022042031986",
+        "name": "オブジェクト ファイル ストア",
+        "description":"オブジェクト ファイル システムでのデータ保存",
+        "content_url": "content/ObjectFileStore/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"dee1986198319573",
+        "name": "詳細な履歴",
+        "description":"過去データと現行データの結合",
+        "content_url": "content/SalesOffload/README.md",
+        "enabled": true,
+        "industries": []
+    }
+]

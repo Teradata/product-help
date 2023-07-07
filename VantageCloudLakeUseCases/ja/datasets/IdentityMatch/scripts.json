@@ -1,0 +1,10 @@
+[
+  {
+    "script_name": "create ac customer external data table",
+    "url": "scripts/ac_customer_external_data.sql"
+  },
+  {
+    "script_name": "create ref golden cust table",
+    "url": "scripts/ref_golden_cust.sql"
+  }
+]
