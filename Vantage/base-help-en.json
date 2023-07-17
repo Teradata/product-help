@@ -8,14 +8,6 @@
        }
     , 
     { 
-       "id":"tta1687442978234", 
-       "title":"Get started", 
-       "description":"Complete these tasks first.", 
-       "icon":"person", 
-       "url":"Vantage/tta1687442978234.md"
-       }
-    , 
-    { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
        "description":"Load data, run queries, and more.", 
@@ -40,30 +32,6 @@
              "title":"Configure connection settings", 
              "description":"Considerations for using Internet or Private link", 
              "url":"Vantage/laq1640280582810.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"lyi1662583368110", 
-       "title":"Compute workers", 
-       "description":"Create nodes for heavy processing.", 
-       "url":"Vantage/lyi1662583368110.md", 
-       "children":[
-          { 
-             "id":"aix1662583909152", 
-             "title":"Compute worker key concepts", 
-             "description":"Compute worker description, components, and characteristics", 
-             "url":"Vantage/aix1662583909152.md"
-             }
-          , 
-          { 
-             "id":"azi1662584068628", 
-             "title":"Create a compute worker", 
-             "description":"Considerations for creating a Compute worker", 
-             "url":"Vantage/azi1662584068628.md"
              }
 
           ]
@@ -228,7 +196,7 @@
     { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
-       "description":"Share data with other users, including tables and views", 
+       "description":"Share data with other users, including tables and views.", 
        "url":"Vantage/jlf1663616946889.md", 
        "children":[
           { 
@@ -321,14 +289,14 @@
              "url":"Vantage/dgd1640281158386.md"
              }
           , 
-    { 
-       "id":"bkm1640280721917", 
-       "title":"Use cases", 
-       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
-       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-       }
-    
+{ 
+   "id":"bkm1640280721917", 
+   "title":"Use cases", 
+   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+   "url":"Vantage/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+   }
+
           ]
 
        }
@@ -337,17 +305,7 @@
        "id":"apw1640280478763", 
        "title":"Organization", 
        "description":"Manage your VantageCloud Lake organization.", 
-       "url":"Vantage/apw1640280478763.md", 
-       "children":[
-          { 
-             "id":"hnc1681756740573", 
-             "title":"Environments (test topic)", 
-             "description":"test topic", 
-             "url":"Vantage/hnc1681756740573.md"
-             }
-
-          ]
-
+       "url":"Vantage/apw1640280478763.md"
        }
     , 
     { 
@@ -376,8 +334,18 @@
           { 
              "id":"vyx1659391025497", 
              "title":"QueryGrid key concepts", 
-             "description":"QueryGrid connectivity options and components", 
-             "url":"Vantage/vyx1659391025497.md"
+             "description":"QueryGrid description and connectivity options", 
+             "url":"Vantage/vyx1659391025497.md", 
+             "children":[
+                { 
+                   "id":"cdg1689098187313", 
+                   "title":"QueryGrid components", 
+                   "description":"Brief overview of QueryGrid system components", 
+                   "url":"Vantage/cdg1689098187313.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -390,17 +358,7 @@
                    "id":"znp1640282079399", 
                    "title":"Connect data source", 
                    "description":"Considerations for QueryGrid data source", 
-                   "url":"Vantage/znp1640282079399.md", 
-                   "children":[
-                      { 
-                         "id":"bbw1687364943833", 
-                         "title":"Authorization", 
-                         "description":"Set up authorization for new data source", 
-                         "url":"Vantage/bbw1687364943833.md"
-                         }
-
-                      ]
-
+                   "url":"Vantage/znp1640282079399.md"
                    }
                 , 
                 { 
@@ -547,37 +505,6 @@
        }
     , 
     { 
-       "id":"auw1640280669500", 
-       "title":"Flow", 
-       "description":"Load data from a compatible object store.", 
-       "url":"Vantage/auw1640280669500.md", 
-       "children":[
-          { 
-             "id":"geh1659041833397", 
-             "title":"Flow key concepts", 
-             "description":"Flow description, components, and characteristics", 
-             "url":"Vantage/geh1659041833397.md"
-             }
-          , 
-          { 
-             "id":"luq1640282345986", 
-             "title":"Create a flow", 
-             "description":"Considerations for creating a flow", 
-             "url":"Vantage/luq1640282345986.md"
-             }
-          , 
-          { 
-             "id":"wsa1640282405363", 
-             "title":"Manage flow", 
-             "description":"Considerations for viewing and editing flows.", 
-             "url":"Vantage/wsa1640282405363.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"fcv1681758902467", 
        "title":"Access management", 
        "description":"Manage access to your VantageCloud Lake organization.", 
@@ -656,16 +583,13 @@
 
        }
     , 
-    { 
-       "id":"bkm1640280721917", 
-       "title":"Use cases", 
-       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-       "url":"Vantage/bkm1640280721917.md",
-       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-       }
-    
-
-    
+{ 
+   "id":"bkm1640280721917", 
+   "title":"Use cases", 
+   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+   "url":"Vantage/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+   }
 
     ]
 
