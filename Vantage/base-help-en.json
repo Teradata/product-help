@@ -671,6 +671,78 @@
                 ]
 
              }
+          , 
+          { 
+             "id":"obp1690235334289", 
+             "title":"Data catalog", 
+             "description":"", 
+             "url":"Vantage/obp1690235334289.md", 
+             "children":[
+                { 
+                   "id":"bpg1690235356879", 
+                   "title":"Manage data sources", 
+                   "description":"", 
+                   "url":"Vantage/bpg1690235356879.md", 
+                   "children":[
+                      { 
+                         "id":"pgz1690235958507", 
+                         "title":"Add a data source", 
+                         "description":"", 
+                         "url":"Vantage/pgz1690235958507.md"
+                         }
+                      , 
+                      { 
+                         "id":"fzm1690236018219", 
+                         "title":"Publish a data source", 
+                         "description":"", 
+                         "url":"Vantage/fzm1690236018219.md"
+                         }
+                      , 
+                      { 
+                         "id":"tio1690236040209", 
+                         "title":"Modify a data source", 
+                         "description":"", 
+                         "url":"Vantage/tio1690236040209.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"nzy1690239462959", 
+                   "title":"Use data catalog", 
+                   "description":"", 
+                   "url":"Vantage/nzy1690239462959.md", 
+                   "children":[
+                      { 
+                         "id":"nld1690240582913", 
+                         "title":"Search and filter the catalog", 
+                         "description":"", 
+                         "url":"Vantage/nld1690240582913.md"
+                         }
+                      , 
+                      { 
+                         "id":"lxa1690240867862", 
+                         "title":"View datasets", 
+                         "description":"", 
+                         "url":"Vantage/lxa1690240867862.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ray1690236082251", 
+                   "title":"Data catalog FAQ", 
+                   "description":"", 
+                   "url":"Vantage/ray1690236082251.md"
+                   }
+
+                ]
+
+             }
 
           ]
 
