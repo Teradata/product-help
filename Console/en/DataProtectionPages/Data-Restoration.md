@@ -1,3 +1,7 @@
+Make sure you meet the necessary prerequisites for same-site or cross-site restorations, as the case may be. See [Restoring a Standard Backup](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Restoring-a-Standard-Backup) for more details.
+
+By default, the current site is selected for restoration. For cross-site restoration, select a different site to restore the backup.
+
 Select the necessary settings from the following for restoring your backup.
 
 | Option  | Details  |
