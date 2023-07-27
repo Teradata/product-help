@@ -1,5 +1,13 @@
 ﻿{  "items":[
     { 
+       "id":"bab1682536172420", 
+       "title":"最新情報", 
+       "description":"最新の機能やアップデートについて学習します。", 
+       "icon":"new_releases", 
+       "url":"Vantage/ja/bab1682536172420.md"
+       }
+    , 
+    { 
        "id":"sbt1640280496980", 
        "title":"環境", 
        "description":"データの読み込み、クエリーの実行などです。", 
@@ -186,6 +194,75 @@
        }
     , 
     { 
+       "id":"jlf1663616946889", 
+       "title":"データ共有", 
+       "description":"テーブルやビューなど、データを他のユーザーと共有します。", 
+       "url":"Vantage/ja/jlf1663616946889.md", 
+       "children":[
+          { 
+             "id":"hdx1681040827922", 
+             "title":"データ共有ユーザーの管理", 
+             "description":"データ共有ユーザーの管理", 
+             "url":"Vantage/ja/hdx1681040827922.md"
+             }
+          , 
+          { 
+             "id":"vlk1663617148666", 
+             "title":"データ共有の作成", 
+             "description":"データ共有を作成する際の注意点", 
+             "url":"Vantage/ja/vlk1663617148666.md"
+             }
+          , 
+          { 
+             "id":"gds1686247574408", 
+             "title":"データセットの利用", 
+             "description":"プロバイダとサブスクライバのタスクへのリンク", 
+             "url":"Vantage/ja/gds1686247574408.md", 
+             "children":[
+                { 
+                   "id":"rfg1681040443995", 
+                   "title":"データセットの管理", 
+                   "description":"データセットの追加と管理", 
+                   "url":"Vantage/ja/rfg1681040443995.md"
+                   }
+                , 
+                { 
+                   "id":"hfx1686247226223", 
+                   "title":"データセットの表示と使用", 
+                   "description":"データのクエリに関する規則", 
+                   "url":"Vantage/ja/hfx1686247226223.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"vph1681040670091", 
+             "title":"サブスクライバの管理", 
+             "description":"ユーザーとロールの追加", 
+             "url":"Vantage/ja/vph1681040670091.md"
+             }
+          , 
+          { 
+             "id":"vuh1681040768372", 
+             "title":"共有の削除", 
+             "description":"共有の削除", 
+             "url":"Vantage/ja/vuh1681040768372.md"
+             }
+          , 
+          { 
+             "id":"laf1686249149487", 
+             "title":"データ共有に関するよくある質問", 
+             "description":"データ共有に関するよくある質問", 
+             "url":"Vantage/ja/laf1686249149487.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"xbg1640280430669", 
        "title":"エディタ", 
        "description":"SQL クエリーを作成、実行します。", 
@@ -212,13 +289,13 @@
              "url":"Vantage/ja/dgd1640281158386.md"
              }
           , 
-     { 
-       "id":"bkm1640280721917", 
-       "title":"ユースケース", 
-       "description":"ユースケースを実行して、VantageCloud Lake の機能を探ります。", 
-       "url":"Vantage/ja/bkm1640280721917.md",
-       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-       }
+{ 
+   "id":"bkm1640280721917", 
+   "title":"ユースケース", 
+   "description":"ユースケースを実行して、VantageCloud Lake の機能を探ります。", 
+   "url":"Vantage/ja/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
+   }
 
           ]
 
@@ -234,21 +311,14 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Query", 
-       "description":"現在のクエリーと完了したクエリーを表示します。", 
+       "description":"クエリの表示と最適化を行います。", 
        "url":"Vantage/ja/ajr1640280560519.md", 
        "children":[
           { 
-             "id":"aow1659389241176", 
-             "title":"クエリーのキー コンセプト", 
-             "description":"クエリーのタイプ", 
-             "url":"Vantage/ja/aow1659389241176.md"
-             }
-          , 
-          { 
-             "id":"fcd1640281818081", 
-             "title":"現在のクエリーと完了したクエリーの表示", 
-             "description":"クエリーを表示する際の注意点", 
-             "url":"Vantage/ja/fcd1640281818081.md"
+             "id":"zvd1688067459510", 
+             "title":"クエリの詳細", 
+             "description":"", 
+             "url":"Vantage/ja/zvd1688067459510.md"
              }
 
           ]
@@ -264,8 +334,18 @@
           { 
              "id":"vyx1659391025497", 
              "title":"QueryGrid のキー コンセプト", 
-             "description":"QueryGrid の接続オプションとコンポーネント", 
-             "url":"Vantage/ja/vyx1659391025497.md"
+             "description":"QueryGridの説明と接続オプション", 
+             "url":"Vantage/ja/vyx1659391025497.md", 
+             "children":[
+                { 
+                   "id":"cdg1689098187313", 
+                   "title":"QueryGridコンポーネント", 
+                   "description":"QueryGridシステム コンポーネントの簡単な概要", 
+                   "url":"Vantage/ja/cdg1689098187313.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -283,15 +363,15 @@
                 , 
                 { 
                    "id":"yml1671157089031", 
-                   "title":"PrivateLink の変更リクエスト", 
+                   "title":"プライベート リンクの変更リクエスト", 
                    "description":"QueryGrid を有効にするためのインターフェイス エンドポイントをリクエストする", 
                    "url":"Vantage/ja/yml1671157089031.md"
                    }
                 , 
                 { 
                    "id":"wgr1674777759031", 
-                   "title":"VantageCloud Enterprise QueryGrid マネージャのアップグレード", 
-                   "description":"VantageCloud Enterprise QGM をアップグレードする手順", 
+                   "title":"QueryGridマネージャのアップグレード", 
+                   "description":"Lake以外のQueryGridマネージャをアップグレードする手順です。", 
                    "url":"Vantage/ja/wgr1674777759031.md"
                    }
 
@@ -503,13 +583,13 @@
 
        }
     , 
-    { 
-       "id":"bkm1640280721917", 
-       "title":"ユースケース", 
-       "description":"ユースケースを実行して、VantageCloud Lakeの機能を調べます。", 
-       "url":"Vantage/ja/bkm1640280721917.md",
-       "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
-       }
+{ 
+   "id":"bkm1640280721917", 
+   "title":"Use cases", 
+   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+   "url":"Vantage/ja/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
+   }
 
     ]
 

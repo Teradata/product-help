@@ -27,6 +27,34 @@
              "description":"test topic", 
              "url":"Vantage/vok1689789991855.md"
              }
+          , 
+          { 
+             "id":"wsn1689789992765", 
+             "title":"Manage organization admins", 
+             "description":"Considerations for managing organization admins", 
+             "url":"Vantage/wsn1689789992765.md"
+             }
+          , 
+          { 
+             "id":"tub1689789992158", 
+             "title":"Set up single sign-on", 
+             "description":"Configure identity providers and realms", 
+             "url":"Vantage/tub1689789992158.md"
+             }
+          , 
+          { 
+             "id":"hpi1690321159796", 
+             "title":"Manage access token", 
+             "description":"", 
+             "url":"Vantage/hpi1690321159796.md"
+             }
+          , 
+          { 
+             "id":"vnw1690321328683", 
+             "title":"Data migration", 
+             "description":"", 
+             "url":"Vantage/vnw1690321328683.md"
+             }
 
           ]
 
@@ -40,7 +68,7 @@
        "children":[
           { 
              "id":"ghy1689789991514", 
-             "title":"Environment key concepts", 
+             "title":"Environment components", 
              "description":"Components of an environment", 
              "url":"Vantage/ghy1689789991514.md"
              }
@@ -54,9 +82,26 @@
           , 
           { 
              "id":"qxb1689789991112", 
-             "title":"Configure connection settings", 
+             "title":"Settings", 
              "description":"Considerations for using Internet or Private link", 
-             "url":"Vantage/qxb1689789991112.md"
+             "url":"Vantage/qxb1689789991112.md", 
+             "children":[
+                { 
+                   "id":"swo1689789993137", 
+                   "title":"Add an identity provider", 
+                   "description":"", 
+                   "url":"Vantage/swo1689789993137.md"
+                   }
+                , 
+                { 
+                   "id":"hej1690324035756", 
+                   "title":"ModelOps", 
+                   "description":"", 
+                   "url":"Vantage/hej1690324035756.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -67,7 +112,7 @@
              "children":[
                 { 
                    "id":"nni1689789993103", 
-                   "title":"Compute group key concepts", 
+                   "title":"Compute group capabilities (to be removed)", 
                    "description":"Compute group capabilities", 
                    "url":"Vantage/nni1689789993103.md"
                    }
@@ -127,68 +172,6 @@
              "description":"Manage access to your VantageCloud Lake organization.", 
              "url":"Vantage/mnf1689789991839.md", 
              "children":[
-                { 
-                   "id":"tub1689789992158", 
-                   "title":"Set up single sign-on", 
-                   "description":"Configure identity providers and realms", 
-                   "url":"Vantage/tub1689789992158.md", 
-                   "children":[
-                      { 
-                         "id":"swo1689789993137", 
-                         "title":"Add an identity provider", 
-                         "description":"", 
-                         "url":"Vantage/swo1689789993137.md", 
-                         "children":[
-                            { 
-                               "id":"dbu1689789992954", 
-                               "title":"OpenID Connect", 
-                               "description":"", 
-                               "url":"Vantage/dbu1689789992954.md"
-                               }
-                            , 
-                            { 
-                               "id":"tzl1689789991630", 
-                               "title":"SAML 2.0", 
-                               "description":"", 
-                               "url":"Vantage/tzl1689789991630.md"
-                               }
-
-                            ]
-
-                         }
-                      , 
-                      { 
-                         "id":"akz1689789991814", 
-                         "title":"Create realms", 
-                         "description":"", 
-                         "url":"Vantage/akz1689789991814.md"
-                         }
-                      , 
-                      { 
-                         "id":"vpw1689789992142", 
-                         "title":"Associate realms with environments", 
-                         "description":"", 
-                         "url":"Vantage/vpw1689789992142.md"
-                         }
-                      , 
-                      { 
-                         "id":"sft1689789990693", 
-                         "title":"Single sign-on FAQ", 
-                         "description":"", 
-                         "url":"Vantage/sft1689789990693.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"wsn1689789992765", 
-                   "title":"Manage organization admins", 
-                   "description":"Considerations for managing organization admins", 
-                   "url":"Vantage/wsn1689789992765.md"
-                   }
-                , 
                 { 
                    "id":"bzs1689789992898", 
                    "title":"Manage database users", 
@@ -289,24 +272,14 @@
           { 
              "id":"lsj1689789992109", 
              "title":"QueryGrid", 
-             "description":"Deploy and manage QueryGrid data analytics fabric.", 
+             "description":"Use QueryGrid to transfer data between one or more data sources", 
              "url":"Vantage/lsj1689789992109.md", 
              "children":[
                 { 
-                   "id":"fhp1689789991607", 
-                   "title":"QueryGrid key concepts", 
-                   "description":"QueryGrid description and connectivity options", 
-                   "url":"Vantage/fhp1689789991607.md", 
-                   "children":[
-                      { 
-                         "id":"koc1689789991675", 
-                         "title":"QueryGrid components", 
-                         "description":"Brief overview of QueryGrid system components", 
-                         "url":"Vantage/koc1689789991675.md"
-                         }
-
-                      ]
-
+                   "id":"koc1689789991675", 
+                   "title":"QueryGrid connectivity and components", 
+                   "description":"Brief overview of QueryGrid system components", 
+                   "url":"Vantage/koc1689789991675.md"
                    }
                 , 
                 { 
@@ -470,6 +443,13 @@
                       ]
 
                    }
+                , 
+                { 
+                   "id":"zvj1689875853381", 
+                   "title":"Compute resources", 
+                   "description":"", 
+                   "url":"Vantage/zvj1689875853381.md"
+                   }
 
                 ]
 
@@ -480,10 +460,10 @@
        }
     , 
     { 
-       "id":"zvj1689875853381", 
+       "id":"mdh1690324658095", 
        "title":"Compute resources", 
        "description":"", 
-       "url":"Vantage/zvj1689875853381.md"
+       "url":"Vantage/mdh1690324658095.md"
        }
     , 
     { 
@@ -566,39 +546,17 @@
        }
     , 
     { 
-       "id":"kio1689789991846", 
-       "title":"Editor", 
-       "description":"Write and run SQL queries.", 
-       "url":"Vantage/kio1689789991846.md", 
+       "id":"jwr1690323746073", 
+       "title":"Data management", 
+       "description":"", 
+       "url":"Vantage/jwr1690323746073.md", 
        "children":[
           { 
-             "id":"nhv1689789991831", 
-             "title":"Editor key concepts", 
-             "description":"Editor description, components, and characteristics", 
-             "url":"Vantage/nhv1689789991831.md"
+             "id":"cic1690323393388", 
+             "title":"ModelOps", 
+             "description":"", 
+             "url":"Vantage/cic1690323393388.md"
              }
-          , 
-          { 
-             "id":"alg1689789991064", 
-             "title":"Connect to the environment", 
-             "description":"Considerations for connecting to an account", 
-             "url":"Vantage/alg1689789991064.md"
-             }
-          , 
-          { 
-             "id":"ope1689789991304", 
-             "title":"Create and run a SQL statement or script", 
-             "description":"Considerations for running SQL", 
-             "url":"Vantage/ope1689789991304.md"
-             }
-          , 
-{ 
-   "id":"bkm1640280721917", 
-   "title":"Use cases", 
-   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
-   "url":"Vantage/bkm1640280721917.md",
-   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-   }
 
           ]
 
@@ -679,37 +637,6 @@
              "url":"Vantage/obp1690235334289.md", 
              "children":[
                 { 
-                   "id":"bpg1690235356879", 
-                   "title":"Manage data sources", 
-                   "description":"", 
-                   "url":"Vantage/bpg1690235356879.md", 
-                   "children":[
-                      { 
-                         "id":"pgz1690235958507", 
-                         "title":"Add a data source", 
-                         "description":"", 
-                         "url":"Vantage/pgz1690235958507.md"
-                         }
-                      , 
-                      { 
-                         "id":"fzm1690236018219", 
-                         "title":"Publish a data source", 
-                         "description":"", 
-                         "url":"Vantage/fzm1690236018219.md"
-                         }
-                      , 
-                      { 
-                         "id":"tio1690236040209", 
-                         "title":"Modify a data source", 
-                         "description":"", 
-                         "url":"Vantage/tio1690236040209.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
                    "id":"nzy1690239462959", 
                    "title":"Use data catalog", 
                    "description":"", 
@@ -743,16 +670,154 @@
                 ]
 
              }
+          , 
+          { 
+             "id":"bpg1690235356879", 
+             "title":"Manage data sources", 
+             "description":"", 
+             "url":"Vantage/bpg1690235356879.md", 
+             "children":[
+                { 
+                   "id":"pgz1690235958507", 
+                   "title":"Add a data source and datasets", 
+                   "description":"", 
+                   "url":"Vantage/pgz1690235958507.md"
+                   }
+                , 
+                { 
+                   "id":"fzm1690236018219", 
+                   "title":"Publish a data source", 
+                   "description":"", 
+                   "url":"Vantage/fzm1690236018219.md"
+                   }
+                , 
+                { 
+                   "id":"tio1690236040209", 
+                   "title":"Modify a data source", 
+                   "description":"", 
+                   "url":"Vantage/tio1690236040209.md"
+                   }
+
+                ]
+
+             }
 
           ]
 
        }
     , 
     { 
+       "id":"kio1689789991846", 
+       "title":"Editor", 
+       "description":"Write and run SQL queries.", 
+       "url":"Vantage/kio1689789991846.md", 
+       "children":[
+          { 
+             "id":"nhv1689789991831", 
+             "title":"Editor capabilities (to be removed)", 
+             "description":"Editor description, components, and characteristics", 
+             "url":"Vantage/nhv1689789991831.md"
+             }
+          , 
+          { 
+             "id":"alg1689789991064", 
+             "title":"Connect to the environment", 
+             "description":"Considerations for connecting to an account", 
+             "url":"Vantage/alg1689789991064.md", 
+             "children":[
+                { 
+                   "id":"ope1689789991304", 
+                   "title":"Run SQL", 
+                   "description":"Create and run an SQL statement or script", 
+                   "url":"Vantage/ope1689789991304.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"fya1690325244252", 
+             "title":"Loading data", 
+             "description":"", 
+             "url":"Vantage/fya1690325244252.md", 
+             "children":[
+                { 
+                   "id":"jaw1690325288041", 
+                   "title":"Foreign tables", 
+                   "description":"", 
+                   "url":"Vantage/jaw1690325288041.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"yel1690319899004", 
+             "title":"In-database functions", 
+             "description":"", 
+             "url":"Vantage/yel1690319899004.md"
+             }
+          , 
+{ 
+   "id":"bkm1640280721917", 
+   "title":"Use cases", 
+   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+   "url":"Vantage/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+   }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"vnw1690321328683", 
+       "title":"Data migration", 
+       "description":"", 
+       "url":"Vantage/vnw1690321328683.md", 
+       "children":[
+          { 
+             "id":"fvp1690323934595", 
+             "title":"Data copy", 
+             "description":"", 
+             "url":"Vantage/fvp1690323934595.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"nms1690325068331", 
+       "title":"Notifications", 
+       "description":"", 
+       "url":"Vantage/nms1690325068331.md"
+       }
+    , 
+    { 
        "id":"bqz1689894912978", 
        "title":"Account settings", 
        "description":"", 
-       "url":"Vantage/bqz1689894912978.md"
+       "url":"Vantage/bqz1689894912978.md", 
+       "children":[
+          { 
+             "id":"dax1690321097398", 
+             "title":"General settings", 
+             "description":"", 
+             "url":"Vantage/dax1690321097398.md"
+             }
+          , 
+          { 
+             "id":"cdo1690321136189", 
+             "title":"Reset your password", 
+             "description":"", 
+             "url":"Vantage/cdo1690321136189.md"
+             }
+
+          ]
+
        }
     , 
 { 
