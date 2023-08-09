@@ -12,7 +12,18 @@
        "title":"Get started", 
        "description":"Complete these tasks first.", 
        "icon":"person", 
-       "url":"Vantage/vfk1689789992057.md"
+       "url":"Vantage/vfk1689789992057.md", 
+       "children":[
+          { 
+             "id":"grz1684272246853", 
+             "title":"What's New", 
+             "description":"Learn about the latest features and updates", 
+             "icon":"new_releases", 
+             "url":"Vantage/grz1684272246853.md"
+             }
+
+          ]
+
        }
     , 
     { 
