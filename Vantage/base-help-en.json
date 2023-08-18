@@ -190,34 +190,27 @@
     { 
        "id":"jrq1640280690304", 
        "title":"Data protection", 
-       "description":"Protect data with backup and recovery options.", 
+       "description":"Protect data with backup and recovery options", 
        "url":"Vantage/jrq1640280690304.md", 
        "children":[
           { 
-             "id":"aqo1659046659258", 
-             "title":"Data protection key concepts", 
-             "description":"Data protection description, components, and characteristics", 
-             "url":"Vantage/aqo1659046659258.md"
-             }
-          , 
-          { 
              "id":"qmb1659046927155", 
              "title":"Create a full backup", 
-             "description":"Considerations for creating a backup", 
+             "description":"", 
              "url":"Vantage/qmb1659046927155.md"
              }
           , 
           { 
              "id":"kqr1640280954140", 
              "title":"Restore data", 
-             "description":"Considerations for restoring from a backup", 
+             "description":"", 
              "url":"Vantage/kqr1640280954140.md"
              }
           , 
           { 
              "id":"sus1659047241965", 
              "title":"Review backup history", 
-             "description":"Considerations for reviewing backup history", 
+             "description":"", 
              "url":"Vantage/sus1659047241965.md"
              }
 
