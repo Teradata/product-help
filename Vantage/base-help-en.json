@@ -328,7 +328,7 @@
              "url":"Vantage/iql1691540875799.md"
              }
           , 
-          { 
+    { 
              "id":"vkk1692059193535", 
              "title":"Build query", 
              "description":"", 
@@ -341,7 +341,7 @@
              "description":"", 
              "url":"Vantage/iww1680797117120.md",
 			 "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-   }
+             }
 
           ]
 
@@ -726,6 +726,7 @@
    "id":"bkm1640280721917", 
    "title":"Use cases", 
    "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+          "icon":"book", 
    "url":"Vantage/bkm1640280721917.md",
    "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
    }
