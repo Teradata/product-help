@@ -8,6 +8,14 @@
        }
     , 
     { 
+       "id":"tta1687442978234", 
+       "title":"Get started", 
+       "description":"Complete these tasks first.", 
+       "icon":"person", 
+       "url":"Vantage/tta1687442978234.md"
+       }
+    , 
+    { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
        "description":"Load data, run queries, and more.", 
@@ -32,6 +40,30 @@
              "title":"Configure connection settings", 
              "description":"", 
              "url":"Vantage/laq1640280582810.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"lyi1662583368110", 
+       "title":"Compute workers", 
+       "description":"Create nodes for heavy processing.", 
+       "url":"Vantage/lyi1662583368110.md", 
+       "children":[
+          { 
+             "id":"aix1662583909152", 
+             "title":"Compute worker key concepts", 
+             "description":"Compute worker description, components, and characteristics", 
+             "url":"Vantage/aix1662583909152.md"
+             }
+          , 
+          { 
+             "id":"azi1662584068628", 
+             "title":"Create a compute worker", 
+             "description":"Considerations for creating a Compute worker", 
+             "url":"Vantage/azi1662584068628.md"
              }
 
           ]
@@ -256,6 +288,13 @@
        }
     , 
     { 
+       "id":"vnt1689959854009", 
+       "title":"Data catalog", 
+       "description":"View, search, browse, and annotate data", 
+       "url":"Vantage/vnt1689959854009.md"
+       }
+    , 
+    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries.", 
@@ -290,6 +329,13 @@
              }
           , 
           { 
+             "id":"vkk1692059193535", 
+             "title":"Build query", 
+             "description":"", 
+             "url":"Vantage/vkk1692059193535.md"
+             }
+          , 
+          { 
   "id":"bkm1640280721917", 
    "title":"Use cases", 
    "description":"Run use cases to explore VantageCloud Lake capabilities.", 
@@ -305,7 +351,17 @@
        "id":"apw1640280478763", 
        "title":"Organization", 
        "description":"Manage your VantageCloud Lake organization.", 
-       "url":"Vantage/apw1640280478763.md"
+       "url":"Vantage/apw1640280478763.md", 
+       "children":[
+          { 
+             "id":"hnc1681756740573", 
+             "title":"Environments (test topic)", 
+             "description":"test topic", 
+             "url":"Vantage/hnc1681756740573.md"
+             }
+
+          ]
+
        }
     , 
     { 
@@ -505,6 +561,89 @@
        }
     , 
     { 
+       "id":"auw1640280669500", 
+       "title":"Flows", 
+       "description":"Load data from object storage", 
+       "url":"Vantage/auw1640280669500.md", 
+       "children":[
+          { 
+             "id":"wsa1640282405363", 
+             "title":"Who does what", 
+             "description":"", 
+             "url":"Vantage/wsa1640282405363.md"
+             }
+          , 
+          { 
+             "id":"wer1691592221683", 
+             "title":"Provide access to Amazon S3 buckets", 
+             "description":"", 
+             "url":"Vantage/wer1691592221683.md"
+             }
+          , 
+          { 
+             "id":"luq1640282345986", 
+             "title":"Create a flow", 
+             "description":"", 
+             "url":"Vantage/luq1640282345986.md", 
+             "children":[
+                { 
+                   "id":"ury1691596218182", 
+                   "title":"Load option considerations", 
+                   "description":"", 
+                   "url":"Vantage/ury1691596218182.md"
+                   }
+                , 
+                { 
+                   "id":"vwc1691596425578", 
+                   "title":"Source and target authorization", 
+                   "description":"", 
+                   "url":"Vantage/vwc1691596425578.md"
+                   }
+                , 
+                { 
+                   "id":"npn1691594431074", 
+                   "title":"Sources and targets", 
+                   "description":"", 
+                   "url":"Vantage/npn1691594431074.md"
+                   }
+                , 
+                { 
+                   "id":"gqi1691597450277", 
+                   "title":"Diagnostics", 
+                   "description":"", 
+                   "url":"Vantage/gqi1691597450277.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"fqx1691599182279", 
+             "title":"Run, pause, or reset a flow", 
+             "description":"", 
+             "url":"Vantage/fqx1691599182279.md"
+             }
+          , 
+          { 
+             "id":"dod1691610081069", 
+             "title":"Update a flow", 
+             "description":"", 
+             "url":"Vantage/dod1691610081069.md"
+             }
+          , 
+          { 
+             "id":"dxg1691603081375", 
+             "title":"Flows FAQ", 
+             "description":"", 
+             "url":"Vantage/dxg1691603081375.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"fcv1681758902467", 
        "title":"Access management", 
        "description":"Manage access to your VantageCloud Lake organization.", 
@@ -589,7 +728,8 @@
        "description":"Run use cases to explore VantageCloud Lake capabilities.", 
        "icon":"book", 
        "url":"Vantage/bkm1640280721917.md"
-	   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+	      "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+
        }
 
     ]
