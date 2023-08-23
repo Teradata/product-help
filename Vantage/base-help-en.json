@@ -335,12 +335,12 @@
              "url":"Vantage/vkk1692059193535.md"
              }
           , 
-             { 
+          { 
              "id":"iww1680797117120", 
              "title":"Use cases", 
              "description":"", 
              "url":"Vantage/iww1680797117120.md",
-   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+			 "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
    }
 
           ]
