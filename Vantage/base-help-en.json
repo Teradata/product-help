@@ -288,6 +288,18 @@
              "description":"", 
              "url":"Vantage/iql1691540875799.md"
              }
+                       , 
+          { 
+  "id":"bkm1640280721917", 
+   "title":"Use cases", 
+   "description":"Run use cases to explore VantageCloud Lake capabilities.", 
+   "url":"Vantage/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+             }
+
+          ]
+
+       }
     , 
     { 
        "id":"apw1640280478763", 
