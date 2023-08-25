@@ -41,7 +41,7 @@
     { 
        "id":"mqu1640280532737", 
        "title":"Compute groups", 
-       "description":"Create, view, and manage compute groups", 
+       "description":"Create and manage compute groups", 
        "url":"Vantage/mqu1640280532737.md", 
        "children":[
           { 
@@ -182,7 +182,7 @@
     { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
-       "description":"Share data with other users, including tables and views", 
+       "description":"Share tables and views with other users", 
        "url":"Vantage/jlf1663616946889.md", 
        "children":[
           { 
@@ -284,11 +284,11 @@
           , 
     { 
        "id":"bkm1640280721917", 
-       "title":"Explore use cases", 
+       "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities", 
        "icon":"book", 
        "url":"Vantage/bkm1640280721917.md",
-	   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
           ]
@@ -322,7 +322,7 @@
     { 
        "id":"vyx1659391025497", 
        "title":"QueryGrid", 
-       "description":"Use QueryGrid to transfer data between one or more data sources", 
+       "description":"Transfer data between one or more data sources", 
        "url":"Vantage/vyx1659391025497.md", 
        "children":[
           { 
@@ -346,7 +346,7 @@
                    "children":[
                       { 
                          "id":"bbw1687364943833", 
-                         "title":"Set up authorization for a new data source", 
+                         "title":"Set up authorization", 
                          "description":"", 
                          "url":"Vantage/bbw1687364943833.md"
                          }
@@ -662,11 +662,11 @@
     , 
     { 
        "id":"bkm1640280721917", 
-       "title":"Explore use cases", 
+       "title":"Use cases", 
        "description":"Run use cases to explore VantageCloud Lake capabilities", 
        "icon":"book", 
        "url":"Vantage/bkm1640280721917.md",
-	   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
     ]
