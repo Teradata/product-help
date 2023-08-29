@@ -23,4 +23,3 @@ If the job restoration fails or completes with errors, you can rerun the job. Th
 3.	In the **SETTINGS** tab, make changes in the settings, as needed.
 4.	Select the objects that failed in the **OBJECTS** tab and click **SAVE**.
 5.	Click **RUN** from the ![../Images/more_vert_kebob-15px.svg](../Images/more_vert_kebob-15px.svg).
-See [Disaster Recovery](https://docs-dev.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Disaster-Recovery) for more details.
