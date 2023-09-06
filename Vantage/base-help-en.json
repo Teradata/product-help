@@ -44,6 +44,12 @@
        }
     , 
     { 
+       "id":"vmt1693932844043", 
+       "title":"Compute resources", 
+       "url":"Vantage/vmt1693932844043.md"
+       }
+    , 
+    { 
        "id":"lyi1662583368110", 
        "title":"Compute workers", 
        "description":"Create nodes for heavy processing", 
@@ -166,7 +172,7 @@
        "children":[
           { 
              "id":"qmb1659046927155", 
-             "title":"Create a backup plan", 
+             "title":"Create or modify a backup plan", 
              "url":"Vantage/qmb1659046927155.md"
              }
           , 
@@ -318,6 +324,12 @@
 
           ]
 
+       }
+    , 
+    { 
+       "id":"vkg1693932972952", 
+       "title":"Data sharing and exploration", 
+       "url":"Vantage/vkg1693932972952.md"
        }
     , 
     { 
