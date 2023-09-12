@@ -191,6 +191,39 @@
                    "title":"Backup history", 
                    "url":"Vantage/sus1659047241965.md"
                    }
+                , 
+                { 
+                   "id":"nni1694461234790", 
+                   "title":"Disaster recovery", 
+                   "url":"Vantage/nni1694461234790.md", 
+                   "children":[
+                      { 
+                         "id":"uux1694461279489", 
+                         "title":"Create a disaster recovery plan", 
+                         "url":"Vantage/uux1694461279489.md"
+                         }
+                      , 
+                      { 
+                         "id":"cqv1694469814376", 
+                         "title":"Edit a disaster recovery plan", 
+                         "url":"Vantage/cqv1694469814376.md"
+                         }
+                      , 
+                      { 
+                         "id":"aie1694462032167", 
+                         "title":"Retention policy", 
+                         "url":"Vantage/aie1694462032167.md"
+                         }
+                      , 
+                      { 
+                         "id":"iom1694462056775", 
+                         "title":"Schedule", 
+                         "url":"Vantage/iom1694462056775.md"
+                         }
+
+                      ]
+
+                   }
 
                 ]
 
