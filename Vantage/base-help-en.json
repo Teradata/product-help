@@ -34,18 +34,6 @@
              "description":"Configure identity providers and realms", 
              "url":"Vantage/mxq1680183881642.md"
              }
-          , 
-          { 
-             "id":"mwx1694115292045", 
-             "title":"Manage access token", 
-             "url":"Vantage/mwx1694115292045.md"
-             }
-          , 
-          { 
-             "id":"tvn1694118411267", 
-             "title":"Data migration", 
-             "url":"Vantage/tvn1694118411267.md"
-             }
 
           ]
 
@@ -79,12 +67,6 @@
                    "title":"Add an identity provider", 
                    "url":"Vantage/whf1680184025148.md"
                    }
-                , 
-                { 
-                   "id":"qya1694122121061", 
-                   "title":"ModelOps", 
-                   "url":"Vantage/qya1694122121061.md"
-                   }
 
                 ]
 
@@ -112,23 +94,6 @@
                    "id":"wdz1640281743091", 
                    "title":"Compute group access", 
                    "url":"Vantage/wdz1640281743091.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"lyi1662583368110", 
-             "title":"Compute workers", 
-             "description":"Create nodes for heavy processing", 
-             "url":"Vantage/lyi1662583368110.md", 
-             "children":[
-                { 
-                   "id":"azi1662584068628", 
-                   "title":"Create a compute worker", 
-                   "description":"Considerations for creating a Compute worker", 
-                   "url":"Vantage/azi1662584068628.md"
                    }
 
                 ]
@@ -190,39 +155,6 @@
                    "id":"sus1659047241965", 
                    "title":"Backup history", 
                    "url":"Vantage/sus1659047241965.md"
-                   }
-                , 
-                { 
-                   "id":"nni1694461234790", 
-                   "title":"Disaster recovery", 
-                   "url":"Vantage/nni1694461234790.md", 
-                   "children":[
-                      { 
-                         "id":"uux1694461279489", 
-                         "title":"Create a disaster recovery plan", 
-                         "url":"Vantage/uux1694461279489.md"
-                         }
-                      , 
-                      { 
-                         "id":"cqv1694469814376", 
-                         "title":"Edit a disaster recovery plan", 
-                         "url":"Vantage/cqv1694469814376.md"
-                         }
-                      , 
-                      { 
-                         "id":"aie1694462032167", 
-                         "title":"Retention policy", 
-                         "url":"Vantage/aie1694462032167.md"
-                         }
-                      , 
-                      { 
-                         "id":"iom1694462056775", 
-                         "title":"Schedule", 
-                         "url":"Vantage/iom1694462056775.md"
-                         }
-
-                      ]
-
                    }
 
                 ]
@@ -540,85 +472,6 @@
        }
     , 
     { 
-       "id":"bvr1694122081407", 
-       "title":"Data management", 
-       "url":"Vantage/bvr1694122081407.md"
-       }
-    , 
-    { 
-       "id":"vkg1693932972952", 
-       "title":"Data sharing and exploration", 
-       "url":"Vantage/vkg1693932972952.md", 
-       "children":[
-          { 
-             "id":"vnt1689959854009", 
-             "title":"Data catalog", 
-             "description":"View, search, browse, and annotate data", 
-             "url":"Vantage/vnt1689959854009.md", 
-             "children":[
-                { 
-                   "id":"nde1694121897837", 
-                   "title":"Use data catalog", 
-                   "url":"Vantage/nde1694121897837.md", 
-                   "children":[
-                      { 
-                         "id":"qpz1694121944094", 
-                         "title":"Search and filter the catalog", 
-                         "url":"Vantage/qpz1694121944094.md"
-                         }
-                      , 
-                      { 
-                         "id":"nme1694121977416", 
-                         "title":"View datasets", 
-                         "url":"Vantage/nme1694121977416.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"uat1694122014690", 
-                   "title":"Data catalog FAQ", 
-                   "url":"Vantage/uat1694122014690.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"mux1694121298338", 
-             "title":"Manage data sources", 
-             "url":"Vantage/mux1694121298338.md", 
-             "children":[
-                { 
-                   "id":"lsx1694121572990", 
-                   "title":"Add a data source and datasets", 
-                   "url":"Vantage/lsx1694121572990.md"
-                   }
-                , 
-                { 
-                   "id":"imp1694121598872", 
-                   "title":"Publish a data source", 
-                   "url":"Vantage/imp1694121598872.md"
-                   }
-                , 
-                { 
-                   "id":"mnk1694121651916", 
-                   "title":"Modify a data source", 
-                   "url":"Vantage/mnk1694121651916.md"
-                   }
-
-                ]
-
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
        "description":"Share tables and views with other users", 
@@ -709,16 +562,7 @@
           { 
              "id":"jwm1694121113608", 
              "title":"Loading data", 
-             "url":"Vantage/jwm1694121113608.md", 
-             "children":[
-                { 
-                   "id":"gmh1694121164971", 
-                   "title":"Foreign tables", 
-                   "url":"Vantage/gmh1694121164971.md"
-                   }
-
-                ]
-
+             "url":"Vantage/jwm1694121113608.md"
              }
           , 
           { 
@@ -740,48 +584,6 @@
              "icon":"book", 
              "url":"Vantage/bkm1640280721917.md", 
              "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"tvn1694118411267", 
-       "title":"Data migration", 
-       "url":"Vantage/tvn1694118411267.md", 
-       "children":[
-          { 
-             "id":"bgr1694118840100", 
-             "title":"Data copy", 
-             "url":"Vantage/bgr1694118840100.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"pau1694118340856", 
-       "title":"Notifications", 
-       "url":"Vantage/pau1694118340856.md"
-       }
-    , 
-    { 
-       "id":"klo1694115175906", 
-       "title":"Account settings", 
-       "url":"Vantage/klo1694115175906.md", 
-       "children":[
-          { 
-             "id":"ohx1694115234984", 
-             "title":"General settings", 
-             "url":"Vantage/ohx1694115234984.md"
-             }
-          , 
-          { 
-             "id":"bus1694115262415", 
-             "title":"Reset your password", 
-             "url":"Vantage/bus1694115262415.md"
              }
 
           ]
