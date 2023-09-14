@@ -533,6 +533,13 @@
        }
     , 
     { 
+       "id":"ajr1640280560519", 
+       "title":"Queries", 
+       "description":"View and optimize queries", 
+       "url":"Vantage/ajr1640280560519.md"
+       }
+    , 
+    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries", 
@@ -561,13 +568,14 @@
           , 
           { 
              "id":"jwm1694121113608", 
-             "title":"Loading data", 
+             "title":"Load data", 
              "url":"Vantage/jwm1694121113608.md"
              }
           , 
           { 
              "id":"iql1691540875799", 
              "title":"Explore in-database analytics functions", 
+             "description":"Find the functions you need and build no-code queries", 
              "url":"Vantage/iql1691540875799.md"
              }
           , 
@@ -575,6 +583,13 @@
              "id":"vkk1692059193535", 
              "title":"Build a query", 
              "url":"Vantage/vkk1692059193535.md"
+             }
+          , 
+          { 
+             "id":"xxs1694723933787", 
+             "title":"SQL and database reference", 
+             "description":"Use link to learn SQL commands, functions, and database functionality", 
+             "url":"Vantage/xxs1694723933787.md"
              }
           , 
           { 
