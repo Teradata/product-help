@@ -587,18 +587,21 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
+       "description":"View and optimize queries", 
        "url":"Vantage/ajr1640280560519.md"
        }
     , 
     { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
+       "description":"Write and run SQL queries", 
        "url":"Vantage/xbg1640280430669.md"
        }
     , 
     { 
        "id":"jwm1694121113608", 
        "title":"Load data", 
+       "description":"Methods of loading data", 
        "url":"Vantage/jwm1694121113608.md"
        }
     , 
