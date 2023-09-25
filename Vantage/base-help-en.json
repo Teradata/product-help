@@ -48,19 +48,21 @@
           { 
              "id":"qiv1640281527006", 
              "title":"Create an environment", 
+             "description":"Create an environment for your VantageCloud Lake organization", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
           { 
              "id":"laq1640280582810", 
-             "title":"Configure connection settings", 
+             "title":"Connect the environment", 
+             "description":"Set up the environment's connection", 
              "url":"Vantage/laq1640280582810.md"
              }
           , 
           { 
              "id":"nmr1658424425362", 
              "title":"Compute resources", 
-             "description":"Types of compute resources in an environment", 
+             "description":"Manage compute resources", 
              "url":"Vantage/nmr1658424425362.md", 
              "children":[
                 { 
@@ -98,7 +100,7 @@
           { 
              "id":"fcv1681758902467", 
              "title":"Access management", 
-             "description":"Manage access to your VantageCloud Lake organization", 
+             "description":"Manage access to your VantageCloud Lake organization and environments", 
              "url":"Vantage/fcv1681758902467.md", 
              "children":[
                 { 
@@ -405,22 +407,6 @@
              }
           , 
           { 
-             "id":"ajr1640280560519", 
-             "title":"Queries", 
-             "description":"View and optimize queries", 
-             "url":"Vantage/ajr1640280560519.md", 
-             "children":[
-                { 
-                   "id":"zvd1688067459510", 
-                   "title":"Query details", 
-                   "url":"Vantage/zvd1688067459510.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
              "id":"xbg1640280430669", 
              "title":"Editor", 
              "description":"Write and run SQL queries", 
@@ -429,16 +415,8 @@
                 { 
                    "id":"juo1640281123239", 
                    "title":"Connect to an environment", 
-                   "url":"Vantage/juo1640281123239.md", 
-                   "children":[
-                      { 
-                         "id":"dgd1640281158386", 
-                         "title":"Query your data", 
-                         "url":"Vantage/dgd1640281158386.md"
-                         }
-
-                      ]
-
+                   "description":"Connect to an environment to query", 
+                   "url":"Vantage/juo1640281123239.md"
                    }
                 , 
                 { 
@@ -449,8 +427,16 @@
                    }
                 , 
                 { 
+                   "id":"dgd1640281158386", 
+                   "title":"Query your data", 
+                   "description":"Query your data in Editor", 
+                   "url":"Vantage/dgd1640281158386.md"
+                   }
+                , 
+                { 
                    "id":"vkk1692059193535", 
                    "title":"Build a query", 
+                   "description":"Build a query without needing to code", 
                    "url":"Vantage/vkk1692059193535.md"
                    }
                 , 
@@ -480,6 +466,23 @@
                 ]
 
              }
+          , 
+          { 
+             "id":"ajr1640280560519", 
+             "title":"Queries", 
+             "description":"View and optimize queries", 
+             "url":"Vantage/ajr1640280560519.md", 
+             "children":[
+                { 
+                   "id":"zvd1688067459510", 
+                   "title":"Query details", 
+                   "description":"Understand the information displayed for each query", 
+                   "url":"Vantage/zvd1688067459510.md"
+                   }
+
+                ]
+
+             }
 
           ]
 
@@ -488,7 +491,7 @@
     { 
        "id":"vmt1693932844043", 
        "title":"Compute resources", 
-       "description":"Types of compute resources in an environment", 
+       "description":"Understand the types", 
        "url":"Vantage/vmt1693932844043.md"
        }
     , 
@@ -501,6 +504,7 @@
           { 
              "id":"tdv1682522711429", 
              "title":"Compute consumption", 
+             "description":"Monitor compute consumption", 
              "url":"Vantage/tdv1682522711429.md", 
              "children":[
                 { 
@@ -534,6 +538,7 @@
           { 
              "id":"nsc1682522782958", 
              "title":"Storage consumption", 
+             "description":"Monitor storage consumption", 
              "url":"Vantage/nsc1682522782958.md", 
              "children":[
                 { 
