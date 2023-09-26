@@ -32,7 +32,49 @@
              "id":"mxq1680183881642", 
              "title":"Set up single sign-on", 
              "description":"Configure identity providers and realms", 
-             "url":"Vantage/mxq1680183881642.md"
+             "url":"Vantage/mxq1680183881642.md", 
+             "children":[
+                { 
+                   "id":"whf1680184025148", 
+                   "title":"Add an identity provider", 
+                   "url":"Vantage/whf1680184025148.md", 
+                   "children":[
+                      { 
+                         "id":"lfb1680194800865", 
+                         "title":"OpenID Connect", 
+                         "url":"Vantage/lfb1680194800865.md"
+                         }
+                      , 
+                      { 
+                         "id":"dhs1680194823192", 
+                         "title":"SAML 2.0", 
+                         "url":"Vantage/dhs1680194823192.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ruf1680184116601", 
+                   "title":"Create realms", 
+                   "url":"Vantage/ruf1680184116601.md"
+                   }
+                , 
+                { 
+                   "id":"jbj1680184191443", 
+                   "title":"Associate realms with environments", 
+                   "url":"Vantage/jbj1680184191443.md"
+                   }
+                , 
+                { 
+                   "id":"qma1680184498880", 
+                   "title":"Single sign-on FAQ", 
+                   "url":"Vantage/qma1680184498880.md"
+                   }
+
+                ]
+
              }
 
           ]
@@ -100,7 +142,7 @@
           { 
              "id":"fcv1681758902467", 
              "title":"Access management", 
-             "description":"Manage access to your VantageCloud Lake organization and environments", 
+             "description":"Manage access to an environment", 
              "url":"Vantage/fcv1681758902467.md", 
              "children":[
                 { 
@@ -108,6 +150,12 @@
                    "title":"Manage database users", 
                    "description":"Considerations for managing users of an environment", 
                    "url":"Vantage/wxe1659392685092.md"
+                   }
+                , 
+                { 
+                   "id":"asz1695761738873", 
+                   "title":"Set up single sign-on", 
+                   "url":"Vantage/asz1695761738873.md"
                    }
 
                 ]
