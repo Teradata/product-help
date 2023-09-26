@@ -48,7 +48,7 @@
           { 
              "id":"qiv1640281527006", 
              "title":"Create an environment", 
-             "description":"Create an environment for your VantageCloud Lake organization", 
+             "description":"Create an environment for your organization", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
@@ -407,81 +407,17 @@
              }
           , 
           { 
-             "id":"xbg1640280430669", 
+             "id":"edx1695158840322", 
              "title":"Editor", 
              "description":"Write and run SQL queries", 
-             "url":"Vantage/xbg1640280430669.md", 
-             "children":[
-                { 
-                   "id":"juo1640281123239", 
-                   "title":"Connect to an environment", 
-                   "description":"Connect to an environment to query", 
-                   "url":"Vantage/juo1640281123239.md"
-                   }
-                , 
-                { 
-                   "id":"mor1695159014369", 
-                   "title":"Load data", 
-                   "description":"Load or access data", 
-                   "url":"Vantage/mor1695159014369.md"
-                   }
-                , 
-                { 
-                   "id":"dgd1640281158386", 
-                   "title":"Query your data", 
-                   "description":"Query your data in Editor", 
-                   "url":"Vantage/dgd1640281158386.md"
-                   }
-                , 
-                { 
-                   "id":"vkk1692059193535", 
-                   "title":"Build a query", 
-                   "description":"Build a query without needing to code", 
-                   "url":"Vantage/vkk1692059193535.md"
-                   }
-                , 
-                { 
-                   "id":"iql1691540875799", 
-                   "title":"Explore in-database analytics functions", 
-                   "description":"Find the functions you need and build no-code queries", 
-                   "url":"Vantage/iql1691540875799.md"
-                   }
-                , 
-                { 
-                   "id":"xxs1694723933787", 
-                   "title":"SQL and database reference", 
-                   "description":"Use link to learn SQL commands, functions, and database functionality", 
-                   "url":"Vantage/xxs1694723933787.md"
-                   }
-                , 
-                { 
-                   "id":"bkm1640280721917", 
-                   "title":"Use cases", 
-                   "description":"Run use cases to explore VantageCloud Lake capabilities", 
-                   "icon":"book", 
-                   "url":"Vantage/bkm1640280721917.md", 
-                   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-                   }
-
-                ]
-
+             "url":"Vantage/edx1695158840322.md"
              }
           , 
           { 
-             "id":"ajr1640280560519", 
+             "id":"ahj1695153106508", 
              "title":"Queries", 
              "description":"View and optimize queries", 
-             "url":"Vantage/ajr1640280560519.md", 
-             "children":[
-                { 
-                   "id":"zvd1688067459510", 
-                   "title":"Query details", 
-                   "description":"Understand the information displayed for each query", 
-                   "url":"Vantage/zvd1688067459510.md"
-                   }
-
-                ]
-
+             "url":"Vantage/ahj1695153106508.md"
              }
 
           ]
@@ -615,17 +551,74 @@
        }
     , 
     { 
-       "id":"edx1695158840322", 
+       "id":"xbg1640280430669", 
        "title":"Editor", 
        "description":"Write and run SQL queries", 
-       "url":"Vantage/edx1695158840322.md"
+       "url":"Vantage/xbg1640280430669.md", 
+       "children":[
+          { 
+             "id":"juo1640281123239", 
+             "title":"Connect to an environment", 
+             "description":"Connect to an environment to query", 
+             "url":"Vantage/juo1640281123239.md"
+             }
+          , 
+          { 
+             "id":"dgd1640281158386", 
+             "title":"Query your data", 
+             "description":"Query your data in Editor", 
+             "url":"Vantage/dgd1640281158386.md"
+             }
+          , 
+          { 
+             "id":"vkk1692059193535", 
+             "title":"Build a query", 
+             "description":"Build a query without needing to code", 
+             "url":"Vantage/vkk1692059193535.md"
+             }
+          , 
+          { 
+             "id":"iql1691540875799", 
+             "title":"Explore in-database analytics functions", 
+             "description":"Find the functions you need and build no-code queries", 
+             "url":"Vantage/iql1691540875799.md"
+             }
+          , 
+          { 
+             "id":"xxs1694723933787", 
+             "title":"SQL and database reference", 
+             "description":"Use link to learn SQL commands, functions, and database functionality", 
+             "url":"Vantage/xxs1694723933787.md"
+             }
+          , 
+          { 
+             "id":"bkm1640280721917", 
+             "title":"Use cases", 
+             "description":"Run use cases to explore VantageCloud Lake capabilities", 
+             "icon":"book", 
+             "url":"Vantage/bkm1640280721917.md", 
+             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+             }
+
+          ]
+
        }
     , 
     { 
-       "id":"ahj1695153106508", 
+       "id":"ajr1640280560519", 
        "title":"Queries", 
        "description":"View and optimize queries", 
-       "url":"Vantage/ahj1695153106508.md"
+       "url":"Vantage/ajr1640280560519.md", 
+       "children":[
+          { 
+             "id":"zvd1688067459510", 
+             "title":"Query details", 
+             "description":"Understand the information displayed for each query", 
+             "url":"Vantage/zvd1688067459510.md"
+             }
+
+          ]
+
        }
     , 
     { 
