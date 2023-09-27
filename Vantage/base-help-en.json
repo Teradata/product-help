@@ -457,7 +457,7 @@
           { 
              "id":"edx1695158840322", 
              "title":"Editor", 
-             "description":"Write and run SQL queries", 
+             "description":"Write (or build) and run SQL queries", 
              "url":"Vantage/edx1695158840322.md"
              }
           , 
@@ -601,20 +601,20 @@
     { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
-       "description":"Write and run SQL queries", 
+       "description":"Write (or build) and run SQL queries", 
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
           { 
              "id":"juo1640281123239", 
              "title":"Connect to an environment", 
-             "description":"Connect to an environment to query", 
+             "description":"Connect to an environment (in Editor)", 
              "url":"Vantage/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
              "title":"Query your data", 
-             "description":"Query your data in Editor", 
+             "description":"Run queries in Editor", 
              "url":"Vantage/dgd1640281158386.md"
              }
           , 
@@ -635,7 +635,7 @@
           { 
              "id":"xxs1694723933787", 
              "title":"SQL and database reference", 
-             "description":"Use link to learn SQL commands, functions, and database functionality", 
+             "description":"SQL commands, functions, and database functionality", 
              "url":"Vantage/xxs1694723933787.md"
              }
           , 
