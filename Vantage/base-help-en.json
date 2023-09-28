@@ -726,6 +726,27 @@
              }
           , 
           { 
+             "id":"gds1686247574408", 
+             "title":"Work with datasets", 
+             "url":"Vantage/gds1686247574408.md", 
+             "children":[
+                { 
+                   "id":"rfg1681040443995", 
+                   "title":"Manage datasets", 
+                   "url":"Vantage/rfg1681040443995.md"
+                   }
+                , 
+                { 
+                   "id":"hfx1686247226223", 
+                   "title":"View and use datasets", 
+                   "url":"Vantage/hfx1686247226223.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
              "id":"vph1681040670091", 
              "title":"Manage subscribers", 
              "url":"Vantage/vph1681040670091.md"
