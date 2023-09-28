@@ -784,7 +784,7 @@
           { 
              "id":"juo1640281123239", 
              "title":"Connect to an environment", 
-             "description":"Connect to an environment (in Editor)", 
+             "description":"Connect to an environment in Editor", 
              "url":"Vantage/juo1640281123239.md"
              }
           , 
@@ -894,6 +894,12 @@
              "id":"bus1694115262415", 
              "title":"Reset your password", 
              "url":"Vantage/bus1694115262415.md"
+             }
+          , 
+          { 
+             "id":"mwx1694115292045", 
+             "title":"Manage access token", 
+             "url":"Vantage/mwx1694115292045.md"
              }
 
           ]
