@@ -433,12 +433,6 @@
                       ]
 
                    }
-                , 
-                { 
-                   "id":"gds1686247574408", 
-                   "title":"Work with datasets", 
-                   "url":"Vantage/gds1686247574408.md"
-                   }
 
                 ]
 
@@ -782,16 +776,16 @@
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
           { 
+             "id":"mor1695159014369", 
+             "title":"Load data", 
+             "url":"Vantage/mor1695159014369.md"
+             }
+          , 
+          { 
              "id":"juo1640281123239", 
              "title":"Connect to an environment", 
              "description":"Connect to an environment in Editor", 
              "url":"Vantage/juo1640281123239.md"
-             }
-          , 
-          { 
-             "id":"mor1695159014369", 
-             "title":"Load data", 
-             "url":"Vantage/mor1695159014369.md"
              }
           , 
           { 
