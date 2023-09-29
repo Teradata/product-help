@@ -1,0 +1,674 @@
+{  "items":[
+    { 
+       "id":"bab1682536172420", 
+       "title":"Neuheiten", 
+       "description":"Erfahren Sie mehr über die neuesten Funktionen und Updates", 
+       "icon":"new_releases", 
+       "url":"Vantage/de/bab1682536172420.md"
+       }
+    , 
+    { 
+       "id":"sbt1640280496980", 
+       "title":"Umgebungen", 
+       "description":"Daten laden, Abfragen ausführen und mehr", 
+       "url":"Vantage/de/sbt1640280496980.md", 
+       "children":[
+          { 
+             "id":"nmr1658424425362", 
+             "title":"Umgebungskomponenten", 
+             "description":"", 
+             "url":"Vantage/de/nmr1658424425362.md"
+             }
+          , 
+          { 
+             "id":"qiv1640281527006", 
+             "title":"Eine Umgebung erstellen", 
+             "description":"", 
+             "url":"Vantage/de/qiv1640281527006.md"
+             }
+          , 
+          { 
+             "id":"laq1640280582810", 
+             "title":"Verbindungseinstellungen konfigurieren", 
+             "description":"", 
+             "url":"Vantage/de/laq1640280582810.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"mqu1640280532737", 
+       "title":"Computing-Gruppen", 
+       "description":"Computing-Gruppen erstellen und verwalten", 
+       "url":"Vantage/de/mqu1640280532737.md", 
+       "children":[
+          { 
+             "id":"xrr1658772541186", 
+             "title":"Computing-Gruppe erstellen", 
+             "description":"", 
+             "url":"Vantage/de/xrr1658772541186.md"
+             }
+          , 
+          { 
+             "id":"dvl1640281718303", 
+             "title":"Computing-Gruppe verwalten", 
+             "description":"", 
+             "url":"Vantage/de/dvl1640281718303.md"
+             }
+          , 
+          { 
+             "id":"wdz1640281743091", 
+             "title":"Zugriff auf Computing-Gruppe", 
+             "description":"", 
+             "url":"Vantage/de/wdz1640281743091.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"onj1682104977691", 
+       "title":"Verbrauch", 
+       "description":"Verbrauchte Computing- und Speicherressourcen anzeigen", 
+       "url":"Vantage/de/onj1682104977691.md", 
+       "children":[
+          { 
+             "id":"tdv1682522711429", 
+             "title":"Verbrauch von Computing-Ressourcen", 
+             "description":"", 
+             "url":"Vantage/de/tdv1682522711429.md", 
+             "children":[
+                { 
+                   "id":"qly1682524108665", 
+                   "title":"Wie Computing-Ressourcen verbraucht werden", 
+                   "description":"", 
+                   "url":"Vantage/de/qly1682524108665.md"
+                   }
+                , 
+                { 
+                   "id":"qze1682528646873", 
+                   "title":"Computing-Ressourcen überprüfen", 
+                   "description":"", 
+                   "url":"Vantage/de/qze1682528646873.md"
+                   }
+                , 
+                { 
+                   "id":"qty1682530889318", 
+                   "title":"Computing-Ressourcen verwalten", 
+                   "description":"", 
+                   "url":"Vantage/de/qty1682530889318.md"
+                   }
+                , 
+                { 
+                   "id":"nzf1682539696119", 
+                   "title":"FAQ zum Verbrauch von Computing-Ressourcen", 
+                   "description":"", 
+                   "url":"Vantage/de/nzf1682539696119.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"nsc1682522782958", 
+             "title":"Verbrauch von Speicherressourcen", 
+             "description":"", 
+             "url":"Vantage/de/nsc1682522782958.md", 
+             "children":[
+                { 
+                   "id":"pdf1682543766178", 
+                   "title":"Wie Speicherressourcen verbraucht werden", 
+                   "description":"", 
+                   "url":"Vantage/de/pdf1682543766178.md"
+                   }
+                , 
+                { 
+                   "id":"vky1682545736669", 
+                   "title":"Verbrauch von Speicherressourcen überprüfen", 
+                   "description":"", 
+                   "url":"Vantage/de/vky1682545736669.md"
+                   }
+                , 
+                { 
+                   "id":"aku1682545782916", 
+                   "title":"FAQ zum Verbrauch von Speicherressourcen", 
+                   "description":"", 
+                   "url":"Vantage/de/aku1682545782916.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jrq1640280690304", 
+       "title":"Datensicherung", 
+       "description":"Daten mit Sicherungs- und Wiederherstellungsoptionen schützen", 
+       "url":"Vantage/de/jrq1640280690304.md", 
+       "children":[
+          { 
+             "id":"qmb1659046927155", 
+             "title":"Sicherungsplan erstellen", 
+             "description":"", 
+             "url":"Vantage/de/qmb1659046927155.md"
+             }
+          , 
+          { 
+             "id":"kqr1640280954140", 
+             "title":"Daten wiederherstellen", 
+             "description":"", 
+             "url":"Vantage/de/kqr1640280954140.md"
+             }
+          , 
+          { 
+             "id":"sus1659047241965", 
+             "title":"Sicherungsverlauf", 
+             "description":"", 
+             "url":"Vantage/de/sus1659047241965.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"jlf1663616946889", 
+       "title":"Datenfreigabe", 
+       "description":"Tabellen und Ansichten für andere Benutzer freigeben", 
+       "url":"Vantage/de/jlf1663616946889.md", 
+       "children":[
+          { 
+             "id":"hdx1681040827922", 
+             "title":"Benutzer der Datenfreigabe verwalten", 
+             "description":"", 
+             "url":"Vantage/de/hdx1681040827922.md"
+             }
+          , 
+          { 
+             "id":"vlk1663617148666", 
+             "title":"Datenfreigabe erstellen", 
+             "description":"", 
+             "url":"Vantage/de/vlk1663617148666.md"
+             }
+          , 
+          { 
+             "id":"gds1686247574408", 
+             "title":"Mit Datasets arbeiten", 
+             "description":"", 
+             "url":"Vantage/de/gds1686247574408.md", 
+             "children":[
+                { 
+                   "id":"rfg1681040443995", 
+                   "title":"Datasets verwalten", 
+                   "description":"", 
+                   "url":"Vantage/de/rfg1681040443995.md"
+                   }
+                , 
+                { 
+                   "id":"hfx1686247226223", 
+                   "title":"Datasets anzeigen und verwenden", 
+                   "description":"", 
+                   "url":"Vantage/de/hfx1686247226223.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"vph1681040670091", 
+             "title":"Abonnenten verwalten", 
+             "description":"", 
+             "url":"Vantage/de/vph1681040670091.md"
+             }
+          , 
+          { 
+             "id":"vuh1681040768372", 
+             "title":"Freigabe löschen", 
+             "description":"", 
+             "url":"Vantage/de/vuh1681040768372.md"
+             }
+          , 
+          { 
+             "id":"laf1686249149487", 
+             "title":"FAQ zur Datenfreigabe", 
+             "description":"", 
+             "url":"Vantage/de/laf1686249149487.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xbg1640280430669", 
+       "title":"Editor", 
+       "description":"SQL-Abfragen schreiben und ausführen", 
+       "url":"Vantage/de/xbg1640280430669.md", 
+       "children":[
+          { 
+             "id":"xti1659380438762", 
+             "title":"Arbeiten im Editor", 
+             "description":"", 
+             "url":"Vantage/de/xti1659380438762.md"
+             }
+          , 
+          { 
+             "id":"juo1640281123239", 
+             "title":"Verbindung zu einer Umgebung herstellen", 
+             "description":"", 
+             "url":"Vantage/de/juo1640281123239.md"
+             }
+          , 
+          { 
+             "id":"dgd1640281158386", 
+             "title":"Daten abfragen", 
+             "description":"", 
+             "url":"Vantage/de/dgd1640281158386.md"
+             }
+          , 
+          { 
+             "id":"iql1691540875799", 
+             "title":"Datenbankinterne Analysefunktionen kennenlernen", 
+             "description":"", 
+             "url":"Vantage/de/iql1691540875799.md"
+             }
+          , 
+    { 
+       "id":"bkm1640280721917", 
+       "title":"Anwendungsfälle", 
+       "description":"Anwendungsfälle zum Kennenlernen von VantageCloud Lake-Funktionen ausführen", 
+       "icon":"book", 
+       "url":"Vantage/de/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"apw1640280478763", 
+       "title":"Organisation", 
+       "description":"VantageCloud Lake-Organisation verwalten", 
+       "url":"Vantage/de/apw1640280478763.md"
+       }
+    , 
+    { 
+       "id":"ajr1640280560519", 
+       "title":"Abfragen", 
+       "description":"Abfragen anzeigen und optimieren", 
+       "url":"Vantage/de/ajr1640280560519.md", 
+       "children":[
+          { 
+             "id":"zvd1688067459510", 
+             "title":"Abfragedetails", 
+             "description":"", 
+             "url":"Vantage/de/zvd1688067459510.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"vyx1659391025497", 
+       "title":"QueryGrid", 
+       "description":"Daten zwischen einer oder mehreren Datenquellen übertragen", 
+       "url":"Vantage/de/vyx1659391025497.md", 
+       "children":[
+          { 
+             "id":"cdg1689098187313", 
+             "title":"Konnektivität und Komponenten", 
+             "description":"", 
+             "url":"Vantage/de/cdg1689098187313.md"
+             }
+          , 
+          { 
+             "id":"wrw1640282047881", 
+             "title":"Bereitstellung", 
+             "description":"", 
+             "url":"Vantage/de/wrw1640282047881.md", 
+             "children":[
+                { 
+                   "id":"znp1640282079399", 
+                   "title":"Datenquelle verbinden", 
+                   "description":"", 
+                   "url":"Vantage/de/znp1640282079399.md", 
+                   "children":[
+                      { 
+                         "id":"bbw1687364943833", 
+                         "title":"Autorisierung einrichten", 
+                         "description":"", 
+                         "url":"Vantage/de/bbw1687364943833.md"
+                         }
+                      , 
+                      { 
+                         "id":"yml1671157089031", 
+                         "title":"Schnittstellenendpunkt anfordern", 
+                         "description":"", 
+                         "url":"Vantage/de/yml1671157089031.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"wgr1674777759031", 
+                   "title":"Upgrade einer Nicht-Lake QueryGrid Manager-Instanz ausführen", 
+                   "description":"", 
+                   "url":"Vantage/de/wgr1674777759031.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"lzm1640282103875", 
+             "title":"Verwaltung", 
+             "description":"", 
+             "url":"Vantage/de/lzm1640282103875.md", 
+             "children":[
+                { 
+                   "id":"goh1640282193934", 
+                   "title":"Fabric-Übersicht", 
+                   "description":"", 
+                   "url":"Vantage/de/goh1640282193934.md"
+                   }
+                , 
+                { 
+                   "id":"vhb1640282164870", 
+                   "title":"Datenquellen", 
+                   "description":"", 
+                   "url":"Vantage/de/vhb1640282164870.md", 
+                   "children":[
+                      { 
+                         "id":"yfd1674158023864", 
+                         "title":"Datenquelle bearbeiten", 
+                         "description":"", 
+                         "url":"Vantage/de/yfd1674158023864.md"
+                         }
+                      , 
+                      { 
+                         "id":"zof1674159380680", 
+                         "title":"Verbindungen", 
+                         "description":"", 
+                         "url":"Vantage/de/zof1674159380680.md"
+                         }
+                      , 
+                      { 
+                         "id":"kzu1674159463068", 
+                         "title":"Links", 
+                         "description":"", 
+                         "url":"Vantage/de/kzu1674159463068.md"
+                         }
+                      , 
+                      { 
+                         "id":"pvy1674785931688", 
+                         "title":"Bridges", 
+                         "description":"", 
+                         "url":"Vantage/de/pvy1674785931688.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"zxp1640282246701", 
+                   "title":"Komponenteneinstellungen", 
+                   "description":"", 
+                   "url":"Vantage/de/zxp1640282246701.md", 
+                   "children":[
+                      { 
+                         "id":"wne1674087932617", 
+                         "title":"Bridges", 
+                         "description":"", 
+                         "url":"Vantage/de/wne1674087932617.md"
+                         }
+                      , 
+                      { 
+                         "id":"iwx1674087965329", 
+                         "title":"Netzwerke", 
+                         "description":"", 
+                         "url":"Vantage/de/iwx1674087965329.md"
+                         }
+                      , 
+                      { 
+                         "id":"zap1674087994421", 
+                         "title":"Kommunikationsrichtlinien", 
+                         "description":"", 
+                         "url":"Vantage/de/zap1674087994421.md"
+                         }
+                      , 
+                      { 
+                         "id":"hmn1674088306575", 
+                         "title":"Benutzer- und Rollenzuordnungen", 
+                         "description":"", 
+                         "url":"Vantage/de/hmn1674088306575.md"
+                         }
+                      , 
+                      { 
+                         "id":"eyz1674088497701", 
+                         "title":"PrivateLink", 
+                         "description":"", 
+                         "url":"Vantage/de/eyz1674088497701.md"
+                         }
+                      , 
+                      { 
+                         "id":"hfi1674786742869", 
+                         "title":"JDBC-Treiber", 
+                         "description":"", 
+                         "url":"Vantage/de/hfi1674786742869.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"uee1640282265780", 
+                   "title":"Probleme", 
+                   "description":"", 
+                   "url":"Vantage/de/uee1640282265780.md"
+                   }
+                , 
+                { 
+                   "id":"oiw1640282294248", 
+                   "title":"Vorgänge", 
+                   "description":"", 
+                   "url":"Vantage/de/oiw1640282294248.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"auw1640280669500", 
+       "title":"Abläufe", 
+       "description":"Daten aus Objektspeicher laden", 
+       "url":"Vantage/de/auw1640280669500.md", 
+       "children":[
+          { 
+             "id":"wsa1640282405363", 
+             "title":"Wer macht was", 
+             "description":"", 
+             "url":"Vantage/de/wsa1640282405363.md"
+             }
+          , 
+          { 
+             "id":"wer1691592221683", 
+             "title":"Zugriff auf Amazon S3-Buckets bereitstellen", 
+             "description":"", 
+             "url":"Vantage/de/wer1691592221683.md"
+             }
+          , 
+          { 
+             "id":"luq1640282345986", 
+             "title":"Ablauf erstellen", 
+             "description":"", 
+             "url":"Vantage/de/luq1640282345986.md", 
+             "children":[
+                { 
+                   "id":"ury1691596218182", 
+                   "title":"Überlegungen zur Ladeoption", 
+                   "description":"", 
+                   "url":"Vantage/de/ury1691596218182.md"
+                   }
+                , 
+                { 
+                   "id":"vwc1691596425578", 
+                   "title":"Quell- und Zielautorisierung", 
+                   "description":"", 
+                   "url":"Vantage/de/vwc1691596425578.md"
+                   }
+                , 
+                { 
+                   "id":"npn1691594431074", 
+                   "title":"Quellen und Ziele", 
+                   "description":"", 
+                   "url":"Vantage/de/npn1691594431074.md"
+                   }
+                , 
+                { 
+                   "id":"gqi1691597450277", 
+                   "title":"Diagnose", 
+                   "description":"", 
+                   "url":"Vantage/de/gqi1691597450277.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"fqx1691599182279", 
+             "title":"Ablauf ausführen, anhalten oder zurücksetzen", 
+             "description":"", 
+             "url":"Vantage/de/fqx1691599182279.md"
+             }
+          , 
+          { 
+             "id":"dod1691610081069", 
+             "title":"Ablauf aktualisieren", 
+             "description":"", 
+             "url":"Vantage/de/dod1691610081069.md"
+             }
+          , 
+          { 
+             "id":"dxg1691603081375", 
+             "title":"FAQ zu Abläufen", 
+             "description":"", 
+             "url":"Vantage/de/dxg1691603081375.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"fcv1681758902467", 
+       "title":"Zugriffsverwaltung", 
+       "description":"Zugriff auf VantageCloud Lake-Organisation verwalten", 
+       "url":"Vantage/de/fcv1681758902467.md", 
+       "children":[
+          { 
+             "id":"mxq1680183881642", 
+             "title":"SSO einrichten", 
+             "description":"Identitätsanbieter und Bereiche konfigurieren", 
+             "url":"Vantage/de/mxq1680183881642.md", 
+             "children":[
+                { 
+                   "id":"whf1680184025148", 
+                   "title":"Identitätsanbieter hinzufügen", 
+                   "description":"", 
+                   "url":"Vantage/de/whf1680184025148.md", 
+                   "children":[
+                      { 
+                         "id":"lfb1680194800865", 
+                         "title":"OpenID Connect", 
+                         "description":"", 
+                         "url":"Vantage/de/lfb1680194800865.md"
+                         }
+                      , 
+                      { 
+                         "id":"dhs1680194823192", 
+                         "title":"SAML 2.0", 
+                         "description":"", 
+                         "url":"Vantage/de/dhs1680194823192.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ruf1680184116601", 
+                   "title":"Bereiche erstellen", 
+                   "description":"", 
+                   "url":"Vantage/de/ruf1680184116601.md"
+                   }
+                , 
+                { 
+                   "id":"jbj1680184191443", 
+                   "title":"Bereiche mit Umgebungen verknüpfen", 
+                   "description":"", 
+                   "url":"Vantage/de/jbj1680184191443.md"
+                   }
+                , 
+                { 
+                   "id":"qma1680184498880", 
+                   "title":"FAQ zu SSO", 
+                   "description":"", 
+                   "url":"Vantage/de/qma1680184498880.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"hrv1640281410572", 
+             "title":"Organisationsadministratoren verwalten", 
+             "description":"Überlegungen zur Verwaltung von Organisationsadministratoren", 
+             "url":"Vantage/de/hrv1640281410572.md"
+             }
+          , 
+          { 
+             "id":"wxe1659392685092", 
+             "title":"Datenbankbenutzer verwalten", 
+             "description":"Überlegungen zur Verwaltung von Benutzern einer Umgebung", 
+             "url":"Vantage/de/wxe1659392685092.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"bkm1640280721917", 
+       "title":"Anwendungsfälle", 
+       "description":"Anwendungsfälle zum Kennenlernen von VantageCloud Lake-Funktionen ausführen", 
+       "icon":"book", 
+       "url":"Vantage/de/bkm1640280721917.md",
+   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       }
+
+    ]
+
+ }
