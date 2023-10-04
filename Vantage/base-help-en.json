@@ -546,6 +546,79 @@
        }
     , 
     { 
+       "id":"vkg1693932972952", 
+       "title":"Data sharing and exploration", 
+       "url":"Vantage/vkg1693932972952.md", 
+       "children":[
+          { 
+             "id":"vnt1689959854009", 
+             "title":"Data catalog", 
+             "description":"View, search, browse, and annotate data", 
+             "url":"Vantage/vnt1689959854009.md", 
+             "children":[
+                { 
+                   "id":"nde1694121897837", 
+                   "title":"Use data catalog", 
+                   "url":"Vantage/nde1694121897837.md", 
+                   "children":[
+                      { 
+                         "id":"qpz1694121944094", 
+                         "title":"Search and filter the catalog", 
+                         "url":"Vantage/qpz1694121944094.md"
+                         }
+                      , 
+                      { 
+                         "id":"nme1694121977416", 
+                         "title":"View datasets", 
+                         "url":"Vantage/nme1694121977416.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"uat1694122014690", 
+                   "title":"Data catalog FAQ", 
+                   "url":"Vantage/uat1694122014690.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"mux1694121298338", 
+             "title":"Manage data sources", 
+             "url":"Vantage/mux1694121298338.md", 
+             "children":[
+                { 
+                   "id":"lsx1694121572990", 
+                   "title":"Add a data source and datasets", 
+                   "url":"Vantage/lsx1694121572990.md"
+                   }
+                , 
+                { 
+                   "id":"imp1694121598872", 
+                   "title":"Publish a data source", 
+                   "url":"Vantage/imp1694121598872.md"
+                   }
+                , 
+                { 
+                   "id":"mnk1694121651916", 
+                   "title":"Modify a data source", 
+                   "url":"Vantage/mnk1694121651916.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
        "description":"Share tables and views with other users", 
@@ -622,6 +695,7 @@
           { 
              "id":"mor1695159014369", 
              "title":"Load data", 
+             "description":"Load or access data", 
              "url":"Vantage/mor1695159014369.md"
              }
           , 
@@ -641,15 +715,24 @@
                 { 
                    "id":"vkk1692059193535", 
                    "title":"Build a query", 
-                   "description":"Build a query without needing to code", 
+                   "description":"Build a query using generated SQL", 
                    "url":"Vantage/vkk1692059193535.md"
                    }
                 , 
                 { 
                    "id":"iql1691540875799", 
                    "title":"Explore in-database analytics functions", 
-                   "description":"Find the functions you need and build no-code queries", 
-                   "url":"Vantage/iql1691540875799.md"
+                   "description":"Find functions and build queries", 
+                   "url":"Vantage/iql1691540875799.md", 
+                   "children":[
+                      { 
+                         "id":"ujf1695157605241", 
+                         "title":"nPath visualization", 
+                         "url":"Vantage/ujf1695157605241.md"
+                         }
+
+                      ]
+
                    }
 
                 ]
