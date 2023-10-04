@@ -546,79 +546,6 @@
        }
     , 
     { 
-       "id":"vkg1693932972952", 
-       "title":"Data sharing and exploration", 
-       "url":"Vantage/vkg1693932972952.md", 
-       "children":[
-          { 
-             "id":"vnt1689959854009", 
-             "title":"Data catalog", 
-             "description":"View, search, browse, and annotate data", 
-             "url":"Vantage/vnt1689959854009.md", 
-             "children":[
-                { 
-                   "id":"nde1694121897837", 
-                   "title":"Use data catalog", 
-                   "url":"Vantage/nde1694121897837.md", 
-                   "children":[
-                      { 
-                         "id":"qpz1694121944094", 
-                         "title":"Search and filter the catalog", 
-                         "url":"Vantage/qpz1694121944094.md"
-                         }
-                      , 
-                      { 
-                         "id":"nme1694121977416", 
-                         "title":"View datasets", 
-                         "url":"Vantage/nme1694121977416.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"uat1694122014690", 
-                   "title":"Data catalog FAQ", 
-                   "url":"Vantage/uat1694122014690.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"mux1694121298338", 
-             "title":"Manage data sources", 
-             "url":"Vantage/mux1694121298338.md", 
-             "children":[
-                { 
-                   "id":"lsx1694121572990", 
-                   "title":"Add a data source and datasets", 
-                   "url":"Vantage/lsx1694121572990.md"
-                   }
-                , 
-                { 
-                   "id":"imp1694121598872", 
-                   "title":"Publish a data source", 
-                   "url":"Vantage/imp1694121598872.md"
-                   }
-                , 
-                { 
-                   "id":"mnk1694121651916", 
-                   "title":"Modify a data source", 
-                   "url":"Vantage/mnk1694121651916.md"
-                   }
-
-                ]
-
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
        "description":"Share tables and views with other users", 
@@ -672,7 +599,17 @@
           { 
              "id":"laf1686249149487", 
              "title":"Data sharing FAQ", 
-             "url":"Vantage/laf1686249149487.md"
+             "url":"Vantage/laf1686249149487.md", 
+             "children":[
+                { 
+                   "id":"lxi1695933833104", 
+                   "title":"Load data", 
+                   "description":"Load or access data", 
+                   "url":"Vantage/lxi1695933833104.md"
+                   }
+
+                ]
+
              }
 
           ]
@@ -680,10 +617,10 @@
        }
     , 
     { 
-       "id":"mor1695159014369", 
+       "id":"lxi1695933833104", 
        "title":"Load data", 
        "description":"Load or access data", 
-       "url":"Vantage/mor1695159014369.md"
+       "url":"Vantage/lxi1695933833104.md"
        }
     , 
     { 
