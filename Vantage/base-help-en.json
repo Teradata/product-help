@@ -108,6 +108,13 @@
              "url":"Vantage/nmr1658424425362.md", 
              "children":[
                 { 
+                   "id":"isb1696461636881", 
+                   "title":"Primary cluster", 
+                   "description":"Understand the primary cluster", 
+                   "url":"Vantage/isb1696461636881.md"
+                   }
+                , 
+                { 
                    "id":"mqu1640280532737", 
                    "title":"Compute groups", 
                    "description":"Create and manage compute groups", 
@@ -146,16 +153,17 @@
              "url":"Vantage/fcv1681758902467.md", 
              "children":[
                 { 
+                   "id":"asz1695761738873", 
+                   "title":"Give single sign-on users access", 
+                   "description":"Associate the environment with a realm", 
+                   "url":"Vantage/asz1695761738873.md"
+                   }
+                , 
+                { 
                    "id":"wxe1659392685092", 
                    "title":"Manage database users", 
                    "description":"Considerations for managing users of an environment", 
                    "url":"Vantage/wxe1659392685092.md"
-                   }
-                , 
-                { 
-                   "id":"asz1695761738873", 
-                   "title":"Associate realms with environments", 
-                   "url":"Vantage/asz1695761738873.md"
                    }
 
                 ]
