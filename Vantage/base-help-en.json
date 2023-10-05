@@ -32,7 +32,49 @@
              "id":"mxq1680183881642", 
              "title":"Set up single sign-on", 
              "description":"Configure identity providers and realms", 
-             "url":"Vantage/mxq1680183881642.md"
+             "url":"Vantage/mxq1680183881642.md", 
+             "children":[
+                { 
+                   "id":"whf1680184025148", 
+                   "title":"Add an identity provider", 
+                   "url":"Vantage/whf1680184025148.md", 
+                   "children":[
+                      { 
+                         "id":"lfb1680194800865", 
+                         "title":"OpenID Connect", 
+                         "url":"Vantage/lfb1680194800865.md"
+                         }
+                      , 
+                      { 
+                         "id":"dhs1680194823192", 
+                         "title":"SAML 2.0", 
+                         "url":"Vantage/dhs1680194823192.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ruf1680184116601", 
+                   "title":"Create realms", 
+                   "url":"Vantage/ruf1680184116601.md"
+                   }
+                , 
+                { 
+                   "id":"jbj1680184191443", 
+                   "title":"Associate realms with environments", 
+                   "url":"Vantage/jbj1680184191443.md"
+                   }
+                , 
+                { 
+                   "id":"qma1680184498880", 
+                   "title":"Single sign-on FAQ", 
+                   "url":"Vantage/qma1680184498880.md"
+                   }
+
+                ]
+
              }
 
           ]
@@ -48,14 +90,14 @@
           { 
              "id":"qiv1640281527006", 
              "title":"Create an environment", 
-             "description":"Create an environment for your VantageCloud Lake organization", 
+             "description":"Create an environment for your organization", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
           { 
              "id":"laq1640280582810", 
-             "title":"Connect the environment", 
-             "description":"Set up the environment's connection", 
+             "title":"Configure environment settings", 
+             "description":"How users connect to the environment", 
              "url":"Vantage/laq1640280582810.md"
              }
           , 
@@ -65,6 +107,13 @@
              "description":"Manage compute resources", 
              "url":"Vantage/nmr1658424425362.md", 
              "children":[
+                { 
+                   "id":"isb1696461636881", 
+                   "title":"Primary cluster", 
+                   "description":"Understand the primary cluster", 
+                   "url":"Vantage/isb1696461636881.md"
+                   }
+                , 
                 { 
                    "id":"mqu1640280532737", 
                    "title":"Compute groups", 
@@ -100,9 +149,16 @@
           { 
              "id":"fcv1681758902467", 
              "title":"Access management", 
-             "description":"Manage access to your VantageCloud Lake organization and environments", 
+             "description":"Manage access to an environment", 
              "url":"Vantage/fcv1681758902467.md", 
              "children":[
+                { 
+                   "id":"asz1695761738873", 
+                   "title":"Give single sign-on users access", 
+                   "description":"Associate the environment with a realm", 
+                   "url":"Vantage/asz1695761738873.md"
+                   }
+                , 
                 { 
                    "id":"wxe1659392685092", 
                    "title":"Manage database users", 
@@ -350,12 +406,6 @@
                       ]
 
                    }
-                , 
-                { 
-                   "id":"gds1686247574408", 
-                   "title":"Work with datasets", 
-                   "url":"Vantage/gds1686247574408.md"
-                   }
 
                 ]
 
@@ -407,81 +457,17 @@
              }
           , 
           { 
-             "id":"xbg1640280430669", 
+             "id":"edx1695158840322", 
              "title":"Editor", 
-             "description":"Write and run SQL queries", 
-             "url":"Vantage/xbg1640280430669.md", 
-             "children":[
-                { 
-                   "id":"juo1640281123239", 
-                   "title":"Connect to an environment", 
-                   "description":"Connect to an environment to query", 
-                   "url":"Vantage/juo1640281123239.md"
-                   }
-                , 
-                { 
-                   "id":"mor1695159014369", 
-                   "title":"Load data", 
-                   "description":"Load or access data", 
-                   "url":"Vantage/mor1695159014369.md"
-                   }
-                , 
-                { 
-                   "id":"dgd1640281158386", 
-                   "title":"Query your data", 
-                   "description":"Query your data in Editor", 
-                   "url":"Vantage/dgd1640281158386.md"
-                   }
-                , 
-                { 
-                   "id":"vkk1692059193535", 
-                   "title":"Build a query", 
-                   "description":"Build a query without needing to code", 
-                   "url":"Vantage/vkk1692059193535.md"
-                   }
-                , 
-                { 
-                   "id":"iql1691540875799", 
-                   "title":"Explore in-database analytics functions", 
-                   "description":"Find the functions you need and build no-code queries", 
-                   "url":"Vantage/iql1691540875799.md"
-                   }
-                , 
-                { 
-                   "id":"xxs1694723933787", 
-                   "title":"SQL and database reference", 
-                   "description":"Use link to learn SQL commands, functions, and database functionality", 
-                   "url":"Vantage/xxs1694723933787.md"
-                   }
-                , 
-                { 
-                   "id":"bkm1640280721917", 
-                   "title":"Use cases", 
-                   "description":"Run use cases to explore VantageCloud Lake capabilities", 
-                   "icon":"book", 
-                   "url":"Vantage/bkm1640280721917.md", 
-                   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-                   }
-
-                ]
-
+             "description":"Write (or build) and run SQL queries", 
+             "url":"Vantage/edx1695158840322.md"
              }
           , 
           { 
-             "id":"ajr1640280560519", 
+             "id":"ahj1695153106508", 
              "title":"Queries", 
              "description":"View and optimize queries", 
-             "url":"Vantage/ajr1640280560519.md", 
-             "children":[
-                { 
-                   "id":"zvd1688067459510", 
-                   "title":"Query details", 
-                   "description":"Understand the information displayed for each query", 
-                   "url":"Vantage/zvd1688067459510.md"
-                   }
-
-                ]
-
+             "url":"Vantage/ahj1695153106508.md"
              }
 
           ]
@@ -568,13 +554,6 @@
        }
     , 
     { 
-       "id":"mor1695159014369", 
-       "title":"Load data", 
-       "description":"Load or access data", 
-       "url":"Vantage/mor1695159014369.md"
-       }
-    , 
-    { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
        "description":"Share tables and views with other users", 
@@ -593,6 +572,27 @@
              }
           , 
           { 
+             "id":"gds1686247574408", 
+             "title":"Work with datasets", 
+             "url":"Vantage/gds1686247574408.md", 
+             "children":[
+                { 
+                   "id":"rfg1681040443995", 
+                   "title":"Manage datasets", 
+                   "url":"Vantage/rfg1681040443995.md"
+                   }
+                , 
+                { 
+                   "id":"hfx1686247226223", 
+                   "title":"View and use datasets", 
+                   "url":"Vantage/hfx1686247226223.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
              "id":"vph1681040670091", 
              "title":"Manage subscribers", 
              "url":"Vantage/vph1681040670091.md"
@@ -607,7 +607,17 @@
           { 
              "id":"laf1686249149487", 
              "title":"Data sharing FAQ", 
-             "url":"Vantage/laf1686249149487.md"
+             "url":"Vantage/laf1686249149487.md", 
+             "children":[
+                { 
+                   "id":"lxi1695933833104", 
+                   "title":"Load data", 
+                   "description":"Load or access data", 
+                   "url":"Vantage/lxi1695933833104.md"
+                   }
+
+                ]
+
              }
 
           ]
@@ -615,17 +625,100 @@
        }
     , 
     { 
-       "id":"edx1695158840322", 
-       "title":"Editor", 
-       "description":"Write and run SQL queries", 
-       "url":"Vantage/edx1695158840322.md"
+       "id":"lxi1695933833104", 
+       "title":"Load data", 
+       "description":"Load or access data", 
+       "url":"Vantage/lxi1695933833104.md"
        }
     , 
     { 
-       "id":"ahj1695153106508", 
+       "id":"xbg1640280430669", 
+       "title":"Editor", 
+       "description":"Write (or build) and run SQL queries", 
+       "url":"Vantage/xbg1640280430669.md", 
+       "children":[
+          { 
+             "id":"mor1695159014369", 
+             "title":"Load data", 
+             "description":"Load or access data", 
+             "url":"Vantage/mor1695159014369.md"
+             }
+          , 
+          { 
+             "id":"juo1640281123239", 
+             "title":"Browse database objects", 
+             "description":"Connect to and browse an environment", 
+             "url":"Vantage/juo1640281123239.md"
+             }
+          , 
+          { 
+             "id":"dgd1640281158386", 
+             "title":"Query your data", 
+             "description":"Run queries in Editor", 
+             "url":"Vantage/dgd1640281158386.md", 
+             "children":[
+                { 
+                   "id":"vkk1692059193535", 
+                   "title":"Build a query", 
+                   "description":"Build a query using generated SQL", 
+                   "url":"Vantage/vkk1692059193535.md"
+                   }
+                , 
+                { 
+                   "id":"iql1691540875799", 
+                   "title":"Explore in-database analytics functions", 
+                   "description":"Find functions and build queries", 
+                   "url":"Vantage/iql1691540875799.md", 
+                   "children":[
+                      { 
+                         "id":"ujf1695157605241", 
+                         "title":"nPath visualization", 
+                         "url":"Vantage/ujf1695157605241.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"xxs1694723933787", 
+             "title":"SQL and database reference", 
+             "description":"SQL commands, functions, and database functionality", 
+             "url":"Vantage/xxs1694723933787.md"
+             }
+          , 
+          { 
+             "id":"bkm1640280721917", 
+             "title":"Use cases", 
+             "description":"Run use cases to explore VantageCloud Lake capabilities", 
+             "icon":"book", 
+             "url":"Vantage/bkm1640280721917.md", 
+             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"ajr1640280560519", 
        "title":"Queries", 
        "description":"View and optimize queries", 
-       "url":"Vantage/ahj1695153106508.md"
+       "url":"Vantage/ajr1640280560519.md", 
+       "children":[
+          { 
+             "id":"zvd1688067459510", 
+             "title":"Query details", 
+             "description":"Understand the information displayed for each query", 
+             "url":"Vantage/zvd1688067459510.md"
+             }
+
+          ]
+
        }
     , 
     { 
