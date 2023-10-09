@@ -98,7 +98,17 @@
              "id":"laq1640280582810", 
              "title":"Configure environment settings", 
              "description":"How users connect to the environment", 
-             "url":"Vantage/laq1640280582810.md"
+             "url":"Vantage/laq1640280582810.md", 
+             "children":[
+                { 
+                   "id":"hyl1696627580794", 
+                   "title":"Create a private endpoint in the Azure portal", 
+                   "description":"Connecting to the Azure portal", 
+                   "url":"Vantage/hyl1696627580794.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -258,17 +268,20 @@
                       { 
                          "id":"cdg1689098187313", 
                          "title":"Connectivity and components", 
+                         "description":"QueryGrid connectors and connectivity options", 
                          "url":"Vantage/cdg1689098187313.md"
                          }
                       , 
                       { 
                          "id":"wrw1640282047881", 
                          "title":"Deployment", 
+                         "description":"Prepare QueryGrid to add a data source", 
                          "url":"Vantage/wrw1640282047881.md", 
                          "children":[
                             { 
                                "id":"znp1640282079399", 
                                "title":"Connect a data source", 
+                               "description":"Add a data source to QueryGrid", 
                                "url":"Vantage/znp1640282079399.md", 
                                "children":[
                                   { 
@@ -290,6 +303,7 @@
                             { 
                                "id":"wgr1674777759031", 
                                "title":"Upgrade a non-Lake QueryGrid Manager", 
+                               "description":"Make a non-Lake QueryGrid Manager compatible with Lake", 
                                "url":"Vantage/wgr1674777759031.md"
                                }
 
@@ -311,11 +325,13 @@
                             { 
                                "id":"vhb1640282164870", 
                                "title":"Data sources", 
+                               "description":"Manage data sources connected to QueryGrid", 
                                "url":"Vantage/vhb1640282164870.md", 
                                "children":[
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"Edit a data source", 
+                                     "description":"Edit connected data sources or assign as a proxy", 
                                      "url":"Vantage/yfd1674158023864.md"
                                      }
                                   , 
@@ -568,6 +584,7 @@
           { 
              "id":"vlk1663617148666", 
              "title":"Create a data share", 
+             "description":"Share datasets with subscribers", 
              "url":"Vantage/vlk1663617148666.md"
              }
           , 
