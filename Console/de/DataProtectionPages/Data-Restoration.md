@@ -1,3 +1,7 @@
+Vergewissern Sie sich, dass Sie die notwendigen Voraussetzungen für Site-gleiche oder Site-übergreifende Wiederherstellungen erfüllen. Weitere Informationen finden Sie unter [Wiederherstellen einer Standardsicherung](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Restoring-a-Standard-Backup).
+
+Standardmäßig wird die aktuelle Site für die Wiederherstellung ausgewählt. Für eine Site-übergreifende Wiederherstellung wählen Sie eine andere Site zur Wiederherstellung der Sicherung aus.
+
 Wählen Sie im Folgenden die erforderlichen Einstellungen für die Wiederherstellung Ihrer Sicherung aus.
 
 <table>

@@ -1,8 +1,6 @@
 Sie stellen als Datenbankbenutzer eine Verbindung mit einer Site her.
 
-Wählen Sie oben links in der **Editor** den Pfeil nach unten, oder das Verbindungsdialogfeld wird bei der ersten Navigation angezeigt:
-
--   Wählen Sie die verfügbare Site, mit der Sie arbeiten möchten. Wenn diese Site noch nicht für den Zugriff durch den Editor aktualisiert/konfiguriert wurde, wird eine Warnung angezeigt.
+Geben Sie im Fensterbereich **Editor** im Dialogfeld **Neue Verbindung erstellen**, das standardmäßig geöffnet wird, die Anmeldedaten ein, um eine Verbindung herzustellen. Wenn das Dialogfeld **Neue Verbindung erstellen** nicht angezeigt wird, wählen Sie **+ Verbindung hinzufügen** in ![](../Images/editor-not-connected1.jpg) aus, um es zu öffnen. Wählen Sie die verfügbare Site, mit der Sie arbeiten möchten. Wenn diese Site noch nicht für den Zugriff durch den Editor aktualisiert/konfiguriert wurde, wird eine Warnung angezeigt.
 
 Sobald Sie die Verbindung hergestellt haben, werden alle Datenbanken angezeigt, die Sie verwenden dürfen.
 

@@ -1,3 +1,7 @@
+Assurez-vous que vous remplissez les conditions requises pour les restaurations sur le même site ou sur plusieurs sites, le cas échéant. Pour plus d'informations, reportez-vous à la section [Restauration d'une sauvegarde standard](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Restoring-a-Standard-Backup).
+
+Par défaut, le site actuel est sélectionné pour la restauration. Pour la restauration sur plusieurs sites, sélectionnez un autre site pour restaurer la sauvegarde.
+
 Pour restaurer votre sauvegarde, sélectionnez les paramètres nécessaires parmi les suivants.
 
 <table>

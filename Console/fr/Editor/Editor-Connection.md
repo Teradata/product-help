@@ -1,8 +1,6 @@
 Connectez-vous à un site en tant qu’utilisateur de la base de données.
 
-En haut à gauche de **Éditeur**, sélectionnez la flèche vers le bas, sinon la boîte de dialogue de connexion s’affichera pendant la première navigation :
-
--   Choisissez le site disponible que vous souhaitez utiliser. Si ce site n’a pas été mis à niveau ou configuré pour l’accès à l’éditeur, il vous en avertit.
+Dans le volet **Éditeur**, saisissez les identifiants pour établir une connexion dans la boîte de dialogue **Créer une connexion**, qui s'ouvre par défaut. Si la boîte de dialogue **Créer une connexion** ne s'affiche pas, sélectionnez **+ Ajouter une connexion** dans ![](../Images/editor-not-connected1.jpg) pour l'ouvrir. - Choisissez le site disponible à utiliser. Si ce site n'a pas été mis à niveau ou configuré pour l'accès à l'éditeur, il vous en avertit.
 
 Une fois que vous êtes connecté, toutes les bases de données que vous êtes autorisé à utiliser s’affichent.
 

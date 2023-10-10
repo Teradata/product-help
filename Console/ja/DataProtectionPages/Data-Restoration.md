@@ -1,3 +1,7 @@
+場合によっては、同じサイトまたはクロスサイトの復元に必要な前提条件を満たしていることを確認してください。詳細については、[標準バックアップの復元](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Restoring-a-Standard-Backup) を参照してください。
+
+デフォルトでは、現在のサイトが復元の対象に選択されています。クロスサイトの復元では、バックアップを復元する別のサイトを選択してください。
+
 バックアップを復元するために必要な設定を次から選択します。
 
 <table>

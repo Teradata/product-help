@@ -6,6 +6,10 @@ La funcionalidad de recuperación de desastres solo está disponible si compras 
 
 La función de recuperación de desastres copia instantáneas de tu sitio principal a un sitio dedicado de recuperación de desastres en la misma versión de VantageCloud Enterprise.
 
+También puede realizar una restauración de instantáneas entre sitios para realizar una recuperación ante desastres.
+
 Para realizar la recuperación, en la pestaña Protección de datos del sitio, selecciona la instantánea retenida que deseas usar y habilita la conmutación por error.
 
 Para el Autoservicio de recuperación de desastres, en Copias retenidas, selecciona la instantánea y haz clic en Restaurar.
+
+Consulte [Recuperación ante desastres](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Disaster-Recovery "Recuperación ante desastres") para obtener más información.

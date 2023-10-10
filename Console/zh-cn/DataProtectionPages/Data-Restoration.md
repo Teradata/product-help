@@ -1,3 +1,7 @@
+请根据具体情况，确保满足同一站点或跨站点恢复的必要先决条件。请参见 [恢复标准备份](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Restoring-a-Standard-Backup) 了解更多详细信息。
+
+默认情况下，选择当前站点进行恢复。对于跨站点恢复，请选择其他站点来恢复备份。
+
 从下面选择恢复备份所必需的设置。
 
 <table>

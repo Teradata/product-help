@@ -6,6 +6,10 @@ La fonctionnalité de récupération d'urgence n'est disponible que si vous ache
 
 Cette fonctionnalité copie les instantanés de votre site principal vers le site dédié de récupération d'urgence dans la même version de VantageCloud Enterprise.
 
+Vous pouvez également effectuer la restauration d'instantanés sur plusieurs sites afin de procéder à la récupération d'urgence.
+
 Pour effectuer la récupération, sélectionnez l'instantané conservé à utiliser dans l'onglet Protection des données, puis activez le basculement.
 
 Pour la récupération d'urgence en libre-service, sélectionnez l'instantané dans Copies conservées, puis cliquez sur restaurer.
+
+Pour plus d'informations, reportez-vous à la section [Récupération d'urgence](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Disaster-Recovery "Récupération d'urgence").

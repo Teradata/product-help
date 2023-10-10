@@ -1,3 +1,7 @@
+Asegúrese de cumplir los requisitos previos necesarios para las restauraciones en el mismo sitio o entre sitios, según corresponda. Consulte [Restauración de una copia de seguridad estándar](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Restoring-a-Standard-Backup) para obtener más información.
+
+De forma predeterminada, el sitio actual está seleccionado para la restauración. Para la restauración entre sitios, seleccione un sitio diferente para restaurar la copia de seguridad.
+
 Seleccione los ajustes necesarios entre los siguientes para restaurar su copia de seguridad.
 
 <table>
