@@ -127,7 +127,7 @@
                 { 
                    "id":"mqu1640280532737", 
                    "title":"Compute groups", 
-                   "description":"Create and manage compute groups", 
+                   "description":"Assign compute resources", 
                    "url":"Vantage/mqu1640280532737.md", 
                    "children":[
                       { 
@@ -146,6 +146,12 @@
                          "id":"wdz1640281743091", 
                          "title":"Compute group access", 
                          "url":"Vantage/wdz1640281743091.md"
+                         }
+                      , 
+                      { 
+                         "id":"zai1697030381122", 
+                         "title":"Compute group facts", 
+                         "url":"Vantage/zai1697030381122.md"
                          }
 
                       ]
