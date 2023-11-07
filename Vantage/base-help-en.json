@@ -630,17 +630,7 @@
           { 
              "id":"laf1686249149487", 
              "title":"Data sharing FAQ", 
-             "url":"Vantage/laf1686249149487.md", 
-             "children":[
-                { 
-                   "id":"lxi1695933833104", 
-                   "title":"Load data", 
-                   "description":"Load or access data", 
-                   "url":"Vantage/lxi1695933833104.md"
-                   }
-
-                ]
-
+             "url":"Vantage/laf1686249149487.md"
              }
 
           ]
