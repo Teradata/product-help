@@ -1,13 +1,6 @@
 {
 	"items": [
 	{
-	   "id": "videoEditor",
-	   "icon": "play_circle_filled",
-	   "title": "Exploring Editor",
-	   "description": "Get an overview of the Vantage Editor, its features, and its interface.",
-	   "url": "Videos/Editor/Exploring-Editor-en.md"
-	},
-	{
 	   "id": "advancedSQLsyntax",
 	   "icon": "play_circle_filled",
 	   "title": "Syntax for Advanced SQL Engine Functions",
@@ -29,49 +22,18 @@
 	   "url": "Videos/Jupyter/Learning-About-Jupyter-en.md" 
 	},
 	{
-	   "id": "videoPivot",
-	   "title": "Pivot",
-	   "description": "These examples explain how to use the PIVOT operator.",
-	   "url": "Videos/Pivot/Pivot-Overview-en.md",
-	   "children": [{
-	       "id": "videoPivotBasics",
-		   "icon": "play_circle_filled",
-	       "title": "Understanding the Basics",
-	       "url": "Videos/Pivot/Pivot-Basics-en.md"
-	   },
-	   {
-	       "id": "videoPivotAggregating",
-		   "icon": "play_circle_filled",
-	       "title": "Aggregating the Generated Column",
-	       "url": "Videos/Pivot/Pivot-Aggregating-en.md"	   
-	   },
-	   {
-	       "id": "videoPivotSubqueries",
-		   "icon": "play_circle_filled",
-	       "title": "Issuing Subqueries in Pivot In-List",
-	       "url": "Videos/Pivot/Pivot-Subqueries-en.md"
-	   },
-	   {
-	       "id": "videoUnpivot",
-		   "icon": "play_circle_filled",
-	       "title": "Working with Unpivot",
-	       "url": "Videos/Pivot/Pivot-Unpivot-en.md"	   
-	   }
-	   ]
-	},
-	{
 	   "id": "videoSubstring",
 	   "icon": "play_circle_filled",
 	   "title": "Using the Substring Function",
 	   "description": "Learn how to retrieve a portion of a string expression, based on position.",
-	   "url": "Videos/Substring/Substring.md"
+	   "url": "Videos/Substring/Substring-en.md"
 	},
 	{
 	   "id": "videoDateFormat",
 	   "icon": "play_circle_filled",
 	   "title": "Formatting Dates",
 	   "description": "Learn how to format dates and times on result sets.",
-	   "url": "Videos/DateFormats/Date-Formats.md "	
+	   "url": "Videos/DateFormats/Date-Formats-en.md "	
 	},
 	{
 	   "id": "videoCreateTables",
