@@ -8,30 +8,73 @@
        }
     , 
     { 
-       "id":"sbt1640280496980", 
-       "title":"Entornos", 
-       "description":"Cargar datos, ejecutar consultas, etc.", 
-       "url":"Vantage/es/sbt1640280496980.md", 
+       "id":"tta1687442978234", 
+       "title":"Comenzar", 
+       "description":"Primero complete estas tareas", 
+       "icon":"persona", 
+       "url":"Vantage/es/tta1687442978234.md"
+       }
+    , 
+    { 
+       "id":"apw1640280478763", 
+       "title":"Organización", 
+       "description":"Gestionar la organización VantageCloud Lake", 
+       "url":"Vantage/es/apw1640280478763.md", 
        "children":[
           { 
-             "id":"nmr1658424425362", 
-             "title":"Componentes del entorno", 
-             "description":"", 
-             "url":"Vantage/es/nmr1658424425362.md"
+             "id":"hrv1640281410572", 
+             "title":"Gestionar administradores de organización", 
+             "description":"Consideraciones para la gestión de administradores de organización", 
+             "url":"Vantage/es/hrv1640281410572.md"
              }
           , 
           { 
-             "id":"qiv1640281527006", 
-             "title":"Crear un entorno", 
-             "description":"", 
-             "url":"Vantage/es/qiv1640281527006.md"
-             }
-          , 
-          { 
-             "id":"laq1640280582810", 
-             "title":"Configurar ajustes de conexión", 
-             "description":"", 
-             "url":"Vantage/es/laq1640280582810.md"
+             "id":"mxq1680183881642", 
+             "title":"Configurar el inicio de sesión único", 
+             "description":"Configurar dominios y proveedores de identidad", 
+             "url":"Vantage/es/mxq1680183881642.md", 
+             "children":[
+                { 
+                   "id":"whf1680184025148", 
+                   "title":"Agregar un proveedor de identidad", 
+                   "url":"Vantage/es/whf1680184025148.md", 
+                   "children":[
+                      { 
+                         "id":"lfb1680194800865", 
+                         "title":"OpenID Connect", 
+                         "url":"Vantage/es/lfb1680194800865.md"
+                         }
+                      , 
+                      { 
+                         "id":"dhs1680194823192", 
+                         "title":"SAML 2.0", 
+                         "url":"Vantage/es/dhs1680194823192.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ruf1680184116601", 
+                   "title":"Crear dominios", 
+                   "url":"Vantage/es/ruf1680184116601.md"
+                   }
+                , 
+                { 
+                   "id":"jbj1680184191443", 
+                   "title":"Asociar dominios a entornos", 
+                   "url":"Vantage/es/jbj1680184191443.md"
+                   }
+                , 
+                { 
+                   "id":"qma1680184498880", 
+                   "title":"P+F sobre el inicio de sesión único", 
+                   "url":"Vantage/es/qma1680184498880.md"
+                   }
+
+                ]
+
              }
 
           ]
@@ -39,34 +82,425 @@
        }
     , 
     { 
-       "id":"mqu1640280532737", 
-       "title":"Grupos de cálculo", 
-       "description":"Crear y gestionar grupos de cálculo", 
-       "url":"Vantage/es/mqu1640280532737.md", 
+       "id":"sbt1640280496980", 
+       "title":"Entornos", 
+       "description":"Cargar datos, ejecutar consultas, etc.", 
+       "url":"Vantage/es/sbt1640280496980.md", 
        "children":[
           { 
-             "id":"xrr1658772541186", 
-             "title":"Crear un grupo de cálculo", 
-             "description":"", 
-             "url":"Vantage/es/xrr1658772541186.md"
+             "id":"qiv1640281527006", 
+             "title":"Crear un entorno", 
+             "description":"Crear un entorno para la organización", 
+             "url":"Vantage/es/qiv1640281527006.md"
              }
           , 
           { 
-             "id":"dvl1640281718303", 
-             "title":"Gestionar un grupo de cálculo", 
-             "description":"", 
-             "url":"Vantage/es/dvl1640281718303.md"
+             "id":"laq1640280582810", 
+             "title":"Configurar los ajustes del entorno", 
+             "description":"Cómo se conectan los usuarios con el entorno", 
+             "url":"Vantage/es/laq1640280582810.md", 
+             "children":[
+                { 
+                   "id":"hyl1696627580794", 
+                   "title":"Crear un endpoint privado en Azure Portal", 
+                   "description":"Completar la configuración del enlace privado", 
+                   "url":"Vantage/es/hyl1696627580794.md"
+                   }
+
+                ]
+
              }
           , 
           { 
-             "id":"wdz1640281743091", 
-             "title":"Acceso a grupos de cálculo", 
-             "description":"", 
-             "url":"Vantage/es/wdz1640281743091.md"
+             "id":"nmr1658424425362", 
+             "title":"Recursos de cálculo", 
+             "description":"Gestionar recursos de cálculo", 
+             "url":"Vantage/es/nmr1658424425362.md", 
+             "children":[
+                { 
+                   "id":"isb1696461636881", 
+                   "title":"Clúster principal", 
+                   "description":"Descripción del clúster principal", 
+                   "url":"Vantage/es/isb1696461636881.md"
+                   }
+                , 
+                { 
+                   "id":"mqu1640280532737", 
+                   "title":"Grupos de cálculo", 
+                   "description":"Asignar recursos de cálculo", 
+                   "url":"Vantage/es/mqu1640280532737.md", 
+                   "children":[
+                      { 
+                         "id":"xrr1658772541186", 
+                         "title":"Crear un grupo de cálculo", 
+                         "url":"Vantage/es/xrr1658772541186.md"
+                         }
+                      , 
+                      { 
+                         "id":"dvl1640281718303", 
+                         "title":"Gestionar un grupo de cálculo", 
+                         "url":"Vantage/es/dvl1640281718303.md"
+                         }
+                      , 
+                      { 
+                         "id":"wdz1640281743091", 
+                         "title":"Acceso a grupos de cálculo", 
+                         "url":"Vantage/es/wdz1640281743091.md"
+                         }
+                      , 
+                      { 
+                         "id":"zai1697030381122", 
+                         "title":"Información del grupo de cálculo", 
+                         "url":"Vantage/es/zai1697030381122.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"fcv1681758902467", 
+             "title":"Gestión de acceso", 
+             "description":"Gestionar el acceso a un entorno", 
+             "url":"Vantage/es/fcv1681758902467.md", 
+             "children":[
+                { 
+                   "id":"asz1695761738873", 
+                   "title":"Dar acceso a los usuarios de inicio de sesión único", 
+                   "description":"Asociar el entorno con un dominio", 
+                   "url":"Vantage/es/asz1695761738873.md"
+                   }
+                , 
+                { 
+                   "id":"wxe1659392685092", 
+                   "title":"Gestionar usuarios de base de datos", 
+                   "description":"Consideraciones para la gestión de usuarios de un entorno", 
+                   "url":"Vantage/es/wxe1659392685092.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jwm1694121113608", 
+             "title":"Cargar datos", 
+             "description":"Cargar datos o acceder a ellos", 
+             "url":"Vantage/es/jwm1694121113608.md", 
+             "children":[
+                { 
+                   "id":"auw1640280669500", 
+                   "title":"Flujos", 
+                   "description":"Cargar datos de un almacenamiento de objetos", 
+                   "url":"Vantage/es/auw1640280669500.md", 
+                   "children":[
+                      { 
+                         "id":"wsa1640282405363", 
+                         "title":"Quién hace qué", 
+                         "url":"Vantage/es/wsa1640282405363.md"
+                         }
+                      , 
+                      { 
+                         "id":"wer1691592221683", 
+                         "title":"Proporcionar acceso a depósitos de Amazon S3", 
+                         "url":"Vantage/es/wer1691592221683.md"
+                         }
+                      , 
+                      { 
+                         "id":"luq1640282345986", 
+                         "title":"Crear un flujo", 
+                         "url":"Vantage/es/luq1640282345986.md", 
+                         "children":[
+                            { 
+                               "id":"ury1691596218182", 
+                               "title":"Cargar consideraciones de opción", 
+                               "url":"Vantage/es/ury1691596218182.md"
+                               }
+                            , 
+                            { 
+                               "id":"vwc1691596425578", 
+                               "title":"Autorización de origen y destino", 
+                               "url":"Vantage/es/vwc1691596425578.md"
+                               }
+                            , 
+                            { 
+                               "id":"npn1691594431074", 
+                               "title":"Orígenes y destinos", 
+                               "url":"Vantage/es/npn1691594431074.md"
+                               }
+                            , 
+                            { 
+                               "id":"gqi1691597450277", 
+                               "title":"Diagnósticos", 
+                               "url":"Vantage/es/gqi1691597450277.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"fqx1691599182279", 
+                         "title":"Ejecutar, poner en pausa o restablecer un flujo", 
+                         "url":"Vantage/es/fqx1691599182279.md"
+                         }
+                      , 
+                      { 
+                         "id":"dod1691610081069", 
+                         "title":"Actualizar un flujo", 
+                         "url":"Vantage/es/dod1691610081069.md"
+                         }
+                      , 
+                      { 
+                         "id":"dxg1691603081375", 
+                         "title":"P+F sobre los flujos", 
+                         "url":"Vantage/es/dxg1691603081375.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vyx1659391025497", 
+                   "title":"QueryGrid", 
+                   "description":"Transferir datos entre una o más fuentes de datos", 
+                   "url":"Vantage/es/vyx1659391025497.md", 
+                   "children":[
+                      { 
+                         "id":"cdg1689098187313", 
+                         "title":"Conectividad y componentes", 
+                         "description":"Conectores y opciones de conectividad de QueryGrid", 
+                         "url":"Vantage/es/cdg1689098187313.md"
+                         }
+                      , 
+                      { 
+                         "id":"wrw1640282047881", 
+                         "title":"Implementación", 
+                         "description":"Preparar QueryGrid para agregar una fuente de datos", 
+                         "url":"Vantage/es/wrw1640282047881.md", 
+                         "children":[
+                            { 
+                               "id":"znp1640282079399", 
+                               "title":"Conectar una fuente de datos", 
+                               "description":"Agregar una fuente de datos a QueryGrid", 
+                               "url":"Vantage/es/znp1640282079399.md", 
+                               "children":[
+                                  { 
+                                     "id":"bbw1687364943833", 
+                                     "title":"Configurar autorización", 
+                                     "url":"Vantage/es/bbw1687364943833.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"yml1671157089031", 
+                                     "title":"Solicitar un endpoint de interfaz", 
+                                     "url":"Vantage/es/yml1671157089031.md"
+                                     }
+
+                                  ]
+
+                               }
+                            , 
+                            { 
+                               "id":"wgr1674777759031", 
+                               "title":"Actualizar un QueryGrid Manager que no es de Lake", 
+                               "description":"Hacer que un QueryGrid Manager que no es de Lake sea compatible con Lake", 
+                               "url":"Vantage/es/wgr1674777759031.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"lzm1640282103875", 
+                         "title":"Gestión", 
+                         "url":"Vantage/es/lzm1640282103875.md", 
+                         "children":[
+                            { 
+                               "id":"goh1640282193934", 
+                               "title":"Información general de estructura", 
+                               "url":"Vantage/es/goh1640282193934.md"
+                               }
+                            , 
+                            { 
+                               "id":"vhb1640282164870", 
+                               "title":"Fuentes de datos", 
+                               "description":"Gestionar fuentes de datos conectadas a QueryGrid", 
+                               "url":"Vantage/es/vhb1640282164870.md", 
+                               "children":[
+                                  { 
+                                     "id":"yfd1674158023864", 
+                                     "title":"Editar una fuente de datos", 
+                                     "description":"Editar fuentes de datos conectadas o asignar como proxy", 
+                                     "url":"Vantage/es/yfd1674158023864.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"zof1674159380680", 
+                                     "title":"Conectores", 
+                                     "url":"Vantage/es/zof1674159380680.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"kzu1674159463068", 
+                                     "title":"Enlaces", 
+                                     "url":"Vantage/es/kzu1674159463068.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"pvy1674785931688", 
+                                     "title":"Puentes", 
+                                     "url":"Vantage/es/pvy1674785931688.md"
+                                     }
+
+                                  ]
+
+                               }
+                            , 
+                            { 
+                               "id":"zxp1640282246701", 
+                               "title":"Configuración de componentes", 
+                               "url":"Vantage/es/zxp1640282246701.md", 
+                               "children":[
+                                  { 
+                                     "id":"wne1674087932617", 
+                                     "title":"Puentes", 
+                                     "url":"Vantage/es/wne1674087932617.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"iwx1674087965329", 
+                                     "title":"Redes", 
+                                     "url":"Vantage/es/iwx1674087965329.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"zap1674087994421", 
+                                     "title":"Políticas de comunicación", 
+                                     "url":"Vantage/es/zap1674087994421.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"hmn1674088306575", 
+                                     "title":"Asignaciones de usuarios y roles", 
+                                     "url":"Vantage/es/hmn1674088306575.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"eyz1674088497701", 
+                                     "title":"PrivateLink", 
+                                     "url":"Vantage/es/eyz1674088497701.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"hfi1674786742869", 
+                                     "title":"Controladores JDBC", 
+                                     "url":"Vantage/es/hfi1674786742869.md"
+                                     }
+
+                                  ]
+
+                               }
+                            , 
+                            { 
+                               "id":"ama1689287374954", 
+                               "title":"Problemas", 
+                               "description":"Consideraciones para revisar problemas de QueryGrid", 
+                               "url":"Vantage/es/ama1689287374954.md"
+                               }
+                            , 
+                            { 
+                               "id":"oiw1640282294248", 
+                               "title":"Operaciones", 
+                               "url":"Vantage/es/oiw1640282294248.md"
+                               }
+
+                            ]
+
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jrq1640280690304", 
+             "title":"Protección de datos", 
+             "description":"Proteger los datos con opciones de copia de seguridad y restauración", 
+             "url":"Vantage/es/jrq1640280690304.md", 
+             "children":[
+                { 
+                   "id":"qmb1659046927155", 
+                   "title":"Crear un plan de copia de seguridad", 
+                   "description":"Crear o modificar un plan de copia de seguridad", 
+                   "url":"Vantage/es/qmb1659046927155.md"
+                   }
+                , 
+                { 
+                   "id":"tyu1695326821997", 
+                   "title":"Iniciar un trabajo de copia de seguridad manualmente", 
+                   "description":"Iniciar un trabajo de copia de seguridad además de cualquier trabajo programado", 
+                   "url":"Vantage/es/tyu1695326821997.md"
+                   }
+                , 
+                { 
+                   "id":"fwh1695165071175", 
+                   "title":"Proteger un punto de restauración", 
+                   "description":"Proteger un trabajo de copia de seguridad guardado", 
+                   "url":"Vantage/es/fwh1695165071175.md"
+                   }
+                , 
+                { 
+                   "id":"kqr1640280954140", 
+                   "title":"Restaurar datos", 
+                   "description":"Restaurar datos desde un punto de restauración", 
+                   "url":"Vantage/es/kqr1640280954140.md"
+                   }
+                , 
+                { 
+                   "id":"sus1659047241965", 
+                   "title":"Ver el historial de un plan de copia de seguridad", 
+                   "description":"Ver trabajos de copia de seguridad y restauración pasados y actuales", 
+                   "url":"Vantage/es/sus1659047241965.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"edx1695158840322", 
+             "title":"Editor", 
+             "description":"Escribir (o crear) y ejecutar consultas SQL", 
+             "url":"Vantage/es/edx1695158840322.md"
+             }
+          , 
+          { 
+             "id":"ahj1695153106508", 
+             "title":"Consultas", 
+             "description":"Ver y optimizar consultas", 
+             "url":"Vantage/es/ahj1695153106508.md"
              }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"vmt1693932844043", 
+       "title":"Recursos de cálculo", 
+       "description":"Descripción de los tipos", 
+       "url":"Vantage/es/vmt1693932844043.md"
        }
     , 
     { 
@@ -78,34 +512,31 @@
           { 
              "id":"tdv1682522711429", 
              "title":"Consumo de cálculo", 
-             "description":"", 
+             "description":"Supervisar consumo de cálculo", 
              "url":"Vantage/es/tdv1682522711429.md", 
              "children":[
                 { 
                    "id":"qly1682524108665", 
                    "title":"Cómo se consumen los recursos de cálculo", 
-                   "description":"", 
                    "url":"Vantage/es/qly1682524108665.md"
                    }
                 , 
                 { 
                    "id":"qze1682528646873", 
                    "title":"Revisar consumo de cálculo", 
-                   "description":"", 
                    "url":"Vantage/es/qze1682528646873.md"
                    }
                 , 
                 { 
                    "id":"qty1682530889318", 
                    "title":"Gestionar consumo de cálculo", 
-                   "description":"", 
+                   "description":"Introduzca el consumo del grupo de cálculo y el clúster principal.", 
                    "url":"Vantage/es/qty1682530889318.md"
                    }
                 , 
                 { 
                    "id":"nzf1682539696119", 
                    "title":"P+F sobre el consumo de cálculo", 
-                   "description":"", 
                    "url":"Vantage/es/nzf1682539696119.md"
                    }
 
@@ -116,63 +547,30 @@
           { 
              "id":"nsc1682522782958", 
              "title":"Consumo de almacenamiento", 
-             "description":"", 
+             "description":"Supervisar consumo de almacenamiento", 
              "url":"Vantage/es/nsc1682522782958.md", 
              "children":[
                 { 
                    "id":"pdf1682543766178", 
                    "title":"Cómo se consume el almacenamiento", 
-                   "description":"", 
+                   "description":"Dónde encontrar almacenamiento de bloques y objetos.", 
                    "url":"Vantage/es/pdf1682543766178.md"
                    }
                 , 
                 { 
                    "id":"vky1682545736669", 
                    "title":"Revisar consumo de almacenamiento", 
-                   "description":"", 
                    "url":"Vantage/es/vky1682545736669.md"
                    }
                 , 
                 { 
                    "id":"aku1682545782916", 
                    "title":"P+F sobre el consumo de almacenamiento", 
-                   "description":"", 
                    "url":"Vantage/es/aku1682545782916.md"
                    }
 
                 ]
 
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"jrq1640280690304", 
-       "title":"Protección de datos", 
-       "description":"Proteger los datos con opciones de copia de seguridad y recuperación", 
-       "url":"Vantage/es/jrq1640280690304.md", 
-       "children":[
-          { 
-             "id":"qmb1659046927155", 
-             "title":"Crear un plan de copia de seguridad", 
-             "description":"", 
-             "url":"Vantage/es/qmb1659046927155.md"
-             }
-          , 
-          { 
-             "id":"kqr1640280954140", 
-             "title":"Restaurar datos", 
-             "description":"", 
-             "url":"Vantage/es/kqr1640280954140.md"
-             }
-          , 
-          { 
-             "id":"sus1659047241965", 
-             "title":"Historial de copia de seguridad", 
-             "description":"", 
-             "url":"Vantage/es/sus1659047241965.md"
              }
 
           ]
@@ -188,34 +586,30 @@
           { 
              "id":"hdx1681040827922", 
              "title":"Gestionar usuarios de recurso compartido de datos", 
-             "description":"", 
              "url":"Vantage/es/hdx1681040827922.md"
              }
           , 
           { 
              "id":"vlk1663617148666", 
              "title":"Crear un recurso compartido de datos", 
-             "description":"", 
+             "description":"Compartir conjuntos de datos con suscriptores", 
              "url":"Vantage/es/vlk1663617148666.md"
              }
           , 
           { 
              "id":"gds1686247574408", 
              "title":"Trabajar con conjuntos de datos", 
-             "description":"", 
              "url":"Vantage/es/gds1686247574408.md", 
              "children":[
                 { 
                    "id":"rfg1681040443995", 
                    "title":"Gestionar conjuntos de datos", 
-                   "description":"", 
                    "url":"Vantage/es/rfg1681040443995.md"
                    }
                 , 
                 { 
                    "id":"hfx1686247226223", 
                    "title":"Ver y usar conjuntos de datos", 
-                   "description":"", 
                    "url":"Vantage/es/hfx1686247226223.md"
                    }
 
@@ -226,21 +620,18 @@
           { 
              "id":"vph1681040670091", 
              "title":"Gestionar suscriptores", 
-             "description":"", 
              "url":"Vantage/es/vph1681040670091.md"
              }
           , 
           { 
              "id":"vuh1681040768372", 
              "title":"Eliminar un recurso compartido", 
-             "description":"", 
              "url":"Vantage/es/vuh1681040768372.md"
              }
           , 
           { 
              "id":"laf1686249149487", 
              "title":"P+F sobre el uso compartido de datos", 
-             "description":"", 
              "url":"Vantage/es/laf1686249149487.md"
              }
 
@@ -249,57 +640,83 @@
        }
     , 
     { 
+       "id":"lxi1695933833104", 
+       "title":"Cargar datos", 
+       "description":"Cargar datos o acceder a ellos", 
+       "url":"Vantage/es/lxi1695933833104.md"
+       }
+    , 
+    { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
-       "description":"Escribir y ejecutar consultas SQL", 
+       "description":"Escribir (o crear) y ejecutar consultas SQL", 
        "url":"Vantage/es/xbg1640280430669.md", 
        "children":[
           { 
-             "id":"xti1659380438762", 
-             "title":"Qué hacer en el editor", 
-             "description":"", 
-             "url":"Vantage/es/xti1659380438762.md"
+             "id":"mor1695159014369", 
+             "title":"Cargar datos", 
+             "description":"Cargar datos o acceder a ellos", 
+             "url":"Vantage/es/mor1695159014369.md"
              }
           , 
           { 
              "id":"juo1640281123239", 
-             "title":"Conectarse a un entorno", 
-             "description":"", 
+             "title":"Examinar objetos de base de datos", 
+             "description":"Conectarse a un entorno y examinarlo", 
              "url":"Vantage/es/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
              "title":"Consultar los datos", 
-             "description":"", 
-             "url":"Vantage/es/dgd1640281158386.md"
+             "description":"Ejecutar consultas en el Editor", 
+             "url":"Vantage/es/dgd1640281158386.md", 
+             "children":[
+                { 
+                   "id":"vkk1692059193535", 
+                   "title":"Crear una consulta", 
+                   "description":"Crear una consulta utilizando SQL generado", 
+                   "url":"Vantage/es/vkk1692059193535.md"
+                   }
+                , 
+                { 
+                   "id":"iql1691540875799", 
+                   "title":"Explorar funciones analíticas en la base de datos", 
+                   "description":"Buscar funciones y crear consultas", 
+                   "url":"Vantage/es/iql1691540875799.md", 
+                   "children":[
+                      { 
+                         "id":"ujf1695157605241", 
+                         "title":"Visualización de nPath", 
+                         "url":"Vantage/es/ujf1695157605241.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
              }
           , 
           { 
-             "id":"iql1691540875799", 
-             "title":"Explorar funciones analíticas en la base de datos", 
-             "description":"", 
-             "url":"Vantage/es/iql1691540875799.md"
+             "id":"xxs1694723933787", 
+             "title":"Referencia de SQL y bases de datos", 
+             "description":"Comandos SQL, funciones y funcionalidad de base de datos", 
+             "url":"Vantage/es/xxs1694723933787.md"
              }
           , 
-    { 
-       "id":"bkm1640280721917", 
-       "title":"Casos de uso", 
-       "description":"Ejecutar casos de uso para explorar las capacidades de VantageCloud Lake", 
-       "icon":"book", 
-       "url":"Vantage/es/bkm1640280721917.md",
-   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-       }
+          { 
+             "id":"bkm1640280721917", 
+             "title":"Casos de uso", 
+             "description":"Ejecutar casos de uso para explorar las capacidades de VantageCloud Lake", 
+             "icon":"libro", 
+             "url":"Vantage/es/bkm1640280721917.md", 
+             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+             }
 
           ]
 
-       }
-    , 
-    { 
-       "id":"apw1640280478763", 
-       "title":"Organización", 
-       "description":"Gestionar la organización VantageCloud Lake", 
-       "url":"Vantage/es/apw1640280478763.md"
        }
     , 
     { 
@@ -311,7 +728,7 @@
           { 
              "id":"zvd1688067459510", 
              "title":"Detalles de consulta", 
-             "description":"", 
+             "description":"Descripción de la información que se muestra para cada consulta", 
              "url":"Vantage/es/zvd1688067459510.md"
              }
 
@@ -320,340 +737,14 @@
        }
     , 
     { 
-       "id":"vyx1659391025497", 
-       "title":"QueryGrid", 
-       "description":"Transferir datos entre una o más fuentes de datos", 
-       "url":"Vantage/es/vyx1659391025497.md", 
+       "id":"klo1694115175906", 
+       "title":"Configuración de la cuenta", 
+       "url":"Vantage/es/klo1694115175906.md", 
        "children":[
           { 
-             "id":"cdg1689098187313", 
-             "title":"Conectividad y componentes", 
-             "description":"", 
-             "url":"Vantage/es/cdg1689098187313.md"
-             }
-          , 
-          { 
-             "id":"wrw1640282047881", 
-             "title":"Implementación", 
-             "description":"", 
-             "url":"Vantage/es/wrw1640282047881.md", 
-             "children":[
-                { 
-                   "id":"znp1640282079399", 
-                   "title":"Conectar una fuente de datos", 
-                   "description":"", 
-                   "url":"Vantage/es/znp1640282079399.md", 
-                   "children":[
-                      { 
-                         "id":"bbw1687364943833", 
-                         "title":"Configurar autorización", 
-                         "description":"", 
-                         "url":"Vantage/es/bbw1687364943833.md"
-                         }
-                      , 
-                      { 
-                         "id":"yml1671157089031", 
-                         "title":"Solicitar un endpoint de interfaz", 
-                         "description":"", 
-                         "url":"Vantage/es/yml1671157089031.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"wgr1674777759031", 
-                   "title":"Actualizar un QueryGrid Manager que no es de Lake", 
-                   "description":"", 
-                   "url":"Vantage/es/wgr1674777759031.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"lzm1640282103875", 
-             "title":"Gestión", 
-             "description":"", 
-             "url":"Vantage/es/lzm1640282103875.md", 
-             "children":[
-                { 
-                   "id":"goh1640282193934", 
-                   "title":"Información general de estructura", 
-                   "description":"", 
-                   "url":"Vantage/es/goh1640282193934.md"
-                   }
-                , 
-                { 
-                   "id":"vhb1640282164870", 
-                   "title":"Fuentes de datos", 
-                   "description":"", 
-                   "url":"Vantage/es/vhb1640282164870.md", 
-                   "children":[
-                      { 
-                         "id":"yfd1674158023864", 
-                         "title":"Editar una fuente de datos", 
-                         "description":"", 
-                         "url":"Vantage/es/yfd1674158023864.md"
-                         }
-                      , 
-                      { 
-                         "id":"zof1674159380680", 
-                         "title":"Conectores", 
-                         "description":"", 
-                         "url":"Vantage/es/zof1674159380680.md"
-                         }
-                      , 
-                      { 
-                         "id":"kzu1674159463068", 
-                         "title":"Enlaces", 
-                         "description":"", 
-                         "url":"Vantage/es/kzu1674159463068.md"
-                         }
-                      , 
-                      { 
-                         "id":"pvy1674785931688", 
-                         "title":"Puentes", 
-                         "description":"", 
-                         "url":"Vantage/es/pvy1674785931688.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"zxp1640282246701", 
-                   "title":"Configuración de componentes", 
-                   "description":"", 
-                   "url":"Vantage/es/zxp1640282246701.md", 
-                   "children":[
-                      { 
-                         "id":"wne1674087932617", 
-                         "title":"Puentes", 
-                         "description":"", 
-                         "url":"Vantage/es/wne1674087932617.md"
-                         }
-                      , 
-                      { 
-                         "id":"iwx1674087965329", 
-                         "title":"Redes", 
-                         "description":"", 
-                         "url":"Vantage/es/iwx1674087965329.md"
-                         }
-                      , 
-                      { 
-                         "id":"zap1674087994421", 
-                         "title":"Políticas de comunicación", 
-                         "description":"", 
-                         "url":"Vantage/es/zap1674087994421.md"
-                         }
-                      , 
-                      { 
-                         "id":"hmn1674088306575", 
-                         "title":"Asignaciones de usuarios y roles", 
-                         "description":"", 
-                         "url":"Vantage/es/hmn1674088306575.md"
-                         }
-                      , 
-                      { 
-                         "id":"eyz1674088497701", 
-                         "title":"PrivateLink", 
-                         "description":"", 
-                         "url":"Vantage/es/eyz1674088497701.md"
-                         }
-                      , 
-                      { 
-                         "id":"hfi1674786742869", 
-                         "title":"Controladores JDBC", 
-                         "description":"", 
-                         "url":"Vantage/es/hfi1674786742869.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"uee1640282265780", 
-                   "title":"Problemas", 
-                   "description":"", 
-                   "url":"Vantage/es/uee1640282265780.md"
-                   }
-                , 
-                { 
-                   "id":"oiw1640282294248", 
-                   "title":"Operaciones", 
-                   "description":"", 
-                   "url":"Vantage/es/oiw1640282294248.md"
-                   }
-
-                ]
-
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"auw1640280669500", 
-       "title":"Flujos", 
-       "description":"Cargar datos de un almacenamiento de objetos", 
-       "url":"Vantage/es/auw1640280669500.md", 
-       "children":[
-          { 
-             "id":"wsa1640282405363", 
-             "title":"Quién hace qué", 
-             "description":"", 
-             "url":"Vantage/es/wsa1640282405363.md"
-             }
-          , 
-          { 
-             "id":"wer1691592221683", 
-             "title":"Proporcionar acceso a depósitos de Amazon S3", 
-             "description":"", 
-             "url":"Vantage/es/wer1691592221683.md"
-             }
-          , 
-          { 
-             "id":"luq1640282345986", 
-             "title":"Crear un flujo", 
-             "description":"", 
-             "url":"Vantage/es/luq1640282345986.md", 
-             "children":[
-                { 
-                   "id":"ury1691596218182", 
-                   "title":"Cargar consideraciones de opción", 
-                   "description":"", 
-                   "url":"Vantage/es/ury1691596218182.md"
-                   }
-                , 
-                { 
-                   "id":"vwc1691596425578", 
-                   "title":"Autorización de origen y destino", 
-                   "description":"", 
-                   "url":"Vantage/es/vwc1691596425578.md"
-                   }
-                , 
-                { 
-                   "id":"npn1691594431074", 
-                   "title":"Orígenes y destinos", 
-                   "description":"", 
-                   "url":"Vantage/es/npn1691594431074.md"
-                   }
-                , 
-                { 
-                   "id":"gqi1691597450277", 
-                   "title":"Diagnósticos", 
-                   "description":"", 
-                   "url":"Vantage/es/gqi1691597450277.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"fqx1691599182279", 
-             "title":"Ejecutar, poner en pausa o restablecer un flujo", 
-             "description":"", 
-             "url":"Vantage/es/fqx1691599182279.md"
-             }
-          , 
-          { 
-             "id":"dod1691610081069", 
-             "title":"Actualizar un flujo", 
-             "description":"", 
-             "url":"Vantage/es/dod1691610081069.md"
-             }
-          , 
-          { 
-             "id":"dxg1691603081375", 
-             "title":"P+F sobre los flujos", 
-             "description":"", 
-             "url":"Vantage/es/dxg1691603081375.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"fcv1681758902467", 
-       "title":"Gestión de acceso", 
-       "description":"Gestionar el acceso a la organización VantageCloud Lake", 
-       "url":"Vantage/es/fcv1681758902467.md", 
-       "children":[
-          { 
-             "id":"mxq1680183881642", 
-             "title":"Configurar el inicio de sesión único", 
-             "description":"Configurar dominios y proveedores de identidad", 
-             "url":"Vantage/es/mxq1680183881642.md", 
-             "children":[
-                { 
-                   "id":"whf1680184025148", 
-                   "title":"Agregar un proveedor de identidad", 
-                   "description":"", 
-                   "url":"Vantage/es/whf1680184025148.md", 
-                   "children":[
-                      { 
-                         "id":"lfb1680194800865", 
-                         "title":"OpenID Connect", 
-                         "description":"", 
-                         "url":"Vantage/es/lfb1680194800865.md"
-                         }
-                      , 
-                      { 
-                         "id":"dhs1680194823192", 
-                         "title":"SAML 2.0", 
-                         "description":"", 
-                         "url":"Vantage/es/dhs1680194823192.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"ruf1680184116601", 
-                   "title":"Crear dominios", 
-                   "description":"", 
-                   "url":"Vantage/es/ruf1680184116601.md"
-                   }
-                , 
-                { 
-                   "id":"jbj1680184191443", 
-                   "title":"Asociar dominios a entornos", 
-                   "description":"", 
-                   "url":"Vantage/es/jbj1680184191443.md"
-                   }
-                , 
-                { 
-                   "id":"qma1680184498880", 
-                   "title":"P+F sobre el inicio de sesión único", 
-                   "description":"", 
-                   "url":"Vantage/es/qma1680184498880.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"hrv1640281410572", 
-             "title":"Gestionar administradores de organización", 
-             "description":"Consideraciones para la gestión de administradores de organización", 
-             "url":"Vantage/es/hrv1640281410572.md"
-             }
-          , 
-          { 
-             "id":"wxe1659392685092", 
-             "title":"Gestionar usuarios de base de datos", 
-             "description":"Consideraciones para la gestión de usuarios de un entorno", 
-             "url":"Vantage/es/wxe1659392685092.md"
+             "id":"ohx1694115234984", 
+             "title":"Configuración general", 
+             "url":"Vantage/es/ohx1694115234984.md"
              }
 
           ]
@@ -664,9 +755,9 @@
        "id":"bkm1640280721917", 
        "title":"Casos de uso", 
        "description":"Ejecutar casos de uso para explorar las capacidades de VantageCloud Lake", 
-       "icon":"book", 
-       "url":"Vantage/es/bkm1640280721917.md",
-   "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       "icon":"libro", 
+       "url":"Vantage/es/bkm1640280721917.md", 
+       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
     ]
