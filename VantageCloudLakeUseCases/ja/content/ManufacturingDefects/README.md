@@ -1,9 +1,9 @@
-製造上の欠陥の分析
-------------------
+## 製造上の欠陥の分析
 
 ### 始める前に
 
-エディタを開いてこのユース ケースを進めます。[エディタを起動する](#data=%7B%22navigateTo%22:%22editor%22%7D)
+エディタを開いてこのユース ケースを進めます。
+[エディタを起動する](#data={"navigateTo":"editor"})
 
 ### はじめに
 
@@ -19,17 +19,19 @@
 
 ### セットアップ
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。[アセットをロード](#data=%7B%22id%22:%22EVCarBattery%22%7D)
+**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
+[アセットをロード](#data={"id":"EVCarBattery"})
 
 ### ウォークスルー
+***
 
-------------------------------------------------------------------------
 
 #### ステップ1:根本原因の絞り込み
 
 予備的な分析はすでに実施済みで、保証対象のバッテリー交換が必要となった車両の全VIN (車両識別番号)の報告にも目を通しています。
 
-``` sourceCode
+
+```sql
 SELECT d.company, count(*)
 FROM ev_dealers d, ev_badbatts bb,
 ev_vehicles v
@@ -40,7 +42,8 @@ GROUP BY d.company order by 2 desc
 
 次に、バッテリーを搭載している各種の自動車モデルを見ていきましょう。自社の製品ラインでは、いくつかの異種モデルに同じバッテリー部品のセットを使用しています。
 
-``` sourceCode
+
+```sql
 SELECT v.model, count(*)
 FROM ev_vehicles v, ev_badbatts bb
 WHERE bb.vin = v.vin
@@ -51,7 +54,8 @@ GROUP BY v.model order by 2 desc
 
 次に自動車が組み立てられる工場を見てみましょう。
 
-``` sourceCode
+
+```sql
 SELECT mfg.company, count(*)
 FROM ev_mfg_plants mfg, ev_badbatts bb,
 ev_vehicles v
@@ -64,7 +68,8 @@ GROUP BY mfg.company order by 2 desc
 
 不良バッテリーを搭載した自動車にどのバッテリー セルが組み込まれているかを調べます。
 
-``` sourceCode
+
+```sql
 SELECT DISTINCT bom.part_no, p.description, count(*)
 FROM ev_bom bom, ev_badbatts bb, ev_parts p
 WHERE bb.vin = bom.vin
@@ -73,11 +78,12 @@ AND p.description LIKE 'Battery Cell%'
 GROUP BY bom.part_no, p.description
 ```
 
-確かに、part\_no ‘20rd0’に問題があるようです。
+確かに、part_no ‘20rd0’に問題があるようです。
 
 社内の統合データ ウェアハウスには、詳細な製造データが格納されています。これらのバッテリー セルでロット番号との相関性があるかどうか確めます。
 
-``` sourceCode
+
+```sql
 SELECT bom.part_no, bom.lot_no, p.description, count(*)
 FROM ev_bom bom, ev_badbatts bb, ev_parts p
 WHERE bb.vin = bom.vin
@@ -87,7 +93,7 @@ GROUP BY bom.part_no, bom.lot_no, p.description
 ORDER BY count(*) DESC
 ```
 
-なるほど、part\_no ‘20rd0’の根底にある問題点がわかりました。不具合の大部分はバッテリー ロット「4012」によるもので(ジャクソン工場に納入されたことが判明)、保証修理を増加させた膨大な数の不良バッテリーがあります。これらの洞察が、社内で好評なBI (ビジネス インテリジェンス)ツールのダッシュボード上で非常にわかりやすく示されています。BIツールは直接Vantageに接続しており、インタラクティブな反復的分析が可能になります。
+なるほど、part_no ‘20rd0’の根底にある問題点がわかりました。不具合の大部分はバッテリー ロット'4012'によるもので(ジャクソン工場に納入されたことが判明)、保証修理を増加させた膨大な数の不良バッテリーがあります。これらの洞察が、社内で好評なBI (ビジネス インテリジェンス)ツールのダッシュボード上で非常にわかりやすく示されています。BIツールは直接Vantageに接続しており、インタラクティブな反復的分析が可能になります。
 
 ![png](dashboard.png)
 
@@ -103,7 +109,8 @@ ORDER BY count(*) DESC
 
 以下の文を使用して、空の信頼証明を含む認証オブジェクトを作成できます。
 
-``` sourceCode
+
+```sql
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
@@ -117,7 +124,8 @@ Teradata Vantageを使用することで、このデータをネイティブに�
 
 Amazon S3でJSON形式のデータにアクセスするために、外部テーブルを作成します。
 
-``` sourceCode
+
+```sql
 CREATE FOREIGN TABLE test_reports , FALLBACK ,
      EXTERNAL SECURITY MyAuth
 (
@@ -128,14 +136,16 @@ USING (
 ), NO PRIMARY INDEX;
 ```
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 *
 FROM test_reports
 ```
 
 外部テーブルの最上部にユーザー フレンドリーなビューを配置し、ファイルを裁断してテスト レポート データへのアクセスをより簡単にします。
 
-``` sourceCode
+
+```sql
 REPLACE VIEW test_reports_v AS
 (SELECT vin, part_no, lot_no, CAST(test_report AS JSON) test_report
 FROM TD_JSONSHRED(
@@ -150,7 +160,8 @@ FROM TD_JSONSHRED(
     )
 ```
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 *
 FROM test_reports_v
 ```
@@ -159,7 +170,8 @@ FROM test_reports_v
 
 ここまで順調のようです。次にテスト レポートの内容がどのようなものか見ていきます。さまざまなパーツには各種のデータがあり、試験時にそのデータがレポートされます。最も単純なパーツのテスト結果はこのようなものです。
 
-``` sourceCode
+
+```sql
 SELECT TOP 1 test_report
 FROM test_reports_v
 WHERE part_no = '11400zn'
@@ -167,7 +179,8 @@ WHERE part_no = '11400zn'
 
 対照的に、バッテリーのテスト レポートにはバッテリーの組み立て後車両に搭載される前の性能に関する詳細なデータが含まれています。
 
-``` sourceCode
+
+```sql
 SELECT TOP 1 test_report
 FROM test_reports_v
 WHERE part_no = '20rdS0'
@@ -175,7 +188,8 @@ WHERE part_no = '20rdS0'
 
 バッテリーについて、定格容量と実測容量を部品/ロット番号とともに比較したいと思います。簡潔なドット表記法を使用してJSONデータを簡単に掘り下げ、必要なテスト結果にアクセスできます。
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 tr.part_no, p.description, tr.lot_no, 
 tr.test_report."Rated Capacity" AS rated_capacity,
 tr.test_report."Static Capacity Test"."Measured Average Capacity" AS measured_capacity
@@ -194,11 +208,13 @@ AND p.description LIKE 'Battery Cell%'
 
 独自のデータベース スキーマで作成したオブジェクトを削除します。
 
-``` sourceCode
+
+```sql
 DROP TABLE test_reports;
 ```
 
-``` sourceCode
+
+```sql
 DROP VIEW test_reports_v;
 ```
 
@@ -231,7 +247,7 @@ DROP VIEW test_reports_v;
 -   `Latitude`: 緯度(位置)
 -   `Longitude`: 経度(位置)
 
-**mfg\_plants** - 製造工場:
+**mfg_plants** - 製造工場:
 
 -   `id`: 固有の識別子
 -   `Company`: 工場名

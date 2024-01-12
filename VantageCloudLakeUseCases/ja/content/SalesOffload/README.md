@@ -1,9 +1,9 @@
-ディープ ヒストリー - 履歴コールド データをオブジェクト ストアにオフロードする
-------------------------------------------------------------------------------
+## ディープ ヒストリー - 履歴コールド データをオブジェクト ストアにオフロードする
 
 ### 始める前に
 
-エディタを開いてこのユース ケースを進めます。[エディタを起動する](#data=%7B%22navigateTo%22:%22editor%22%7D)
+エディタを開いてこのユース ケースを進めます。
+[エディタを起動する](#data={"navigateTo":"editor"})
 
 ### はじめに
 
@@ -19,20 +19,23 @@ Teradata Vantageは、世界最大かつ最も要求の厳しい企業に対し�
 
 ### セットアップ
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。[アセットをロード](#data=%7B%22id%22:%22SalesOffload%22%7D)
+**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
+[アセットをロード](#data={"id":"SalesOffload"})
 
 ### ウォークスルー
 
-#### ステップ1:データのクエリ
+#### ステップ1:データのクエリー
 
 これが現在の売上データです。いくつかのサンプル行を取得してみましょう。この例では、顧客、店舗、バスケット、割引情報があります。
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 * 
 FROM so_sales_fact
 ```
 
-``` sourceCode
+
+```sql
 SELECT sales_date, sum(sales_quantity) as total 
 FROM so_sales_fact
 GROUP BY sales_date
@@ -41,13 +44,15 @@ ORDER BY sales_date ASC
 
 ![png](output_7_0.png)
 
-``` sourceCode
+
+```sql
 SELECT MIN(sales_date) AS min_date, MAX(sales_date) AS max_date FROM so_sales_fact
 ```
 
 データ ウェアハウス (2019年データ) にはいくつの記録があるでしょうか？
 
-``` sourceCode
+
+```sql
 SELECT COUNT(*)
 FROM so_sales_fact
 ```
@@ -56,9 +61,10 @@ FROM so_sales_fact
 
 ご覧のとおり、当社のデータ ウェアハウスには1年分の売上データしかありません。これはその期間のデータに対するクエリーが圧倒的に多いためですが、コンプライアンス上の理由から、多くの企業では最大10年分の過去データを保存する必要があります。古いデータは月単位でVantageからエクスポートされ、Amazon S3にロードされて長期保存されます。Teradata Vantageを使用することで、このオフロードされたデータにシームレスにアクセスして他のデータと結合し、長期的なトレンドに関するインサイトを得たり、監査リクエストに簡単に対応したりすることができます。これには、本来であれば書き直す必要のある既存のクエリーやレポートの利用も含まれます。
 
-オフロードされた売上データが保存されているバケットはわかっているので、そこにあるデータを少し見てみましょう。ファイルのリストとそのサイズは、READ\_NOS関数を使って取得することができます。
+オフロードされた売上データが保存されているバケットはわかっているので、そこにあるデータを少し見てみましょう。ファイルのリストとそのサイズは、READ_NOS関数を使って取得することができます。
 
-``` sourceCode
+
+```sql
 SELECT location(char(255)), ObjectLength 
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
@@ -70,7 +76,8 @@ ORDER BY 1
 
 全部でいくつのファイルとディレクトリがあるでしょうか？
 
-``` sourceCode
+
+```sql
 SELECT COUNT(location(char(255))) as NumFiles
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
@@ -82,7 +89,8 @@ ORDER BY 1
 
 ファイルのフォーマットをよりよく理解するために、ファイルの1つを見てみましょう。
 
-``` sourceCode
+
+```sql
 SELECT * FROM (
       LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet'
       AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
@@ -95,7 +103,8 @@ AS d
 
 以下の文を使用して、信頼証明を外部オブジェクト ストアに含める認証オブジェクトを作成できます。
 
-``` sourceCode
+
+```sql
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
@@ -103,7 +112,8 @@ PASSWORD '';
 
 Vantageに外部テーブルとビューを作成し、ビジネス アナリストやその他のユーザーがオフロードされた過去データに簡単にアクセスできるようにします。
 
-``` sourceCode
+
+```sql
 CREATE FOREIGN TABLE sales_fact_offload
 , EXTERNAL SECURITY MyAuth 
 USING
@@ -117,21 +127,24 @@ PARTITION BY COLUMN;
 
 オフロードされたファイルにある行の一部を見てみましょう。
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 *
 FROM sales_fact_offload;
 ```
 
 どのくらいのデータがありますか？
 
-``` sourceCode
+
+```sql
 SELECT COUNT(*)
 FROM sales_fact_offload;
 ```
 
 あともう少しです！データをネイティブ テーブルのように表示させます。ビューを上に置いて、カラムごとに分割しましょう。
 
-``` sourceCode
+
+```sql
 REPLACE VIEW sales_fact_offload_v as (  
 SELECT 
     sales_date,
@@ -146,7 +159,8 @@ FROM sales_fact_offload);
 
 これでTeradata Vantageの他のテーブルと同じようにデータをクエリーできるようになりましたが、データはクエリー実行時にオブジェクト ストアから直接取得されます。既存のSQLスキルとワークフローを使用して、オブジェクト ストアベースのデータセットとTeradataリレーショナル テーブルの構造化データセットの相関をサポートすることで、シームレスな分析体験が実現します。
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 *
 FROM sales_fact_offload_v;
 ```
@@ -161,7 +175,8 @@ FROM sales_fact_offload_v;
 
 S3には大量のデータがあります。外部テーブルを最適化して、オブジェクト ストアのクエリー時に読み込むデータを最小限に抑えましょう。オブジェクト ストアのバケットとパス構造を設計することは、オブジェクト ストアを作成する上で重要な最初のステップです。ビジネス ニーズの知識、データへのアクセスで予想されるパターン、データに対する理解、トレードオフに対する感性が必要です。私たちのケースでは、おおよその日付がわかっていることが多いので、それを有効に活用することになります。
 
-``` sourceCode
+
+```sql
 DROP TABLE sales_fact_offload;
 CREATE FOREIGN TABLE sales_fact_offload
 , EXTERNAL SECURITY MyAuth 
@@ -175,11 +190,12 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-**PATHPATTERN** 句を含むように外部テーブルを再定義しました。これで、過去データを日付ごとに見る場合に、必要なファイルだけを読み込むことができます。
+<b>PATHPATTERN</b> 句を含むように外部テーブルを再定義しました。これで、過去データを日付ごとに見る場合に、必要なファイルだけを読み込むことができます。
 
 では、このパス フィルタリングを可能にするユーザーフレンドリーなビューを再作成してみましょう。
 
-``` sourceCode
+
+```sql
 REPLACE VIEW sales_fact_offload_v as (  
 SELECT 
     CAST($path.$year AS CHAR(4)) sales_year,
@@ -194,7 +210,8 @@ SELECT
 FROM sales_fact_offload);
 ```
 
-``` sourceCode
+
+```sql
 SELECT TOP 10 *
 FROM sales_fact_offload_v
 WHERE sales_year = '2010'
@@ -205,7 +222,8 @@ AND sales_month = '9';
 
 2012年8月の6号店の売上を見てみましょう。
 
-``` sourceCode
+
+```sql
 SELECT store_id, SUM(sales_quantity)
 FROM sales_fact_offload_v
 WHERE store_id = 6
@@ -216,7 +234,8 @@ GROUP BY 1;
 
 全体像を把握するために、過去データと現在のデータを結合しましょう。
 
-``` sourceCode
+
+```sql
 REPLACE VIEW sales_fact_all as (
 SELECT sales_date,
     customer_id,
@@ -240,7 +259,8 @@ FROM sales_fact_offload_v);
 
 最後に、経年売上レポートを再実行します。コードは上のものと変わりませんが、直近の年だけでなく、すべての売上データを分析できるようになりました。
 
-``` sourceCode
+
+```sql
 SELECT sales_date, sum(sales_quantity) as total 
 FROM sales_fact_all
 GROUP BY sales_date
@@ -255,15 +275,18 @@ ORDER BY sales_date ASC;
 
 独自のデータベース スキーマで作成したオブジェクトを削除します。
 
-``` sourceCode
+
+```sql
 DROP VIEW sales_fact_all;
 ```
 
-``` sourceCode
+
+```sql
 DROP VIEW sales_fact_offload_v;
 ```
 
-``` sourceCode
+
+```sql
 DROP TABLE sales_fact_offload;
 ```
 
@@ -272,7 +295,7 @@ DROP TABLE sales_fact_offload;
 
 ------------------------------------------------------------------------
 
-**sales\_fact** データセットには約4,300万行のサンプル売上データがあります。
+<b>sales_fact</b> データセットには約4,300万行のサンプル売上データがあります。
 
 -   `sales_date`: 注文が処理された日付
 -   `customer_id`: 顧客識別子

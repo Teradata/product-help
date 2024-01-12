@@ -1,9 +1,9 @@
-金融サービスのカスタマー ジャーニー
------------------------------------
+## 金融サービスのカスタマー ジャーニー
 
 ### 始める前に
 
-エディタを開いてこのユース ケースを進めます。[エディタを起動する](#data=%7B%22navigateTo%22:%22editor%22%7D)
+エディタを開いてこのユース ケースを進めます。
+[エディタを起動する](#data={"navigateTo":"editor"})
 
 ### はじめに
 
@@ -13,24 +13,24 @@
 
 顧客とリテール銀行との重要なやり取りに注目してみます。Vantageを使用して、カスタマー ジャーニーのさまざまなステップで新たな洞察を発見する方法をご紹介します。
 
-最初の **customer acquisition** では、以下を行う方法を探ります。- 新規顧客を見つける - マーケティングのアトリビューションを評価する - どうすればROIを高めてマーケティングの効果を最大化し、コンバージョンにかかる時間を短縮できるか
+最初の <b>customer acquisition</b> では、以下を行う方法を探ります。- 新規顧客を見つける - マーケティングのアトリビューションを評価する - どうすればROIを高めてマーケティングの効果を最大化し、コンバージョンにかかる時間を短縮できるか
 
 次に、**customer adoption** について考察します。- 顧客が新たに資産管理口座のような高度な商品に導かれるのは、どのようなきっかけからでしょうか?
 
-顧客は、オンラインとオフライン両方のさまざまな方法で銀行とやり取りします。データ ソースは、銀行の窓口での行員とのやり取りや、オンライン バンキング、電子メール、コール センターのログなど多岐にわたります。全体像を把握するには、それらの **all** に着目する必要があります。
+顧客は、オンラインとオフライン両方のさまざまな方法で銀行とやり取りします。データ ソースは、銀行の窓口での行員とのやり取りや、オンライン バンキング、電子メール、コール センターのログなど多岐にわたります。全体像を把握するには、それらの <b>all</b> に着目する必要があります。
 
 Vantageは、データソース集約がとても得意です。さまざまなクラウド オブジェクト ストアへの接続とともに、HadoopやOracleなどに直接接続するQueryGridコネクタも備えています。これらすべてのチャネルから集約されたデータセットを使用します。統合と集約のステップについては他のデモで解説し、ここでは対象外なので扱いません。
 
 ここで得られる洞察はオンライン/オフライン両方の各種のチャネルに由来していることについて、後ほど取り上げます。
 
-経験
-----
+## 経験
 
 ユース ケース全体を実施する所要時間は約10分です。
 
 ### セットアップ
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。[アセットをロード](#data=%7B%22id%22:%22FSCustomerJourney%22%7D)
+**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
+[Load Assets](#data={"id":"FSCustomerJourney"})
 
 ### 顧客の開拓
 
@@ -40,7 +40,7 @@ Vantageは、データソース集約がとても得意です。さまざまな�
 
 いくつかのテーブルを作成し、多数のパラメータをプログラマティックにアトリビューション分析機能に送付できるようにします。
 
-``` sourceCode
+```sql
 --DATABASE <database_name>;
 
 CREATE TABLE FSCJ_conversion_events
@@ -50,28 +50,28 @@ NO PRIMARY INDEX;
 
 口座の予約がオンラインとオフラインでいつ行われるのかを突き止めて、それを成功の基準として利用したいと思います。
 
-``` sourceCode
+```sql
 INSERT INTO FSCJ_conversion_events VALUES('ACCOUNT_BOOKED_ONLINE');
 INSERT INTO FSCJ_conversion_events VALUES('ACCOUNT_BOOKED_OFFLINE');
 ```
 
 Vantageを活用することで、どのようなアトリビューション モデルを適用すればよいかを特定できます。このケースでは、なるべくシンプルにするために基本的な「UNIFORM」戦略を選びます。
 
-``` sourceCode
+```sql
 CREATE TABLE FSCJ_attribution_model
    (id    INTEGER,
     model VARCHAR(100))
 NO PRIMARY INDEX;
 ```
 
-``` sourceCode
+```sql
 INSERT INTO FSCJ_attribution_model VALUES(0, 'SIMPLE');
 INSERT INTO FSCJ_attribution_model VALUES(1, 'UNIFORM:NA');
 ```
 
 これで、データセットでアトリビューション機能を呼び出す準備が整いました。データセットには、あらゆる種類のクロス チャネルでの顧客のやり取りが含まれており、それらを分析できます。
 
-``` sourceCode
+```sql
 CREATE TABLE FSCJ_marketing_attribution AS (
     SELECT * FROM Attribution (
                 ON (
@@ -96,11 +96,11 @@ CREATE TABLE FSCJ_marketing_attribution AS (
     WITH DATA
 ```
 
-マーケティング アトリビューションは、クレジット カード口座の開設につながるイベントを特定し、それらのイベントに値を割り当てることを目的としています。データにおける具体的なコンバージョン イベントは「ACCOUNT\_BOOKED\_ONLINE」、「ACCOUNT\_BOOKED\_OFFLINE」です。これにより、顧客の開拓を後押しする最も影響力のあるイベントとチャネルを計算します。Vantageのアトリビューション機能は、各種の標準アトリビューション モデルをサポートします。Vantageを使用することで、アトリビューション モデル/パラメータに対する変更が社内の分析にどのように影響するかをすばやく確認できます。
+マーケティング アトリビューションは、クレジット カード口座の開設につながるイベントを特定し、それらのイベントに値を割り当てることを目的としています。データにおける具体的なコンバージョン イベントは「ACCOUNT_BOOKED_ONLINE」、「ACCOUNT_BOOKED_OFFLINE」です。これにより、顧客の開拓を後押しする最も影響力のあるイベントとチャネルを計算します。Vantageのアトリビューション機能は、各種の標準アトリビューション モデルをサポートします。Vantageを使用することで、アトリビューション モデル/パラメータに対する変更が社内の分析にどのように影響するかをすばやく確認できます。
 
 次に、結果からサマリ統計を取得します。
 
-``` sourceCode
+```sql
 SELECT marketing_description, AVG(attribution) AS avg_attrib, SUM(attribution) AS sum_attrib, AVG(-time_to_conversion)/3600 AS time_to_conversion
 FROM FSCJ_marketing_attribution 
 WHERE marketing_description NOT IN ('\N', '-1')
@@ -123,7 +123,7 @@ GROUP BY marketing_description;
 
 販促および広告ネットワークにはさまざまなものがあります。次に、多岐にわたるチャネルでの各種の販促により得られるトラクションについて見ていきます。
 
-``` sourceCode
+```sql
 SELECT marketing_category, marketing_placement, SUM(attribution) AS total_attribution 
 FROM FSCJ_marketing_attribution 
 WHERE marketing_description NOT IN ('\N', '-1')
@@ -146,16 +146,19 @@ BI (ビジネス インテリジェンス)ツールを使用すると、新た�
 
 その他にも目を向けましょう...Rewards Cardの販促は各チャネルで高い成果を得ていますが、特に支店内での紹介が効果的でした。Airline Card販促は、チャネルの中でもホームページとGoogleでより高い実績を上げています。
 
-アダプションへのパス
---------------------
+## アダプションへのパス
 
 次に、顧客が資産管理のような高度な口座をどのように開設するかについて見ていきます。多くのリテール銀行は、資産管理が重要な収益の柱になると認識しており、この分野でビジネスを構築しようとしています。
 
 Vantageの強力なnPath分析機能を活用することで、SQLではきわめて難しいパターン/時系列の分析を実行できます。顧客が資産管理口座を開設するとき一般的に辿るパスを調べてみましょう。また、資産管理口座の顧客が保有する他の口座との関連性についても調べます。
 
-以下のコードには、いくつかのキー ポイントがあります。1.インタラクションと商品カテゴリを結び付けて固有のイベントを作成します。 2.資産管理アプリケーションの開始/完了は、当然ながら誰もが実行するので無視します。このケースではノイズを減らしたいと思います。さらなる分析は、未完了のアプリケーションまたは他のシナリオで後からでも実施できます。3.**‘PATTERN’** では、資産管理口座の開設が後に続く4つのイベントを検索します(ACCOUNT\_BOOKED)。4.**‘SYMBOLS’** では、資産管理口座の開設は'EVENT'、当該の口座の開設は'ADOPTION'となる以外は何でも使用できます。
+以下のコードには、いくつかのキー ポイントがあります。
+1.インタラクションと商品カテゴリを結び付けて固有のイベントを作成します。 
+2.資産管理アプリケーションの開始/完了は、当然ながら誰もが実行するので無視します。このケースではノイズを減らしたいと思います。さらなる分析は、未完了のアプリケーションまたは他のシナリオで後からでも実施できます。
+3.**‘PATTERN’** では、資産管理口座の開設が後に続く4つのイベントを検索します(ACCOUNT_BOOKED)。
+4.**‘SYMBOLS’** では、資産管理口座の開設は'EVENT'、当該の口座の開設は'ADOPTION'となる以外は何でも使用できます。
 
-``` sourceCode
+```sql
 SELECT * FROM nPath (
         ON (
         SELECT customer_identifier, interaction_timestamp, interaction_type, product_category, interaction_type || '_' || product_category AS event, 
@@ -205,15 +208,15 @@ SELECT * FROM nPath (
 
 ### クリーンアップ
 
-``` sourceCode
+```sql
 DROP TABLE FSCJ_conversion_events;
 ```
 
-``` sourceCode
+```sql
 DROP TABLE FSCJ_attribution_model;
 ```
 
-``` sourceCode
+```sql
 DROP TABLE FSCJ_marketing_attribution;
 ```
 

@@ -1,5 +1,4 @@
-SQLによるコンピューティング クラスタ管理
-----------------------------------------
+## SQLによるコンピューティング クラスタ管理
 
 ### 始める前に
 
@@ -15,7 +14,7 @@ SQLによるコンピューティング クラスタ管理
 
 このユース ケースには以下の権限が必要です。
 
-``` sourceCode
+```sql
 GRANT CREATE COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
 GRANT DROP COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
 
@@ -38,7 +37,7 @@ GRANT SELECT ON DBC.ComputeMapsV TO "${username}";
 
 クエリー+戦略のポリシーが今後の使用のために提供されます。
 
-``` sourceCode
+```sql
 CREATE COMPUTE GROUP Research_Group USING QUERY_STRATEGY ('STANDARD');
 ```
 
@@ -46,7 +45,7 @@ CREATE COMPUTE GROUP Research_Group USING QUERY_STRATEGY ('STANDARD');
 
 以下の2つのロールが提供されます。\* 管理者ロール。コンピューティング クラスタ グループとグループ内のユーザーを管理します \* ユーザー ロール。コンピューティング クラスタ リソースへのアクセスを許可します
 
-``` sourceCode
+```sql
 -- Create an admin role for the project
 CREATE ROLE Research_Admin_Role;
 GRANT CREATE COMPUTE GROUP TO Research_Admin_Role;
@@ -61,7 +60,7 @@ GRANT COMPUTE GROUP Research_Group TO Research_Role;
 
 ユーザーをコンピューティング クラスタ グループに関連付けることにより、ユーザーはコンピューティング クラスタ リソースにアクセスできます。デフォルトの関連性を持つようにユーザーを作成または編集できます。ユーザーはアクセス権が与えられ、それを直接設定できます。
 
-``` sourceCode
+```sql
 -- Create a new user
 CREATE USER "${USER}" AS 
 PASSWORD = "${PASSWORD}"
@@ -86,7 +85,7 @@ SET SESSION COMPUTE GROUP Research_Group;
 
 コンピューティング クラスタ プロファイルには、リソースのポリシーが記述されています。コンピューティング クラスタには、MINおよびMAXを使用して定義された1つ以上のインスタンスが含まれています。MINは、インスタンスまたはランクの常に利用可能な個数を表します。MAXは、使用可能なインスタンスのエラスティック部分を表します。個々のインスタンスは、EC2インスタンスなどのVMノードの数を表します。VMノードの数は、Small、Medium、またはLargeなどのインスタンス サイズ記述子によって制御されます。それぞれのサイズには、1つ前のサイズに対して2倍のVMノード数があり、2、4、8、16のようになります。ポリシーに対して指定できるオプションが他にもあります。\* initially\_suspendedは、設定後にユーザーが手動でコンピューティング クラスタを復元するまでコンピューティング クラスタをハイバネーション状態にします \* コンピューティング クラスタが処理可能になる時点の開始および終了時間を、cron tab形式を使用して指定できます \* cooldown\_periodは、終了時間後にクエリーを完了できるようにコンピューティング クラスタが実行し続ける時間の長さを指定します
 
-``` sourceCode
+```sql
 -- View existing maps for available Compute Cluster sizes
 SELECT * FROM DBC.ComputeMapsV ORDER BY NodeCount;
 
@@ -105,7 +104,7 @@ INITIALLY_SUSPENDED  ('FALSE') START_TIME  ('') END_TIME  ('') COOLDOWN_PERIOD  
 
 ### コンピューティング クラスタ ディクショナリにクエリーを実行しCOMPUTE CLUSTERについてのステータスを取得する
 
-``` sourceCode
+```sql
 -- View existing maps for available Compute Cluster sizes
 SELECT * FROM DBC.ComputeMaps ORDER BY NodeCount;
 
@@ -124,7 +123,7 @@ SELECT * FROM DBC.ComputeStatusV;
 
 ### コンピューティング クラスタ プロファイルを削除する
 
-``` sourceCode
+```sql
 DROP ROLE Research_Admin_Role;
 DROP ROLE Research_Role;
 DROP COMPUTE PROFILE Research_Resources IN COMPUTE GROUP Research_Group;
