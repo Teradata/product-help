@@ -589,7 +589,7 @@
     { 
        "id":"vsb1703029847518", 
        "title":"Cost calculator", 
-       "description":"View the total estimated consumption for your organization.", 
+       "description":"View the organization's total estimated consumption", 
        "url":"Vantage/vsb1703029847518.md"
        }
     , 
@@ -755,6 +755,7 @@
     { 
        "id":"klo1694115175906", 
        "title":"Account settings", 
+       "description":"Adjust your account settings such as appearance", 
        "url":"Vantage/klo1694115175906.md", 
        "children":[
           { 
