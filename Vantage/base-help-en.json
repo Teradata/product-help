@@ -139,6 +139,7 @@
                       { 
                          "id":"dvl1640281718303", 
                          "title":"Manage a compute group", 
+                         "description":"Create or edit a compute profile.", 
                          "url":"Vantage/dvl1640281718303.md"
                          }
                       , 
@@ -156,6 +157,13 @@
 
                       ]
 
+                   }
+                , 
+                { 
+                   "id":"aow1703107228725", 
+                   "title":"Consumption estimator", 
+                   "description":"Estimate consumption for primary and compute clusters.", 
+                   "url":"Vantage/aow1703107228725.md"
                    }
 
                 ]
@@ -231,12 +239,6 @@
                                "id":"npn1691594431074", 
                                "title":"Sources and targets", 
                                "url":"Vantage/npn1691594431074.md"
-                               }
-                            , 
-                            { 
-                               "id":"gqi1691597450277", 
-                               "title":"Diagnostics", 
-                               "url":"Vantage/gqi1691597450277.md"
                                }
 
                             ]
@@ -572,9 +574,23 @@
                 ]
 
              }
+          , 
+          { 
+             "id":"jzv1705537218861", 
+             "title":"Set consumption alerts", 
+             "description":"Set the threshold to receive email alerts", 
+             "url":"Vantage/jzv1705537218861.md"
+             }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"vsb1703029847518", 
+       "title":"Cost calculator", 
+       "description":"View the total estimated consumption for your organization.", 
+       "url":"Vantage/vsb1703029847518.md"
        }
     , 
     { 
