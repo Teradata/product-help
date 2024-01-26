@@ -139,6 +139,7 @@
                       { 
                          "id":"dvl1640281718303", 
                          "title":"Gestionar un grupo de cálculo", 
+                         "description":"Cree o edite un perfil de cálculo.", 
                          "url":"Vantage/es/dvl1640281718303.md"
                          }
                       , 
@@ -156,6 +157,13 @@
 
                       ]
 
+                   }
+                , 
+                { 
+                   "id":"aow1703107228725", 
+                   "title":"Estimador de consumo", 
+                   "description":"Estime el consumo de los clústeres principal y de cálculo.", 
+                   "url":"Vantage/es/aow1703107228725.md"
                    }
 
                 ]
@@ -231,12 +239,6 @@
                                "id":"npn1691594431074", 
                                "title":"Orígenes y destinos", 
                                "url":"Vantage/es/npn1691594431074.md"
-                               }
-                            , 
-                            { 
-                               "id":"gqi1691597450277", 
-                               "title":"Diagnósticos", 
-                               "url":"Vantage/es/gqi1691597450277.md"
                                }
 
                             ]
@@ -572,9 +574,23 @@
                 ]
 
              }
+          , 
+          { 
+             "id":"jzv1705537218861", 
+             "title":"Establecer alertas de consumo", 
+             "description":"Establecer el umbral para recibir alertas por correo electrónico", 
+             "url":"Vantage/es/jzv1705537218861.md"
+             }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"vsb1703029847518", 
+       "title":"Calculadora de costes", 
+       "description":"Ver el consumo total estimado de la organización", 
+       "url":"Vantage/es/vsb1703029847518.md"
        }
     , 
     { 
@@ -739,6 +755,7 @@
     { 
        "id":"klo1694115175906", 
        "title":"Configuración de la cuenta", 
+       "description":"Ajustar valores de configuración de la cuenta, como la apariencia", 
        "url":"Vantage/es/klo1694115175906.md", 
        "children":[
           { 

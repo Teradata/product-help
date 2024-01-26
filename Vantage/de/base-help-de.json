@@ -139,6 +139,7 @@
                       { 
                          "id":"dvl1640281718303", 
                          "title":"Computing-Gruppe verwalten", 
+                         "description":"Erstellen oder bearbeiten Sie ein Computing-Profil.", 
                          "url":"Vantage/de/dvl1640281718303.md"
                          }
                       , 
@@ -156,6 +157,13 @@
 
                       ]
 
+                   }
+                , 
+                { 
+                   "id":"aow1703107228725", 
+                   "title":"Verbrauchsschätzung", 
+                   "description":"Schätzen Sie den Verbrauch für primäre und Computing-Cluster.", 
+                   "url":"Vantage/de/aow1703107228725.md"
                    }
 
                 ]
@@ -231,12 +239,6 @@
                                "id":"npn1691594431074", 
                                "title":"Quellen und Ziele", 
                                "url":"Vantage/de/npn1691594431074.md"
-                               }
-                            , 
-                            { 
-                               "id":"gqi1691597450277", 
-                               "title":"Diagnose", 
-                               "url":"Vantage/de/gqi1691597450277.md"
                                }
 
                             ]
@@ -572,9 +574,23 @@
                 ]
 
              }
+          , 
+          { 
+             "id":"jzv1705537218861", 
+             "title":"Verbrauchswarnungen festlegen", 
+             "description":"Schwellenwert für den Erhalt von E-Mail-Benachrichtigungen festlegen", 
+             "url":"Vantage/de/jzv1705537218861.md"
+             }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"vsb1703029847518", 
+       "title":"Kostenrechner", 
+       "description":"Geschätzten Gesamtverbrauch der Organisation anzeigen", 
+       "url":"Vantage/de/vsb1703029847518.md"
        }
     , 
     { 
@@ -739,6 +755,7 @@
     { 
        "id":"klo1694115175906", 
        "title":"Kontoeinstellungen", 
+       "description":"Kontoeinstellungen, wie zum Beispiel die Darstellung, anpassen", 
        "url":"Vantage/de/klo1694115175906.md", 
        "children":[
           { 
