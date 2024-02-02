@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"What's new", 
-       "description":"Learn about the latest features and updates", 
+       "description":"Discover the latest features and updates", 
        "icon":"new_releases", 
        "url":"Vantage/bab1682536172420.md"
        }
@@ -514,6 +514,7 @@
                 { 
                    "id":"nni1694461234790", 
                    "title":"Disaster recovery", 
+                   "description":"Safeguard your data in case of outages", 
                    "url":"Vantage/nni1694461234790.md", 
                    "children":[
                       { 
@@ -524,7 +525,7 @@
                       , 
                       { 
                          "id":"cqv1694469814376", 
-                         "title":"Edit a disaster recovery plan", 
+                         "title":"Manage a disaster recovery plan", 
                          "url":"Vantage/cqv1694469814376.md"
                          }
                       , 
@@ -553,13 +554,6 @@
              "title":"Editor", 
              "description":"Write (or build) and run SQL queries", 
              "url":"Vantage/edx1695158840322.md"
-             }
-          , 
-          { 
-             "id":"ahj1695153106508", 
-             "title":"Queries", 
-             "description":"View and optimize queries", 
-             "url":"Vantage/ahj1695153106508.md"
              }
 
           ]
@@ -921,24 +915,52 @@
              "children":[
                 { 
                    "id":"bcw1700511770060", 
-                   "title":"Set up Data Copy", 
+                   "title":"Set up data copy", 
+                   "description":"Add an environment, copy manager, and agent.", 
                    "url":"Vantage/bcw1700511770060.md"
                    }
                 , 
                 { 
+                   "id":"zuh1706652286181", 
+                   "title":"Manage data copy", 
+                   "description":"Edit the copy manager or copy agent.", 
+                   "url":"Vantage/zuh1706652286181.md", 
+                   "children":[
+                      { 
+                         "id":"jbt1706483040706", 
+                         "title":"Manage copy manager", 
+                         "description":"Actions to maintain the copy manager.", 
+                         "url":"Vantage/jbt1706483040706.md"
+                         }
+                      , 
+                      { 
+                         "id":"ani1706483842546", 
+                         "title":"Manage copy agent", 
+                         "description":"Actions to maintain the copy agent.", 
+                         "url":"Vantage/ani1706483842546.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"otq1703818370684", 
-                   "title":"Use Data Copy", 
+                   "title":"Use data copy", 
+                   "description":"Create and manage a copy plan.", 
                    "url":"Vantage/otq1703818370684.md", 
                    "children":[
                       { 
                          "id":"pwa1703818612067", 
                          "title":"Create a copy plan", 
+                         "description":"Plan names, settings, and objects to select.", 
                          "url":"Vantage/pwa1703818612067.md"
                          }
                       , 
                       { 
                          "id":"wtv1703818703501", 
                          "title":"Manage a copy plan", 
+                         "description":"Run, pause, and edit a copy plan.", 
                          "url":"Vantage/wtv1703818703501.md"
                          }
 
@@ -948,7 +970,8 @@
                 , 
                 { 
                    "id":"rhq1703818406583", 
-                   "title":"Data Copy FAQs", 
+                   "title":"Data copy FAQ", 
+                   "description":"Questions you may have.", 
                    "url":"Vantage/rhq1703818406583.md"
                    }
 
