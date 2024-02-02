@@ -1029,16 +1029,16 @@
     { 
        "id":"nhn1706907203900", 
        "title":"Documentation", 
-       "description":"Complete VantageCloud Lake documentation.", 
-       "icon":"contact_support", 
-       "url":"https://docs.teradata.com/p/VantageCloud/Lake"
+       "description":"Complete VantageCloud Lake documentation", 
+       "icon":"library_books", 
+       "url":"Vantage/nhn1706907203900.md"
        }
     , 
     { 
        "id":"pkj1706907262368", 
        "title":"Technical support", 
-       "description":"Create and manage service requests.", 
-       "icon":"library_books", 
+       "description":"Create and manage service requests", 
+       "icon":"contact_support", 
        "url":"Vantage/pkj1706907262368.md"
        }
 
