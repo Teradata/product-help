@@ -16,14 +16,6 @@
         "industries": []
     },
     {
-        "id":"tim1214716511319",
-        "name": "Time series - consumer complaints",
-        "description":"Insights from customer complaints over time", 
-        "content_url": "content/TimeSeriesAnalysis/README.md",
-        "enabled": true,
-        "industries": []
-    },
-    {
         "id":"fin7111215511319",
         "name": "Financial services customer journey",
         "description":"Interactions during customer financial journey", 
@@ -47,14 +39,6 @@
         "name": "External object store",
         "description":"External data query and writing",
         "content_url": "content/ExternalObjectStore/README.md",
-        "enabled": true,
-        "industries": []
-    },
-    {
-        "id":"nol2022042031986",
-        "name": "Object file store",
-        "description":"Storing data in object file system",
-        "content_url": "content/ObjectFileStore/README.md",
         "enabled": true,
         "industries": []
     },
