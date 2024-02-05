@@ -1,4 +1,4 @@
-## Querying Data on External Object Storage
+## Working with external object stores: Reading and writing data 
 
 ### Before You Begin
 
@@ -7,81 +7,92 @@ Open Editor to proceed with this use case.
 
 ### Introduction
 
-This section shows how to copy data from VantageCloud Lake to an object store. To execute the example queries you must provide your own bucket. The __sample_sensor__ table simulates copying data from a table in your Vantage system to the external object store. You can modify these examples to access to your own datasets. Although these example datasets do not require login credentials, you should use login credentials to access your own datasets.
+This section shows how users can interact with open object stores. Teradata VantageCloud Lake provides native functions for both reading and writing data to these scalable, low-cost data stores, allowing users to easily integrate with vast amounts of data stored in data lakes, as well as offload archival or other data to these platforms. 
 
-You can use similar SQL to access your own object stores. Simply replace the following:
+For evaluation purposes, Teradata has provided data in an open object store location. For real-world usage, users should provide login credentials or other role-based access to object storage. If you choose to use your own object store to query data, replace the following in the SQL code: 
+
 * __LOCATION__ - Replace with the location of your object store. The location must begin with /s3/ (Amazon), /az/ (Azure), or /gs/ (Google).
-* __USER__ or __ACCESS_ID__ - Add the user name for your object store.
+* __USER__ or __ACCESS_ID__ - Add the username for your object store.
 * __PASSWORD__ or __ACCESS_KEY__ - Add the password of the user on your object store.
-* __SESSION_TOKEN__ - You can also add an optional session token if using AWS Service Token Service to provide you with the access credentials.
+* __SESSION_TOKEN__ - You can also add an optional session token if using AWS Security Token Service to provide you with the access credentials.
 * Uncomment the EXTERNAL SECURITY clause as necessary
 
-When modifying to access your data - your object store must be configured to allow access from the Vantage environment. Provide your credentials in USER and PASSWORD (used in the CREATE AUTHORIZATION command) or AUTHORIZATION simple syntax (used in the READ_NOS command if you don't wish to use the Authorization Object).
+If you are modifying the SQL to access your own data in your object store, ensure it is configured to allow access from the VantageCloud Lake environment. Provide the proper credentials in the USER and PASSWORD elements in the CREATE AUTHORIZATION statement or in the JSON string argument of the AUTHORIZATION element used in the READ_NOS statement. 
 
-### Setup 
-
-To use this option you would need EXECUTE permission on TD_SYSFNLIB.READ_NOS. Which can be granted by following statement, work with your Database administrator to get the permission.
+To perform these use cases, the user needs specific permissions to the SQL functions used to read and write to external object stores. Execute the following statements as a database user with administrator privileges or ask a database administrator to run them for you. 
 
 ```sql
-GRANT EXECUTE FUNCTION on TD_SYSFNLIB.READ_NOS to <username>;
+GRANT EXECUTE FUNCTION on TD_SYSFNLIB.READ_NOS to <USERNAME>;
+GRANT EXECUTE FUNCTION ON TD_SYSFNLIB.WRITE_NOS TO <USERNAME>; 
 ```
 
-### Accessing Object Storage
+### Accessing object storage
 
 There are two ways to read data from an object store:
 
 #### READ_NOS
 
-READ_NOS allows you to do the following:
+The READ_NOS Table Operator is a function which allows users to: 
 * Perform an ad hoc query on data that is in Parquet, CSV, and JSON formats with the data in-place on an object store
-* Examine the structure (layoout) of the object store
+* Examine the structure (layout) of the object store
 * Examine the schema of the formatted data
-* Bypass creating a foreign table in the database
 
-#### Foreign Tables
+```sql
+--This SQL statement will query ten rows of data from the s3 bucket 
+--defined in the LOCATION element 
+SELECT TOP 10 * FROM ( 
+    LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+  ) AS D; 
 
-Users with CREATE TABLE privilege can create a foreign table inside the database, point this virtual table to an object store location, and use SQL to translate the data into a form useful for business.
-Using a foreign table gives you the ability to:
-* Load external data to the database
-* Join external data to data stored in the database
-* Filter the data
-* Use views to simplify how the data appears to your users or provide added security access controls
+--By adding a RETURNTYPE element, and passing either 
+-- ‘NOSREAD_KEYS' or ‘NOSREAD_SCHEMA’ arguments 
+--users can investigate the objects and structure of the data 
+SELECT TOP 10 * FROM (
+    LOCATION = '/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+    RETURNTYPE = 'NOSREAD_KEYS' 
+  ) AS D; 
 
-Data read through a foreign server is not persisted and the data can only be seen by that query.
-
-Data can be loaded into the database by selecting from READ_NOS or a Foreign Table in a CREATE TABLE AS ... WITH DATA statement. 
-
+SELECT TOP 10 * FROM ( 
+    LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+    RETURNTYPE = 'NOSREAD_SCHEMA'
+  ) AS D; 
+```
 ### When accessing your own data
 
-Following statement can be used to create an authorization object to contain the credentials to your external object store.
+To access external object stores that require authentication, create an authorization object.  This object will contain the credentials (username, password, session token, identity and access management (IAM) role, etc.) that the database needs to read (and/or write) data.  The following statement can be used to create an authorization object to contain the credentials to your external object store. Alternatively, credentials can be passed as a JSON-formatted string to the AUTHORIZATION element of the query. 
 
 ```sql
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
 ```
-
-
-### Accessing Data Stored on Amazon S3 with READ_NOS
+### Using an authorization to access data stored on Amazon S3
 
 ```sql
-SELECT TOP 2 * FROM (
-LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'
-AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
---AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'  --[optional AUTHORIZATION using direct credentials]
---RETURNTYPE='NOSREAD_KEY'  --[optional if wanting to list the layout of the object store]
---RETURNTYPE='NOSREAD_SCHEMA'  --[optional if wanting to display the schema of the data files] 
-) AS D;
+SELECT TOP 2 * FROM ( 
+LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}' 
+--AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'  --[optional AUTHORIZATION using direct credentials] 
+--RETURNTYPE='NOSREAD_KEY'  --[optional if wanting to list the layout of the object store] 
+--RETURNTYPE='NOSREAD_SCHEMA'  --[optional if wanting to display the schema of the data files]  
+) AS D; 
 ```
+#### Foreign Tables
 
-### Accessing Data Stored on Amazon S3 with CREATE FOREIGN TABLE
+Foreign tables enable VantageCloud Lake to access data in external object storage, such as semi-structured and unstructured data in Amazon S3, Microsoft Azure Blob Storage, and Google Cloud Storage. In-database integration of this data allows data scientists and analysts to read and process this data with VantageCloud Lake, using standard SQL. You can join external data to relational data in VantageCloud Lake, and process it using built-in VantageCloud Lake analytics and functions. 
+
+Data read through a foreign table is not persisted, and the data can only be used by that query. 
+
+Data can be loaded into the database by selecting from READ_NOS or a foreign table in a CREATE TABLE AS … WITH DATA statement. 
+
+### Accessing data stored on Amazon S3 with CREATE FOREIGN TABLE
 
 Create a foreign table:
 
 
 ```sql
 CREATE MULTISET FOREIGN TABLE sample_sensor ,FALLBACK,
-     EXTERNAL SECURITY MyAuth, MAP = TD_MAP1
+     EXTERNAL SECURITY MyAuth
     (
         sensedate DATE,
         sensetime TIME,
@@ -110,9 +121,9 @@ View some data using the foreign table:
 SELECT TOP 2 * FROM sample_sensor;
 ```
 
-### Importing Data Into Vantage From Data Stored on Amazon S3
+### Importing data into VantageCloud Lake from data stored on Amazon S3
 
-To persist the data from an object store we can use a CREATE TABLE AS statement as follows:
+To persist the data from an object store, we can use a CREATE TABLE AS statement as follows. Embed the READ_NOS SELECT statement inside the CREATE TABLE AS, and be sure to include WITH DATA to insert all the rows into a local table:
 
 ```sql
 CREATE MULTISET TABLE sample_local_table AS (
@@ -124,28 +135,31 @@ CREATE MULTISET TABLE sample_local_table AS (
 ```
 
 
-# Writing Data to an Object Store
+## Writing Data to an Object Store
     
-## Introduction
+### Introduction
 
-The following is a summary of how to copy data from Vantage to an object store. You must provide your own bucket to execute the example queries below."
+The following is a summary of how to copy data from VantageCloud Lake to an object store. You must provide your own bucket and credentials (or authorization object) to execute the example queries below. 
 
-## WRITE_NOS
+The WRITE_NOS query returns the list of objects and their metadata written to the target object store. These results are useful for logging/traceability and other administrative and management use cases. 
 
-WRITE_NOS allows you to do the following:
+#### WRITE_NOS
+
+WRITE_NOS allows you to:
 * Copy / write data directly to an object store
-* Convert the data in uncompressed Parquet format unless Snappy compression is specified by the user
-* Specify one or more columns in the source table as partition attributes in the target object store
+* Optionally compress the data
+* Specify one or more columns in the source table as partition attributes in the target object store. Partition attributes will be used to generate additional object keys when writing the data. These keys can be used for efficient data organization and filtering for other systems reading the objects.
 * Create and update of manifest files with all objects created during the copy process
 
 Before running the following examples, replace the following fields in the example scripts:
-* *YourBucketName* : with the name of your bucket
-* *YourAuthObject* : your authorization object containing your storage credentials
-* [optionally] *AccessID* : from the Access Key for your bucket - Access key ID example: AKIAIOSFODNN7EXAMPLE
-* [optionally] *AccessKey* : from the Access Key for your bucket - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+* *YourBucketName* : Replace with the name of your bucket or blob store where you have write access
+* For VantageCloud Lake to pass the proper credentials, you can either use an authorization object or pass the credentials as a JSON-formatted argument to the AUTHORIZATION element. 
+* Replace with your authorization object containing your storage credentials, or: 
+    * *AccessID* : from the Access Key for your bucket (optional) - Access key ID example: AKIAIOSFODNN7EXAMPLE
+    * *AccessKey* : from the Access Key for your bucket (optional) - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
 ### Example 1 
-This example selects all rows in the __sample_sensor__ table to copy the dataset to the object store's *sample1* partition:
+This example will use the result of a SELECT statement that retrieves all rows in the __sample_sensor__ table (created above), and will write it to the *sample1* partition or container in the account or bucket specified in the LOCATION element: 
 
 ```sql
 SELECT * FROM WRITE_NOS (
@@ -160,7 +174,7 @@ SELECT * FROM WRITE_NOS (
 
 ### Example 2 
 
-This example copies the same dataset, this time partitioning by the sensor date year under the *sample2* partition:
+This example uses the same __sensor_data__ table as a source, this time partitioning by the sensor date year under the *sample2* partition: 
 
 ```sql
 SELECT * FROM WRITE_NOS (
@@ -188,10 +202,10 @@ SELECT * FROM WRITE_NOS (
 
 ### Validate your WRITE_NOS results
 
-You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentails and then creating a foreign table for accessing Parquet data as described in the examples in the above section. 
+You can validate the results of your WRITE_NOS use cases by creating an authorization object with your bucket user credentials and then creating a foreign table for accessing Parquet data as described in the examples in the above section, or by performing a simple SELECT statement using READ_NOS syntax from above. 
 
 
-### Clean-up
+### Clean up
 
 Drop the objects we created in our own database schema.
 
