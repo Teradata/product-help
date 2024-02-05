@@ -7,13 +7,11 @@ Open Editor to proceed with this use case.
 
 ### Introduction
 
-This use case guides you through management of Compute Clusters in VantageCloud Lake with SQL.
-
-***Tip**: When you're ready to create your own Compute Cluster group, you can use SQL with Editor or the Vantage Console UI.*
+This use case guides you through the process of creating and managing compute resources using SQL. Alternatively, many of these tasks can be performed using the VantageCloud Lake Console UI.
 
 ### Setup 
 
-The following permissions are required for this use case:
+The following permissions are required for this use case. If necessary, connect to the Editor with an administrative user such as “dbc” to grant these permissions to the database user who will be executing this use case.
 
 ```sql
 GRANT CREATE COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
@@ -32,11 +30,11 @@ GRANT SELECT ON DBC.ComputeMaps TO "${username}";
 GRANT SELECT ON DBC.ComputeMapsV TO "${username}";
 ```
 
-### Create a resource group for new research project
+### Create a compute group
 
-A Compute Cluster group contains one or more Compute Clusters and is used to form an association between the users and the resources for the user's queries.
+For this exercise, let’s create compute resources for a fictional research project. A compute group is used to associate a business group, application, or other group of users with the elastic compute resources available to process workload. Each compute group contains one or more clusters of compute resources, each of which is called a compute profile.  
 
-The Query+Strategy policy is provided for future use.
+The QUERY_STRATEGY argument defines what type of workload will be run on the associated compute groups—either STANDARD (normal query operations) or ANALYTIC (advanced analytics, AI/ML, or Open Analytics Framework containers) 
 
 ```sql
 CREATE COMPUTE GROUP Research_Group USING QUERY_STRATEGY ('STANDARD');
@@ -44,9 +42,9 @@ CREATE COMPUTE GROUP Research_Group USING QUERY_STRATEGY ('STANDARD');
 
 ### Create roles for the project
 
-Two roles are provided: 
-* An admin role to administrate the Compute Cluster group and the users in the group
-* A user role which permits access to the Compute Cluster resources
+We can use role-based access controls to provide easier administration of user permissions.  Here we create two roles: 
+* An admin role that has permissions to administer the compute resources and users who can access them
+* A user role that permits access to the compute group resources 
 
 
 ```sql
@@ -60,11 +58,15 @@ CREATE ROLE Research_Role;
 GRANT COMPUTE GROUP Research_Group TO Research_Role;
 ```
 
-### Associate users with Compute Cluster resources
+### Associate users with compute group resources
 
-Users can access Compute Cluster resources by having the user associated with a Compute Cluster group.
-The user can be created or modified to have a default association.
-The user can be granted access and set it directly.
+User queries can access compute resources by either having a default association to the compute group or setting their association on a per-session basis. In both cases, the user must have permissions for the compute group. Permissions can be assigned directly or via role-based access.
+
+The following SQL shows how to:
+* Create a user with a default compute group 
+* Modify a user to have a default compute group
+* Grant various roles to a user
+* Have a user set their compute group on a per-session basis
 
 ```sql
 -- Create a new user
@@ -80,26 +82,21 @@ MODIFY USER "${USER}" AS COMPUTE GROUP = Research_Group;
 -- Also provide access to the Compute Cluster resources
 GRANT Research_Role TO "${USER}";
 
--- This user also can administrate the resources
+-- This user also can administer the resources
 GRANT Research_Admin_Role TO "${USER}";
 
 -- User can set access to any specific group that they have access
 SET SESSION COMPUTE GROUP Research_Group;
 ```
 
-### Assign resources to a group
+### Assign compute resources to a group
 
-A Compute Cluster profile describes the resource policy.
-A Compute Cluster consists of one or more instances defined using min and max.
-Min represents always available count of instances or rank.
-Max represents the elastic portion of instances that can be used.
-Each instance represents a number of VM nodes such as EC2 instances. 
-The number of VM nodes is controlled by the instance size descriptor such as Small, Medium, or Large.
-Each size has twice the number of VM nodes over the previous size: 2, 4, 8, 16, etc.
-There are other options that can be specified for the policy:
-* initially_suspended hibernates the Compute Cluster after configuration until the user manually RESUMEs the Compute Cluster
-* Start and End times can be specified for when the Compute Cluster is operational using cron tab format
-* cooldown_period specifies how long the Compute Cluster continues to run after the End time so that queries can complete
+A compute group contains one of more compute profiles—only one of which is active at any given time. A compute profile describes compute resources and associated parameters available to process query workload. Each compute profile describes: 
+* The cluster size, from “XSmall” (one node) to XXLarge (64 nodes)
+* A scaling policy that defines the minimum and maximum number of elastic cluster instances that the profile can scale to. Each instance represents a cluster of the selected size (XSmall, Medium, Large, etc.)
+* Start and end times in crontab format. This scheduling capability allows for fine-grained control over which compute profile is available to the group at any given time.
+* A cooldown period that defines how long queries have to finish before a cluster shuts down 
+* initially_suspended—whether the compute cluster hibernates after the user creates it. Compute profiles can be manually suspended or resumed using SQL or in the Console UI
 
 ```sql
 -- View existing maps for available Compute Cluster sizes
@@ -118,7 +115,7 @@ MIN_COMPUTE_COUNT  ( 1 ) MAX_COMPUTE_COUNT  ( 2 ) SCALING_POLICY  ('STANDARD') I
 INITIALLY_SUSPENDED  ('FALSE') START_TIME  ('') END_TIME  ('') COOLDOWN_PERIOD  ( 30 );
 ```
 
-### Query Compute Cluster dictionary & Get status about the COMPUTE CLUSTER
+### Additional queries
  
 ```sql
 -- View existing maps for available Compute Cluster sizes
@@ -137,7 +134,7 @@ SELECT * FROM DBC.ComputeProfilesV;
 SELECT * FROM DBC.ComputeStatusV;
 ```
 
-### DELETE Compute Cluster profile
+### Clean up
 
 ```sql
 DROP ROLE Research_Admin_Role;
