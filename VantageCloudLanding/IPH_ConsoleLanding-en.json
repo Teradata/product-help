@@ -1,0 +1,130 @@
+{  "items":[
+    { 
+       "id":"uct1707186367384", 
+       "title":"Learn", 
+       "url":"VantageCloudLanding/uct1707186367384.md", 
+       "children":[
+          { 
+             "id":"xmm1707187643364", 
+             "title":"Trials", 
+             "description":"Understand your trial experience", 
+             "icon":"gavel", 
+             "url":"VantageCloudLanding/xmm1707187643364.md"
+             }
+          , 
+          { 
+             "id":"jiy1707187681752", 
+             "title":"Documentation", 
+             "description":"VantageCloud Lake documentation", 
+             "icon":"library_books", 
+             "url":"VantageCloudLanding/jiy1707187681752.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"oig1707186395802", 
+       "title":"Foundations", 
+       "description":"Learn the basics of VantageCloud Lake from terminology to concepts", 
+       "url":"VantageCloudLanding/oig1707186395802.md", 
+       "children":[
+          { 
+             "id":"krx1707187712212", 
+             "title":"Get started", 
+             "icon":"flag_circle", 
+             "url":"VantageCloudLanding/krx1707187712212.md", 
+             "children":[
+                { 
+                   "id":"zyf1707187735652", 
+                   "title":"Key concepts", 
+                   "description":"VantageCloud Lake Architecture", 
+                   "icon":"key", 
+                   "url":"VantageCloudLanding/zyf1707187735652.md"
+                   }
+                , 
+                { 
+                   "id":"mcu1707187768832", 
+                   "title":"Key features", 
+                   "url":"VantageCloudLanding/mcu1707187768832.md"
+                   }
+                , 
+                { 
+                   "id":"nsc1707187790308", 
+                   "title":"Consumption", 
+                   "description":"Learn how usage is calculated", 
+                   "icon":"paid", 
+                   "url":"VantageCloudLanding/nsc1707187790308.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"ubu1707187832449", 
+             "title":"Loading data", 
+             "description":"Bring your data to VantageCloud Lake", 
+             "icon":"sync", 
+             "url":"VantageCloudLanding/ubu1707187832449.md", 
+             "children":[
+                { 
+                   "id":"lam1707187864117", 
+                   "title":"Prepare your data", 
+                   "url":"VantageCloudLanding/lam1707187864117.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"lct1707187949060", 
+             "title":"Query, visualize, and analyze your data", 
+             "description":"Learn the basics and advanced best practices when interacting with VantageCloud Lake", 
+             "url":"VantageCloudLanding/lct1707187949060.md", 
+             "children":[
+                { 
+                   "id":"ahx1707271934625", 
+                   "title":"Teradata Vantage basics", 
+                   "description":"Learn the basics of Teradata Vantage", 
+                   "url":"VantageCloudLanding/ahx1707271934625.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"sgl1707186427875", 
+       "title":"Additional resources", 
+       "url":"VantageCloudLanding/sgl1707186427875.md", 
+       "children":[
+          { 
+             "id":"gxj1707271369419", 
+             "title":"Tools, utilities, and downloads", 
+             "description":"Learn about tools that help improve your workflow", 
+             "icon":"construction", 
+             "url":"VantageCloudLanding/gxj1707271369419.md"
+             }
+          , 
+          { 
+             "id":"bnn1707271398245", 
+             "title":"Python users", 
+             "description":"Set up Jupyter notebooks", 
+             "icon":"add_notes", 
+             "url":"VantageCloudLanding/bnn1707271398245.md"
+             }
+
+          ]
+
+       }
+
+    ]
+
+ }
