@@ -17,7 +17,8 @@
              "title":"Documentation", 
              "description":"VantageCloud Lake documentation", 
              "icon":"library_books", 
-             "url":"VantageCloudLanding/jiy1707187681752.md"
+             "url":"VantageCloudLanding/jiy1707187681752.md", 
+             "childrenUrl":"https://docs.teradata.com/"
              }
 
           ]
@@ -110,7 +111,8 @@
              "title":"Tools, utilities, and downloads", 
              "description":"Learn about tools that help improve your workflow", 
              "icon":"construction", 
-             "url":"VantageCloudLanding/gxj1707271369419.md"
+             "url":"VantageCloudLanding/gxj1707271369419.md", 
+             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
              }
           , 
           { 
