@@ -80,13 +80,8 @@
           { 
              "id":"mwx1694115292045", 
              "title":"Manage access token", 
+             "description":"Create and configure personal access tokens (PATs)", 
              "url":"Vantage/mwx1694115292045.md"
-             }
-          , 
-          { 
-             "id":"tvn1694118411267", 
-             "title":"Data migration", 
-             "url":"Vantage/tvn1694118411267.md"
              }
 
           ]
@@ -242,12 +237,6 @@
                          }
                       , 
                       { 
-                         "id":"wer1691592221683", 
-                         "title":"Provide access to Amazon S3 buckets", 
-                         "url":"Vantage/wer1691592221683.md"
-                         }
-                      , 
-                      { 
                          "id":"luq1640282345986", 
                          "title":"Create a flow", 
                          "url":"Vantage/luq1640282345986.md", 
@@ -268,6 +257,12 @@
                                "id":"npn1691594431074", 
                                "title":"Sources and targets", 
                                "url":"Vantage/npn1691594431074.md"
+                               }
+                            , 
+                            { 
+                               "id":"wer1691592221683", 
+                               "title":"Provide access to Amazon S3 buckets", 
+                               "url":"Vantage/wer1691592221683.md"
                                }
 
                             ]
@@ -336,6 +331,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"Request an interface endpoint", 
+                                     "description":"Create a private link request for QueryGrid", 
                                      "url":"Vantage/yml1671157089031.md"
                                      }
 
@@ -903,80 +899,104 @@
        }
     , 
     { 
-       "id":"tvn1694118411267", 
-       "title":"Data migration", 
-       "url":"Vantage/tvn1694118411267.md", 
+       "id":"bgr1694118840100", 
+       "title":"Data copy", 
+       "description":"Provision, configure, and run data copy jobs", 
+       "url":"Vantage/bgr1694118840100.md", 
        "children":[
           { 
-             "id":"bgr1694118840100", 
-             "title":"Data copy", 
-             "description":"Provision, configure, and run data copy jobs.", 
-             "url":"Vantage/bgr1694118840100.md", 
+             "id":"bcw1700511770060", 
+             "title":"Set up data copy", 
+             "description":"Add an environment, copy manager, and agent", 
+             "url":"Vantage/bcw1700511770060.md", 
              "children":[
                 { 
-                   "id":"bcw1700511770060", 
-                   "title":"Set up data copy", 
-                   "description":"Add an environment, copy manager, and agent.", 
-                   "url":"Vantage/bcw1700511770060.md"
-                   }
-                , 
-                { 
-                   "id":"zuh1706652286181", 
-                   "title":"Manage data copy", 
-                   "description":"Edit the copy manager or copy agent.", 
-                   "url":"Vantage/zuh1706652286181.md", 
-                   "children":[
-                      { 
-                         "id":"jbt1706483040706", 
-                         "title":"Manage copy manager", 
-                         "description":"Actions to maintain the copy manager.", 
-                         "url":"Vantage/jbt1706483040706.md"
-                         }
-                      , 
-                      { 
-                         "id":"ani1706483842546", 
-                         "title":"Manage copy agent", 
-                         "description":"Actions to maintain the copy agent.", 
-                         "url":"Vantage/ani1706483842546.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"otq1703818370684", 
-                   "title":"Use data copy", 
-                   "description":"Create and manage a copy plan.", 
-                   "url":"Vantage/otq1703818370684.md", 
-                   "children":[
-                      { 
-                         "id":"pwa1703818612067", 
-                         "title":"Create a copy plan", 
-                         "description":"Plan names, settings, and objects to select.", 
-                         "url":"Vantage/pwa1703818612067.md"
-                         }
-                      , 
-                      { 
-                         "id":"wtv1703818703501", 
-                         "title":"Manage a copy plan", 
-                         "description":"Run, pause, and edit a copy plan.", 
-                         "url":"Vantage/wtv1703818703501.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"rhq1703818406583", 
-                   "title":"Data copy FAQ", 
-                   "description":"Questions you may have.", 
-                   "url":"Vantage/rhq1703818406583.md"
+                   "id":"dvp1707442265467", 
+                   "title":"Request an interface endpoint", 
+                   "description":"Create a private link request for Data copy", 
+                   "url":"Vantage/dvp1707442265467.md"
                    }
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"zuh1706652286181", 
+             "title":"Manage data copy", 
+             "description":"Edit the copy manager or copy agent", 
+             "url":"Vantage/zuh1706652286181.md", 
+             "children":[
+                { 
+                   "id":"jbt1706483040706", 
+                   "title":"Manage copy manager", 
+                   "description":"Actions to maintain the copy manager", 
+                   "url":"Vantage/jbt1706483040706.md"
+                   }
+                , 
+                { 
+                   "id":"ani1706483842546", 
+                   "title":"Manage copy agent", 
+                   "description":"Actions to maintain the copy agent", 
+                   "url":"Vantage/ani1706483842546.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"otq1703818370684", 
+             "title":"Use data copy", 
+             "description":"Create and manage a copy plan", 
+             "url":"Vantage/otq1703818370684.md", 
+             "children":[
+                { 
+                   "id":"pwa1703818612067", 
+                   "title":"Create a copy plan", 
+                   "description":"Plan names, settings, and objects to select", 
+                   "url":"Vantage/pwa1703818612067.md"
+                   }
+                , 
+                { 
+                   "id":"wtv1703818703501", 
+                   "title":"Manage a copy plan", 
+                   "description":"Run, pause, and edit a copy plan", 
+                   "url":"Vantage/wtv1703818703501.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rhq1703818406583", 
+             "title":"Data copy FAQ", 
+             "description":"Questions you may have.", 
+             "url":"Vantage/rhq1703818406583.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"tvn1694118411267", 
+       "title":"Data migration", 
+       "url":"Vantage/tvn1694118411267.md"
+       }
+    , 
+    { 
+       "id":"qpv1707514841101", 
+       "title":"User defined functions", 
+       "description":"Connect to a 3rd-party application for security", 
+       "url":"Vantage/qpv1707514841101.md", 
+       "children":[
+          { 
+             "id":"aql1707516911931", 
+             "title":"Protegrity", 
+             "description":"Enable Protegrity on VantageCloud Lake", 
+             "url":"Vantage/aql1707516911931.md"
              }
 
           ]
