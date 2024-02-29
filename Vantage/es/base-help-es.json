@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"Novedades", 
-       "description":"Obtenga información sobre las funciones y actualizaciones más recientes", 
+       "description":"Descubrir las funciones y actualizaciones más recientes", 
        "icon":"new_releases", 
        "url":"Vantage/es/bab1682536172420.md"
        }
@@ -75,6 +75,13 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"mwx1694115292045", 
+             "title":"Gestionar tokens de acceso", 
+             "description":"Ver los tokens de acceso actuales en su organización", 
+             "url":"Vantage/es/mwx1694115292045.md"
              }
 
           ]
@@ -162,7 +169,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"Estimador de consumo", 
-                   "description":"Estime el consumo de los clústeres principal y de cálculo.", 
+                   "description":"Estimar el consumo de los clústeres principal y de cálculo", 
                    "url":"Vantage/es/aow1703107228725.md"
                    }
 
@@ -213,12 +220,6 @@
                          }
                       , 
                       { 
-                         "id":"wer1691592221683", 
-                         "title":"Proporcionar acceso a depósitos de Amazon S3", 
-                         "url":"Vantage/es/wer1691592221683.md"
-                         }
-                      , 
-                      { 
                          "id":"luq1640282345986", 
                          "title":"Crear un flujo", 
                          "url":"Vantage/es/luq1640282345986.md", 
@@ -232,13 +233,21 @@
                             { 
                                "id":"vwc1691596425578", 
                                "title":"Autorización de origen y destino", 
+                               "description":"Configurar la autorización para instancias de Flow", 
                                "url":"Vantage/es/vwc1691596425578.md"
                                }
                             , 
                             { 
                                "id":"npn1691594431074", 
                                "title":"Orígenes y destinos", 
+                               "description":"Establecer las tablas de origen y destino de Flow", 
                                "url":"Vantage/es/npn1691594431074.md"
+                               }
+                            , 
+                            { 
+                               "id":"wer1691592221683", 
+                               "title":"Proporcionar acceso a depósitos de Amazon S3", 
+                               "url":"Vantage/es/wer1691592221683.md"
                                }
 
                             ]
@@ -301,6 +310,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"Solicitar un endpoint de interfaz", 
+                                     "description":"Crear una solicitud de enlace privado para QueryGrid", 
                                      "url":"Vantage/es/yml1671157089031.md"
                                      }
 
@@ -486,13 +496,6 @@
              "description":"Escribir (o crear) y ejecutar consultas SQL", 
              "url":"Vantage/es/edx1695158840322.md"
              }
-          , 
-          { 
-             "id":"ahj1695153106508", 
-             "title":"Consultas", 
-             "description":"Ver y optimizar consultas", 
-             "url":"Vantage/es/ahj1695153106508.md"
-             }
 
           ]
 
@@ -626,6 +629,7 @@
                 { 
                    "id":"hfx1686247226223", 
                    "title":"Ver y usar conjuntos de datos", 
+                   "description":"Roles de ciudadano para conjuntos de datos", 
                    "url":"Vantage/es/hfx1686247226223.md"
                    }
 
@@ -753,6 +757,23 @@
        }
     , 
     { 
+       "id":"qpv1707514841101", 
+       "title":"Funciones definidas por el usuario", 
+       "description":"Conectarse a una aplicación de terceros por seguridad", 
+       "url":"Vantage/es/qpv1707514841101.md", 
+       "children":[
+          { 
+             "id":"aql1707516911931", 
+             "title":"Protegrity", 
+             "description":"Habilitar Protegrity en VantageCloud Lake", 
+             "url":"Vantage/es/aql1707516911931.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"klo1694115175906", 
        "title":"Configuración de la cuenta", 
        "description":"Ajustar valores de configuración de la cuenta, como la apariencia", 
@@ -763,6 +784,13 @@
              "title":"Configuración general", 
              "url":"Vantage/es/ohx1694115234984.md"
              }
+          , 
+          { 
+             "id":"syi1695940519543", 
+             "title":"Gestionar tokens de acceso", 
+             "description":"Crear y configurar tokens de acceso personal (PAT)", 
+             "url":"Vantage/es/syi1695940519543.md"
+             }
 
           ]
 
@@ -772,9 +800,25 @@
        "id":"bkm1640280721917", 
        "title":"Casos de uso", 
        "description":"Ejecutar casos de uso para explorar las capacidades de VantageCloud Lake", 
-       "icon":"libro", 
+       "icon":"book", 
        "url":"Vantage/es/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       }
+    , 
+    { 
+       "id":"nhn1706907203900", 
+       "title":"Documentación", 
+       "description":"Documentación completa de VantageCloud Lake", 
+       "icon":"library_books", 
+       "url":"Vantage/es/nhn1706907203900.md"
+       }
+    , 
+    { 
+       "id":"pkj1706907262368", 
+       "title":"Soporte técnico", 
+       "description":"Crear y gestionar solicitudes de servicio", 
+       "icon":"contact_support", 
+       "url":"Vantage/es/pkj1706907262368.md"
        }
 
     ]

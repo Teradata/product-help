@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"Neuheiten", 
-       "description":"Erfahren Sie mehr über die neuesten Funktionen und Updates", 
+       "description":"Entdecken Sie die neuesten Funktionen und Updates", 
        "icon":"new_releases", 
        "url":"Vantage/de/bab1682536172420.md"
        }
@@ -75,6 +75,13 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"mwx1694115292045", 
+             "title":"Verwalten von Zugriffstoken", 
+             "description":"Anzeigen aktueller Zugriffstoken in Ihrer Organisation", 
+             "url":"Vantage/de/mwx1694115292045.md"
              }
 
           ]
@@ -162,7 +169,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"Verbrauchsschätzung", 
-                   "description":"Schätzen Sie den Verbrauch für primäre und Computing-Cluster.", 
+                   "description":"Schätzen des Verbrauchs für primäre und Computing-Cluster", 
                    "url":"Vantage/de/aow1703107228725.md"
                    }
 
@@ -213,12 +220,6 @@
                          }
                       , 
                       { 
-                         "id":"wer1691592221683", 
-                         "title":"Zugriff auf Amazon S3-Buckets bereitstellen", 
-                         "url":"Vantage/de/wer1691592221683.md"
-                         }
-                      , 
-                      { 
                          "id":"luq1640282345986", 
                          "title":"Ablauf erstellen", 
                          "url":"Vantage/de/luq1640282345986.md", 
@@ -232,13 +233,21 @@
                             { 
                                "id":"vwc1691596425578", 
                                "title":"Quell- und Zielautorisierung", 
+                               "description":"Einrichten der Autorisierung für Abläufe", 
                                "url":"Vantage/de/vwc1691596425578.md"
                                }
                             , 
                             { 
                                "id":"npn1691594431074", 
                                "title":"Quellen und Ziele", 
+                               "description":"Erstellen von Tabellen mit Ablaufquellen und -zielen", 
                                "url":"Vantage/de/npn1691594431074.md"
+                               }
+                            , 
+                            { 
+                               "id":"wer1691592221683", 
+                               "title":"Zugriff auf Amazon S3-Buckets bereitstellen", 
+                               "url":"Vantage/de/wer1691592221683.md"
                                }
 
                             ]
@@ -301,6 +310,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"Schnittstellenendpunkt anfordern", 
+                                     "description":"Erstellen einer PrivateLink-Anforderung für einen privaten Link für QueryGrid", 
                                      "url":"Vantage/de/yml1671157089031.md"
                                      }
 
@@ -486,13 +496,6 @@
              "description":"Schreiben (oder Erstellen) und Ausführen von SQL-Abfragen", 
              "url":"Vantage/de/edx1695158840322.md"
              }
-          , 
-          { 
-             "id":"ahj1695153106508", 
-             "title":"Abfragen", 
-             "description":"Abfragen anzeigen und optimieren", 
-             "url":"Vantage/de/ahj1695153106508.md"
-             }
 
           ]
 
@@ -626,6 +629,7 @@
                 { 
                    "id":"hfx1686247226223", 
                    "title":"Datasets anzeigen und verwenden", 
+                   "description":"Inhaberrollen für Datasets", 
                    "url":"Vantage/de/hfx1686247226223.md"
                    }
 
@@ -753,6 +757,23 @@
        }
     , 
     { 
+       "id":"qpv1707514841101", 
+       "title":"Benutzerdefinierte Funktionen", 
+       "description":"Verbinden mit einer Drittanbieteranwendung aus Sicherheitsgründen", 
+       "url":"Vantage/de/qpv1707514841101.md", 
+       "children":[
+          { 
+             "id":"aql1707516911931", 
+             "title":"Integrität", 
+             "description":"Aktivieren von Protegrity auf VantageCloud Lake", 
+             "url":"Vantage/de/aql1707516911931.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"klo1694115175906", 
        "title":"Kontoeinstellungen", 
        "description":"Kontoeinstellungen, wie zum Beispiel die Darstellung, anpassen", 
@@ -763,6 +784,13 @@
              "title":"Allgemeine Einstellungen", 
              "url":"Vantage/de/ohx1694115234984.md"
              }
+          , 
+          { 
+             "id":"syi1695940519543", 
+             "title":"Verwalten von Zugriffstoken", 
+             "description":"Erstellen und Konfigurieren persönlicher Zugriffstoken (PATs)", 
+             "url":"Vantage/de/syi1695940519543.md"
+             }
 
           ]
 
@@ -772,9 +800,25 @@
        "id":"bkm1640280721917", 
        "title":"Anwendungsfälle", 
        "description":"Anwendungsfälle zum Kennenlernen von VantageCloud Lake-Funktionen ausführen", 
-       "icon":"Buch", 
+       "icon":"book", 
        "url":"Vantage/de/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       }
+    , 
+    { 
+       "id":"nhn1706907203900", 
+       "title":"Dokumentation", 
+       "description":"Vollständige VantageCloud Lake-Dokumentation", 
+       "icon":"library_books", 
+       "url":"Vantage/de/nhn1706907203900.md"
+       }
+    , 
+    { 
+       "id":"pkj1706907262368", 
+       "title":"Technischer Support", 
+       "description":"Erstellen und Verwalten von Serviceanfragen", 
+       "icon":"contact_support", 
+       "url":"Vantage/de/pkj1706907262368.md"
        }
 
     ]

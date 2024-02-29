@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"Nouveautés", 
-       "description":"En savoir sur les dernières fonctionnalités et mises à jour", 
+       "description":"Découvrir les dernières fonctionnalités et mises à jour", 
        "icon":"new_releases", 
        "url":"Vantage/fr/bab1682536172420.md"
        }
@@ -75,6 +75,13 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"mwx1694115292045", 
+             "title":"Gérer les jetons d'accès", 
+             "description":"Afficher les jetons d'accès actuels dans votre organisation", 
+             "url":"Vantage/fr/mwx1694115292045.md"
              }
 
           ]
@@ -162,7 +169,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"Outil d'estimation de la consommation", 
-                   "description":"Évaluez la consommation pour les clusters principaux et de calcul.", 
+                   "description":"Évaluer la consommation pour les clusters principaux et de calcul", 
                    "url":"Vantage/fr/aow1703107228725.md"
                    }
 
@@ -213,12 +220,6 @@
                          }
                       , 
                       { 
-                         "id":"wer1691592221683", 
-                         "title":"Fournir l'accès aux compartiments Amazon S3", 
-                         "url":"Vantage/fr/wer1691592221683.md"
-                         }
-                      , 
-                      { 
                          "id":"luq1640282345986", 
                          "title":"Créer un flux", 
                          "url":"Vantage/fr/luq1640282345986.md", 
@@ -232,13 +233,21 @@
                             { 
                                "id":"vwc1691596425578", 
                                "title":"Autorisation source et cible", 
+                               "description":"Configurer l'autorisation pour les flux", 
                                "url":"Vantage/fr/vwc1691596425578.md"
                                }
                             , 
                             { 
                                "id":"npn1691594431074", 
                                "title":"Sources et cibles", 
+                               "description":"Établir les tables source et cible de flux", 
                                "url":"Vantage/fr/npn1691594431074.md"
+                               }
+                            , 
+                            { 
+                               "id":"wer1691592221683", 
+                               "title":"Fournir l'accès aux compartiments Amazon S3", 
+                               "url":"Vantage/fr/wer1691592221683.md"
                                }
 
                             ]
@@ -301,6 +310,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"Demander un point de terminaison d'interface", 
+                                     "description":"Créer une demande de liaison privée pour QueryGrid", 
                                      "url":"Vantage/fr/yml1671157089031.md"
                                      }
 
@@ -486,13 +496,6 @@
              "description":"Écrire (ou générer) et exécuter des requêtes SQL", 
              "url":"Vantage/fr/edx1695158840322.md"
              }
-          , 
-          { 
-             "id":"ahj1695153106508", 
-             "title":"Requêtes", 
-             "description":"Gérer et optimiser les requêtes", 
-             "url":"Vantage/fr/ahj1695153106508.md"
-             }
 
           ]
 
@@ -626,6 +629,7 @@
                 { 
                    "id":"hfx1686247226223", 
                    "title":"Afficher et utiliser des ensembles de données", 
+                   "description":"Rôles de citoyen pour les ensembles de données", 
                    "url":"Vantage/fr/hfx1686247226223.md"
                    }
 
@@ -753,6 +757,23 @@
        }
     , 
     { 
+       "id":"qpv1707514841101", 
+       "title":"Fonctions définies par l'utilisateur", 
+       "description":"Se connecter à une application tierce pour la sécurité", 
+       "url":"Vantage/fr/qpv1707514841101.md", 
+       "children":[
+          { 
+             "id":"aql1707516911931", 
+             "title":"Protegrity", 
+             "description":"Activer Protegrity sur VantageCloud Lake", 
+             "url":"Vantage/fr/aql1707516911931.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"klo1694115175906", 
        "title":"Paramètres du compte", 
        "description":"Ajuster les paramètres de votre compte, tels que l'apparence", 
@@ -763,6 +784,13 @@
              "title":"Paramètres généraux", 
              "url":"Vantage/fr/ohx1694115234984.md"
              }
+          , 
+          { 
+             "id":"syi1695940519543", 
+             "title":"Gérer les jetons d'accès", 
+             "description":"Créer et configurer des jetons d'accès personnels (PAT)", 
+             "url":"Vantage/fr/syi1695940519543.md"
+             }
 
           ]
 
@@ -772,9 +800,25 @@
        "id":"bkm1640280721917", 
        "title":"Cas d'utilisation", 
        "description":"Exécuter des cas d'utilisation pour explorer les fonctionnalités de VantageCloud Lake", 
-       "icon":"manuel", 
+       "icon":"book", 
        "url":"Vantage/fr/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       }
+    , 
+    { 
+       "id":"nhn1706907203900", 
+       "title":"Documentation", 
+       "description":"Documentation de VantageCloud Lake complète", 
+       "icon":"library_books", 
+       "url":"Vantage/fr/nhn1706907203900.md"
+       }
+    , 
+    { 
+       "id":"pkj1706907262368", 
+       "title":"Assistance technique", 
+       "description":"Créer et gérer les demandes de services", 
+       "icon":"contact_support", 
+       "url":"Vantage/fr/pkj1706907262368.md"
        }
 
     ]

@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"最新情報", 
-       "description":"最新の機能やアップデートについてのご紹介", 
+       "description":"最新の機能やアップデートについて学習", 
        "icon":"new_releases", 
        "url":"Vantage/ja/bab1682536172420.md"
        }
@@ -75,6 +75,13 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"mwx1694115292045", 
+             "title":"アクセス トークンを管理", 
+             "description":"組織内の現在のアクセス トークンを表示", 
+             "url":"Vantage/ja/mwx1694115292045.md"
              }
 
           ]
@@ -162,7 +169,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"消費量推定ツール", 
-                   "description":"プライマリ クラスタとコンピューティング クラスタの消費量を推定します。", 
+                   "description":"プライマリ クラスタとコンピューティング クラスタの消費量を推定", 
                    "url":"Vantage/ja/aow1703107228725.md"
                    }
 
@@ -213,12 +220,6 @@
                          }
                       , 
                       { 
-                         "id":"wer1691592221683", 
-                         "title":"Amazon S3バケットへのアクセス提供", 
-                         "url":"Vantage/ja/wer1691592221683.md"
-                         }
-                      , 
-                      { 
                          "id":"luq1640282345986", 
                          "title":"フローの作成", 
                          "url":"Vantage/ja/luq1640282345986.md", 
@@ -232,13 +233,21 @@
                             { 
                                "id":"vwc1691596425578", 
                                "title":"ソースとターゲットの認証", 
+                               "description":"フローの認証をセットアップ", 
                                "url":"Vantage/ja/vwc1691596425578.md"
                                }
                             , 
                             { 
                                "id":"npn1691594431074", 
                                "title":"ソースとターゲット", 
+                               "description":"フローのソース テーブルとターゲット テーブルを設定", 
                                "url":"Vantage/ja/npn1691594431074.md"
+                               }
+                            , 
+                            { 
+                               "id":"wer1691592221683", 
+                               "title":"Amazon S3バケットへのアクセス提供", 
+                               "url":"Vantage/ja/wer1691592221683.md"
                                }
 
                             ]
@@ -301,6 +310,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"インターフェイス エンドポイントのリクエスト", 
+                                     "description":"QueryGridのプライベート リンク リクエストを作成", 
                                      "url":"Vantage/ja/yml1671157089031.md"
                                      }
 
@@ -486,13 +496,6 @@
              "description":"SQLクエリーを作成(または構築)して実行する", 
              "url":"Vantage/ja/edx1695158840322.md"
              }
-          , 
-          { 
-             "id":"ahj1695153106508", 
-             "title":"クエリー", 
-             "description":"クエリーの表示と最適化", 
-             "url":"Vantage/ja/ahj1695153106508.md"
-             }
 
           ]
 
@@ -626,6 +629,7 @@
                 { 
                    "id":"hfx1686247226223", 
                    "title":"データセットの表示と使用", 
+                   "description":"データセットのシチズン ロール", 
                    "url":"Vantage/ja/hfx1686247226223.md"
                    }
 
@@ -753,6 +757,23 @@
        }
     , 
     { 
+       "id":"qpv1707514841101", 
+       "title":"ユーザー定義関数", 
+       "description":"セキュリティのためのサードパーティ製アプリケーションに接続", 
+       "url":"Vantage/ja/qpv1707514841101.md", 
+       "children":[
+          { 
+             "id":"aql1707516911931", 
+             "title":"Protegrity", 
+             "description":"VantageCloud LakeでProtegrityを有効にする", 
+             "url":"Vantage/ja/aql1707516911931.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"klo1694115175906", 
        "title":"アカウント設定", 
        "description":"外観などのアカウント設定を調整", 
@@ -762,6 +783,13 @@
              "id":"ohx1694115234984", 
              "title":"一般設定", 
              "url":"Vantage/ja/ohx1694115234984.md"
+             }
+          , 
+          { 
+             "id":"syi1695940519543", 
+             "title":"アクセス トークンを管理", 
+             "description":"パーソナル アクセス トークン (PAT) を作成および設定", 
+             "url":"Vantage/ja/syi1695940519543.md"
              }
 
           ]
@@ -775,6 +803,22 @@
        "icon":"book", 
        "url":"Vantage/ja/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
+       }
+    , 
+    { 
+       "id":"nhn1706907203900", 
+       "title":"ドキュメント", 
+       "description":"VantageCloud Lakeドキュメントに記入", 
+       "icon":"library_books", 
+       "url":"Vantage/ja/nhn1706907203900.md"
+       }
+    , 
+    { 
+       "id":"pkj1706907262368", 
+       "title":"技術サポート", 
+       "description":"サービス リクエストを作成および管理", 
+       "icon":"contact_support", 
+       "url":"Vantage/ja/pkj1706907262368.md"
        }
 
     ]
