@@ -244,6 +244,7 @@
                             { 
                                "id":"ury1691596218182", 
                                "title":"Load option considerations", 
+                               "description":"Options running a Flow", 
                                "url":"Vantage/ury1691596218182.md"
                                }
                             , 
@@ -750,6 +751,7 @@
           { 
              "id":"hdx1681040827922", 
              "title":"Manage data share users", 
+             "description":"User roles and privileges", 
              "url":"Vantage/hdx1681040827922.md"
              }
           , 
@@ -763,11 +765,13 @@
           { 
              "id":"gds1686247574408", 
              "title":"Work with datasets", 
+             "description":"Tasks as a share provider or subscriber", 
              "url":"Vantage/gds1686247574408.md", 
              "children":[
                 { 
                    "id":"rfg1681040443995", 
                    "title":"Manage datasets", 
+                   "description":"Assign privileges to datasets", 
                    "url":"Vantage/rfg1681040443995.md"
                    }
                 , 
@@ -785,18 +789,21 @@
           { 
              "id":"vph1681040670091", 
              "title":"Manage subscribers", 
+             "description":"Add a user or role as a subscriber", 
              "url":"Vantage/vph1681040670091.md"
              }
           , 
           { 
              "id":"vuh1681040768372", 
              "title":"Delete a share", 
+             "description":"What happens when you delete a share", 
              "url":"Vantage/vuh1681040768372.md"
              }
           , 
           { 
              "id":"laf1686249149487", 
              "title":"Data sharing FAQ", 
+             "description":"See answers to common questions", 
              "url":"Vantage/laf1686249149487.md"
              }
 
@@ -904,7 +911,7 @@
     { 
        "id":"bgr1694118840100", 
        "title":"Data copy", 
-       "description":"Provision, configure, and run data copy jobs", 
+       "description":"Provision, configure, and run Data copy jobs", 
        "url":"Vantage/bgr1694118840100.md", 
        "children":[
           { 
@@ -1039,6 +1046,13 @@
 
           ]
 
+       }
+    , 
+    { 
+       "id":"pmg1709157026832", 
+       "title":"More tools", 
+       "description":"Set up and run Jupyter notebook demos", 
+       "url":"Vantage/pmg1709157026832.md"
        }
     , 
     { 
