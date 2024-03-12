@@ -23,7 +23,7 @@ jobs:
           FILES=$(git diff --name-only HEAD^..HEAD -- 'ZipUpdates-Vantage/*.zip')
           if [ ! -z "$FILES" ]; then
             echo $FILES | while read FILE; do
-              unzip -o $FILE -d Vantage
+              unzip -o $FILE
               git rm $FILE
             done
             echo "::set-output name=unzipped::true"
