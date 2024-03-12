@@ -1,0 +1,44 @@
+name: publish-to-dev-environment
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'ZipUpdates-Vantage/*.zip'
+
+jobs:
+  unzip-and-commit-extracted-files:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Unzip
+        id: unzip
+        run: |
+          FILES=$(git diff --name-only HEAD^..HEAD -- 'ZipUpdates-Vantage/*.zip')
+          if [ ! -z "$FILES" ]; then
+            echo $FILES | while read FILE; do
+              unzip -o $FILE -d Vantage
+              git rm $FILE
+            done
+            echo "::set-output name=unzipped::true"
+          fi
+
+      - name: Commit extracted files
+        if: steps.unzip.outputs.unzipped == 'true'
+        run: |
+          COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+          COMMIT_AUTHOR_NAME=$(git log -1 --pretty="%an")
+          COMMIT_AUTHOR_EMAIL=$(git log -1 --pretty="%ae")
+          git config --local user.email "$COMMIT_AUTHOR_EMAIL"
+          git config --local user.name "$COMMIT_AUTHOR_NAME"
+          git add Vantage/
+          git commit -m "(workflow) $COMMIT_MESSAGE"
+          git push origin HEAD:${{ github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
