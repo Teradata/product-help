@@ -9,7 +9,7 @@
              "id":"xmm1707187643364", 
              "title":"Trials information", 
              "description":"Get the most of your trial experience.", 
-             "icon":"teradata", 
+             "icon":"teradata;covalent", 
              "url":"VantageCloudLanding/xmm1707187643364.md"
              }
           , 
@@ -17,9 +17,8 @@
              "id":"jiy1707187681752", 
              "title":"Create environments", 
              "description":"Configure you primary cluster and database... in two steps!", 
-             "icon":"server", 
-             "url":"VantageCloudLanding/jiy1707187681752.md", 
-             "childrenUrl":"https://docs.teradata.com/"
+             "icon":"server;covalent", 
+             "url":"VantageCloudLanding/jiy1707187681752.md"
              }
           , 
           { 
@@ -54,7 +53,7 @@
        "id":"ubu1707187832449", 
        "title":"Run your first query!", 
        "description":"Get started with sample data and this tutorial.", 
-       "icon":"teradatata", 
+       "icon":"teradata;covalent", 
        "url":"VantageCloudLanding/ubu1707187832449.md"
        }
     , 
@@ -84,7 +83,8 @@
              "title":"Documentation", 
              "description":"Your resource for complete product guides, quick starts, tutorials, and technical publications.", 
              "icon":"library_books", 
-             "url":"VantageCloudLanding/ahx1707271934625.md"
+             "url":"VantageCloudLanding/ahx1707271934625.md", 
+             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
           , 
           { 
