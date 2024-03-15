@@ -1,0 +1,29 @@
+name: publish-to-prod-environment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sftp-files-to-cdn-and-purge-cache:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: SFTP
+        run: |
+          sshpass -e sftp -oBatchMode=no -b - ${{ secrets.CDN_SFTP_USERNAME }}@${{ secrets.CDN_SFTP_HOST }} << !
+            cd product-help/Vantage
+            put Vantage/*.md
+            put Vantage/*.json
+            cd Images
+            put Vantage/Images/*
+            bye
+          !
+        env:
+          SSHPASS: ${{ secrets.CDN_SFTP_PASSWORD }}
+
+      - name: purge cache
+        run: |
+          /home/tdadmin/.local/bin/http --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
