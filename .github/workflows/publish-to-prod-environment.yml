@@ -2,6 +2,15 @@ name: publish-to-prod-environment
 
 on:
   workflow_dispatch:
+    inputs:
+      folder:
+        description: 'Content to publish'
+        required: true
+        default: 'Vantage (English)'
+        type: choice
+        options:
+        - Vantage (English)
+        - Vantage (ja, fr, es, de)
 
 jobs:
   sftp-files-to-cdn-and-purge-cache:
@@ -11,7 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: SFTP
+      - name: SFTP Vantage (English)
+        if: ${{ inputs.folder == 'Vantage (English)' }}
         run: |
           sshpass -e sftp -oBatchMode=no -b - ${{ secrets.CDN_SFTP_USERNAME }}@${{ secrets.CDN_SFTP_HOST }} << !
             cd product-help/Vantage
@@ -19,6 +29,39 @@ jobs:
             put Vantage/*.json
             cd Images
             put Vantage/Images/*
+            bye
+          !
+        env:
+          SSHPASS: ${{ secrets.CDN_SFTP_PASSWORD }}
+
+      - name: SFTP Vantage translations (ja, fr, es, de)
+        if: ${{ inputs.folder == 'Vantage (ja, fr, es, de)' }}
+        run: |
+          sshpass -e sftp -oBatchMode=no -b - ${{ secrets.CDN_SFTP_USERNAME }}@${{ secrets.CDN_SFTP_HOST }} << !
+            cd product-help/Vantage/ja
+            put Vantage/ja/*.md
+            put Vantage/ja/*.json
+            cd Images
+            put Vantage/ja/Images/*
+
+            cd ../../fr
+            put Vantage/fr/*.md
+            put Vantage/fr/*.json
+            cd Images
+            put Vantage/fr/Images/*
+
+            cd ../../es
+            put Vantage/es/*.md
+            put Vantage/es/*.json
+            cd Images
+            put Vantage/es/Images/*
+
+            cd ../../de
+            put Vantage/de/*.md
+            put Vantage/de/*.json
+            cd Images
+            put Vantage/de/Images/*
+
             bye
           !
         env:
