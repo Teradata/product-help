@@ -700,6 +700,13 @@
              "url":"Vantage/dgd1640281158386.md", 
              "children":[
                 { 
+                   "id":"qow1711727575738", 
+                   "title":"Create reports", 
+                   "description":"Create reports for query results", 
+                   "url":"Vantage/qow1711727575738.md"
+                   }
+                , 
+                { 
                    "id":"vkk1692059193535", 
                    "title":"Build a query", 
                    "description":"Build a query using generated SQL", 
