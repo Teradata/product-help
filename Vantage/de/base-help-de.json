@@ -227,6 +227,7 @@
                             { 
                                "id":"ury1691596218182", 
                                "title":"Überlegungen zur Ladeoption", 
+                               "description":"Optionen zur Ablaufdurchführung", 
                                "url":"Vantage/de/ury1691596218182.md"
                                }
                             , 
@@ -605,6 +606,7 @@
           { 
              "id":"hdx1681040827922", 
              "title":"Benutzer der Datenfreigabe verwalten", 
+             "description":"Benutzerrollen und Berechtigungen", 
              "url":"Vantage/de/hdx1681040827922.md"
              }
           , 
@@ -618,11 +620,13 @@
           { 
              "id":"gds1686247574408", 
              "title":"Mit Datasets arbeiten", 
+             "description":"Aufgaben als Freigabeanbieter oder Abonnent", 
              "url":"Vantage/de/gds1686247574408.md", 
              "children":[
                 { 
                    "id":"rfg1681040443995", 
                    "title":"Datasets verwalten", 
+                   "description":"Datasets Berechtigungen zuweisen", 
                    "url":"Vantage/de/rfg1681040443995.md"
                    }
                 , 
@@ -640,18 +644,21 @@
           { 
              "id":"vph1681040670091", 
              "title":"Abonnenten verwalten", 
+             "description":"Benutzer oder Rolle als Abonnent hinzufügen", 
              "url":"Vantage/de/vph1681040670091.md"
              }
           , 
           { 
              "id":"vuh1681040768372", 
              "title":"Freigabe löschen", 
+             "description":"Was passiert, wenn Sie eine Freigabe löschen", 
              "url":"Vantage/de/vuh1681040768372.md"
              }
           , 
           { 
              "id":"laf1686249149487", 
              "title":"FAQ zur Datenfreigabe", 
+             "description":"Finden Sie Antworten auf häufig gestellte Fragen", 
              "url":"Vantage/de/laf1686249149487.md"
              }
 
@@ -692,6 +699,13 @@
              "description":"Ausführen von Abfragen im Editor", 
              "url":"Vantage/de/dgd1640281158386.md", 
              "children":[
+                { 
+                   "id":"qow1711727575738", 
+                   "title":"Berichte erstellen", 
+                   "description":"Berichte zu Abfrageergebnissen erstellen", 
+                   "url":"Vantage/de/qow1711727575738.md"
+                   }
+                , 
                 { 
                    "id":"vkk1692059193535", 
                    "title":"Erstellen einer Abfrage", 
@@ -750,6 +764,78 @@
              "title":"Abfragedetails", 
              "description":"Verstehen der für jede Abfrage angezeigten Informationen", 
              "url":"Vantage/de/zvd1688067459510.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"bgr1694118840100", 
+       "title":"Datenkopie", 
+       "description":"Datenkopieraufträge bereitstellen, konfigurieren und ausführen", 
+       "url":"Vantage/de/bgr1694118840100.md", 
+       "children":[
+          { 
+             "id":"bcw1700511770060", 
+             "title":"Datenkopie einrichten", 
+             "description":"Umgebung, Copy Manager und Agent hinzufügen", 
+             "url":"Vantage/de/bcw1700511770060.md"
+             }
+          , 
+          { 
+             "id":"zuh1706652286181", 
+             "title":"Datenkopie verwalten", 
+             "description":"Copy Manager oder Copy Agent bearbeiten", 
+             "url":"Vantage/de/zuh1706652286181.md", 
+             "children":[
+                { 
+                   "id":"jbt1706483040706", 
+                   "title":"Copy Manager verwalten", 
+                   "description":"Aktionen zur Verwaltung des Copy Managers", 
+                   "url":"Vantage/de/jbt1706483040706.md"
+                   }
+                , 
+                { 
+                   "id":"ani1706483842546", 
+                   "title":"Copy Agent verwalten", 
+                   "description":"Aktionen zur Verwaltung des Copy Agents", 
+                   "url":"Vantage/de/ani1706483842546.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"otq1703818370684", 
+             "title":"Datenkopie verwenden", 
+             "description":"Kopierplan erstellen und verwalten", 
+             "url":"Vantage/de/otq1703818370684.md", 
+             "children":[
+                { 
+                   "id":"pwa1703818612067", 
+                   "title":"Kopierplan erstellen", 
+                   "description":"Plannamen, -einstellungen und -objekte für die Auswahl", 
+                   "url":"Vantage/de/pwa1703818612067.md"
+                   }
+                , 
+                { 
+                   "id":"wtv1703818703501", 
+                   "title":"Kopierplan verwalten", 
+                   "description":"Kopierplan ausführen, anhalten und bearbeiten", 
+                   "url":"Vantage/de/wtv1703818703501.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rhq1703818406583", 
+             "title":"Datenkopie-FAQ", 
+             "description":"Was Sie sich möglicherweise fragen...", 
+             "url":"Vantage/de/rhq1703818406583.md"
              }
 
           ]

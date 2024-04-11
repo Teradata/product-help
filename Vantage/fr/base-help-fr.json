@@ -227,6 +227,7 @@
                             { 
                                "id":"ury1691596218182", 
                                "title":"Considérations relatives à l'option de chargement", 
+                               "description":"Options exécutant un flux", 
                                "url":"Vantage/fr/ury1691596218182.md"
                                }
                             , 
@@ -605,6 +606,7 @@
           { 
              "id":"hdx1681040827922", 
              "title":"Gérer les utilisateurs du partage de données", 
+             "description":"Rôle et privilèges de l'utilisateur", 
              "url":"Vantage/fr/hdx1681040827922.md"
              }
           , 
@@ -618,11 +620,13 @@
           { 
              "id":"gds1686247574408", 
              "title":"Utiliser des ensembles de données", 
+             "description":"Tâches en tant que fournisseur de partage ou abonné à ce dernier", 
              "url":"Vantage/fr/gds1686247574408.md", 
              "children":[
                 { 
                    "id":"rfg1681040443995", 
                    "title":"Gérer les ensembles de données", 
+                   "description":"Attribuer des privilèges aux ensembles de données", 
                    "url":"Vantage/fr/rfg1681040443995.md"
                    }
                 , 
@@ -640,18 +644,21 @@
           { 
              "id":"vph1681040670091", 
              "title":"Gérer les abonnés", 
+             "description":"Ajouter un utilisateur ou un rôle en tant qu'abonné", 
              "url":"Vantage/fr/vph1681040670091.md"
              }
           , 
           { 
              "id":"vuh1681040768372", 
              "title":"Supprimer un partage", 
+             "description":"Conséquences de la suppression d'un partage", 
              "url":"Vantage/fr/vuh1681040768372.md"
              }
           , 
           { 
              "id":"laf1686249149487", 
              "title":"FAQ relatives au partage de données", 
+             "description":"Consulter les réponses aux questions courantes", 
              "url":"Vantage/fr/laf1686249149487.md"
              }
 
@@ -692,6 +699,13 @@
              "description":"Exécuter des requêtes dans l'Éditeur", 
              "url":"Vantage/fr/dgd1640281158386.md", 
              "children":[
+                { 
+                   "id":"qow1711727575738", 
+                   "title":"Créer des rapports", 
+                   "description":"Créer des rapports pour les résultats de requêtes", 
+                   "url":"Vantage/fr/qow1711727575738.md"
+                   }
+                , 
                 { 
                    "id":"vkk1692059193535", 
                    "title":"Générer une requête", 
@@ -750,6 +764,78 @@
              "title":"Détails de la requête", 
              "description":"Comprendre les informations affichées pour chaque requête", 
              "url":"Vantage/fr/zvd1688067459510.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"bgr1694118840100", 
+       "title":"データ コピー", 
+       "description":"Provisionner, configurer et exécuter des tâches de copie de données", 
+       "url":"Vantage/fr/bgr1694118840100.md", 
+       "children":[
+          { 
+             "id":"bcw1700511770060", 
+             "title":"Configurer la copie de données", 
+             "description":"Ajouter un environnement, un gestionnaire de copie et un agent", 
+             "url":"Vantage/fr/bcw1700511770060.md"
+             }
+          , 
+          { 
+             "id":"zuh1706652286181", 
+             "title":"Gérer la copie de données", 
+             "description":"Modifier le gestionnaire de copie ou l'agent de copie", 
+             "url":"Vantage/fr/zuh1706652286181.md", 
+             "children":[
+                { 
+                   "id":"jbt1706483040706", 
+                   "title":"Gérer le gestionnaire de copie", 
+                   "description":"Actions pour soutenir le gestionnaire de copie", 
+                   "url":"Vantage/fr/jbt1706483040706.md"
+                   }
+                , 
+                { 
+                   "id":"ani1706483842546", 
+                   "title":"Gérer l'agent de copie", 
+                   "description":"Actions pour soutenir l'agent de copie", 
+                   "url":"Vantage/fr/ani1706483842546.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"otq1703818370684", 
+             "title":"Utiliser la copie de données", 
+             "description":"Créer et gérer un plan de copie", 
+             "url":"Vantage/fr/otq1703818370684.md", 
+             "children":[
+                { 
+                   "id":"pwa1703818612067", 
+                   "title":"Créer un plan de copie", 
+                   "description":"Noms, paramètres et objets de plan à sélectionner", 
+                   "url":"Vantage/fr/pwa1703818612067.md"
+                   }
+                , 
+                { 
+                   "id":"wtv1703818703501", 
+                   "title":"Gérer un plan de copie", 
+                   "description":"Exécuter, suspendre et modifier un plan de copie", 
+                   "url":"Vantage/fr/wtv1703818703501.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rhq1703818406583", 
+             "title":"FAQ relative à la copie de données", 
+             "description":"Questions éventuelles.", 
+             "url":"Vantage/fr/rhq1703818406583.md"
              }
 
           ]
