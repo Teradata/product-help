@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
 DROP TABLE demo_telco_training ;
 CREATE MULTISET FOREIGN TABLE demo_telco_training ,FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DefaultAuth ,
      MAP = TD_MAP1
 ( 
 	cust_id                 	VARCHAR(20),

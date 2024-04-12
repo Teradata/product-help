@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
 DROP TABLE is_connectivity ;
 CREATE MULTISET FOREIGN TABLE is_connectivity ,FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DefaultAuth ,
      MAP = TD_MAP1
      (
       sendid INTEGER NOT NULL,

@@ -1,7 +1,8 @@
+REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
 DROP TABLE so_sales_fact ;
 
 CREATE MULTISET FOREIGN TABLE so_sales_fact ,FALLBACK ,
-    EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+    EXTERNAL SECURITY DefaultAuth ,
     MAP = TD_MAP1
     (
     sales_date DATE FORMAT 'YY/MM/DD' NOT NULL,

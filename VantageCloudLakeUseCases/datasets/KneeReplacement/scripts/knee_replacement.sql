@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
 DROP TABLE knee_replacement ;
 CREATE MULTISET FOREIGN TABLE knee_replacement ,FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DefaultAuth ,
      MAP = TD_MAP1
      (
      memberid INTEGER,
