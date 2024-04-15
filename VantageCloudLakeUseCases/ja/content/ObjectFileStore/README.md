@@ -11,7 +11,7 @@ VantageCloud Lake Editionのオブジェクト ファイル システム (OFS) �
 
 ### セットアップ
 
-S3バケットにデータを含む外部テーブルを作成します。アカウントのプロビジョニング時に認証オブジェクトretail_sample_data.DEMO_AUTH_NOSが作成されます。これは、S3バケットtd-usecases-data-storeへの読み取り専用アクセス権を持っています。
+S3バケットにデータを含む外部テーブルを作成します。
 
 ```sql
 REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
