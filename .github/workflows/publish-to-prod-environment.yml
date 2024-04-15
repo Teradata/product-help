@@ -19,54 +19,58 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: Vantage
 
-      - name: SFTP Vantage (English)
+      - name: FTPS Vantage (English)
         if: ${{ inputs.folder == 'Vantage (English)' }}
         run: |
-          sshpass -e sftp -oBatchMode=no -b - ${{ secrets.CDN_SFTP_USERNAME }}@${{ secrets.CDN_SFTP_HOST }} << !
-            cd product-help/Vantage
-            put Vantage/*.md
-            put Vantage/*.json
-            cd Images
-            put Vantage/Images/*
+          lftp -e "
+            open -u ${{ secrets.CDN_FTP_USERNAME }},${{ secrets.CDN_FTP_PASSWORD }} ${{ secrets.CDN_FTP_HOST }};
+            cd product-help/Vantage;
+            mput Vantage/*.md;
+            mput Vantage/*.json;
+            cd Images;
+            mput Vantage/Images/*;
             bye
-          !
-        env:
-          SSHPASS: ${{ secrets.CDN_SFTP_PASSWORD }}
+          "
 
-      - name: SFTP Vantage translations (ja, fr, es, de)
+      - name: FTPS Vantage translations (ja, fr, es, de)
         if: ${{ inputs.folder == 'Vantage (ja, fr, es, de)' }}
         run: |
-          sshpass -e sftp -oBatchMode=no -b - ${{ secrets.CDN_SFTP_USERNAME }}@${{ secrets.CDN_SFTP_HOST }} << !
-            cd product-help/Vantage/ja
-            put Vantage/ja/*.md
-            put Vantage/ja/*.json
-            cd Images
-            put Vantage/ja/Images/*
+          lftp -e "
+            open -u ${{ secrets.CDN_FTP_USERNAME }},${{ secrets.CDN_FTP_PASSWORD }} ${{ secrets.CDN_FTP_HOST }};
+            cd product-help/Vantage;
 
-            cd ../../fr
-            put Vantage/fr/*.md
-            put Vantage/fr/*.json
-            cd Images
-            put Vantage/fr/Images/*
+            cd ja;
+            mput Vantage/ja/*.md;
+            mput Vantage/ja/*.json;
+            cd Images;
+            mput Vantage/ja/Images/*;
+            cd ../..;
 
-            cd ../../es
-            put Vantage/es/*.md
-            put Vantage/es/*.json
-            cd Images
-            put Vantage/es/Images/*
+            cd fr;
+            mput Vantage/fr/*.md;
+            mput Vantage/fr/*.json;
+            cd Images;
+            mput Vantage/fr/Images/*;
+            cd ../..;
 
-            cd ../../de
-            put Vantage/de/*.md
-            put Vantage/de/*.json
-            cd Images
-            put Vantage/de/Images/*
+            cd es;
+            mput Vantage/es/*.md;
+            mput Vantage/es/*.json;
+            cd Images;
+            mput Vantage/es/Images/*;
+            cd ../..;
 
+            cd de;
+            mput Vantage/de/*.md;
+            mput Vantage/de/*.json;
+            cd Images;
+            mput Vantage/de/Images/*;
             bye
-          !
-        env:
-          SSHPASS: ${{ secrets.CDN_SFTP_PASSWORD }}
+          "
 
       - name: purge cache
         run: |
-          /home/tdadmin/.local/bin/http --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
+          /home/tdadmin/.local/bin/http --ignore-stdin --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
