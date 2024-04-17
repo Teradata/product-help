@@ -1,4 +1,4 @@
-REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 DROP TABLE bof_trans_feature_month_derived ;
 CREATE MULTISET FOREIGN TABLE bof_trans_feature_month_derived ,FALLBACK ,
      EXTERNAL SECURITY DefaultAuth ,

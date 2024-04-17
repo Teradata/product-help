@@ -14,7 +14,7 @@ VantageCloud Lake Editionのオブジェクト ファイル システム (OFS) �
 S3バケットにデータを含む外部テーブルを作成します。
 
 ```sql
-REPLACE AUTHORIZATION DefaultAuth AS DEFINER TRUSTED USER '' PASSWORD '';
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 CREATE FOREIGN TABLE foreign_csvdata
 ,EXTERNAL SECURITY DefaultAuth
 USING (location('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/CSVDATA/'));
