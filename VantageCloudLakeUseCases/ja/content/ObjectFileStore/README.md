@@ -103,7 +103,7 @@ CREATE MULTISET TABLE ofs_csvdata
 AS ( SELECT site_no, datetime, Precipitation, GageHeight, Flow, GageHeight2
 FROM (
 LOCATION='/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/CSVDATA/'
-AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
+AUTHORIZATION=DefaultAuth
 ) AS d
 ) WITH DATA;
 ```
