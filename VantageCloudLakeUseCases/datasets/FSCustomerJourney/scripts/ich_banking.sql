@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 DROP TABLE fscj_ich_banking ;
 CREATE MULTISET FOREIGN TABLE fscj_ich_banking ,FALLBACK ,
-    EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+    EXTERNAL SECURITY DefaultAuth ,
 	MAP = TD_MAP1  
 	( 
 	customer_skey             	integer,

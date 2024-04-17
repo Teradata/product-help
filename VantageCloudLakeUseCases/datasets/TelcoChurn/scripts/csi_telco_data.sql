@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 DROP TABLE tc_csi_telco_data ;
 CREATE MULTISET FOREIGN TABLE tc_csi_telco_data ,FALLBACK ,
-    EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+    EXTERNAL SECURITY DefaultAuth ,
     MAP = TD_MAP1
     (
       customerid INTEGER NOT NULL,

@@ -11,11 +11,12 @@ VantageCloud Lake Editionのオブジェクト ファイル システム (OFS) �
 
 ### セットアップ
 
-S3バケットにデータを含む外部テーブルを作成します。アカウントのプロビジョニング時に認証オブジェクトretail_sample_data.DEMO_AUTH_NOSが作成されます。これは、S3バケットtd-usecases-data-storeへの読み取り専用アクセス権を持っています。
+S3バケットにデータを含む外部テーブルを作成します。
 
 ```sql
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 CREATE FOREIGN TABLE foreign_csvdata
-,EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS
+,EXTERNAL SECURITY DefaultAuth
 USING (location('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/CSVDATA/'));
 ```
 
@@ -102,7 +103,7 @@ CREATE MULTISET TABLE ofs_csvdata
 AS ( SELECT site_no, datetime, Precipitation, GageHeight, Flow, GageHeight2
 FROM (
 LOCATION='/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/CSVDATA/'
-AUTHORIZATION=retail_sample_data.DEMO_AUTH_NOS
+AUTHORIZATION=DefaultAuth
 ) AS d
 ) WITH DATA;
 ```

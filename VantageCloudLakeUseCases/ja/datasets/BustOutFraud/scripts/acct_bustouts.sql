@@ -1,7 +1,8 @@
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 DROP TABLE bof_acct_bustouts ;
 
 CREATE MULTISET FOREIGN TABLE bof_acct_bustouts ,FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DefaultAuth ,
      MAP = TD_MAP1
      (
       acct_no VARCHAR(19) CHARACTER SET LATIN NOT CASESPECIFIC,

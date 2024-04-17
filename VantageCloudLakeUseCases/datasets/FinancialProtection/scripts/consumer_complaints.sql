@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 DROP TABLE fp_consumer_complaints ;
 CREATE MULTISET FOREIGN TABLE fp_consumer_complaints ,FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DefaultAuth ,
      MAP = TD_MAP1
      (
       date_received DATE FORMAT 'yyyy-mm-dd',

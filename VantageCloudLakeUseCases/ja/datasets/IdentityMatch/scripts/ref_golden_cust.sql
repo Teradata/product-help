@@ -1,6 +1,7 @@
+REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 DROP TABLE im_ref_golden_cust ;
 CREATE MULTISET FOREIGN TABLE im_ref_golden_cust ,FALLBACK ,
-     EXTERNAL SECURITY retail_sample_data.DEMO_AUTH_NOS ,
+     EXTERNAL SECURITY DefaultAuth ,
      MAP = TD_MAP1
      (
       CUST_ID INTEGER,
