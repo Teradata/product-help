@@ -17,7 +17,22 @@
           { 
              "id":"uee1640282265780", 
              "title":"Administrators", 
-             "url":"Vantage/uee1640282265780.md"
+             "url":"Vantage/uee1640282265780.md", 
+             "children":[
+                { 
+                   "id":"wvr1709157903898", 
+                   "title":"Create your environment", 
+                   "url":"Vantage/wvr1709157903898.md"
+                   }
+                , 
+                { 
+                   "id":"ahj1695153106508", 
+                   "title":"Enable access to the environment", 
+                   "url":"Vantage/ahj1695153106508.md"
+                   }
+
+                ]
+
              }
 
           ]
