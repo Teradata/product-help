@@ -361,6 +361,13 @@
                                      "description":"Create a private link request for QueryGrid", 
                                      "url":"Vantage/yml1671157089031.md"
                                      }
+                                  , 
+                                  { 
+                                     "id":"esw1713987246219", 
+                                     "title":"Set up JWT SSO", 
+                                     "description":"JWT SSO connector properties", 
+                                     "url":"Vantage/esw1713987246219.md"
+                                     }
 
                                   ]
 
