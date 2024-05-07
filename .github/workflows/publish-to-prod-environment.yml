@@ -15,8 +15,15 @@ on:
 jobs:
   sftp-files-to-cdn-and-purge-cache:
     runs-on: tc-egress-nonprod-f42aba-0
+    container:
+      image: ubuntu:latest
 
     steps:
+      - name: Install
+        run: |
+          sudo apt update
+          sudo apt install -y lftp
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
