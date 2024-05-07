@@ -14,7 +14,7 @@ on:
 
 jobs:
   sftp-files-to-cdn-and-purge-cache:
-    runs-on: self-hosted
+    runs-on: tc-egress-nonprod-f42aba-0
 
     steps:
       - name: Checkout
