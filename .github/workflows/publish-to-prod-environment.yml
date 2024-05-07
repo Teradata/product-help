@@ -21,8 +21,8 @@ jobs:
     steps:
       - name: Install
         run: |
-          sudo apt update
-          sudo apt install -y lftp
+          apt update
+          apt install -y lftp
 
       - name: Checkout
         uses: actions/checkout@v4
