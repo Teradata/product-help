@@ -33,6 +33,13 @@ jobs:
         if: ${{ inputs.folder == 'Vantage (English)' }}
         run: |
           lftp -e "
+            set ftp:ssl-protect-data no;
+            set ftp:ssl-protect-list no;
+            set ftp:ssl-protect-fxp no;
+            set ftp:ssl-force yes;
+            set ftp:ssl-auth TLS;
+            set ssl:verify-certificate no;
+            set ssl:check-hostname false;
             open -u ${{ secrets.CDN_FTP_USERNAME }},${{ secrets.CDN_FTP_PASSWORD }} ${{ secrets.CDN_FTP_HOST }};
             cd product-help/Vantage;
             mput Vantage/*.md;
