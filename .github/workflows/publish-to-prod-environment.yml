@@ -95,4 +95,5 @@ jobs:
 
       - name: purge cache
         run: |
+          echo -e "[default]\nclient_secret = ${{ secrets.CACHE_CLIENT_SECRET }}\nhost = ${{ secrets.CACHE_HOST }}\naccess_token = ${{ secrets.CACHE_ACCESS_TOKEN }}\nclient_token = ${{ secrets.CACHE_CLIENT_TOKEN }}" > ~/.edgerc
           http --ignore-stdin --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
