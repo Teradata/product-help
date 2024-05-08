@@ -22,7 +22,7 @@ jobs:
       - name: Install
         run: |
           apt update
-          apt install -y lftp python3 python3-pip httpie
+          apt install -y lftp httpie
           pip install httpie httpie-edgegrid
 
       - name: Checkout
