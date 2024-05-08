@@ -22,7 +22,7 @@ jobs:
       - name: Install
         run: |
           apt update
-          apt install -y lftp httpie
+          apt install -y lftp httpie git
           pip install httpie httpie-edgegrid --break-system-packages
 
       - name: Checkout
@@ -95,5 +95,9 @@ jobs:
 
       - name: purge cache
         run: |
-          echo -e "[default]\nclient_secret = ${{ secrets.CACHE_CLIENT_SECRET }}\nhost = ${{ secrets.CACHE_HOST }}\naccess_token = ${{ secrets.CACHE_ACCESS_TOKEN }}\nclient_token = ${{ secrets.CACHE_CLIENT_TOKEN }}" > ~/.edgerc
+          echo "[default]" > ~/.edgerc
+          echo "client_secret = ${{ secrets.CACHE_CLIENT_SECRET }}" >> ~/.edgerc
+          echo "host = ${{ secrets.CACHE_HOST }}" >> ~/.edgerc
+          echo "access_token = ${{ secrets.CACHE_ACCESS_TOKEN }}" >> ~/.edgerc
+          echo "client_token = ${{ secrets.CACHE_CLIENT_TOKEN }}" >> ~/.edgerc
           http --ignore-stdin --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
