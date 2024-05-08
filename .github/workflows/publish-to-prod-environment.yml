@@ -23,7 +23,7 @@ jobs:
         run: |
           apt update
           apt install -y lftp httpie
-          pip install httpie httpie-edgegrid
+          pip install httpie httpie-edgegrid --break-system-packages
 
       - name: Checkout
         uses: actions/checkout@v4
