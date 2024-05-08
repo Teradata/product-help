@@ -22,7 +22,8 @@ jobs:
       - name: Install
         run: |
           apt update
-          apt install -y lftp
+          apt install -y lftp python3 python3-pip httpie
+          pip install httpie httpie-edgegrid
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -53,6 +54,13 @@ jobs:
         if: ${{ inputs.folder == 'Vantage (ja, fr, es, de)' }}
         run: |
           lftp -e "
+            set ftp:ssl-protect-data no;
+            set ftp:ssl-protect-list no;
+            set ftp:ssl-protect-fxp no;
+            set ftp:ssl-force yes;
+            set ftp:ssl-auth TLS;
+            set ssl:verify-certificate no;
+            set ssl:check-hostname false;
             open -u ${{ secrets.CDN_FTP_USERNAME }},${{ secrets.CDN_FTP_PASSWORD }} ${{ secrets.CDN_FTP_HOST }};
             cd product-help/Vantage;
 
@@ -87,4 +95,4 @@ jobs:
 
       - name: purge cache
         run: |
-          /home/tdadmin/.local/bin/http --ignore-stdin --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
+          http --ignore-stdin --auth-type=edgegrid -a default: :/ccu/v3/invalidate/cpcode/production objects:='[1051984]'
