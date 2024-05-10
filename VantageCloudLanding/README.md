@@ -1,6 +1,6 @@
 # Teradata VantageCloud Lake
 
-This location contains the content for the Teradata VantageCloud Lake new help landing page.
+This location contains the content for the Teradata VantageCloud Lake Learn page.
 
 
 ---
