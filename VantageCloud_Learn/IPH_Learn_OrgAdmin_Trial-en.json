@@ -7,6 +7,13 @@
        "url":"VantageCloudLanding/uct1707186367384.md", 
        "children":[
           { 
+             "id":"rfk1714168651268", 
+             "title":"Welcome to your VantageCloud Lake trial", 
+             "description":"Get the most from your Teradata trial", 
+             "url":"VantageCloudLanding/rfk1714168651268.md"
+             }
+          , 
+          { 
              "id":"xmm1707187643364", 
              "title":"Welcome to VantageCloud Lake", 
              "description":"Discover the parts of the Console.", 
@@ -15,35 +22,20 @@
              }
           , 
           { 
-             "id":"jiy1707187681752", 
-             "title":"Create environments", 
-             "description":"Create your first primary cluster and database.", 
-             "icon":"server;covalent", 
-             "url":"VantageCloudLanding/jiy1707187681752.md"
-             }
-          , 
-          { 
-             "id":"krx1707187712212", 
-             "title":"Enable network access", 
-             "description":"Allow network connections to your environment.", 
-             "icon":"network_locked", 
-             "url":"VantageCloudLanding/krx1707187712212.md"
-             }
-          , 
-          { 
-             "id":"yyz1710373675172", 
-             "title":"Add database administrator", 
-             "description":"Add other users to the environment.", 
-             "icon":"person", 
-             "url":"VantageCloudLanding/yyz1710373675172.md"
-             }
-          , 
-          { 
              "id":"lam1707187864117", 
              "title":"Run your first query", 
              "description":"Use the Editor to run your first Vantage query.", 
              "icon":"script_sql", 
              "url":"VantageCloudLanding/lam1707187864117.md"
+             }
+          , 
+          { 
+             "id":"ybo1714845836541", 
+             "title":"Explore use cases", 
+             "description":"Run uses cases to experience VantageCloud Lake capabilities.", 
+             "icon":"book", 
+             "url":"VantageCloudLanding/ybo1714845836541.md", 
+             "childrenUrl":"bkm1640280721917"
              }
 
           ]
@@ -75,15 +67,6 @@
              }
           , 
           { 
-             "id":"nnr1714845584229", 
-             "title":"Single sign-on", 
-             "description":"Understand how to use your corporate identity provider to allow access to the environment.", 
-             "icon":"connected_identity", 
-             "url":"VantageCloudLanding/nnr1714845584229.md", 
-             "childrenUrl":"mxq1680183881642"
-             }
-          , 
-          { 
              "id":"wje1714845660801", 
              "title":"Data protection", 
              "description":"Discover ways to backup and restore your data.", 
@@ -110,21 +93,10 @@
              }
           , 
           { 
-             "id":"ybo1714845836541", 
-             "title":"Use cases", 
-             "description":"Run uses cases to experience VantageCloud Lake capabilities.", 
-             "icon":"book", 
-             "url":"VantageCloudLanding/ybo1714845836541.md", 
-             "childrenUrl":"bkm1640280721917"
-             }
-          , 
-          { 
-             "id":"uvi1714845877298", 
-             "title":"Resource monitoring", 
-             "description":"Learn how to review query details to better balance compute resources.", 
-             "icon":"multiline_chart", 
-             "url":"VantageCloudLanding/uvi1714845877298.md", 
-             "childrenUrl":"onj1682104977691"
+             "id":"oux1714177476353", 
+             "title":"Review the SQL reference guide", 
+             "description":"Find complete information on all SQL commands, functions, and database references", 
+             "url":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
 
           ]
@@ -177,7 +149,7 @@
              "id":"fmi1714832461484", 
              "title":"Technical support", 
              "description":"Create and manage service requests.", 
-             "icon":"contact_support", 
+             "icon":"support", 
              "url":"VantageCloudLanding/fmi1714832461484.md", 
              "childrenUrl":"https://support.teradata.com"
              }
