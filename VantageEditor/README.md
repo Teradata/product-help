@@ -1,6 +1,6 @@
-# Teradata Vantage Editor
+# Vantage Editor Desktop
 
-This location contains the in-product help (IPH) content for the Teradata Vantage Editor.
+This location contains the in-product help (IPH) content for the Vantage Editor Desktop.
 
 
 ---
