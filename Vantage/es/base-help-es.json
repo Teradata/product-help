@@ -314,6 +314,13 @@
                                      "description":"Crear una solicitud de enlace privado para QueryGrid", 
                                      "url":"Vantage/es/yml1671157089031.md"
                                      }
+                                  , 
+                                  { 
+                                     "id":"esw1713987246219", 
+                                     "title":"Configuración de JWT SSO", 
+                                     "description":"Propiedades del conector JWT SSO", 
+                                     "url":"Vantage/es/esw1713987246219.md"
+                                     }
 
                                   ]
 
@@ -485,6 +492,13 @@
                    "title":"Ver el historial de un plan de copia de seguridad", 
                    "description":"Ver trabajos de copia de seguridad y restauración pasados y actuales", 
                    "url":"Vantage/es/sus1659047241965.md"
+                   }
+                , 
+                { 
+                   "id":"iom1694462056775", 
+                   "title":"P+F de protección de datos", 
+                   "description":"Respuestas a preguntas comunes", 
+                   "url":"Vantage/es/iom1694462056775.md"
                    }
 
                 ]
@@ -853,6 +867,13 @@
              "title":"Protegrity", 
              "description":"Habilitar Protegrity en VantageCloud Lake", 
              "url":"Vantage/es/aql1707516911931.md"
+             }
+          , 
+          { 
+             "id":"ose1712360610524", 
+             "title":"SAS", 
+             "description":"Habilitar SAS en VantageCloud Lake", 
+             "url":"Vantage/es/ose1712360610524.md"
              }
 
           ]

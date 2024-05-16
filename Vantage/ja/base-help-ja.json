@@ -314,6 +314,13 @@
                                      "description":"QueryGridのプライベート リンク リクエストを作成", 
                                      "url":"Vantage/ja/yml1671157089031.md"
                                      }
+                                  , 
+                                  { 
+                                     "id":"esw1713987246219", 
+                                     "title":"JWT SSOを構成する", 
+                                     "description":"JWT SSOコネクタ プロパティ", 
+                                     "url":"Vantage/ja/esw1713987246219.md"
+                                     }
 
                                   ]
 
@@ -485,6 +492,13 @@
                    "title":"バックアップ計画履歴を表示する", 
                    "description":"過去と現在のバックアップと復元のジョブを表示する", 
                    "url":"Vantage/ja/sus1659047241965.md"
+                   }
+                , 
+                { 
+                   "id":"iom1694462056775", 
+                   "title":"データ保護に関するよくある質問", 
+                   "description":"よくある質問とその回答", 
+                   "url":"Vantage/ja/iom1694462056775.md"
                    }
 
                 ]
@@ -854,6 +868,13 @@
              "description":"VantageCloud LakeでProtegrityを有効にする", 
              "url":"Vantage/ja/aql1707516911931.md"
              }
+          , 
+          { 
+             "id":"ose1712360610524", 
+             "title":"SAS", 
+             "description":"VantageCloud LakeでSASを有効にする", 
+             "url":"Vantage/ja/ose1712360610524.md"
+             }
 
           ]
 
@@ -884,7 +905,7 @@
     , 
     { 
        "id":"bkm1640280721917", 
-       "title":"ユース ケース", 
+       "title":"ユースケース", 
        "description":"ユース ケースを実行してVantageCloud Lakeの機能を探索", 
        "icon":"book", 
        "url":"Vantage/ja/bkm1640280721917.md", 
