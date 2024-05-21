@@ -11,7 +11,7 @@
        "id":"tta1687442978234", 
        "title":"Erste Schritte", 
        "description":"Führen Sie zunächst diese Aufgaben aus", 
-       "icon":"Person", 
+       "icon":"person", 
        "url":"Vantage/de/tta1687442978234.md"
        }
     , 
@@ -758,7 +758,7 @@
              "id":"bkm1640280721917", 
              "title":"Anwendungsfälle", 
              "description":"Anwendungsfälle zum Kennenlernen von VantageCloud Lake-Funktionen ausführen", 
-             "icon":"Buch", 
+             "icon":"book", 
              "url":"Vantage/de/bkm1640280721917.md", 
              "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
              }

@@ -11,7 +11,7 @@
        "id":"tta1687442978234", 
        "title":"Comenzar", 
        "description":"Primero complete estas tareas", 
-       "icon":"persona", 
+       "icon":"person", 
        "url":"Vantage/es/tta1687442978234.md"
        }
     , 
@@ -758,7 +758,7 @@
              "id":"bkm1640280721917", 
              "title":"Casos de uso", 
              "description":"Ejecutar casos de uso para explorar las capacidades de VantageCloud Lake", 
-             "icon":"libro", 
+             "icon":"book", 
              "url":"Vantage/es/bkm1640280721917.md", 
              "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
              }
