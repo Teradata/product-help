@@ -2,8 +2,15 @@
     { 
        "id":"vje1715636280571", 
        "title":"Editor", 
-       "description":"Write (or build) and run SQL queries", 
+       "description":"Write and run SQL queries", 
        "url":"VantageEditor/vje1715636280571.md"
+       }
+    , 
+    { 
+       "id":"vdq1716512545309", 
+       "title":"Dependencies", 
+       "description":"See supported software and platform versions", 
+       "url":"VantageEditor/vdq1716512545309.md"
        }
     , 
     { 
@@ -15,8 +22,8 @@
     , 
     { 
        "id":"cjh1716338818364", 
-       "title":"Settings for Vantage Editor Desktop", 
-       "description":"Settings for Vantage Editor Desktop", 
+       "title":"Settings in Vantage Editor Desktop", 
+       "description":"Settings in Vantage Editor Desktop", 
        "url":"VantageEditor/cjh1716338818364.md"
        }
     , 
