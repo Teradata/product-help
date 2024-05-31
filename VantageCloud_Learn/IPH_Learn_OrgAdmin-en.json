@@ -143,7 +143,7 @@
              "description":"View how-tos, learn what's new, and follow step-by-step configuration best practices.", 
              "icon":"school", 
              "url":"VantageCloudLanding/gxj1707271369419.md", 
-             "childrenUrl":"Resource Center"
+             "childrenUrl":"resource-center"
              }
           , 
           { 
@@ -176,7 +176,7 @@
           { 
              "id":"fmi1714832461484", 
              "title":"Technical support", 
-             "description":"Create and manage service requests.", 
+             "description":"Get help with your trial.", 
              "icon":"support", 
              "url":"VantageCloudLanding/fmi1714832461484.md", 
              "childrenUrl":"https://support.teradata.com"
