@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"What's new", 
-       "description":"Discover the latest features and updates", 
+       "description":"Discover the latest features and updates.", 
        "icon":"new_releases", 
        "url":"Vantage/bab1682536172420.md"
        }
@@ -10,7 +10,7 @@
     { 
        "id":"tta1687442978234", 
        "title":"Get started", 
-       "description":"Complete these tasks first", 
+       "description":"Complete these tasks first.", 
        "icon":"person", 
        "url":"Vantage/tta1687442978234.md"
        }
@@ -18,7 +18,7 @@
     { 
        "id":"apw1640280478763", 
        "title":"Organization", 
-       "description":"Manage your VantageCloud Lake organization", 
+       "description":"Manage your VantageCloud Lake organization.", 
        "url":"Vantage/apw1640280478763.md", 
        "children":[
           { 
@@ -91,13 +91,13 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Environments", 
-       "description":"Load data, run queries, and more", 
+       "description":"Load data, run queries, and more.", 
        "url":"Vantage/sbt1640280496980.md", 
        "children":[
           { 
              "id":"qiv1640281527006", 
              "title":"Create an environment", 
-             "description":"Create an environment for your organization", 
+             "description":"Create an environment for your organization.", 
              "url":"Vantage/qiv1640281527006.md"
              }
           , 
@@ -519,14 +519,14 @@
     { 
        "id":"vmt1693932844043", 
        "title":"Compute resources", 
-       "description":"Understand the types", 
+       "description":"Understand the compute resource types.", 
        "url":"Vantage/vmt1693932844043.md"
        }
     , 
     { 
        "id":"onj1682104977691", 
        "title":"Consumption", 
-       "description":"View consumed compute and storage resources", 
+       "description":"View consumed compute and storage resources.", 
        "url":"Vantage/onj1682104977691.md", 
        "children":[
           { 
@@ -607,14 +607,14 @@
     { 
        "id":"vsb1703029847518", 
        "title":"Cost calculator", 
-       "description":"View the organization's total estimated consumption", 
+       "description":"View the organization's total estimated consumption.", 
        "url":"Vantage/vsb1703029847518.md"
        }
     , 
     { 
        "id":"jlf1663616946889", 
        "title":"Data sharing", 
-       "description":"Share tables and views with other users", 
+       "description":"Share tables and views with other users.", 
        "url":"Vantage/jlf1663616946889.md", 
        "children":[
           { 
@@ -683,14 +683,14 @@
     { 
        "id":"lxi1695933833104", 
        "title":"Load data", 
-       "description":"Load or access data", 
+       "description":"Load or access data.", 
        "url":"Vantage/lxi1695933833104.md"
        }
     , 
     { 
        "id":"xbg1640280430669", 
        "title":"Editor", 
-       "description":"Write (or build) and run SQL queries", 
+       "description":"Write (or build) and run SQL queries.", 
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
           { 
@@ -770,13 +770,20 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Queries", 
-       "description":"View and optimize queries", 
+       "description":"View and optimize queries.", 
        "url":"Vantage/ajr1640280560519.md", 
        "children":[
           { 
+             "id":"poc1712163264099", 
+             "title":"Monitor queries", 
+             "description":"Discover how to monitor Lake queries.", 
+             "url":"Vantage/poc1712163264099.md"
+             }
+          , 
+          { 
              "id":"zvd1688067459510", 
              "title":"Query details", 
-             "description":"Understand the information displayed for each query", 
+             "description":"Understand the information displayed for each query.", 
              "url":"Vantage/zvd1688067459510.md"
              }
 
@@ -787,7 +794,7 @@
     { 
        "id":"bgr1694118840100", 
        "title":"Data copy", 
-       "description":"Provision, configure, and run Data copy jobs", 
+       "description":"Provision, configure, and run Data copy jobs.", 
        "url":"Vantage/bgr1694118840100.md", 
        "children":[
           { 
@@ -859,7 +866,7 @@
     { 
        "id":"qpv1707514841101", 
        "title":"User defined functions", 
-       "description":"Connect to a third-party application for security", 
+       "description":"Connect to a third-party application for security.", 
        "url":"Vantage/qpv1707514841101.md", 
        "children":[
           { 
@@ -883,7 +890,7 @@
     { 
        "id":"klo1694115175906", 
        "title":"Account settings", 
-       "description":"Adjust your account settings such as appearance", 
+       "description":"Adjust your account settings such as appearance.", 
        "url":"Vantage/klo1694115175906.md", 
        "children":[
           { 
@@ -904,9 +911,16 @@
        }
     , 
     { 
+       "id":"pmg1709157026832", 
+       "title":"More tools", 
+       "description":"Set up and run Jupyter notebook demos.", 
+       "url":"Vantage/pmg1709157026832.md"
+       }
+    , 
+    { 
        "id":"bkm1640280721917", 
        "title":"Use cases", 
-       "description":"Run use cases to explore VantageCloud Lake capabilities", 
+       "description":"Run use cases to explore VantageCloud Lake capabilities.", 
        "icon":"book", 
        "url":"Vantage/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
@@ -915,7 +929,7 @@
     { 
        "id":"nhn1706907203900", 
        "title":"Documentation", 
-       "description":"Complete VantageCloud Lake documentation", 
+       "description":"Complete VantageCloud Lake documentation.", 
        "icon":"library_books", 
        "url":"Vantage/nhn1706907203900.md"
        }
@@ -923,8 +937,8 @@
     { 
        "id":"pkj1706907262368", 
        "title":"Technical support", 
-       "description":"Create and manage service requests", 
-       "icon":"contact_support", 
+       "description":"Create and manage service requests.", 
+       "icon":"support", 
        "url":"Vantage/pkj1706907262368.md"
        }
 
