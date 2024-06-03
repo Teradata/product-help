@@ -14,7 +14,7 @@ on:
 
 jobs:
   sftp-files-to-cdn-and-purge-cache:
-    runs-on: tc-pod-nonprod-002-53492c-0
+    runs-on: prod-publish
     container:
       image: ubuntu:latest
 
