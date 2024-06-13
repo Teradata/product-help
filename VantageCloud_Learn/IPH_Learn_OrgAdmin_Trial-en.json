@@ -4,13 +4,13 @@
        "title":"Get started", 
        "description":"Begin your VantageCloud experience.", 
        "icon":"person", 
-       "url":"VantageCloudLanding/uct1707186367384.md", 
+       "url":"VantageCloud_Learn/uct1707186367384.md", 
        "children":[
           { 
              "id":"rfk1714168651268", 
              "title":"Welcome to your VantageCloud Lake trial", 
              "description":"Get the most from your Teradata trial", 
-             "url":"VantageCloudLanding/rfk1714168651268.md"
+             "url":"VantageCloud_Learn/rfk1714168651268.md"
              }
           , 
           { 
@@ -18,7 +18,7 @@
              "title":"Welcome to VantageCloud Lake", 
              "description":"Discover the parts of the Console.", 
              "icon":"teradata;covalent", 
-             "url":"VantageCloudLanding/xmm1707187643364.md"
+             "url":"VantageCloud_Learn/xmm1707187643364.md"
              }
           , 
           { 
@@ -26,7 +26,7 @@
              "title":"Explore use cases", 
              "description":"Run uses cases to experience VantageCloud Lake capabilities.", 
              "icon":"book", 
-             "url":"VantageCloudLanding/ybo1714845836541.md", 
+             "url":"VantageCloud_Learn/ybo1714845836541.md", 
              "childrenUrl":"bkm1640280721917"
              }
 
@@ -39,21 +39,21 @@
        "title":"Run your first query", 
        "description":"Use the Editor to run your first Vantage query.", 
        "icon":"script_sql", 
-       "url":"VantageCloudLanding/lam1707187864117.md"
+       "url":"VantageCloud_Learn/lam1707187864117.md"
        }
     , 
     { 
        "id":"ubu1707187832449", 
        "title":"Help content", 
        "description":"Learn what to do next", 
-       "url":"VantageCloudLanding/ubu1707187832449.md", 
+       "url":"VantageCloud_Learn/ubu1707187832449.md", 
        "children":[
           { 
              "id":"qlu1714845432088", 
              "title":"Compute resources", 
              "description":"Learn about compute resources to separate processing, monitoring, and billing", 
              "icon":"compute_cluster_group", 
-             "url":"VantageCloudLanding/qlu1714845432088.md", 
+             "url":"VantageCloud_Learn/qlu1714845432088.md", 
              "childrenUrl":"nmr1658424425362"
              }
           , 
@@ -62,7 +62,7 @@
              "title":"Database users", 
              "description":"See how to add other users to the environment's database.", 
              "icon":"group", 
-             "url":"VantageCloudLanding/ujr1714845520425.md", 
+             "url":"VantageCloud_Learn/ujr1714845520425.md", 
              "childrenUrl":"wxe1659392685092"
              }
           , 
@@ -71,7 +71,7 @@
              "title":"Data protection", 
              "description":"Discover ways to backup and restore your data.", 
              "icon":"settings_backup_restore", 
-             "url":"VantageCloudLanding/wje1714845660801.md", 
+             "url":"VantageCloud_Learn/wje1714845660801.md", 
              "childrenUrl":"jrq1640280690304"
              }
           , 
@@ -80,7 +80,7 @@
              "title":"Load data", 
              "description":"Discover ways to load and access your data.", 
              "icon":"database_migrate", 
-             "url":"VantageCloudLanding/bbh1714845725516.md", 
+             "url":"VantageCloud_Learn/bbh1714845725516.md", 
              "childrenUrl":"jwm1694121113608"
              }
           , 
@@ -89,7 +89,7 @@
              "title":"Connect your own tools", 
              "description":"Use the tool of your choice with your Vantage environment.", 
              "icon":"build", 
-             "url":"VantageCloudLanding/zvp1714845785474.md"
+             "url":"VantageCloud_Learn/zvp1714845785474.md"
              }
           , 
           { 
@@ -107,14 +107,14 @@
        "id":"sgl1707186427875", 
        "title":"Additional resources", 
        "description":"Where to go for more help.", 
-       "url":"VantageCloudLanding/sgl1707186427875.md", 
+       "url":"VantageCloud_Learn/sgl1707186427875.md", 
        "children":[
           { 
              "id":"gxj1707271369419", 
              "title":"Resource center", 
              "description":"View how-tos, learn what's new, and follow step-by-step configuration best practices.", 
              "icon":"school", 
-             "url":"VantageCloudLanding/gxj1707271369419.md", 
+             "url":"VantageCloud_Learn/gxj1707271369419.md", 
              "childrenUrl":"resource-center"
              }
           , 
@@ -123,7 +123,7 @@
              "title":"What's new", 
              "description":"Learn about new features and the latest changes.", 
              "icon":"new_releases", 
-             "url":"VantageCloudLanding/bnn1707271398245.md", 
+             "url":"VantageCloud_Learn/bnn1707271398245.md", 
              "childrenUrl":"bab1682536172420"
              }
           , 
@@ -132,7 +132,7 @@
              "title":"Technical documentation", 
              "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
              "icon":"library_books", 
-             "url":"VantageCloudLanding/ahx1707271934625.md", 
+             "url":"VantageCloud_Learn/ahx1707271934625.md", 
              "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
           , 
@@ -141,7 +141,7 @@
              "title":"Downloads & drivers", 
              "description":"Find tools to improve your workflow with Vantage.", 
              "icon":"download", 
-             "url":"VantageCloudLanding/hjw1710373993637.md", 
+             "url":"VantageCloud_Learn/hjw1710373993637.md", 
              "childrenUrl":"https://downloads.teradata.com/"
              }
           , 
@@ -150,7 +150,7 @@
              "title":"Technical support", 
              "description":"Get help with your trial.", 
              "icon":"support", 
-             "url":"VantageCloudLanding/fmi1714832461484.md", 
+             "url":"VantageCloud_Learn/fmi1714832461484.md", 
              "childrenUrl":"https://support.teradata.com"
              }
           , 
@@ -159,7 +159,7 @@
              "title":"Vantage community", 
              "description":"Connect with other VantageCloud Lake users.", 
              "icon":"cloud", 
-             "url":"VantageCloudLanding/jfl1714832551578.md", 
+             "url":"VantageCloud_Learn/jfl1714832551578.md", 
              "childrenUrl":"https://support.teradata.com/community"
              }
 
