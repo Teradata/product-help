@@ -37,17 +37,17 @@
              "icon":"person", 
              "url":"VantageCloudLanding/yyz1710373675172.md"
              }
-          , 
-          { 
-             "id":"lam1707187864117", 
-             "title":"Run your first query", 
-             "description":"Use the Editor to run your first Vantage query.", 
-             "icon":"script_sql", 
-             "url":"VantageCloudLanding/lam1707187864117.md"
-             }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"lam1707187864117", 
+       "title":"Run your first query", 
+       "description":"Use the Editor to run your first Vantage query.", 
+       "icon":"script_sql", 
+       "url":"VantageCloudLanding/lam1707187864117.md"
        }
     , 
     { 
