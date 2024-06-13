@@ -22,14 +22,6 @@
              }
           , 
           { 
-             "id":"lam1707187864117", 
-             "title":"Run your first query", 
-             "description":"Use the Editor to run your first Vantage query.", 
-             "icon":"script_sql", 
-             "url":"VantageCloudLanding/lam1707187864117.md"
-             }
-          , 
-          { 
              "id":"ybo1714845836541", 
              "title":"Explore use cases", 
              "description":"Run uses cases to experience VantageCloud Lake capabilities.", 
@@ -40,6 +32,14 @@
 
           ]
 
+       }
+    , 
+    { 
+       "id":"lam1707187864117", 
+       "title":"Run your first query", 
+       "description":"Use the Editor to run your first Vantage query.", 
+       "icon":"script_sql", 
+       "url":"VantageCloudLanding/lam1707187864117.md"
        }
     , 
     { 
@@ -115,7 +115,7 @@
              "description":"View how-tos, learn what's new, and follow step-by-step configuration best practices.", 
              "icon":"school", 
              "url":"VantageCloudLanding/gxj1707271369419.md", 
-             "childrenUrl":"Resource Center"
+             "childrenUrl":"resource-center"
              }
           , 
           { 
@@ -148,7 +148,7 @@
           { 
              "id":"fmi1714832461484", 
              "title":"Technical support", 
-             "description":"Create and manage service requests.", 
+             "description":"Get help with your trial.", 
              "icon":"support", 
              "url":"VantageCloudLanding/fmi1714832461484.md", 
              "childrenUrl":"https://support.teradata.com"
