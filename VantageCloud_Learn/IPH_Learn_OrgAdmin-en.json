@@ -46,7 +46,7 @@
        "id":"lam1707187864117", 
        "title":"Run your first query", 
        "description":"Use the Editor to run your first Vantage query.", 
-       "icon":"script_sql", 
+       "icon":"script_sql;covalent", 
        "url":"VantageCloud_Learn/lam1707187864117.md"
        }
     , 
