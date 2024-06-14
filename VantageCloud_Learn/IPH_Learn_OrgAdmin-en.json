@@ -60,7 +60,7 @@
              "id":"qlu1714845432088", 
              "title":"Compute resources", 
              "description":"Learn about compute resources to separate processing, monitoring, and billing", 
-             "icon":"compute_cluster_group", 
+             "icon":"compute_groups", 
              "url":"VantageCloud_Learn/qlu1714845432088.md", 
              "childrenUrl":"nmr1658424425362"
              }
@@ -96,7 +96,7 @@
              "id":"bbh1714845725516", 
              "title":"Load data", 
              "description":"Discover ways to load and access your data.", 
-             "icon":"database_migrate", 
+             "icon":"database_synced", 
              "url":"VantageCloud_Learn/bbh1714845725516.md", 
              "childrenUrl":"jwm1694121113608"
              }
@@ -123,7 +123,7 @@
              "id":"uvi1714845877298", 
              "title":"Resource monitoring", 
              "description":"Learn how to review query details to better balance compute resources.", 
-             "icon":"multiline_chart", 
+             "icon":"show_chart", 
              "url":"VantageCloud_Learn/uvi1714845877298.md", 
              "childrenUrl":"onj1682104977691"
              }
@@ -142,7 +142,7 @@
              "id":"gxj1707271369419", 
              "title":"Resource center", 
              "description":"View how-tos, learn what's new, and follow step-by-step configuration best practices.", 
-             "icon":"live_help_outlined", 
+             "icon":"live_help", 
              "url":"VantageCloud_Learn/gxj1707271369419.md", 
              "childrenUrl":"resource-center"
              }
