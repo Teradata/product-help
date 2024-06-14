@@ -60,7 +60,7 @@
              "id":"qlu1714845432088", 
              "title":"Compute resources", 
              "description":"Learn about compute resources to separate processing, monitoring, and billing", 
-             "icon":"compute_groups", 
+             "icon":"compute_groups;covalent", 
              "url":"VantageCloud_Learn/qlu1714845432088.md", 
              "childrenUrl":"nmr1658424425362"
              }
