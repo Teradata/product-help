@@ -38,7 +38,7 @@
        "id":"lam1707187864117", 
        "title":"Run your first query", 
        "description":"Use the Editor to run your first Vantage query.", 
-       "icon":"script_sql", 
+       "icon":"script_sql;covalent", 
        "url":"VantageCloud_Learn/lam1707187864117.md"
        }
     , 
@@ -52,7 +52,7 @@
              "id":"qlu1714845432088", 
              "title":"Compute resources", 
              "description":"Learn about compute resources to separate processing, monitoring, and billing", 
-             "icon":"compute_cluster_group", 
+             "icon":"compute_groups;covalent", 
              "url":"VantageCloud_Learn/qlu1714845432088.md", 
              "childrenUrl":"nmr1658424425362"
              }
@@ -79,7 +79,7 @@
              "id":"bbh1714845725516", 
              "title":"Load data", 
              "description":"Discover ways to load and access your data.", 
-             "icon":"database_migrate", 
+             "icon":"database_synced;covalent", 
              "url":"VantageCloud_Learn/bbh1714845725516.md", 
              "childrenUrl":"jwm1694121113608"
              }
@@ -89,7 +89,7 @@
              "title":"Connect your own tools", 
              "description":"Use the tool of your choice with your Vantage environment.", 
              "icon":"build", 
-             "url":"VantageCloud_Learn/zvp1714845785474.md",
+             "url":"VantageCloud_Learn/zvp1714845785474.md", 
              "childrenUrl":"pmg1709157026832"
              }
           , 
@@ -114,7 +114,7 @@
              "id":"gxj1707271369419", 
              "title":"Resource center", 
              "description":"View how-tos, learn what's new, and follow step-by-step configuration best practices.", 
-             "icon":"live_help_outlined", 
+             "icon":"live_help", 
              "url":"VantageCloud_Learn/gxj1707271369419.md", 
              "childrenUrl":"resource-center"
              }

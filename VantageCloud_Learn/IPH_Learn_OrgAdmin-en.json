@@ -78,7 +78,7 @@
              "id":"nnr1714845584229", 
              "title":"Single sign-on", 
              "description":"Understand how to use your corporate identity provider to allow access to the environment.", 
-             "icon":"connected_identity", 
+             "icon":"connected_identity;covalent", 
              "url":"VantageCloud_Learn/nnr1714845584229.md", 
              "childrenUrl":"mxq1680183881642"
              }
@@ -96,7 +96,7 @@
              "id":"bbh1714845725516", 
              "title":"Load data", 
              "description":"Discover ways to load and access your data.", 
-             "icon":"database_synced", 
+             "icon":"database_synced;covalent", 
              "url":"VantageCloud_Learn/bbh1714845725516.md", 
              "childrenUrl":"jwm1694121113608"
              }
@@ -106,7 +106,7 @@
              "title":"Connect your own tools", 
              "description":"Use the tool of your choice with your Vantage environment.", 
              "icon":"build", 
-             "url":"VantageCloud_Learn/zvp1714845785474.md",
+             "url":"VantageCloud_Learn/zvp1714845785474.md", 
              "childrenUrl":"pmg1709157026832"
              }
           , 
