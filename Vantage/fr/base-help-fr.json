@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"Nouveautés", 
-       "description":"Découvrir les dernières fonctionnalités et mises à jour", 
+       "description":"Découvrez les dernières fonctionnalités et mises à jour.", 
        "icon":"new_releases", 
        "url":"Vantage/fr/bab1682536172420.md"
        }
@@ -10,7 +10,7 @@
     { 
        "id":"tta1687442978234", 
        "title":"Prise en main", 
-       "description":"Effectuer d'abord ces tâches", 
+       "description":"Effectuez d'abord ces tâches.", 
        "icon":"person", 
        "url":"Vantage/fr/tta1687442978234.md"
        }
@@ -18,7 +18,7 @@
     { 
        "id":"apw1640280478763", 
        "title":"Organisation", 
-       "description":"Gérer votre organisation VantageCloud Lake", 
+       "description":"Gérez votre organisation VantageCloud Lake.", 
        "url":"Vantage/fr/apw1640280478763.md", 
        "children":[
           { 
@@ -91,13 +91,13 @@
     { 
        "id":"sbt1640280496980", 
        "title":"Environnements", 
-       "description":"Charger des données, exécuter des requêtes et plus encore", 
+       "description":"Chargez des données, exécutez des requêtes et plus encore.", 
        "url":"Vantage/fr/sbt1640280496980.md", 
        "children":[
           { 
              "id":"qiv1640281527006", 
              "title":"Créer un environnement", 
-             "description":"Créer un environnement pour votre environnement", 
+             "description":"Créez un environnement pour votre organisation.", 
              "url":"Vantage/fr/qiv1640281527006.md"
              }
           , 
@@ -519,14 +519,14 @@
     { 
        "id":"vmt1693932844043", 
        "title":"Ressources de calcul", 
-       "description":"Comprendre les types", 
+       "description":"Comprenez les types de ressources de calcul.", 
        "url":"Vantage/fr/vmt1693932844043.md"
        }
     , 
     { 
        "id":"onj1682104977691", 
        "title":"Consommation", 
-       "description":"Afficher les ressources de calcul et de stockage consommées", 
+       "description":"Affichez les ressources de calcul et de stockage consommées.", 
        "url":"Vantage/fr/onj1682104977691.md", 
        "children":[
           { 
@@ -607,14 +607,14 @@
     { 
        "id":"vsb1703029847518", 
        "title":"Calculateur de coûts", 
-       "description":"Afficher l'estimation de la consommation totale de l'organisation", 
+       "description":"Affichez l'estimation de la consommation totale de l'organisation.", 
        "url":"Vantage/fr/vsb1703029847518.md"
        }
     , 
     { 
        "id":"jlf1663616946889", 
        "title":"Partage de données", 
-       "description":"Partager les tables et les vues avec d'autres utilisateurs", 
+       "description":"Partagez les tables et les vues avec d'autres utilisateurs.", 
        "url":"Vantage/fr/jlf1663616946889.md", 
        "children":[
           { 
@@ -683,14 +683,14 @@
     { 
        "id":"lxi1695933833104", 
        "title":"Charger les données", 
-       "description":"Charger les données ou y accéder", 
+       "description":"Chargez les données ou accédez-y.", 
        "url":"Vantage/fr/lxi1695933833104.md"
        }
     , 
     { 
        "id":"xbg1640280430669", 
        "title":"Éditeur", 
-       "description":"Écrire (ou générer) et exécuter des requêtes SQL", 
+       "description":"Écrivez (ou générez) et exécutez des requêtes SQL.", 
        "url":"Vantage/fr/xbg1640280430669.md", 
        "children":[
           { 
@@ -770,13 +770,20 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Requêtes", 
-       "description":"Gérer et optimiser les requêtes", 
+       "description":"Affichez et optimisez les requêtes.", 
        "url":"Vantage/fr/ajr1640280560519.md", 
        "children":[
           { 
+             "id":"poc1712163264099", 
+             "title":"Surveiller les requêtes", 
+             "description":"Découvrez comment surveiller les requêtes Lake.", 
+             "url":"Vantage/fr/poc1712163264099.md"
+             }
+          , 
+          { 
              "id":"zvd1688067459510", 
              "title":"Détails de la requête", 
-             "description":"Comprendre les informations affichées pour chaque requête", 
+             "description":"Comprenez les informations affichées pour chaque requête.", 
              "url":"Vantage/fr/zvd1688067459510.md"
              }
 
@@ -787,7 +794,7 @@
     { 
        "id":"bgr1694118840100", 
        "title":"データ コピー", 
-       "description":"Provisionner, configurer et exécuter des tâches de copie de données", 
+       "description":"Provisionnez, configurez et exécutez des tâches de copie de données.", 
        "url":"Vantage/fr/bgr1694118840100.md", 
        "children":[
           { 
@@ -859,7 +866,7 @@
     { 
        "id":"qpv1707514841101", 
        "title":"Fonctions définies par l'utilisateur", 
-       "description":"Se connecter à une application tierce pour la sécurité", 
+       "description":"Connectez-vous à une application tierce pour la sécurité.", 
        "url":"Vantage/fr/qpv1707514841101.md", 
        "children":[
           { 
@@ -883,7 +890,7 @@
     { 
        "id":"klo1694115175906", 
        "title":"Paramètres du compte", 
-       "description":"Ajuster les paramètres de votre compte, tels que l'apparence", 
+       "description":"Ajustez les paramètres de votre compte, tels que l'apparence.", 
        "url":"Vantage/fr/klo1694115175906.md", 
        "children":[
           { 
@@ -904,6 +911,13 @@
        }
     , 
     { 
+       "id":"pmg1709157026832", 
+       "title":"Plus d'outils", 
+       "description":"Configurez et exécutez les démos des blocs-notes Jupyter.", 
+       "url":"Vantage/fr/pmg1709157026832.md"
+       }
+    , 
+    { 
        "id":"bkm1640280721917", 
        "title":"Cas d'utilisation", 
        "description":"Exécuter des cas d'utilisation pour explorer les fonctionnalités de VantageCloud Lake", 
@@ -915,7 +929,7 @@
     { 
        "id":"nhn1706907203900", 
        "title":"Documentation", 
-       "description":"Documentation de VantageCloud Lake complète", 
+       "description":"Documentation de VantageCloud Lake complète.", 
        "icon":"library_books", 
        "url":"Vantage/fr/nhn1706907203900.md"
        }
@@ -923,8 +937,8 @@
     { 
        "id":"pkj1706907262368", 
        "title":"Assistance technique", 
-       "description":"Créer et gérer les demandes de services", 
-       "icon":"contact_support", 
+       "description":"Créez et gérez les demandes de services.", 
+       "icon":"assistance", 
        "url":"Vantage/fr/pkj1706907262368.md"
        }
 
