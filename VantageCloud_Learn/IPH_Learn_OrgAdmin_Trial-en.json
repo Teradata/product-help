@@ -3,13 +3,13 @@
        "id":"uct1707186367384", 
        "title":"Get started", 
        "description":"Begin your VantageCloud experience.", 
-       "icon":"person", 
        "url":"VantageCloud_Learn/uct1707186367384.md", 
        "children":[
           { 
              "id":"rfk1714168651268", 
              "title":"Welcome to your VantageCloud Lake trial", 
              "description":"Get the most from your Teradata trial", 
+              "icon":"person",
              "url":"VantageCloud_Learn/rfk1714168651268.md"
              }
           , 

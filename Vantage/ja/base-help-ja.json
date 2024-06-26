@@ -2,7 +2,7 @@
     { 
        "id":"bab1682536172420", 
        "title":"最新情報", 
-       "description":"最新の機能やアップデートについて学習", 
+       "description":"最新の機能やアップデートについて学習します。", 
        "icon":"new_releases", 
        "url":"Vantage/ja/bab1682536172420.md"
        }
@@ -10,7 +10,7 @@
     { 
        "id":"tta1687442978234", 
        "title":"作業を開始", 
-       "description":"まずこれらのタスクを完了してください", 
+       "description":"まずこれらのタスクを完了してください。", 
        "icon":"person", 
        "url":"Vantage/ja/tta1687442978234.md"
        }
@@ -18,7 +18,7 @@
     { 
        "id":"apw1640280478763", 
        "title":"組織", 
-       "description":"VantageCloud Lake利用組織の管理", 
+       "description":"VantageCloud Lake利用組織を管理します。", 
        "url":"Vantage/ja/apw1640280478763.md", 
        "children":[
           { 
@@ -91,13 +91,13 @@
     { 
        "id":"sbt1640280496980", 
        "title":"環境", 
-       "description":"データのロード、クエリーの実行など", 
+       "description":"データの読み込み、クエリの実行などです。", 
        "url":"Vantage/ja/sbt1640280496980.md", 
        "children":[
           { 
              "id":"qiv1640281527006", 
              "title":"環境の作成", 
-             "description":"自分の組織の環境を作成する", 
+             "description":"自分の組織の環境を作成します。", 
              "url":"Vantage/ja/qiv1640281527006.md"
              }
           , 
@@ -519,14 +519,14 @@
     { 
        "id":"vmt1693932844043", 
        "title":"コンピューティング リソース", 
-       "description":"タイプを理解する", 
+       "description":"コンピューティング リソースのタイプについて理解します。", 
        "url":"Vantage/ja/vmt1693932844043.md"
        }
     , 
     { 
        "id":"onj1682104977691", 
        "title":"消費", 
-       "description":"コンピューティングとストレージのリソース消費量を表示する", 
+       "description":"コンピューティングとストレージのリソース消費量を表示します。", 
        "url":"Vantage/ja/onj1682104977691.md", 
        "children":[
           { 
@@ -607,14 +607,14 @@
     { 
        "id":"vsb1703029847518", 
        "title":"コスト計算機", 
-       "description":"組織の推定合計消費量を表示", 
+       "description":"組織の推定合計消費量を表示します。", 
        "url":"Vantage/ja/vsb1703029847518.md"
        }
     , 
     { 
        "id":"jlf1663616946889", 
        "title":"データ共有", 
-       "description":"他のユーザーとテーブルやビューを共有する", 
+       "description":"他のユーザーとテーブルやビューを共有します。", 
        "url":"Vantage/ja/jlf1663616946889.md", 
        "children":[
           { 
@@ -683,14 +683,14 @@
     { 
        "id":"lxi1695933833104", 
        "title":"データをロードする", 
-       "description":"データをロードする、またはデータにアクセスする", 
+       "description":"データをロード、またはデータにアクセスします。", 
        "url":"Vantage/ja/lxi1695933833104.md"
        }
     , 
     { 
        "id":"xbg1640280430669", 
        "title":"エディタ", 
-       "description":"SQLクエリーを作成(または構築)して実行する", 
+       "description":"SQLクエリを作成 (または構築) して実行します。", 
        "url":"Vantage/ja/xbg1640280430669.md", 
        "children":[
           { 
@@ -770,13 +770,20 @@
     { 
        "id":"ajr1640280560519", 
        "title":"Query", 
-       "description":"クエリーの表示と最適化", 
+       "description":"クエリの表示と最適化を行います。", 
        "url":"Vantage/ja/ajr1640280560519.md", 
        "children":[
           { 
+             "id":"poc1712163264099", 
+             "title":"クエリを監視する", 
+             "description":"Lakeクエリを監視する方法を学習します。", 
+             "url":"Vantage/ja/poc1712163264099.md"
+             }
+          , 
+          { 
              "id":"zvd1688067459510", 
              "title":"クエリーの詳細", 
-             "description":"各クエリーに対して表示される情報を理解する", 
+             "description":"各クエリに対して表示される情報を理解します。", 
              "url":"Vantage/ja/zvd1688067459510.md"
              }
 
@@ -787,7 +794,7 @@
     { 
        "id":"bgr1694118840100", 
        "title":"データ コピー", 
-       "description":"データ コピー ジョブをプロビジョン、構成および実行する", 
+       "description":"データ コピー ジョブをプロビジョン、構成および実行します。", 
        "url":"Vantage/ja/bgr1694118840100.md", 
        "children":[
           { 
@@ -859,7 +866,7 @@
     { 
        "id":"qpv1707514841101", 
        "title":"ユーザー定義関数", 
-       "description":"セキュリティのためのサードパーティ製アプリケーションに接続", 
+       "description":"セキュリティのためのサードパーティ製アプリケーションに接続します。", 
        "url":"Vantage/ja/qpv1707514841101.md", 
        "children":[
           { 
@@ -883,7 +890,7 @@
     { 
        "id":"klo1694115175906", 
        "title":"アカウント設定", 
-       "description":"外観などのアカウント設定を調整", 
+       "description":"外観などのアカウント設定を調整します。", 
        "url":"Vantage/ja/klo1694115175906.md", 
        "children":[
           { 
@@ -904,6 +911,13 @@
        }
     , 
     { 
+       "id":"pmg1709157026832", 
+       "title":"その他のツール", 
+       "description":"Jupyter Notebookのデモをセットアップして実行します。", 
+       "url":"Vantage/ja/pmg1709157026832.md"
+       }
+    , 
+    { 
        "id":"bkm1640280721917", 
        "title":"ユースケース", 
        "description":"ユース ケースを実行してVantageCloud Lakeの機能を探索", 
@@ -915,7 +929,7 @@
     { 
        "id":"nhn1706907203900", 
        "title":"ドキュメント", 
-       "description":"VantageCloud Lakeドキュメントに記入", 
+       "description":"VantageCloud Lakeドキュメントを完成させます。", 
        "icon":"library_books", 
        "url":"Vantage/ja/nhn1706907203900.md"
        }
@@ -923,8 +937,8 @@
     { 
        "id":"pkj1706907262368", 
        "title":"技術サポート", 
-       "description":"サービス リクエストを作成および管理", 
-       "icon":"contact_support", 
+       "description":"サービス リクエストを作成および管理します。", 
+       "icon":"サポート", 
        "url":"Vantage/ja/pkj1706907262368.md"
        }
 

@@ -177,7 +177,7 @@
           { 
              "id":"fmi1714832461484", 
              "title":"Technical support", 
-             "description":"Get help with your trial.", 
+             "description":"Create and manage service requests.", 
              "icon":"support", 
              "url":"VantageCloud_Learn/fmi1714832461484.md", 
              "childrenUrl":"https://support.teradata.com"
