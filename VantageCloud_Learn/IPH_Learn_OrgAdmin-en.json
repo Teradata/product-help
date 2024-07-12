@@ -31,23 +31,15 @@
              }
           , 
           { 
-             "id":"yyz1710373675172", 
-             "title":"Add database administrator", 
-             "description":"Add other users to the environment.", 
-             "icon":"person", 
-             "url":"VantageCloud_Learn/yyz1710373675172.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"lam1707187864117", 
+             "id":"lam1707187864117", 
        "title":"Run your first query", 
        "description":"Use the Editor to run your first Vantage query.", 
        "icon":"script_sql;covalent", 
        "url":"VantageCloud_Learn/lam1707187864117.md"
+             }
+
+          ]
+
        }
     , 
     { 
