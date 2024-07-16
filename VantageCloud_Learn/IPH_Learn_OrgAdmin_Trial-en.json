@@ -2,14 +2,15 @@
     { 
        "id":"uct1707186367384", 
        "title":"Get started", 
-       "description":"Begin your VantageCloud experience.", 
+       "description":"Begin your VantageCloud Lake experience.", 
+       "icon":"person", 
        "url":"VantageCloud_Learn/uct1707186367384.md", 
        "children":[
           { 
              "id":"rfk1714168651268", 
              "title":"VantageCloud Lake Trial information", 
              "description":"Get the most from your trial experience.", 
-              "icon":"info",
+             "icon":"info", 
              "url":"VantageCloud_Learn/rfk1714168651268.md"
              }
           , 
@@ -19,6 +20,14 @@
              "description":"Discover the parts of the Console.", 
              "icon":"teradata;covalent", 
              "url":"VantageCloud_Learn/xmm1707187643364.md"
+             }
+          , 
+          { 
+             "id":"lam1707187864117", 
+             "title":"Run your first query", 
+             "description":"Use the Editor to run your first Vantage query.", 
+             "icon":"script_sql;covalent", 
+             "url":"VantageCloud_Learn/lam1707187864117.md"
              }
           , 
           { 
@@ -35,17 +44,9 @@
        }
     , 
     { 
-       "id":"lam1707187864117", 
-       "title":"Run your first query", 
-       "description":"Use the Editor to run your first Vantage query.", 
-       "icon":"script_sql;covalent", 
-       "url":"VantageCloud_Learn/lam1707187864117.md"
-       }
-    , 
-    { 
        "id":"ubu1707187832449", 
        "title":"Help content", 
-       "description":"Learn what to do next", 
+       "description":"Learn what to do next.", 
        "url":"VantageCloud_Learn/ubu1707187832449.md", 
        "children":[
           { 

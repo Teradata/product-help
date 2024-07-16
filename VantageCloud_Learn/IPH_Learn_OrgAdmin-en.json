@@ -2,7 +2,7 @@
     { 
        "id":"uct1707186367384", 
        "title":"Get started", 
-       "description":"Begin your VantageCloud experience.", 
+       "description":"Begin your VantageCloud Lake experience.", 
        "icon":"person", 
        "url":"VantageCloud_Learn/uct1707186367384.md", 
        "children":[
@@ -11,7 +11,28 @@
              "title":"Welcome to VantageCloud Lake", 
              "description":"Discover the parts of the Console.", 
              "icon":"teradata;covalent", 
-             "url":"VantageCloud_Learn/xmm1707187643364.md"
+             "url":"VantageCloud_Learn/xmm1707187643364.md", 
+             "children":[
+                { 
+                   "id":"auh1721168357818", 
+                   "title":"Main menu", 
+                   "url":"VantageCloud_Learn/auh1721168357818.md"
+                   }
+                , 
+                { 
+                   "id":"njy1721168384549", 
+                   "title":"Toolbar", 
+                   "url":"VantageCloud_Learn/njy1721168384549.md"
+                   }
+                , 
+                { 
+                   "id":"xex1721168413281", 
+                   "title":"Learn resources", 
+                   "url":"VantageCloud_Learn/xex1721168413281.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -64,14 +85,6 @@
 
                 ]
 
-             }
-          , 
-          { 
-             "id":"yyz1710373675172", 
-             "title":"Add database administrator", 
-             "description":"Add other users to the environment.", 
-             "icon":"person", 
-             "url":"VantageCloud_Learn/yyz1710373675172.md"
              }
           , 
           { 
