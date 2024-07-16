@@ -65,28 +65,28 @@
                 ]
 
              }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"lam1707187864117", 
-       "title":"Run your first query", 
-       "description":"Use the Editor to run your first Vantage query.", 
-       "icon":"script_sql;covalent", 
-       "url":"VantageCloud_Learn/lam1707187864117.md", 
-       "children":[
-          { 
-             "id":"boe1721092788909", 
-             "title":"Write the query", 
-             "url":"VantageCloud_Learn/boe1721092788909.md"
-             }
           , 
           { 
-             "id":"ydj1721092986132", 
-             "title":"Visualize the results", 
-             "url":"VantageCloud_Learn/ydj1721092986132.md"
+             "id":"lam1707187864117", 
+             "title":"Run your first query", 
+             "description":"Use the Editor to run your first Vantage query.", 
+             "icon":"script_sql;covalent", 
+             "url":"VantageCloud_Learn/lam1707187864117.md", 
+             "children":[
+                { 
+                   "id":"boe1721092788909", 
+                   "title":"Write the query", 
+                   "url":"VantageCloud_Learn/boe1721092788909.md"
+                   }
+                , 
+                { 
+                   "id":"ydj1721092986132", 
+                   "title":"Visualize the results", 
+                   "url":"VantageCloud_Learn/ydj1721092986132.md"
+                   }
+
+                ]
+
              }
 
           ]
