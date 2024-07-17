@@ -18,7 +18,6 @@
              "id":"apv1721232251932", 
              "title":"Welcome to VantageCloud Lake", 
              "description":"Discover the parts of the Console.", 
-             "icon":"teradata;covalent", 
              "url":"Vantage/apv1721232251932.md", 
              "children":[
                 { 
@@ -79,7 +78,6 @@
                    "id":"cqk1721231159841", 
                    "title":"Enable network access", 
                    "description":"Allow network connections to your environment.", 
-                   "icon":"network_locked", 
                    "url":"Vantage/cqk1721231159841.md", 
                    "children":[
                       { 
@@ -102,7 +100,6 @@
                    "id":"ahj1695153106508", 
                    "title":"Run your first query", 
                    "description":"Use the Editor to run your first Vantage query.", 
-                   "icon":"script_sql;covalent", 
                    "url":"Vantage/ahj1695153106508.md", 
                    "children":[
                       { 
