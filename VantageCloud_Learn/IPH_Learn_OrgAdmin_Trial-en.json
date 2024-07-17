@@ -20,6 +20,7 @@
              "description":"Discover the parts of the Console.", 
              "icon":"teradata;covalent", 
              "url":"VantageCloud_Learn/xmm1707187643364.md", 
+             "childrenUrl":"apv1721232251932", 
              "children":[
                 { 
                    "id":"auh1721168357818", 
@@ -49,6 +50,7 @@
              "description":"Use the Editor to run your first Vantage query.", 
              "icon":"script_sql;covalent", 
              "url":"VantageCloud_Learn/lam1707187864117.md", 
+             "childrenUrl":"ahj1695153106508", 
              "children":[
                 { 
                    "id":"boe1721092788909", 
@@ -134,7 +136,8 @@
              "id":"oux1714177476353", 
              "title":"Review the SQL reference guide", 
              "description":"Find complete information on all SQL commands, functions, and database references", 
-             "url":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
+             "url":"VantageCloud_Learn/oux1714177476353.md", 
+             "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
 
           ]

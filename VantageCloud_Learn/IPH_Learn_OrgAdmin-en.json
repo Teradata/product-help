@@ -12,27 +12,7 @@
              "description":"Discover the parts of the Console.", 
              "icon":"teradata;covalent", 
              "url":"VantageCloud_Learn/xmm1707187643364.md", 
-             "children":[
-                { 
-                   "id":"auh1721168357818", 
-                   "title":"Main menu", 
-                   "url":"VantageCloud_Learn/auh1721168357818.md"
-                   }
-                , 
-                { 
-                   "id":"njy1721168384549", 
-                   "title":"Toolbar", 
-                   "url":"VantageCloud_Learn/njy1721168384549.md"
-                   }
-                , 
-                { 
-                   "id":"xex1721168413281", 
-                   "title":"Learn resources", 
-                   "url":"VantageCloud_Learn/xex1721168413281.md"
-                   }
-
-                ]
-
+             "childrenUrl":"apv1721232251932"
              }
           , 
           { 
@@ -41,28 +21,7 @@
              "description":"Create your first primary cluster and database.", 
              "icon":"server;covalent", 
              "url":"VantageCloud_Learn/jiy1707187681752.md", 
-             "childrenUrl":"wvr1709157903898", 
-             "children":[
-                { 
-                   "id":"leq1721069053027", 
-                   "title":"Primary cluster", 
-                   "url":"VantageCloud_Learn/leq1721069053027.md"
-                   }
-                , 
-                { 
-                   "id":"czl1721069081260", 
-                   "title":"Database credentials", 
-                   "url":"VantageCloud_Learn/czl1721069081260.md"
-                   }
-                , 
-                { 
-                   "id":"keu1721069101205", 
-                   "title":"Advanced options", 
-                   "url":"VantageCloud_Learn/keu1721069101205.md"
-                   }
-
-                ]
-
+             "childrenUrl":"wvr1709157903898"
              }
           , 
           { 
@@ -71,29 +30,7 @@
              "description":"Allow network connections to your environment.", 
              "icon":"network_locked", 
              "url":"VantageCloud_Learn/krx1707187712212.md", 
-             "children":[
-                { 
-                   "id":"jlq1721090154719", 
-                   "title":"Internet connection", 
-                   "url":"VantageCloud_Learn/jlq1721090154719.md"
-                   }
-                , 
-                { 
-                   "id":"suh1721090175745", 
-                   "title":"Private link", 
-                   "url":"VantageCloud_Learn/suh1721090175745.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"yyz1710373675172", 
-             "title":"Add database administrator", 
-             "description":"Add other users to the environment.", 
-             "icon":"person", 
-             "url":"VantageCloud_Learn/yyz1710373675172.md"
+             "childrenUrl":"cqk1721231159841"
              }
           , 
           { 
@@ -102,21 +39,7 @@
              "description":"Use the Editor to run your first Vantage query.", 
              "icon":"script_sql;covalent", 
              "url":"VantageCloud_Learn/lam1707187864117.md", 
-             "children":[
-                { 
-                   "id":"boe1721092788909", 
-                   "title":"Write the query", 
-                   "url":"VantageCloud_Learn/boe1721092788909.md"
-                   }
-                , 
-                { 
-                   "id":"ydj1721092986132", 
-                   "title":"Visualize the results", 
-                   "url":"VantageCloud_Learn/ydj1721092986132.md"
-                   }
-
-                ]
-
+             "childrenUrl":"ahj1695153106508"
              }
 
           ]
