@@ -19,7 +19,28 @@
              "title":"Welcome to VantageCloud Lake", 
              "description":"Discover the parts of the Console.", 
              "icon":"teradata;covalent", 
-             "url":"VantageCloud_Learn/xmm1707187643364.md"
+             "url":"VantageCloud_Learn/xmm1707187643364.md", 
+             "children":[
+                { 
+                   "id":"auh1721168357818", 
+                   "title":"Main menu", 
+                   "url":"VantageCloud_Learn/auh1721168357818.md"
+                   }
+                , 
+                { 
+                   "id":"njy1721168384549", 
+                   "title":"Toolbar", 
+                   "url":"VantageCloud_Learn/njy1721168384549.md"
+                   }
+                , 
+                { 
+                   "id":"xex1721168413281", 
+                   "title":"Learn resources", 
+                   "url":"VantageCloud_Learn/xex1721168413281.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -27,7 +48,22 @@
              "title":"Run your first query", 
              "description":"Use the Editor to run your first Vantage query.", 
              "icon":"script_sql;covalent", 
-             "url":"VantageCloud_Learn/lam1707187864117.md"
+             "url":"VantageCloud_Learn/lam1707187864117.md", 
+             "children":[
+                { 
+                   "id":"boe1721092788909", 
+                   "title":"Write the query", 
+                   "url":"VantageCloud_Learn/boe1721092788909.md"
+                   }
+                , 
+                { 
+                   "id":"ydj1721092986132", 
+                   "title":"Visualize the results", 
+                   "url":"VantageCloud_Learn/ydj1721092986132.md"
+                   }
+
+                ]
+
              }
           , 
           { 
