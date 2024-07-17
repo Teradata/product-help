@@ -45,6 +45,7 @@
           { 
              "id":"uee1640282265780", 
              "title":"Administrators", 
+             "description":"Begin your VantageCloud Lake experience.", 
              "url":"Vantage/uee1640282265780.md", 
              "children":[
                 { 
@@ -120,6 +121,12 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"rvv1721237055370", 
+             "title":"All users", 
+             "url":"Vantage/rvv1721237055370.md"
              }
 
           ]
