@@ -41,6 +41,7 @@
              "description":"Create your first primary cluster and database.", 
              "icon":"server;covalent", 
              "url":"VantageCloud_Learn/jiy1707187681752.md", 
+             "childrenUrl":"wvr1709157903898", 
              "children":[
                 { 
                    "id":"leq1721069053027", 
@@ -85,6 +86,14 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"yyz1710373675172", 
+             "title":"Add database administrator", 
+             "description":"Add other users to the environment.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/yyz1710373675172.md"
              }
           , 
           { 
