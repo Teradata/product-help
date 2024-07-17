@@ -12,7 +12,121 @@
        "title":"Get started", 
        "description":"Complete these tasks first.", 
        "icon":"person", 
-       "url":"Vantage/tta1687442978234.md"
+       "url":"Vantage/tta1687442978234.md", 
+       "children":[
+          { 
+             "id":"apv1721232251932", 
+             "title":"Welcome to VantageCloud Lake", 
+             "description":"Discover the parts of the Console.", 
+             "icon":"teradata;covalent", 
+             "url":"Vantage/apv1721232251932.md", 
+             "children":[
+                { 
+                   "id":"auh1721168357818", 
+                   "title":"Main menu", 
+                   "url":"Vantage/auh1721168357818.md"
+                   }
+                , 
+                { 
+                   "id":"njy1721168384549", 
+                   "title":"Toolbar", 
+                   "url":"Vantage/njy1721168384549.md"
+                   }
+                , 
+                { 
+                   "id":"xex1721168413281", 
+                   "title":"Learn resources", 
+                   "url":"Vantage/xex1721168413281.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"uee1640282265780", 
+             "title":"Administrators", 
+             "url":"Vantage/uee1640282265780.md", 
+             "children":[
+                { 
+                   "id":"wvr1709157903898", 
+                   "title":"Create your environment", 
+                   "url":"Vantage/wvr1709157903898.md", 
+                   "children":[
+                      { 
+                         "id":"leq1721069053027", 
+                         "title":"Primary cluster", 
+                         "url":"Vantage/leq1721069053027.md"
+                         }
+                      , 
+                      { 
+                         "id":"czl1721069081260", 
+                         "title":"Database credentials", 
+                         "url":"Vantage/czl1721069081260.md"
+                         }
+                      , 
+                      { 
+                         "id":"keu1721069101205", 
+                         "title":"Advanced options", 
+                         "url":"Vantage/keu1721069101205.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"cqk1721231159841", 
+                   "title":"Enable network access", 
+                   "description":"Allow network connections to your environment.", 
+                   "icon":"network_locked", 
+                   "url":"Vantage/cqk1721231159841.md", 
+                   "children":[
+                      { 
+                         "id":"jlq1721090154719", 
+                         "title":"Internet connection", 
+                         "url":"Vantage/jlq1721090154719.md"
+                         }
+                      , 
+                      { 
+                         "id":"suh1721090175745", 
+                         "title":"Private link", 
+                         "url":"Vantage/suh1721090175745.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ahj1695153106508", 
+                   "title":"Run your first query", 
+                   "description":"Use the Editor to run your first Vantage query.", 
+                   "icon":"script_sql;covalent", 
+                   "url":"Vantage/ahj1695153106508.md", 
+                   "children":[
+                      { 
+                         "id":"boe1721092788909", 
+                         "title":"Write the query", 
+                         "url":"Vantage/boe1721092788909.md"
+                         }
+                      , 
+                      { 
+                         "id":"ydj1721092986132", 
+                         "title":"Visualize the results", 
+                         "url":"Vantage/ydj1721092986132.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+
+          ]
+
        }
     , 
     { 
@@ -107,6 +221,13 @@
              "description":"How users connect to the environment", 
              "url":"Vantage/laq1640280582810.md", 
              "children":[
+                { 
+                   "id":"jsw1721184303432", 
+                   "title":"Create a private endpont in the AWS Portal", 
+                   "description":"Complete the AWS PrivateLink configuration.", 
+                   "url":"Vantage/jsw1721184303432.md"
+                   }
+                , 
                 { 
                    "id":"hyl1696627580794", 
                    "title":"Create a private endpoint in the Azure Portal", 
