@@ -3,7 +3,6 @@
        "id":"uct1707186367384", 
        "title":"Get started", 
        "description":"Begin your VantageCloud Lake experience.", 
-       "icon":"person", 
        "url":"VantageCloud_Learn/uct1707186367384.md", 
        "children":[
           { 
@@ -18,7 +17,7 @@
              "id":"xmm1707187643364", 
              "title":"Welcome to VantageCloud Lake", 
              "description":"Discover the parts of the Console.", 
-             "icon":"teradata;covalent", 
+             "icon":"teradata_outlined;covalent", 
              "url":"VantageCloud_Learn/xmm1707187643364.md", 
              "childrenUrl":"apv1721232251932"
              }
@@ -27,7 +26,7 @@
              "id":"lam1707187864117", 
              "title":"Run your first query", 
              "description":"Use the Editor to run your first Vantage query.", 
-             "icon":"script_sql;covalent", 
+             "icon":"script_sql_outlined;covalent", 
              "url":"VantageCloud_Learn/lam1707187864117.md", 
              "childrenUrl":"ahj1695153106508"
              }
@@ -55,7 +54,7 @@
              "id":"qlu1714845432088", 
              "title":"Compute resources", 
              "description":"Learn about compute resources to separate processing, monitoring, and billing", 
-             "icon":"compute_groups;covalent", 
+             "icon":"compute_groups_outlined;covalent", 
              "url":"VantageCloud_Learn/qlu1714845432088.md", 
              "childrenUrl":"nmr1658424425362"
              }
@@ -82,7 +81,7 @@
              "id":"bbh1714845725516", 
              "title":"Load data", 
              "description":"Discover ways to load and access your data.", 
-             "icon":"database_synced;covalent", 
+             "icon":"database_synced_outlined;covalent", 
              "url":"VantageCloud_Learn/bbh1714845725516.md", 
              "childrenUrl":"jwm1694121113608"
              }
@@ -100,7 +99,7 @@
              "id":"oux1714177476353", 
              "title":"Review the SQL reference guide", 
              "description":"Find complete information on all SQL commands, functions, and database references", 
-             "icon":"product_editor;covalent", 
+             "icon":"product_editor_outlined;covalent", 
              "url":"VantageCloud_Learn/oux1714177476353.md", 
              "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
