@@ -1,17 +1,9 @@
 {  "items":[
     { 
-       "id":"bab1682536172420", 
-       "title":"What's new", 
-       "description":"Discover the latest features and updates.", 
-       "icon":"new_releases", 
-       "url":"Vantage/bab1682536172420.md"
-       }
-    , 
-    { 
        "id":"tta1687442978234", 
        "title":"Get started", 
        "description":"Complete these tasks first.", 
-       "icon":"person", 
+       "icon":"school", 
        "url":"Vantage/tta1687442978234.md", 
        "children":[
           { 
@@ -1075,22 +1067,6 @@
        "icon":"book", 
        "url":"Vantage/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-       }
-    , 
-    { 
-       "id":"nhn1706907203900", 
-       "title":"Documentation", 
-       "description":"Complete VantageCloud Lake documentation.", 
-       "icon":"library_books", 
-       "url":"Vantage/nhn1706907203900.md"
-       }
-    , 
-    { 
-       "id":"pkj1706907262368", 
-       "title":"Technical support", 
-       "description":"Create and manage service requests.", 
-       "icon":"support", 
-       "url":"Vantage/pkj1706907262368.md"
        }
 
     ]
