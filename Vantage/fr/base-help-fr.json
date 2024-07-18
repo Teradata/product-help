@@ -140,6 +140,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"Créer un groupe de calcul", 
+                         "description":"Découvrez les types de groupes de calcul.", 
                          "url":"Vantage/fr/xrr1658772541186.md"
                          }
                       , 
@@ -204,13 +205,13 @@
           { 
              "id":"jwm1694121113608", 
              "title":"Charger les données", 
-             "description":"Charger les données ou y accéder", 
+             "description":"Chargez les données ou accédez-y.", 
              "url":"Vantage/fr/jwm1694121113608.md", 
              "children":[
                 { 
                    "id":"auw1640280669500", 
                    "title":"Flux", 
-                   "description":"Charger des données à partir du stockage d'objets", 
+                   "description":"Chargez les données à partir du stockage d'objets.", 
                    "url":"Vantage/fr/auw1640280669500.md", 
                    "children":[
                       { 
@@ -270,6 +271,7 @@
                       { 
                          "id":"dxg1691603081375", 
                          "title":"FAQ relatives aux flux", 
+                         "description":"Réponses aux questions courantes sur les flux.", 
                          "url":"Vantage/fr/dxg1691603081375.md"
                          }
 
@@ -286,7 +288,7 @@
                       { 
                          "id":"cdg1689098187313", 
                          "title":"Connectivité et composants", 
-                         "description":"Options de connecteurs et de connectivité de QueryGrid", 
+                         "description":"Options de connecteurs et de connectivité de QueryGrid.", 
                          "url":"Vantage/fr/cdg1689098187313.md"
                          }
                       , 
@@ -311,7 +313,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"Demander un point de terminaison d'interface", 
-                                     "description":"Créer une demande de liaison privée pour QueryGrid", 
+                                     "description":"Créez une demande de liaison privée pour QueryGrid.", 
                                      "url":"Vantage/fr/yml1671157089031.md"
                                      }
                                   , 
@@ -482,8 +484,8 @@
                 , 
                 { 
                    "id":"kqr1640280954140", 
-                   "title":"Restaurer les données", 
-                   "description":"Restaurer les données à partir d'un point de restauration", 
+                   "title":"Restaurer les données (AWS et Azure uniquement)", 
+                   "description":"Restaurez les données à partir d'un point de restauration.", 
                    "url":"Vantage/fr/kqr1640280954140.md"
                    }
                 , 
@@ -495,9 +497,33 @@
                    }
                 , 
                 { 
+                   "id":"nni1694461234790", 
+                   "title":"Récupération d'urgence (AWS uniquement)", 
+                   "description":"Protégez vos données en cas de pannes.", 
+                   "url":"Vantage/fr/nni1694461234790.md", 
+                   "children":[
+                      { 
+                         "id":"uux1694461279489", 
+                         "title":"Créer un plan de récupération d'urgence", 
+                         "description":"Créez un plan de récupération d'environnement complet.", 
+                         "url":"Vantage/fr/uux1694461279489.md"
+                         }
+                      , 
+                      { 
+                         "id":"cqv1694469814376", 
+                         "title":"Gérer un plan de récupération d'urgence", 
+                         "description":"Modifiez, testez et récupérez les données dans un plan de récupération.", 
+                         "url":"Vantage/fr/cqv1694469814376.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"iom1694462056775", 
                    "title":"FAQ sur la protection des données", 
-                   "description":"Réponses aux questions courantes", 
+                   "description":"Réponses aux questions courantes.", 
                    "url":"Vantage/fr/iom1694462056775.md"
                    }
 
@@ -776,7 +802,7 @@
           { 
              "id":"poc1712163264099", 
              "title":"Surveiller les requêtes", 
-             "description":"Découvrez comment surveiller les requêtes Lake.", 
+             "description":"Découvrez comment surveiller les requêtes VantageCloud Lake.", 
              "url":"Vantage/fr/poc1712163264099.md"
              }
           , 
@@ -800,7 +826,7 @@
           { 
              "id":"bcw1700511770060", 
              "title":"Configurer la copie de données", 
-             "description":"Ajouter un environnement, un gestionnaire de copie et un agent", 
+             "description":"Ajoutez un environnement, un gestionnaire de copie et un agent.", 
              "url":"Vantage/fr/bcw1700511770060.md"
              }
           , 

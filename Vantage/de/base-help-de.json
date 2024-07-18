@@ -140,6 +140,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"Computing-Gruppe erstellen", 
+                         "description":"Typen von Computing-Gruppen erkunden.", 
                          "url":"Vantage/de/xrr1658772541186.md"
                          }
                       , 
@@ -204,13 +205,13 @@
           { 
              "id":"jwm1694121113608", 
              "title":"Laden von Daten", 
-             "description":"Laden von oder Zugreifen auf Daten", 
+             "description":"Laden oder greifen Sie auf Daten zu.", 
              "url":"Vantage/de/jwm1694121113608.md", 
              "children":[
                 { 
                    "id":"auw1640280669500", 
                    "title":"Abläufe", 
-                   "description":"Daten aus Objektspeicher laden", 
+                   "description":"Daten aus Objektspeicher laden.", 
                    "url":"Vantage/de/auw1640280669500.md", 
                    "children":[
                       { 
@@ -270,6 +271,7 @@
                       { 
                          "id":"dxg1691603081375", 
                          "title":"FAQ zu Abläufen", 
+                         "description":"Antworten auf häufig gestellte Fragen zu Abläufen", 
                          "url":"Vantage/de/dxg1691603081375.md"
                          }
 
@@ -286,7 +288,7 @@
                       { 
                          "id":"cdg1689098187313", 
                          "title":"Konnektivität und Komponenten", 
-                         "description":"QueryGrid-Verbindungen und Verbindungsoptionen", 
+                         "description":"QueryGrid-Verbindungen und Verbindungsoptionen.", 
                          "url":"Vantage/de/cdg1689098187313.md"
                          }
                       , 
@@ -311,7 +313,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"Schnittstellenendpunkt anfordern", 
-                                     "description":"Erstellen einer PrivateLink-Anforderung für einen privaten Link für QueryGrid", 
+                                     "description":"PrivateLink-Anforderung für einen privaten Link für QueryGrid erstellen.", 
                                      "url":"Vantage/de/yml1671157089031.md"
                                      }
                                   , 
@@ -482,8 +484,8 @@
                 , 
                 { 
                    "id":"kqr1640280954140", 
-                   "title":"Daten wiederherstellen", 
-                   "description":"Wiederherstellen von Daten aus einem Wiederherstellungspunkt", 
+                   "title":"Daten wiederherstellen (nur für AWS und Azure)", 
+                   "description":"Daten aus einem Wiederherstellungspunkt wiederherstellen.", 
                    "url":"Vantage/de/kqr1640280954140.md"
                    }
                 , 
@@ -495,9 +497,33 @@
                    }
                 , 
                 { 
+                   "id":"nni1694461234790", 
+                   "title":"Notfallwiederherstellung (nur für AWS)", 
+                   "description":"Ihre Daten nach Ausfällen wiederherstellen.", 
+                   "url":"Vantage/de/nni1694461234790.md", 
+                   "children":[
+                      { 
+                         "id":"uux1694461279489", 
+                         "title":"Einen Notfallwiederherstellungsplan erstellen", 
+                         "description":"Einen Wiederherstellungsplan für die vollständige Umgebung erstellen.", 
+                         "url":"Vantage/de/uux1694461279489.md"
+                         }
+                      , 
+                      { 
+                         "id":"cqv1694469814376", 
+                         "title":"Einen Notfallwiederherstellungsplan verwalten", 
+                         "description":"Daten in einem Wiederherstellungsplan bearbeiten, testen und wiederherstellen.", 
+                         "url":"Vantage/de/cqv1694469814376.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"iom1694462056775", 
                    "title":"Häufig gestellte Fragen zur Datensicherung", 
-                   "description":"Antworten auf häufig gestellte Fragen", 
+                   "description":"Antworten auf häufig gestellte Fragen.", 
                    "url":"Vantage/de/iom1694462056775.md"
                    }
 
@@ -776,7 +802,7 @@
           { 
              "id":"poc1712163264099", 
              "title":"Abfragen überwachen", 
-             "description":"Entdecken Sie, wie Sie Lake-Abfragen überwachen.", 
+             "description":"Entdecken Sie, wie Sie VantageCloud Lake-Abfragen überwachen.", 
              "url":"Vantage/de/poc1712163264099.md"
              }
           , 
@@ -800,7 +826,7 @@
           { 
              "id":"bcw1700511770060", 
              "title":"Datenkopie einrichten", 
-             "description":"Umgebung, Copy Manager und Agent hinzufügen", 
+             "description":"Umgebung, Copy Manager und Agent hinzufügen.", 
              "url":"Vantage/de/bcw1700511770060.md"
              }
           , 

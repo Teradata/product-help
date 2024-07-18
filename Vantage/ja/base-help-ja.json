@@ -140,6 +140,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"コンピューティング グループの作成", 
+                         "description":"コンピューティング グループのタイプについて探索します。", 
                          "url":"Vantage/ja/xrr1658772541186.md"
                          }
                       , 
@@ -204,13 +205,13 @@
           { 
              "id":"jwm1694121113608", 
              "title":"データをロードする", 
-             "description":"データをロードする、またはデータにアクセスする", 
+             "description":"データをロード、またはデータにアクセスします。", 
              "url":"Vantage/ja/jwm1694121113608.md", 
              "children":[
                 { 
                    "id":"auw1640280669500", 
                    "title":"フロー", 
-                   "description":"オブジェクト ストレージからデータをロードする", 
+                   "description":"オブジェクト ストレージからデータをロードします。", 
                    "url":"Vantage/ja/auw1640280669500.md", 
                    "children":[
                       { 
@@ -270,6 +271,7 @@
                       { 
                          "id":"dxg1691603081375", 
                          "title":"フローに関するよくある質問", 
+                         "description":"フローに関するよくある質問とその回答です。", 
                          "url":"Vantage/ja/dxg1691603081375.md"
                          }
 
@@ -286,7 +288,7 @@
                       { 
                          "id":"cdg1689098187313", 
                          "title":"接続とコンポーネント", 
-                         "description":"QueryGridコネクタと接続オプション", 
+                         "description":"QueryGridコネクタと接続オプションです。", 
                          "url":"Vantage/ja/cdg1689098187313.md"
                          }
                       , 
@@ -311,7 +313,7 @@
                                   { 
                                      "id":"yml1671157089031", 
                                      "title":"インターフェイス エンドポイントのリクエスト", 
-                                     "description":"QueryGridのプライベート リンク リクエストを作成", 
+                                     "description":"QueryGridのプライベート リンク リクエストを作成します。", 
                                      "url":"Vantage/ja/yml1671157089031.md"
                                      }
                                   , 
@@ -482,8 +484,8 @@
                 , 
                 { 
                    "id":"kqr1640280954140", 
-                   "title":"データを復元する", 
-                   "description":"復元ポイントからデータを復元する", 
+                   "title":"データを復元する (AWSとAzureのみ)", 
+                   "description":"復元ポイントからデータを復元します。", 
                    "url":"Vantage/ja/kqr1640280954140.md"
                    }
                 , 
@@ -495,9 +497,33 @@
                    }
                 , 
                 { 
+                   "id":"nni1694461234790", 
+                   "title":"障害回復 (AWSのみ)", 
+                   "description":"障害発生時に備えてデータを保護します。", 
+                   "url":"Vantage/ja/nni1694461234790.md", 
+                   "children":[
+                      { 
+                         "id":"uux1694461279489", 
+                         "title":"障害回復計画を作成する", 
+                         "description":"フル環境の回復計画を作成します。", 
+                         "url":"Vantage/ja/uux1694461279489.md"
+                         }
+                      , 
+                      { 
+                         "id":"cqv1694469814376", 
+                         "title":"障害回復計画を管理する", 
+                         "description":"回復計画のデータの編集、テスト、回復を行います。", 
+                         "url":"Vantage/ja/cqv1694469814376.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"iom1694462056775", 
                    "title":"データ保護に関するよくある質問", 
-                   "description":"よくある質問とその回答", 
+                   "description":"よくある質問とその回答です。", 
                    "url":"Vantage/ja/iom1694462056775.md"
                    }
 
@@ -776,7 +802,7 @@
           { 
              "id":"poc1712163264099", 
              "title":"クエリを監視する", 
-             "description":"Lakeクエリを監視する方法を学習します。", 
+             "description":"VantageCloud Lakeのクエリを監視する方法を学習します。", 
              "url":"Vantage/ja/poc1712163264099.md"
              }
           , 
@@ -800,7 +826,7 @@
           { 
              "id":"bcw1700511770060", 
              "title":"データ コピーをセットアップする", 
-             "description":"環境、コピー マネージャ、エージェントを追加する", 
+             "description":"環境、コピー マネージャ、エージェントを追加します。", 
              "url":"Vantage/ja/bcw1700511770060.md"
              }
           , 
