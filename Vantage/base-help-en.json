@@ -116,6 +116,12 @@
              }
           , 
           { 
+             "id":"mmq1721237123997", 
+             "title":"Database administrators", 
+             "url":"Vantage/mmq1721237123997.md"
+             }
+          , 
+          { 
              "id":"rvv1721237055370", 
              "title":"All users", 
              "url":"Vantage/rvv1721237055370.md"
@@ -285,6 +291,23 @@
                    }
                 , 
                 { 
+                   "id":"lyi1662583368110", 
+                   "title":"Compute workers", 
+                   "description":"Create nodes for heavy processing", 
+                   "url":"Vantage/lyi1662583368110.md", 
+                   "children":[
+                      { 
+                         "id":"azi1662584068628", 
+                         "title":"Create a compute worker", 
+                         "description":"Considerations for creating a Compute worker", 
+                         "url":"Vantage/azi1662584068628.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"aow1703107228725", 
                    "title":"Consumption estimator", 
                    "description":"Estimate consumption for primary and compute clusters", 
@@ -394,6 +417,12 @@
 
                       ]
 
+                   }
+                , 
+                { 
+                   "id":"gmh1694121164971", 
+                   "title":"Foreign tables", 
+                   "url":"Vantage/gmh1694121164971.md"
                    }
                 , 
                 { 
@@ -632,6 +661,12 @@
                          "description":"Edit, test, and recover data in a recovery plan.", 
                          "url":"Vantage/cqv1694469814376.md"
                          }
+                      , 
+                      { 
+                         "id":"aie1694462032167", 
+                         "title":"Retention policy", 
+                         "url":"Vantage/aie1694462032167.md"
+                         }
 
                       ]
 
@@ -752,6 +787,94 @@
        "title":"Cost calculator", 
        "description":"View the organization's total estimated consumption.", 
        "url":"Vantage/vsb1703029847518.md"
+       }
+    , 
+    { 
+       "id":"bvr1694122081407", 
+       "title":"Data management", 
+       "url":"Vantage/bvr1694122081407.md", 
+       "children":[
+          { 
+             "id":"qya1694122121061", 
+             "title":"ModelOps", 
+             "url":"Vantage/qya1694122121061.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"vkg1693932972952", 
+       "title":"Data sharing and exploration", 
+       "url":"Vantage/vkg1693932972952.md", 
+       "children":[
+          { 
+             "id":"vnt1689959854009", 
+             "title":"Data catalog", 
+             "description":"View, search, browse, and annotate data", 
+             "url":"Vantage/vnt1689959854009.md", 
+             "children":[
+                { 
+                   "id":"nde1694121897837", 
+                   "title":"Use data catalog", 
+                   "url":"Vantage/nde1694121897837.md", 
+                   "children":[
+                      { 
+                         "id":"qpz1694121944094", 
+                         "title":"Search and filter the catalog", 
+                         "url":"Vantage/qpz1694121944094.md"
+                         }
+                      , 
+                      { 
+                         "id":"nme1694121977416", 
+                         "title":"View datasets", 
+                         "url":"Vantage/nme1694121977416.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"uat1694122014690", 
+                   "title":"Data catalog FAQ", 
+                   "url":"Vantage/uat1694122014690.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"mux1694121298338", 
+             "title":"Manage data sources", 
+             "url":"Vantage/mux1694121298338.md", 
+             "children":[
+                { 
+                   "id":"lsx1694121572990", 
+                   "title":"Add a data source and datasets", 
+                   "url":"Vantage/lsx1694121572990.md"
+                   }
+                , 
+                { 
+                   "id":"imp1694121598872", 
+                   "title":"Publish a data source", 
+                   "url":"Vantage/imp1694121598872.md"
+                   }
+                , 
+                { 
+                   "id":"mnk1694121651916", 
+                   "title":"Modify a data source", 
+                   "url":"Vantage/mnk1694121651916.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
        }
     , 
     { 
@@ -944,7 +1067,17 @@
              "id":"bcw1700511770060", 
              "title":"Set up Data copy", 
              "description":"Add an environment, copy manager, and agent.", 
-             "url":"Vantage/bcw1700511770060.md"
+             "url":"Vantage/bcw1700511770060.md", 
+             "children":[
+                { 
+                   "id":"dvp1707442265467", 
+                   "title":"Request an interface endpoint", 
+                   "description":"Create a private link request for Data copy", 
+                   "url":"Vantage/dvp1707442265467.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -1007,6 +1140,12 @@
        }
     , 
     { 
+       "id":"tvn1694118411267", 
+       "title":"Data migration", 
+       "url":"Vantage/tvn1694118411267.md"
+       }
+    , 
+    { 
        "id":"qpv1707514841101", 
        "title":"User defined functions", 
        "description":"Connect to a third-party application for security.", 
@@ -1025,9 +1164,22 @@
              "description":"Enable SAS on VantageCloud Lake", 
              "url":"Vantage/ose1712360610524.md"
              }
+          , 
+          { 
+             "id":"ijt1712360637589", 
+             "title":"Thales", 
+             "description":"Enable Thales on VantageCloud Lake", 
+             "url":"Vantage/ijt1712360637589.md"
+             }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"pau1694118340856", 
+       "title":"Notifications", 
+       "url":"Vantage/pau1694118340856.md"
        }
     , 
     { 
@@ -1040,6 +1192,12 @@
              "id":"ohx1694115234984", 
              "title":"General settings", 
              "url":"Vantage/ohx1694115234984.md"
+             }
+          , 
+          { 
+             "id":"bus1694115262415", 
+             "title":"Reset your password", 
+             "url":"Vantage/bus1694115262415.md"
              }
           , 
           { 
