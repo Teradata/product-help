@@ -10,7 +10,8 @@
              "title":"VantageCloud Lake Trial information", 
              "description":"Get the most from your trial experience.", 
              "icon":"info", 
-             "url":"VantageCloud_Learn/rfk1714168651268.md"
+             "url":"VantageCloud_Learn/rfk1714168651268.md", 
+             "childrenUrl":"cjc1721842333639"
              }
           , 
           { 
@@ -155,8 +156,7 @@
              "title":"Technical support", 
              "description":"Get help with your trial.", 
              "icon":"support", 
-             "url":"VantageCloud_Learn/fmi1714832461484.md",
-			 "childrenUrl":"../Vantage/fmi1714832461484.md"
+             "url":"VantageCloud_Learn/fmi1714832461484.md"
              }
           , 
           { 
