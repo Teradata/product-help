@@ -155,7 +155,8 @@
              "title":"Technical support", 
              "description":"Get help with your trial.", 
              "icon":"support", 
-             "url":"VantageCloud_Learn/fmi1714832461484.md"
+             "url":"VantageCloud_Learn/fmi1714832461484.md",
+			 "childrenUrl":"fmi1714832461484"
              }
           , 
           { 
