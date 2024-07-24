@@ -1,13 +1,5 @@
 [
     {
-        "id":"test",
-        "name": "4D Analytics on bike sharing",
-        "description":"Geospatial and TimeSeries using Austin bike trip data between 2014 and 2017", 
-        "content_url": "content/_Test/Readme.md",
-        "enabled": true,
-        "industries": []
-    },
-    {
         "id":"pat319511716121499",
         "name": "Compute cluster management",
         "description":"Compute cluster management with SQL", 
