@@ -14,7 +14,7 @@
              "children":[
                 { 
                    "id":"auh1721168357818", 
-                   "title":"Main menu", 
+                   "title":"Menu", 
                    "url":"Vantage/auh1721168357818.md"
                    }
                 , 
@@ -32,6 +32,13 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"cjc1721842333639", 
+             "title":"VantageCloud Lake Trial information", 
+             "description":"Get the most from your trial experience.", 
+             "url":"Vantage/cjc1721842333639.md"
              }
           , 
           { 
@@ -125,6 +132,46 @@
              "id":"rvv1721237055370", 
              "title":"All users", 
              "url":"Vantage/rvv1721237055370.md"
+             }
+          , 
+          { 
+             "id":"uah1721690770470", 
+             "title":"Launch tools", 
+             "url":"Vantage/uah1721690770470.md", 
+             "children":[
+                { 
+                   "id":"ddq1721690838988", 
+                   "title":"Set up data sharing", 
+                   "description":"Set up data sharing service to share tables and views with other users.", 
+                   "url":"Vantage/ddq1721690838988.md", 
+                   "children":[
+                      { 
+                         "id":"paa1721766522352", 
+                         "title":"Add a TD_USER_ADMIN", 
+                         "description":"Add a user or role as a TD_USER_ADMIN", 
+                         "url":"Vantage/paa1721766522352.md"
+                         }
+                      , 
+                      { 
+                         "id":"ymj1721766784498", 
+                         "title":"Add a DS_ADMIN", 
+                         "description":"Add a user or role as a DS_ADMIN", 
+                         "url":"Vantage/ymj1721766784498.md"
+                         }
+                      , 
+                      { 
+                         "id":"hfs1721767315385", 
+                         "title":"Add citizens and providers", 
+                         "description":"Add a user or role as a subscriber and provider", 
+                         "url":"Vantage/hfs1721767315385.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
              }
 
           ]
@@ -428,7 +475,7 @@
                 { 
                    "id":"vyx1659391025497", 
                    "title":"QueryGrid", 
-                   "description":"Transfer data between one or more data sources", 
+                   "description":"Transfer data between one or more data sources.", 
                    "url":"Vantage/vyx1659391025497.md", 
                    "children":[
                       { 
@@ -493,19 +540,20 @@
                             { 
                                "id":"goh1640282193934", 
                                "title":"Fabric overview", 
+                               "description":"Fabric connection visualized.", 
                                "url":"Vantage/goh1640282193934.md"
                                }
                             , 
                             { 
                                "id":"vhb1640282164870", 
                                "title":"Data sources", 
-                               "description":"Manage data sources connected to QueryGrid", 
+                               "description":"Manage data sources connected to QueryGrid.", 
                                "url":"Vantage/vhb1640282164870.md", 
                                "children":[
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"Edit a data source", 
-                                     "description":"Edit connected data sources or assign as a proxy", 
+                                     "description":"Edit connected data sources or assign as a proxy.", 
                                      "url":"Vantage/yfd1674158023864.md"
                                      }
                                   , 
@@ -534,6 +582,7 @@
                             { 
                                "id":"zxp1640282246701", 
                                "title":"Component settings", 
+                               "description":"Configure QueryGrid components.", 
                                "url":"Vantage/zxp1640282246701.md", 
                                "children":[
                                   { 
@@ -579,13 +628,14 @@
                             { 
                                "id":"ama1689287374954", 
                                "title":"Issues", 
-                               "description":"Considerations for reviewing QueryGrid issues", 
+                               "description":"Considerations for reviewing QueryGrid issues.", 
                                "url":"Vantage/ama1689287374954.md"
                                }
                             , 
                             { 
                                "id":"oiw1640282294248", 
                                "title":"Operations", 
+                               "description":"Details on current and completed queries.", 
                                "url":"Vantage/oiw1640282294248.md"
                                }
 
