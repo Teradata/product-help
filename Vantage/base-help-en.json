@@ -133,6 +133,7 @@
           { 
              "id":"uah1721690770470", 
              "title":"Launch tools", 
+             "description":"Provision features not yet installed.", 
              "url":"Vantage/uah1721690770470.md", 
              "children":[
                 { 
@@ -950,15 +951,6 @@
              "title":"SQL and database reference", 
              "description":"SQL commands, functions, and database functionality", 
              "url":"Vantage/xxs1694723933787.md"
-             }
-          , 
-          { 
-             "id":"bkm1640280721917", 
-             "title":"Use cases", 
-             "description":"Run use cases to explore VantageCloud Lake capabilities", 
-             "icon":"book", 
-             "url":"Vantage/bkm1640280721917.md", 
-             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
              }
 
           ]
