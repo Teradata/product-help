@@ -43,13 +43,14 @@
           , 
           { 
              "id":"uee1640282265780", 
-             "title":"Administrators", 
+             "title":"Organization admins", 
              "description":"Begin your VantageCloud Lake experience.", 
              "url":"Vantage/uee1640282265780.md", 
              "children":[
                 { 
                    "id":"wvr1709157903898", 
                    "title":"Create your environment", 
+                   "description":"Create your first primary cluster and database.", 
                    "url":"Vantage/wvr1709157903898.md", 
                    "children":[
                       { 
@@ -124,7 +125,8 @@
           , 
           { 
              "id":"rvv1721237055370", 
-             "title":"All users", 
+             "title":"All database users", 
+             "description":"Begin your VantageCloud Lake experience.", 
              "url":"Vantage/rvv1721237055370.md"
              }
           , 
@@ -142,7 +144,7 @@
                       { 
                          "id":"paa1721766522352", 
                          "title":"Add a TD_USER_ADMIN", 
-                         "description":"Add a user or role as a TD_USER_ADMIN", 
+                         "description":"Add a user or role as a TD_USER_ADMIN.", 
                          "url":"Vantage/paa1721766522352.md"
                          }
                       , 
@@ -156,7 +158,7 @@
                       { 
                          "id":"hfs1721767315385", 
                          "title":"Add citizens and providers", 
-                         "description":"Add a user or role as a subscriber and provider", 
+                         "description":"Add a user or role as a subscriber and provider.", 
                          "url":"Vantage/hfs1721767315385.md"
                          }
 
@@ -181,7 +183,7 @@
           { 
              "id":"hrv1640281410572", 
              "title":"Manage organization admins", 
-             "description":"Considerations for managing organization admins", 
+             "description":"Considerations for managing organization admins.", 
              "url":"Vantage/hrv1640281410572.md"
              }
           , 
@@ -227,6 +229,7 @@
                 { 
                    "id":"qma1680184498880", 
                    "title":"Single sign-on FAQ", 
+                   "description":"Find answers to common SSO questions.", 
                    "url":"Vantage/qma1680184498880.md"
                    }
 
@@ -237,7 +240,7 @@
           { 
              "id":"mwx1694115292045", 
              "title":"Manage access tokens", 
-             "description":"View current access tokens in your organization", 
+             "description":"View current access tokens in your organization.", 
              "url":"Vantage/mwx1694115292045.md"
              }
 
@@ -266,7 +269,7 @@
              "children":[
                 { 
                    "id":"jsw1721184303432", 
-                   "title":"Create a private endpont in the AWS Portal", 
+                   "title":"Create a private endpoint in the AWS Portal", 
                    "description":"Complete the AWS PrivateLink configuration.", 
                    "url":"Vantage/jsw1721184303432.md"
                    }
@@ -358,7 +361,7 @@
                 { 
                    "id":"wxe1659392685092", 
                    "title":"Manage database users", 
-                   "description":"Considerations for managing users of an environment", 
+                   "description":"Considerations for managing users of an environment.", 
                    "url":"Vantage/wxe1659392685092.md"
                    }
 
@@ -625,7 +628,7 @@
           { 
              "id":"jrq1640280690304", 
              "title":"Data protection", 
-             "description":"Protect data with backup and restore options", 
+             "description":"Protect data with backup and restore options.", 
              "url":"Vantage/jrq1640280690304.md", 
              "children":[
                 { 
@@ -701,7 +704,7 @@
           { 
              "id":"edx1695158840322", 
              "title":"Editor", 
-             "description":"Write (or build) and run SQL queries", 
+             "description":"Write (or build) and run SQL queries.", 
              "url":"Vantage/edx1695158840322.md"
              }
 
@@ -725,7 +728,7 @@
           { 
              "id":"tdv1682522711429", 
              "title":"Compute consumption", 
-             "description":"Monitor compute consumption", 
+             "description":"Monitor compute consumption.", 
              "url":"Vantage/tdv1682522711429.md", 
              "children":[
                 { 
@@ -750,6 +753,7 @@
                 { 
                    "id":"nzf1682539696119", 
                    "title":"Compute consumption FAQ", 
+                   "description":"Find answers to common questions.", 
                    "url":"Vantage/nzf1682539696119.md"
                    }
 
@@ -760,7 +764,7 @@
           { 
              "id":"nsc1682522782958", 
              "title":"Storage consumption", 
-             "description":"Monitor storage consumption", 
+             "description":"Monitor storage consumption.", 
              "url":"Vantage/nsc1682522782958.md", 
              "children":[
                 { 
@@ -779,6 +783,7 @@
                 { 
                    "id":"aku1682545782916", 
                    "title":"Storage consumption FAQ", 
+                   "description":"Find answers to common questions.", 
                    "url":"Vantage/aku1682545782916.md"
                    }
 
@@ -789,7 +794,7 @@
           { 
              "id":"jzv1705537218861", 
              "title":"Set consumption alerts", 
-             "description":"Set the threshold to receive email alerts", 
+             "description":"Set the threshold to receive email alerts.", 
              "url":"Vantage/jzv1705537218861.md"
              }
 
@@ -813,7 +818,7 @@
           { 
              "id":"hdx1681040827922", 
              "title":"Manage data share users", 
-             "description":"User roles and privileges", 
+             "description":"User roles and privileges.", 
              "url":"Vantage/hdx1681040827922.md"
              }
           , 
@@ -865,7 +870,7 @@
           { 
              "id":"laf1686249149487", 
              "title":"Data sharing FAQ", 
-             "description":"See answers to common questions", 
+             "description":"See answers to common questions.", 
              "url":"Vantage/laf1686249149487.md"
              }
 
@@ -909,7 +914,7 @@
                 { 
                    "id":"qow1711727575738", 
                    "title":"Create reports", 
-                   "description":"Create reports for query results", 
+                   "description":"Create reports for query results.", 
                    "url":"Vantage/qow1711727575738.md"
                    }
                 , 
@@ -1065,14 +1070,14 @@
           { 
              "id":"aql1707516911931", 
              "title":"Protegrity", 
-             "description":"Enable Protegrity on VantageCloud Lake", 
+             "description":"Enable Protegrity on VantageCloud Lake.", 
              "url":"Vantage/aql1707516911931.md"
              }
           , 
           { 
              "id":"ose1712360610524", 
              "title":"SAS", 
-             "description":"Enable SAS on VantageCloud Lake", 
+             "description":"Enable SAS on VantageCloud Lake.", 
              "url":"Vantage/ose1712360610524.md"
              }
 
@@ -1095,7 +1100,7 @@
           { 
              "id":"syi1695940519543", 
              "title":"Manage access tokens", 
-             "description":"Create and configure personal access tokens (PATs)", 
+             "description":"Create and configure personal access tokens (PATs).", 
              "url":"Vantage/syi1695940519543.md"
              }
 

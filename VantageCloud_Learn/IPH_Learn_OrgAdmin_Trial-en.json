@@ -118,19 +118,10 @@
           { 
              "id":"gxj1707271369419", 
              "title":"Resource center", 
-             "description":"View how-tos, learn what's new, and follow step-by-step configuration best practices.", 
+             "description":"View how-to's, learn what's new, and follow step-by-step configuration best practices.", 
              "icon":"live_help", 
              "url":"VantageCloud_Learn/gxj1707271369419.md", 
              "childrenUrl":"resource-center"
-             }
-          , 
-          { 
-             "id":"bnn1707271398245", 
-             "title":"What's new", 
-             "description":"Learn about new features and the latest changes.", 
-             "icon":"new_releases", 
-             "url":"VantageCloud_Learn/bnn1707271398245.md", 
-             "childrenUrl":"https://docs.teradata.com/access/sources/dita/topic?dita:mapPath=phg1621910019905.ditamap&dita:ditavalPath=pny1626732985837.ditaval&dita:topicPath=lpz1632246643646.dita"
              }
           , 
           { 
@@ -163,7 +154,7 @@
              "id":"jfl1714832551578", 
              "title":"Vantage community", 
              "description":"Connect with other VantageCloud Lake users.", 
-             "icon":"cloud", 
+             "icon":"handshake", 
              "url":"VantageCloud_Learn/jfl1714832551578.md", 
              "childrenUrl":"https://support.teradata.com/community"
              }
