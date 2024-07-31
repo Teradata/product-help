@@ -77,8 +77,8 @@
                 , 
                 { 
                    "id":"cqk1721231159841", 
-                   "title":"Enable network access", 
-                   "description":"Allow network connections to your environment.", 
+                   "title":"Enable access", 
+                   "description":"Allow connections to your environment.", 
                    "url":"Vantage/cqk1721231159841.md", 
                    "children":[
                       { 
@@ -118,6 +118,13 @@
                       ]
 
                    }
+                , 
+                { 
+                   "id":"myu1722373703045", 
+                   "title":"Additional tasks", 
+                   "description":"What to do next", 
+                   "url":"Vantage/myu1722373703045.md"
+                   }
 
                 ]
 
@@ -125,7 +132,7 @@
           , 
           { 
              "id":"rvv1721237055370", 
-             "title":"All database users", 
+             "title":"Database users", 
              "description":"Begin your VantageCloud Lake experience.", 
              "url":"Vantage/rvv1721237055370.md"
              }
@@ -144,14 +151,14 @@
                    "children":[
                       { 
                          "id":"paa1721766522352", 
-                         "title":"Add a TD_USER_ADMIN", 
+                         "title":"Create a share admin", 
                          "description":"Add a user or role as a TD_USER_ADMIN.", 
                          "url":"Vantage/paa1721766522352.md"
                          }
                       , 
                       { 
                          "id":"ymj1721766784498", 
-                         "title":"Add a DS_ADMIN", 
+                         "title":"Add a share admins", 
                          "description":"Add a user or role as a DS_ADMIN", 
                          "url":"Vantage/ymj1721766784498.md"
                          }
@@ -265,7 +272,7 @@
           { 
              "id":"laq1640280582810", 
              "title":"Configure environment settings", 
-             "description":"How users connect to the environment", 
+             "description":"How users connect to the environment.", 
              "url":"Vantage/laq1640280582810.md", 
              "children":[
                 { 
@@ -278,7 +285,7 @@
                 { 
                    "id":"hyl1696627580794", 
                    "title":"Create a private endpoint in the Azure Portal", 
-                   "description":"Complete the Private Link configuration", 
+                   "description":"Complete the Private Link configuration.", 
                    "url":"Vantage/hyl1696627580794.md"
                    }
 
@@ -348,8 +355,8 @@
           , 
           { 
              "id":"fcv1681758902467", 
-             "title":"Access management", 
-             "description":"Manage access to an environment", 
+             "title":"Manage access", 
+             "description":"Access management for an environment.", 
              "url":"Vantage/fcv1681758902467.md", 
              "children":[
                 { 
