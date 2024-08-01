@@ -51,6 +51,7 @@
                    "id":"wvr1709157903898", 
                    "title":"Create your environment", 
                    "description":"Create your first primary cluster and database.", 
+                   "icon":"counter_1", 
                    "url":"Vantage/wvr1709157903898.md", 
                    "children":[
                       { 
@@ -79,6 +80,7 @@
                    "id":"cqk1721231159841", 
                    "title":"Enable access", 
                    "description":"Allow connections to your environment.", 
+                   "icon":"counter_2", 
                    "url":"Vantage/cqk1721231159841.md", 
                    "children":[
                       { 
@@ -101,17 +103,20 @@
                    "id":"ahj1695153106508", 
                    "title":"Run your first query", 
                    "description":"Use the Editor to run your first Vantage query.", 
+                   "icon":"counter_3", 
                    "url":"Vantage/ahj1695153106508.md", 
                    "children":[
                       { 
                          "id":"boe1721092788909", 
                          "title":"Write the query", 
+                         "icon":"counter_1", 
                          "url":"Vantage/boe1721092788909.md"
                          }
                       , 
                       { 
                          "id":"ydj1721092986132", 
                          "title":"Visualize the results", 
+                         "icon":"counter_2", 
                          "url":"Vantage/ydj1721092986132.md"
                          }
 
@@ -204,6 +209,7 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"Add an identity provider", 
+                   "icon":"counter_1", 
                    "url":"Vantage/whf1680184025148.md", 
                    "children":[
                       { 
@@ -225,12 +231,14 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"Create realms", 
+                   "icon":"counter_2", 
                    "url":"Vantage/ruf1680184116601.md"
                    }
                 , 
                 { 
                    "id":"jbj1680184191443", 
                    "title":"Associate realms with environments", 
+                   "icon":"counter_3", 
                    "url":"Vantage/jbj1680184191443.md"
                    }
                 , 
@@ -417,7 +425,7 @@
                             { 
                                "id":"npn1691594431074", 
                                "title":"Sources and targets", 
-                               "description":"Establish Flow source and target tables", 
+                               "description":"Establish Flow source and target tables.", 
                                "url":"Vantage/npn1691594431074.md"
                                }
                             , 
@@ -1041,7 +1049,7 @@
                 { 
                    "id":"wtv1703818703501", 
                    "title":"Manage a copy plan", 
-                   "description":"Run, pause, and edit a copy plan", 
+                   "description":"Run, pause, and edit a copy plan.", 
                    "url":"Vantage/wtv1703818703501.md"
                    }
 
@@ -1052,7 +1060,7 @@
           { 
              "id":"rhq1703818406583", 
              "title":"Data copy FAQ", 
-             "description":"Questions you may have.", 
+             "description":"Find answers to common questions.", 
              "url":"Vantage/rhq1703818406583.md"
              }
 
