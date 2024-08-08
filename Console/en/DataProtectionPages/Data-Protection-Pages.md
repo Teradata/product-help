@@ -13,4 +13,5 @@ To perform recovery, on the site's Data Protection tab, select the retained snap
 For Self-service disaster recovery, from Retained Copies, select the snapshot and click Restore.
 
 See [Disaster Recovery](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Disaster-Recovery "Disaster Recovery") for more details.
+Sample
 
