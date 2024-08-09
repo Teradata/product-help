@@ -14,4 +14,4 @@ For Self-service disaster recovery, from Retained Copies, select the snapshot an
 
 See [Disaster Recovery](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Data-Protection/Disaster-Recovery "Disaster Recovery") for more details.
 
-
+Sample-test-9-Aug
