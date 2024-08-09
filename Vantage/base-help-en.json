@@ -141,47 +141,6 @@
              "description":"Begin your VantageCloud Lake experience.", 
              "url":"Vantage/rvv1721237055370.md"
              }
-          , 
-          { 
-             "id":"uah1721690770470", 
-             "title":"Launch tools", 
-             "description":"Provision features not yet installed.", 
-             "url":"Vantage/uah1721690770470.md", 
-             "children":[
-                { 
-                   "id":"ddq1721690838988", 
-                   "title":"Set up data sharing", 
-                   "description":"Set up data sharing service to share tables and views with other users.", 
-                   "url":"Vantage/ddq1721690838988.md", 
-                   "children":[
-                      { 
-                         "id":"paa1721766522352", 
-                         "title":"Create a share admin", 
-                         "description":"Add a user or role as a TD_USER_ADMIN.", 
-                         "url":"Vantage/paa1721766522352.md"
-                         }
-                      , 
-                      { 
-                         "id":"ymj1721766784498", 
-                         "title":"Add a share admins", 
-                         "description":"Add a user or role as a DS_ADMIN", 
-                         "url":"Vantage/ymj1721766784498.md"
-                         }
-                      , 
-                      { 
-                         "id":"hfs1721767315385", 
-                         "title":"Add citizens and providers", 
-                         "description":"Add a user or role as a subscriber and provider.", 
-                         "url":"Vantage/hfs1721767315385.md"
-                         }
-
-                      ]
-
-                   }
-
-                ]
-
-             }
 
           ]
 
@@ -484,7 +443,7 @@
                             { 
                                "id":"znp1640282079399", 
                                "title":"Connect a data source", 
-                               "description":"Add a data source to QueryGrid", 
+                               "description":"Add a data source to QueryGrid.", 
                                "url":"Vantage/znp1640282079399.md", 
                                "children":[
                                   { 
@@ -503,8 +462,15 @@
                                   { 
                                      "id":"esw1713987246219", 
                                      "title":"Configure JWT SSO", 
-                                     "description":"JWT SSO connector properties", 
+                                     "description":"JWT SSO connector properties.", 
                                      "url":"Vantage/esw1713987246219.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"cgh1722901880213", 
+                                     "title":"Connect VantageCloud Lake as a data source", 
+                                     "description":"Connect VantageCloud Lake to another VantageCloud Lake.", 
+                                     "url":"Vantage/cgh1722901880213.md"
                                      }
 
                                   ]
@@ -832,6 +798,37 @@
        "url":"Vantage/jlf1663616946889.md", 
        "children":[
           { 
+             "id":"ddq1721690838988", 
+             "title":"Set up data sharing", 
+             "description":"Set up data sharing service to share tables and views with other users.", 
+             "url":"Vantage/ddq1721690838988.md", 
+             "children":[
+                { 
+                   "id":"paa1721766522352", 
+                   "title":"Create a share admin", 
+                   "description":"Add a user or role as a TD_USER_ADMIN.", 
+                   "url":"Vantage/paa1721766522352.md"
+                   }
+                , 
+                { 
+                   "id":"ymj1721766784498", 
+                   "title":"Add a share admins", 
+                   "description":"Add a user as a share admin", 
+                   "url":"Vantage/ymj1721766784498.md"
+                   }
+                , 
+                { 
+                   "id":"hfs1721767315385", 
+                   "title":"Add citizens and providers", 
+                   "description":"Add a user or role as a share citizen and provider.", 
+                   "url":"Vantage/hfs1721767315385.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
              "id":"hdx1681040827922", 
              "title":"Manage data share users", 
              "description":"User roles and privileges.", 
@@ -966,6 +963,15 @@
              "title":"SQL and database reference", 
              "description":"SQL commands, functions, and database functionality", 
              "url":"Vantage/xxs1694723933787.md"
+             }
+          , 
+          { 
+             "id":"bkm1640280721917", 
+             "title":"Use cases", 
+             "description":"Run use cases to explore VantageCloud Lake capabilities", 
+             "icon":"book", 
+             "url":"Vantage/bkm1640280721917.md", 
+             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
              }
 
           ]
