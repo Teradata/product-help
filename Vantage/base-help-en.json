@@ -9,7 +9,7 @@
           { 
              "id":"apv1721232251932", 
              "title":"Welcome to VantageCloud Lake", 
-             "description":"Discover the parts of the Console.", 
+             "description":"Discover what's in the Console.", 
              "url":"Vantage/apv1721232251932.md", 
              "children":[
                 { 
@@ -276,7 +276,7 @@
                 { 
                    "id":"mqu1640280532737", 
                    "title":"Compute groups", 
-                   "description":"Assign compute resources", 
+                   "description":"Assign compute resources.", 
                    "url":"Vantage/mqu1640280532737.md", 
                    "children":[
                       { 
@@ -298,12 +298,6 @@
                          "title":"Compute group access", 
                          "url":"Vantage/wdz1640281743091.md"
                          }
-                      , 
-                      { 
-                         "id":"zai1697030381122", 
-                         "title":"Compute group facts", 
-                         "url":"Vantage/zai1697030381122.md"
-                         }
 
                       ]
 
@@ -312,7 +306,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"Consumption estimator", 
-                   "description":"Estimate consumption for primary and compute clusters", 
+                   "description":"Estimate consumption for primary and compute clusters.", 
                    "url":"Vantage/aow1703107228725.md"
                    }
 
@@ -907,7 +901,7 @@
           { 
              "id":"mor1695159014369", 
              "title":"Load data", 
-             "description":"Load or access data", 
+             "description":"Load or access data.", 
              "url":"Vantage/mor1695159014369.md"
              }
           , 
@@ -926,7 +920,7 @@
              "children":[
                 { 
                    "id":"qow1711727575738", 
-                   "title":"Create reports", 
+                   "title":"Visualize data and create reports", 
                    "description":"Create reports for query results.", 
                    "url":"Vantage/qow1711727575738.md"
                    }
