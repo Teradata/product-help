@@ -402,12 +402,6 @@
                                "description":"Establish Flow source and target tables.", 
                                "url":"Vantage/npn1691594431074.md"
                                }
-                            , 
-                            { 
-                               "id":"wer1691592221683", 
-                               "title":"Provide access to Amazon S3 buckets", 
-                               "url":"Vantage/wer1691592221683.md"
-                               }
 
                             ]
 
@@ -815,13 +809,22 @@
           { 
              "id":"ddq1721690838988", 
              "title":"Set up data sharing", 
-             "description":"Set up data sharing service to share tables and views with other users.", 
+             "description":"Set up data sharing to share tables and views with other users.", 
              "url":"Vantage/ddq1721690838988.md", 
              "children":[
                 { 
+                   "id":"paa1721766522352", 
+                   "title":"Assign the first user", 
+                   "description":"Add a user or role as a TD_USER_ADMIN.", 
+                   "icon":"counter_1", 
+                   "url":"Vantage/paa1721766522352.md"
+                   }
+                , 
+                { 
                    "id":"ymj1721766784498", 
-                   "title":"Add a share admin", 
+                   "title":"Add a share admin user", 
                    "description":"Add a user as a share admin", 
+                   "icon":"counter_2", 
                    "url":"Vantage/ymj1721766784498.md"
                    }
                 , 
@@ -829,6 +832,7 @@
                    "id":"hfs1721767315385", 
                    "title":"Add citizens and providers", 
                    "description":"Add a user or role as a share citizen and provider.", 
+                   "icon":"counter_3", 
                    "url":"Vantage/hfs1721767315385.md"
                    }
 
