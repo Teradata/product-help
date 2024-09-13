@@ -88,15 +88,6 @@
              }
           , 
           { 
-             "id":"zvp1714845785474", 
-             "title":"Connect your own tools", 
-             "description":"Use the tool of your choice with your Vantage environment.", 
-             "icon":"build", 
-             "url":"VantageCloud_Learn/zvp1714845785474.md", 
-             "childrenUrl":"pmg1709157026832"
-             }
-          , 
-          { 
              "id":"oux1714177476353", 
              "title":"Review the SQL reference guide", 
              "description":"Find complete information on all SQL commands, functions, and database references", 
