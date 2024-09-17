@@ -1,13 +1,5 @@
 [
     {
-        "id":"pat319511716121499",
-        "name": "Compute cluster management",
-        "description":"Compute cluster management with SQL", 
-        "content_url": "content/ComputeClusterManagement/README.md",
-        "enabled": true,
-        "industries": []
-    },
-    {
         "id":"pat3195117161214",
         "name": "Path analysis",
         "description":"Patterns that predict behaviors", 
