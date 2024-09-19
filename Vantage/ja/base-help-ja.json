@@ -1,18 +1,149 @@
 ﻿{  "items":[
     { 
-       "id":"bab1682536172420", 
-       "title":"最新情報", 
-       "description":"最新の機能やアップデートについて学習します。", 
-       "icon":"new_releases", 
-       "url":"Vantage/ja/bab1682536172420.md"
-       }
-    , 
-    { 
        "id":"tta1687442978234", 
        "title":"作業を開始", 
        "description":"まずこれらのタスクを完了してください。", 
-       "icon":"person", 
-       "url":"Vantage/ja/tta1687442978234.md"
+       "icon":"rocket_launch", 
+       "url":"Vantage/ja/tta1687442978234.md", 
+       "children":[
+          { 
+             "id":"apv1721232251932", 
+             "title":"VantageCloud Lakeへようこそ", 
+             "description":"コンソールの内容について学びます。", 
+             "url":"Vantage/ja/apv1721232251932.md", 
+             "children":[
+                { 
+                   "id":"auh1721168357818", 
+                   "title":"メニュー", 
+                   "url":"Vantage/ja/auh1721168357818.md"
+                   }
+                , 
+                { 
+                   "id":"njy1721168384549", 
+                   "title":"ツールバー", 
+                   "url":"Vantage/ja/njy1721168384549.md"
+                   }
+                , 
+                { 
+                   "id":"xex1721168413281", 
+                   "title":"リソースについて学ぶ", 
+                   "url":"Vantage/ja/xex1721168413281.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"cjc1721842333639", 
+             "title":"VantageCloud Lakeトライアル情報", 
+             "description":"VantageCloud Lakeトライアルを最大限にご活用ください。", 
+             "url":"Vantage/ja/cjc1721842333639.md"
+             }
+          , 
+          { 
+             "id":"uee1640282265780", 
+             "title":"組織の管理者", 
+             "description":"VantageCloud Lakeの体験を始めましょう。", 
+             "url":"Vantage/ja/uee1640282265780.md", 
+             "children":[
+                { 
+                   "id":"wvr1709157903898", 
+                   "title":"環境を作成する", 
+                   "description":"最初のプライマリ クラスタとデータベースを作成します。", 
+                   "icon":"counter_1", 
+                   "url":"Vantage/ja/wvr1709157903898.md", 
+                   "children":[
+                      { 
+                         "id":"leq1721069053027", 
+                         "title":"プライマリ クラスタ", 
+                         "url":"Vantage/ja/leq1721069053027.md"
+                         }
+                      , 
+                      { 
+                         "id":"czl1721069081260", 
+                         "title":"データベース資格情報", 
+                         "url":"Vantage/ja/czl1721069081260.md"
+                         }
+                      , 
+                      { 
+                         "id":"keu1721069101205", 
+                         "title":"詳細オプション", 
+                         "url":"Vantage/ja/keu1721069101205.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"cqk1721231159841", 
+                   "title":"アクセスを有効にする", 
+                   "description":"環境への接続を許可します。", 
+                   "icon":"counter_2", 
+                   "url":"Vantage/ja/cqk1721231159841.md", 
+                   "children":[
+                      { 
+                         "id":"jlq1721090154719", 
+                         "title":"インターネット接続", 
+                         "url":"Vantage/ja/jlq1721090154719.md"
+                         }
+                      , 
+                      { 
+                         "id":"suh1721090175745", 
+                         "title":"プライベート リンク", 
+                         "url":"Vantage/ja/suh1721090175745.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ahj1695153106508", 
+                   "title":"最初のクエリを実行する", 
+                   "description":"エディタを使用して、最初のVantageクエリを実行します。", 
+                   "icon":"counter_3", 
+                   "url":"Vantage/ja/ahj1695153106508.md", 
+                   "children":[
+                      { 
+                         "id":"boe1721092788909", 
+                         "title":"クエリを記述する", 
+                         "icon":"counter_1", 
+                         "url":"Vantage/ja/boe1721092788909.md"
+                         }
+                      , 
+                      { 
+                         "id":"ydj1721092986132", 
+                         "title":"結果を視覚化する", 
+                         "icon":"counter_2", 
+                         "url":"Vantage/ja/ydj1721092986132.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"myu1722373703045", 
+                   "title":"追加タスク", 
+                   "description":"次に行うべきこと", 
+                   "url":"Vantage/ja/myu1722373703045.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rvv1721237055370", 
+             "title":"データベース ユーザー", 
+             "description":"VantageCloud Lakeの体験を始めましょう。", 
+             "url":"Vantage/ja/rvv1721237055370.md"
+             }
+
+          ]
+
        }
     , 
     { 
@@ -24,7 +155,7 @@
           { 
              "id":"hrv1640281410572", 
              "title":"組織管理者の管理", 
-             "description":"組織管理者を管理する際の注意点", 
+             "description":"組織管理者を管理する際の注意点です。", 
              "url":"Vantage/ja/hrv1640281410572.md"
              }
           , 
@@ -37,6 +168,7 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"IDプロバイダの追加", 
+                   "icon":"counter_1", 
                    "url":"Vantage/ja/whf1680184025148.md", 
                    "children":[
                       { 
@@ -58,18 +190,21 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"レルムの作成", 
+                   "icon":"counter_2", 
                    "url":"Vantage/ja/ruf1680184116601.md"
                    }
                 , 
                 { 
                    "id":"jbj1680184191443", 
                    "title":"環境へのレルムの関連付け", 
+                   "icon":"counter_3", 
                    "url":"Vantage/ja/jbj1680184191443.md"
                    }
                 , 
                 { 
                    "id":"qma1680184498880", 
                    "title":"シングル サインオンについてよく尋ねられる質問", 
+                   "description":"SSOに関するよくある質問とその回答を確認します。", 
                    "url":"Vantage/ja/qma1680184498880.md"
                    }
 
@@ -80,7 +215,7 @@
           { 
              "id":"mwx1694115292045", 
              "title":"アクセス トークンを管理", 
-             "description":"組織内の現在のアクセス トークンを表示", 
+             "description":"組織内の現在のアクセス トークンを表示します。", 
              "url":"Vantage/ja/mwx1694115292045.md"
              }
 
@@ -104,13 +239,20 @@
           { 
              "id":"laq1640280582810", 
              "title":"環境設定を構成する", 
-             "description":"ユーザーが環境に接続する方法", 
+             "description":"ユーザーが環境に接続する方法の説明です。", 
              "url":"Vantage/ja/laq1640280582810.md", 
              "children":[
                 { 
+                   "id":"jsw1721184303432", 
+                   "title":"AWSポータルでプライベート エンドポイントを作成する", 
+                   "description":"AWS PrivateLinkの構成を完了します。", 
+                   "url":"Vantage/ja/jsw1721184303432.md"
+                   }
+                , 
+                { 
                    "id":"hyl1696627580794", 
                    "title":"Azureポータルでプライベート エンドポイントを作成する", 
-                   "description":"プライベート リンクの構成を完了する", 
+                   "description":"プライベート リンクの構成を完了します。", 
                    "url":"Vantage/ja/hyl1696627580794.md"
                    }
 
@@ -134,7 +276,7 @@
                 { 
                    "id":"mqu1640280532737", 
                    "title":"コンピューティング グループ", 
-                   "description":"コンピューティング リソースを割り当てる", 
+                   "description":"コンピューティング リソースを割り当てます。", 
                    "url":"Vantage/ja/mqu1640280532737.md", 
                    "children":[
                       { 
@@ -146,8 +288,8 @@
                       , 
                       { 
                          "id":"dvl1640281718303", 
-                         "title":"コンピューティング グループの管理", 
-                         "description":"コンピューティング プロファイルを作成または編集します。", 
+                         "title":"コンピューティング プロファイルを作成する", 
+                         "description":"プロファイルでコンピューティング グループを管理します。", 
                          "url":"Vantage/ja/dvl1640281718303.md"
                          }
                       , 
@@ -155,12 +297,6 @@
                          "id":"wdz1640281743091", 
                          "title":"コンピューティング グループ アクセス", 
                          "url":"Vantage/ja/wdz1640281743091.md"
-                         }
-                      , 
-                      { 
-                         "id":"zai1697030381122", 
-                         "title":"コンピューティング グループに関するファクト", 
-                         "url":"Vantage/ja/zai1697030381122.md"
                          }
 
                       ]
@@ -170,7 +306,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"消費量推定ツール", 
-                   "description":"プライマリ クラスタとコンピューティング クラスタの消費量を推定", 
+                   "description":"プライマリ クラスタとコンピューティング クラスタの消費量を推定します。", 
                    "url":"Vantage/ja/aow1703107228725.md"
                    }
 
@@ -180,8 +316,8 @@
           , 
           { 
              "id":"fcv1681758902467", 
-             "title":"アクセス管理", 
-             "description":"環境へのアクセスを管理する", 
+             "title":"アクセス権を管理", 
+             "description":"環境のアクセス管理を行います。", 
              "url":"Vantage/ja/fcv1681758902467.md", 
              "children":[
                 { 
@@ -194,8 +330,29 @@
                 { 
                    "id":"wxe1659392685092", 
                    "title":"データベース ユーザーの管理", 
-                   "description":"環境のユーザーを管理する際の注意点", 
+                   "description":"環境のユーザーを管理する際の注意点です。", 
                    "url":"Vantage/ja/wxe1659392685092.md"
+                   }
+                , 
+                { 
+                   "id":"chs1723830476456", 
+                   "title":"データベース管理者を管理する", 
+                   "url":"Vantage/ja/chs1723830476456.md", 
+                   "children":[
+                      { 
+                         "id":"rhw1723830545389", 
+                         "title":"データベース管理者を作成する", 
+                         "url":"Vantage/ja/rhw1723830545389.md"
+                         }
+                      , 
+                      { 
+                         "id":"xnm1723830877831", 
+                         "title":"データベース管理者に通知する", 
+                         "url":"Vantage/ja/xnm1723830877831.md"
+                         }
+
+                      ]
+
                    }
 
                 ]
@@ -235,21 +392,15 @@
                             { 
                                "id":"vwc1691596425578", 
                                "title":"ソースとターゲットの認証", 
-                               "description":"フローの認証をセットアップ", 
+                               "description":"フローの認証をセットアップします。", 
                                "url":"Vantage/ja/vwc1691596425578.md"
                                }
                             , 
                             { 
                                "id":"npn1691594431074", 
                                "title":"ソースとターゲット", 
-                               "description":"フローのソース テーブルとターゲット テーブルを設定", 
+                               "description":"フローのソース テーブルとターゲット テーブルを確立します。", 
                                "url":"Vantage/ja/npn1691594431074.md"
-                               }
-                            , 
-                            { 
-                               "id":"wer1691592221683", 
-                               "title":"Amazon S3バケットへのアクセス提供", 
-                               "url":"Vantage/ja/wer1691592221683.md"
                                }
 
                             ]
@@ -282,7 +433,7 @@
                 { 
                    "id":"vyx1659391025497", 
                    "title":"QueryGrid", 
-                   "description":"1つまたは複数のデータ ソース間でのデータ転送", 
+                   "description":"1つまたは複数のデータ ソース間でデータを転送します。", 
                    "url":"Vantage/ja/vyx1659391025497.md", 
                    "children":[
                       { 
@@ -301,7 +452,7 @@
                             { 
                                "id":"znp1640282079399", 
                                "title":"データ ソースの接続", 
-                               "description":"QueryGridにデータ ソースを追加する", 
+                               "description":"QueryGridにデータ ソースを追加します。", 
                                "url":"Vantage/ja/znp1640282079399.md", 
                                "children":[
                                   { 
@@ -320,8 +471,15 @@
                                   { 
                                      "id":"esw1713987246219", 
                                      "title":"JWT SSOを構成する", 
-                                     "description":"JWT SSOコネクタ プロパティ", 
+                                     "description":"JWT SSOコネクタ プロパティです。", 
                                      "url":"Vantage/ja/esw1713987246219.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"cgh1722901880213", 
+                                     "title":"VantageCloud Lakeをデータ ソースとして接続する", 
+                                     "description":"VantageCloud Lakeを別のVantageCloud Lakeに接続します。", 
+                                     "url":"Vantage/ja/cgh1722901880213.md"
                                      }
 
                                   ]
@@ -347,19 +505,20 @@
                             { 
                                "id":"goh1640282193934", 
                                "title":"ファブリックの概要", 
+                               "description":"ファブリック接続が視覚化されました。", 
                                "url":"Vantage/ja/goh1640282193934.md"
                                }
                             , 
                             { 
                                "id":"vhb1640282164870", 
                                "title":"データ ソース", 
-                               "description":"QueryGridに接続されたデータ ソースを管理する", 
+                               "description":"QueryGridに接続されたデータ ソースを管理します。", 
                                "url":"Vantage/ja/vhb1640282164870.md", 
                                "children":[
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"データ ソースの編集", 
-                                     "description":"接続済みデータ ソースを編集、またはプロキシとして割り当てる", 
+                                     "description":"接続済みデータ ソースを編集したり、プロキシとして割り当てたりします。", 
                                      "url":"Vantage/ja/yfd1674158023864.md"
                                      }
                                   , 
@@ -388,6 +547,7 @@
                             { 
                                "id":"zxp1640282246701", 
                                "title":"コンポーネント設定", 
+                               "description":"QueryGridコンポーネントを構成します。", 
                                "url":"Vantage/ja/zxp1640282246701.md", 
                                "children":[
                                   { 
@@ -433,13 +593,14 @@
                             { 
                                "id":"ama1689287374954", 
                                "title":"問題", 
-                               "description":"QueryGridの問題をレビューする際の注意点", 
+                               "description":"QueryGridの問題をレビューする際の注意点です。", 
                                "url":"Vantage/ja/ama1689287374954.md"
                                }
                             , 
                             { 
                                "id":"oiw1640282294248", 
                                "title":"動作", 
+                               "description":"現在のクエリと完了したクエリの詳細です。", 
                                "url":"Vantage/ja/oiw1640282294248.md"
                                }
 
@@ -458,7 +619,7 @@
           { 
              "id":"jrq1640280690304", 
              "title":"データ保護", 
-             "description":"バックアップと復元のオプションでデータを保護する", 
+             "description":"バックアップと復元のオプションでデータを保護します。", 
              "url":"Vantage/ja/jrq1640280690304.md", 
              "children":[
                 { 
@@ -534,7 +695,7 @@
           { 
              "id":"edx1695158840322", 
              "title":"エディタ", 
-             "description":"SQLクエリーを作成(または構築)して実行する", 
+             "description":"SQLクエリを作成 (または構築) して実行します。", 
              "url":"Vantage/ja/edx1695158840322.md"
              }
 
@@ -558,7 +719,7 @@
           { 
              "id":"tdv1682522711429", 
              "title":"コンピューティング消費", 
-             "description":"コンピューティング消費量を監視する", 
+             "description":"コンピューティング消費量を監視します。", 
              "url":"Vantage/ja/tdv1682522711429.md", 
              "children":[
                 { 
@@ -583,6 +744,7 @@
                 { 
                    "id":"nzf1682539696119", 
                    "title":"コンピューティング消費に関するよくある質問", 
+                   "description":"よくある質問とその回答をご確認ください。", 
                    "url":"Vantage/ja/nzf1682539696119.md"
                    }
 
@@ -593,7 +755,7 @@
           { 
              "id":"nsc1682522782958", 
              "title":"ストレージ消費", 
-             "description":"ストレージ消費量を監視する", 
+             "description":"ストレージ消費量を監視します。", 
              "url":"Vantage/ja/nsc1682522782958.md", 
              "children":[
                 { 
@@ -612,6 +774,7 @@
                 { 
                    "id":"aku1682545782916", 
                    "title":"ストレージ消費に関するよくある質問", 
+                   "description":"よくある質問とその回答をご確認ください。", 
                    "url":"Vantage/ja/aku1682545782916.md"
                    }
 
@@ -622,7 +785,7 @@
           { 
              "id":"jzv1705537218861", 
              "title":"消費量アラートを設定", 
-             "description":"Eメール アラートを受信するしきい値を設定", 
+             "description":"Eメール アラートを受信するしきい値を設定します。", 
              "url":"Vantage/ja/jzv1705537218861.md"
              }
 
@@ -644,9 +807,43 @@
        "url":"Vantage/ja/jlf1663616946889.md", 
        "children":[
           { 
+             "id":"ddq1721690838988", 
+             "title":"データ共有をセットアップする", 
+             "description":"他のユーザーとテーブルやビューを共有するために、データ共有のセットアップを行います。", 
+             "url":"Vantage/ja/ddq1721690838988.md", 
+             "children":[
+                { 
+                   "id":"paa1721766522352", 
+                   "title":"最初のユーザーを割り当てる", 
+                   "description":"ユーザーまたはロールをTD_USER_ADMINとして追加します。", 
+                   "icon":"counter_1", 
+                   "url":"Vantage/ja/paa1721766522352.md"
+                   }
+                , 
+                { 
+                   "id":"ymj1721766784498", 
+                   "title":"共有管理者ユーザーを追加する", 
+                   "description":"ユーザーを共有管理者として追加する", 
+                   "icon":"counter_2", 
+                   "url":"Vantage/ja/ymj1721766784498.md"
+                   }
+                , 
+                { 
+                   "id":"hfs1721767315385", 
+                   "title":"シチズンとプロバイダを追加する", 
+                   "description":"ユーザーまたはロールを共有シチズンおよびプロバイダとして追加します。", 
+                   "icon":"counter_3", 
+                   "url":"Vantage/ja/hfs1721767315385.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
              "id":"hdx1681040827922", 
              "title":"データ共有ユーザーの管理", 
-             "description":"ユーザーのロールと権限", 
+             "description":"ユーザーのロールと権限についてです。", 
              "url":"Vantage/ja/hdx1681040827922.md"
              }
           , 
@@ -698,7 +895,7 @@
           { 
              "id":"laf1686249149487", 
              "title":"データ共有に関するよくある質問", 
-             "description":"よくある質問とその回答を確認する", 
+             "description":"よくある質問とその回答を確認します。", 
              "url":"Vantage/ja/laf1686249149487.md"
              }
 
@@ -722,7 +919,7 @@
           { 
              "id":"mor1695159014369", 
              "title":"データをロードする", 
-             "description":"データをロードする、またはデータにアクセスする", 
+             "description":"データをロード、またはデータにアクセスします。", 
              "url":"Vantage/ja/mor1695159014369.md"
              }
           , 
@@ -741,8 +938,8 @@
              "children":[
                 { 
                    "id":"qow1711727575738", 
-                   "title":"レポートを作成する", 
-                   "description":"クエリ結果のレポートを作成する", 
+                   "title":"データを視覚化してレポートを作成する", 
+                   "description":"クエリ結果のレポートを作成します。", 
                    "url":"Vantage/ja/qow1711727575738.md"
                    }
                 , 
@@ -783,7 +980,7 @@
           { 
              "id":"bkm1640280721917", 
              "title":"ユースケース", 
-             "description":"ユース ケースを実行してVantageCloud Lakeの機能を探索", 
+             "description":"ユースケースを実行してVantageCloud Lakeの機能を探ります。", 
              "icon":"book", 
              "url":"Vantage/ja/bkm1640280721917.md", 
              "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
@@ -870,7 +1067,7 @@
                 { 
                    "id":"wtv1703818703501", 
                    "title":"コピー計画を管理する", 
-                   "description":"コピー計画を実行、一時停止、および編集する", 
+                   "description":"コピー計画を実行、一時停止、および編集します。", 
                    "url":"Vantage/ja/wtv1703818703501.md"
                    }
 
@@ -881,7 +1078,7 @@
           { 
              "id":"rhq1703818406583", 
              "title":"データ コピーに関するよくある質問", 
-             "description":"よくある質問のまとめです。", 
+             "description":"よくある質問とその回答をご確認ください。", 
              "url":"Vantage/ja/rhq1703818406583.md"
              }
 
@@ -898,14 +1095,14 @@
           { 
              "id":"aql1707516911931", 
              "title":"Protegrity", 
-             "description":"VantageCloud LakeでProtegrityを有効にする", 
+             "description":"VantageCloud LakeでProtegrityを有効にします。", 
              "url":"Vantage/ja/aql1707516911931.md"
              }
           , 
           { 
              "id":"ose1712360610524", 
              "title":"SAS", 
-             "description":"VantageCloud LakeでSASを有効にする", 
+             "description":"VantageCloud LakeでSASを有効にします。", 
              "url":"Vantage/ja/ose1712360610524.md"
              }
 
@@ -928,7 +1125,7 @@
           { 
              "id":"syi1695940519543", 
              "title":"アクセス トークンを管理", 
-             "description":"パーソナル アクセス トークン (PAT) を作成および設定", 
+             "description":"パーソナル アクセス トークン (PAT) を作成および構成します。", 
              "url":"Vantage/ja/syi1695940519543.md"
              }
 
@@ -946,26 +1143,10 @@
     { 
        "id":"bkm1640280721917", 
        "title":"ユースケース", 
-       "description":"ユース ケースを実行してVantageCloud Lakeの機能を探索", 
+       "description":"ユースケースを実行してVantageCloud Lakeの機能を探ります。", 
        "icon":"book", 
        "url":"Vantage/ja/bkm1640280721917.md", 
-       "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
-       }
-    , 
-    { 
-       "id":"nhn1706907203900", 
-       "title":"ドキュメント", 
-       "description":"VantageCloud Lakeドキュメントを完成させます。", 
-       "icon":"library_books", 
-       "url":"Vantage/ja/nhn1706907203900.md"
-       }
-    , 
-    { 
-       "id":"pkj1706907262368", 
-       "title":"技術サポート", 
-       "description":"サービス リクエストを作成および管理します。", 
-       "icon":"サポート", 
-       "url":"Vantage/ja/pkj1706907262368.md"
+       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
        }
 
     ]

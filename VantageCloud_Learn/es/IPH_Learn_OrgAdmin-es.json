@@ -1,0 +1,196 @@
+{  "items":[
+    { 
+       "id":"uct1707186367384", 
+       "title":"Inicio", 
+       "description":"Comience su experiencia con VantageCloud Lake.", 
+       "url":"VantageCloud_Learn/es/uct1707186367384.md", 
+       "children":[
+          { 
+             "id":"xmm1707187643364", 
+             "title":"Le damos la bienvenida a VantageCloud Lake", 
+             "description":"Descubra las partes de la consola.", 
+             "icon":"teradata_outlined;covalent", 
+             "url":"VantageCloud_Learn/es/xmm1707187643364.md", 
+             "childrenUrl":"apv1721232251932"
+             }
+          , 
+          { 
+             "id":"jiy1707187681752", 
+             "title":"Crear entornos", 
+             "description":"Cree su clúster principal y su base de datos iniciales.", 
+             "icon":"server_outlined;covalent", 
+             "url":"VantageCloud_Learn/es/jiy1707187681752.md", 
+             "childrenUrl":"wvr1709157903898"
+             }
+          , 
+          { 
+             "id":"krx1707187712212", 
+             "title":"Habilitar el acceso a la red", 
+             "description":"Permita conexiones de red a su entorno.", 
+             "icon":"network_locked", 
+             "url":"VantageCloud_Learn/es/krx1707187712212.md", 
+             "childrenUrl":"cqk1721231159841"
+             }
+          , 
+          { 
+             "id":"lam1707187864117", 
+             "title":"Ejecutar la primera consulta", 
+             "description":"Use el Editor para ejecutar su primera consulta de Vantage.", 
+             "icon":"script_sql_outlined;covalent", 
+             "url":"VantageCloud_Learn/es/lam1707187864117.md", 
+             "childrenUrl":"ahj1695153106508"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"ubu1707187832449", 
+       "title":"Contenido de la ayuda", 
+       "description":"Aprenda qué hacer a continuación.", 
+       "url":"VantageCloud_Learn/es/ubu1707187832449.md", 
+       "children":[
+          { 
+             "id":"qlu1714845432088", 
+             "title":"Recursos computacionales", 
+             "description":"Obtenga información sobre los recursos computacionales para separar el procesamiento, la supervisión y la facturación", 
+             "icon":"compute_groups_outlined;covalent", 
+             "url":"VantageCloud_Learn/es/qlu1714845432088.md", 
+             "childrenUrl":"nmr1658424425362"
+             }
+          , 
+          { 
+             "id":"ujr1714845520425", 
+             "title":"Usuarios de base de datos", 
+             "description":"Vea cómo agregar otros usuarios a la base de datos del entorno.", 
+             "icon":"group", 
+             "url":"VantageCloud_Learn/es/ujr1714845520425.md", 
+             "childrenUrl":"wxe1659392685092"
+             }
+          , 
+          { 
+             "id":"nnr1714845584229", 
+             "title":"Inicio de sesión único", 
+             "description":"Aprenda a utilizar su proveedor de identidad corporativo para permitir el acceso al entorno.", 
+             "icon":"connected_identity_outlined;covalent", 
+             "url":"VantageCloud_Learn/es/nnr1714845584229.md", 
+             "childrenUrl":"mxq1680183881642"
+             }
+          , 
+          { 
+             "id":"wje1714845660801", 
+             "title":"Protección de datos", 
+             "description":"Descubra formas de realizar copias de seguridad y restaurar sus datos.", 
+             "icon":"settings_backup_restore", 
+             "url":"VantageCloud_Learn/es/wje1714845660801.md", 
+             "childrenUrl":"jrq1640280690304"
+             }
+          , 
+          { 
+             "id":"bbh1714845725516", 
+             "title":"Cargar datos", 
+             "description":"Descubra formas de cargar y acceder a sus datos.", 
+             "icon":"database_synced_outlined;covalent", 
+             "url":"VantageCloud_Learn/es/bbh1714845725516.md", 
+             "childrenUrl":"jwm1694121113608"
+             }
+          , 
+          { 
+             "id":"zvp1714845785474", 
+             "title":"Establecer conexión con sus propias herramientas", 
+             "description":"Use la herramienta de su elección con el entorno de Vantage.", 
+             "icon":"build", 
+             "url":"VantageCloud_Learn/es/zvp1714845785474.md", 
+             "childrenUrl":"pmg1709157026832"
+             }
+          , 
+          { 
+             "id":"ybo1714845836541", 
+             "title":"Explorar casos de uso", 
+             "description":"Ejecute casos de uso para experimentar las capacidades de VantageCloud Lake.", 
+             "icon":"book", 
+             "url":"VantageCloud_Learn/es/ybo1714845836541.md", 
+             "childrenUrl":"bkm1640280721917"
+             }
+          , 
+          { 
+             "id":"uvi1714845877298", 
+             "title":"Supervisión de recursos", 
+             "description":"Aprenda a revisar los detalles de las consultas para equilibrar mejor los recursos computacionales.", 
+             "icon":"show_chart", 
+             "url":"VantageCloud_Learn/es/uvi1714845877298.md", 
+             "childrenUrl":"onj1682104977691"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"sgl1707186427875", 
+       "title":"Recursos adicionales", 
+       "description":"Dónde acudir para obtener ayuda adicional.", 
+       "url":"VantageCloud_Learn/es/sgl1707186427875.md", 
+       "children":[
+          { 
+             "id":"gxj1707271369419", 
+             "title":"Centro de recursos", 
+             "description":"Visualice procedimientos, obtenga información sobre las novedades y siga las mejores prácticas de configuración paso a paso.", 
+             "icon":"live_help", 
+             "url":"VantageCloud_Learn/es/gxj1707271369419.md", 
+             "childrenUrl":"resource-center"
+             }
+          , 
+          { 
+             "id":"bnn1707271398245", 
+             "title":"Novedades", 
+             "description":"Obtenga información sobre las nuevas funciones y los cambios más recientes.", 
+             "icon":"new_releases", 
+             "url":"VantageCloud_Learn/es/bnn1707271398245.md", 
+             "childrenUrl":"https://docs.teradata.com/access/sources/dita/topic?dita:mapPath=phg1621910019905.ditamap&dita:ditavalPath=pny1626732985837.ditaval&dita:topicPath=lpz1632246643646.dita"
+             }
+          , 
+          { 
+             "id":"ahx1707271934625", 
+             "title":"Documentación técnica", 
+             "description":"Revise las guías de referencia, los inicios rápidos y los tutoriales de VantageCloud Lake.", 
+             "icon":"library_books", 
+             "url":"VantageCloud_Learn/es/ahx1707271934625.md", 
+             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
+             }
+          , 
+          { 
+             "id":"hjw1710373993637", 
+             "title":"Descargas y controladores", 
+             "description":"Encuentre herramientas para mejorar su flujo de trabajo con Vantage.", 
+             "icon":"download", 
+             "url":"VantageCloud_Learn/es/hjw1710373993637.md", 
+             "childrenUrl":"https://downloads.teradata.com/"
+             }
+          , 
+          { 
+             "id":"zzu1719238244068", 
+             "title":"Soporte técnico", 
+             "description":"Cree y gestione solicitudes de servicio.", 
+             "icon":"support", 
+             "url":"VantageCloud_Learn/es/zzu1719238244068.md", 
+             "childrenUrl":"https://support.teradata.com/"
+             }
+          , 
+          { 
+             "id":"jfl1714832551578", 
+             "title":"Comunidad de Vantage", 
+             "description":"Manténgase en contacto con otros usuarios de VantageCloud Lake.", 
+             "icon":"handshake", 
+             "url":"VantageCloud_Learn/es/jfl1714832551578.md", 
+             "childrenUrl":"https://support.teradata.com/community"
+             }
+
+          ]
+
+       }
+
+    ]
+
+ }

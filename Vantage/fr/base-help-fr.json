@@ -1,18 +1,149 @@
 ﻿{  "items":[
     { 
-       "id":"bab1682536172420", 
-       "title":"Nouveautés", 
-       "description":"Découvrez les dernières fonctionnalités et mises à jour.", 
-       "icon":"new_releases", 
-       "url":"Vantage/fr/bab1682536172420.md"
-       }
-    , 
-    { 
        "id":"tta1687442978234", 
        "title":"Prise en main", 
        "description":"Effectuez d'abord ces tâches.", 
-       "icon":"person", 
-       "url":"Vantage/fr/tta1687442978234.md"
+       "icon":"rocket_launch", 
+       "url":"Vantage/fr/tta1687442978234.md", 
+       "children":[
+          { 
+             "id":"apv1721232251932", 
+             "title":"Bienvenue dans VantageCloud Lake", 
+             "description":"Découvrez le contenu de la console.", 
+             "url":"Vantage/fr/apv1721232251932.md", 
+             "children":[
+                { 
+                   "id":"auh1721168357818", 
+                   "title":"Menu", 
+                   "url":"Vantage/fr/auh1721168357818.md"
+                   }
+                , 
+                { 
+                   "id":"njy1721168384549", 
+                   "title":"Barre d'outils", 
+                   "url":"Vantage/fr/njy1721168384549.md"
+                   }
+                , 
+                { 
+                   "id":"xex1721168413281", 
+                   "title":"Ressources d'apprentissage", 
+                   "url":"Vantage/fr/xex1721168413281.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"cjc1721842333639", 
+             "title":"Informations sur l'essai de VantageCloud Lake", 
+             "description":"Tirez le meilleur parti de votre expérience de l'essai.", 
+             "url":"Vantage/fr/cjc1721842333639.md"
+             }
+          , 
+          { 
+             "id":"uee1640282265780", 
+             "title":"Administrateurs d'organisation", 
+             "description":"Commencez votre expérience avec VantageCloud Lake.", 
+             "url":"Vantage/fr/uee1640282265780.md", 
+             "children":[
+                { 
+                   "id":"wvr1709157903898", 
+                   "title":"Créez votre environnement", 
+                   "description":"Créez votre premier cluster principal et votre première base de données.", 
+                   "icon":"counter_1", 
+                   "url":"Vantage/fr/wvr1709157903898.md", 
+                   "children":[
+                      { 
+                         "id":"leq1721069053027", 
+                         "title":"Cluster principal", 
+                         "url":"Vantage/fr/leq1721069053027.md"
+                         }
+                      , 
+                      { 
+                         "id":"czl1721069081260", 
+                         "title":"Identifiants de base de données", 
+                         "url":"Vantage/fr/czl1721069081260.md"
+                         }
+                      , 
+                      { 
+                         "id":"keu1721069101205", 
+                         "title":"Options avancées", 
+                         "url":"Vantage/fr/keu1721069101205.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"cqk1721231159841", 
+                   "title":"Activer l'accès", 
+                   "description":"Autorisez les connexions à votre environnement.", 
+                   "icon":"counter_2", 
+                   "url":"Vantage/fr/cqk1721231159841.md", 
+                   "children":[
+                      { 
+                         "id":"jlq1721090154719", 
+                         "title":"Connexion internet", 
+                         "url":"Vantage/fr/jlq1721090154719.md"
+                         }
+                      , 
+                      { 
+                         "id":"suh1721090175745", 
+                         "title":"Liaison privée", 
+                         "url":"Vantage/fr/suh1721090175745.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ahj1695153106508", 
+                   "title":"Exécuter votre première requête", 
+                   "description":"Exécutez votre première requête Vantage à l'aide de l'Éditeur.", 
+                   "icon":"counter_3", 
+                   "url":"Vantage/fr/ahj1695153106508.md", 
+                   "children":[
+                      { 
+                         "id":"boe1721092788909", 
+                         "title":"Rédiger la requête", 
+                         "icon":"counter_1", 
+                         "url":"Vantage/fr/boe1721092788909.md"
+                         }
+                      , 
+                      { 
+                         "id":"ydj1721092986132", 
+                         "title":"Visualiser les résultats", 
+                         "icon":"counter_2", 
+                         "url":"Vantage/fr/ydj1721092986132.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"myu1722373703045", 
+                   "title":"Tâches supplémentaires", 
+                   "description":"Étape suivante", 
+                   "url":"Vantage/fr/myu1722373703045.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rvv1721237055370", 
+             "title":"Utilisateurs de base de données", 
+             "description":"Commencez votre expérience avec VantageCloud Lake.", 
+             "url":"Vantage/fr/rvv1721237055370.md"
+             }
+
+          ]
+
        }
     , 
     { 
@@ -24,7 +155,7 @@
           { 
              "id":"hrv1640281410572", 
              "title":"Gérer les administrateurs de l'organisation", 
-             "description":"Considérations relatives à la gestion des administrateurs d'organisation", 
+             "description":"Considérations relatives à la gestion des administrateurs d'organisation.", 
              "url":"Vantage/fr/hrv1640281410572.md"
              }
           , 
@@ -37,6 +168,7 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"Ajouter un fournisseur d'identité", 
+                   "icon":"counter_1", 
                    "url":"Vantage/fr/whf1680184025148.md", 
                    "children":[
                       { 
@@ -58,18 +190,21 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"Créer des domaines", 
+                   "icon":"counter_2", 
                    "url":"Vantage/fr/ruf1680184116601.md"
                    }
                 , 
                 { 
                    "id":"jbj1680184191443", 
                    "title":"Associer des domaines à des environnements", 
+                   "icon":"counter_3", 
                    "url":"Vantage/fr/jbj1680184191443.md"
                    }
                 , 
                 { 
                    "id":"qma1680184498880", 
                    "title":"FAQ relatives à l'authentification unique", 
+                   "description":"Trouvez les réponses aux questions courantes relatives à SSO.", 
                    "url":"Vantage/fr/qma1680184498880.md"
                    }
 
@@ -80,7 +215,7 @@
           { 
              "id":"mwx1694115292045", 
              "title":"Gérer les jetons d'accès", 
-             "description":"Afficher les jetons d'accès actuels dans votre organisation", 
+             "description":"Affichez les jetons d'accès actuels dans votre organisation.", 
              "url":"Vantage/fr/mwx1694115292045.md"
              }
 
@@ -104,13 +239,20 @@
           { 
              "id":"laq1640280582810", 
              "title":"Configurer les paramètres d'environnement", 
-             "description":"Comment les utilisateurs se connectent à l'environnement", 
+             "description":"Comment les utilisateurs se connectent à l'environnement.", 
              "url":"Vantage/fr/laq1640280582810.md", 
              "children":[
                 { 
+                   "id":"jsw1721184303432", 
+                   "title":"Créer un point de terminaison privé dans le portail AWS", 
+                   "description":"Terminez la configuration d'AWS PrivateLink.", 
+                   "url":"Vantage/fr/jsw1721184303432.md"
+                   }
+                , 
+                { 
                    "id":"hyl1696627580794", 
                    "title":"Créer un point de terminaison privé dans le portail Azure", 
-                   "description":"Effectuer la configuration de la liaison privée", 
+                   "description":"Effectuez la configuration de la liaison privée.", 
                    "url":"Vantage/fr/hyl1696627580794.md"
                    }
 
@@ -134,7 +276,7 @@
                 { 
                    "id":"mqu1640280532737", 
                    "title":"Groupes de calcul", 
-                   "description":"Attribuer des ressources de calcul", 
+                   "description":"Attribuez des ressources de calcul.", 
                    "url":"Vantage/fr/mqu1640280532737.md", 
                    "children":[
                       { 
@@ -146,8 +288,8 @@
                       , 
                       { 
                          "id":"dvl1640281718303", 
-                         "title":"Gérer un groupe de calcul", 
-                         "description":"Créez ou modifiez un profil de calcul.", 
+                         "title":"Créer un profil de calcul", 
+                         "description":"Gérez les groupes de calcul avec un profil.", 
                          "url":"Vantage/fr/dvl1640281718303.md"
                          }
                       , 
@@ -155,12 +297,6 @@
                          "id":"wdz1640281743091", 
                          "title":"Accès au groupe de calcul", 
                          "url":"Vantage/fr/wdz1640281743091.md"
-                         }
-                      , 
-                      { 
-                         "id":"zai1697030381122", 
-                         "title":"Faits de groupe de calcul", 
-                         "url":"Vantage/fr/zai1697030381122.md"
                          }
 
                       ]
@@ -170,7 +306,7 @@
                 { 
                    "id":"aow1703107228725", 
                    "title":"Outil d'estimation de la consommation", 
-                   "description":"Évaluer la consommation pour les clusters principaux et de calcul", 
+                   "description":"Évaluez la consommation pour les clusters principaux et de calcul.", 
                    "url":"Vantage/fr/aow1703107228725.md"
                    }
 
@@ -180,8 +316,8 @@
           , 
           { 
              "id":"fcv1681758902467", 
-             "title":"Gestion des accès", 
-             "description":"Gérer l'accès à un environnement", 
+             "title":"Gérer l'accès", 
+             "description":"Gestion des accès pour un environnement.", 
              "url":"Vantage/fr/fcv1681758902467.md", 
              "children":[
                 { 
@@ -194,8 +330,29 @@
                 { 
                    "id":"wxe1659392685092", 
                    "title":"Gérer les utilisateurs de base de données", 
-                   "description":"Considérations relatives à la gestion des utilisateurs d'un environnement", 
+                   "description":"Considérations relatives à la gestion des utilisateurs d'un environnement.", 
                    "url":"Vantage/fr/wxe1659392685092.md"
+                   }
+                , 
+                { 
+                   "id":"chs1723830476456", 
+                   "title":"Gérer les administrateurs de base de données", 
+                   "url":"Vantage/fr/chs1723830476456.md", 
+                   "children":[
+                      { 
+                         "id":"rhw1723830545389", 
+                         "title":"Créer un administrateur de base de données", 
+                         "url":"Vantage/fr/rhw1723830545389.md"
+                         }
+                      , 
+                      { 
+                         "id":"xnm1723830877831", 
+                         "title":"Informer l'administrateur de base de données", 
+                         "url":"Vantage/fr/xnm1723830877831.md"
+                         }
+
+                      ]
+
                    }
 
                 ]
@@ -235,21 +392,15 @@
                             { 
                                "id":"vwc1691596425578", 
                                "title":"Autorisation source et cible", 
-                               "description":"Configurer l'autorisation pour les flux", 
+                               "description":"Configurez l'autorisation pour les flux.", 
                                "url":"Vantage/fr/vwc1691596425578.md"
                                }
                             , 
                             { 
                                "id":"npn1691594431074", 
                                "title":"Sources et cibles", 
-                               "description":"Établir les tables source et cible de flux", 
+                               "description":"Établissez les tables source et cible de flux.", 
                                "url":"Vantage/fr/npn1691594431074.md"
-                               }
-                            , 
-                            { 
-                               "id":"wer1691592221683", 
-                               "title":"Fournir l'accès aux compartiments Amazon S3", 
-                               "url":"Vantage/fr/wer1691592221683.md"
                                }
 
                             ]
@@ -282,7 +433,7 @@
                 { 
                    "id":"vyx1659391025497", 
                    "title":"QueryGrid", 
-                   "description":"Transférer des données entre une ou plusieurs sources de données", 
+                   "description":"Transférez des données entre une ou plusieurs sources de données.", 
                    "url":"Vantage/fr/vyx1659391025497.md", 
                    "children":[
                       { 
@@ -301,7 +452,7 @@
                             { 
                                "id":"znp1640282079399", 
                                "title":"Connecter une source de données", 
-                               "description":"Ajouter une source de données à QueryGrid", 
+                               "description":"Ajoutez une source de données à QueryGrid.", 
                                "url":"Vantage/fr/znp1640282079399.md", 
                                "children":[
                                   { 
@@ -320,8 +471,15 @@
                                   { 
                                      "id":"esw1713987246219", 
                                      "title":"Configurer SSO pour JWT", 
-                                     "description":"Propriétés du connecteur SSO pour JWT", 
+                                     "description":"Propriétés du connecteur SSO pour JWT.", 
                                      "url":"Vantage/fr/esw1713987246219.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"cgh1722901880213", 
+                                     "title":"Connecter VantageCloud Lake en tant que source de données", 
+                                     "description":"Connectez VantageCloud Lake à une autre instance de VantageCloud Lake.", 
+                                     "url":"Vantage/fr/cgh1722901880213.md"
                                      }
 
                                   ]
@@ -347,19 +505,20 @@
                             { 
                                "id":"goh1640282193934", 
                                "title":"Aperçu de l'infrastructure", 
+                               "description":"Connexion de l'infrastructure visualisée.", 
                                "url":"Vantage/fr/goh1640282193934.md"
                                }
                             , 
                             { 
                                "id":"vhb1640282164870", 
                                "title":"Sources de données", 
-                               "description":"Gérer les sources de données connectées à QueryGrid", 
+                               "description":"Gérez les sources de données connectées à QueryGrid.", 
                                "url":"Vantage/fr/vhb1640282164870.md", 
                                "children":[
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"Modifier une source de données", 
-                                     "description":"Modifier les sources de données connectées ou les attribuer comme proxy", 
+                                     "description":"Modifiez les sources de données connectées ou attribuez-les comme proxy.", 
                                      "url":"Vantage/fr/yfd1674158023864.md"
                                      }
                                   , 
@@ -388,6 +547,7 @@
                             { 
                                "id":"zxp1640282246701", 
                                "title":"Paramètres du composant", 
+                               "description":"Configurez les composants de QueryGrid.", 
                                "url":"Vantage/fr/zxp1640282246701.md", 
                                "children":[
                                   { 
@@ -433,13 +593,14 @@
                             { 
                                "id":"ama1689287374954", 
                                "title":"Problèmes", 
-                               "description":"Considérations relatives à l'examen des problèmes de QueryGrid", 
+                               "description":"Considérations relatives à l'examen des problèmes de QueryGrid.", 
                                "url":"Vantage/fr/ama1689287374954.md"
                                }
                             , 
                             { 
                                "id":"oiw1640282294248", 
                                "title":"Opérations", 
+                               "description":"Détails sur les requêtes actuelles et terminées.", 
                                "url":"Vantage/fr/oiw1640282294248.md"
                                }
 
@@ -458,7 +619,7 @@
           { 
              "id":"jrq1640280690304", 
              "title":"Protection des données", 
-             "description":"Protéger les données avec des options de sauvegarde et de restauration", 
+             "description":"Protégez les données avec des options de sauvegarde et de restauration.", 
              "url":"Vantage/fr/jrq1640280690304.md", 
              "children":[
                 { 
@@ -534,7 +695,7 @@
           { 
              "id":"edx1695158840322", 
              "title":"Éditeur", 
-             "description":"Écrire (ou générer) et exécuter des requêtes SQL", 
+             "description":"Écrivez (ou générez) et exécutez des requêtes SQL.", 
              "url":"Vantage/fr/edx1695158840322.md"
              }
 
@@ -558,7 +719,7 @@
           { 
              "id":"tdv1682522711429", 
              "title":"Consommation du calcul", 
-             "description":"Surveiller la consommation du calcul", 
+             "description":"Surveillez la consommation du calcul.", 
              "url":"Vantage/fr/tdv1682522711429.md", 
              "children":[
                 { 
@@ -583,6 +744,7 @@
                 { 
                    "id":"nzf1682539696119", 
                    "title":"FAQ relatives à la consommation du calcul", 
+                   "description":"Trouvez les réponses aux questions courantes.", 
                    "url":"Vantage/fr/nzf1682539696119.md"
                    }
 
@@ -593,7 +755,7 @@
           { 
              "id":"nsc1682522782958", 
              "title":"Consommation du stockage", 
-             "description":"Surveiller la consommation du stockage", 
+             "description":"Surveillez la consommation du stockage.", 
              "url":"Vantage/fr/nsc1682522782958.md", 
              "children":[
                 { 
@@ -612,6 +774,7 @@
                 { 
                    "id":"aku1682545782916", 
                    "title":"FAQ relatives à la consommation du stockage", 
+                   "description":"Trouvez les réponses aux questions courantes.", 
                    "url":"Vantage/fr/aku1682545782916.md"
                    }
 
@@ -622,7 +785,7 @@
           { 
              "id":"jzv1705537218861", 
              "title":"Définir les alertes de consommation", 
-             "description":"Définir les seuils pour recevoir des alertes par e-mail", 
+             "description":"Définissez le seuil pour recevoir des alertes par e-mail.", 
              "url":"Vantage/fr/jzv1705537218861.md"
              }
 
@@ -644,9 +807,43 @@
        "url":"Vantage/fr/jlf1663616946889.md", 
        "children":[
           { 
+             "id":"ddq1721690838988", 
+             "title":"Configurer le partage de données", 
+             "description":"Configurez le partage de données pour partager les tables et les vues avec d'autres utilisateurs.", 
+             "url":"Vantage/fr/ddq1721690838988.md", 
+             "children":[
+                { 
+                   "id":"paa1721766522352", 
+                   "title":"Attribuer le premier utilisateur", 
+                   "description":"Ajoutez un utilisateur ou un rôle en tant que TD_USER_ADMIN.", 
+                   "icon":"counter_1", 
+                   "url":"Vantage/fr/paa1721766522352.md"
+                   }
+                , 
+                { 
+                   "id":"ymj1721766784498", 
+                   "title":"Ajouter un utilisateur administrateur de partage", 
+                   "description":"Ajouter un utilisateur en tant qu'administrateur de partage", 
+                   "icon":"counter_2", 
+                   "url":"Vantage/fr/ymj1721766784498.md"
+                   }
+                , 
+                { 
+                   "id":"hfs1721767315385", 
+                   "title":"Ajouter des citoyens et des fournisseurs", 
+                   "description":"Ajoutez un utilisateur ou un rôle en tant que citoyen et fournisseur de partage.", 
+                   "icon":"counter_3", 
+                   "url":"Vantage/fr/hfs1721767315385.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
              "id":"hdx1681040827922", 
              "title":"Gérer les utilisateurs du partage de données", 
-             "description":"Rôle et privilèges de l'utilisateur", 
+             "description":"Rôle et privilèges de l'utilisateur.", 
              "url":"Vantage/fr/hdx1681040827922.md"
              }
           , 
@@ -698,7 +895,7 @@
           { 
              "id":"laf1686249149487", 
              "title":"FAQ relatives au partage de données", 
-             "description":"Consulter les réponses aux questions courantes", 
+             "description":"Consultez les réponses aux questions courantes.", 
              "url":"Vantage/fr/laf1686249149487.md"
              }
 
@@ -722,7 +919,7 @@
           { 
              "id":"mor1695159014369", 
              "title":"Charger les données", 
-             "description":"Charger les données ou y accéder", 
+             "description":"Chargez les données ou accédez-y.", 
              "url":"Vantage/fr/mor1695159014369.md"
              }
           , 
@@ -741,8 +938,8 @@
              "children":[
                 { 
                    "id":"qow1711727575738", 
-                   "title":"Créer des rapports", 
-                   "description":"Créer des rapports pour les résultats de requêtes", 
+                   "title":"Visualiser des données et créer des rapports", 
+                   "description":"Créez des rapports pour les résultats de requêtes.", 
                    "url":"Vantage/fr/qow1711727575738.md"
                    }
                 , 
@@ -783,7 +980,7 @@
           { 
              "id":"bkm1640280721917", 
              "title":"Cas d'utilisation", 
-             "description":"Exécuter des cas d'utilisation pour explorer les fonctionnalités de VantageCloud Lake", 
+             "description":"Exécutez des cas d'utilisation pour explorer les fonctionnalités de VantageCloud Lake.", 
              "icon":"book", 
              "url":"Vantage/fr/bkm1640280721917.md", 
              "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
@@ -870,7 +1067,7 @@
                 { 
                    "id":"wtv1703818703501", 
                    "title":"Gérer un plan de copie", 
-                   "description":"Exécuter, suspendre et modifier un plan de copie", 
+                   "description":"Exécutez, suspendez et modifiez un plan de copie.", 
                    "url":"Vantage/fr/wtv1703818703501.md"
                    }
 
@@ -881,7 +1078,7 @@
           { 
              "id":"rhq1703818406583", 
              "title":"FAQ relative à la copie de données", 
-             "description":"Questions éventuelles.", 
+             "description":"Trouvez les réponses aux questions courantes.", 
              "url":"Vantage/fr/rhq1703818406583.md"
              }
 
@@ -898,14 +1095,14 @@
           { 
              "id":"aql1707516911931", 
              "title":"Protegrity", 
-             "description":"Activer Protegrity sur VantageCloud Lake", 
+             "description":"Activez Protegrity sur VantageCloud Lake.", 
              "url":"Vantage/fr/aql1707516911931.md"
              }
           , 
           { 
              "id":"ose1712360610524", 
              "title":"SAS", 
-             "description":"Activer SAS sur VantageCloud Lake", 
+             "description":"Activez SAS sur VantageCloud Lake.", 
              "url":"Vantage/fr/ose1712360610524.md"
              }
 
@@ -928,7 +1125,7 @@
           { 
              "id":"syi1695940519543", 
              "title":"Gérer les jetons d'accès", 
-             "description":"Créer et configurer des jetons d'accès personnels (PAT)", 
+             "description":"Créez et configurez des jetons d'accès personnels (PAT).", 
              "url":"Vantage/fr/syi1695940519543.md"
              }
 
@@ -946,26 +1143,10 @@
     { 
        "id":"bkm1640280721917", 
        "title":"Cas d'utilisation", 
-       "description":"Exécuter des cas d'utilisation pour explorer les fonctionnalités de VantageCloud Lake", 
+       "description":"Exécutez des cas d'utilisation pour explorer les fonctionnalités de VantageCloud Lake.", 
        "icon":"book", 
        "url":"Vantage/fr/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
-       }
-    , 
-    { 
-       "id":"nhn1706907203900", 
-       "title":"Documentation", 
-       "description":"Documentation de VantageCloud Lake complète.", 
-       "icon":"library_books", 
-       "url":"Vantage/fr/nhn1706907203900.md"
-       }
-    , 
-    { 
-       "id":"pkj1706907262368", 
-       "title":"Assistance technique", 
-       "description":"Créez et gérez les demandes de services.", 
-       "icon":"assistance", 
-       "url":"Vantage/fr/pkj1706907262368.md"
        }
 
     ]
