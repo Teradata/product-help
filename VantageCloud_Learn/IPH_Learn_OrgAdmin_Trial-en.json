@@ -24,21 +24,21 @@
              }
           , 
           { 
+             "id":"ahx1707271934625", 
+             "title":"Technical documentation", 
+             "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
+             "icon":"library_books", 
+             "url":"VantageCloud_Learn/ahx1707271934625.md", 
+             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
+             }
+          , 
+          { 
              "id":"lam1707187864117", 
              "title":"Run your first query", 
              "description":"Use the Editor to run your first Vantage query.", 
              "icon":"script_sql_outlined;covalent", 
              "url":"VantageCloud_Learn/lam1707187864117.md", 
              "childrenUrl":"ahj1695153106508"
-             }
-          , 
-          { 
-             "id":"ybo1714845836541", 
-             "title":"Explore use cases", 
-             "description":"Run uses cases to experience VantageCloud Lake capabilities.", 
-             "icon":"book", 
-             "url":"VantageCloud_Learn/ybo1714845836541.md", 
-             "childrenUrl":"bkm1640280721917"
              }
 
           ]
@@ -47,8 +47,8 @@
     , 
     { 
        "id":"ubu1707187832449", 
-       "title":"Help content", 
-       "description":"Learn what to do next.", 
+       "title":"Organizational admins", 
+       "description":"Prepare the system for your team.", 
        "url":"VantageCloud_Learn/ubu1707187832449.md", 
        "children":[
           { 
@@ -61,21 +61,21 @@
              }
           , 
           { 
+             "id":"yyz1710373675172", 
+             "title":"Add database administrator", 
+             "description":"Add other database administrators to the environment.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
+             }
+          , 
+          { 
              "id":"ujr1714845520425", 
              "title":"Database users", 
              "description":"See how to add other users to the environment's database.", 
              "icon":"group", 
              "url":"VantageCloud_Learn/ujr1714845520425.md", 
              "childrenUrl":"wxe1659392685092"
-             }
-          , 
-          { 
-             "id":"wje1714845660801", 
-             "title":"Data protection", 
-             "description":"Discover ways to backup and restore your data.", 
-             "icon":"settings_backup_restore", 
-             "url":"VantageCloud_Learn/wje1714845660801.md", 
-             "childrenUrl":"jrq1640280690304"
              }
           , 
           { 
@@ -101,6 +101,51 @@
        }
     , 
     { 
+       "id":"que1729894837638", 
+       "title":"Database administrators", 
+       "description":"Add users and compute resources.", 
+       "url":"VantageCloud_Learn/que1729894837638.md", 
+       "children":[
+          { 
+             "id":"sbv1729897674850", 
+             "title":"Monitor queries", 
+             "description":"Discover how to monitor queries.", 
+             "url":"VantageCloud_Learn/sbv1729897674850.md", 
+             "childrenUrl":"ajr1640280560519"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xwq1729895742653", 
+       "title":"Database users", 
+       "description":"Load and analyze data.", 
+       "url":"VantageCloud_Learn/xwq1729895742653.md", 
+       "children":[
+          { 
+             "id":"ybo1714845836541", 
+             "title":"Explore use cases", 
+             "description":"Run uses cases to experience VantageCloud Lake capabilities.", 
+             "icon":"book", 
+             "url":"VantageCloud_Learn/ybo1714845836541.md", 
+             "childrenUrl":"bkm1640280721917"
+             }
+          , 
+          { 
+             "id":"trp1729898889139", 
+             "title":"Learn about the SQL editor", 
+             "description":"Write (or build) and run SQL queries.", 
+             "url":"VantageCloud_Learn/trp1729898889139.md", 
+             "childrenUrl":"xbg1640280430669"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"sgl1707186427875", 
        "title":"Additional resources", 
        "description":"Where to go for more help.", 
@@ -113,15 +158,6 @@
              "icon":"live_help", 
              "url":"VantageCloud_Learn/gxj1707271369419.md", 
              "childrenUrl":"resource-center"
-             }
-          , 
-          { 
-             "id":"ahx1707271934625", 
-             "title":"Technical documentation", 
-             "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
-             "icon":"library_books", 
-             "url":"VantageCloud_Learn/ahx1707271934625.md", 
-             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
           , 
           { 
