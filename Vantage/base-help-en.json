@@ -31,6 +31,7 @@
                    }
 
                 ]
+
              }
           , 
           { 
@@ -118,6 +119,7 @@
                          "icon":"counter_2", 
                          "url":"Vantage/ydj1721092986132.md"
                          }
+
                       ]
 
                    }
@@ -128,9 +130,11 @@
                    "description":"What to do next", 
                    "url":"Vantage/myu1722373703045.md"
                    }
+
                 ]
+
              }
-          , 	 
+          , 
           { 
              "id":"rvv1721237055370", 
              "title":"Database users", 
@@ -330,28 +334,6 @@
                    "url":"Vantage/wxe1659392685092.md"
                    }
                 , 
-				{ 
-                   "id":"chs1723830476456", 
-                   "title":"Manage database administrators", 
-                   "url":"Vantage/chs1723830476456.md"
-                   }
-                ,
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"Create a database administrator", 
-                         "url":"Vantage/rhw1723830545389.md"
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"Notify the database administrator", 
-                         "url":"Vantage/xnm1723830877831.md"
-                         }
-
-                      ]
-
-                   }
-                , 				
                 { 
                    "id":"qvt1726089301895", 
                    "title":"Open analytics", 
@@ -369,6 +351,70 @@
              "description":"Load or access data.", 
              "url":"Vantage/jwm1694121113608.md", 
              "children":[
+                { 
+                   "id":"auw1640280669500", 
+                   "title":"Flows", 
+                   "description":"Load data from object storage.", 
+                   "url":"Vantage/auw1640280669500.md", 
+                   "children":[
+                      { 
+                         "id":"wsa1640282405363", 
+                         "title":"Who does what", 
+                         "url":"Vantage/wsa1640282405363.md"
+                         }
+                      , 
+                      { 
+                         "id":"luq1640282345986", 
+                         "title":"Create a flow", 
+                         "url":"Vantage/luq1640282345986.md", 
+                         "children":[
+                            { 
+                               "id":"ury1691596218182", 
+                               "title":"Load option considerations", 
+                               "description":"Options running a Flow", 
+                               "url":"Vantage/ury1691596218182.md"
+                               }
+                            , 
+                            { 
+                               "id":"vwc1691596425578", 
+                               "title":"Source and target authorization", 
+                               "description":"Set up authorization for Flows.", 
+                               "url":"Vantage/vwc1691596425578.md"
+                               }
+                            , 
+                            { 
+                               "id":"npn1691594431074", 
+                               "title":"Sources and targets", 
+                               "description":"Establish Flow source and target tables.", 
+                               "url":"Vantage/npn1691594431074.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"fqx1691599182279", 
+                         "title":"Run, pause, or reset a flow", 
+                         "url":"Vantage/fqx1691599182279.md"
+                         }
+                      , 
+                      { 
+                         "id":"dod1691610081069", 
+                         "title":"Update a flow", 
+                         "url":"Vantage/dod1691610081069.md"
+                         }
+                      , 
+                      { 
+                         "id":"dxg1691603081375", 
+                         "title":"Flows FAQ", 
+                         "description":"Answers to common Flows questions.", 
+                         "url":"Vantage/dxg1691603081375.md"
+                         }
+
+                      ]
+
+                   }
                 , 
                 { 
                    "id":"vyx1659391025497", 
@@ -739,7 +785,110 @@
        "description":"View the organization's total estimated consumption.", 
        "url":"Vantage/vsb1703029847518.md"
        }
-    ,  
+    , 
+    { 
+       "id":"jlf1663616946889", 
+       "title":"Data sharing", 
+       "description":"Share tables and views with other users.", 
+       "url":"Vantage/jlf1663616946889.md", 
+       "children":[
+          { 
+             "id":"ddq1721690838988", 
+             "title":"Set up data sharing", 
+             "description":"Set up data sharing to share tables and views with other users.", 
+             "url":"Vantage/ddq1721690838988.md", 
+             "children":[
+                { 
+                   "id":"paa1721766522352", 
+                   "title":"Assign the first user", 
+                   "description":"Add a user or role as a TD_USER_ADMIN.", 
+                   "icon":"counter_1", 
+                   "url":"Vantage/paa1721766522352.md"
+                   }
+                , 
+                { 
+                   "id":"ymj1721766784498", 
+                   "title":"Add a share admin user", 
+                   "description":"Add a user as a share admin", 
+                   "icon":"counter_2", 
+                   "url":"Vantage/ymj1721766784498.md"
+                   }
+                , 
+                { 
+                   "id":"hfs1721767315385", 
+                   "title":"Add citizens and providers", 
+                   "description":"Add a user or role as a share citizen and provider.", 
+                   "icon":"counter_3", 
+                   "url":"Vantage/hfs1721767315385.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"hdx1681040827922", 
+             "title":"Manage data share users", 
+             "description":"User roles and privileges.", 
+             "url":"Vantage/hdx1681040827922.md"
+             }
+          , 
+          { 
+             "id":"vlk1663617148666", 
+             "title":"Create a data share", 
+             "description":"Share datasets with subscribers", 
+             "url":"Vantage/vlk1663617148666.md"
+             }
+          , 
+          { 
+             "id":"gds1686247574408", 
+             "title":"Work with datasets", 
+             "description":"Tasks as a share provider or subscriber", 
+             "url":"Vantage/gds1686247574408.md", 
+             "children":[
+                { 
+                   "id":"rfg1681040443995", 
+                   "title":"Manage datasets", 
+                   "description":"Assign privileges to datasets", 
+                   "url":"Vantage/rfg1681040443995.md"
+                   }
+                , 
+                { 
+                   "id":"hfx1686247226223", 
+                   "title":"View and use datasets", 
+                   "description":"Citizen roles for datasets", 
+                   "url":"Vantage/hfx1686247226223.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"vph1681040670091", 
+             "title":"Manage subscribers", 
+             "description":"Add a user or role as a subscriber", 
+             "url":"Vantage/vph1681040670091.md"
+             }
+          , 
+          { 
+             "id":"vuh1681040768372", 
+             "title":"Delete a share", 
+             "description":"What happens when you delete a share", 
+             "url":"Vantage/vuh1681040768372.md"
+             }
+          , 
+          { 
+             "id":"laf1686249149487", 
+             "title":"Data sharing FAQ", 
+             "description":"See answers to common questions.", 
+             "url":"Vantage/laf1686249149487.md"
+             }
+
+          ]
+
+       }
+    , 
     { 
        "id":"lxi1695933833104", 
        "title":"Load data", 
