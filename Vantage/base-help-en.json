@@ -134,14 +134,7 @@
                 ]
 
              }
-          , 
-		  { 
-             "id":"mmq1721237123997", 
-             "title":"Database administrators", 
-             "description":"Add a DBA to the environment.", 
-             "url":"Vantage/mmq1721237123997.md"
-             }
-		  ,	 
+          , 	 
           { 
              "id":"rvv1721237055370", 
              "title":"Database users", 
