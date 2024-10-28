@@ -25,7 +25,7 @@
           , 
           { 
              "id":"krx1707187712212", 
-             "title":"Activer l'accès réseau", 
+             "title":"Gérer la connectivité réseau", 
              "description":"Autorisez les connexions réseau à votre environnement.", 
              "icon":"network_locked", 
              "url":"VantageCloud_Learn/fr/krx1707187712212.md", 

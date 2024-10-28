@@ -25,7 +25,7 @@
           , 
           { 
              "id":"krx1707187712212", 
-             "title":"Habilitar el acceso a la red", 
+             "title":"Administrar la conectividad de la red", 
              "description":"Permita conexiones de red a su entorno.", 
              "icon":"network_locked", 
              "url":"VantageCloud_Learn/es/krx1707187712212.md", 

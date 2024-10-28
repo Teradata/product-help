@@ -25,7 +25,7 @@
           , 
           { 
              "id":"krx1707187712212", 
-             "title":"Netzwerkzugriff aktivieren", 
+             "title":"Netzwerkkonnektivität verwalten", 
              "description":"Lassen Sie Netzwerkverbindungen zu Ihrer Umgebung zu.", 
              "icon":"network_locked", 
              "url":"VantageCloud_Learn/de/krx1707187712212.md", 

@@ -78,7 +78,7 @@
                 , 
                 { 
                    "id":"cqk1721231159841", 
-                   "title":"アクセスを有効にする", 
+                   "title":"ネットワーク接続を管理する", 
                    "description":"環境への接続を許可します。", 
                    "icon":"counter_2", 
                    "url":"Vantage/ja/cqk1721231159841.md", 
@@ -148,7 +148,7 @@
     , 
     { 
        "id":"apw1640280478763", 
-       "title":"組織", 
+       "title":"組織ホーム", 
        "description":"VantageCloud Lake利用組織を管理します。", 
        "url":"Vantage/ja/apw1640280478763.md", 
        "children":[
@@ -269,7 +269,7 @@
                 { 
                    "id":"isb1696461636881", 
                    "title":"プライマリ クラスタ", 
-                   "description":"プライマリ クラスタを理解する", 
+                   "description":"プライマリ クラスタについて理解します。", 
                    "url":"Vantage/ja/isb1696461636881.md"
                    }
                 , 
@@ -335,24 +335,10 @@
                    }
                 , 
                 { 
-                   "id":"chs1723830476456", 
-                   "title":"データベース管理者を管理する", 
-                   "url":"Vantage/ja/chs1723830476456.md", 
-                   "children":[
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"データベース管理者を作成する", 
-                         "url":"Vantage/ja/rhw1723830545389.md"
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"データベース管理者に通知する", 
-                         "url":"Vantage/ja/xnm1723830877831.md"
-                         }
-
-                      ]
-
+                   "id":"qvt1726089301895", 
+                   "title":"オープン分析", 
+                   "description":"Anacondaをオンにして分析ワークロードを実行できるようにします。", 
+                   "url":"Vantage/ja/qvt1726089301895.md"
                    }
 
                 ]
@@ -980,7 +966,7 @@
           { 
              "id":"bkm1640280721917", 
              "title":"ユースケース", 
-             "description":"ユースケースを実行してVantageCloud Lakeの機能を探ります。", 
+             "description":"ユース ケースを実行してVantageCloud Lakeの機能を探ります。", 
              "icon":"book", 
              "url":"Vantage/ja/bkm1640280721917.md", 
              "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
@@ -1146,7 +1132,7 @@
        "description":"ユースケースを実行してVantageCloud Lakeの機能を探ります。", 
        "icon":"book", 
        "url":"Vantage/ja/bkm1640280721917.md", 
-       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
        }
 
     ]
