@@ -25,7 +25,7 @@
           , 
           { 
              "id":"krx1707187712212", 
-             "title":"ネットワーク アクセスを有効にする", 
+             "title":"ネットワーク接続を管理する", 
              "description":"環境へのネットワーク接続を許可します。", 
              "icon":"network_locked", 
              "url":"VantageCloud_Learn/ja/krx1707187712212.md", 

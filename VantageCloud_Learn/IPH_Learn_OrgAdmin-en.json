@@ -15,21 +15,12 @@
              }
           , 
           { 
-             "id":"jiy1707187681752", 
-             "title":"Create environments", 
-             "description":"Create your first primary cluster and database.", 
-             "icon":"server_outlined;covalent", 
-             "url":"VantageCloud_Learn/jiy1707187681752.md", 
-             "childrenUrl":"wvr1709157903898"
-             }
-          , 
-          { 
-             "id":"krx1707187712212", 
-             "title":"Enable network access", 
-             "description":"Allow network connections to your environment.", 
-             "icon":"network_locked", 
-             "url":"VantageCloud_Learn/krx1707187712212.md", 
-             "childrenUrl":"cqk1721231159841"
+             "id":"ahx1707271934625", 
+             "title":"Technical documentation", 
+             "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
+             "icon":"library_books", 
+             "url":"VantageCloud_Learn/ahx1707271934625.md", 
+             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
           , 
           { 
@@ -47,9 +38,64 @@
     , 
     { 
        "id":"ubu1707187832449", 
-       "title":"Help content", 
-       "description":"Learn what to do next.", 
+       "title":"Organizational admins", 
+       "description":"Prepare the system for your team.", 
        "url":"VantageCloud_Learn/ubu1707187832449.md", 
+       "children":[
+          { 
+             "id":"jiy1707187681752", 
+             "title":"Create environments", 
+             "description":"Create your first primary cluster and database.", 
+             "icon":"server_outlined;covalent", 
+             "url":"VantageCloud_Learn/jiy1707187681752.md", 
+             "childrenUrl":"wvr1709157903898"
+             }
+          , 
+          { 
+             "id":"krx1707187712212", 
+             "title":"Manage network connectivity", 
+             "description":"Allow network connections to your environment.", 
+             "icon":"network_locked", 
+             "url":"VantageCloud_Learn/krx1707187712212.md", 
+             "childrenUrl":"cqk1721231159841"
+             }
+          , 
+          { 
+             "id":"yyz1710373675172", 
+             "title":"Add database administrator", 
+             "description":"Add other database administrators to the environment.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
+             }
+          , 
+          { 
+             "id":"nnr1714845584229", 
+             "title":"Single sign-on", 
+             "description":"Understand how to use your corporate identity provider to allow access to the environment.", 
+             "icon":"connected_identity_outlined;covalent", 
+             "url":"VantageCloud_Learn/nnr1714845584229.md", 
+             "childrenUrl":"mxq1680183881642"
+             }
+          , 
+          { 
+             "id":"uvi1714845877298", 
+             "title":"Resource monitoring", 
+             "description":"Learn how to review query details to better balance compute resources.", 
+             "icon":"show_chart", 
+             "url":"VantageCloud_Learn/uvi1714845877298.md", 
+             "childrenUrl":"onj1682104977691"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"que1729894837638", 
+       "title":"Database administrators", 
+       "description":"Add users and compute resources.", 
+       "url":"VantageCloud_Learn/que1729894837638.md", 
        "children":[
           { 
              "id":"qlu1714845432088", 
@@ -67,15 +113,6 @@
              "icon":"group", 
              "url":"VantageCloud_Learn/ujr1714845520425.md", 
              "childrenUrl":"wxe1659392685092"
-             }
-          , 
-          { 
-             "id":"nnr1714845584229", 
-             "title":"Single sign-on", 
-             "description":"Understand how to use your corporate identity provider to allow access to the environment.", 
-             "icon":"connected_identity_outlined;covalent", 
-             "url":"VantageCloud_Learn/nnr1714845584229.md", 
-             "childrenUrl":"mxq1680183881642"
              }
           , 
           { 
@@ -97,14 +134,23 @@
              }
           , 
           { 
-             "id":"zvp1714845785474", 
-             "title":"Connect your own tools", 
-             "description":"Use the tool of your choice with your Vantage environment.", 
-             "icon":"build", 
-             "url":"VantageCloud_Learn/zvp1714845785474.md", 
-             "childrenUrl":"pmg1709157026832"
+             "id":"sbv1729897674850", 
+             "title":"Monitor queries", 
+             "description":"Discover how to monitor queries.", 
+             "url":"VantageCloud_Learn/sbv1729897674850.md", 
+             "childrenUrl":"ajr1640280560519"
              }
-          , 
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xwq1729895742653", 
+       "title":"Database users", 
+       "description":"Load and analyze data.", 
+       "url":"VantageCloud_Learn/xwq1729895742653.md", 
+       "children":[
           { 
              "id":"ybo1714845836541", 
              "title":"Explore use cases", 
@@ -115,12 +161,29 @@
              }
           , 
           { 
-             "id":"uvi1714845877298", 
-             "title":"Resource monitoring", 
-             "description":"Learn how to review query details to better balance compute resources.", 
-             "icon":"show_chart", 
-             "url":"VantageCloud_Learn/uvi1714845877298.md", 
-             "childrenUrl":"onj1682104977691"
+             "id":"zvp1714845785474", 
+             "title":"Connect your own tools", 
+             "description":"Use the tool of your choice with your Vantage environment.", 
+             "icon":"build", 
+             "url":"VantageCloud_Learn/zvp1714845785474.md", 
+             "childrenUrl":"pmg1709157026832"
+             }
+          , 
+          { 
+             "id":"trp1729898889139", 
+             "title":"Learn about the SQL editor", 
+             "description":"Write (or build) and run SQL queries.", 
+             "url":"VantageCloud_Learn/trp1729898889139.md", 
+             "childrenUrl":"xbg1640280430669"
+             }
+          , 
+          { 
+             "id":"oux1714177476353", 
+             "title":"Review the SQL reference guide", 
+             "description":"Find complete information on all SQL commands, functions, and database references", 
+             "icon":"product_editor_outlined;covalent", 
+             "url":"VantageCloud_Learn/oux1714177476353.md", 
+             "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
 
           ]
@@ -149,15 +212,6 @@
              "icon":"new_releases", 
              "url":"VantageCloud_Learn/bnn1707271398245.md", 
              "childrenUrl":"https://docs.teradata.com/access/sources/dita/topic?dita:mapPath=phg1621910019905.ditamap&dita:ditavalPath=pny1626732985837.ditaval&dita:topicPath=lpz1632246643646.dita"
-             }
-          , 
-          { 
-             "id":"ahx1707271934625", 
-             "title":"Technical documentation", 
-             "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
-             "icon":"library_books", 
-             "url":"VantageCloud_Learn/ahx1707271934625.md", 
-             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
           , 
           { 

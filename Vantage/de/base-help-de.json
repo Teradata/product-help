@@ -78,7 +78,7 @@
                 , 
                 { 
                    "id":"cqk1721231159841", 
-                   "title":"Zugriff ermöglichen", 
+                   "title":"Netzwerkkonnektivität verwalten", 
                    "description":"Lassen Sie Verbindungen zu Ihrer Umgebung zu.", 
                    "icon":"counter_2", 
                    "url":"Vantage/de/cqk1721231159841.md", 
@@ -148,7 +148,7 @@
     , 
     { 
        "id":"apw1640280478763", 
-       "title":"Organisation", 
+       "title":"Organisation – Startseite", 
        "description":"Verwalten Sie Ihre VantageCloud Lake-Organisation.", 
        "url":"Vantage/de/apw1640280478763.md", 
        "children":[
@@ -269,7 +269,7 @@
                 { 
                    "id":"isb1696461636881", 
                    "title":"Primärer Cluster", 
-                   "description":"Informationen zum primären Cluster", 
+                   "description":"Informationen zum primären Cluster.", 
                    "url":"Vantage/de/isb1696461636881.md"
                    }
                 , 
@@ -335,24 +335,10 @@
                    }
                 , 
                 { 
-                   "id":"chs1723830476456", 
-                   "title":"Datenbankadministratoren verwalten", 
-                   "url":"Vantage/de/chs1723830476456.md", 
-                   "children":[
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"Datenbankadministrator erstellen", 
-                         "url":"Vantage/de/rhw1723830545389.md"
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"Datenbankadministrator benachrichtigen", 
-                         "url":"Vantage/de/xnm1723830877831.md"
-                         }
-
-                      ]
-
+                   "id":"qvt1726089301895", 
+                   "title":"Analyse öffnen", 
+                   "description":"Aktivieren Sie Anaconda, um Analysearbeitslasten auszuführen.", 
+                   "url":"Vantage/de/qvt1726089301895.md"
                    }
 
                 ]

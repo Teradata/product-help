@@ -78,7 +78,7 @@
                 , 
                 { 
                    "id":"cqk1721231159841", 
-                   "title":"Habilitar el acceso", 
+                   "title":"Administrar la conectividad de la red", 
                    "description":"Permita conexiones a su entorno.", 
                    "icon":"counter_2", 
                    "url":"Vantage/es/cqk1721231159841.md", 
@@ -148,7 +148,7 @@
     , 
     { 
        "id":"apw1640280478763", 
-       "title":"Organización", 
+       "title":"Inicio de organización", 
        "description":"Gestionar la organización VantageCloud Lake.", 
        "url":"Vantage/es/apw1640280478763.md", 
        "children":[
@@ -269,7 +269,7 @@
                 { 
                    "id":"isb1696461636881", 
                    "title":"Clúster principal", 
-                   "description":"Descripción del clúster principal", 
+                   "description":"Comprenda el clúster principal.", 
                    "url":"Vantage/es/isb1696461636881.md"
                    }
                 , 
@@ -335,24 +335,10 @@
                    }
                 , 
                 { 
-                   "id":"chs1723830476456", 
-                   "title":"Gestionar administradores de base de datos", 
-                   "url":"Vantage/es/chs1723830476456.md", 
-                   "children":[
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"Crear un administrador de base de datos", 
-                         "url":"Vantage/es/rhw1723830545389.md"
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"Notificar al administrador de base de datos", 
-                         "url":"Vantage/es/xnm1723830877831.md"
-                         }
-
-                      ]
-
+                   "id":"qvt1726089301895", 
+                   "title":"Analíticas abiertas", 
+                   "description":"Active Anaconda para ejecutar cargas de trabajo analíticas.", 
+                   "url":"Vantage/es/qvt1726089301895.md"
                    }
 
                 ]

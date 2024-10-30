@@ -78,7 +78,7 @@
                 , 
                 { 
                    "id":"cqk1721231159841", 
-                   "title":"Activer l'accès", 
+                   "title":"Gérer la connectivité réseau", 
                    "description":"Autorisez les connexions à votre environnement.", 
                    "icon":"counter_2", 
                    "url":"Vantage/fr/cqk1721231159841.md", 
@@ -148,7 +148,7 @@
     , 
     { 
        "id":"apw1640280478763", 
-       "title":"Organisation", 
+       "title":"Accueil de l'organisation", 
        "description":"Gérez votre organisation VantageCloud Lake.", 
        "url":"Vantage/fr/apw1640280478763.md", 
        "children":[
@@ -269,7 +269,7 @@
                 { 
                    "id":"isb1696461636881", 
                    "title":"Cluster principal", 
-                   "description":"Comprendre le cluster principal", 
+                   "description":"Comprenez le cluster principal.", 
                    "url":"Vantage/fr/isb1696461636881.md"
                    }
                 , 
@@ -335,24 +335,10 @@
                    }
                 , 
                 { 
-                   "id":"chs1723830476456", 
-                   "title":"Gérer les administrateurs de base de données", 
-                   "url":"Vantage/fr/chs1723830476456.md", 
-                   "children":[
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"Créer un administrateur de base de données", 
-                         "url":"Vantage/fr/rhw1723830545389.md"
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"Informer l'administrateur de base de données", 
-                         "url":"Vantage/fr/xnm1723830877831.md"
-                         }
-
-                      ]
-
+                   "id":"qvt1726089301895", 
+                   "title":"Analyses ouvertes", 
+                   "description":"Activez Anaconda pour exécuter les charges de travail d'analyse.", 
+                   "url":"Vantage/fr/qvt1726089301895.md"
                    }
 
                 ]
@@ -1016,7 +1002,7 @@
     , 
     { 
        "id":"bgr1694118840100", 
-       "title":"データ コピー", 
+       "title":"Copie de données", 
        "description":"Provisionnez, configurez et exécutez des tâches de copie de données.", 
        "url":"Vantage/fr/bgr1694118840100.md", 
        "children":[

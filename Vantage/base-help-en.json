@@ -78,7 +78,7 @@
                 , 
                 { 
                    "id":"cqk1721231159841", 
-                   "title":"Enable access", 
+                   "title":"Manage network connectivity", 
                    "description":"Allow connections to your environment.", 
                    "icon":"counter_2", 
                    "url":"Vantage/cqk1721231159841.md", 
@@ -148,7 +148,7 @@
     , 
     { 
        "id":"apw1640280478763", 
-       "title":"Organization", 
+       "title":"Organization home", 
        "description":"Manage your VantageCloud Lake organization.", 
        "url":"Vantage/apw1640280478763.md", 
        "children":[
@@ -269,7 +269,7 @@
                 { 
                    "id":"isb1696461636881", 
                    "title":"Primary cluster", 
-                   "description":"Understand the primary cluster", 
+                   "description":"Understand the primary cluster.", 
                    "url":"Vantage/isb1696461636881.md"
                    }
                 , 
@@ -335,24 +335,10 @@
                    }
                 , 
                 { 
-                   "id":"chs1723830476456", 
-                   "title":"Manage database administrators", 
-                   "url":"Vantage/chs1723830476456.md", 
-                   "children":[
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"Create a database administrator", 
-                         "url":"Vantage/rhw1723830545389.md"
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"Notify the database administrator", 
-                         "url":"Vantage/xnm1723830877831.md"
-                         }
-
-                      ]
-
+                   "id":"qvt1726089301895", 
+                   "title":"Open analytics", 
+                   "description":"Turn on Anaconda to run analytic workloads.", 
+                   "url":"Vantage/qvt1726089301895.md"
                    }
 
                 ]
