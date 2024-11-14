@@ -305,29 +305,6 @@
                          "title":"Compute group access", 
                          "url":"Vantage/wdz1640281743091.md"
                          }
-                      , 
-                      { 
-                         "id":"zai1697030381122", 
-                         "title":"Compute group FAQ", 
-                         "url":"Vantage/zai1697030381122.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"lyi1662583368110", 
-                   "title":"Compute workers", 
-                   "description":"Create nodes for heavy processing", 
-                   "url":"Vantage/lyi1662583368110.md", 
-                   "children":[
-                      { 
-                         "id":"azi1662584068628", 
-                         "title":"Create a compute worker", 
-                         "description":"Considerations for creating a Compute worker", 
-                         "url":"Vantage/azi1662584068628.md"
-                         }
 
                       ]
 
@@ -367,12 +344,35 @@
                 { 
                    "id":"chs1723830476456", 
                    "title":"Manage database administrators", 
+                   "description":"Learn about DBAs and how to create them.", 
                    "url":"Vantage/chs1723830476456.md", 
                    "children":[
                       { 
                          "id":"rhw1723830545389", 
                          "title":"Create a database administrator", 
-                         "url":"Vantage/rhw1723830545389.md"
+                         "description":"Steps to create additional DBAs.", 
+                         "url":"Vantage/rhw1723830545389.md", 
+                         "children":[
+                            { 
+                               "id":"tws1731526438164", 
+                               "title":"DBC (root) user", 
+                               "url":"Vantage/tws1731526438164.md"
+                               }
+                            , 
+                            { 
+                               "id":"yvc1731523611301", 
+                               "title":"Permanent space", 
+                               "url":"Vantage/yvc1731523611301.md"
+                               }
+                            , 
+                            { 
+                               "id":"hnk1731523638342", 
+                               "title":"Choose a character set", 
+                               "url":"Vantage/hnk1731523638342.md"
+                               }
+
+                            ]
+
                          }
                       , 
                       { 
@@ -402,77 +402,6 @@
              "description":"Load or access data.", 
              "url":"Vantage/jwm1694121113608.md", 
              "children":[
-                { 
-                   "id":"auw1640280669500", 
-                   "title":"Flows", 
-                   "description":"Load data from object storage.", 
-                   "url":"Vantage/auw1640280669500.md", 
-                   "children":[
-                      { 
-                         "id":"wsa1640282405363", 
-                         "title":"Who does what", 
-                         "url":"Vantage/wsa1640282405363.md"
-                         }
-                      , 
-                      { 
-                         "id":"luq1640282345986", 
-                         "title":"Create a flow", 
-                         "url":"Vantage/luq1640282345986.md", 
-                         "children":[
-                            { 
-                               "id":"ury1691596218182", 
-                               "title":"Load option considerations", 
-                               "description":"Options running a Flow", 
-                               "url":"Vantage/ury1691596218182.md"
-                               }
-                            , 
-                            { 
-                               "id":"vwc1691596425578", 
-                               "title":"Source and target authorization", 
-                               "description":"Set up authorization for Flows.", 
-                               "url":"Vantage/vwc1691596425578.md"
-                               }
-                            , 
-                            { 
-                               "id":"npn1691594431074", 
-                               "title":"Sources and targets", 
-                               "description":"Establish Flow source and target tables.", 
-                               "url":"Vantage/npn1691594431074.md"
-                               }
-
-                            ]
-
-                         }
-                      , 
-                      { 
-                         "id":"fqx1691599182279", 
-                         "title":"Run, pause, or reset a flow", 
-                         "url":"Vantage/fqx1691599182279.md"
-                         }
-                      , 
-                      { 
-                         "id":"dod1691610081069", 
-                         "title":"Update a flow", 
-                         "url":"Vantage/dod1691610081069.md"
-                         }
-                      , 
-                      { 
-                         "id":"dxg1691603081375", 
-                         "title":"Flows FAQ", 
-                         "description":"Answers to common Flows questions.", 
-                         "url":"Vantage/dxg1691603081375.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"gmh1694121164971", 
-                   "title":"Foreign tables", 
-                   "url":"Vantage/gmh1694121164971.md"
-                   }
-                , 
                 { 
                    "id":"vyx1659391025497", 
                    "title":"QueryGrid", 
@@ -719,12 +648,6 @@
                          "description":"Edit, test, and recover data in a recovery plan.", 
                          "url":"Vantage/cqv1694469814376.md"
                          }
-                      , 
-                      { 
-                         "id":"aie1694462032167", 
-                         "title":"Retention policy", 
-                         "url":"Vantage/aie1694462032167.md"
-                         }
 
                       ]
 
@@ -850,182 +773,6 @@
        }
     , 
     { 
-       "id":"vkg1693932972952", 
-       "title":"Data sharing and exploration", 
-       "url":"Vantage/vkg1693932972952.md", 
-       "children":[
-          { 
-             "id":"vnt1689959854009", 
-             "title":"Data catalog", 
-             "description":"View, search, browse, and annotate data", 
-             "url":"Vantage/vnt1689959854009.md", 
-             "children":[
-                { 
-                   "id":"nde1694121897837", 
-                   "title":"Use data catalog", 
-                   "url":"Vantage/nde1694121897837.md", 
-                   "children":[
-                      { 
-                         "id":"qpz1694121944094", 
-                         "title":"Search and filter the catalog", 
-                         "url":"Vantage/qpz1694121944094.md"
-                         }
-                      , 
-                      { 
-                         "id":"nme1694121977416", 
-                         "title":"View datasets", 
-                         "url":"Vantage/nme1694121977416.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"uat1694122014690", 
-                   "title":"Data catalog FAQ", 
-                   "url":"Vantage/uat1694122014690.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"mux1694121298338", 
-             "title":"Manage data sources", 
-             "url":"Vantage/mux1694121298338.md", 
-             "children":[
-                { 
-                   "id":"lsx1694121572990", 
-                   "title":"Add a data source and datasets", 
-                   "url":"Vantage/lsx1694121572990.md"
-                   }
-                , 
-                { 
-                   "id":"imp1694121598872", 
-                   "title":"Publish a data source", 
-                   "url":"Vantage/imp1694121598872.md"
-                   }
-                , 
-                { 
-                   "id":"mnk1694121651916", 
-                   "title":"Modify a data source", 
-                   "url":"Vantage/mnk1694121651916.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"jlf1663616946889", 
-             "title":"Data sharing", 
-             "description":"Share tables and views with other users.", 
-             "url":"Vantage/jlf1663616946889.md", 
-             "children":[
-                { 
-                   "id":"ddq1721690838988", 
-                   "title":"Set up data sharing", 
-                   "description":"Set up data sharing to share tables and views with other users.", 
-                   "url":"Vantage/ddq1721690838988.md", 
-                   "children":[
-                      { 
-                         "id":"paa1721766522352", 
-                         "title":"Assign the first user", 
-                         "description":"Add a user or role as a TD_USER_ADMIN.", 
-                         "icon":"counter_1", 
-                         "url":"Vantage/paa1721766522352.md"
-                         }
-                      , 
-                      { 
-                         "id":"ymj1721766784498", 
-                         "title":"Add a share admin user", 
-                         "description":"Add a user as a share admin", 
-                         "icon":"counter_2", 
-                         "url":"Vantage/ymj1721766784498.md"
-                         }
-                      , 
-                      { 
-                         "id":"hfs1721767315385", 
-                         "title":"Add citizens and providers", 
-                         "description":"Add a user or role as a share citizen and provider.", 
-                         "icon":"counter_3", 
-                         "url":"Vantage/hfs1721767315385.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"hdx1681040827922", 
-                   "title":"Manage data share users", 
-                   "description":"User roles and privileges.", 
-                   "url":"Vantage/hdx1681040827922.md"
-                   }
-                , 
-                { 
-                   "id":"vlk1663617148666", 
-                   "title":"Create a data share", 
-                   "description":"Share datasets with subscribers.", 
-                   "url":"Vantage/vlk1663617148666.md"
-                   }
-                , 
-                { 
-                   "id":"gds1686247574408", 
-                   "title":"Work with datasets", 
-                   "description":"Tasks as a share provider or subscriber.", 
-                   "url":"Vantage/gds1686247574408.md", 
-                   "children":[
-                      { 
-                         "id":"rfg1681040443995", 
-                         "title":"Manage datasets", 
-                         "description":"Assign privileges to datasets", 
-                         "url":"Vantage/rfg1681040443995.md"
-                         }
-                      , 
-                      { 
-                         "id":"hfx1686247226223", 
-                         "title":"View and use datasets", 
-                         "description":"Citizen roles for datasets", 
-                         "url":"Vantage/hfx1686247226223.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"vph1681040670091", 
-                   "title":"Manage subscribers", 
-                   "description":"Add a user or role as a subscriber.", 
-                   "url":"Vantage/vph1681040670091.md"
-                   }
-                , 
-                { 
-                   "id":"vuh1681040768372", 
-                   "title":"Delete a share", 
-                   "description":"What happens when you delete a share", 
-                   "url":"Vantage/vuh1681040768372.md"
-                   }
-                , 
-                { 
-                   "id":"laf1686249149487", 
-                   "title":"Data sharing FAQ", 
-                   "description":"See answers to common questions.", 
-                   "url":"Vantage/laf1686249149487.md"
-                   }
-
-                ]
-
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"lxi1695933833104", 
        "title":"Load data", 
        "description":"Load or access data.", 
@@ -1146,17 +893,7 @@
              "id":"bcw1700511770060", 
              "title":"Set up Data copy", 
              "description":"Add an environment, copy manager, and agent.", 
-             "url":"Vantage/bcw1700511770060.md", 
-             "children":[
-                { 
-                   "id":"dvp1707442265467", 
-                   "title":"Request an interface endpoint", 
-                   "description":"Create a private link request for Data copy.", 
-                   "url":"Vantage/dvp1707442265467.md"
-                   }
-
-                ]
-
+             "url":"Vantage/bcw1700511770060.md"
              }
           , 
           { 
@@ -1219,204 +956,6 @@
        }
     , 
     { 
-       "id":"qya1694122121061", 
-       "title":"ModelOps", 
-       "url":"Vantage/qya1694122121061.md", 
-       "children":[
-          { 
-             "id":"bvr1694122081407", 
-             "title":"Dashboard", 
-             "url":"Vantage/bvr1694122081407.md"
-             }
-          , 
-          { 
-             "id":"lja1725389137828", 
-             "title":"Settings", 
-             "url":"Vantage/lja1725389137828.md", 
-             "children":[
-                { 
-                   "id":"wkm1725389190945", 
-                   "title":"Connections", 
-                   "url":"Vantage/wkm1725389190945.md", 
-                   "children":[
-                      { 
-                         "id":"vpe1725389258480", 
-                         "title":"Add connection", 
-                         "url":"Vantage/vpe1725389258480.md"
-                         }
-
-                      ]
-
-                   }
-                , 
-                { 
-                   "id":"xnp1725389370171", 
-                   "title":"Notifications", 
-                   "url":"Vantage/xnp1725389370171.md"
-                   }
-                , 
-                { 
-                   "id":"kbm1725407652402", 
-                   "title":"Services", 
-                   "url":"Vantage/kbm1725407652402.md", 
-                   "children":[
-                      { 
-                         "id":"cun1725407710390", 
-                         "title":"Agent logs", 
-                         "url":"Vantage/cun1725407710390.md"
-                         }
-
-                      ]
-
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"jue1725407850414", 
-             "title":"Your account", 
-             "url":"Vantage/jue1725407850414.md", 
-             "children":[
-                { 
-                   "id":"xfm1725407885906", 
-                   "title":"Session details", 
-                   "url":"Vantage/xfm1725407885906.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"rsm1725408063081", 
-             "title":"Projects", 
-             "url":"Vantage/rsm1725408063081.md", 
-             "children":[
-                { 
-                   "id":"vtz1725408102228", 
-                   "title":"Create projects", 
-                   "url":"Vantage/vtz1725408102228.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"fqd1725408187193", 
-             "title":"Models", 
-             "url":"Vantage/fqd1725408187193.md", 
-             "children":[
-                { 
-                   "id":"lvk1725408215354", 
-                   "title":"Models", 
-                   "url":"Vantage/lvk1725408215354.md"
-                   }
-                , 
-                { 
-                   "id":"akl1725408274100", 
-                   "title":"Define BYOM", 
-                   "url":"Vantage/akl1725408274100.md"
-                   }
-                , 
-                { 
-                   "id":"tuy1725408308401", 
-                   "title":"Details", 
-                   "url":"Vantage/tuy1725408308401.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"qdk1725408417926", 
-             "title":"Model", 
-             "url":"Vantage/qdk1725408417926.md", 
-             "children":[
-                { 
-                   "id":"etl1725408512818", 
-                   "title":"Train model", 
-                   "url":"Vantage/etl1725408512818.md"
-                   }
-                , 
-                { 
-                   "id":"xhw1725408779878", 
-                   "title":"Model versions", 
-                   "url":"Vantage/xhw1725408779878.md"
-                   }
-                , 
-                { 
-                   "id":"xtq1725408819410", 
-                   "title":"Commit history", 
-                   "url":"Vantage/xtq1725408819410.md"
-                   }
-                , 
-                { 
-                   "id":"sdn1725408878969", 
-                   "title":"Alert configuration", 
-                   "url":"Vantage/sdn1725408878969.md", 
-                   "children":[
-                      { 
-                         "id":"xtb1725408993090", 
-                         "title":"Create alert configuration/rule", 
-                         "url":"Vantage/xtb1725408993090.md"
-                         }
-
-                      ]
-
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"nwv1725409283494", 
-             "title":"Dataset templates", 
-             "url":"Vantage/nwv1725409283494.md", 
-             "children":[
-                { 
-                   "id":"frd1725409311264", 
-                   "title":"Create dataset template", 
-                   "url":"Vantage/frd1725409311264.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"dqr1725409439891", 
-             "title":"Deployments", 
-             "url":"Vantage/dqr1725409439891.md"
-             }
-          , 
-          { 
-             "id":"jfa1725409457472", 
-             "title":"Jobs", 
-             "url":"Vantage/jfa1725409457472.md"
-             }
-          , 
-          { 
-             "id":"rtz1725409474295", 
-             "title":"Alerts", 
-             "url":"Vantage/rtz1725409474295.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"tvn1694118411267", 
-       "title":"Data migration", 
-       "url":"Vantage/tvn1694118411267.md"
-       }
-    , 
-    { 
        "id":"qpv1707514841101", 
        "title":"User defined functions", 
        "description":"Connect to a third-party application for security.", 
@@ -1435,22 +974,9 @@
              "description":"Enable SAS on VantageCloud Lake.", 
              "url":"Vantage/ose1712360610524.md"
              }
-          , 
-          { 
-             "id":"ijt1712360637589", 
-             "title":"Thales", 
-             "description":"Enable Thales on VantageCloud Lake", 
-             "url":"Vantage/ijt1712360637589.md"
-             }
 
           ]
 
-       }
-    , 
-    { 
-       "id":"pau1694118340856", 
-       "title":"Notifications", 
-       "url":"Vantage/pau1694118340856.md"
        }
     , 
     { 
@@ -1463,12 +989,6 @@
              "id":"ohx1694115234984", 
              "title":"General settings", 
              "url":"Vantage/ohx1694115234984.md"
-             }
-          , 
-          { 
-             "id":"bus1694115262415", 
-             "title":"Reset your password", 
-             "url":"Vantage/bus1694115262415.md"
              }
           , 
           { 
