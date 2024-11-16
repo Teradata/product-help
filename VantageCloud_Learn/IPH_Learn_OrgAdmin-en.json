@@ -73,7 +73,7 @@
              "id":"trp1729898889139", 
              "title":"Learn about the SQL editor", 
              "description":"Write (or build) and run SQL queries.", 
-             "icon":"script", 
+             "icon":"advanced_sql", 
              "url":"VantageCloud_Learn/trp1729898889139.md", 
              "childrenUrl":"xbg1640280430669"
              }
@@ -139,7 +139,7 @@
     , 
     { 
        "id":"ubu1707187832449", 
-       "title":"Organizational admins", 
+       "title":"Organization admins", 
        "description":"Prepare the system for your team.", 
        "url":"VantageCloud_Learn/ubu1707187832449.md", 
        "children":[
@@ -173,7 +173,7 @@
           { 
              "id":"uvi1714845877298", 
              "title":"Monitor resource consumption", 
-             "description":"Learn how to review query details to better balance compute resources.", 
+             "description":"Review the environment's storage, compute resources, and set alerts.", 
              "icon":"show_chart", 
              "url":"VantageCloud_Learn/uvi1714845877298.md", 
              "childrenUrl":"onj1682104977691"
