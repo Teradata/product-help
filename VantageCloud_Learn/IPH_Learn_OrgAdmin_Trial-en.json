@@ -15,15 +15,6 @@
              }
           , 
           { 
-             "id":"xmm1707187643364", 
-             "title":"Welcome to VantageCloud Lake", 
-             "description":"Discover the parts of the Console.", 
-             "icon":"teradata_outlined;covalent", 
-             "url":"VantageCloud_Learn/xmm1707187643364.md", 
-             "childrenUrl":"apv1721232251932"
-             }
-          , 
-          { 
              "id":"ahx1707271934625", 
              "title":"Technical documentation", 
              "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
@@ -43,12 +34,12 @@
        "url":"VantageCloud_Learn/xwq1729895742653.md", 
        "children":[
           { 
-             "id":"bbh1714845725516", 
-             "title":"Load data", 
-             "description":"Discover ways to load and access your data.", 
-             "icon":"database_synced_outlined;covalent", 
-             "url":"VantageCloud_Learn/bbh1714845725516.md", 
-             "childrenUrl":"jwm1694121113608"
+             "id":"lam1707187864117", 
+             "title":"Run your first query", 
+             "description":"Use the Editor to run your first Vantage query.", 
+             "icon":"script_sql_outlined;covalent", 
+             "url":"VantageCloud_Learn/lam1707187864117.md", 
+             "childrenUrl":"ahj1695153106508"
              }
           , 
           { 
@@ -64,18 +55,9 @@
              "id":"trp1729898889139", 
              "title":"Learn about the SQL editor", 
              "description":"Write (or build) and run SQL queries.", 
-             "icon":"script", 
+             "icon":"advanced_sql", 
              "url":"VantageCloud_Learn/trp1729898889139.md", 
              "childrenUrl":"xbg1640280430669"
-             }
-          , 
-          { 
-             "id":"lam1707187864117", 
-             "title":"Run your first query", 
-             "description":"Use the Editor to run your first Vantage query.", 
-             "icon":"script_sql_outlined;covalent", 
-             "url":"VantageCloud_Learn/lam1707187864117.md", 
-             "childrenUrl":"ahj1695153106508"
              }
 
           ]
@@ -108,7 +90,7 @@
           , 
           { 
              "id":"yyz1710373675172", 
-             "title":"Add database administrator", 
+             "title":"Add database administrators", 
              "description":"Add other database administrators to the environment.", 
              "icon":"person", 
              "url":"VantageCloud_Learn/yyz1710373675172.md", 
@@ -116,9 +98,18 @@
              }
           , 
           { 
+             "id":"bbh1714845725516", 
+             "title":"Load data", 
+             "description":"Discover ways to load and access your data.", 
+             "icon":"database_synced_outlined;covalent", 
+             "url":"VantageCloud_Learn/bbh1714845725516.md", 
+             "childrenUrl":"jwm1694121113608"
+             }
+          , 
+          { 
              "id":"sbv1729897674850", 
-             "title":"Monitor queries", 
-             "description":"Discover how to monitor queries.", 
+             "title":"Monitor query performance", 
+             "description":"Discover how to monitor query performance.", 
              "icon":"query_stats", 
              "url":"VantageCloud_Learn/sbv1729897674850.md", 
              "childrenUrl":"ajr1640280560519"
@@ -130,9 +121,30 @@
     , 
     { 
        "id":"ubu1707187832449", 
-       "title":"Organizational admins", 
+       "title":"Organization admins", 
        "description":"Prepare the system for your team.", 
-       "url":"VantageCloud_Learn/ubu1707187832449.md"
+       "url":"VantageCloud_Learn/ubu1707187832449.md", 
+       "children":[
+          { 
+             "id":"jiy1707187681752", 
+             "title":"Create environments", 
+             "description":"Create your first primary cluster and database.", 
+             "icon":"server_outlined;covalent", 
+             "url":"VantageCloud_Learn/jiy1707187681752.md", 
+             "childrenUrl":"wvr1709157903898"
+             }
+          , 
+          { 
+             "id":"krx1707187712212", 
+             "title":"Manage network connectivity", 
+             "description":"Allow network connections to your environment.", 
+             "icon":"network_locked", 
+             "url":"VantageCloud_Learn/krx1707187712212.md", 
+             "childrenUrl":"cqk1721231159841"
+             }
+
+          ]
+
        }
     , 
     { 

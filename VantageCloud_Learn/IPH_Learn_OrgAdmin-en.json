@@ -34,12 +34,12 @@
        "url":"VantageCloud_Learn/xwq1729895742653.md", 
        "children":[
           { 
-             "id":"bbh1714845725516", 
-             "title":"Load data", 
-             "description":"Discover ways to load and access your data.", 
-             "icon":"database_synced_outlined;covalent", 
-             "url":"VantageCloud_Learn/bbh1714845725516.md", 
-             "childrenUrl":"jwm1694121113608"
+             "id":"lam1707187864117", 
+             "title":"Run your first query", 
+             "description":"Use the Editor to run your first Vantage query.", 
+             "icon":"script_sql_outlined;covalent", 
+             "url":"VantageCloud_Learn/lam1707187864117.md", 
+             "childrenUrl":"ahj1695153106508"
              }
           , 
           { 
@@ -61,21 +61,21 @@
              }
           , 
           { 
-             "id":"trp1729898889139", 
-             "title":"Learn about the SQL editor", 
-             "description":"Write (or build) and run SQL queries.", 
-             "icon":"script", 
-             "url":"VantageCloud_Learn/trp1729898889139.md", 
-             "childrenUrl":"xbg1640280430669"
+             "id":"bbh1714845725516", 
+             "title":"Load data", 
+             "description":"Discover ways to load and access your data.", 
+             "icon":"database_synced_outlined;covalent", 
+             "url":"VantageCloud_Learn/bbh1714845725516.md", 
+             "childrenUrl":"jwm1694121113608"
              }
           , 
           { 
-             "id":"lam1707187864117", 
-             "title":"Run your first query", 
-             "description":"Use the Editor to run your first Vantage query.", 
-             "icon":"script_sql_outlined;covalent", 
-             "url":"VantageCloud_Learn/lam1707187864117.md", 
-             "childrenUrl":"ahj1695153106508"
+             "id":"trp1729898889139", 
+             "title":"Learn about the SQL editor", 
+             "description":"Write (or build) and run SQL queries.", 
+             "icon":"advanced_sql", 
+             "url":"VantageCloud_Learn/trp1729898889139.md", 
+             "childrenUrl":"xbg1640280430669"
              }
 
           ]
@@ -108,7 +108,7 @@
           , 
           { 
              "id":"yyz1710373675172", 
-             "title":"Add database administrator", 
+             "title":"Add database administrators", 
              "description":"Add other database administrators to the environment.", 
              "icon":"person", 
              "url":"VantageCloud_Learn/yyz1710373675172.md", 
@@ -117,7 +117,7 @@
           , 
           { 
              "id":"wje1714845660801", 
-             "title":"Protect data", 
+             "title":"Protect your data", 
              "description":"Discover ways to backup and restore your data.", 
              "icon":"settings_backup_restore", 
              "url":"VantageCloud_Learn/wje1714845660801.md", 
@@ -126,8 +126,8 @@
           , 
           { 
              "id":"sbv1729897674850", 
-             "title":"Monitor queries", 
-             "description":"Discover how to monitor queries.", 
+             "title":"Monitor query performance", 
+             "description":"Discover how to monitor query performance.", 
              "icon":"query_stats", 
              "url":"VantageCloud_Learn/sbv1729897674850.md", 
              "childrenUrl":"ajr1640280560519"
@@ -139,7 +139,7 @@
     , 
     { 
        "id":"ubu1707187832449", 
-       "title":"Organizational admins", 
+       "title":"Organization admins", 
        "description":"Prepare the system for your team.", 
        "url":"VantageCloud_Learn/ubu1707187832449.md", 
        "children":[
@@ -172,8 +172,8 @@
           , 
           { 
              "id":"uvi1714845877298", 
-             "title":"Monitor resources", 
-             "description":"Learn how to review query details to better balance compute resources.", 
+             "title":"Monitor resource consumption", 
+             "description":"Review the environment's storage, compute resources, and set alerts.", 
              "icon":"show_chart", 
              "url":"VantageCloud_Learn/uvi1714845877298.md", 
              "childrenUrl":"onj1682104977691"
