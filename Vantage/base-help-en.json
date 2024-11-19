@@ -136,13 +136,6 @@
              }
           , 
           { 
-             "id":"mmq1721237123997", 
-             "title":"Database administrators", 
-             "description":"Add a DBA to the environment.", 
-             "url":"Vantage/mmq1721237123997.md"
-             }
-          , 
-          { 
              "id":"rvv1721237055370", 
              "title":"Database users", 
              "description":"Begin your VantageCloud Lake experience.", 
@@ -339,50 +332,6 @@
                    "title":"Manage database users", 
                    "description":"Considerations for managing users of an environment.", 
                    "url":"Vantage/wxe1659392685092.md"
-                   }
-                , 
-                { 
-                   "id":"chs1723830476456", 
-                   "title":"Manage database administrators", 
-                   "description":"Learn about DBAs and how to create them.", 
-                   "url":"Vantage/chs1723830476456.md", 
-                   "children":[
-                      { 
-                         "id":"rhw1723830545389", 
-                         "title":"Create a database administrator", 
-                         "description":"Steps to create additional DBAs.", 
-                         "url":"Vantage/rhw1723830545389.md", 
-                         "children":[
-                            { 
-                               "id":"tws1731526438164", 
-                               "title":"DBC (root) user", 
-                               "url":"Vantage/tws1731526438164.md"
-                               }
-                            , 
-                            { 
-                               "id":"yvc1731523611301", 
-                               "title":"Permanent space", 
-                               "url":"Vantage/yvc1731523611301.md"
-                               }
-                            , 
-                            { 
-                               "id":"hnk1731523638342", 
-                               "title":"Choose a character set", 
-                               "url":"Vantage/hnk1731523638342.md"
-                               }
-
-                            ]
-
-                         }
-                      , 
-                      { 
-                         "id":"xnm1723830877831", 
-                         "title":"Notify the database administrator", 
-                         "url":"Vantage/xnm1723830877831.md"
-                         }
-
-                      ]
-
                    }
                 , 
                 { 
