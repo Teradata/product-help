@@ -73,64 +73,9 @@
              "id":"trp1729898889139", 
              "title":"Learn about the SQL editor", 
              "description":"Write (or build) and run SQL queries.", 
-             "icon":"advanced_sql", 
+             "icon":"advanced_sql_outlined", 
              "url":"VantageCloud_Learn/trp1729898889139.md", 
              "childrenUrl":"xbg1640280430669"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"que1729894837638", 
-       "title":"Database administrators", 
-       "description":"Add users and compute resources.", 
-       "url":"VantageCloud_Learn/que1729894837638.md", 
-       "children":[
-          { 
-             "id":"qlu1714845432088", 
-             "title":"Manage compute resources", 
-             "description":"Learn about compute resources to separate processing, monitoring, and billing", 
-             "icon":"compute_groups_outlined;covalent", 
-             "url":"VantageCloud_Learn/qlu1714845432088.md", 
-             "childrenUrl":"nmr1658424425362"
-             }
-          , 
-          { 
-             "id":"ujr1714845520425", 
-             "title":"Add database users", 
-             "description":"See how to add other users to the environment's database.", 
-             "icon":"group", 
-             "url":"VantageCloud_Learn/ujr1714845520425.md", 
-             "childrenUrl":"wxe1659392685092"
-             }
-          , 
-          { 
-             "id":"yyz1710373675172", 
-             "title":"Add database administrators", 
-             "description":"Add other database administrators to the environment.", 
-             "icon":"person", 
-             "url":"VantageCloud_Learn/yyz1710373675172.md", 
-             "childrenUrl":"mmq1721237123997"
-             }
-          , 
-          { 
-             "id":"wje1714845660801", 
-             "title":"Protect your data", 
-             "description":"Discover ways to backup and restore your data.", 
-             "icon":"settings_backup_restore", 
-             "url":"VantageCloud_Learn/wje1714845660801.md", 
-             "childrenUrl":"jrq1640280690304"
-             }
-          , 
-          { 
-             "id":"sbv1729897674850", 
-             "title":"Monitor query performance", 
-             "description":"Discover how to monitor query performance.", 
-             "icon":"query_stats", 
-             "url":"VantageCloud_Learn/sbv1729897674850.md", 
-             "childrenUrl":"ajr1640280560519"
              }
 
           ]
@@ -159,6 +104,15 @@
              "icon":"network_locked", 
              "url":"VantageCloud_Learn/krx1707187712212.md", 
              "childrenUrl":"cqk1721231159841"
+             }
+          , 
+          { 
+             "id":"yyz1710373675172", 
+             "title":"Add database administrators", 
+             "description":"Add other database administrators to the environment.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
              }
           , 
           { 
