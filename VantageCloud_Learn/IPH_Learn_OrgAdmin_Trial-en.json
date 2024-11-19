@@ -146,7 +146,7 @@
              "id":"oux1714177476353", 
              "title":"Review the SQL reference guide", 
              "description":"Find complete information on all SQL commands, functions, and database references", 
-             "icon":"icon":"advanced_sql_outlined;covalent", 
+             "icon":"advanced_sql_outlined;covalent", 
              "url":"VantageCloud_Learn/oux1714177476353.md", 
              "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
