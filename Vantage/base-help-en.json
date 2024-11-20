@@ -14,20 +14,32 @@
              "children":[
                 { 
                    "id":"auh1721168357818", 
-                   "title":"Menu", 
+                   "title":"Access features", 
+                   "description":"Use the menu to manage data, add users, and run queries.", 
                    "url":"Vantage/auh1721168357818.md"
                    }
                 , 
                 { 
                    "id":"njy1721168384549", 
-                   "title":"Toolbar", 
+                   "title":"Access tools", 
+                   "description":"Find commonly used tools in the toolbar.", 
                    "url":"Vantage/njy1721168384549.md"
                    }
                 , 
                 { 
                    "id":"xex1721168413281", 
-                   "title":"Learn resources", 
+                   "title":"Explore resources", 
+                   "description":"Get updates, instructions, and tours in the Learn section.", 
                    "url":"Vantage/xex1721168413281.md"
+                   }
+                , 
+                { 
+                   "id":"ahx1707271934625", 
+                   "title":"Technical documentation", 
+                   "description":"Review VantageCloud Lake reference guides, quick starts, and tutorials.", 
+                   "icon":"library_books", 
+                   "url":"Vantage/ahx1707271934625.md", 
+                   "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
                    }
 
                 ]
