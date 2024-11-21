@@ -73,7 +73,7 @@
              "id":"trp1729898889139", 
              "title":"Learn about the SQL editor", 
              "description":"Write (or build) and run SQL queries.", 
-             "icon":"product_editor_outlined;covalent", 
+             "icon":"product_editor;covalent", 
              "url":"VantageCloud_Learn/trp1729898889139.md", 
              "childrenUrl":"xbg1640280430669"
              }
@@ -192,7 +192,7 @@
              "id":"oux1714177476353", 
              "title":"Review the SQL reference guide", 
              "description":"Find complete information on all SQL commands, functions, and database references", 
-             "icon":"advanced_sql_outlined;covalent",  
+             "icon":"advanced_sql_outlined;covalent", 
              "url":"VantageCloud_Learn/oux1714177476353.md", 
              "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
