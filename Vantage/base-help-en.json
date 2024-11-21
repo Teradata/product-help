@@ -14,22 +14,22 @@
              "children":[
                 { 
                    "id":"auh1721168357818", 
-                   "title":"Access features", 
+                   "title":"Menu", 
                    "description":"Use the menu to manage data, add users, and run queries.", 
                    "url":"Vantage/auh1721168357818.md"
                    }
                 , 
                 { 
                    "id":"njy1721168384549", 
-                   "title":"Access tools", 
-                   "description":"Find commonly used tools in the toolbar.", 
+                   "title":"Toolbar", 
+                   "description":"Access common tasks in the toolbar.", 
                    "url":"Vantage/njy1721168384549.md"
                    }
                 , 
                 { 
                    "id":"xex1721168413281", 
-                   "title":"Explore resources", 
-                   "description":"Get updates, instructions, and tours in the Learn section.", 
+                   "title":"Learn resources", 
+                   "description":"Find updates, instructions, and tours in the Learn section.", 
                    "url":"Vantage/xex1721168413281.md"
                    }
                 , 
@@ -308,6 +308,7 @@
                       { 
                          "id":"wdz1640281743091", 
                          "title":"Compute group access", 
+                         "description":"Add users to a compute group.", 
                          "url":"Vantage/wdz1640281743091.md"
                          }
 
@@ -433,6 +434,7 @@
                       { 
                          "id":"lzm1640282103875", 
                          "title":"Management", 
+                         "description":"QueryGrid configuration tasks.", 
                          "url":"Vantage/lzm1640282103875.md", 
                          "children":[
                             { 
@@ -451,7 +453,6 @@
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"Edit a data source", 
-                                     "description":"Edit connected data sources or assign as a proxy.", 
                                      "url":"Vantage/yfd1674158023864.md"
                                      }
                                   , 
@@ -658,12 +659,14 @@
                 { 
                    "id":"qly1682524108665", 
                    "title":"How compute resources are consumed", 
+                   "description":"Learn how consumption is measured.", 
                    "url":"Vantage/qly1682524108665.md"
                    }
                 , 
                 { 
                    "id":"qze1682528646873", 
                    "title":"Review compute consumption", 
+                   "description":"View remaining consumption units.", 
                    "url":"Vantage/qze1682528646873.md"
                    }
                 , 
@@ -701,6 +704,7 @@
                 { 
                    "id":"vky1682545736669", 
                    "title":"Review storage consumption", 
+                   "description":"View block and object storage.", 
                    "url":"Vantage/vky1682545736669.md"
                    }
                 , 
@@ -854,7 +858,17 @@
              "id":"bcw1700511770060", 
              "title":"Set up Data copy", 
              "description":"Add an environment, copy manager, and agent.", 
-             "url":"Vantage/bcw1700511770060.md"
+             "url":"Vantage/bcw1700511770060.md", 
+             "children":[
+                { 
+                   "id":"dvp1707442265467", 
+                   "title":"Request an interface endpoint", 
+                   "description":"Create a private link request for Data copy.", 
+                   "url":"Vantage/dvp1707442265467.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -949,6 +963,7 @@
           { 
              "id":"ohx1694115234984", 
              "title":"General settings", 
+             "description":"Set your preferences.", 
              "url":"Vantage/ohx1694115234984.md"
              }
           , 
