@@ -14,22 +14,22 @@
              "children":[
                 { 
                    "id":"auh1721168357818", 
-                   "title":"Menu", 
-                   "description":"Use the menu to manage data, add users, and run queries.", 
+                   "title":"Navigate features", 
+                   "description":"Learn what features are in the menu.", 
                    "url":"Vantage/auh1721168357818.md"
                    }
                 , 
                 { 
                    "id":"njy1721168384549", 
-                   "title":"Toolbar", 
-                   "description":"Access common tasks in the toolbar.", 
+                   "title":"Access tasks", 
+                   "description":"Find common tasks in the toolbar.", 
                    "url":"Vantage/njy1721168384549.md"
                    }
                 , 
                 { 
                    "id":"xex1721168413281", 
-                   "title":"Learn resources", 
-                   "description":"Find updates, instructions, and tours in the Learn section.", 
+                   "title":"Discover resources", 
+                   "description":"View updates, instructions, and tours in the learn center.", 
                    "url":"Vantage/xex1721168413281.md"
                    }
                 , 
