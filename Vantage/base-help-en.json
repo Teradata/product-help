@@ -560,6 +560,13 @@
                                      "description":"Connect VantageCloud Lake to another VantageCloud Lake.", 
                                      "url":"Vantage/cgh1722901880213.md"
                                      }
+                                  , 
+                                  { 
+                                     "id":"bbo1735955417476", 
+                                     "title":"Create foreign server", 
+                                     "description":"Set up the foreign server.", 
+                                     "url":"Vantage/bbo1735955417476.md"
+                                     }
 
                                   ]
 
@@ -1271,13 +1278,22 @@
        "url":"Vantage/qya1694122121061.md", 
        "children":[
           { 
+             "id":"xko1736182740981", 
+             "title":"Enable ModelOps", 
+             "description":"Get ModelOps set up in VantageCloud Lake Console.", 
+             "url":"Vantage/xko1736182740981.md"
+             }
+          , 
+          { 
              "id":"jue1725407850414", 
-             "title":"Account", 
+             "title":"Account settings", 
+             "description":"Customize your ModelOps user experience", 
              "url":"Vantage/jue1725407850414.md", 
              "children":[
                 { 
                    "id":"xfm1725407885906", 
                    "title":"Session details", 
+                   "description":"Use session details to configure tmo CLI.", 
                    "url":"Vantage/xfm1725407885906.md"
                    }
 
@@ -1288,12 +1304,14 @@
           { 
              "id":"bvr1694122081407", 
              "title":"Dashboard", 
+             "description":"Access projects to work with models.", 
              "url":"Vantage/bvr1694122081407.md"
              }
           , 
           { 
              "id":"rsm1725408063081", 
              "title":"Projects", 
+             "description":"Use projects to train, evaluate, and deploy models", 
              "url":"Vantage/rsm1725408063081.md", 
              "children":[
                 { 
@@ -1315,11 +1333,13 @@
           { 
              "id":"lja1725389137828", 
              "title":"Settings", 
+             "description":"Check connection health and set notifications", 
              "url":"Vantage/lja1725389137828.md", 
              "children":[
                 { 
                    "id":"wkm1725389190945", 
                    "title":"Connections", 
+                   "description":"Conrol data used for dataset templates and training models", 
                    "url":"Vantage/wkm1725389190945.md", 
                    "children":[
                       { 
@@ -1407,7 +1427,7 @@
           , 
           { 
              "id":"qdk1725408417926", 
-             "title":"Model version", 
+             "title":"Model Versions", 
              "url":"Vantage/qdk1725408417926.md", 
              "children":[
                 { 
@@ -1449,6 +1469,7 @@
                 { 
                    "id":"xtq1725408819410", 
                    "title":"Commit history", 
+                   "description":"View version details impacted by a commit.", 
                    "url":"Vantage/xtq1725408819410.md"
                    }
                 , 
@@ -1639,7 +1660,7 @@
                       , 
                       { 
                          "id":"bri1732653485626", 
-                         "title":"Test RESTful", 
+                         "title":"Testing (Docker RESTful Deployments)", 
                          "url":"Vantage/bri1732653485626.md"
                          }
 
@@ -1710,13 +1731,13 @@
                 { 
                    "id":"xgm1732657104092", 
                    "title":"Create feature engineering task", 
-                   "description":"Create or edit tasks.", 
                    "url":"Vantage/xgm1732657104092.md"
                    }
                 , 
                 { 
                    "id":"hkt1732657162141", 
                    "title":"Run feature engineering task", 
+                   "description":"View a task's running progress.", 
                    "url":"Vantage/hkt1732657162141.md"
                    }
                 , 
@@ -1747,7 +1768,6 @@
                       { 
                          "id":"bix1732657425434", 
                          "title":"Artifacts", 
-                         "description":"Feature engineering artifacts details.", 
                          "url":"Vantage/bix1732657425434.md"
                          }
 
