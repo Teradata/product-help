@@ -14,20 +14,32 @@
              "children":[
                 { 
                    "id":"auh1721168357818", 
-                   "title":"Menú", 
+                   "title":"Funciones de navegación", 
+                   "description":"Obtenga información sobre las funciones que se encuentran en el menú.", 
                    "url":"Vantage/es/auh1721168357818.md"
                    }
                 , 
                 { 
                    "id":"njy1721168384549", 
-                   "title":"Barra de menús", 
+                   "title":"Acceder a las tareas", 
+                   "description":"Busque tareas comunes en la barra de herramientas.", 
                    "url":"Vantage/es/njy1721168384549.md"
                    }
                 , 
                 { 
                    "id":"xex1721168413281", 
-                   "title":"Recursos de aprendizaje", 
+                   "title":"Descubrir recursos", 
+                   "description":"Vea actualizaciones, instrucciones y visitas guiadas en el centro de aprendizaje.", 
                    "url":"Vantage/es/xex1721168413281.md"
+                   }
+                , 
+                { 
+                   "id":"ahx1707271934625", 
+                   "title":"Documentación técnica", 
+                   "description":"Revise las guías de referencia, los inicios rápidos y los tutoriales de VantageCloud Lake.", 
+                   "icon":"library_books", 
+                   "url":"Vantage/es/ahx1707271934625.md", 
+                   "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
                    }
 
                 ]
@@ -295,7 +307,8 @@
                       , 
                       { 
                          "id":"wdz1640281743091", 
-                         "title":"Acceso a grupos de cálculo", 
+                         "title":"Compute group access", 
+                         "description":"Agregue usuarios a un grupo computacional.", 
                          "url":"Vantage/es/wdz1640281743091.md"
                          }
 
@@ -351,71 +364,6 @@
              "description":"Cargar datos o acceder a ellos.", 
              "url":"Vantage/es/jwm1694121113608.md", 
              "children":[
-                { 
-                   "id":"auw1640280669500", 
-                   "title":"Flujos", 
-                   "description":"Cargar datos de un almacenamiento de objetos.", 
-                   "url":"Vantage/es/auw1640280669500.md", 
-                   "children":[
-                      { 
-                         "id":"wsa1640282405363", 
-                         "title":"Quién hace qué", 
-                         "url":"Vantage/es/wsa1640282405363.md"
-                         }
-                      , 
-                      { 
-                         "id":"luq1640282345986", 
-                         "title":"Crear un flujo", 
-                         "url":"Vantage/es/luq1640282345986.md", 
-                         "children":[
-                            { 
-                               "id":"ury1691596218182", 
-                               "title":"Cargar consideraciones de opción", 
-                               "description":"Opciones al ejecutar un flujo", 
-                               "url":"Vantage/es/ury1691596218182.md"
-                               }
-                            , 
-                            { 
-                               "id":"vwc1691596425578", 
-                               "title":"Autorización de origen y destino", 
-                               "description":"Configure la autorización para instancias de Flow.", 
-                               "url":"Vantage/es/vwc1691596425578.md"
-                               }
-                            , 
-                            { 
-                               "id":"npn1691594431074", 
-                               "title":"Orígenes y destinos", 
-                               "description":"Establezca las tablas de origen y destino de Flow.", 
-                               "url":"Vantage/es/npn1691594431074.md"
-                               }
-
-                            ]
-
-                         }
-                      , 
-                      { 
-                         "id":"fqx1691599182279", 
-                         "title":"Ejecutar, poner en pausa o restablecer un flujo", 
-                         "url":"Vantage/es/fqx1691599182279.md"
-                         }
-                      , 
-                      { 
-                         "id":"dod1691610081069", 
-                         "title":"Actualizar un flujo", 
-                         "url":"Vantage/es/dod1691610081069.md"
-                         }
-                      , 
-                      { 
-                         "id":"dxg1691603081375", 
-                         "title":"P+F sobre los flujos", 
-                         "description":"Respuestas a preguntas comunes sobre flujos.", 
-                         "url":"Vantage/es/dxg1691603081375.md"
-                         }
-
-                      ]
-
-                   }
-                , 
                 { 
                    "id":"vyx1659391025497", 
                    "title":"QueryGrid", 
@@ -485,7 +433,8 @@
                       , 
                       { 
                          "id":"lzm1640282103875", 
-                         "title":"Gestión", 
+                         "title":"Management", 
+                         "description":"Tareas de configuración de QueryGrid.", 
                          "url":"Vantage/es/lzm1640282103875.md", 
                          "children":[
                             { 
@@ -504,7 +453,6 @@
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"Editar una fuente de datos", 
-                                     "description":"Edite fuentes de datos conectadas o asigne como proxy.", 
                                      "url":"Vantage/es/yfd1674158023864.md"
                                      }
                                   , 
@@ -710,13 +658,15 @@
              "children":[
                 { 
                    "id":"qly1682524108665", 
-                   "title":"Cómo se consumen los recursos de cálculo", 
+                   "title":"How compute resources are consumed", 
+                   "description":"Obtenga información acerca de cómo se mide el consumo.", 
                    "url":"Vantage/es/qly1682524108665.md"
                    }
                 , 
                 { 
                    "id":"qze1682528646873", 
-                   "title":"Revisar consumo de cálculo", 
+                   "title":"Review compute consumption", 
+                   "description":"Vea las unidades de consumo restantes.", 
                    "url":"Vantage/es/qze1682528646873.md"
                    }
                 , 
@@ -753,7 +703,8 @@
                 , 
                 { 
                    "id":"vky1682545736669", 
-                   "title":"Revisar consumo de almacenamiento", 
+                   "title":"Review storage consumption", 
+                   "description":"Vea el almacenamiento de bloques y objetos.", 
                    "url":"Vantage/es/vky1682545736669.md"
                    }
                 , 
@@ -784,109 +735,6 @@
        "title":"Calculadora de costes", 
        "description":"Ver el consumo total estimado de la organización.", 
        "url":"Vantage/es/vsb1703029847518.md"
-       }
-    , 
-    { 
-       "id":"jlf1663616946889", 
-       "title":"Uso compartido de datos", 
-       "description":"Compartir tablas y vistas con otros usuarios.", 
-       "url":"Vantage/es/jlf1663616946889.md", 
-       "children":[
-          { 
-             "id":"ddq1721690838988", 
-             "title":"Configurar el uso compartido de datos", 
-             "description":"Configure el uso compartido de datos para compartir tablas y vistas con otros usuarios.", 
-             "url":"Vantage/es/ddq1721690838988.md", 
-             "children":[
-                { 
-                   "id":"paa1721766522352", 
-                   "title":"Asignar el primer usuario", 
-                   "description":"Agregue un usuario o un rol como TD_USER_ADMIN.", 
-                   "icon":"counter_1", 
-                   "url":"Vantage/es/paa1721766522352.md"
-                   }
-                , 
-                { 
-                   "id":"ymj1721766784498", 
-                   "title":"Agregar un usuario administrador de uso compartido", 
-                   "description":"Agregar un usuario como administrador de uso compartido", 
-                   "icon":"counter_2", 
-                   "url":"Vantage/es/ymj1721766784498.md"
-                   }
-                , 
-                { 
-                   "id":"hfs1721767315385", 
-                   "title":"Agregar ciudadanos y proveedores", 
-                   "description":"Agregue un usuario o un rol como proveedor y ciudadano compartido.", 
-                   "icon":"counter_3", 
-                   "url":"Vantage/es/hfs1721767315385.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"hdx1681040827922", 
-             "title":"Gestionar usuarios de recurso compartido de datos", 
-             "description":"Privilegios y roles de usuario.", 
-             "url":"Vantage/es/hdx1681040827922.md"
-             }
-          , 
-          { 
-             "id":"vlk1663617148666", 
-             "title":"Crear un recurso compartido de datos", 
-             "description":"Compartir conjuntos de datos con suscriptores", 
-             "url":"Vantage/es/vlk1663617148666.md"
-             }
-          , 
-          { 
-             "id":"gds1686247574408", 
-             "title":"Trabajar con conjuntos de datos", 
-             "description":"Tareas como proveedor de recursos compartidos o suscriptor", 
-             "url":"Vantage/es/gds1686247574408.md", 
-             "children":[
-                { 
-                   "id":"rfg1681040443995", 
-                   "title":"Gestionar conjuntos de datos", 
-                   "description":"Asignar privilegios a conjuntos de datos", 
-                   "url":"Vantage/es/rfg1681040443995.md"
-                   }
-                , 
-                { 
-                   "id":"hfx1686247226223", 
-                   "title":"Ver y usar conjuntos de datos", 
-                   "description":"Roles de ciudadano para conjuntos de datos", 
-                   "url":"Vantage/es/hfx1686247226223.md"
-                   }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"vph1681040670091", 
-             "title":"Gestionar suscriptores", 
-             "description":"Agregar un usuario o rol como suscriptor", 
-             "url":"Vantage/es/vph1681040670091.md"
-             }
-          , 
-          { 
-             "id":"vuh1681040768372", 
-             "title":"Eliminar un recurso compartido", 
-             "description":"Qué pasa cuando se elimina un recurso compartido", 
-             "url":"Vantage/es/vuh1681040768372.md"
-             }
-          , 
-          { 
-             "id":"laf1686249149487", 
-             "title":"P+F sobre el uso compartido de datos", 
-             "description":"Vea respuestas a preguntas comunes.", 
-             "url":"Vantage/es/laf1686249149487.md"
-             }
-
-          ]
-
        }
     , 
     { 
@@ -938,8 +786,8 @@
                 , 
                 { 
                    "id":"iql1691540875799", 
-                   "title":"Explorar funciones analíticas en la base de datos", 
-                   "description":"Buscar funciones y crear consultas", 
+                   "title":"Explore in-database analytics functions", 
+                   "description":"Busque funciones y cree consultas.", 
                    "url":"Vantage/es/iql1691540875799.md", 
                    "children":[
                       { 
@@ -1010,7 +858,17 @@
              "id":"bcw1700511770060", 
              "title":"Configurar Copia de datos", 
              "description":"Agregar un entorno, un gestor de copias y un agente.", 
-             "url":"Vantage/es/bcw1700511770060.md"
+             "url":"Vantage/es/bcw1700511770060.md", 
+             "children":[
+                { 
+                   "id":"dvp1707442265467", 
+                   "title":"Request an interface endpoint", 
+                   "description":"Cree una solicitud de vínculo privado para Copia de datos.", 
+                   "url":"Vantage/es/dvp1707442265467.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -1104,7 +962,8 @@
        "children":[
           { 
              "id":"ohx1694115234984", 
-             "title":"Configuración general", 
+             "title":"General settings", 
+             "description":"Establezca sus preferencias.", 
              "url":"Vantage/es/ohx1694115234984.md"
              }
           , 
