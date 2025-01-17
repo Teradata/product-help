@@ -798,6 +798,12 @@
              "description":"Write (or build) and run SQL queries.", 
              "url":"Vantage/edx1695158840322.md"
              }
+          , 
+          { 
+             "id":"xum1736387837711", 
+             "title":"Industry data model", 
+             "url":"Vantage/xum1736387837711.md"
+             }
 
           ]
 
@@ -1332,8 +1338,8 @@
           , 
           { 
              "id":"lja1725389137828", 
-             "title":"Settings", 
-             "description":"Check connection health and set notifications", 
+             "title":"Project Settings", 
+             "description":"Check project connection health and set notifications", 
              "url":"Vantage/lja1725389137828.md", 
              "children":[
                 { 
@@ -1581,6 +1587,7 @@
                 { 
                    "id":"hkj1732652834413", 
                    "title":"Datasets", 
+                   "description":"Datasets are used for training or evaluation.", 
                    "url":"Vantage/hkj1732652834413.md", 
                    "children":[
                       { 
