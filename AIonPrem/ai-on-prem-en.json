@@ -1,12 +1,10 @@
 {
-  "items": [
-    {
+    "items": [
         {
-          "id": "welcome",
-          "title": "Welcome to AI on Prem",
-          "description": "Get started with AI on Prem.",
-          "url": "welcome.md",
+            "id": "welcome",
+            "title": "Welcome to AI on Prem",
+            "description": "Get started with AI on Prem.",
+            "url": "welcome.md"
         }
-    }
-  ]
+    ]
 }
