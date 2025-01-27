@@ -1,23 +1,23 @@
-Welcome
+AI Workbench includes ClearScape Analytics for exploratory workloads. It consists of these applications:
+* **Keycloak**: Configure system access, user management, and authentication.
+* **Jupyter Notebook**: Create your AI and ML models.
+* **Teradata ModelOps**: Deploy, monitor, and manage your AI and ML models.
 
-#Get started with AI workbench
-AI Workbench includes ClearScape Analytics for exploratory workloads. It consists of three primary applications:
-* *Keycloak*: Configure system access, user management, and authentication
-* *Jupyter Notebook*: Create your AI and ML models
-* *Teradata ModelOps*: Deploy, monitor, and manage your AI and ML models
+With **ClearScape Analytics**, you can accelerate, scale, and optimize advanced analytics projects. 
 
-With *ClearScape Analytics*, you can quickly
-accelerate, scale, and optimize advanced analytics projects. 
+#Get started
+To get started using AI Workbench: 
+
+1. Add yourself and other users (with Keycloak). 
+1. Review the available use cases and demos on using ClearScape Analytics (in a Jupyter notebook).
+1. Load and deploy data models (within ModelOps). 
 
 #Use cases and demos
 Explore more than 80 self-service demos across multiple industries, analytic functions, and languages. Each demo includes sample data, live code, and visualizations.
 
+[Use the demos](./jupyter/user/fs250044/lab/tree/Demo.index) as examples with the supplied data or upload your own data to use with ClearScape Analytics. 
+
 #Support
-
-
-* Teradata support portal
-https://support.teradata.com/csm
-* Technical documentation
-https://docs.teradata.com/
-* Community forums
-https://support.teradata.com/community
+* [Teradata support portal](https://support.teradata.com/csm)
+* [Technical documentation](https://docs.teradata.com/)
+* [Community forums](https://support.teradata.com/community)
