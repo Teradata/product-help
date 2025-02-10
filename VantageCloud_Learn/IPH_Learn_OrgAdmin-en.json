@@ -70,6 +70,15 @@
              }
           , 
           { 
+             "id":"mrh1738958369444", 
+             "title":"Copy data", 
+             "description":"Create and manage copy plans.", 
+             "icon":"content_copy;covalent", 
+             "url":"VantageCloud_Learn/mrh1738958369444.md", 
+             "childrenUrl":"bgr1694118840100"
+             }
+          , 
+          { 
              "id":"trp1729898889139", 
              "title":"Learn about the SQL editor", 
              "description":"Write (or build) and run SQL queries.", 
