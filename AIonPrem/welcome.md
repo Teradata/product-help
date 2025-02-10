@@ -1,4 +1,4 @@
-AI Workbench includes ClearScape Analytics for exploratory workloads. It consists of these applications:
+AI workbench includes ClearScape Analytics (the analytic capabilities of Teradata Vantage) for exploratory workloads. It consists of these applications:
 * **Keycloak**: Configure system access, user management, and authentication.
 * **Jupyter Notebook**: Create your AI and ML models.
 * **Teradata ModelOps**: Deploy, monitor, and manage your AI and ML models.
@@ -6,7 +6,7 @@ AI Workbench includes ClearScape Analytics for exploratory workloads. It consist
 With **ClearScape Analytics**, you can accelerate, scale, and optimize advanced analytics projects. 
 
 #Get started
-To get started using AI Workbench: 
+To get started using AI workbench: 
 
 1. Add yourself and other users (with Keycloak). 
 1. Review the available use cases and demos on using ClearScape Analytics (in a Jupyter notebook).

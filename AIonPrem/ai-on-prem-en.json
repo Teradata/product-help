@@ -2,8 +2,8 @@
     "items": [
         {
             "id": "welcome",
-            "title": "Welcome to AI on Prem",
-            "description": "Get started with AI on Prem.",
+            "title": "Welcome to AI workbench",
+            "description": "Get started with AI workbench.",
             "url": "welcome.md"
         }
     ]
