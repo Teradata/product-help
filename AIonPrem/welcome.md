@@ -15,7 +15,7 @@ To get started using AI workbench:
 #Use cases and demos
 Explore more than 80 self-service demos across multiple industries, analytic functions, and languages. Each demo includes sample data, live code, and visualizations.
 
-[Use the demos](./jupyter/user/fs250044/lab/tree/Demo.index) as examples with the supplied data or upload your own data to use with ClearScape Analytics. 
+[Use the demos](./jupyter/user/admin/lab/tree/Demo.index) as examples with the supplied data or upload your own data to use with ClearScape Analytics. 
 
 #Support
 * [Teradata support portal](https://support.teradata.com/csm)
