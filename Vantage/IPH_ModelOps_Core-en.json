@@ -1,53 +1,53 @@
 {  "items":{ 
     "id":"qya1694122121061", 
     "title":"ModelOps", 
-    "url":"ModelOps_Core/qya1694122121061.md", 
+    "url":"Vantage/qya1694122121061.md", 
     "children":[
        { 
           "id":"xko1736182740981", 
           "title":"Enable ModelOps in an Active Environment", 
           "description":"Get ModelOps set up in VantageCloud Lake Console.", 
-          "url":"ModelOps_Core/xko1736182740981.md"
+          "url":"Vantage/xko1736182740981.md"
           }
        , 
        { 
           "id":"bvr1694122081407", 
           "title":"Dashboard", 
           "description":"Access projects to work with models.", 
-          "url":"ModelOps_Core/bvr1694122081407.md"
+          "url":"Vantage/bvr1694122081407.md"
           }
        , 
        { 
           "id":"jue1725407850414", 
           "title":"Account settings", 
           "description":"Customize your ModelOps user experience", 
-          "url":"ModelOps_Core/jue1725407850414.md"
+          "url":"Vantage/jue1725407850414.md"
           }
        , 
        { 
           "id":"xfm1725407885906", 
           "title":"Session details", 
           "description":"Use session details to configure tmo CLI.", 
-          "url":"ModelOps_Core/xfm1725407885906.md"
+          "url":"Vantage/xfm1725407885906.md"
           }
        , 
        { 
           "id":"rsm1725408063081", 
           "title":"Projects", 
           "description":"Use projects to train, evaluate, and deploy models", 
-          "url":"ModelOps_Core/rsm1725408063081.md", 
+          "url":"Vantage/rsm1725408063081.md", 
           "children":[
              { 
                 "id":"vtz1725408102228", 
                 "title":"Create projects", 
-                "url":"ModelOps_Core/vtz1725408102228.md"
+                "url":"Vantage/vtz1725408102228.md"
                 }
              , 
              { 
                 "id":"wlq1732650137676", 
                 "title":"Git details", 
                 "description":"View Git pull history information.", 
-                "url":"ModelOps_Core/wlq1732650137676.md"
+                "url":"Vantage/wlq1732650137676.md"
                 }
 
              ]
@@ -58,24 +58,24 @@
           "id":"lja1725389137828", 
           "title":"Project Settings", 
           "description":"Check project connection health and set notifications", 
-          "url":"ModelOps_Core/lja1725389137828.md", 
+          "url":"Vantage/lja1725389137828.md", 
           "children":[
              { 
                 "id":"wkm1725389190945", 
                 "title":"Dataset Connections", 
                 "description":"Control data used for dataset templates and training models", 
-                "url":"ModelOps_Core/wkm1725389190945.md", 
+                "url":"Vantage/wkm1725389190945.md", 
                 "children":[
                    { 
                       "id":"vpe1725389258480", 
                       "title":"Add dataset connection", 
-                      "url":"ModelOps_Core/vpe1725389258480.md"
+                      "url":"Vantage/vpe1725389258480.md"
                       }
                    , 
                    { 
                       "id":"qmz1732650253991", 
                       "title":"Dataset connection health checks", 
-                      "url":"ModelOps_Core/qmz1732650253991.md"
+                      "url":"Vantage/qmz1732650253991.md"
                       }
 
                    ]
@@ -86,18 +86,18 @@
                 "id":"xnp1725389370171", 
                 "title":"Notifications", 
                 "description":"Specify who to notify about alerts and deployments.", 
-                "url":"ModelOps_Core/xnp1725389370171.md"
+                "url":"Vantage/xnp1725389370171.md"
                 }
              , 
              { 
                 "id":"kbm1725407652402", 
                 "title":"Services", 
-                "url":"ModelOps_Core/kbm1725407652402.md", 
+                "url":"Vantage/kbm1725407652402.md", 
                 "children":[
                    { 
                       "id":"cun1725407710390", 
                       "title":"Agent logs", 
-                      "url":"ModelOps_Core/cun1725407710390.md"
+                      "url":"Vantage/cun1725407710390.md"
                       }
 
                    ]
@@ -111,29 +111,29 @@
        { 
           "id":"fqd1725408187193", 
           "title":"Models", 
-          "url":"ModelOps_Core/fqd1725408187193.md", 
+          "url":"Vantage/fqd1725408187193.md", 
           "children":[
              { 
                 "id":"lvk1725408215354", 
                 "title":"Models", 
-                "url":"ModelOps_Core/lvk1725408215354.md", 
+                "url":"Vantage/lvk1725408215354.md", 
                 "children":[
                    { 
                       "id":"akl1725408274100", 
                       "title":"Define BYOM", 
-                      "url":"ModelOps_Core/akl1725408274100.md"
+                      "url":"Vantage/akl1725408274100.md"
                       }
                    , 
                    { 
                       "id":"nro1732650484867", 
                       "title":"Import BYOM", 
-                      "url":"ModelOps_Core/nro1732650484867.md"
+                      "url":"Vantage/nro1732650484867.md"
                       }
                    , 
                    { 
                       "id":"jbg1732650538946", 
                       "title":"Import Python/R model", 
-                      "url":"ModelOps_Core/jbg1732650538946.md"
+                      "url":"Vantage/jbg1732650538946.md"
                       }
 
                    ]
@@ -143,7 +143,7 @@
              { 
                 "id":"tuy1725408308401", 
                 "title":"Model Details", 
-                "url":"ModelOps_Core/tuy1725408308401.md"
+                "url":"Vantage/tuy1725408308401.md"
                 }
 
              ]
@@ -153,60 +153,60 @@
        { 
           "id":"qdk1725408417926", 
           "title":"Model Versions", 
-          "url":"ModelOps_Core/qdk1725408417926.md", 
+          "url":"Vantage/qdk1725408417926.md", 
           "children":[
              { 
                 "id":"etl1725408512818", 
                 "title":"Train model", 
-                "url":"ModelOps_Core/etl1725408512818.md"
+                "url":"Vantage/etl1725408512818.md"
                 }
              , 
              { 
                 "id":"wzw1732650597340", 
                 "title":"Evaluate model", 
-                "url":"ModelOps_Core/wzw1732650597340.md"
+                "url":"Vantage/wzw1732650597340.md"
                 }
              , 
              { 
                 "id":"zum1732650629250", 
                 "title":"Deploy model", 
-                "url":"ModelOps_Core/zum1732650629250.md"
+                "url":"Vantage/zum1732650629250.md"
                 }
              , 
              { 
                 "id":"yfx1732650662039", 
                 "title":"Job", 
-                "url":"ModelOps_Core/yfx1732650662039.md"
+                "url":"Vantage/yfx1732650662039.md"
                 }
              , 
              { 
                 "id":"kll1732650698482", 
                 "title":"Retire", 
-                "url":"ModelOps_Core/kll1732650698482.md"
+                "url":"Vantage/kll1732650698482.md"
                 }
              , 
              { 
                 "id":"xhw1725408779878", 
                 "title":"Model versions", 
-                "url":"ModelOps_Core/xhw1725408779878.md"
+                "url":"Vantage/xhw1725408779878.md"
                 }
              , 
              { 
                 "id":"xtq1725408819410", 
                 "title":"Commit history", 
                 "description":"View version details impacted by a commit.", 
-                "url":"ModelOps_Core/xtq1725408819410.md"
+                "url":"Vantage/xtq1725408819410.md"
                 }
              , 
              { 
                 "id":"sdn1725408878969", 
                 "title":"Alert configuration", 
-                "url":"ModelOps_Core/sdn1725408878969.md", 
+                "url":"Vantage/sdn1725408878969.md", 
                 "children":[
                    { 
                       "id":"xtb1725408993090", 
                       "title":"Create alert configuration/rule", 
-                      "url":"ModelOps_Core/xtb1725408993090.md"
+                      "url":"Vantage/xtb1725408993090.md"
                       }
 
                    ]
@@ -216,12 +216,12 @@
              { 
                 "id":"nbx1732650777635", 
                 "title":"Models compare", 
-                "url":"ModelOps_Core/nbx1732650777635.md", 
+                "url":"Vantage/nbx1732650777635.md", 
                 "children":[
                    { 
                       "id":"sjz1732650818560", 
                       "title":"Models comparison report", 
-                      "url":"ModelOps_Core/sjz1732650818560.md"
+                      "url":"Vantage/sjz1732650818560.md"
                       }
 
                    ]
@@ -235,47 +235,47 @@
        { 
           "id":"vbi1732650867021", 
           "title":"Model lifecycle", 
-          "url":"ModelOps_Core/vbi1732650867021.md", 
+          "url":"Vantage/vbi1732650867021.md", 
           "children":[
              { 
                 "id":"xrx1732650913270", 
                 "title":"Lifecycle", 
-                "url":"ModelOps_Core/xrx1732650913270.md"
+                "url":"Vantage/xrx1732650913270.md"
                 }
              , 
              { 
                 "id":"jpa1732650962934", 
                 "title":"Artifacts", 
-                "url":"ModelOps_Core/jpa1732650962934.md"
+                "url":"Vantage/jpa1732650962934.md"
                 }
              , 
              { 
                 "id":"vbl1732651027548", 
                 "title":"Evaluation report", 
-                "url":"ModelOps_Core/vbl1732651027548.md"
+                "url":"Vantage/vbl1732651027548.md"
                 }
              , 
              { 
                 "id":"rhi1732651074130", 
                 "title":"Model monitoring", 
-                "url":"ModelOps_Core/rhi1732651074130.md", 
+                "url":"Vantage/rhi1732651074130.md", 
                 "children":[
                    { 
                       "id":"xxa1732651110275", 
                       "title":"Feature drift", 
-                      "url":"ModelOps_Core/xxa1732651110275.md"
+                      "url":"Vantage/xxa1732651110275.md"
                       }
                    , 
                    { 
                       "id":"etr1732651148787", 
                       "title":"Prediction drift", 
-                      "url":"ModelOps_Core/etr1732651148787.md"
+                      "url":"Vantage/etr1732651148787.md"
                       }
                    , 
                    { 
                       "id":"jrp1732651191166", 
                       "title":"Performance drift", 
-                      "url":"ModelOps_Core/jrp1732651191166.md"
+                      "url":"Vantage/jrp1732651191166.md"
                       }
 
                    ]
@@ -285,7 +285,7 @@
              { 
                 "id":"vdi1732651243512", 
                 "title":"Model partitions", 
-                "url":"ModelOps_Core/vdi1732651243512.md"
+                "url":"Vantage/vdi1732651243512.md"
                 }
 
              ]
@@ -295,54 +295,54 @@
        { 
           "id":"nwv1725409283494", 
           "title":"Dataset templates", 
-          "url":"ModelOps_Core/nwv1725409283494.md", 
+          "url":"Vantage/nwv1725409283494.md", 
           "children":[
              { 
                 "id":"frd1725409311264", 
                 "title":"Create dataset template", 
-                "url":"ModelOps_Core/frd1725409311264.md"
+                "url":"Vantage/frd1725409311264.md"
                 }
              , 
              { 
                 "id":"hkj1732652834413", 
                 "title":"Datasets", 
                 "description":"Datasets are used for training or evaluation.", 
-                "url":"ModelOps_Core/hkj1732652834413.md", 
+                "url":"Vantage/hkj1732652834413.md", 
                 "children":[
                    { 
                       "id":"xfu1732652871944", 
                       "title":"Create dataset", 
-                      "url":"ModelOps_Core/xfu1732652871944.md"
+                      "url":"Vantage/xfu1732652871944.md"
                       }
                    , 
                    { 
                       "id":"lak1732652726174", 
                       "title":"Job", 
                       "description":"ModelOps dataset job template.", 
-                      "url":"ModelOps_Core/lak1732652726174.md"
+                      "url":"Vantage/lak1732652726174.md"
                       }
                    , 
                    { 
                       "id":"aql1732653182894", 
                       "title":"Dataset details", 
-                      "url":"ModelOps_Core/aql1732653182894.md", 
+                      "url":"Vantage/aql1732653182894.md", 
                       "children":[
                          { 
                             "id":"dni1732653221914", 
                             "title":"Details", 
                             "description":"ModelOps dataset details.", 
-                            "url":"ModelOps_Core/dni1732653221914.md"
+                            "url":"Vantage/dni1732653221914.md"
                             }
                          , 
                          { 
                             "id":"xeb1732653278990", 
                             "title":"Activity", 
-                            "url":"ModelOps_Core/xeb1732653278990.md", 
+                            "url":"Vantage/xeb1732653278990.md", 
                             "children":[
                                { 
                                   "id":"hsb1732653311789", 
                                   "title":"Statistics", 
-                                  "url":"ModelOps_Core/hsb1732653311789.md"
+                                  "url":"Vantage/hsb1732653311789.md"
                                   }
 
                                ]
@@ -364,30 +364,30 @@
        { 
           "id":"dqr1725409439891", 
           "title":"Deployments", 
-          "url":"ModelOps_Core/dqr1725409439891.md", 
+          "url":"Vantage/dqr1725409439891.md", 
           "children":[
              { 
                 "id":"qpb1732653357149", 
                 "title":"Deployment details", 
-                "url":"ModelOps_Core/qpb1732653357149.md", 
+                "url":"Vantage/qpb1732653357149.md", 
                 "children":[
                    { 
                       "id":"ujq1732653385548", 
                       "title":"Properties", 
-                      "url":"ModelOps_Core/ujq1732653385548.md"
+                      "url":"Vantage/ujq1732653385548.md"
                       }
                    , 
                    { 
                       "id":"nvo1732653410921", 
                       "title":"Jobs", 
                       "description":"ModleOps deployment job details.", 
-                      "url":"ModelOps_Core/nvo1732653410921.md"
+                      "url":"Vantage/nvo1732653410921.md"
                       }
                    , 
                    { 
                       "id":"bri1732653485626", 
                       "title":"Testing (Docker RESTful Deployments)", 
-                      "url":"ModelOps_Core/bri1732653485626.md"
+                      "url":"Vantage/bri1732653485626.md"
                       }
 
                    ]
@@ -401,18 +401,18 @@
        { 
           "id":"jfa1725409457472", 
           "title":"Jobs", 
-          "url":"ModelOps_Core/jfa1725409457472.md", 
+          "url":"Vantage/jfa1725409457472.md", 
           "children":[
              { 
                 "id":"qmn1732653540220", 
                 "title":"View job details", 
-                "url":"ModelOps_Core/qmn1732653540220.md"
+                "url":"Vantage/qmn1732653540220.md"
                 }
              , 
              { 
                 "id":"tgu1732653570157", 
                 "title":"Job events", 
-                "url":"ModelOps_Core/tgu1732653570157.md"
+                "url":"Vantage/tgu1732653570157.md"
                 }
 
              ]
@@ -422,23 +422,23 @@
        { 
           "id":"rtz1725409474295", 
           "title":"Alerts", 
-          "url":"ModelOps_Core/rtz1725409474295.md", 
+          "url":"Vantage/rtz1725409474295.md", 
           "children":[
              { 
                 "id":"can1732653630612", 
                 "title":"Alert details", 
-                "url":"ModelOps_Core/can1732653630612.md", 
+                "url":"Vantage/can1732653630612.md", 
                 "children":[
                    { 
                       "id":"hdx1732656986435", 
                       "title":"Alerts", 
-                      "url":"ModelOps_Core/hdx1732656986435.md"
+                      "url":"Vantage/hdx1732656986435.md"
                       }
                    , 
                    { 
                       "id":"uro1732657007321", 
                       "title":"Silences", 
-                      "url":"ModelOps_Core/uro1732657007321.md"
+                      "url":"Vantage/uro1732657007321.md"
                       }
 
                    ]
@@ -452,49 +452,49 @@
        { 
           "id":"psi1732657063130", 
           "title":"Feature engineering", 
-          "url":"ModelOps_Core/psi1732657063130.md", 
+          "url":"Vantage/psi1732657063130.md", 
           "children":[
              { 
                 "id":"xgm1732657104092", 
                 "title":"Create feature engineering task", 
-                "url":"ModelOps_Core/xgm1732657104092.md"
+                "url":"Vantage/xgm1732657104092.md"
                 }
              , 
              { 
                 "id":"hkt1732657162141", 
                 "title":"Run feature engineering task", 
                 "description":"View a task's running progress.", 
-                "url":"ModelOps_Core/hkt1732657162141.md"
+                "url":"Vantage/hkt1732657162141.md"
                 }
              , 
              { 
                 "id":"kpk1732657235913", 
                 "title":"Deploy feature engineering task", 
-                "url":"ModelOps_Core/kpk1732657235913.md"
+                "url":"Vantage/kpk1732657235913.md"
                 }
              , 
              { 
                 "id":"xli1732657281828", 
                 "title":"Feature engineering job task", 
-                "url":"ModelOps_Core/xli1732657281828.md"
+                "url":"Vantage/xli1732657281828.md"
                 }
              , 
              { 
                 "id":"zyw1732657344552", 
                 "title":"Feature engineering details", 
-                "url":"ModelOps_Core/zyw1732657344552.md", 
+                "url":"Vantage/zyw1732657344552.md", 
                 "children":[
                    { 
                       "id":"lok1732657374725", 
                       "title":"Lifecycle", 
                       "description":"Feature engineering lifecycle details.", 
-                      "url":"ModelOps_Core/lok1732657374725.md"
+                      "url":"Vantage/lok1732657374725.md"
                       }
                    , 
                    { 
                       "id":"bix1732657425434", 
                       "title":"Artifacts", 
-                      "url":"ModelOps_Core/bix1732657425434.md"
+                      "url":"Vantage/bix1732657425434.md"
                       }
 
                    ]
