@@ -148,6 +148,13 @@
              }
           , 
           { 
+             "id":"mmq1721237123997", 
+             "title":"Administradores de base de datos", 
+             "description":"Agregue un DBA al entorno.", 
+             "url":"Vantage/es/mmq1721237123997.md"
+             }
+          , 
+          { 
              "id":"rvv1721237055370", 
              "title":"Usuarios de base de datos", 
              "description":"Comience su experiencia con VantageCloud Lake.", 
@@ -348,6 +355,50 @@
                    }
                 , 
                 { 
+                   "id":"chs1723830476456", 
+                   "title":"Gestionar administradores de base de datos", 
+                   "description":"Obtenga información sobre los DBA y cómo crearlos.", 
+                   "url":"Vantage/es/chs1723830476456.md", 
+                   "children":[
+                      { 
+                         "id":"rhw1723830545389", 
+                         "title":"Crear un administrador de base de datos", 
+                         "description":"Pasos para crear DBA adicionales.", 
+                         "url":"Vantage/es/rhw1723830545389.md", 
+                         "children":[
+                            { 
+                               "id":"tws1731526438164", 
+                               "title":"Usuario DBC (raíz)", 
+                               "url":"Vantage/es/tws1731526438164.md"
+                               }
+                            , 
+                            { 
+                               "id":"yvc1731523611301", 
+                               "title":"Espacio permanente", 
+                               "url":"Vantage/es/yvc1731523611301.md"
+                               }
+                            , 
+                            { 
+                               "id":"hnk1731523638342", 
+                               "title":"Elija un juego de caracteres", 
+                               "url":"Vantage/es/hnk1731523638342.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"xnm1723830877831", 
+                         "title":"Notificar al administrador de base de datos", 
+                         "url":"Vantage/es/xnm1723830877831.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"qvt1726089301895", 
                    "title":"Analíticas abiertas", 
                    "description":"Active Anaconda para ejecutar cargas de trabajo analíticas.", 
@@ -414,6 +465,13 @@
                                      "title":"Conectar VantageCloud Lake como fuente de datos", 
                                      "description":"Conecte VantageCloud Lake a otra instancia de VantageCloud Lake.", 
                                      "url":"Vantage/es/cgh1722901880213.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"bbo1735955417476", 
+                                     "title":"Crear servidor externo", 
+                                     "description":"Configure el servidor externo.", 
+                                     "url":"Vantage/es/bbo1735955417476.md"
                                      }
 
                                   ]
@@ -632,6 +690,13 @@
              "description":"Escribir (o crear) y ejecutar consultas SQL.", 
              "url":"Vantage/es/edx1695158840322.md"
              }
+          , 
+          { 
+             "id":"xum1736387837711", 
+             "title":"Modelo de datos de la industria", 
+             "description":"Instale un modelo de datos de la industria.", 
+             "url":"Vantage/es/xum1736387837711.md"
+             }
 
           ]
 
@@ -817,7 +882,7 @@
              "description":"Ejecute casos de uso para explorar las capacidades de VantageCloud Lake.", 
              "icon":"book", 
              "url":"Vantage/es/bkm1640280721917.md", 
-             "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+             "childrenUrl":"VantageCloudLakeUseCases/es/use-cases-es.json"
              }
 
           ]
@@ -963,13 +1028,13 @@
           { 
              "id":"ohx1694115234984", 
              "title":"General settings", 
-             "description":"Establezca sus preferencias.", 
+             "description":"Establezca sus preferencias de usuario.", 
              "url":"Vantage/es/ohx1694115234984.md"
              }
           , 
           { 
              "id":"syi1695940519543", 
-             "title":"Gestionar tokens de acceso", 
+             "title":"Claves y tokens de acceso", 
              "description":"Cree y configure tokens de acceso personal (PAT).", 
              "url":"Vantage/es/syi1695940519543.md"
              }
@@ -991,7 +1056,7 @@
        "description":"Ejecute casos de uso para explorar las capacidades de VantageCloud Lake.", 
        "icon":"book", 
        "url":"Vantage/es/bkm1640280721917.md", 
-       "childrenUrl":"VantageCloudLakeUseCases/use-cases-en.json"
+       "childrenUrl":"VantageCloudLakeUseCases/es/use-cases-es.json"
        }
 
     ]

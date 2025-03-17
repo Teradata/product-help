@@ -113,14 +113,14 @@
                 , 
                 { 
                    "id":"ahj1695153106508", 
-                   "title":"最初のクエリを実行する", 
-                   "description":"エディタを使用して、最初のVantageクエリを実行します。", 
+                   "title":"最初のクエリーを実行する", 
+                   "description":"エディタを使用して、最初のVantageクエリーを実行します。", 
                    "icon":"counter_3", 
                    "url":"Vantage/ja/ahj1695153106508.md", 
                    "children":[
                       { 
                          "id":"boe1721092788909", 
-                         "title":"クエリを記述する", 
+                         "title":"クエリーを記述する", 
                          "icon":"counter_1", 
                          "url":"Vantage/ja/boe1721092788909.md"
                          }
@@ -145,6 +145,13 @@
 
                 ]
 
+             }
+          , 
+          { 
+             "id":"mmq1721237123997", 
+             "title":"データベース管理者", 
+             "description":"環境にDBAを追加します。", 
+             "url":"Vantage/ja/mmq1721237123997.md"
              }
           , 
           { 
@@ -238,7 +245,7 @@
     { 
        "id":"sbt1640280496980", 
        "title":"環境", 
-       "description":"データの読み込み、クエリの実行などです。", 
+       "description":"データの読み込み、クエリーの実行などです。", 
        "url":"Vantage/ja/sbt1640280496980.md", 
        "children":[
           { 
@@ -348,6 +355,50 @@
                    }
                 , 
                 { 
+                   "id":"chs1723830476456", 
+                   "title":"データベース管理者を管理する", 
+                   "description":"DBAとその作成方法について学習します。", 
+                   "url":"Vantage/ja/chs1723830476456.md", 
+                   "children":[
+                      { 
+                         "id":"rhw1723830545389", 
+                         "title":"データベース管理者を作成する", 
+                         "description":"追加のDBAを作成する手順", 
+                         "url":"Vantage/ja/rhw1723830545389.md", 
+                         "children":[
+                            { 
+                               "id":"tws1731526438164", 
+                               "title":"DBC (ルート) ユーザー", 
+                               "url":"Vantage/ja/tws1731526438164.md"
+                               }
+                            , 
+                            { 
+                               "id":"yvc1731523611301", 
+                               "title":"永久領域", 
+                               "url":"Vantage/ja/yvc1731523611301.md"
+                               }
+                            , 
+                            { 
+                               "id":"hnk1731523638342", 
+                               "title":"文字セットを選択する", 
+                               "url":"Vantage/ja/hnk1731523638342.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"xnm1723830877831", 
+                         "title":"データベース管理者に通知する", 
+                         "url":"Vantage/ja/xnm1723830877831.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
                    "id":"qvt1726089301895", 
                    "title":"オープン分析", 
                    "description":"Anacondaをオンにして分析ワークロードを実行できるようにします。", 
@@ -414,6 +465,13 @@
                                      "title":"VantageCloud Lakeをデータ ソースとして接続する", 
                                      "description":"VantageCloud Lakeを別のVantageCloud Lakeに接続します。", 
                                      "url":"Vantage/ja/cgh1722901880213.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"bbo1735955417476", 
+                                     "title":"外部サーバーを作成する", 
+                                     "description":"外部サーバーをセットアップします。", 
+                                     "url":"Vantage/ja/bbo1735955417476.md"
                                      }
 
                                   ]
@@ -534,7 +592,7 @@
                             { 
                                "id":"oiw1640282294248", 
                                "title":"動作", 
-                               "description":"現在のクエリと完了したクエリの詳細です。", 
+                               "description":"現在のクエリーと完了したクエリーの詳細です。", 
                                "url":"Vantage/ja/oiw1640282294248.md"
                                }
 
@@ -629,8 +687,15 @@
           { 
              "id":"edx1695158840322", 
              "title":"エディタ", 
-             "description":"SQLクエリを作成 (または構築) して実行します。", 
+             "description":"SQLクエリーを作成 (または構築) して実行します。", 
              "url":"Vantage/ja/edx1695158840322.md"
+             }
+          , 
+          { 
+             "id":"xum1736387837711", 
+             "title":"業界データ モデル", 
+             "description":"業界データ モデルをインストールします。", 
+             "url":"Vantage/ja/xum1736387837711.md"
              }
 
           ]
@@ -747,7 +812,7 @@
     { 
        "id":"xbg1640280430669", 
        "title":"エディタ", 
-       "description":"SQLクエリを作成 (または構築) して実行します。", 
+       "description":"SQLクエリーを作成 (または構築) して実行します。", 
        "url":"Vantage/ja/xbg1640280430669.md", 
        "children":[
           { 
@@ -773,7 +838,7 @@
                 { 
                    "id":"qow1711727575738", 
                    "title":"データを視覚化してレポートを作成する", 
-                   "description":"クエリ結果のレポートを作成します。", 
+                   "description":"クエリー結果のレポートを作成します。", 
                    "url":"Vantage/ja/qow1711727575738.md"
                    }
                 , 
@@ -787,7 +852,7 @@
                 { 
                    "id":"iql1691540875799", 
                    "title":"Explore in-database analytics functions", 
-                   "description":"関数を検索してクエリを構築します。", 
+                   "description":"関数を検索してクエリーを構築します。", 
                    "url":"Vantage/ja/iql1691540875799.md", 
                    "children":[
                       { 
@@ -826,21 +891,21 @@
     , 
     { 
        "id":"ajr1640280560519", 
-       "title":"Query", 
-       "description":"クエリの表示と最適化を行います。", 
+       "title":"クエリー", 
+       "description":"クエリーの表示と最適化を行います。", 
        "url":"Vantage/ja/ajr1640280560519.md", 
        "children":[
           { 
              "id":"poc1712163264099", 
-             "title":"クエリを監視する", 
-             "description":"VantageCloud Lakeのクエリを監視する方法を学習します。", 
+             "title":"クエリーを監視する", 
+             "description":"VantageCloud Lakeのクエリーを監視する方法を学習します。", 
              "url":"Vantage/ja/poc1712163264099.md"
              }
           , 
           { 
              "id":"zvd1688067459510", 
              "title":"クエリーの詳細", 
-             "description":"各クエリに対して表示される情報を理解します。", 
+             "description":"各クエリーに対して表示される情報を理解します。", 
              "url":"Vantage/ja/zvd1688067459510.md"
              }
 
@@ -963,13 +1028,13 @@
           { 
              "id":"ohx1694115234984", 
              "title":"General settings", 
-             "description":"設定を行います。", 
+             "description":"ユーザー設定を行います。", 
              "url":"Vantage/ja/ohx1694115234984.md"
              }
           , 
           { 
              "id":"syi1695940519543", 
-             "title":"アクセス トークンを管理", 
+             "title":"アクセス トークンとキー", 
              "description":"パーソナル アクセス トークン (PAT) を作成および構成します。", 
              "url":"Vantage/ja/syi1695940519543.md"
              }
