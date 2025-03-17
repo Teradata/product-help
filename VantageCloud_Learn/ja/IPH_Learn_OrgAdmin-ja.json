@@ -15,6 +15,144 @@
              }
           , 
           { 
+             "id":"ahx1707271934625", 
+             "title":"技術ドキュメント", 
+             "description":"VantageCloud Lakeのリファレンス ガイド、クイック スタート ガイド、チュートリアルを確認できます。", 
+             "icon":"library_books", 
+             "url":"VantageCloud_Learn/ja/ahx1707271934625.md", 
+             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xwq1729895742653", 
+       "title":"データベース ユーザー", 
+       "description":"データをロードして分析します。", 
+       "url":"VantageCloud_Learn/ja/xwq1729895742653.md", 
+       "children":[
+          { 
+             "id":"lam1707187864117", 
+             "title":"最初のクエリを実行する", 
+             "description":"エディタを使用して、最初のVantageクエリを実行します。", 
+             "icon":"script_sql_outlined;covalent", 
+             "url":"VantageCloud_Learn/ja/lam1707187864117.md", 
+             "childrenUrl":"ahj1695153106508"
+             }
+          , 
+          { 
+             "id":"ybo1714845836541", 
+             "title":"ユース ケースを探索する", 
+             "description":"ユース ケースを実行してVantageCloud Lakeの機能を体験します。", 
+             "icon":"book", 
+             "url":"VantageCloud_Learn/ja/ybo1714845836541.md", 
+             "childrenUrl":"bkm1640280721917"
+             }
+          , 
+          { 
+             "id":"zvp1714845785474", 
+             "title":"独自のツールを接続する", 
+             "description":"お使いのVantage環境でお好みのツールを使用できます。", 
+             "icon":"build", 
+             "url":"VantageCloud_Learn/ja/zvp1714845785474.md", 
+             "childrenUrl":"pmg1709157026832"
+             }
+          , 
+          { 
+             "id":"bbh1714845725516", 
+             "title":"データをロードする", 
+             "description":"データのロードおよびアクセス方法を学びます。", 
+             "icon":"database_synced_outlined;covalent", 
+             "url":"VantageCloud_Learn/ja/bbh1714845725516.md", 
+             "childrenUrl":"jwm1694121113608"
+             }
+          , 
+          { 
+             "id":"mrh1738958369444", 
+             "title":"データをコピーする", 
+             "description":"コピー計画を作成および管理します。", 
+             "icon":"content_copy", 
+             "url":"VantageCloud_Learn/ja/mrh1738958369444.md", 
+             "childrenUrl":"bgr1694118840100"
+             }
+          , 
+          { 
+             "id":"trp1729898889139", 
+             "title":"SQLエディタについて学ぶ", 
+             "description":"SQLクエリーを作成 (または構築) して実行します。", 
+             "icon":"product_editor;covalent", 
+             "url":"VantageCloud_Learn/ja/trp1729898889139.md", 
+             "childrenUrl":"xbg1640280430669"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"que1729894837638", 
+       "title":"データベース管理者", 
+       "description":"ユーザーとコンピューティング リソースを追加します。", 
+       "url":"VantageCloud_Learn/ja/que1729894837638.md", 
+       "children":[
+          { 
+             "id":"qlu1714845432088", 
+             "title":"コンピューティング リソースを管理する", 
+             "description":"処理、監視、および課金を分離するコンピューティング リソースについて学ぶ", 
+             "icon":"compute_groups_outlined;covalent", 
+             "url":"VantageCloud_Learn/ja/qlu1714845432088.md", 
+             "childrenUrl":"nmr1658424425362"
+             }
+          , 
+          { 
+             "id":"ujr1714845520425", 
+             "title":"データベース ユーザーを追加する", 
+             "description":"環境のデータベースに他のユーザーを追加する方法をご紹介します。", 
+             "icon":"group", 
+             "url":"VantageCloud_Learn/ja/ujr1714845520425.md", 
+             "childrenUrl":"wxe1659392685092"
+             }
+          , 
+          { 
+             "id":"yyz1710373675172", 
+             "title":"データベース管理者を追加する", 
+             "description":"他のデータベース管理者を環境に追加します。", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/ja/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
+             }
+          , 
+          { 
+             "id":"wje1714845660801", 
+             "title":"データを保護する", 
+             "description":"データのバックアップおよび復元方法を学びます。", 
+             "icon":"settings_backup_restore", 
+             "url":"VantageCloud_Learn/ja/wje1714845660801.md", 
+             "childrenUrl":"jrq1640280690304"
+             }
+          , 
+          { 
+             "id":"sbv1729897674850", 
+             "title":"クエリーのパフォーマンスを監視する", 
+             "description":"クエリーのパフォーマンスを監視する方法を学習します。", 
+             "icon":"query_stats", 
+             "url":"VantageCloud_Learn/ja/sbv1729897674850.md", 
+             "childrenUrl":"ajr1640280560519"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"ubu1707187832449", 
+       "title":"組織の管理者", 
+       "description":"チームのためにシステムの準備を整えます。", 
+       "url":"VantageCloud_Learn/ja/ubu1707187832449.md", 
+       "children":[
+          { 
              "id":"jiy1707187681752", 
              "title":"環境を作成する", 
              "description":"最初のプライマリ クラスタとデータベースを作成します。", 
@@ -33,45 +171,8 @@
              }
           , 
           { 
-             "id":"lam1707187864117", 
-             "title":"最初のクエリを実行する", 
-             "description":"エディタを使用して、最初のVantageクエリを実行します。", 
-             "icon":"script_sql_outlined;covalent", 
-             "url":"VantageCloud_Learn/ja/lam1707187864117.md", 
-             "childrenUrl":"ahj1695153106508"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"ubu1707187832449", 
-       "title":"ヘルプ コンテンツ", 
-       "description":"次に行うべきことについて学びます。", 
-       "url":"VantageCloud_Learn/ja/ubu1707187832449.md", 
-       "children":[
-          { 
-             "id":"qlu1714845432088", 
-             "title":"コンピューティング リソース", 
-             "description":"処理、監視、および課金を分離するコンピューティング リソースについて学ぶ", 
-             "icon":"compute_groups_outlined;covalent", 
-             "url":"VantageCloud_Learn/ja/qlu1714845432088.md", 
-             "childrenUrl":"nmr1658424425362"
-             }
-          , 
-          { 
-             "id":"ujr1714845520425", 
-             "title":"データベース ユーザー", 
-             "description":"環境のデータベースに他のユーザーを追加する方法をご紹介します。", 
-             "icon":"group", 
-             "url":"VantageCloud_Learn/ja/ujr1714845520425.md", 
-             "childrenUrl":"wxe1659392685092"
-             }
-          , 
-          { 
              "id":"nnr1714845584229", 
-             "title":"シングル サインオン", 
+             "title":"シングル サインオンを有効にする", 
              "description":"企業IDプロバイダを使用して環境へのアクセスを許可する方法を理解します。", 
              "icon":"connected_identity_outlined;covalent", 
              "url":"VantageCloud_Learn/ja/nnr1714845584229.md", 
@@ -79,45 +180,9 @@
              }
           , 
           { 
-             "id":"wje1714845660801", 
-             "title":"データ保護", 
-             "description":"データのバックアップおよび復元方法を学びます。", 
-             "icon":"settings_backup_restore", 
-             "url":"VantageCloud_Learn/ja/wje1714845660801.md", 
-             "childrenUrl":"jrq1640280690304"
-             }
-          , 
-          { 
-             "id":"bbh1714845725516", 
-             "title":"データをロードする", 
-             "description":"データのロードおよびアクセス方法を学びます。", 
-             "icon":"database_synced_outlined;covalent", 
-             "url":"VantageCloud_Learn/ja/bbh1714845725516.md", 
-             "childrenUrl":"jwm1694121113608"
-             }
-          , 
-          { 
-             "id":"zvp1714845785474", 
-             "title":"独自のツールを接続する", 
-             "description":"お使いのVantage環境でお好みのツールを使用できます。", 
-             "icon":"build", 
-             "url":"VantageCloud_Learn/ja/zvp1714845785474.md", 
-             "childrenUrl":"pmg1709157026832"
-             }
-          , 
-          { 
-             "id":"ybo1714845836541", 
-             "title":"ユース ケースを探索する", 
-             "description":"ユース ケースを実行してVantageCloud Lakeの機能を体験します。", 
-             "icon":"book", 
-             "url":"VantageCloud_Learn/ja/ybo1714845836541.md", 
-             "childrenUrl":"bkm1640280721917"
-             }
-          , 
-          { 
              "id":"uvi1714845877298", 
-             "title":"リソース監視", 
-             "description":"クエリの詳細を確認し、コンピューティング リソースのバランスを改善する方法を学びます。", 
+             "title":"リソースの消費を監視する", 
+             "description":"環境のストレージとコンピューティング リソースを確認し、アラートを設定します。", 
              "icon":"show_chart", 
              "url":"VantageCloud_Learn/ja/uvi1714845877298.md", 
              "childrenUrl":"onj1682104977691"
@@ -134,15 +199,6 @@
        "url":"VantageCloud_Learn/ja/sgl1707186427875.md", 
        "children":[
           { 
-             "id":"gxj1707271369419", 
-             "title":"リソース センター", 
-             "description":"ハウツー、最新情報、ステップごとの構成ベスト プラクティスを確認できます。", 
-             "icon":"live_help", 
-             "url":"VantageCloud_Learn/ja/gxj1707271369419.md", 
-             "childrenUrl":"resource-center"
-             }
-          , 
-          { 
              "id":"bnn1707271398245", 
              "title":"最新情報", 
              "description":"新機能や最新の変更点について学べます。", 
@@ -152,12 +208,12 @@
              }
           , 
           { 
-             "id":"ahx1707271934625", 
-             "title":"技術ドキュメント", 
-             "description":"VantageCloud Lakeのリファレンス ガイド、クイック スタート ガイド、チュートリアルを確認できます。", 
-             "icon":"library_books", 
-             "url":"VantageCloud_Learn/ja/ahx1707271934625.md", 
-             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
+             "id":"gxj1707271369419", 
+             "title":"リソース センター", 
+             "description":"ハウツー、最新情報、ステップごとの構成ベスト プラクティスを確認できます。", 
+             "icon":"live_help", 
+             "url":"VantageCloud_Learn/ja/gxj1707271369419.md", 
+             "childrenUrl":"resource-center"
              }
           , 
           { 
@@ -185,6 +241,15 @@
              "icon":"handshake", 
              "url":"VantageCloud_Learn/ja/jfl1714832551578.md", 
              "childrenUrl":"https://support.teradata.com/community"
+             }
+          , 
+          { 
+             "id":"oux1714177476353", 
+             "title":"SQLリファレンス ガイドを確認する", 
+             "description":"あらゆるSQLコマンド、関数、データベース リファレンスに関する完全な情報を見つけることができます", 
+             "icon":"advanced_sql_outlined;covalent", 
+             "url":"VantageCloud_Learn/ja/oux1714177476353.md", 
+             "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
 
           ]

@@ -15,14 +15,24 @@
              }
           , 
           { 
-             "id":"xmm1707187643364", 
-             "title":"VantageCloud Lake へようこそ", 
-             "description":"コンソールの各部について学びます。", 
-             "icon":"teradata_outlined;covalent", 
-             "url":"VantageCloud_Learn/ja/xmm1707187643364.md", 
-             "childrenUrl":"apv1721232251932"
+             "id":"ahx1707271934625", 
+             "title":"技術ドキュメント", 
+             "description":"VantageCloud Lakeのリファレンス ガイド、クイック スタート ガイド、チュートリアルを確認できます。", 
+             "icon":"library_books", 
+             "url":"VantageCloud_Learn/ja/ahx1707271934625.md", 
+             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
-          , 
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"xwq1729895742653", 
+       "title":"データベース ユーザー", 
+       "description":"データをロードして分析します。", 
+       "url":"VantageCloud_Learn/ja/xwq1729895742653.md", 
+       "children":[
           { 
              "id":"lam1707187864117", 
              "title":"最初のクエリを実行する", 
@@ -40,20 +50,29 @@
              "url":"VantageCloud_Learn/ja/ybo1714845836541.md", 
              "childrenUrl":"bkm1640280721917"
              }
+          , 
+          { 
+             "id":"trp1729898889139", 
+             "title":"SQLエディタについて学ぶ", 
+             "description":"SQLクエリーを作成 (または構築) して実行します。", 
+             "icon":"product_editor;covalent", 
+             "url":"VantageCloud_Learn/ja/trp1729898889139.md", 
+             "childrenUrl":"xbg1640280430669"
+             }
 
           ]
 
        }
     , 
     { 
-       "id":"ubu1707187832449", 
-       "title":"ヘルプ コンテンツ", 
-       "description":"次に行うべきことについて学びます。", 
-       "url":"VantageCloud_Learn/ja/ubu1707187832449.md", 
+       "id":"que1729894837638", 
+       "title":"データベース管理者", 
+       "description":"ユーザーとコンピューティング リソースを追加します。", 
+       "url":"VantageCloud_Learn/ja/que1729894837638.md", 
        "children":[
           { 
              "id":"qlu1714845432088", 
-             "title":"コンピューティング リソース", 
+             "title":"コンピューティング リソースを管理する", 
              "description":"処理、監視、および課金を分離するコンピューティング リソースについて学ぶ", 
              "icon":"compute_groups_outlined;covalent", 
              "url":"VantageCloud_Learn/ja/qlu1714845432088.md", 
@@ -62,7 +81,7 @@
           , 
           { 
              "id":"ujr1714845520425", 
-             "title":"データベース ユーザー", 
+             "title":"データベース ユーザーを追加する", 
              "description":"環境のデータベースに他のユーザーを追加する方法をご紹介します。", 
              "icon":"group", 
              "url":"VantageCloud_Learn/ja/ujr1714845520425.md", 
@@ -70,12 +89,12 @@
              }
           , 
           { 
-             "id":"wje1714845660801", 
-             "title":"データ保護", 
-             "description":"データのバックアップおよび復元方法を学びます。", 
-             "icon":"settings_backup_restore", 
-             "url":"VantageCloud_Learn/ja/wje1714845660801.md", 
-             "childrenUrl":"jrq1640280690304"
+             "id":"yyz1710373675172", 
+             "title":"データベース管理者を追加する", 
+             "description":"他のデータベース管理者を環境に追加します。", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/ja/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
              }
           , 
           { 
@@ -88,12 +107,40 @@
              }
           , 
           { 
-             "id":"oux1714177476353", 
-             "title":"SQLリファレンス ガイドを確認する", 
-             "description":"あらゆるSQLコマンド、関数、データベース リファレンスに関する完全な情報を見つけることができます", 
-             "icon":"product_editor_outlined;covalent", 
-             "url":"VantageCloud_Learn/ja/oux1714177476353.md", 
-             "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
+             "id":"sbv1729897674850", 
+             "title":"クエリーのパフォーマンスを監視する", 
+             "description":"クエリーのパフォーマンスを監視する方法を学習します。", 
+             "icon":"query_stats", 
+             "url":"VantageCloud_Learn/ja/sbv1729897674850.md", 
+             "childrenUrl":"ajr1640280560519"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"ubu1707187832449", 
+       "title":"組織の管理者", 
+       "description":"チームのためにシステムの準備を整えます。", 
+       "url":"VantageCloud_Learn/ja/ubu1707187832449.md", 
+       "children":[
+          { 
+             "id":"jiy1707187681752", 
+             "title":"環境を作成する", 
+             "description":"最初のプライマリ クラスタとデータベースを作成します。", 
+             "icon":"server_outlined;covalent", 
+             "url":"VantageCloud_Learn/ja/jiy1707187681752.md", 
+             "childrenUrl":"wvr1709157903898"
+             }
+          , 
+          { 
+             "id":"krx1707187712212", 
+             "title":"ネットワーク接続を管理する", 
+             "description":"環境へのネットワーク接続を許可します。", 
+             "icon":"network_locked", 
+             "url":"VantageCloud_Learn/ja/krx1707187712212.md", 
+             "childrenUrl":"cqk1721231159841"
              }
 
           ]
@@ -113,15 +160,6 @@
              "icon":"live_help", 
              "url":"VantageCloud_Learn/ja/gxj1707271369419.md", 
              "childrenUrl":"resource-center"
-             }
-          , 
-          { 
-             "id":"ahx1707271934625", 
-             "title":"技術ドキュメント", 
-             "description":"VantageCloud Lakeのリファレンス ガイド、クイック スタート ガイド、チュートリアルを確認できます。", 
-             "icon":"library_books", 
-             "url":"VantageCloud_Learn/ja/ahx1707271934625.md", 
-             "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
           , 
           { 
@@ -148,6 +186,15 @@
              "icon":"handshake", 
              "url":"VantageCloud_Learn/ja/jfl1714832551578.md", 
              "childrenUrl":"https://support.teradata.com/community"
+             }
+          , 
+          { 
+             "id":"oux1714177476353", 
+             "title":"SQLリファレンス ガイドを確認する", 
+             "description":"あらゆるSQLコマンド、関数、データベース リファレンスに関する完全な情報を見つけることができます", 
+             "icon":"advanced_sql_outlined;covalent", 
+             "url":"VantageCloud_Learn/ja/oux1714177476353.md", 
+             "childrenUrl":"https://docs.teradata.com/r/Teradata-VantageCloud-Lake/Database-Reference"
              }
 
           ]
