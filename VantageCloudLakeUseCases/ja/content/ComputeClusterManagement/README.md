@@ -1,4 +1,5 @@
-## SQLによるコンピューティング クラスタ管理
+SQLによるコンピューティング クラスタ管理
+----------------------------------------
 
 ### 始める前に
 
@@ -6,15 +7,13 @@
 
 ### はじめに
 
-このユース ケースでは、SQLを使用したVantageCloud Lakeでのコンピューティング クラスタの管理について解説します。
-
-***ヒント**:独自のコンピューティング クラスタ グループを作成する用意ができたら、エディタまたはVantage Console UIでSQLを使用できます。*
+このユース ケースでは、SQLを使用してコンピューティング リソースを作成および管理するプロセスについて説明します。なお、これらのタスクの多くは、VantageCloud Lake Console UIを使用して実行することもできます。
 
 ### セットアップ
 
-このユース ケースには以下の権限が必要です。
+このユース ケースには、次の権限が必要です。必要に応じて、「dbc」などの管理ユーザーでエディタに接続し、このユース ケースを実行するデータベース ユーザーにこれらの権限を付与します。
 
-```sql
+``` sourceCode
 GRANT CREATE COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
 GRANT DROP COMPUTE GROUP TO "${username}" WITH GRANT OPTION;
 
@@ -31,21 +30,21 @@ GRANT SELECT ON DBC.ComputeMaps TO "${username}";
 GRANT SELECT ON DBC.ComputeMapsV TO "${username}";
 ```
 
-### 新しいリサーチ プロジェクト用のリソース グループを作成する
+### コンピューティング グループを作成する
 
-コンピューティング クラスタ グループは、1つ以上のコンピューティング クラスタを含んでいます。また、ユーザーのクエリーに対してユーザーとリソースを関連付けるために使用されます。
+この演習では、架空の研究プロジェクト用のコンピューティング リソースを作成してみましょう。コンピューティング グループは、ビジネス グループ、アプリケーション、またはその他のユーザー グループを、ワークロードの処理に使用できるエラスティック コンピューティング リソースに関連付けるために使用されます。各コンピューティング グループにはコンピューティング リソースのクラスタが1つ以上含まれており、各クラスタはコンピューティング プロファイルと呼ばれます。
 
-クエリー+戦略のポリシーが今後の使用のために提供されます。
+QUERY\_STRATEGY引数は、関連するコンピューティング グループで実行されるワークロードのタイプを定義します。タイプは、STANDARD (通常のクエリー操作) またはANALYTIC (高度な分析、AI/ML、またはOpen Analytics Frameworkコンテナー) のいずれかです
 
-```sql
+``` sourceCode
 CREATE COMPUTE GROUP Research_Group USING QUERY_STRATEGY ('STANDARD');
 ```
 
 ### プロジェクトのロールを作成する
 
-以下の2つのロールが提供されます。\* 管理者ロール。コンピューティング クラスタ グループとグループ内のユーザーを管理します \* ユーザー ロール。コンピューティング クラスタ リソースへのアクセスを許可します
+ロールに基づいたアクセス制御を使用すると、ユーザー権限の管理が容易になります。ここでは次の2つのロールを作成します: \* 管理者ロール: コンピューティング リソースとそれにアクセスできるユーザーの管理権限を持ちます \* ユーザー ロール: コンピューティング グループ リソースへのアクセス許可権限を持ちます
 
-```sql
+``` sourceCode
 -- Create an admin role for the project
 CREATE ROLE Research_Admin_Role;
 GRANT CREATE COMPUTE GROUP TO Research_Admin_Role;
@@ -56,11 +55,13 @@ CREATE ROLE Research_Role;
 GRANT COMPUTE GROUP Research_Group TO Research_Role;
 ```
 
-### ユーザーとコンピューティング クラスタ リソースを関連付ける
+### ユーザーをコンピューティング グループ リソースに関連付ける
 
-ユーザーをコンピューティング クラスタ グループに関連付けることにより、ユーザーはコンピューティング クラスタ リソースにアクセスできます。デフォルトの関連性を持つようにユーザーを作成または編集できます。ユーザーはアクセス権が与えられ、それを直接設定できます。
+ユーザー クエリーがコンピューティング リソースにアクセスできるようにするには、デフォルトでコンピューティング グループに関連付けるか、セッションごとに関連付けの設定を行います。どちらの場合も、ユーザーにはコンピューティング グループに対する権限が必要です。権限の付与は、直接行うか、ロールに基づくアクセスによって行うことができます。
 
-```sql
+次のことを実行するには、下記のSQLを参照してください: \* デフォルトのコンピューティング グループを持つユーザーを作成する \* デフォルトのコンピューティング グループを持つようにユーザーを変更する \* ユーザーにさまざまなロールを付与する \* ユーザーがセッションごとにコンピューティング グループを設定できるようにする
+
+``` sourceCode
 -- Create a new user
 CREATE USER "${USER}" AS 
 PASSWORD = "${PASSWORD}"
@@ -74,18 +75,18 @@ MODIFY USER "${USER}" AS COMPUTE GROUP = Research_Group;
 -- Also provide access to the Compute Cluster resources
 GRANT Research_Role TO "${USER}";
 
--- This user also can administrate the resources
+-- このユーザーはリソースの管理も行えます
 GRANT Research_Admin_Role TO "${USER}";
 
 -- User can set access to any specific group that they have access
 SET SESSION COMPUTE GROUP Research_Group;
 ```
 
-### グループにリソースを割り当てる
+### グループにコンピューティング リソースを割り当てる
 
-コンピューティング クラスタ プロファイルには、リソースのポリシーが記述されています。コンピューティング クラスタには、MINおよびMAXを使用して定義された1つ以上のインスタンスが含まれています。MINは、インスタンスまたはランクの常に利用可能な個数を表します。MAXは、使用可能なインスタンスのエラスティック部分を表します。個々のインスタンスは、EC2インスタンスなどのVMノードの数を表します。VMノードの数は、Small、Medium、またはLargeなどのインスタンス サイズ記述子によって制御されます。それぞれのサイズには、1つ前のサイズに対して2倍のVMノード数があり、2、4、8、16のようになります。ポリシーに対して指定できるオプションが他にもあります。\* initially\_suspendedは、設定後にユーザーが手動でコンピューティング クラスタを復元するまでコンピューティング クラスタをハイバネーション状態にします \* コンピューティング クラスタが処理可能になる時点の開始および終了時間を、cron tab形式を使用して指定できます \* cooldown\_periodは、終了時間後にクエリーを完了できるようにコンピューティング クラスタが実行し続ける時間の長さを指定します
+コンピューティング グループには1つ以上のコンピューティング プロファイルが含まれます。どの時点においても、1つのプロファイルのみが有効です。コンピューティング プロファイルには、クエリー ワークロードの処理に使用できるコンピューティング リソースと関連パラメータが記述されています。各コンピューティング プロファイルには、次の内容が記述されています: \* クラスタ サイズ: XSmall (1ノード) からXXLarge (64ノード) まで \* スケーリング ポリシー: プロファイルがスケーリングできるエラスティック クラスタ インスタンスの最小数と最大数が定義されています。各インスタンスは、選択したサイズ (XSmall、Medium、Largeなど) のクラスタを表します \* crontab形式で指定された開始時刻と終了時刻:このスケジューリング機能により、グループでどの時間にどのコンピューティング プロファイルを使用するかを細かく制御できます。 \* クールダウン期間: クラスタがシャットダウンするまでにどのくらいの時間をクエリー完了に費やせるかを定義します。 \* initially\_suspended: ユーザーがコンピューティング クラスタを作成した後、そのクラスタを休止させるかどうかを指定します。コンピューティング プロファイルは、SQLまたはコンソールUIを使用して手動で一時停止または再開することができます
 
-```sql
+``` sourceCode
 -- View existing maps for available Compute Cluster sizes
 SELECT * FROM DBC.ComputeMapsV ORDER BY NodeCount;
 
@@ -102,9 +103,9 @@ MIN_COMPUTE_COUNT  ( 1 ) MAX_COMPUTE_COUNT  ( 2 ) SCALING_POLICY  ('STANDARD') I
 INITIALLY_SUSPENDED  ('FALSE') START_TIME  ('') END_TIME  ('') COOLDOWN_PERIOD  ( 30 );
 ```
 
-### コンピューティング クラスタ ディクショナリにクエリーを実行しCOMPUTE CLUSTERについてのステータスを取得する
+### 追加クエリー
 
-```sql
+``` sourceCode
 -- View existing maps for available Compute Cluster sizes
 SELECT * FROM DBC.ComputeMaps ORDER BY NodeCount;
 
@@ -121,9 +122,9 @@ SELECT * FROM DBC.ComputeProfilesV;
 SELECT * FROM DBC.ComputeStatusV;
 ```
 
-### コンピューティング クラスタ プロファイルを削除する
+### クリーンアップ
 
-```sql
+``` sourceCode
 DROP ROLE Research_Admin_Role;
 DROP ROLE Research_Role;
 DROP COMPUTE PROFILE Research_Resources IN COMPUTE GROUP Research_Group;

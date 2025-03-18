@@ -1,136 +1,121 @@
-## 人工膝関節置換術 - パス分析
+Total Knee Replacement - Path Analysis
+--------------------------------------
 
-### 始める前に
+### Before You Begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する][LAUNCH EDITOR](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-このワークブックでは、Vantage Pathの機能を紹介する基本的なデモ スクリプトを提供します。対象読者はビジネス アナリストです。このデモ スクリプトは、「膝関節全置換術への行程を探る」セクションを単独で使用するか(予備的な短い初顔合わせ会合での使用など)、または他のセクションと組み合わせてより完全なデモを行えるように構成されています。
+This workbook provides a base demo script showcasing the capabilities of Vantage Path. The target audience is the Business Analyst. The demo script has been constructed such that the Exploring Path to Total Knee Replacement section can be used in isolation (such as for a brief informal introductory meeting) or in combination with the other sections for a more complete demonstration.
 
-### 経験
+### Experience
 
-「体験」セクションの実施所要時間は約7～10分です。
+The Experience section takes about 7-10 minutes to run.
 
-まず、<a href="/path-analyzer">Vantage Path</a> を開きます。
+First step is to open [Vantage Path](/path-analyzer).
 
-### セットアップ
+### Setup
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
-[アセットをロード](#data={"id":"KneeReplacement"})
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case. [Load Assets](#data=%7B%22id%22:%22KneeReplacement%22%7D)
 
-### ウォークスルー
-***
+### Walkthrough
 
-#### ステップ1:膝関節全置換術への行程を探る
+------------------------------------------------------------------------
 
-これから、ヘルスケアのデータを使用したVantage Path分析機能のデモを行います。具体的には、人工膝関節全置換術で最も頻繁に行われる医療処置の行程について見ていきます。
+#### Step 1: Exploring Path to Total Knee Replacement
 
-右のパネルを使って、以下のように値を設定します: 
-- 「Top Paths to Show (表示する最上位のパス数)」を25のままにしておきます 
-- データ ソースを選択します: 
-	- イベント データベース: retail_sample_data 
-	- イベント テーブル: knee_replacement
+I am going to be demonstrating the Vantage Path analysis capabilities using healthcare data. Specifically, we are going to be looking at the most frequent medical procedures paths to total knee replacement.
 
-フィルタは設定せず、すべてのイベントを使用します。
-イベント パターンは次のようにします: 
-- イベントAでは「Any Event (任意のイベント)」のままにします 
-- イベントBでは「Any Event」から「Total Knee Replacement (膝関節全置換術)」に変更します
+Using the panel on the right I will set the values as follows: - Leave the Top Paths to Show as 25 - Select the data source: - Event Database: retail\_sample\_data - Event Table: knee\_replacement
 
-また、最小イベント数、最大イベント数、重複を許可はデフォルトの設定のままにします。
+I am choosing not to set a filter and rather Use All events. For the Event Pattern: - Event A – leave as ‘Any Event’ - Event B – change from ‘Any Event’ to ‘Total Knee Replacement’
 
-このデモのシナリオでは、日付範囲の限定は必要ありません(ただしこのフィルタは他の状況で便利な場合があります)。
+And I will leave the Min \# events, Max \# events and Allow overlap as the default settings.
 
-最後に、同じパスに属するイベントがどれかをパス分析に伝えるために、セッション列(entity_id)を選択する必要があります。ウェブサイト上のパスなど、一部のパス分析ではsession_idによって照合され、このシナリオではsession_idは患者(entity_id)と同じです。
+For this demo scenario I do not need to limit the date range (however this filter could be useful in other situations).
 
-クエリーに必要なすべての情報を入力したら、「Run (実行)」ボタンを選択すると、その時点でクエリが動的に生成されてVantageシステムに送信され、インターフェイスに視覚化がすぐに表示されます。
+Finally, I need to select the session column (entity\_id) to tell path analysis which events belong in the same path. Some path analysis such as paths on a website will be collated by session\_id, in this scenario the session\_id is equal to the patient (entity\_id).
 
-#### ステップ2:視覚化
+Once all the information required by the query has been entered, I can select the Run button, at which point a query is dynamically generated and sent to the Vantage system and in short order a visualization will be returned to us here in the interface.
 
-グラフなどで表示される最初の視覚化では、膝関節全置換術への最も一般的な行程がハイライトされます。
+#### Step 2: Visualization
 
-視覚化が表示されると、いくつかのオプションが使用できるようになります。
-- 関心対象の各ノードで展開したパスを手動で探索できます(膝関節鏡視下診断など、縁がオレンジ色の白丸をクリックします)。オレンジ色で塗りつぶされた丸は、このノードのフル パスが表示されていることを示します。
-- すべて展開 – すべてのパスを表示します 
-- すべて折り畳む – 終了イベントのみを表示します(膝関節全置換術) 
-- 高優先度を選択 – 最も一般的なパスをハイライトします
+The initial visualization that is returned highlights the most common path to Total Knee Replacement.
 
--   「カウントのラベルを表示」をチェックして、個々の特定のパス セグメント(関節可動域テストから理学療法NECなど)を通過した人数を示すことができます。
+Once the visualization has returned, I have several options available: - I can manually explore via expanded the path at each node of interest (clicking an open orange circle such as Knee Arthroscopy). The solid orange circles indicate the full path for this node is being displayed. - Expand All – Show all the Paths - Collapse All – Shows only the Ending Event (Total Knee Replacement) - Select Dominant – Highlights the most popular path
 
--   またパスのダイアグラムとパス イベント/カウントの一覧表を切り替えることもできます。一覧表は、インターフェイスでなく直接クエリーによってこの分析を実行した場合に表示されるものです。
+-   I can all check the Show Count Labels the shows the number of people that that have passed through each specific path segment (e.g., Range of Motion Testing to Physical Therapy NEC).
 
-高優先度のパスの表示からわかるように、膝関節生検は膝関節全置換術の前の最も一般的な最後のステップです。これについてさらに深掘りし、膝関節全置換術に達していない他の行程を特定できるか確めましょう。
-- まず、膝関節生検をイベントAとして選択しイベントBには「任意のイベント」を選択肢することで、膝関節生検からのパスを調べます(実行を選択します)。
-- 予想通り、高優先度のパスは最終的に膝関節全置換術に辿り着きますが、他の処置も存在します。
+-   I can also toggle between path diagram and a table listing of the path events and count. The table listing is what would have been returned if you had run this analysis via a direct query rather than the interface.
 
--   Vantage Pathではパスの方向を簡単に切り替えることができるので、方向を切り替えて膝関節生検へのパスを調べましょう。  
--   ただし、「実行」を選択する前に、「終了アンカー」オプションをチェックします。このオプションにより膝関節生検が確実にパスの最後のイベントとなるので、患者は膝関節全置換術に至る行程を辿っていません。
--   この視覚化では、膝関節生検に至る最も一般的なパスを確認できます。このパス上で患者についてのさらなる分析を実施することに関心が向けられる場合もあります。
+As you can see from viewing the dominant path, Knee Joint Biopsy is the most common last step before Total Knee Replacement. Let’s explore this further to see if we can identify other pathways that have not led to Total Knee Replacement. - First let’s explore Paths from Knee Joint Biopsy by selecting Knee Joint Biopsy as Event A and Any Event for Event B (Select Run). - As expected, the dominant path ends up with Total Knee Replacement, however there are other procedures as well.
 
-高優先度(または重要な任意のパス)を選ぶ場合、「セグメントを作成」機能を使用してさらに分析を進められるように、結果をテーブルに格納できます。
+-   Within Vantage Path we can easily switch the direction of the Path and let’s do so to explore a Path to Knee Joint Biopsy.  
+-   However, before selecting Run, we will check the Ending Anchor Option – this option will ensure Knee Joint Biopsy is the last event in the Path, and therefore the patients have not gone on to Total Knee Replacement.
+-   In this visualization we can see the most common path to Knee Joint biopsy and we may be interested in conducting further analysis on the patients on this path.
 
-デモの「ステップ3: セグメントを作成」に進まない場合は、次のセクションをスキップして結論に進みます。
+When the Dominant (or any Path for that matter) is chosen, I have the ability to store the results in a table for further analysis by using the Create Segment functionality
 
-#### ステップ3:セグメントを作成
+If you are not continuing on to demo Step 3: Create Segment, just skip the next section and onto the conclusion.
 
-「セグメントを作成」機能をデモするために、自身のパーソナル データベースで出力テーブルがすでに作成済みである必要があります(書き込みアクセスが必要なため)。
+#### Step 3: Create Segment
 
-```sql
+To demo the Create Segment capability, an output table must already be created in your personal database (as write access is required).
+
+``` sourceCode
 CREATE TABLE knee_replacement_path_export(
     entity_id    varchar(100),
     path        varchar(2000)
 )
 ```
 
-以前デモを実施したことがありテーブルを再作成していない場合は、テーブルが空であることを確かめます。そうしないと、「セグメントを保存」で挿入されている行数が0と示されます。
+If you have previously run the demo and not re-created the table – ensure the table is empty, otherwise Save Segment will show 0 rows being inserted.
 
-パス分析では視覚的な探索が可能になり、多くの場合、関心対象のパスが特定されると、そのパス上の各人がさらなる分析の対象になります。次に「セグメントを作成」機能について見ていきましょう。
+Path analysis allows for visual exploration and often when an interesting path is identified, then the people on that path are of interest for further analysis. Let’s now explore the Create Segment capability.
 
-「セグメントを作成」ボタンをクリックすると、(自分が書き込みアクセスできる)データベースとテーブルを選択できます(セットアップで作成したものを使います)
+When I click on the Create Segment button, I can choose a Database (that I have write access to) and a Table – (Use the one you created in Setup)
 
-この時点でいくつかのオプションがあります。
-- SQLを表示 - これはVantageが実行するSQLです。このSQLをコピーしてVantage EditorやJupyterなどのクエリー ツールに貼り付け、さらに詳しく調べることができます。
-- セグメントを保存 - クエリーが実行され、出力が指定のテーブルに保存されます。クエリーが実行されると、行数が表示されます。
+I now have a few options: - Show SQL – this is the SQL that is run by Vantage. I can copy this SQL and paste into a query tool such as Vantage Editor or Jupyter for further exploration. - Save Segment - the query is run and the output is saved to the table specified. Once the query is completed, the number of rows will be displayed
 
-    - クエリーを保存 – このオプションを使用すると、クエリーに名前が付けられ、SQLがVantage上のテーブルに保存されます。
+```
+- Save Query –  with this option the query is given a name and the SQL is saved to a table on Vantage.
 
-    - セグメントを保存しました – 結果のテーブルを見てみましょう。Vantageエディタに切り替えます。
-    - knee_replacement_path_exportテーブルからの分析情報を表示すると、列とddlステートメントに加えて 2,757のレコードがあることがわかります。
-    - 単純な選択クエリを実行すると結果が表示されます。 - Entity_id と Path (選択された主要なパス)。
+- Now that I have saved a segment – let’s take a look at the resulting table. I am going to switch to Vantage Editor
+- If I view the insights from the knee_replacement_path_export table I can see that it has 2,757 records as well as the columns and ddl statement.
+- Running a simple select query I can see the result - Entity_id and Path (the dominant path selected).
+```
 
--   保存されたセグメントは、分析をさらに進めるための入力(例えば患者全体に何らかの共通性があるかを確めるクラスタリングなど)として使用したり、またはそれほど侵襲的な手技を使わない患者を対象とする治療計画への可能な入力として使用したりできます。
+-   The saved segment can be used as input for further analysis, such as clustering to see if there are any commonalities across the patients or potentially as input to a treatment plan for these patients may be candidates for less invasive procedures.
 
-#### クリーンアップ
+#### Clean-up
 
-この例を終了したら、作成したテーブルを必ずクリーンアップしてください。
+When you are finished with this example, remember to clean up the created table:
 
-```sql
+``` sourceCode
 DROP TABLE knee_replacement_path_export
 ```
 
-#### まとめ
+#### Conclusion
 
-この短いデモからわかるように、Vantage Analystには簡単に使用できるインターフェイスがあり、今ご覧いただいたようなパス分析の実施に有用です。パス分析では、分野横断的にさまざまなトピックが対象になります。
+As you can see from this brief demonstration, Vantage Analyst provides an easy to user interface for conducting path analysis such as the one we just viewed. Path analysis can span multiple topics and crosses industries.
 
-次のような例があります。
-- 顧客の購入へのパス 
-- オンラインでのカゴ落ちへのパス 
-- 顧客の苦情へのパス 
-- 部品故障へのパス
+Examples include: - Customer paths to purchase - Online paths to cart abandonment - Customer paths to complaints - Paths to part failure
 
-## データセット
-***
+Dataset
+-------
 
-<b>knee_replacement</b> データベースには289,839行が含まれており、各行は患者が受けた処置を表します。データベースは非正規化されているので、一部の患者情報が各行で繰り返されます。
+------------------------------------------------------------------------
 
--   `memberid`: 固有の患者識別子
--   `proccode`: 処置の識別子
--   `diagcode`: 患者の元の診断
--   `shortdesc`: 処置の短い説明
--   `amount`: 処置のコスト
--   `tstamp`: 処置の日時
--   `firstname`: 患者の名
--   `lastname`: 患者の姓
--   `email`: 患者の電子メール アドレス
--   `state`: 患者の州略号
+The **knee\_replacement** dataset has 289,839 rows, each representing a procedure that a patient has undertaken. The dataset is denormalized so some patient information is repeated in each row:
+
+-   `memberid`: unique patient identifier
+-   `proccode`: procedure identifier
+-   `diagcode`: original diagnosis for the patient
+-   `shortdesc`: short description of the procedure
+-   `amount`: cost of the procedure
+-   `tstamp`: date and time of the procedure
+-   `firstname`: patient’s first name
+-   `lastname`: patient’s last name
+-   `email`: patient’s email address
+-   `state`: state abbreviation for the patient

@@ -1,0 +1,635 @@
+ database finustjourney
+ 
+ /* UPDATE DATASET WITH MORE CONTEMPORARY EVENTS IF NEEDED*/
+ update ich_banking set interaction_timestamp = cast (interaction_timestamp as TIMESTAMP(0) WITH TIME ZONE) + INTERVAL '6' YEAR
+ where cast(interaction_timestamp as DATE ) <>'2012-02-28' and cast(interaction_timestamp as DATE ) <>'2012-02-29'
+
+ 
+ /*********************/
+ /* ADOPTION PATH*/
+ /* USED FOR CUSTOM SQL IN TABLEAU + SANKEY VISUALIZATION */
+ 
+ SELECT 
+ TOP 50 CAST(interaction_type_list AS VARCHAR(1000))AS path,COUNT(*) AS cnt
+ FROM NPATH (
+        ON (
+	    SELECT  customer_identifier, interaction_timestamp, interaction_type, product_category, interaction_type || '_' || product_category AS event, 
+ marketing_category, marketing_description, marketing_placement, sales_channel, 
+ conversion_sales, conversion_cost, conversion_margin
+            FROM ich_banking
+            WHERE
+ product_category <> '-1'
+		AND interaction_type || '_' || product_category <> 'STARTS_APPLICATION_WEALTH MANAGEMENT'
+		AND interaction_type || '_' || product_category <> 'COMPLETE_APPLICATION_WEALTH MANAGEMENT'
+        ) 
+        PARTITION BY customer_identifier
+        ORDER BY interaction_timestamp
+        USING
+        MODE (NONOVERLAPPING)
+        PATTERN ('EVENT{0,4}.ADOPTION')
+        SYMBOLS (
+        event NOT LIKE 'ACCOUNT_BOOKED%_WEALTH MANAGEMENT' AS EVENT,
+	    event LIKE 'ACCOUNT_BOOKED%' AND product_category = 'WEALTH MANAGEMENT' AS ADOPTION
+        )
+        RESULT (
+            ACCUMULATE( event OF ANY(EVENT,ADOPTION) )  AS interaction_type_list,
+            COUNT( event OF ANY(EVENT,ADOPTION) )       AS click_depth,
+            FIRST( customer_identifier of ADOPTION )  AS customer_identifier,
+            FIRST( product_category OF ADOPTION )     AS product_category )
+    ) 
+    group by PATH
+order by cnt desc;
+
+/*********************/
+/* MULTIPLE ACCOUNTS PATHS*/
+/* USED FOR SIGMA VISUALIZATION IN APPCENTER  */
+
+    SELECT * FROM nPath (
+        ON (
+	    SELECT 
+                customer_identifier, interaction_timestamp, interaction_type, product_category,
+                marketing_category, marketing_description, marketing_placement, sales_channel, 
+                conversion_sales, conversion_cost, conversion_margin
+            FROM ich_banking
+            WHERE
+                product_category <> '-1'
+ 		AND interaction_type LIKE 'ACCOUNT_BOOKED%'
+        )
+        PARTITION BY customer_identifier
+        ORDER BY interaction_timestamp
+            USING
+        MODE (OVERLAPPING)
+        PATTERN ('CATEGORY{2,}')
+        SYMBOLS (
+	    product_category LIKE '%' AS CATEGORY
+        )
+        RESULT (
+            ACCUMULATE( product_category OF ANY(CATEGORY) )  AS path,
+            COUNT( product_category OF ANY(CATEGORY) )       AS cnt
+        )
+    ) ;
+    
+/*********************/
+/* PRODUCT AFFINITY*/
+/* USED TO PREPARE DATA FOR APPCENTER VIZ */    
+
+    SELECT * 
+FROM CFilter (
+ON  ( select customer_identifier, product_category 
+    FROM ich_banking
+            WHERE
+                product_category <> '-1'
+ 		AND interaction_type LIKE 'ACCOUNT_BOOKED%'
+     ) AS INPUTTABLE
+OUT TABLE OutputTable (product_cat_affinity)
+USING
+TargetColumns('product_category')
+JoinColumns('customer_identifier')
+) as dt;
+  
+/* USED TO GENERATE SIGMA IN APPCENTER*/
+  Select * from
+    product_cat_affinity;
+
+    
+/*********************/
+/* CHURN PATHS TABLE */
+/* CHURN PATHS WITH 4 PRECEDING EVENTS */
+
+DROP TABLE  ich_banking_churner_paths;
+
+CREATE TABLE ich_banking_churner_paths
+AS
+(
+    SELECT * FROM nPath (
+        ON (
+            SELECT
+                customer_identifier, interaction_timestamp, interaction_type as event, product_category,
+                marketing_category, marketing_description, marketing_placement, sales_channel,
+                conversion_sales, conversion_cost, conversion_margin
+            FROM ich_banking
+            WHERE
+                product_category <> '-1'
+        )
+        PARTITION BY customer_identifier
+        ORDER BY interaction_timestamp
+        USING
+        MODE (NONOVERLAPPING)
+        -- Limit to a depth of 4 (plus closed)
+        PATTERN ('(EVENT){4}.CLOSED')
+        SYMBOLS (
+            event <> 'ACCOUNT_CLOSED' AS EVENT,
+            event =  'ACCOUNT_CLOSED' AS CLOSED
+        )
+        RESULT (
+            ACCUMULATE( event OF ANY(EVENT) )  AS interaction_type_list,
+            COUNT( event OF ANY(EVENT) )       AS click_depth,
+
+            FIRST( customer_identifier of EVENT )  AS customer_identifier,
+            FIRST( product_category OF EVENT )     AS product_category
+        )
+    )
+)WITH DATA ;
+
+/* QUERY FOR TABLEAU SANKEY CHURN PATHS VIZ*/
+
+
+    SELECT TOP 100 CAST(path AS VARCHAR(1000))AS path,COUNT(*) AS cnt FROM nPath (
+        ON (
+            SELECT
+                customer_identifier, interaction_timestamp, interaction_type as event, product_category,
+                marketing_category, marketing_description, marketing_placement, sales_channel,
+                conversion_sales, conversion_cost, conversion_margin
+            FROM ich_banking
+            WHERE
+                product_category <> '-1'
+        )
+        PARTITION BY customer_identifier
+        ORDER BY interaction_timestamp
+        USING
+        MODE (NONOVERLAPPING)
+        -- Limit to a depth of 5 (plus closed)
+        PATTERN ('(EVENT){5}.CLOSED')
+        SYMBOLS (
+            event <> 'ACCOUNT_CLOSED' AS EVENT,
+            event =  'ACCOUNT_CLOSED' AS CLOSED
+        )
+        RESULT (
+            ACCUMULATE( event OF ANY(EVENT, CLOSED) )  AS path
+        )
+    )
+    group by path;
+    
+)WITH DATA ;
+
+SELECT 
+interaction_type_list as path, count(*) as cnt
+from
+ich_banking_churner_paths
+group by path;
+
+/* NONCHURN PATHS TABLE */
+/* NON CHURN PATHS 5 EVENTS */
+
+DROP TABLE  ich_banking_nonchurner_paths;
+
+CREATE TABLE ich_banking_nonchurner_paths
+AS
+(
+SELECT * FROM nPath (
+        ON (
+            SELECT
+                customer_identifier, interaction_timestamp, interaction_type, product_category, interaction_type  AS event,
+                marketing_category, marketing_description, marketing_placement, sales_channel,
+                conversion_sales, conversion_cost, conversion_margin
+            FROM ich_banking
+            WHERE
+                product_category <> '-1'
+		-- Only real customers (that booked accounts)
+                AND customer_identifier IN (SELECT DISTINCT customer_identifier FROM ich_banking where interaction_type LIKE 'ACCOUNT_BOOKED%')
+		-- Don't use the people that churned
+		AND customer_identifier NOT IN (SELECT distinct(customer_identifier) FROM  ich_banking_churner_paths)
+		-- Also leave out the potential churners (these have later interactions)
+		AND interaction_timestamp < (select max(interaction_timestamp) from ich_banking where interaction_type ='ACCOUNT_CLOSED')
+        )
+        PARTITION BY customer_identifier
+        ORDER BY interaction_timestamp
+        USING
+        MODE (NONOVERLAPPING)
+        -- Limit to a depth of 5
+        PATTERN ('(EVENT){5}')
+        SYMBOLS (
+            event NOT LIKE 'ACCOUNT_CLOSED' AS EVENT
+        )
+        RESULT (
+            ACCUMULATE( event OF ANY(EVENT) )  AS interaction_type_list,
+            COUNT( event OF ANY(EVENT) )       AS click_depth,
+
+            FIRST( customer_identifier of EVENT )  AS customer_identifier,
+            FIRST( product_category OF EVENT )     AS product_category
+        )
+    )  
+    )WITH DATA;
+    
+    
+    
+/* TOKENIZING NON CHURN PATHS */
+
+DROP TABLE ich_banking_nonchurn_paths_token;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_paths_token AS (
+  SELECT * FROM NGrams (
+    ON  ich_banking_nonchurner_paths
+    USING
+    TextColumn ('interaction_type_list')
+    Delimiter (',')
+    Grams ('1')
+    Overlapping ('false')
+    ToLowerCase ('true')
+    Punctuation ('\[.,?\!\]')
+    Reset ('\[.,?\!\]')
+    TotalGramCount ('false')
+    Accumulate ('customer_identifier')
+  ) AS dt
+) WITH DATA;
+
+/* TOKENIZING  CHURN PATHS */
+
+DROP TABLE ich_banking_churn_paths_token;
+
+CREATE MULTISET TABLE ich_banking_churn_paths_token AS (
+  SELECT * FROM NGrams (
+    ON  ich_banking_churner_paths
+    USING
+    TextColumn ('interaction_type_list')
+    Delimiter (',')
+    Grams ('1')
+    Overlapping ('false')
+    ToLowerCase ('true')
+    Punctuation ('\[.,?\!\]')
+    Reset ('\[.,?\!\]')
+    TotalGramCount ('false')
+    Accumulate ('customer_identifier')
+  ) AS dt
+) WITH DATA;
+
+
+
+
+
+/* CLEAN UP LEADING AND TRAILING CHARACTERS USING OREPLACE */
+
+/* CLEANING TOKENIZED CHURN PATHS */
+
+DROP TABLE ich_banking_churn_paths_token_clean; 
+
+CREATE MULTISET TABLE ich_banking_churn_paths_token_clean AS (
+SELECT 
+oreplace 
+(oreplace (ngram,'[',''), ']','')  as ngram , customer_identifier, n, frequency from ich_banking_churn_paths_token
+) WITH DATA ;
+
+
+/* CLEANING TOKENIZED NONCHURN PATHS */
+
+DROP TABLE ich_banking_nonchurn_paths_token_clean;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_paths_token_clean AS (
+SELECT 
+oreplace 
+(oreplace (ngram,'[',''), ']','')  as ngram , customer_identifier ,n, frequency from ich_banking_nonchurn_paths_token
+) WITH DATA ;
+
+
+/* RUNNING TF-IDF */
+
+/* RUNNING TF-IDF ON NON CHURNERS */
+
+
+DROP TABLE ich_banking_nonchurn_tfidf_input1 ;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_tfidf_input1 AS (
+  SELECT customer_identifier as docid, ngram AS term, frequency AS "count"
+  FROM ich_banking_nonchurn_paths_token_clean AS dt
+) WITH DATA;
+
+
+DROP TABLE ich_banking_nonchurn_tf1;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_tf1 AS (
+  SELECT * FROM tf (
+    ON ich_banking_nonchurn_tfidf_input1 PARTITION BY docid
+  ) AS dt1
+) WITH DATA;
+
+
+DROP TABLE ich_banking_nonchurn_tfidf;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_tfidf AS (
+  SELECT * FROM TFIDF (
+ON ich_banking_nonchurn_tf1 AS tf PARTITION BY term ON (
+SELECT CAST(COUNT(DISTINCT(docid)) AS integer) AS "count" FROM ich_banking_nonchurn_tfidf_input1
+) AS doccount DIMENSION
+  ) AS dt
+) WITH DATA;
+  
+
+ /* RUNNING TF-IDF ON CHURNERS */
+
+DROP TABLE ich_banking_churn_tfidf_input1 ;
+
+CREATE MULTISET TABLE ich_banking_churn_tfidf_input1 AS (
+  SELECT customer_identifier as docid, ngram AS term, frequency AS "count"
+  FROM ich_banking_churn_paths_token_clean AS dt
+) WITH DATA;
+
+
+DROP TABLE ich_banking_churn_tf1;
+
+CREATE MULTISET TABLE ich_banking_churn_tf1 AS (
+  SELECT * FROM tf (
+    ON ich_banking_churn_tfidf_input1 PARTITION BY docid
+  ) AS dt1
+) WITH DATA;
+
+
+DROP TABLE ich_banking_churn_tfidf;
+
+CREATE MULTISET TABLE ich_banking_churn_tfidf AS (
+  SELECT * FROM TFIDF (
+ON ich_banking_churn_tf1 AS tf PARTITION BY term ON (
+SELECT CAST(COUNT(DISTINCT(docid)) AS integer) AS "count" FROM ich_banking_churn_tfidf_input1
+) AS doccount DIMENSION
+  ) AS dt
+) WITH DATA;
+                                                                                                                                                                                                                                                                   TFIDF Output
+
+
+
+
+/* SLOPE CHART TABLE FOR TABLEAU : MERGING CHURN+NON-CHURN */
+
+DROP TABLE  ich_banking_tfidf_slope;
+
+create table ich_banking_tfidf_slope
+as (
+select 
+term, grp,
+rank () over (partition by A.grp order by A.sum_tfidf desc) as sum_rank, sum_tfidf
+from
+(
+select sum (tf_idf) sum_tfidf, term, 'CHURN' as grp
+from ich_banking_churn_tfidf
+group by 2,3
+union ALL
+select sum (tf_idf) sum_tfidf, term, 'NON CHURN' as grp
+from ich_banking_nonchurn_tfidf
+group by 2,3) as A)
+with data ;
+
+
+
+/* PREDICTION USING TEXT CLASSIFICATION */
+ 
+/* 1- CHURN MODEL USING TEXT CLASSIFIER */
+
+
+    
+    /* TOKENIZING NON CHURN PATHS FOR TRAINING SET*/
+
+DROP TABLE ich_banking_nonchurn_paths_train_token;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_paths_train_token AS (
+  SELECT * FROM NGrams (
+    ON  (select top 2217 customer_identifier,interaction_type_list from ich_banking_nonchurner_paths)
+    USING
+    TextColumn ('interaction_type_list')
+    Delimiter (',')
+    Grams ('1')
+    Overlapping ('false')
+    ToLowerCase ('true')
+    Punctuation ('\[.,?\!\]')
+    Reset ('\[.,?\!\]')
+    TotalGramCount ('false')
+    Accumulate ('customer_identifier')
+  ) AS dt
+) WITH DATA;
+
+
+/* CLEANING TOKENIZED NONCHURN PATHS FOR TRAININ SET  */
+DROP TABLE ich_banking_nonchurn_paths_token_train_clean;
+
+CREATE MULTISET TABLE ich_banking_nonchurn_paths_token_train_clean AS (
+SELECT 
+oreplace 
+(oreplace (ngram,'[',''), ']','')  as ngram , customer_identifier ,n, frequency from ich_banking_nonchurn_paths_train_token
+) WITH DATA ;
+
+
+
+
+
+DROP TABLE ich_banking_churn_model;
+
+CREATE MULTISET TABLE ich_banking_churn_model 
+AS (
+SELECT * FROM NaiveBayesTextClassifierTrainer (
+  ON (
+SELECT * FROM NaiveBayesTextClassifierInternal (
+ON (SELECT customer_identifier, lower(ngram) AS token, 'NON CHURN' as category FROM 
+ich_banking_nonchurn_paths_token_train_clean
+UNION ALL
+SELECT customer_identifier, lower(ngram) AS token, 'CHURN' as category FROM 
+ich_banking_churn_paths_token_clean
+) AS "input" PARTITION BY category
+USING
+        TokenColumn ('token')
+        ModelType ('Bernoulli')
+        DocIDColumns ('customer_identifier')
+        DocCategoryColumn ('category')
+) AS alias_1
+) PARTITION BY 1
+) AS alias_2 
+)
+WITH DATA
+;
+
+select * from ich_banking_churn_model 
+
+-- Do some pathing for the unknown people
+DROP TABLE ich_banking_unknown_paths;
+
+CREATE TABLE ich_banking_unknown_paths
+AS(
+    SELECT * FROM nPath (
+        ON (
+            SELECT
+                customer_identifier, interaction_timestamp, interaction_type, product_category, interaction_type  AS event,
+                marketing_category, marketing_description, marketing_placement, sales_channel,
+                conversion_sales, conversion_cost, conversion_margin
+            FROM ich_banking
+            WHERE
+                product_category <> '-1'
+		-- Only real customers (that booked accounts)
+                AND customer_identifier IN (SELECT DISTINCT customer_identifier FROM ich_banking where interaction_type LIKE 'ACCOUNT_BOOKED%')
+		-- Exclude the training set people
+                AND customer_identifier NOT IN (SELECT distinct(customer_identifier) FROM 
+ich_banking_nonchurn_paths_token_train_clean
+UNION ALL
+SELECT distinct(customer_identifier)  FROM 
+ich_banking_churn_paths_token_clean)
+        )
+        PARTITION BY customer_identifier
+        ORDER BY interaction_timestamp
+        USING
+        MODE (NONOVERLAPPING)
+        -- Only look for customers with a min depth of 5
+        PATTERN ('(EVENT){5,}')
+        SYMBOLS (
+            event NOT LIKE 'ACCOUNT_CLOSED' AS EVENT
+        )
+        RESULT (
+            ACCUMULATE( event OF ANY(EVENT) )  AS interaction_type_list,
+            COUNT( event OF ANY(EVENT) )       AS click_depth,
+
+            FIRST( customer_identifier of EVENT )  AS customer_identifier,
+            FIRST( product_category OF EVENT )     AS product_category
+        )
+    ) )WITH DATA;
+ 
+    select  count (distinct (customer_identifier)) from 
+    ich_banking_unknown_paths
+    
+ 
+    
+    /* 2- PREDICTION ON UNKNOWN PATHS */
+
+
+/* 2.2- TOKENIZING AND CLEANING UNKNOWN PATHS */
+
+DROP TABLE ich_banking_unknown_token;
+ 
+CREATE MULTISET TABLE ich_banking_unknown_token AS (
+  SELECT * FROM NGrams (
+    ON  ich_banking_unknown_paths
+    USING
+    TextColumn ('interaction_type_list')
+    Delimiter (',')
+    Grams ('1')
+    Overlapping ('false')
+    ToLowerCase ('true')
+    Punctuation ('\[.,?\!\]')
+    Reset ('\[.,?\!\]')
+    TotalGramCount ('false')
+    Accumulate ('customer_identifier')
+  ) AS dt
+) WITH DATA;
+
+select count(* ) from ich_banking_unknown_token
+
+
+DROP TABLE ich_banking_unknown_token_clean;
+
+CREATE MULTISET TABLE ich_banking_unknown_token_clean AS (
+SELECT 
+oreplace 
+(oreplace (ngram,'[',''), ']','')  as ngram , customer_identifier ,n, frequency 
+from ich_banking_unknown_token
+) WITH DATA ;
+
+/* 2.3- PREDICTION */
+
+DROP TABLE churn_predict;
+
+CREATE TABLE churn_predict
+AS
+(
+SELECT * FROM NaiveBayesTextClassifierPredict@coprocessor (
+  ON (
+SELECT customer_identifier, lower(ngram) AS token  FROM 
+ich_banking_unknown_token_clean
+) AS predicts 
+PARTITION BY customer_identifier
+ON ich_banking_churn_model AS model DIMENSION USING
+InputTokenColumn ('token')
+ModelType ('Bernoulli')
+DocIDColumns ('customer_identifier')
+TopK (2)
+) AS dt)
+WITH DATA;
+
+
+
+/* 2.4- PIVOT FUNCTION FOR TABLEAU VISUALIZATION */
+
+DROP TABLE churn_predict_pivot;
+
+CREATE TABLE churn_predict_pivot
+as
+(
+SELECT * FROM Pivoting (
+  ON churn_predict
+  PARTITION BY customer_identifier ORDER BY customer_identifier, prediction
+  USING
+  PartitionColumns ('customer_identifier')
+  NumberOfRows (2)
+  TargetColumns ('loglik')
+) AS dt ) 
+with DATA;
+
+select * from churn_predict_pivot_final
+
+DROP TABLE churn_predict_pivot_final;
+
+CREATE TABLE churn_predict_pivot_final 
+AS 
+(
+select A.customer_identifier as doc_id, prediction, loglik_0 as loglik_no_churn ,loglik_1 as loglik_churn
+from (
+select customer_identifier, prediction,loglik,
+rank () over (partition by customer_identifier order by loglik desc) as rank1
+from churn_predict 
+group by customer_identifier, prediction, loglik) as A 
+inner join churn_predict_pivot as B
+on A.customer_identifier=B.customer_identifier
+where rank1=1 )
+with DATA;
+
+
+
+DROP TABLE churn_nb_input;
+
+CREATE TABLE churn_nb_input
+AS 
+(
+SELECT customer_identifier, interaction_type_list FROM ich_banking_unknown_paths)WITH DATA;
+
+
+
+/* PARKING LOT - NOT USED */
+
+select count(*)
+from 
+FinustJourney.customers as A
+inner join
+FinustJourney.churn_nb_input as B
+inner join 
+FinustJourney.churn_predict_pivot_final as C
+on
+A.customer_identifier = B.customer_identifier
+on
+B.customer_identifier =  C.doc_id
+
+
+
+
+CREATE TABLE cust_location_temp AS 
+(
+SELECT top 3 c.customer_identifier FROM customers c, churn_predict nb 
+WHERE c.customer_identifier = nb.customer_identifier and prediction = 'CHURN' and num_accounts > 3 and longitude > -75 ) WITH DATA;
+
+UPDATE customers SET longitude = -94.13424 - - cast (substring (cast (zipcode as varchar(5)) from 2 for 3) as float)/10000, latitude = 39.512312 - - cast (substring (cast (zipcode as varchar(5)) from 2 for 3) as float)/10000, state = 'MO' WHERE customer_identifier IN (select customer_identifier FROM cust_location_temp);
+DROP TABLE cust_location_temp;
+
+CREATE DIMENSION TABLE cust_location_temp AS SELECT c.customer_identifier FROM customers c, churn_nb_predict nb WHERE c.customer_identifier = nb.doc_id and prediction = 'churn' and num_accounts > 1 and latitude > 46.5;
+UPDATE customers SET longitude = -94.012322 - (substr(zipcode, 4, 2)::float / 10), latitude = 38.712312 + (substr(zipcode, 4, 2)::float / 10), state = 'MO' WHERE customer_identifier IN (select customer_identifier FROM cust_location_temp);
+DROP TABLE cust_location_temp;
+
+CREATE DIMENSION TABLE cust_location_temp AS SELECT c.customer_identifier FROM customers c, churn_nb_predict nb WHERE c.customer_identifier = nb.doc_id and prediction = 'churn' and num_accounts > 1 and latitude > 40.4 and latitude < 41.6 and longitude < -80 and longitude > -82;
+UPDATE customers SET longitude = -94.812322 - (substr(zipcode, 4, 2)::float / 100), latitude = 37.712312 + (substr(zipcode, 4, 2)::float / 100), state = 'MO' WHERE customer_identifier IN (select customer_identifier FROM cust_location_temp);
+DROP TABLE cust_location_temp;
+
+CREATE DIMENSION TABLE cust_location_temp AS SELECT c.customer_identifier FROM customers c, churn_nb_predict nb WHERE c.customer_identifier = nb.doc_id and prediction = 'churn' and num_accounts > 1 and latitude > 37 and latitude < 40 and longitude < -89 and longitude > -91;
+UPDATE customers SET longitude = -95.112322 - (substr(zipcode, 2, 2)::float / 100), latitude = 38.912312 + (substr(zipcode, 2, 2)::float / 100), state = 'KS' WHERE customer_identifier IN (select customer_identifier FROM cust_location_temp);
+DROP TABLE cust_location_temp;
+
+CREATE DIMENSION TABLE cust_location_temp AS SELECT c.customer_identifier FROM customers c, churn_nb_predict nb WHERE c.customer_identifier = nb.doc_id and prediction = 'churn' and num_accounts > 1 and latitude > 29 and latitude < 31 and longitude < -80 and longitude > -91 LIMIT 4;
+UPDATE customers SET longitude = -94.112322 - (substr(zipcode, 4, 2)::float / 100), latitude = 39.212312 + (substr(zipcode, 3, 2)::float / 100), state = 'MO' WHERE customer_identifier IN (select customer_identifier FROM cust_location_temp);
+DROP TABLE cust_location_temp;
+
+CREATE DIMENSION TABLE cust_location_temp AS SELECT c.customer_identifier FROM customers c, churn_nb_predict nb WHERE c.customer_identifier = nb.doc_id and prediction = 'churn' and num_accounts > 2 and latitude > 30 and latitude < 35 and longitude < -78 and longitude > -86;
+UPDATE customers SET longitude = -73.512322 - (substr(zipcode, 3, 2)::float / 100), latitude = 40.512312 + (substr(zipcode, 4, 2)::float / 100), state = 'NY' WHERE customer_identifier IN (select customer_identifier FROM cust_location_temp);
+DROP TABLE cust_location_temp;
+
+
+select top 100 -94.012322 - cast (substring (cast (zipcode as varchar(5)) from 2 for 3) as float)/10000, zipcode from customers

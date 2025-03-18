@@ -1,55 +1,51 @@
-## 時系列分析 - 消費者の苦情を経時的に分析
+Time Series Analysis - Analyzing Consumer Complaints Over Time
+--------------------------------------------------------------
 
-### 始める前に
+### Before You Begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-この例では、米消費者金融保護局 (CFPB) に寄せられた苦情の件数を経時的に分析します。
+In this example we will be analyzing the number of complaints over time received by the Consumer Financial Protection Bureau (CFPB).
 
-Vantageを使ってどのようにインサイトを抽出し、データセットに隠されたストーリーを語れるでしょうか。このユース ケースでは、<a href="http://data.gov">Data.gov</a> を通じて利用可能な公開データセットから回答を抽出する機能がいかに強力なもので、簡単に実行できるかをご覧いただきます。SQLと視覚化ツールを使用して、経時的な苦情件数を分析し、次のような疑問に対する答えを示します。
+How can we use Vantage to extract insights and tell a story behind a dataset? In this use case, you will see how powerful and simple it is to extract answers from a public dataset available through [Data.gov](http://data.gov). We use SQL and a visualization tool to analyze the number of complaints over time to answer the following questions:
 
-<i>苦情の経時的傾向はどのようなものかデータセットの異常値をどのように解釈できるか</i>
+*What are the trends of complaints over time? How can we interpret the outliers in the dataset?*
 
-上記のような疑問に対する答えを得ることで、データセットに対する理解が深まり、苦情の件数が時間とともにどのように推移していくかをわかりやすく説明することができます。「Explore(探索)」セクションでは、経時的な苦情件数の分析と、時系列における傾向および異常値の特定に焦点を当て、上記の疑問に対する答えを導き出します。
+By answering questions like the ones above, we gain a deeper understanding of the dataset, and we can explain in plain language how the number of complaints evolve over time. In the Explore section, we focus on analyzing the number of complaints over time and identifying trends and outliers in the time series to answer the questions above.
 
-### 経験
+### Experience
 
-「体験」セクションの実施所要時間は約5分です。
+The Experience section takes about 5 minutes to run.
 
-### セットアップ
+### Setup
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
-[アセットをロード](#data={"id":"FinancialProtection"})
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case. [Load Assets](#data=%7B%22id%22:%22FinancialProtection%22%7D)
 
-### ウォークスルー
+### Walkthrough
 
-#### ステップ1:データのクエリー
+#### Step 1: Querying the Data
 
-最初に、テーブルの行数を数えます。
+Start by counting the number of rows in the table.
 
-
-```sql
+``` sourceCode
 select count(*) from fp_consumer_complaints;
 ```
 
-130万行弱あります。Vantageを使用するので、大規模なデータセットの分析も問題ありません。データのサンプルを見てみましょう。
+There are just under 1.3 million rows. Not a problem to analyze large datasets using Vantage, let’s take a look at a sample of the data.
 
-
-```sql
+``` sourceCode
 select TOP 100 * from fp_consumer_complaints;
 ```
 
-#### ステップ2:データの視覚化
+#### Step 2: Visualizing the Data
 
-上記のクエリーから、このデータセットには多くの情報が含まれていることがわかります。何らかのインサイトを得るにあたり、まずデータをグループ化する必要があります。
+From the query above, we notice that this dataset has a lot of information. To derive some insights, we need to start grouping the data.
 
-最初のカラムは <b>date_received</b> です。これは苦情が寄せられた日付で、データの時系列プロットを確認できることを意味します。<b>complaint_id</b> を時間軸として、<b>date_received</b> の件数を経時的にグループ化することから始めましょう。
+The first column is **date\_received**. This is the date the complaints were received, and it means that we can look at a time series plot of the data. Let’s start by grouping the counts of **complaint\_id** over time, using **date\_received** as our time axis.
 
-
-```sql
+``` sourceCode
 select date_received, count(complaint_id) as counts
 from fp_consumer_complaints
 where date_received BETWEEN DATE '2017-03-01'
@@ -57,16 +53,15 @@ AND DATE '2019-03-01'
 group by date_received;
 ```
 
-さて、これで時間 (<b>counts</b>) ごとの苦情件数 (<b>date_received</b>) がわかるようになりましたが、このデータをどのように活用すればいいでしょうか。この時系列をグラフにプロットしてみましょう。
+This is great; we now have the number of complaints (**counts**) by time (**date\_received**), but how do we make sense of this data? Let’s plot this time series on a graph.
 
 ![png](output_10_0.png)
 
-上のデータを視覚化することで、苦情件数が時間によって大きく変化していること、また時間が経過するにつれて苦情件数が増加している様子が見て取れます。また、2017年には異常なスパイクも見られます。データについてもっと理解しましょう。まず、一般的な傾向を見てみます。
+By visualizing the data above, we can see that the number of complaints varies a lot over time, and there also seem to be more complaints as time progresses. There are also some unusual spikes in 2017. Let’s understand more about our data. We start by looking at the general trend.
 
-データを月ごとにグループ化し、上のグラフを再プロットしてみましょう。
+Let’s group the data by month and replot the graph above.
 
-
-```sql
+``` sourceCode
 select extract(year from date_received) || extract(month from date_received) as month_date, count(complaint_id) as counts
 from fp_consumer_complaints
 group by month_date
@@ -75,14 +70,13 @@ order by month_date;
 
 ![png](output_13_0.png)
 
-数カ月、数年にわたる苦情を見ると、明らかに増加傾向にあることがわかります。仮説のひとつとして、時間が経つにつれて人々の意識が高まり、噂が広まるというものが挙げられます。また、時間の経過とともに、メディアが苦情チャネルを広める場合もあります。このグラフを通して、上記で見たスパイクが2017年1月と2017年9月に起こったことがはっきりとわかります。これらの日付をさらに深く掘り下げて、次のステップへのインサイトを引き出してみましょう。
+Looking at complaints over month and year, we see there is clearly an upward trend. One hypothesis is that as time progresses, people get more conscious and spread the word. The media can also advertise the complaint channels over time. Through this chart we can see clearly the spikes that we saw above were in January 2017 and September 2017. Let’s dive deeper into these dates and draw some insights on the next step.
 
-#### ステップ3:データからインサイトを抽出する
+#### Step 3: Extracting Insights from the Data
 
-上記の2つのスパイクを絞り込み、それらが正確にどこで起こっているかを見てみましょう。これを行うには、別の時系列プロットを作成します。今回は2017年の分のみを作成します。
+Let’s narrow down the two spikes above and see exactly where they are happening. We can do this by ploting another time series plot, this time only in 2017.
 
-
-```sql
+``` sourceCode
 select date_received, count(complaint_id) as counts
 from fp_consumer_complaints
 where year(date_received) = 2017
@@ -92,10 +86,9 @@ order by date_received;
 
 ![png](output_17_0.png)
 
-ピークを見ると、1月15日から21日と、9月の第1週に発生していることがわかります。ピークの実際の日付を特定するには、1日あたり1,500件の苦情をピックアップするようにクエリーを制限します。
+As we look at the peaks, we find that they occurred from January 15th to 21st and during the first week of September. To find the actual dates of the peaks, we can limit the query to pick up at least 1,500 complaints a day.
 
-
-```sql
+``` sourceCode
 select date_received,
     month(date_received) as month_date,
     count(complaint_id) as counts
@@ -106,10 +99,9 @@ having counts >= 1500
 order by month_date, counts desc;
 ```
 
-これらの期間に報告された問題のいくつかを見てみましょう。
+Let’s look at some of the issues that were reported during these dates.
 
-
-```sql
+``` sourceCode
 select date_received, company, count(company) as counts
 from fp_consumer_complaints
 where date_received in (
@@ -124,18 +116,15 @@ having counts > 500
 order by date_received, counts desc;
 ```
 
-興味深いことに、苦情の多くが2社に向けられたものであることがわかります。Navient SolutionsとEquifaxの2社です。これらはそれぞれ、その時期の前後に起きたNavientの訴訟とEquifaxの情報漏洩事件と高い相関関係があるようです。何が起こったかを振り返ってみましょう。
+Interestingly, we can see that the great majority of the the complaints were directed at two companies: Navient Solutions and EQUIFAX. These seem to be highly correlated with the Navient Lawsuit and the Equifax breach events that happened around those dates, respectively. Let’s recap what happened:
 
-<p>
-<blockquote><i>Navient訴訟:2017年1月、米国の消費者金融保護局 (CFPB) と、イリノイ州およびワシントン州の検事総長は、Navient Solutionsを提訴しました。Navientは民間および連邦学生ローンの大手サービサーです。CFPBによると、少なくとも2010年1月以降、「Navientは、返済額の配分を誤り、苦境にある借り手を、収入に応じた返済計画ではなく、何度も返済猶予に誘導し、収入に応じた返済計画に再登録する方法や、連帯保証人の免除を受ける資格を得る方法について、不明確な情報を提供してきた」ということです。
+> Navient Lawsuit: On January 2017, the U.S. Consumer Financial Protection Bureau (CFPB) and the Illinois and Washington attorneys general sued Navient Solutions. Navient is a major servicer of private and federal student loans. Accoriding to the CFPB at least since January 2010 “Navient has misallocated payments, steered struggling borrowers toward multiple forbearances instead of income-driven repayment plans, and provided unclear information about how to re-enroll in income-driven repayment plans and how to qualify for a co-signer release”
+>
+> Equifax Breach: On September 7th 2017, Equifax announced a cybersecurity breach, one of the largest in history, had happened from mid-May through July 2017. Some of the personal information that was accessed included names, social security numbers, birth dates, addresses and driver’s license numbers.
 
-Equifax侵害:2017年9月7日、Equifaxは、2017年5月中旬から7月にかけて、史上最大級のサイバーセキュリティ侵害が発生したと発表しました。アクセスされた個人情報には、氏名、社会保障番号、生年月日、住所、運転免許証番号などが含まれていました。</i></blockquote>
-</p>
+Let’s now look at the top issues for Navient Solutions and Equifax during those periods to confirm our hypothesis.
 
-仮説を裏付けるために、これらの期間におけるNavient SolutionsとEquifaxの最大の問題点を見てみましょう。
-
-
-```sql
+``` sourceCode
 -- analyze top issues reported agains Navient Soultions on 2017-01-19 and 2017-01-20
 select company, product, issue, count(issue) as counts
 from fp_consumer_complaints
@@ -147,10 +136,9 @@ group by company, product, issue
 order by counts desc;
 ```
 
-Navient Solutionsに対する苦情件数の大半を占めているのは、上位2つの問題であることがわかります。さらに、プロダクトと問題のカラムを見れば、それらが学生ローンに関する訴訟と確かに関連していることが推測できます。次に、Equifaxの問題についても同じ分析をしてみましょう。
+We can see the top two issues represent the majority of complaint counts against Navient Solutions. Furthermore, by looking at the product and issue columns we can infer that they are indeed related to the lawsuit regarding student loans. Now let’s do the same analysis for the Equifax issues.
 
-
-```sql
+``` sourceCode
 -- analyze top issues reported agains Navient Soultions on 2017-01-19 and 2017-01-20
 select
     company,
@@ -167,41 +155,44 @@ group by company, product, issue
 order by counts desc;
 ```
 
-この場合も仮説を裏付けることができます。上位の問題は、信用報告書の不適切な使用、詐欺警告、個人情報の盗難などに関するものです。同時期に起きたEquifaxの情報漏洩事件と確かに関連があると考えられます。
+Here we can also confirm our hypothesis. The top issues talk about improper use of the credit report, fraud alerts, identity theft etc. This really does seem related to the Equifax breach that happened around the same time frame.
 
-## データセット
-***
+Dataset
+-------
 
-消費者苦情データベースには、銀行口座、クレジット カード、信用調査、債権回収、送金、住宅ローン、学生ローン、その他の消費者信用を含むがこれらに限定されない金融プロダクトやサービスに関して米消費者金融保護局 (CFPB) に寄せられた苦情データが保存されています。データセットは毎日更新され、プロバイダ、苦情内容、日付、郵便番号などの情報が含まれています。データセットの詳細については、<a href="data.gov">Data.gov</a> ウェブサイトの「Consumer(消費者)」セクションをご覧ください。
+------------------------------------------------------------------------
 
-<b>fp_consumer_complaints</b> データセットの行数は1,273,782行で、それぞれが一意の消費者苦情を表しており、カラム数は18で、次の特性を表しています。
+The Consumer Complaints Database has complaints data that was received by the Consumer Financial Protection Bureau (CFPB) on financial products and services, which include but are not limited to bank accounts, credit cards, credit reporting, debt collection, money transfers, mortgages, student loans and other types of consumer credit. The dataset is refreshed daily and contains information on the provider, the complaint, date, ZIP code and more. More information about the dataset can be found in the Consumer section of the [Data.gov](data.gov) website.
 
--   `date_received`: CFPBが苦情を受理した日付
--   `product`: 苦情において消費者が特定したプロダクトのタイプ
--   `sub_product`: 苦情において消費者が特定したサブプロダクトのタイプ
--   `issue`: 苦情において消費者が特定した問題
--   `sub_issue`: 苦情において消費者が特定した副次的問題
--   `consumer_complaint_narrative`: 苦情において消費者が提出した「何が起こったか」の説明
--   `company_public_response`: 消費者の苦情に対する企業の一般向け任意回答
--   `company`: 苦情がこの企業に関するものである
--   `state`: 消費者が提供した郵送先住所の州
--   `zip_code`: 消費者が提供した郵送先の郵便番号
--   `tags`: 消費者によって、または消費者の代わりに提出された苦情の簡単な検索と並べ替えをサポートするデータ
--   `consumer_consent_provided`: 消費者が苦情の説明を公にすることを選択したかどうかの識別
--   `submitted_via`: 苦情がCFPBに提出された方法
--   `date_sent_to_company`: CFBPが企業に苦情を送付した日付
--   `company_response_to_consumer`: 企業がどのように回答したか
--   `timely_response`: 企業が適時に回答したかどうか
--   `consumer_disputed`: 企業の回答に対する消費者の異議の有無
--   `complaint_id`: 苦情の固有識別番号
+The **fp\_consumer\_complaints** dataset has 1,273,782 rows, each representing a unique consumer complaint, and 18 columns, representing the following features:
 
-## 探索
+-   `date_received`: date that CFPB received the complaint
+-   `product`: type of product the consumer identified in the complaint
+-   `sub_product`: type of sub-product the consumer identified in the complaint
+-   `issue`: issue the consumer identified in the complaint
+-   `sub_issue`: sub-issue the consumer identified in the complaint
+-   `consumer_complaint_narrative`: consumer-submitted description of “what happened” from the complaint
+-   `company_public_response`: company’s optional, public-facing response to a consumer’s complaint
+-   `company`: complaint is about this company
+-   `state`: state of the mailing address provided by the consumer
+-   `zip_code`: mailing ZIP code provided by the consumer
+-   `tags`: data that supports easier searching and sorting of complaints submitted by or on behalf of consumers
+-   `consumer_consent_provided`: identifies whether the consumer option in to publish their complaint narrative
+-   `submitted_via`: how the complaint was submitted to the CFPB
+-   `date_sent_to_company`: date the CFBP sent the complaint to the company
+-   `company_response_to_consumer`: how the company responded
+-   `timely_response`: whether the company gave a timely response
+-   `consumer_disputed`: whether the company disputed the company’s response
+-   `complaint_id`: unique identification number for a complaint
 
-この例を通じて、Vantageでクエリーを実行することがいかに強力で簡単であるか、そして、どう活用すればデータからインサイトを抽出してデータセットの背後にあるストーリーを語ることができるのかを確認できました。Vantageを使えば独自のSQLクエリーを簡単に作成できることをお分かりいただけたかと思います。
+Explore
+-------
 
-Vantageを引き続き探索し、あらかじめロードされたデータセットを使用することで、より多くのインサイトを抽出し、他の疑問に対する答えを見つけることができます。ここにいくつか提案します。
+Through this example, we saw the power and simplicity of running queries in Vantage and how it can be leveraged to extract insights from the data to tell the story behind a dataset. Hopefully you’ve noticed how easy it is to use Vantage to write your own SQL queries.
 
--   苦情のタイプで最も多いのは何か <b>product</b> カテゴリをグループ化すれば、この答えにたどり着けます。これは時間の経過とともにどう変化するか
--   顧客はどのように苦情を提出しているのか <b>submitted_via</b> のカラムもグループ化すれば、この疑問の答えを導き出すことができます。
--   顧客苦情の何割が争議になっているか <b>customer_disputed</b> のカウントを集計すれば、この疑問の答えを得られます。
--   データに季節性があるかどうか季節性の理由は何か系列から傾向を差し引けば、データセットの季節性を分析できます。多くの苦情が寄せられるのは平日か、それとも週末か
+You can continue to explore Vantage to extract more insights and find answers to other questions by using the preloaded dataset. Here are some suggestions:
+
+-   What are the most common types of complaints? By grouping the **product** category, we can arrive at this answer. How does this change over time?
+-   How are customers submitting their complaints? The column **submitted\_via** can also be grouped to answer for this question.
+-   What proportion of the customer complaints are disputed? By aggregating counts of **customer\_disputed** we can answer this question.
+-   Is there seasonality in the data? What is the reason for the seasonality? If we subtract the trend from the series we can analyze the seasonality in the dataset. Are most of the complaints filed during the week or on the weekends?

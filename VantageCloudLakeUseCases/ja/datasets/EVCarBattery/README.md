@@ -1,20 +1,20 @@
+EVCarBattery Dataset
+====================
 
-# EVCarBatteryデータセット
+Electric vehicle battery dataset is used in multple manufacturing use cases.
 
+To refresh the data in S3
 
-電気自動車用バッテリーのデータセットは、複数の製造業ユース ケースで使用されます。
-
-S3のデータをリフレッシュするには
 ```
 aws s3 rm s3://${S3_BUCKET}/EVCarBattery --recursive   
 
 aws s3 cp data/* s3://${S3_BUCKET}/EVCarBattery/ 
-
 ```
-権限付与を使用しているのでこれは必要ありませんが、もしファイルの一般公開を望んでいたなら、s3 cp呼び出しにこれを追加することになるでしょう。
+
+Because we are using an authorization this is not needed but if we wanted to make the files publicly accessible then we would add this to the s3 cp call
+
 ```
 --acl public-read    
 ```
 
-
-スクリプト フォルダ内のSQLファイルはべき等で、これはつまり、何度実行しても再実行可能で、実行のたびにテーブルの状態は同じになるということです。これを実現するために、実行のたびにオブジェクトを削除して再作成します。オブジェクトを削除するクエリーが実行されるとき、オブジェクトが存在しないというエラーは無視されますが、ユーザーが正しい権限を持っていないというエラーは処理される必要があります。
+The SQl files in the scripts folder are idempotent which means no matter how many times you run them they should be rerunnable and the state of the tables will be the same after each run. To accomplish this we delete the objects and recreate them on each run. When the query to delete the object is run we would ignore any errors that the object does not exist but we should handle errors where the user doesn’t have the correct permissions.

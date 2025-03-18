@@ -1,61 +1,60 @@
-### VantageCloud Lake Editionのオブジェクト ファイル システムへのデータの保存
+### Storing Data In VantageCloud Lake Edition Object File System
 
-### 始める前に
+### Before You Begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-VantageCloud Lake Editionのオブジェクト ファイル システム (OFS) にデータを保存する方法の概要は次のとおりです。
+The following is a summary of how to store data in VantageCloud Lake Edition Object File System (OFS).
 
-### セットアップ
+### Setup
 
-S3バケットにデータを含む外部テーブルを作成します。
+Create a foreign table with data in S3 bucket.
 
-```sql
+``` sourceCode
 REPLACE AUTHORIZATION DefaultAuth USER '' PASSWORD '';
 CREATE FOREIGN TABLE foreign_csvdata
 ,EXTERNAL SECURITY DefaultAuth
 USING (location('/s3/s3.amazonaws.com/td-usecases-data-store/retail_sample_data/CSVDATA/'));
 ```
 
-外部テーブルのデータを確認します。
+Check the data in foreign table.
 
-```sql
+``` sourceCode
 SELECT * FROM foreign_csvdata;
 ```
 
-### シナリオ 1
+### Scenario 1
 
-S3バケットにデータを含む既存の外部テーブルがあり、そのデータを新しいOFSテーブルにロードしたい場合は、次のステートメントを使用できます。
+If you have an existing foreign table with data in S3 bucket and want to load the data into a new OFS table, you can use the following statement.
 
-```sql
+``` sourceCode
 CREATE MULTISET TABLE ofs_csvdata
 ,STORAGE = TD_OFSSTORAGE
 AS ( SELECT site_no, datetime, Precipitation, GageHeight, Flow, GageHeight2 FROM foreign_csvdata )
 WITH DATA;
 ```
 
-新しいOFSテーブルのデータを確認します。
+Check the data in the new OFS table.
 
-```sql
+``` sourceCode
 SELECT * FROM ofs_csvdata;
 ```
 
-OFSテーブルを削除します。
+Drop the OFS table.
 
-```sql
+``` sourceCode
 DROP TABLE ofs_csvdata;
 ```
 
-### シナリオ 2
+### Scenario 2
 
-既存のLakeファイル システムOFSテーブルがあり、そこに別のテーブルからデータをロードしたい場合は、次のステートメントを使用できます。
+If you have an existing Lake File System OFS table and want to load data from another table into it, then you can use the following statement.
 
-新しいOFSテーブルを作成します。
+Create a new OFS table.
 
-```sql
+``` sourceCode
 CREATE MULTISET TABLE ofs_csvdata,
      STORAGE = TD_OFSSTORAGE
      (
@@ -68,36 +67,36 @@ CREATE MULTISET TABLE ofs_csvdata,
 NO PRIMARY INDEX ;
 ```
 
-OFSテーブルに外部テーブルからデータをロードします。
+Load data from foreign table into the OFS table.
 
-```sql
+``` sourceCode
 INSERT INTO ofs_csvdata SELECT site_no, datetime, Precipitation, GageHeight, Flow, GageHeight2 FROM foreign_csvdata;
 ```
 
-OFSテーブルのデータを確認します。
+Check the data in the OFS table.
 
-```sql
+``` sourceCode
 SELECT * FROM ofs_csvdata;
 ```
 
-テーブルを削除します。
+Drop the tables.
 
-```sql
+``` sourceCode
 DROP TABLE ofs_csvdata;
 DROP TABLE foreign_csvdata;
 ```
 
-### シナリオ 3
+### Scenario 3
 
-オブジェクト ストアから新しいOFSテーブルに初めてデータをロードする場合は、次のステートメントを使用できます。
+If you want to load data from an object store into a new OFS table for the first time, you can use the following statement.
 
-このオプションを使用するには、TD_SYSFNLIB.READ_NOSでEXECUTE権限が必要になります。これは以下の文によって付与できます。データベース管理者の協力を得てこの権限を取得してください。
+To use this option you would need EXECUTE permission on TD\_SYSFNLIB.READ\_NOS. Which can be granted by following statement, work with your Database administrator to get the permission.
 
-```sql
+``` sourceCode
 GRANT EXECUTE FUNCTION on TD_SYSFNLIB.READ_NOS to <username>;
 ```
 
-```sql
+``` sourceCode
 CREATE MULTISET TABLE ofs_csvdata
 ,STORAGE = TD_OFSSTORAGE
 AS ( SELECT site_no, datetime, Precipitation, GageHeight, Flow, GageHeight2
@@ -108,14 +107,14 @@ AUTHORIZATION=DefaultAuth
 ) WITH DATA;
 ```
 
-新しいOFSテーブルのデータを確認する
+Check the data in the new OFS table
 
-```sql
+``` sourceCode
 SELECT * FROM ofs_csvdata;
 ```
 
-テーブルを削除します。
+Drop the tables.
 
-```sql
+``` sourceCode
 DROP TABLE ofs_csvdata;
 ```

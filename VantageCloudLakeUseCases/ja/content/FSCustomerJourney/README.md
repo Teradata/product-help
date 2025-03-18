@@ -1,46 +1,44 @@
-## 金融サービスのカスタマー ジャーニー
+Financial services customer journey
+-----------------------------------
 
-### 始める前に
+### Before You Begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-このユース ケースでは、Vantageを使用してカスタマー ジャーニーのさまざまな側面を分析するための各種の分析手法を示しています。具体的には、アトリビューション機能とnPath機能を使用します。
+In this use case, we’ll show several techniques to analyze aspects of a customer journey using Teradata VantageCloud Lake. Specifically, we’ll use the Attribution and nPath functions.
 
-今回取り上げるシナリオの概要を以下に示します。
+Here’s the scenario we’ll cover: We’ll review the important interactions customers have with a retail bank to show how we can use VantageCloud Lake to discover new insights across various steps in a customer journey.
 
-顧客とリテール銀行との重要なやり取りに注目してみます。Vantageを使用して、カスタマー ジャーニーのさまざまなステップで新たな洞察を発見する方法をご紹介します。
+Starting with **customer acquisition**, we’ll discover how to: - Find new customers - Measure marketing attribution - Increase return on investment (ROI) and maximize marketing effectiveness - Minimize the time to conversion
 
-最初の <b>customer acquisition</b> では、以下を行う方法を探ります。- 新規顧客を見つける - マーケティングのアトリビューションを評価する - どうすればROIを高めてマーケティングの効果を最大化し、コンバージョンにかかる時間を短縮できるか
+Next, we’ll **review customer adoption:** What leads customers to additional high-end products, such as wealth management accounts?
 
-次に、**customer adoption** について考察します。- 顧客が新たに資産管理口座のような高度な商品に導かれるのは、どのようなきっかけからでしょうか?
+Customers interact with the bank in many ways, both online and offline. There are many different data sources, such as in-branch interactions with tellers, online banking, email, and call center logs. It is necessary to look at all of them to see the full picture.
 
-顧客は、オンラインとオフライン両方のさまざまな方法で銀行とやり取りします。データ ソースは、銀行の窓口での行員とのやり取りや、オンライン バンキング、電子メール、コール センターのログなど多岐にわたります。全体像を把握するには、それらの <b>all</b> に着目する必要があります。
+VantageCloud Lake provides best-in-class capabilities for combining and aggregating data at any scale. It provides performance-optimized connectivity to open object stores and third-party database systems via patented QueryGrid technology to create a single, aggregated, and optimized query fabric, which encompasses data from a myriad of systems, clouds, and physical locations. Other demos cover the integration and aggregation steps, but this is out of scope in our case.
 
-Vantageは、データソース集約がとても得意です。さまざまなクラウド オブジェクト ストアへの接続とともに、HadoopやOracleなどに直接接続するQueryGridコネクタも備えています。これらすべてのチャネルから集約されたデータセットを使用します。統合と集約のステップについては他のデモで解説し、ここでは対象外なので扱いません。
+We’ll see later in this demonstration that this multichannel data is key to attaining the most accurate and actionable insights.
 
-ここで得られる洞察はオンライン/オフライン両方の各種のチャネルに由来していることについて、後ほど取り上げます。
+Experience
+----------
 
-## 経験
+The entire use case takes about 10 minutes to run.
 
-ユース ケース全体を実施する所要時間は約10分です。
+### Setup
 
-### セットアップ
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case. [Load Assets](#data=%7B%22id%22:%22FSCustomerJourney%22%7D)
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
-[Load Assets](#data={"id":"FSCustomerJourney"})
+### Customer acquisition
 
-### 顧客の開拓
+The customer acquisition channel is the first step in our analysis. We’ll focus on analyzing the efficacy of various marketing programs on customers opening a new credit card account. We want to understand what channel our customers are coming from and how to maximize marketing ROI. We’ll use the powerful marketing attribution function in VantageCloud Lake to look at the multichannel data.
 
-デモで扱うジャーニーを、ここから始めます。クレジット カード口座の開設に焦点をあてます。顧客はどこから訪れるのか、またどうすればマーケティングの投資収益率(ROI)を最大化できるかを把握したいと思います。Vantageの高機能なマーケティング アトリビューション機能を利用して、さまざまなチャネルのデータを見ていきます。
+This will allow us to quickly quantify marketing effectiveness of both our promotions and channels (online and offline). Understanding which promotions are most effective will allow us to optimize marketing spend and promotion placement.
 
-これにより、販促とチャネル(オンライン/オフライン)のマーケティングの効果を特定の対象に絞ることができます。どの販促活動が最も効果的でしょうか。この情報を使用して、マーケティング活動の支出や実施場所を最適化できます。
+To efficiently analyze many variable parameters using the attribution function, we’ll create various dimension tables:
 
-いくつかのテーブルを作成し、多数のパラメータをプログラマティックにアトリビューション分析機能に送付できるようにします。
-
-```sql
+``` sourceCode
 --DATABASE <database_name>;
 
 CREATE TABLE FSCJ_conversion_events
@@ -48,30 +46,30 @@ CREATE TABLE FSCJ_conversion_events
 NO PRIMARY INDEX;
 ```
 
-口座の予約がオンラインとオフラインでいつ行われるのかを突き止めて、それを成功の基準として利用したいと思います。
+We want to determine when people have booked accounts both online and offline and use that as our success criteria:
 
-```sql
+``` sourceCode
 INSERT INTO FSCJ_conversion_events VALUES('ACCOUNT_BOOKED_ONLINE');
 INSERT INTO FSCJ_conversion_events VALUES('ACCOUNT_BOOKED_OFFLINE');
 ```
 
-Vantageを活用することで、どのようなアトリビューション モデルを適用すればよいかを特定できます。このケースでは、なるべくシンプルにするために基本的な「UNIFORM」戦略を選びます。
+VantageCloud Lake allows us to specify which type of attribution model to apply. For simplicity, we’ll choose a basic UNIFORM model. UNIFORM models apply an equal weight to each precedent step prior to the desired outcome.
 
-```sql
+``` sourceCode
 CREATE TABLE FSCJ_attribution_model
    (id    INTEGER,
     model VARCHAR(100))
 NO PRIMARY INDEX;
 ```
 
-```sql
+``` sourceCode
 INSERT INTO FSCJ_attribution_model VALUES(0, 'SIMPLE');
 INSERT INTO FSCJ_attribution_model VALUES(1, 'UNIFORM:NA');
 ```
 
-これで、データセットでアトリビューション機能を呼び出す準備が整いました。データセットには、あらゆる種類のクロス チャネルでの顧客のやり取りが含まれており、それらを分析できます。
+Now we’re ready to invoke the attribution function on our dataset. The dataset contains many types of cross-channel customer interactions we can analyze. The attribution function will use the aggregated event data as input, as well as the two -dimension tables we created above. Additional function arguments help to define the maximum number of events to process, as well as information on time- ordering and event identification columns.
 
-```sql
+``` sourceCode
 CREATE TABLE FSCJ_marketing_attribution AS (
     SELECT * FROM Attribution (
                 ON (
@@ -96,69 +94,67 @@ CREATE TABLE FSCJ_marketing_attribution AS (
     WITH DATA
 ```
 
-マーケティング アトリビューションは、クレジット カード口座の開設につながるイベントを特定し、それらのイベントに値を割り当てることを目的としています。データにおける具体的なコンバージョン イベントは「ACCOUNT_BOOKED_ONLINE」、「ACCOUNT_BOOKED_OFFLINE」です。これにより、顧客の開拓を後押しする最も影響力のあるイベントとチャネルを計算します。Vantageのアトリビューション機能は、各種の標準アトリビューション モデルをサポートします。Vantageを使用することで、アトリビューション モデル/パラメータに対する変更が社内の分析にどのように影響するかをすばやく確認できます。
+This attribution analysis aims to identify the events leading to the opening of a credit card account and assign value to them. The specific conversion events in the data are ACCOUNT\_BOOKED\_ONLINE and ACCOUNT\_BOOKED\_OFFLINE, thus calculating the most influential events and channels driving customer acquisition. The attribution function in VantageCloud Lake supports a variety of standard attribution models. Using VantageCloud Lake, we can quickly see how changes to the attribution model/parameters will affect our analysis.
 
-次に、結果からサマリ統計を取得します。
+Now, let’s get some summary statistics from the results:
 
-```sql
+``` sourceCode
 SELECT marketing_description, AVG(attribution) AS avg_attrib, SUM(attribution) AS sum_attrib, AVG(-time_to_conversion)/3600 AS time_to_conversion
 FROM FSCJ_marketing_attribution 
 WHERE marketing_description NOT IN ('\N', '-1')
 GROUP BY marketing_description;
 ```
 
-![png](output_16_0.png)
+![png](output_16_1.png)
 
-![png](output_17_0.png)
+![png](output_17_1.png)
 
-![png](output_18_0.png)
+![png](output_18_1.png)
 
-最初に視覚化されるグラフは、これまでに実施したさまざまな販促を中心にしています。グラフのバーが長いほど、顧客の口座開設に向けた販促の影響が大きくなります。
+The first visualization illustrates the average attribution score for each promotion. The larger the bar, the more influence the promotion had on a customer opening an account.
 
-2番目のグラフは、販促がもたらした合計アトリビューション スコアを示しています。成約の後押しに最も貢献した要素のグラフが、最も長くなります。
+The second chart shows the total attribution score for each promotion. The most impactful promotion overall in terms of total conversions will be represented by the largest bars.
 
-3番目のグラフはコンバージョンが実現されるまでの時間を示しており、ユーザーが契約に進むまでの販促の平均所要時間がわかります。時間が短いほどグラフが短く、相手がより迅速に行動に移したことを示します。Gold Card Promotion IIが総合的に最も優秀で、次にHotel Card Promotion、MoneySupermarket.com Promotionが続いていることがわかります。
+The third chart shows the average time to customer conversion in hours for each promotion. The shorter the time—lower on the chart—the faster people acted. We can see that “Gold Card Promotion II” provided the shortest time to conversion, followed by the “Hotel Card Promotion” and “MoneySupermarket.com Promotion.”
 
-### チャネル分析
+### Channel analysis
 
-販促および広告ネットワークにはさまざまなものがあります。次に、多岐にわたるチャネルでの各種の販促により得られるトラクションについて見ていきます。
+We have different promotions and advertising networks, so let’s look at the traction we’re getting with the various promotions across different channels:
 
-```sql
+``` sourceCode
 SELECT marketing_category, marketing_placement, SUM(attribution) AS total_attribution 
 FROM FSCJ_marketing_attribution 
 WHERE marketing_description NOT IN ('\N', '-1')
 GROUP BY 1, 2;
 ```
 
-![png](output_22_0.png)
+![png](output_22_1.png)
 
-次に視覚化されるグラフは、マーケティング活動を展開した各種のチャネルを中心にしています。グラフのバーの長さは、そのチャネルに対する総合的なアトリビューションを示しています。色は最初のビューで見た販促に対応しており、どの販促がどのチャネルで実施されたか、およびそれぞれの業績がわかります。データの結果セットでは、ウェブの他に電子メール、支店内(オフライン)があることを確認できます。
+The visualization below illustrates the total attribution based on each channel where the promotions were run. The overall length of the bar shows the total attribution to that channel. The colors correspond to the promotions that we looked at in the top view, so we can see which promotions were on which channels and the performance of each. In the data result set, you can see that there is email, in branch (offline), and web.
 
-デジタルのチャネルについては、総合的にホームページの広告が最も優秀で、次に電子メール、Googleサーチが続くことがわかります。
+For the digital channels, we can see that the homepage ads did best, followed by email and Google searches.
 
-BI (ビジネス インテリジェンス)ツールを使用すると、新たなレベルの分析が可能になります。
+Using a business intelligence (BI) tool, we can create this type of analysis based on the output of the attribution function:
 
 ![png](AttributionDashboard.png)
 
-ここでは、多岐にわたるチャネルでの販促とその実績が示されます。MoneySupermarketとGold Card Promotion IIの販促が最も効果的だったという、興味深い洞察を確認できます。Gold Card IIと最初のGold Card Promotionを比べるのも面白いでしょう。その下の各種チャネルに目を向けると、最初のGold Card販促は電子メールのみで実施され、一方Gold Card Promotion IIは複数のチャネルで実施されており、同じ商品に対してより効果的だったことがわかります。
+This visualization gives us deeper insights into our marketing promotions and their placements across various channels. For example, we can see that “MoneySupermarket.com Promotion” and “Gold Card Promotion II” were our most effective promotions. We can see that “Gold Card Promotion” was only run over email, while “Gold Card Promotion II” was run on multiple channels and was more effective.
 
-このダッシュボードとVantageの高度な機能を活用することで、さまざまな販促を簡単に比較して、MoneySupermarket.comで実施した特別な販促がとりわけ効果的だったことを確認できます。この販促は特定のチャネルでのみ実施しており、コンバージョンまでの時間が短く平均アトリビューションでも優れた実績を上げています。
+Using this dashboard and the power of VantageCloud Lake, you can easily compare the different promotions and see that the special “MoneySupermarket.com Promotion” was particularly effective. This was only run on that particular channel and had both a quick time to conversion and a strong average attribution.
 
-その他にも目を向けましょう...Rewards Cardの販促は各チャネルで高い成果を得ていますが、特に支店内での紹介が効果的でした。Airline Card販促は、チャネルの中でもホームページとGoogleでより高い実績を上げています。
+We can see that “Rewards Card Promotion” did well across channels but was particularly effective through in-branch referrals. “Airline Card Promotion” did best on the homepage and Google.
 
-## アダプションへのパス
+Path to adoption
+----------------
 
-次に、顧客が資産管理のような高度な口座をどのように開設するかについて見ていきます。多くのリテール銀行は、資産管理が重要な収益の柱になると認識しており、この分野でビジネスを構築しようとしています。
+Next, we want to see how customers are opening higher-end accounts, such as wealth management. Many retail banks have found wealth management to be a key profit center, so they’re looking to build their business in this area.
 
-Vantageの強力なnPath分析機能を活用することで、SQLではきわめて難しいパターン/時系列の分析を実行できます。顧客が資産管理口座を開設するとき一般的に辿るパスを調べてみましょう。また、資産管理口座の顧客が保有する他の口座との関連性についても調べます。
+We can use the powerful nPath analytic function in VantageCloud Lake to perform combined pattern and time-ordered analysis that is very hard to do in SQL. In this use case, we want to see the common paths that customers take when they go to open a wealth management account. We’ll also look at the affiliation between the other accounts that wealth management customers hold.
 
-以下のコードには、いくつかのキー ポイントがあります。
-1.インタラクションと商品カテゴリを結び付けて固有のイベントを作成します。 
-2.資産管理アプリケーションの開始/完了は、当然ながら誰もが実行するので無視します。このケースではノイズを減らしたいと思います。さらなる分析は、未完了のアプリケーションまたは他のシナリオで後からでも実施できます。
-3.**‘PATTERN’** では、資産管理口座の開設が後に続く4つのイベントを検索します(ACCOUNT_BOOKED)。
-4.**‘SYMBOLS’** では、資産管理口座の開設は'EVENT'、当該の口座の開設は'ADOPTION'となる以外は何でも使用できます。
+The nPath function takes several key inputs to define how it will construct the time-ordered path for each user. In the code here, you can see a few key elements. First, we clean up the input data to make analysis easier. Next, we define the patterns to match on to assemble the path: 1. In the input data, we are concatenating the interaction and the product category to make unique events. 2. Also in the input data, we’re filtering out the starting/completing of the wealth management application. Everyone does that by definition and, in this case, we want to reduce the noise. Further analysis could be done on incomplete applications or other scenarios. 3. In the **‘PATTERN’** element, we’re using syntax to search for four events followed by opening (ACCOUNT\_BOOKED) a wealth management account.  
+4. The two **‘SYMBOLS’** are defined as any event except opening a wealth management account as EVENT and opening said account as ADOPTION. 5. The **‘RESULT’** clause directs the function on how to display results. In this case, we’re creating a long string of events representing the path, as well as other information, like the number of events, customer ID, and product category.
 
-```sql
+``` sourceCode
 SELECT * FROM nPath (
         ON (
         SELECT customer_identifier, interaction_timestamp, interaction_type, product_category, interaction_type || '_' || product_category AS event, 
@@ -190,68 +186,68 @@ SELECT * FROM nPath (
     ) a;
 ```
 
-この視覚化では、ユーザーが資産管理口座の開設時に辿る最も一般的なパスについて、多くの洞察を得られます。
+Using VantageCloud Lake Console Visualizations or another BI tool, we can create a specialized chart called a Sankey, which provides insight into the most common paths that users are taking when opening wealth management accounts:
 
 ![png](AdoptionPaths.png)
 
-さらに、最もよく使われるパスに絞り込むことができます。
+We can filter it down to the most popular paths:
 
 ![png](AdoptionPathsFiltered.png)
 
-視覚化についての説明に続いて、各ケースの主な原動力について見ていきます。
+Now that we have a better view of what’s happening, let’s review the main drivers in each case.
 
-まず、オンラインでの資産管理口座の開設を後押しする要因から見てみます。銀行が自行のウェブサイトで表示している「比較」ツールが、口座開設への主なステップであることがわかります。これにより資産管理商品を他行と比較できますが、それは説得力のある要因であることがわかります。商品を閲覧した顧客は比較ツールを使用して、最終的に予約に至ります。
+Start by looking at the drivers of wealth management accounts online. We can see that the comparison tool the bank has on its website is a main step in opening an account. This allows customers to compare its wealth management offerings to those of competitors. It’s proven to be compelling: Customers are browsing the offerings, then using the compare tool and ultimately booking.
 
-オンラインでの口座成約を後押しする他の要因として、自動貯蓄積み立てプランを開設する利用者が存在します。このような貯蓄意識の高い利用者が、資産管理口座を開こうとする傾向があります。また、通常の商品閲覧やCDの開設が、別のパスにもなっているようです。
+The other main drivers of online account signups are people signing up for an automatic savings plan. Savings-minded people tend to open wealth management accounts. Also, generally browsing the offerings and opening a certificate of deposit (CD) appear to be secondary paths as well.
 
-オフラインについても調べてみると、後押しする別の要因があります。オンラインとオフラインの両方で、CDや証券口座など他のタイプの口座も開設している利用者がかなり多いようです。資産管理口座のオフラインでの予約につながる主なパスは、支店内での紹介に由来することがわかります。支店を訪れて別タイプの口座を開設する人が、資産管理口座の開設も紹介されるのです。
+We can see that offline has different drivers—predominately people opening other types of accounts, as well as CDs and brokerage accounts—both online and offline. In-branch referrals are the main paths to booking a wealth management account offline. People visit a branch and open another type of account, and they are referred to opening a wealth management account.
 
-### クリーンアップ
+### Clean up
 
-```sql
+``` sourceCode
 DROP TABLE FSCJ_conversion_events;
 ```
 
-```sql
+``` sourceCode
 DROP TABLE FSCJ_attribution_model;
 ```
 
-```sql
+``` sourceCode
 DROP TABLE FSCJ_marketing_attribution;
 ```
 
-### データセット
+### Dataset
 
-このユース ケース、FSCustomerJourneyのデータは、`retail_sample_data` データベースに格納されています。
+The data for this use case, FSCustomerJourney, is stored in the `retail_sample_data` database.
 
-#### 統合型問い合わせ履歴
+#### Integrated contact history
 
-以下にこのユース ケースで使用するメインのテーブルを示します。さまざまなソース システムやチャネルからのデータがあらかじめ結合され、1つの大きなテーブルにまとめられています。これはすべての顧客とのやり取りを表し、顧客システムにおいて、各種のソース テーブルの最も重要なビューと見なすこともできます。
+This is the main table we use in this use case. It is data from various source systems and channels already combined and put into one big table. This is all of the customer interactions, in a customer system this might be a view on top of various source tables.
 
 `fscj_ich_banking`
 
--   `customer_skey`: 顧客キー
--   `customer_identifier`: 固有の顧客識別子
--   `customer_cookie`: 顧客のデバイスに配置されるCookie
--   `customer_online_id`: ブーリアン - 顧客がオンライン口座を保有しているか
--   `customer_offline_id`: 顧客の口座番号
--   `customer_type`: これは高価値の顧客か、それとも単にウェブサイトを閲覧している訪問者か?
--   `customer_days_active`: 顧客がアクティブな時間はどのくらいか
--   `interaction_session_number`: セッション識別子
--   `interaction_timestamp`: このイベントのタイムスタンプ
--   `interaction_source`: このイベント発生元のチャネル(オンライン/オフライン、支店内など)
--   `interaction_type`: イベントのタイプ
--   `sales_channel`: 販売イベントがあったチャネル
--   `conversion_id`: 販売コンバージョン識別子
--   `product_category`: イベントが関連する商品のタイプ(当座預金、普通預金、CDなど)
--   `product_type`: 未使用
--   `conversion_sales`: 未使用
--   `conversion_cost`: 未使用
--   `conversion_margin`: 未使用
--   `conversion_units`: 未使用
--   `marketing_code`: マーケティング識別子
--   `marketing_category`: マーケティング チャネル(支店内、ウェブサイト、電子メールなど)
--   `marketing_description`: マーケティング キャンペーン名
--   `marketing_placement`: 特定のマーケティング経路(Google、Bloomberg.comなど)
--   `mobile_flag`: ブーリアンがモバイル デバイス上にあった
--   `updt`: 未使用
+-   `customer_skey`: customer key
+-   `customer_identifier`: unique customer identifier
+-   `customer_cookie`: cookie placed on customers device
+-   `customer_online_id`: boolean - does the customer have an online account
+-   `customer_offline_id`: customer account number
+-   `customer_type`: is this a high value customer or just a vistor browsing the website?
+-   `customer_days_active`: how long has the customer been active
+-   `interaction_session_number`: session identifier
+-   `interaction_timestamp`: timestamp for this event
+-   `interaction_source`: channel this event is from (online / offline, in branch etc.)
+-   `interaction_type`: type of event
+-   `sales_channel`: channel a sales event was in
+-   `conversion_id`: sales conversion identifier
+-   `product_category`: what type of product the event concerned (checking, savings, cd etc..)
+-   `product_type`: unused
+-   `conversion_sales`: unused
+-   `conversion_cost`: unused
+-   `conversion_margin`: unused
+-   `conversion_units`: unused
+-   `marketing_code`: marketing identifier
+-   `marketing_category`: marketing channel (inbranch, website, email etc..)
+-   `marketing_description`: marketing campaign name
+-   `marketing_placement`: specific marketing outlet (Google, Bloomberg.com etc..)
+-   `mobile_flag`: boolean was on a mobile device
+-   `updt`: unused

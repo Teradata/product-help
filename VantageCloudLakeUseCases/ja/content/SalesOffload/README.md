@@ -1,70 +1,68 @@
-## ディープ ヒストリー - 履歴コールド データをオブジェクト ストアにオフロードする
+Deep history: Accessing archive data from object stores
+-------------------------------------------------------
 
-### 始める前に
+### Before you begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-ますます厳しくなる規制により、企業は規制遵守のためにデータをオンラインで長年にわたってアクセス可能にしておかなければなりません。最も頻繁にアクセスされるデータは最新または現行のデータですが、古い情報が有用でない、または関連性がないというわけではありません。長年にわたって蓄積された過去データは、長期的なトレンドや周期的なパターンなど、ビジネスに関する豊かな視点をもたらしてくれます。
+Increasingly stringent regulations require companies to keep data online and accessible for regulatory compliance over many years. Although the most frequently accessed data is the latest or most current data, that doesn’t mean that the older information is not useful or relevant for business and analytical use cases. Historical data compiled over the years gives a rich perspective of the business, such as long-term trends and cyclical patterns.
 
-Teradata Vantageは、世界最大かつ最も要求の厳しい企業に対し、データ分析において比類のない並行性とパフォーマンスを提供します。古い情報に対する分析や並行性のニーズは通常、データが古くなるにつれて大幅に減少します。時間の経過とともに、現在の「ホット」なデータよりも蓄積される過去データの方がはるかに多くなるため、パフォーマンスや価格特性の異なる場所に保存するというのは理にかなっています。例えば、Amazon S3やAzure Blobストレージなどのオブジェクト ストアです。
+Teradata VantageCloud Lake provides unmatched scalability, concurrency, and performance for the world’s largest and most demanding enterprises to analyze their data. The need for frequent analysis of older information generally decreases as data ages. Over time, more historical data accumulates than current “hot” data, so it makes sense to store it in an architecture with different performance and price characteristics—for example, an object store like Amazon S3 or Microsoft Azure Blob Storage.
 
-過去データと現在のデータを別々のシステムに保存すると、情報を一緒に分析することによってのみ可能な独自のインサイトを得ることが難しくなります。しかし、これからは違います。Teradata Vantageを使用することで、基本的なデータ構造やクエリーを変更することなく、データ ウェアハウスとオブジェクト ストレージにまたがるすべての履歴情報と最新情報をシームレスに結合できるようになりました。これによって、従来は対応できなかった疑問にもコスト効率よく答えられるようになり、意思決定者は将来に向けてより良い計画を立てられるようになります。
+Some insights are only available through analysis of historical and current data together, so storing them in separate systems can pose a challenge for many analytic platforms. Conversely, Teradata VantageCloud Lake can seamlessly join all historical and current information across the data warehouse and object storage, without users having to change their tools or queries. As a result, decision-makers can make better plans by cost-effectively answering questions that couldn’t previously be answered. Analysts and data scientists have seamless access to deep and comprehensive data sets, allowing for more robust advanced analytics and AI/ML outcomes.
 
-### 経験
+### Experience
 
-「体験」セクションの実施所要時間は約10分です。
+The Experience section takes about 10 minutes to run.
 
-### セットアップ
+### Setup
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
-[アセットをロード](#data={"id":"SalesOffload"})
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case. [Load Assets](#data=%7B%22id%22:%22SalesOffload%22%7D)
 
-### ウォークスルー
+### Walkthrough
 
-#### ステップ1:データのクエリー
+#### Step 1: Querying the data
 
-これが現在の売上データです。いくつかのサンプル行を取得してみましょう。この例では、顧客、店舗、バスケット、割引情報があります。
+Here is our current sales data. Let’s grab some sample rows: In this example, we have customer, store, basket, and discount information.
 
-
-```sql
+``` sourceCode
 SELECT TOP 10 * 
 FROM so_sales_fact
 ```
 
-
-```sql
+``` sourceCode
 SELECT sales_date, sum(sales_quantity) as total 
 FROM so_sales_fact
 GROUP BY sales_date
 ORDER BY sales_date ASC
 ```
 
-![png](output_7_0.png)
+![png](output_7_1.png)
 
+What time range do we have data for?
 
-```sql
+``` sourceCode
 SELECT MIN(sales_date) AS min_date, MAX(sales_date) AS max_date FROM so_sales_fact
 ```
 
-データ ウェアハウス (2019年データ) にはいくつの記録があるでしょうか？
+How many records do we have in the data warehouse (2019 data)?
 
-
-```sql
+``` sourceCode
 SELECT COUNT(*)
 FROM so_sales_fact
 ```
 
-#### ステップ2:オフロードされた過去データの探索
+#### Step 2: Explore the offloaded historical data
 
-ご覧のとおり、当社のデータ ウェアハウスには1年分の売上データしかありません。これはその期間のデータに対するクエリーが圧倒的に多いためですが、コンプライアンス上の理由から、多くの企業では最大10年分の過去データを保存する必要があります。古いデータは月単位でVantageからエクスポートされ、Amazon S3にロードされて長期保存されます。Teradata Vantageを使用することで、このオフロードされたデータにシームレスにアクセスして他のデータと結合し、長期的なトレンドに関するインサイトを得たり、監査リクエストに簡単に対応したりすることができます。これには、本来であれば書き直す必要のある既存のクエリーやレポートの利用も含まれます。
+In our example, we only have one year of sales data in our data warehouse, as this is by far the most queried. For compliance, many companies must keep up to 10 years of historical data. For this scenario, older data has been exported from VantageCloud Lake each month and loaded into Amazon S3 for long-term storage. With VantageCloud Lake, we can seamlessly access this offloaded data and join it with the rest of the data to review long-term trends and easily handle analytics needs, like audit requests. This includes using existing queries and reports that would otherwise need to be rewritten.
 
-オフロードされた売上データが保存されているバケットはわかっているので、そこにあるデータを少し見てみましょう。ファイルのリストとそのサイズは、READ_NOS関数を使って取得することができます。
+We already know where the bucket containing offloaded sales data is located, so let’s review some of its data. With the READ\_NOS function, we can get the list of files and their sizes. The RETURNTYPE element in the FROM clause allows us to direct the function to return the object metadata, schema, or values themselves.
 
+Note this S3 bucket is publicly readable. If we were using a protected object store, we could modify the AUTHORIZATION element to contain the proper authentication values or make use of an authorization object containing this information.
 
-```sql
+``` sourceCode
 SELECT location(char(255)), ObjectLength 
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
@@ -74,10 +72,9 @@ FROM (
 ORDER BY 1
 ```
 
-全部でいくつのファイルとディレクトリがあるでしょうか？
+How many files and directories are there total?
 
-
-```sql
+``` sourceCode
 SELECT COUNT(location(char(255))) as NumFiles
 FROM (
  LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload'
@@ -87,10 +84,9 @@ FROM (
 ORDER BY 1
 ```
 
-ファイルのフォーマットをよりよく理解するために、ファイルの1つを見てみましょう。
+Let’s inspect one of the files to get a better understanding of the file format:
 
-
-```sql
+``` sourceCode
 SELECT * FROM (
       LOCATION='/s3/s3.amazonaws.com/trial-datasets/SalesOffload/2010/1/object_33_0_1.parquet'
       AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
@@ -99,21 +95,21 @@ SELECT * FROM (
 AS d
 ```
 
-#### ステップ3:シンプルな抽象化レイヤーを作成してアクセスしやすくする
+#### Step 3: Create a simple abstraction layer for easy access
 
-以下の文を使用して、信頼証明を外部オブジェクト ストアに含める認証オブジェクトを作成できます。
+To create an authorization object, use the following statement to contain the credentials to your external object store. For this use case, keep the USER and PASSWORD fields blank as shown.
 
-
-```sql
+``` sourceCode
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
 ```
 
-Vantageに外部テーブルとビューを作成し、ビジネス アナリストやその他のユーザーがオフロードされた過去データに簡単にアクセスできるようにします。
+Create a foreign table and a view in VantageCloud Lake to allow business analysts and other users to easily access the offloaded historical data. A foreign table is an object in the database that can act like a normal database table but points to data in a different location. Foreign table definitions also contain extended syntax that can help optimize data transfer, convert data on the fly, etc.
 
+The below SQL creates a simple table that relies on automatic column and datatype detection:
 
-```sql
+``` sourceCode
 CREATE FOREIGN TABLE sales_fact_offload
 , EXTERNAL SECURITY MyAuth 
 USING
@@ -125,26 +121,23 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-オフロードされたファイルにある行の一部を見てみましょう。
+Let’s inspect some of the rows in the offloaded files.
 
-
-```sql
+``` sourceCode
 SELECT TOP 10 *
 FROM sales_fact_offload;
 ```
 
-どのくらいのデータがありますか？
+How much data do we have there?
 
-
-```sql
+``` sourceCode
 SELECT COUNT(*)
 FROM sales_fact_offload;
 ```
 
-あともう少しです！データをネイティブ テーブルのように表示させます。ビューを上に置いて、カラムごとに分割しましょう。
+OK—we’re close! We want the data to look like a native table. So, let’s put a view on top to split it out into columns.
 
-
-```sql
+``` sourceCode
 REPLACE VIEW sales_fact_offload_v as (  
 SELECT 
     sales_date,
@@ -157,26 +150,22 @@ SELECT
 FROM sales_fact_offload);
 ```
 
-これでTeradata Vantageの他のテーブルと同じようにデータをクエリーできるようになりましたが、データはクエリー実行時にオブジェクト ストアから直接取得されます。既存のSQLスキルとワークフローを使用して、オブジェクト ストアベースのデータセットとTeradataリレーショナル テーブルの構造化データセットの相関をサポートすることで、シームレスな分析体験が実現します。
+Now we can query the data like any other table in VantageCloud Lake, but the data is pulled at query runtime directly from the object store. We now have a seamless analytics experience by supporting the correlation of object store-based datasets with structured datasets in Teradata relational tables using existing SQL skills and workflows.
 
-
-```sql
+``` sourceCode
 SELECT TOP 10 *
 FROM sales_fact_offload_v;
 ```
 
-いい感じですね！これでユーザーは、オブジェクト ストアにあるすべての過去データにアクセスできるようになりました。
+Now, users can access all the historical data in the object store. By using a database view, we can abstract away any of the underlying complexity of accessing the object store. Users will see the data as if it’s any other object in the database, and VantageCloud Lake will automatically optimize the query execution and data transfer, optimizing performance and response time.
 
-標準的なデータベース ビューで行えることを、外部テーブル上のビューですべて行うことができます。これには、基礎となるテーブル カラムのサブセットのみを返すことや、ビューにWHERE句を追加してビューで使用できる行を制限することも含まれます。
+We often need to be able to review a portion of the vast amount of data. In our use case, we have assumed some common filters, including the year and month of the transactions. This is why we have stored it by year and month keys in the object store. We can redefine the foreign table to prefilter the data when reading it based on these common conditions.
 
-たいていの場合、一度に見たいのはその膨大なデータの一部のみであるため、年ごとや月ごとに保存されています。外部テーブルを再定義して、データを読み込む際に事前フィルタリングできるようにしましょう。
+#### Step 4: Optimize the foreign table and view for efficient access
 
-#### ステップ4:外部テーブルとビューを最適化してアクセスを効率化する
+There is a lot of data in S3. Let’s optimize the foreign table so that we minimize the data we must read when querying in the object store. Designing an object store bucket and path structure is an important first step when planning how to store the data. It requires knowledge of the business needs, the expected patterns in accessing the data, an understanding of the data, and a sensitivity to the tradeoffs. In our case, we often know the approximate date we’re looking at, so let’s use this to our advantage.
 
-S3には大量のデータがあります。外部テーブルを最適化して、オブジェクト ストアのクエリー時に読み込むデータを最小限に抑えましょう。オブジェクト ストアのバケットとパス構造を設計することは、オブジェクト ストアを作成する上で重要な最初のステップです。ビジネス ニーズの知識、データへのアクセスで予想されるパターン、データに対する理解、トレードオフに対する感性が必要です。私たちのケースでは、おおよその日付がわかっていることが多いので、それを有効に活用することになります。
-
-
-```sql
+``` sourceCode
 DROP TABLE sales_fact_offload;
 CREATE FOREIGN TABLE sales_fact_offload
 , EXTERNAL SECURITY MyAuth 
@@ -190,12 +179,11 @@ NO PRIMARY INDEX
 PARTITION BY COLUMN;
 ```
 
-<b>PATHPATTERN</b> 句を含むように外部テーブルを再定義しました。これで、過去データを日付ごとに見る場合に、必要なファイルだけを読み込むことができます。
+We’ve redefined our foreign table to include a **PATHPATTERN** element. When reviewing historical data by date, this allows us to read only the files we need.
 
-では、このパス フィルタリングを可能にするユーザーフレンドリーなビューを再作成してみましょう。
+Now, let’s recreate our user-friendly view that allows for this path filtering. As discussed above, database views allow us to abstract away the underlying complexity. In this case, we are mapping an object path to columns, so when users use these columns as filter values, VantageCloud Lake will automatically minimize data transfer.
 
-
-```sql
+``` sourceCode
 REPLACE VIEW sales_fact_offload_v as (  
 SELECT 
     CAST($path.$year AS CHAR(4)) sales_year,
@@ -210,20 +198,18 @@ SELECT
 FROM sales_fact_offload);
 ```
 
-
-```sql
+``` sourceCode
 SELECT TOP 10 *
 FROM sales_fact_offload_v
 WHERE sales_year = '2010'
 AND sales_month = '9';
 ```
 
-これは、少なくとも月単位で日付がわかっているユース ケースに最適です。例えば、ある顧客がかなり何年も前に何を買ったかを確認する必要があるとします。あるいは、過去の店舗売上についてレポートしたいとします。ビジネス アナリストは、IT部門の介入を受けたり、バックアップやアクセスしにくい他のデータ サイロに頼ったりすることなく、このクエリーを簡単に行えます。
+This is great for use cases in which we know the month. Suppose we need to see what a customer bought many years ago. Or maybe we want to report on historical store sales. A business analyst can easily query this without IT intervention, backups, or other hard-to-reach data silos.
 
-2012年8月の6号店の売上を見てみましょう。
+Let’s look at Store 6 sales from August 2012:
 
-
-```sql
+``` sourceCode
 SELECT store_id, SUM(sales_quantity)
 FROM sales_fact_offload_v
 WHERE store_id = 6
@@ -232,10 +218,9 @@ AND sales_month = '8'
 GROUP BY 1;
 ```
 
-全体像を把握するために、過去データと現在のデータを結合しましょう。
+Let’s join the historical data with the current data so we can see the full picture:
 
-
-```sql
+``` sourceCode
 REPLACE VIEW sales_fact_all as (
 SELECT sales_date,
     customer_id,
@@ -257,50 +242,46 @@ SELECT
 FROM sales_fact_offload_v);
 ```
 
-最後に、経年売上レポートを再実行します。コードは上のものと変わりませんが、直近の年だけでなく、すべての売上データを分析できるようになりました。
+Finally, let’s rerun our sales-over-time report. The code is unchanged from the one above, so we can analyze all sales data beyond the most recent year.
 
-
-```sql
+``` sourceCode
 SELECT sales_date, sum(sales_quantity) as total 
 FROM sales_fact_all
 GROUP BY sales_date
 ORDER BY sales_date ASC;
 ```
 
-![png](output_43_0.png)
+![png](output_43_1.png)
 
-さて、2019年はより広い意味で異常な年であったことがわかりました。何が起こったのか、さらに掘り下げてみる必要があります。しかし、Teradata Vantageのおかげで、あまりクエリーされないよりコールドなデータをオブジェクト ストレージにオフロードして安全に保存し、すべてのデータをコスト効率よく分析することができます。
+We can see that 2019 was an off year, so we need to dig deeper to see what happened. But thanks to VantageCloud Lake, we can cost-effectively analyze all our data by offloading the colder, less queried data to object storage for safekeeping.
 
-#### ステップ5:クリーンアップ
+#### Step 5: Clean up
 
-独自のデータベース スキーマで作成したオブジェクトを削除します。
+Drop the objects we created in our own database schema.
 
-
-```sql
+``` sourceCode
 DROP VIEW sales_fact_all;
 ```
 
-
-```sql
+``` sourceCode
 DROP VIEW sales_fact_offload_v;
 ```
 
-
-```sql
+``` sourceCode
 DROP TABLE sales_fact_offload;
 ```
 
-データセット
-------------
+Dataset
+-------
 
 ------------------------------------------------------------------------
 
-<b>sales_fact</b> データセットには約4,300万行のサンプル売上データがあります。
+The **sales\_fact** dataset has approximately 43 million rows of sample sales data:
 
--   `sales_date`: 注文が処理された日付
--   `customer_id`: 顧客識別子
--   `store_id`: 受注店舗識別子
--   `basket_id`: グループ番号または注文番号
--   `product_id`: 商品の識別子
--   `sales_quantity`: 販売された商品の数量
--   `discount_amount`: このライン アイテムで行われた割引
+-   `sales_date`: date the order was processed
+-   `customer_id`: customer identifier
+-   `store_id`: store identifier where the order was taken
+-   `basket_id`: grouping or order number
+-   `product_id`: identifier of the product
+-   `sales_quantity`: quantity of the product sold
+-   `discount_amount`: how much of a discount was given on this line item

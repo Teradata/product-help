@@ -1,62 +1,56 @@
-## Vantage Path - パス分析を使ってコーディングなしで行動分析
+Vantage Path - Using path analysis for behavior analysis with no coding
+-----------------------------------------------------------------------
 
-### 始める前に
+### Before You Begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-nPathはSQL機能拡張で、順序データを高速に分析するために設計されています。
+nPath is an SQL extension designed to perform fast analysis on ordered data.
 
-Vantage Pathは、ビジネス ユーザーやデータ サイエンティストが顧客行動のパターンを理解し、高度な予測モデルを構築するのに役立つユーザー インターフェイスを提供します。モデルはVantage機械学習エンジン (MLエンジン) を使用しています。Vantage Pathには、MLエンジン内で実行されるnPathとSessionizeの分析関数が組み込まれています。ユーザーはイベントとパラメータを選択して、イベント データの探索、パターンの特定、カスタマー ジャーニーの解明を行います。
+Vantage Path provides user interfaces that help business users and data scientists understand patterns in customer behavior and to build advanced predictive models. The models use Vantage Machine Learning Engine (ML Engine). Vantage Path incorporates nPath and Sessionize analytic functions running within ML Engine. Users select events and parameters to explore event data, identify patterns, and reveal customer journeys.
 
-nPathのユース ケースと同様に、Vantage Pathは結果につながるパスを追跡するのに役立ちます。ただし、SQLを書くのではなく、ポイント＆クリックするだけです！
+Similiar to the nPath use case, Vantage Path helps track paths that lead to an outcome. But instead of writing SQL, it’s just point and click!
 
-### 通信業界の顧客移動の例
+### Telco Churn Example
 
-通信業界において、アカウントの閉鎖または解約への対処は、大規模なコスト削減の取り組みです。nPath分析は、顧客行動に対する理解を深めることによってリテンションを向上させる方法に焦点を合わせることができます。
+In the telecommunications industry, addressing account closure, or churn, is a massive cost-saving effort. nPath analysis can target ways in which to improve retention by understanding customer behavior.
 
-最初のステップとして、顧客が関与するインタラクションやトランザクションを統合したイベント テーブルを作成します。イベントをキャプチャすることで、来店、ウェブサイトへのアクセス、サポート ラインへの電話、サービスのアップグレード、サービスのキャンセルといったカスタマー ジャーニーを表示できます。
+The initial step involves creating an event table to integrate interactions and transactions involving the customer. By capturing the events you can view the customer’s journey, which may have involved visiting a store, going to the website, calling the support line, upgrading service, and canceling service.
 
-nPath分析の使用により、イベントをクリックしてビジネスに関する次のような疑問の答えを得られるようになりました。
+Using nPath analysis, you can now click on the events to answer business questions, such as:
 
--   顧客がウェブサイト上でどのようなパスをたどっているのか
--   顧客がサポート ラインに電話する前にどのようなパスをたどっているのか
--   顧客がサービスをキャンセルするまでにどのようなパスをたどっているのか
+-   What paths are my customers taking on the website?
+-   What paths are my customers taking before calling the support line?
+-   What paths are my customers taking before canceling their service?
 
-### セットアップ
+### Setup
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
-[アセットをロード](#data={"id":"Telco"})
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case. [Load Assets](#data=%7B%22id%22:%22Telco%22%7D)
 
-### 経験
+### Experience
 
-このユース ケース全体の実施所要時間は約5分です。
+The entire use case takes about 5 minutes to run.
 
-1.  <a href="/path-analyzer">Vantage Path</a> を開きます。
-2.  システム接続を選択し、認証します。
-3.  次の「イベント テーブル」を選択します: telco_events
-4.  追加のパラメータを選択するか、[RUN(実行)]をクリックして、結果を分析します。
+1.  Open the [Vantage Path](/path-analyzer).
+2.  Select the system connection and authenticate.
+3.  Select the following “Event table”: telco\_events.
+4.  Select additional parameters or just click “RUN” and analyze the results.
 
-### 追加パラメータの追加
+### Adding Additional Parameters
 
-追加パラメータを使用して追加分析を行うこともできます。
+You may decide to use additional parameters for additional analysis.
 
-表示する上位のパス:表示するパターンマッチング パスの数を定義します 
-イベントA:検索パターンの最初のイベントです 
-イベントB:検索パターンの最後のイベントです 
-最小イベント数:パス パターン内の最小イベント数です 
-最大イベント数:パス パターン内の最大イベント数です
+Top paths to show: Defines the number of pattern-matching paths to display Event A: Initial event in the search pattern Event B: Ending event in the search pattern Minimum event count: Minimum number of events in the path pattern Maximum event count: Maximum number of events in the path pattern
 
-### 結果のエクスポート
+### Exporting Results
 
-#### 例1 - 「解約途上にある顧客のリストをエクスポートする」
+#### Example 1 - ‘Export a list of customers who are on the path to churn.’
 
-「Create Segement(セグメントを作成)」するには、エクスポート先のデータソースに次の構造を持つテーブルがなくてはなりません。
+In order to “Create Segement” a table in the destination datasource needs to exist with the structure below.
 
-
-```sql
+``` sourceCode
 CREATE SET TABLE path_save_segment
 (
      entity_id VARCHAR(100),
@@ -64,12 +58,11 @@ CREATE SET TABLE path_save_segment
 );
 ```
 
-#### 例2 - 「モデルクエリーを保存する」
+#### Example 2 - ‘Save the model query’
 
-「Save Query(クエリーを保存)」するには、エクスポート先のデータソースに次の構造を持つテーブルがなくてはなりません。
+In order to “Save Query” a table in the destination datasource needs to exist with the structure below.
 
-
-```sql
+``` sourceCode
 CREATE SET TABLE path_segment_queries
 (
  id        VARCHAR(100),
@@ -78,20 +71,18 @@ CREATE SET TABLE path_segment_queries
 );
 ```
 
-#### 例3 - 「ワークフローで結果を運用可能にする」
+#### Example 3 - ‘Operationalize the results with workflow’
 
-ワークフローを使うと、パス分析の結果をスケジュール通りに実行することができます。パス分析を保存してパス ノードで直接使用することも、SQLをエクスポートしてSQLノードに配置することもできます。ワークフローでSQLを使用するなら、単に「Show SQL(SQLを表示)」し、ブラウザ ウィンドウからSQLをコピーするだけです。そしてこれらの結果は任意の <a href="/workflow/">workflow</a> SQLノードに貼り付けることができます。「Show SQL(SQLを表示)」機能は、SQLがどのように構築されたかを理解するのにも便利です。
+Workflow can be used in order to run the results of the path analysis on a schedule. The path analysis can either be saved and then used directly in a path node, or the SQL can be exported and placed in a SQL ndoe. To use the SQL in a workflow simply “Show SQL” and copy the SQL from your browser window. These results can then be pasted into any [workflow](/workflow/) SQL node. The “Show SQL”functionality can also be useful in understanding how the SQL was constructed.
 
-### クリーンアップ
+### Clean-up
 
-この例を終了したら、作成したテーブルを必ずクリーンアップしてください。
+When you are finished with this example, remember to clean up the created tables:
 
-
-```sql
+``` sourceCode
 DROP TABLE path_save_segment
 ```
 
-
-```sql
+``` sourceCode
 DROP TABLE path_segment_queries
 ```

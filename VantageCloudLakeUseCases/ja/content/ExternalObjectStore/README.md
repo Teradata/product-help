@@ -1,4 +1,5 @@
-## 外部オブジェクト ストレージに対するデータのクエリー
+外部オブジェクト ストアの操作:データの読み取りと書き込み
+--------------------------------------------------------
 
 ### 始める前に
 
@@ -6,78 +7,91 @@
 
 ### はじめに
 
-このセクションでは、VantageCloud Lakeからオブジェクト ストアにデータをコピーする方法を示します。クエリーの例を実行するには、自分のバケットの情報を入力する必要があります。 __sample_sensor__ テーブルは、Vantageシステムのテーブルから外部オブジェクト ストアへのデータのコピーをシミュレートします。これらの例は、独自のデータセットにアクセスするように編集できます。これらのデータセットの例にはログイン信頼証明は必要ありませんが、独自のデータセットにアクセスするにはログイン信頼証明を使用してください。
+このセクションでは、ユーザーがオープン オブジェクト ストアとやり取りする方法を説明します。Teradata VantageCloud Lakeは、これらのスケーラブルで低コストのデータ ストアに対してデータの読み取りと書き込みの両方を行うネイティブ機能を提供しています。これにより、ユーザーはData Lakeに保存されている膨大な量のデータを容易に扱えるほか、アーカイブ データやその他のデータをこれらのプラットフォームにオフロードできます。
 
-類似のSQLを使用して、独自のオブジェクト ストアにアクセスできます。以下を置き換えるだけです。
-* __LOCATION__ - 独自のオブジェクト ストアの場所と置き換えます。その場所は、/s3/ (Amazon)、/az/ (Azure)、または/gs/ (Google)で始まる必要があります。
-* __USER__ または __ACCESS_ID__ - 独自のオブジェクト ストアのユーザー名を加えます。
-* __PASSWORD__ または __ACCESS_KEY__ - 独自のオブジェクト ストアのユーザーのパスワードを加えます。
-* __SESSION_TOKEN__  - AWS Service Token Serviceを使用している場合はアクセス信頼証明を得られるようにオプションのセッション トークンを追加することもできます。
-* 必要に応じてEXTERNAL SECURITY句でコメントを外します
+Teradataは、評価目的でオープン オブジェクト ストアの場所にデータを提供しています。実際の使用では、ユーザーがオブジェクト ストレージに対するログイン認証情報またはロールに基づいたその他のアクセスを提供する必要があります。独自のオブジェクト ストアを使用してデータをクエリーする場合は、SQLコードで以下を置き換えます。
 
-自分のデータにアクセスするように編集する場合 - Vantage環境からアクセスできるように、オブジェクト ストアを設定する必要があります。USERおよびPASSWORD (CREATE AUTHORIZATIONコマンドで使用される)またはAUTHORIZATION単純構文(認証オブジェクトを使いたくない場合にREAD_NOSコマンドで使用される)に、信頼証明を入力します。
+-   **LOCATION** - オブジェクト ストアの場所に置き換えます。場所は、/s3/ (Amazonの場合)、/az/ (Azureの場合)、または /gs/ (Googleの場合) で始まる必要があります。
+-   **USER** または **ACCESS\_ID** - オブジェクト ストアのユーザー名を追加します。
+-   **PASSWORD** または **ACCESS\_KEY** - オブジェクト ストアのユーザーのパスワードを追加します。
+-   **SESSION\_TOKEN** - AWS Security Token Serviceを使用してアクセス認証情報を提供する場合は、オプションでセッション トークンを追加することもできます。
+-   必要に応じてEXTERNAL SECURITY句のコメントを解除する
 
-### セットアップ
+SQLを変更してオブジェクト ストア内の独自のデータにアクセスできるようにする場合は、VantageCloud Lake環境からのアクセスを許可するように構成されていることを必ず確認してください。CREATE AUTHORIZATIONステートメントのUSER要素とPASSWORD要素、またはREAD\_NOSステートメントで使用されるAUTHORIZATION要素のJSON文字列引数に、適切な認証情報を指定します。
 
-このオプションを使用するには、TD_SYSFNLIB.READ_NOSでEXECUTE権限が必要になります。これは以下の文によって付与できます。データベース管理者の協力を得てこの権限を取得してください。
+これらのユース ケースを実行するには、外部オブジェクト ストアの読み取りと書き込みに使用されるSQL関数に対し、ユーザーが特定の権限を持っている必要があります。次のステートメントは、管理者権限を持つデータベース ユーザーとして実行するか、データベース管理者に実行を依頼してください。
 
-```sql
-GRANT EXECUTE FUNCTION on TD_SYSFNLIB.READ_NOS to <username>;
+``` sourceCode
+GRANT EXECUTE FUNCTION on TD_SYSFNLIB.READ_NOS to <USERNAME>;
+GRANT EXECUTE FUNCTION ON TD_SYSFNLIB.WRITE_NOS TO <USERNAME>; 
 ```
 
 ### オブジェクト ストレージへのアクセス
 
 オブジェクト ストアからデータを読み込むには2つの方法があります。
 
-#### READ_NOS
+#### READ\_NOS
 
-READ_NOSを使うと以下を実行できます。
-* オブジェクト ストアにインプレースされたParquet、CSV、JSON形式のデータに対してアドホック クエリーを実行する 
-* オブジェクト ストアの構造(レイアウト)を調べる 
-* フォーマット済みデータのスキーマを調べる 
-* データベースでの外部テーブル作成をバイパスする
+READ\_NOSテーブル演算子は、次の操作を実行できる関数です: \* オブジェクト ストアにインプレースされたParquet、CSV、JSON形式のデータに対してアドホック クエリーを実行する \* オブジェクト ストアの構造 (レイアウト) を調べる \* フォーマットされたデータのスキーマを調べる
 
-#### 外部テーブル
+``` sourceCode
+--このSQLステートメントは、S3バケットから10行のデータをクエリーします 
+--LOCATION要素で定義されています 
+SELECT トップ 10 * FROM ( 
+    LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+  ) AS D; 
 
-CREATE TABLE権限を持つユーザーは、データベース内に外部テーブルを作成できます。この仮想テーブルをオブジェクトストアの場所にポイントし、SQLを使用してデータを業務に使いやすい形式に変換します。外部テーブルを使うと以下を実行できます。 
-* 外部データをデータベースにロードする 
-* 外部データをデータベース内に格納されているデータに結合する 
-* データをフィルタリングする 
-* ビューを使用して、データがユーザーに表示される方法を簡素化したり、セキュリティ アクセス制御を増強したりする
+--By adding a RETURNTYPE element, and passing either 
+-- ‘NOSREAD_KEYS' or ‘NOSREAD_SCHEMA’ arguments 
+--users can investigate the objects and structure of the data 
+SELECT TOP 10 * FROM (
+    LOCATION = '/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+    RETURNTYPE = 'NOSREAD_KEYS' 
+  ) AS D; 
 
-外部サーバー経由で読み込まれるデータは永続化されず、データはクエリーによってのみ表示できます。
+SELECT TOP 10 * FROM ( 
+    LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+    RETURNTYPE = 'NOSREAD_SCHEMA'
+  ) AS D; 
+```
 
-データをデータベースにロードするには、CREATE TABLE AS … WITH DATA文でREAD_NOSまたは外部テーブルから選択します。
+### When accessing your own data
 
-### 独自のデータにアクセスする場合
+To access external object stores that require authentication, create an authorization object. This object will contain the credentials (username, password, session token, identity and access management (IAM) role, etc.) that the database needs to read (and/or write) data. The following statement can be used to create an authorization object to contain the credentials to your external object store. Alternatively, credentials can be passed as a JSON-formatted string to the AUTHORIZATION element of the query.
 
-以下の文を使用して、信頼証明を外部オブジェクト ストアに含める認証オブジェクトを作成できます。
-
-```sql
+``` sourceCode
 CREATE AUTHORIZATION MyAuth
 USER ''
 PASSWORD '';
 ```
 
-### READ_NOSを使用してAmazon S3に格納されているデータにアクセスする
+### Using an authorization to access data stored on Amazon S3
 
-```sql
-SELECT TOP 2 * FROM (
-LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'
-AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}'
---AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'  --[optional AUTHORIZATION using direct credentials]
---RETURNTYPE='NOSREAD_KEY'  --[optional if wanting to list the layout of the object store]
---RETURNTYPE='NOSREAD_SCHEMA'  --[optional if wanting to display the schema of the data files] 
-) AS D;
+``` sourceCode
+SELECT TOP 2 * FROM ( 
+LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/' 
+AUTHORIZATION='{"ACCESS_ID":"","ACCESS_KEY":""}' 
+--AUTHORIZATION='{"access_id":"ACCESS_KEY_ID","access_key":"SECRET_ACCESS_KEY"}'  --[optional AUTHORIZATION using direct credentials] 
+--RETURNTYPE='NOSREAD_KEY'  --[optional if wanting to list the layout of the object store] 
+--RETURNTYPE='NOSREAD_SCHEMA'  --[optional if wanting to display the schema of the data files]  
+) AS D; 
 ```
 
-### CREATE FOREIGN TABLEを使用してAmazon S3に格納されているデータにアクセスする
+#### Foreign Tables
 
-外部テーブルを作成する:
+Foreign tables enable VantageCloud Lake to access data in external object storage, such as semi-structured and unstructured data in Amazon S3, Microsoft Azure Blob Storage, and Google Cloud Storage. In-database integration of this data allows data scientists and analysts to read and process this data with VantageCloud Lake, using standard SQL. You can join external data to relational data in VantageCloud Lake, and process it using built-in VantageCloud Lake analytics and functions.
 
-```sql
+Data read through a foreign table is not persisted, and the data can only be used by that query.
+
+Data can be loaded into the database by selecting from READ\_NOS or a foreign table in a CREATE TABLE AS … WITH DATA statement.
+
+### Accessing data stored on Amazon S3 with CREATE FOREIGN TABLE
+
+Create a foreign table:
+
+``` sourceCode
 CREATE MULTISET FOREIGN TABLE sample_sensor ,FALLBACK,
-     EXTERNAL SECURITY MyAuth, MAP = TD_MAP1
+     EXTERNAL SECURITY MyAuth
     (
         sensedate DATE,
         sensetime TIME,
@@ -100,17 +114,17 @@ USING
 NO PRIMARY INDEX ;
 ```
 
-外部テーブルを使用していくつかのデータを表示します。
+View some data using the foreign table:
 
-```sql
+``` sourceCode
 SELECT TOP 2 * FROM sample_sensor;
 ```
 
-### Amazon S3に保存されているデータからVantageにデータをインポートする
+### Importing data into VantageCloud Lake from data stored on Amazon S3
 
-オブジェクト ストアからのデータを永続化するには、次のようにCREATE TABLE AS文を使用できます。
+To persist the data from an object store, we can use a CREATE TABLE AS statement as follows. Embed the READ\_NOS SELECT statement inside the CREATE TABLE AS, and be sure to include WITH DATA to insert all the rows into a local table:
 
-```sql
+``` sourceCode
 CREATE MULTISET TABLE sample_local_table AS (
   SELECT * FROM (
     LOCATION='/s3/trial-datasets.s3.amazonaws.com/IndoorSensor/'
@@ -119,31 +133,26 @@ CREATE MULTISET TABLE sample_local_table AS (
 ) WITH DATA;
 ```
 
-# オブジェクト ストアへのデータ書き込み
+Writing Data to an Object Store
+-------------------------------
 
-## はじめに
+### Introduction
 
-以下に、Vantageからオブジェクト ストアにデータをコピーする方法をまとめます。以下のクエリー例を実行するには、自分のバケットの情報を入力する必要があります。
+The following is a summary of how to copy data from VantageCloud Lake to an object store. You must provide your own bucket and credentials (or authorization object) to execute the example queries below.
 
-## WRITE_NOS
+The WRITE\_NOS query returns the list of objects and their metadata written to the target object store. These results are useful for logging/traceability and other administrative and management use cases.
 
-WRITE_NOSを使用すると、次のことができます。
-* オブジェクト ストアに直接、データをコピーする/書き込む 
-* ユーザーがSnappy圧縮を指定している場合を除き、非圧縮のParquet形式のデータを変換する 
-* ソース テーブルの1つ以上の列をターゲット オブジェクト ストアのパーティション属性として指定する 
-* コピー プロセス時に作成されたすべてのオブジェクトを含めたマニフェスト ファイルを作成および更新する
+#### WRITE\_NOS
 
-以下の例を実行する前に、スクリプトの例で以下のフィールドを置き換えます。
-* *YourBucketName*: 自分のバケットの名前と置き換える 
-* *YourAuthObject*: ストレージの信頼証明を含む認証オブジェクト 
-* [オプション] *AccessID*: バケットのアクセス キーから - アクセス キーIDの例:AKIAIOSFODNN7EXAMPLE 
-* [オプション] *AccessKey*: 自分のバケットのアクセス キーから - シークレット アクセス キーの例: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+WRITE\_NOS allows you to: \* Copy / write data directly to an object store \* Optionally compress the data \* Specify one or more columns in the source table as partition attributes in the target object store. Partition attributes will be used to generate additional object keys when writing the data. These keys can be used for efficient data organization and filtering for other systems reading the objects. \* Create and update of manifest files with all objects created during the copy process
 
-### 例1
+Before running the following examples, replace the following fields in the example scripts: \* *YourBucketName* : Replace with the name of your bucket or blob store where you have write access \* For VantageCloud Lake to pass the proper credentials, you can either use an authorization object or pass the credentials as a JSON-formatted argument to the AUTHORIZATION element. \* Replace with your authorization object containing your storage credentials, or: \* *AccessID* : from the Access Key for your bucket (optional) - Access key ID example: AKIAIOSFODNN7EXAMPLE \* *AccessKey* : from the Access Key for your bucket (optional) - Secret Access Key example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 
-この例では、 __sample_sensor__ テーブルのすべての行を選択して、データセットをオブジェクト ストアの *sample1* パーティションにコピーします。
+### Example 1
 
-```sql
+This example will use the result of a SELECT statement that retrieves all rows in the **sample\_sensor** table (created above), and will write it to the *sample1* partition or container in the account or bucket specified in the LOCATION element:
+
+``` sourceCode
 SELECT * FROM WRITE_NOS (
     ON ( SELECT * FROM sample_sensor )
     USING
@@ -154,11 +163,11 @@ SELECT * FROM WRITE_NOS (
 ) AS d;
 ```
 
-### 例2
+### Example 2
 
-この例では、同じデータセットをコピーします。ここでは *sample2* パーティションの下にセンサー日付の年ごとにパーティション化します。
+This example uses the same **sensor\_data** table as a source, this time partitioning by the sensor date year under the *sample2* partition:
 
-```sql
+``` sourceCode
 SELECT * FROM WRITE_NOS (
     ON ( SELECT
             sensedate,
@@ -182,22 +191,22 @@ SELECT * FROM WRITE_NOS (
  AS d;
 ```
 
-### WRITE_NOS結果を検証する
+### Validate your WRITE\_NOS results
 
-WRITE_NOSユース ケースの結果は、前述のセクションの例で説明されたように、バケット ユーザー信頼証明を使用して認証オブジェクトを作成し次にParquetデータへのアクセス用に外部テーブルを作成することで検証できます。
+You can validate the results of your WRITE\_NOS use cases by creating an authorization object with your bucket user credentials and then creating a foreign table for accessing Parquet data as described in the examples in the above section, or by performing a simple SELECT statement using READ\_NOS syntax from above.
 
-### クリーンアップ
+### Clean up
 
-独自のデータベース スキーマで作成したオブジェクトを削除します。
+Drop the objects we created in our own database schema.
 
-```sql
+``` sourceCode
 DROP AUTHORIZATION MyAuth;
 ```
 
-```sql
+``` sourceCode
 DROP TABLE sample_sensor;
 ```
 
-```sql
+``` sourceCode
 DROP TABLE sample_local_table;
 ```

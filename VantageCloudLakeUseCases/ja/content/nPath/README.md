@@ -1,57 +1,59 @@
-## nPathを使用したパス分析 - パターンに基づく行動予測
+Path analysis using nPath: Identify behaviors based on patterns
+---------------------------------------------------------------
 
-### 始める前に
+### Before you begin
 
-エディタを開いてこのユース ケースを進めます。
-[エディタを起動する](#data={"navigateTo":"editor"})
+Open Editor to proceed with this use case. [LAUNCH EDITOR](#data=%7B%22navigateTo%22:%22editor%22%7D)
 
-### はじめに
+### Introduction
 
-nPathはSQL機能拡張で、順序データを高速に分析するために設計されています。
+nPath is an SQL extension designed to perform fast, flexible analysis on ordered data at massive scale.
 
-nPathの句によって、ANSI SQLでリレーションの複数レベルの結合を記述しなければならないような、複雑なパス クエリーや順序関係を表現できます。nPathでは、目的の順序を示し、順序データ間で照合されるパターンを指定します。行のシーケンスでパターンが一致するごとに、nPathは一致した行についてSQL 集約を計算します。
+The clauses in nPath let you express complicated pathing queries and ordering relationships which might otherwise require you to write multilevel joins of relations in American National Standards Institute (ANSI) SQL. With nPath, you indicate a desired ordering and then specify a pattern that will be matched across the ordered data. For every match of the pattern in the sequence of rows, nPath computes an SQL aggregate over the matching rows.
 
-nPath分析では、結果につながるパスを追跡できます。例えば、顧客の行動の結果などです。
+nPath analysis helps track paths that lead to an outcome, including that of customer behavior:
 
--   購買経路
--   カゴ落ち分析
--   離反経路
--   再入院などのペイシェント ジャーニー
--   不正行為につながるパス
+-   Path-to-purchase
+-   Abandoned cart analysis
+-   Path to churn
+-   Patient journeys, such as hospital readmission
+-   Paths leading to fraudulent activity
 
-### 通信業界の顧客移動の例
-***
+### Telco churn example
 
-テレコム業界では、顧客の解約(キャリア変更)への対処は大規模なコスト節約の取り組みです。nPath分析を使用すると、顧客行動に対する理解を深めリテンションを向上させる方法に焦点を当てることができます。
+------------------------------------------------------------------------
 
-最初のステップとして、顧客が関与するインタラクションやトランザクションを統合したイベント テーブルを作成します。イベントをキャプチャすることで、来店、ウェブサイトへのアクセス、サポート ラインへの電話、サービスのアップグレード、サービスのキャンセルといったカスタマー ジャーニーを表示できます。
+In the telecommunications industry, addressing account closure, or churn, is a massive cost-saving effort. Using nPath analysis can target ways in which to improve retention by understanding customer behavior.
 
-nPath分析の使用により、イベントをクリックしてビジネスに関する次のような疑問の答えを得られるようになりました。
+The initial step involves creating an event table to integrate interactions and transactions involving the customer. By capturing the events, you can analyze the customer’s journey, which may have involved visiting a store, going to the website, calling the support line, upgrading service, and canceling service.
 
--   顧客がウェブサイト上でどのようなパスをたどっているのか
--   顧客がサポート ラインに電話する前にどのようなパスをたどっているのか
--   顧客がサービスをキャンセルするまでにどのようなパスをたどっているのか
+Using nPath analysis, you can analyze these events in a very simple way to help answer business questions such as:
 
-### 経験
+-   What paths are my customers taking on the website?
+-   What paths are my customers taking before calling the support line?
+-   What paths are my customers taking before canceling their service?
 
-このユース ケース全体の実施所要時間は約7分です。
+### Experience
 
-### セットアップ
+The entire use case takes about 7 minutes to run.
 
-**アセットをロード** を選択してテーブルを作成し、このユース ケースに必要なデータを自分のアカウント(Teradataデータベース インスタンス)にロードします。
-[アセットをロード](#data={"id":"Telco"})
+### Setup
 
-### 例
-***
+Select **Load Assets** to create the tables and load the data required into your account (Teradata database instance) for this use case. [Load Assets](#data=%7B%22id%22:%22Telco%22%7D)
 
-#### 例1 - 「すべてのパス」
+### Examples
 
-これは、最初にデータ内のパスを探索する際によく使われるクエリーです。最小限の結果セットを返すもので、必要な結果カラムは「path」のACCUMULATE()出力のみです。entity_idを追加することで、必要に応じて元のデータにリンクすることができます。
+------------------------------------------------------------------------
 
-また、パターンを調整してフォーカスを向上させることもできます。例えばパスのイベント数を制御するなどです。「3つ以上6つ以下のイベントを持つパス」について「A*」をA{3,6}に置き換える
+#### Example \#1 - All paths
 
+This is a common query when first exploring paths in the data. It returns a minimal result set; the only required result column is the ACCUMULATE() output for the path. Adding the entity\_id helps to link back to the original data, if needed.
 
-```sql
+The nPath function will take an input table consisting of events, the time stamp of the event, and any other information, such as session ID, user ID, etc. We provide various arguments to the USING clause to control the pattern matching behavior.
+
+The pattern can be tuned for more specificity. For example, to control the number of events in the path, replace A\* with A{3,6} for paths with at least three events and at most six:
+
+``` sourceCode
 SELECT * FROM npath
 ( 
    ON telco_events
@@ -74,14 +76,13 @@ SAMPLE 1000
 ;
 ```
 
-さらに多くのカラムを定義して、結果を充実させることができます。非常に役立つ一般例として、次のようなものがあります。
+More columns can be defined in the result clause to enrich the results. Here are some common examples that can help.
 
-#### 例2 - 「イベントへのパス」
+#### Example \#2 - Paths to event
 
-この例では、「送信前に2つ以上6つ以下のイベントを持つ、BILL DISPUTEに至るまでのイベント」パターンを使用しています。クエリーに標準SQLを追加できることに注目してください。この場合、最後に「order by」句が追加されています。
+By using a pattern that consists of multiple symbols (O and A below), we can create a more complex match—in this case, events leading to BILL DISPUTE, with a minimum of two and maximum of six events prior to submission. Note that we can add standard SQL to the query—in this case, an ORDER BY clause at the end.
 
-
-```sql
+``` sourceCode
 SELECT *
 FROM npath
 (
@@ -115,12 +116,11 @@ SAMPLE 1000
 ;
 ```
 
-#### 例3:パス方向を逆にする
+#### Example \#3: Reverse the path direction
 
-パターンをA.O{1,3}に変更するだけで、アプリケーション送信アクション後にたどったパスを特定できるようになりました。最大3つのイベントを含んでおり、送信後の顧客行動を理解できるようになっています。
+By simply changing the pattern to A.O{1,3}, we can find paths taken after the application submission action, with a minimum of one and up to three events to understand customer behavior after submission.
 
-
-```sql
+``` sourceCode
 SELECT *
 FROM npath
 (
@@ -153,14 +153,13 @@ SAMPLE 1000
 ;
 ```
 
-#### 例4:「上位のパス」
+#### Example \#4: Top paths
 
-nPathクエリーを標準SQL <b>count/group by</b> 構文でラップしDESCで並べ替えることで、上位のパスを素早く特定することができます。
+By wrapping the nPath query with SQL COUNT/GROUP BY clauses and ordering by descending value, we can quickly find the top paths.
 
-また、nPathのPATTERN構文にも注目してください。ここでは、3つ以上、上限なしのイベントを持つパスでフィルタリングしています。構文は <b>{min, max}</b> です。
+Also, notice the nPath PATTERN syntax below. Here, we’re filtering by paths that have at minimum three matches, with no maximum number of matches. The syntax is **{min, max}**.
 
-
-```sql
+``` sourceCode
 SELECT path, count(*) as cnt
 FROM npath
 (
@@ -192,14 +191,15 @@ SAMPLE 50
 ;
 ```
 
-#### 例5:「Sessionize」
+#### Example \#5: Sessionize
 
-Sessionize関数は、セッション内の各クリックを一意なセッション識別子にマッピングします。セッションとは、1人のユーザーが最大n秒間隔でクリックする一連のシーケンスと定義されます。
+In many cases, the data will not split user events into easily definable sessions. While digital data may have this information, when we combine multiple channels or data sources, we need to create some boundary on what constitutes a user or entity session. The sessionize function maps each event in a session to a unique session identifier. A session is a sequence of events by one user separated by a maximum duration in seconds.
 
-この関数は、セッション化とウェブ クローラー(ボット)の活動検出の両方に役立ちます。通常、ウェブサイトにおけるユーザーの閲覧行動を理解するのに使用されます。SessionizeをnPathと併用することで、パターン検出を向上させることができます。
+The function is useful both for sessionization and for detecting web crawler (bot) activity. Bot-based event data can be automatically filtered out of the function by a “click lag” value if desired.
 
+Sessionize can also be used with nPath for improved pattern detection.
 
-```sql
+``` sourceCode
 select *
 from Sessionize
 (
@@ -215,12 +215,14 @@ SAMPLE 100
 ;
 ```
 
-## データセット
-***
+Dataset
+-------
 
-<b>telco_events</b> - 通信事業者の顧客イベント例:
+------------------------------------------------------------------------
 
--   `entity_id`: 顧客の一意の識別子
--   `datestamp`: イベントの日時
--   `session_id`: セッション識別子
--   `event`: イベントまたは顧客とのインタラクション
+**telco\_events** - Sample Telco customer events:
+
+-   `entity_id`: unique identifier for the customer
+-   `datestamp`: time and date of the event
+-   `session_id`: session identifier
+-   `event`: event or customer interaction

@@ -1,5 +1,6 @@
-# オブジェクト ファイル ストア データセット
+Object File Store Dataset
+=========================
 
-オブジェクト ファイル ストア データセットは、OFSのユース ケースでVantageCloud Lakeにおけるデータ保存を実演するのに使用されます。
+The Object File Store Dataset is used in the OFS use case to demonstrate Storing Data in VantageCloud Lake.
 
-CSVDATAはS3バケットに保存されるため、データセットに関連するスクリプトはありません。
+There are no scripts associated with the dataset as the CSVDATA is stored in S3 buckets.

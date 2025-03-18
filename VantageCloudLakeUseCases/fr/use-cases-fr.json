@@ -1,0 +1,45 @@
+﻿[
+    {
+        "id":"pat3195117161214",
+        "name": "Analyse de chemin",
+        "description":"Tendances qui prédisent les comportements", 
+        "content_url": "content/nPath/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"fin7111215511319",
+        "name": "Parcours client des services financiers",
+        "description":"Interactions au cours du parcours financier client", 
+        "content_url": "content/FSCustomerJourney/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"man5111214716319",
+        "name": "Analyse des défauts de fabrication",
+        "description":"Cause et résolution des réparations sous garantie accrues",
+        "content_url": "content/ManufacturingDefects/README.md",
+        "enabled": true,
+        "industries": [
+            "Manufacturing",
+            "Automobile"
+        ]
+    },
+    {
+        "id":"ext0319577090308",
+        "name": "Banque d'objets externes",
+        "description":"Requête et écriture de données externes",
+        "content_url": "content/ExternalObjectStore/README.md",
+        "enabled": true,
+        "industries": []
+    },
+    {
+        "id":"dee1986198319573",
+        "name": "Historique détaillé",
+        "description":"Données historiques et actuelles combinées",
+        "content_url": "content/SalesOffload/README.md",
+        "enabled": true,
+        "industries": []
+    }
+]
