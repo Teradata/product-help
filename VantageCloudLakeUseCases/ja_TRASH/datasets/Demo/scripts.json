@@ -1,0 +1,34 @@
+[
+  {
+    "script_name": "create demo equip events table",
+    "url": "scripts/demo_equip_events.sql"
+  },
+  {
+    "script_name": "create demo equip logs table",
+    "url": "scripts/demo_equip_logs.sql"
+  },
+  {
+    "script_name": "create demo_equip_testing table",
+    "url": "scripts/demo_equip_testing.sql"
+  },
+  {
+    "script_name": "create demo equip training table",
+    "url": "scripts/demo_equip_training.sql"
+  },
+  {
+    "script_name": "create telco testing table",
+    "url": "scripts/telco_testing.sql"
+  },
+  {
+    "script_name": "create telco training table",
+    "url": "scripts/telco_training.sql"
+  },
+  {
+    "script_name": "create titan mortgage events table",
+    "url": "scripts/titan_mortgage_events.sql"
+  },
+  {
+    "script_name": "create titan telco events table",
+    "url": "scripts/titan_telco_events.sql"
+  }
+]

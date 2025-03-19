@@ -1,0 +1,6 @@
+[
+  {
+    "script_name": "create knee replacement table",
+    "url": "scripts/knee_replacement.sql"
+  }
+]

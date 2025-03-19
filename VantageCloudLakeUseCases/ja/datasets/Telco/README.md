@@ -1,20 +1,16 @@
-Telco Dataset
-=============
+Telcoデータセット
+=================
 
-Telco dataset is used in multiple telecommunications use cases.
+Telcoデータセットは、複数の通信事業ユース ケースで使用されます。
 
-To refresh the data in S3
+S3のデータをリフレッシュするには
 
-```
-aws s3 rm s3://${S3_BUCKET}/Telco --recursive   
+    aws s3 rm s3://${S3_BUCKET}/Telco --recursive   
 
-aws s3 cp data/* s3://${S3_BUCKET}/Telco/ 
-```
+    aws s3 cp data/* s3://${S3_BUCKET}/Telco/ 
 
-Because we are using an authorization this is not needed but if we wanted to make the files publicly accessible then we would add this to the s3 cp call
+権限付与を使用しているのでこれは必要ありませんが、もしファイルの一般公開を望んでいたなら、s3 cp呼び出しにこれを追加することになるでしょう。
 
-```
---acl public-read    
-```
+    --acl public-read    
 
-The SQl files in the scripts folder are idempotent which means no matter how many times you run them they should be rerunnable and the state of the tables will be the same after each run. To accomplish this we delete the objects and recreate them on each run. When the query to delete the object is run we would ignore any errors that the object does not exist but we should handle errors where the user doesn’t have the correct permissions.
+スクリプト フォルダ内のSQLファイルはべき等で、これはつまり、何度実行しても再実行可能で、実行のたびにテーブルの状態は同じになるということです。これを実現するために、実行のたびにオブジェクトを削除して再作成します。オブジェクトを削除するクエリーが実行されるとき、オブジェクトが存在しないというエラーは無視されますが、ユーザーが正しい権限を持っていないというエラーは処理される必要があります。
