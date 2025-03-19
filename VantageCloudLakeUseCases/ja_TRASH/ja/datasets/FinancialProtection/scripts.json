@@ -1,6 +1,0 @@
-[
-  {
-    "script_name": "create consumer complaints table",
-    "url": "scripts/consumer_complaints.sql"
-  }
-]
