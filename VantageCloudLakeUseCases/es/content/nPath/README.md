@@ -53,7 +53,7 @@ La función nPath tomará una tabla de entrada que consta de eventos, la marca d
 
 El patrón se puede ajustar para lograr mayor especificidad. Por ejemplo, para controlar la cantidad de eventos en la ruta, reemplace A\* por A{3,6} para rutas con, al menos, tres eventos y como máximo, seis:
 
-``` sourceCode
+``` 
 SELECT * FROM npath
 ( 
    ON telco_events
