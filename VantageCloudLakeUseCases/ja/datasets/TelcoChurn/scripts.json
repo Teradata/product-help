@@ -1,6 +1,0 @@
-[
-  {
-    "script_name": "create csi telco data table",
-    "url": "scripts/csi_telco_data.sql"
-  }
-]
