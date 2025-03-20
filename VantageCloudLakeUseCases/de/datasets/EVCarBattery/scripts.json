@@ -1,0 +1,38 @@
+[
+  {
+    "script_name": "create bom table",
+    "url": "scripts/bom.sql"
+  },
+  {
+    "script_name": "create customers table",
+    "url": "scripts/customers.sql"
+  },
+  {
+    "script_name": "create dealers table",
+    "url": "scripts/dealers.sql"
+  },
+  {
+    "script_name": "create dtc table",
+    "url": "scripts/dtc.sql"
+  },
+  {
+    "script_name": "create mfg_plants table",
+    "url": "scripts/mfg_plants.sql"
+  },
+  {
+    "script_name": "create parts table",
+    "url": "scripts/parts.sql"
+  },
+  {
+    "script_name": "create service visits table",
+    "url": "scripts/service_visits.sql"
+  },
+  {
+    "script_name": "create vehicles table",
+    "url": "scripts/vehicles.sql"
+  },
+  {
+    "script_name": "create badbatts table",
+    "url": "scripts/badbatts.sql"
+  }
+]

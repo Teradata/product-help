@@ -1,0 +1,14 @@
+[
+  {
+    "script_name": "create events table",
+    "url": "scripts/events.sql"
+  },
+  {
+    "script_name": "create testing table",
+    "url": "scripts/testing.sql"
+  },
+  {
+    "script_name": "create training table",
+    "url": "scripts/training.sql"
+  }
+]
