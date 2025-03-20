@@ -1,0 +1,10 @@
+[
+  {
+    "script_name": "create connectivity table",
+    "url": "scripts/connectivity.sql"
+  },
+  {
+    "script_name": "create sensor locations table",
+    "url": "scripts/sensor_locations.sql"
+  }
+]
