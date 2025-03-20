@@ -1,0 +1,6 @@
+[
+  {
+    "script_name": "create sales fact table",
+    "url": "scripts/sales_fact.sql"
+  }
+]
