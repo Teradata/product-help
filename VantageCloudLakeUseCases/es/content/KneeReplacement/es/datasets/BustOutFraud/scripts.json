@@ -1,0 +1,62 @@
+[
+  {
+    "script_name": "create acct bustouts table",
+    "url": "scripts/acct_bustouts.sql"
+  },
+  {
+    "script_name": "create acct feature table",
+    "url": "scripts/acct_feature.sql"
+  },
+  {
+    "script_name": "create acct predict table",
+    "url": "scripts/acct_predict.sql"
+  },
+  {
+    "script_name": "create acct statement table",
+    "url": "scripts/acct_statement.sql"
+  },
+  {
+    "script_name": "create all dates table",
+    "url": "scripts/all_dates.sql"
+  },
+  {
+    "script_name": "create credit bureau data table",
+    "url": "scripts/credit_bureau_data.sql"
+  },
+  {
+    "script_name": "create merchant table",
+    "url": "scripts/merchant.sql"
+  },
+  {
+    "script_name": "create party table",
+    "url": "scripts/party.sql"
+  },
+  {
+    "script_name": "create party acct table",
+    "url": "scripts/party_acct.sql"
+  },
+  {
+    "script_name": "create transaction daily counts table",
+    "url": "scripts/transaction_daily_counts.sql"
+  },
+  {
+    "script_name": "create transaction detail table",
+    "url": "scripts/transaction_detail.sql"
+  },
+  {
+    "script_name": "create transaction detail staging table",
+    "url": "scripts/transaction_detail_staging.sql"
+  },
+  {
+    "script_name": "create trans feature table",
+    "url": "scripts/trans_feature.sql"
+  },
+  {
+    "script_name": "create trans feature day derived table",
+    "url": "scripts/trans_feature_day_derived.sql"
+  },
+  {
+    "script_name": "create trans feature month derived table",
+    "url": "scripts/trans_feature_month_derived.sql"
+  }
+]
