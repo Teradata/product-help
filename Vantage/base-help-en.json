@@ -252,7 +252,16 @@
              "id":"qiv1640281527006", 
              "title":"Create an environment", 
              "description":"Create an environment for your organization.", 
-             "url":"Vantage/qiv1640281527006.md"
+             "url":"Vantage/qiv1640281527006.md", 
+             "children":[
+                { 
+                   "id":"cql1739481888655", 
+                   "title":"CMEK key resource requirements", 
+                   "url":"Vantage/cql1739481888655.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -317,6 +326,29 @@
                          "title":"Compute group access", 
                          "description":"Add users to a compute group.", 
                          "url":"Vantage/wdz1640281743091.md"
+                         }
+                      , 
+                      { 
+                         "id":"zai1697030381122", 
+                         "title":"Compute group FAQ", 
+                         "url":"Vantage/zai1697030381122.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"lyi1662583368110", 
+                   "title":"Compute workers", 
+                   "description":"Create nodes for heavy processing", 
+                   "url":"Vantage/lyi1662583368110.md", 
+                   "children":[
+                      { 
+                         "id":"azi1662584068628", 
+                         "title":"Create a compute worker", 
+                         "description":"Considerations for creating a Compute worker", 
+                         "url":"Vantage/azi1662584068628.md"
                          }
 
                       ]
@@ -411,10 +443,81 @@
           , 
           { 
              "id":"jwm1694121113608", 
-             "title":"Load data", 
-             "description":"Load or access data.", 
+             "title":"Manage data", 
+             "description":"Load, move, copy, and protect data.", 
              "url":"Vantage/jwm1694121113608.md", 
              "children":[
+                { 
+                   "id":"auw1640280669500", 
+                   "title":"Flows", 
+                   "description":"Load data from object storage.", 
+                   "url":"Vantage/auw1640280669500.md", 
+                   "children":[
+                      { 
+                         "id":"wsa1640282405363", 
+                         "title":"Who does what", 
+                         "url":"Vantage/wsa1640282405363.md"
+                         }
+                      , 
+                      { 
+                         "id":"luq1640282345986", 
+                         "title":"Create a flow", 
+                         "url":"Vantage/luq1640282345986.md", 
+                         "children":[
+                            { 
+                               "id":"ury1691596218182", 
+                               "title":"Load option considerations", 
+                               "description":"Options running a Flow", 
+                               "url":"Vantage/ury1691596218182.md"
+                               }
+                            , 
+                            { 
+                               "id":"vwc1691596425578", 
+                               "title":"Source and target authorization", 
+                               "description":"Set up authorization for Flows.", 
+                               "url":"Vantage/vwc1691596425578.md"
+                               }
+                            , 
+                            { 
+                               "id":"npn1691594431074", 
+                               "title":"Sources and targets", 
+                               "description":"Establish Flow source and target tables.", 
+                               "url":"Vantage/npn1691594431074.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"fqx1691599182279", 
+                         "title":"Run, pause, or reset a flow", 
+                         "url":"Vantage/fqx1691599182279.md"
+                         }
+                      , 
+                      { 
+                         "id":"dod1691610081069", 
+                         "title":"Update a flow", 
+                         "url":"Vantage/dod1691610081069.md"
+                         }
+                      , 
+                      { 
+                         "id":"dxg1691603081375", 
+                         "title":"Flows FAQ", 
+                         "description":"Answers to common Flows questions.", 
+                         "url":"Vantage/dxg1691603081375.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"gmh1694121164971", 
+                   "title":"Foreign tables", 
+                   "url":"Vantage/gmh1694121164971.md"
+                   }
+                , 
                 { 
                    "id":"vyx1659391025497", 
                    "title":"QueryGrid", 
@@ -511,6 +614,7 @@
                                   { 
                                      "id":"yfd1674158023864", 
                                      "title":"Edit a data source", 
+                                     "description":"Edit connected data sources or assign as a proxy.", 
                                      "url":"Vantage/yfd1674158023864.md"
                                      }
                                   , 
@@ -599,74 +703,94 @@
                             ]
 
                          }
+                      , 
+                      { 
+                         "id":"uah1721690770470", 
+                         "title":"QueryGrid FAQ", 
+                         "description":"Answers to common QueryGrid questions.", 
+                         "url":"Vantage/uah1721690770470.md"
+                         }
 
                       ]
 
                    }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"jrq1640280690304", 
-             "title":"Data protection", 
-             "description":"Protect data with backup and restore options.", 
-             "url":"Vantage/jrq1640280690304.md", 
-             "children":[
-                { 
-                   "id":"qmb1659046927155", 
-                   "title":"Create a backup plan", 
-                   "description":"Create or modify a backup plan", 
-                   "url":"Vantage/qmb1659046927155.md"
-                   }
                 , 
                 { 
-                   "id":"tyu1695326821997", 
-                   "title":"Start a backup job manually", 
-                   "description":"Start a backup job aside from any scheduled jobs", 
-                   "url":"Vantage/tyu1695326821997.md"
-                   }
-                , 
-                { 
-                   "id":"fwh1695165071175", 
-                   "title":"Protect a restore point", 
-                   "description":"Protect a saved backup job", 
-                   "url":"Vantage/fwh1695165071175.md"
-                   }
-                , 
-                { 
-                   "id":"kqr1640280954140", 
-                   "title":"Restore data (AWS and Azure only)", 
-                   "description":"Restore data from a restore point.", 
-                   "url":"Vantage/kqr1640280954140.md"
-                   }
-                , 
-                { 
-                   "id":"sus1659047241965", 
-                   "title":"View backup plan history", 
-                   "description":"View past and current backup and restore jobs", 
-                   "url":"Vantage/sus1659047241965.md"
-                   }
-                , 
-                { 
-                   "id":"nni1694461234790", 
-                   "title":"Disaster recovery (AWS only)", 
-                   "description":"Safeguard your data in case of outages.", 
-                   "url":"Vantage/nni1694461234790.md", 
+                   "id":"jrq1640280690304", 
+                   "title":"Data protection", 
+                   "description":"Protect data with backup and restore options.", 
+                   "url":"Vantage/jrq1640280690304.md", 
                    "children":[
                       { 
-                         "id":"uux1694461279489", 
-                         "title":"Create a disaster recovery plan", 
-                         "description":"Create a full environment recovery plan.", 
-                         "url":"Vantage/uux1694461279489.md"
+                         "id":"qmb1659046927155", 
+                         "title":"Create a backup plan", 
+                         "description":"Create or modify a backup plan", 
+                         "url":"Vantage/qmb1659046927155.md"
                          }
                       , 
                       { 
-                         "id":"cqv1694469814376", 
-                         "title":"Manage a disaster recovery plan", 
-                         "description":"Edit, test, and recover data in a recovery plan.", 
-                         "url":"Vantage/cqv1694469814376.md"
+                         "id":"tyu1695326821997", 
+                         "title":"Start a backup job manually", 
+                         "description":"Start a backup job aside from any scheduled jobs", 
+                         "url":"Vantage/tyu1695326821997.md"
+                         }
+                      , 
+                      { 
+                         "id":"fwh1695165071175", 
+                         "title":"Protect a restore point", 
+                         "description":"Protect a saved backup job", 
+                         "url":"Vantage/fwh1695165071175.md"
+                         }
+                      , 
+                      { 
+                         "id":"kqr1640280954140", 
+                         "title":"Restore data (AWS and Azure only)", 
+                         "description":"Restore data from a restore point.", 
+                         "url":"Vantage/kqr1640280954140.md"
+                         }
+                      , 
+                      { 
+                         "id":"sus1659047241965", 
+                         "title":"View backup plan history", 
+                         "description":"View past and current backup and restore jobs", 
+                         "url":"Vantage/sus1659047241965.md"
+                         }
+                      , 
+                      { 
+                         "id":"nni1694461234790", 
+                         "title":"Disaster recovery (AWS only)", 
+                         "description":"Safeguard your data in case of outages.", 
+                         "url":"Vantage/nni1694461234790.md", 
+                         "children":[
+                            { 
+                               "id":"uux1694461279489", 
+                               "title":"Create a disaster recovery plan", 
+                               "description":"Create a full environment recovery plan.", 
+                               "url":"Vantage/uux1694461279489.md"
+                               }
+                            , 
+                            { 
+                               "id":"cqv1694469814376", 
+                               "title":"Manage a disaster recovery plan", 
+                               "description":"Edit, test, and recover data in a recovery plan.", 
+                               "url":"Vantage/cqv1694469814376.md"
+                               }
+                            , 
+                            { 
+                               "id":"aie1694462032167", 
+                               "title":"Retention policy", 
+                               "url":"Vantage/aie1694462032167.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"iom1694462056775", 
+                         "title":"Data protection FAQs", 
+                         "description":"Answers to common questions.", 
+                         "url":"Vantage/iom1694462056775.md"
                          }
 
                       ]
@@ -674,10 +798,66 @@
                    }
                 , 
                 { 
-                   "id":"iom1694462056775", 
-                   "title":"Data protection FAQs", 
-                   "description":"Answers to common questions.", 
-                   "url":"Vantage/iom1694462056775.md"
+                   "id":"fsd1742339949986", 
+                   "title":"Vector store", 
+                   "url":"Vantage/fsd1742339949986.md", 
+                   "children":[
+                      { 
+                         "id":"drc1742340305540", 
+                         "title":"Create vector store", 
+                         "url":"Vantage/drc1742340305540.md", 
+                         "children":[
+                            { 
+                               "id":"nly1742946843656", 
+                               "title":"Vector store definition", 
+                               "url":"Vantage/nly1742946843656.md"
+                               }
+                            , 
+                            { 
+                               "id":"dai1742946866871", 
+                               "title":"Vector store data sources", 
+                               "url":"Vantage/dai1742946866871.md"
+                               }
+                            , 
+                            { 
+                               "id":"smv1742946887645", 
+                               "title":"Vector store settings", 
+                               "url":"Vantage/smv1742946887645.md", 
+                               "children":[
+                                  { 
+                                     "id":"ujc1742947175120", 
+                                     "title":"Tune your search settings", 
+                                     "url":"Vantage/ujc1742947175120.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"ymq1742947367911", 
+                                     "title":"Index settings", 
+                                     "url":"Vantage/ymq1742947367911.md"
+                                     }
+
+                                  ]
+
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"xpf1742341027956", 
+                         "title":"Manage vector store", 
+                         "url":"Vantage/xpf1742341027956.md"
+                         }
+                      , 
+                      { 
+                         "id":"dpw1742341058646", 
+                         "title":"Edit vector store", 
+                         "url":"Vantage/dpw1742341058646.md"
+                         }
+
+                      ]
+
                    }
 
                 ]
@@ -800,6 +980,182 @@
        "title":"Cost calculator", 
        "description":"View the organization's total estimated consumption.", 
        "url":"Vantage/vsb1703029847518.md"
+       }
+    , 
+    { 
+       "id":"vkg1693932972952", 
+       "title":"Data sharing and exploration", 
+       "url":"Vantage/vkg1693932972952.md", 
+       "children":[
+          { 
+             "id":"vnt1689959854009", 
+             "title":"Data catalog", 
+             "description":"View, search, browse, and annotate data", 
+             "url":"Vantage/vnt1689959854009.md", 
+             "children":[
+                { 
+                   "id":"nde1694121897837", 
+                   "title":"Use data catalog", 
+                   "url":"Vantage/nde1694121897837.md", 
+                   "children":[
+                      { 
+                         "id":"qpz1694121944094", 
+                         "title":"Search and filter the catalog", 
+                         "url":"Vantage/qpz1694121944094.md"
+                         }
+                      , 
+                      { 
+                         "id":"nme1694121977416", 
+                         "title":"View datasets", 
+                         "url":"Vantage/nme1694121977416.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"uat1694122014690", 
+                   "title":"Data catalog FAQ", 
+                   "url":"Vantage/uat1694122014690.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"mux1694121298338", 
+             "title":"Manage data sources", 
+             "url":"Vantage/mux1694121298338.md", 
+             "children":[
+                { 
+                   "id":"lsx1694121572990", 
+                   "title":"Add a data source and datasets", 
+                   "url":"Vantage/lsx1694121572990.md"
+                   }
+                , 
+                { 
+                   "id":"imp1694121598872", 
+                   "title":"Publish a data source", 
+                   "url":"Vantage/imp1694121598872.md"
+                   }
+                , 
+                { 
+                   "id":"mnk1694121651916", 
+                   "title":"Modify a data source", 
+                   "url":"Vantage/mnk1694121651916.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jlf1663616946889", 
+             "title":"Data sharing", 
+             "description":"Share tables and views with other users.", 
+             "url":"Vantage/jlf1663616946889.md", 
+             "children":[
+                { 
+                   "id":"ddq1721690838988", 
+                   "title":"Set up data sharing", 
+                   "description":"Set up data sharing to share tables and views with other users.", 
+                   "url":"Vantage/ddq1721690838988.md", 
+                   "children":[
+                      { 
+                         "id":"paa1721766522352", 
+                         "title":"Assign the first user", 
+                         "description":"Add a user or role as a TD_USER_ADMIN.", 
+                         "icon":"counter_1", 
+                         "url":"Vantage/paa1721766522352.md"
+                         }
+                      , 
+                      { 
+                         "id":"ymj1721766784498", 
+                         "title":"Add a share admin user", 
+                         "description":"Add a user as a share admin", 
+                         "icon":"counter_2", 
+                         "url":"Vantage/ymj1721766784498.md"
+                         }
+                      , 
+                      { 
+                         "id":"hfs1721767315385", 
+                         "title":"Add citizens and providers", 
+                         "description":"Add a user or role as a share citizen and provider.", 
+                         "icon":"counter_3", 
+                         "url":"Vantage/hfs1721767315385.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"hdx1681040827922", 
+                   "title":"Manage data share users", 
+                   "description":"User roles and privileges.", 
+                   "url":"Vantage/hdx1681040827922.md"
+                   }
+                , 
+                { 
+                   "id":"vlk1663617148666", 
+                   "title":"Create a data share", 
+                   "description":"Share datasets with subscribers.", 
+                   "url":"Vantage/vlk1663617148666.md"
+                   }
+                , 
+                { 
+                   "id":"gds1686247574408", 
+                   "title":"Work with datasets", 
+                   "description":"Tasks as a share provider or subscriber.", 
+                   "url":"Vantage/gds1686247574408.md", 
+                   "children":[
+                      { 
+                         "id":"rfg1681040443995", 
+                         "title":"Manage datasets", 
+                         "description":"Assign privileges to datasets", 
+                         "url":"Vantage/rfg1681040443995.md"
+                         }
+                      , 
+                      { 
+                         "id":"hfx1686247226223", 
+                         "title":"View and use datasets", 
+                         "description":"Citizen roles for datasets", 
+                         "url":"Vantage/hfx1686247226223.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vph1681040670091", 
+                   "title":"Manage subscribers", 
+                   "description":"Add a user or role as a subscriber.", 
+                   "url":"Vantage/vph1681040670091.md"
+                   }
+                , 
+                { 
+                   "id":"vuh1681040768372", 
+                   "title":"Delete a share", 
+                   "description":"What happens when you delete a share", 
+                   "url":"Vantage/vuh1681040768372.md"
+                   }
+                , 
+                { 
+                   "id":"laf1686249149487", 
+                   "title":"Data sharing FAQ", 
+                   "description":"See answers to common questions.", 
+                   "url":"Vantage/laf1686249149487.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
        }
     , 
     { 
@@ -996,6 +1352,507 @@
        }
     , 
     { 
+       "id":"qya1694122121061", 
+       "title":"ModelOps", 
+       "url":"Vantage/qya1694122121061.md", 
+       "children":[
+          { 
+             "id":"xko1736182740981", 
+             "title":"Enable ModelOps in an Active Environment", 
+             "description":"Get ModelOps set up in VantageCloud Lake Console.", 
+             "url":"Vantage/xko1736182740981.md"
+             }
+          , 
+          { 
+             "id":"bvr1694122081407", 
+             "title":"Dashboard", 
+             "description":"Access projects to work with models.", 
+             "url":"Vantage/bvr1694122081407.md", 
+             "children":[
+                { 
+                   "id":"vtz1725408102228", 
+                   "title":"Create projects", 
+                   "url":"Vantage/vtz1725408102228.md"
+                   }
+                , 
+                { 
+                   "id":"wlq1732650137676", 
+                   "title":"Git details", 
+                   "description":"View Git pull history information.", 
+                   "url":"Vantage/wlq1732650137676.md"
+                   }
+                , 
+                { 
+                   "id":"xfm1725407885906", 
+                   "title":"Session details", 
+                   "description":"Use session details to configure tmo CLI.", 
+                   "url":"Vantage/xfm1725407885906.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jue1725407850414", 
+             "title":"Account settings", 
+             "description":"Customize your ModelOps user experience", 
+             "url":"Vantage/jue1725407850414.md"
+             }
+          , 
+          { 
+             "id":"lja1725389137828", 
+             "title":"Settings", 
+             "description":"Check project connection health and set notifications", 
+             "url":"Vantage/lja1725389137828.md", 
+             "children":[
+                { 
+                   "id":"wkm1725389190945", 
+                   "title":"Dataset Connections", 
+                   "description":"Control data used for dataset templates and training models", 
+                   "url":"Vantage/wkm1725389190945.md", 
+                   "children":[
+                      { 
+                         "id":"vpe1725389258480", 
+                         "title":"Add dataset connection", 
+                         "url":"Vantage/vpe1725389258480.md"
+                         }
+                      , 
+                      { 
+                         "id":"qmz1732650253991", 
+                         "title":"Dataset connection health checks", 
+                         "url":"Vantage/qmz1732650253991.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"xnp1725389370171", 
+                   "title":"Notifications", 
+                   "description":"Specify who to notify about alerts and deployments.", 
+                   "url":"Vantage/xnp1725389370171.md"
+                   }
+                , 
+                { 
+                   "id":"kbm1725407652402", 
+                   "title":"Services", 
+                   "url":"Vantage/kbm1725407652402.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"fqd1725408187193", 
+             "title":"Models", 
+             "url":"Vantage/fqd1725408187193.md", 
+             "children":[
+                { 
+                   "id":"lvk1725408215354", 
+                   "title":"Models", 
+                   "url":"Vantage/lvk1725408215354.md", 
+                   "children":[
+                      { 
+                         "id":"akl1725408274100", 
+                         "title":"Define BYOM", 
+                         "url":"Vantage/akl1725408274100.md"
+                         }
+                      , 
+                      { 
+                         "id":"nro1732650484867", 
+                         "title":"Import BYOM", 
+                         "url":"Vantage/nro1732650484867.md"
+                         }
+                      , 
+                      { 
+                         "id":"jbg1732650538946", 
+                         "title":"Import Python/R model", 
+                         "url":"Vantage/jbg1732650538946.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"tuy1725408308401", 
+                   "title":"Model Details", 
+                   "url":"Vantage/tuy1725408308401.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"qdk1725408417926", 
+             "title":"Model Versions", 
+             "url":"Vantage/qdk1725408417926.md", 
+             "children":[
+                { 
+                   "id":"wnt1743340516346", 
+                   "title":"Import model", 
+                   "url":"Vantage/wnt1743340516346.md"
+                   }
+                , 
+                { 
+                   "id":"etl1725408512818", 
+                   "title":"Train model", 
+                   "url":"Vantage/etl1725408512818.md"
+                   }
+                , 
+                { 
+                   "id":"wzw1732650597340", 
+                   "title":"Evaluate model", 
+                   "url":"Vantage/wzw1732650597340.md"
+                   }
+                , 
+                { 
+                   "id":"zum1732650629250", 
+                   "title":"Deploy model", 
+                   "url":"Vantage/zum1732650629250.md"
+                   }
+                , 
+                { 
+                   "id":"yfx1732650662039", 
+                   "title":"Jobs", 
+                   "url":"Vantage/yfx1732650662039.md"
+                   }
+                , 
+                { 
+                   "id":"kll1732650698482", 
+                   "title":"Retire", 
+                   "url":"Vantage/kll1732650698482.md"
+                   }
+                , 
+                { 
+                   "id":"xtq1725408819410", 
+                   "title":"Commit history", 
+                   "description":"View timeline for the model's code changes.", 
+                   "url":"Vantage/xtq1725408819410.md"
+                   }
+                , 
+                { 
+                   "id":"sdn1725408878969", 
+                   "title":"Alert configuration", 
+                   "url":"Vantage/sdn1725408878969.md", 
+                   "children":[
+                      { 
+                         "id":"xtb1725408993090", 
+                         "title":"Create alert configuration/rule", 
+                         "url":"Vantage/xtb1725408993090.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"nbx1732650777635", 
+                   "title":"Models compare", 
+                   "url":"Vantage/nbx1732650777635.md", 
+                   "children":[
+                      { 
+                         "id":"sjz1732650818560", 
+                         "title":"Models comparison report", 
+                         "url":"Vantage/sjz1732650818560.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"vbi1732650867021", 
+             "title":"Model lifecycle", 
+             "url":"Vantage/vbi1732650867021.md", 
+             "children":[
+                { 
+                   "id":"xrx1732650913270", 
+                   "title":"Lifecycle", 
+                   "url":"Vantage/xrx1732650913270.md"
+                   }
+                , 
+                { 
+                   "id":"jpa1732650962934", 
+                   "title":"Artifacts", 
+                   "url":"Vantage/jpa1732650962934.md"
+                   }
+                , 
+                { 
+                   "id":"vbl1732651027548", 
+                   "title":"Evaluation report", 
+                   "url":"Vantage/vbl1732651027548.md"
+                   }
+                , 
+                { 
+                   "id":"rhi1732651074130", 
+                   "title":"Model monitoring", 
+                   "url":"Vantage/rhi1732651074130.md", 
+                   "children":[
+                      { 
+                         "id":"xxa1732651110275", 
+                         "title":"Feature drift", 
+                         "url":"Vantage/xxa1732651110275.md"
+                         }
+                      , 
+                      { 
+                         "id":"etr1732651148787", 
+                         "title":"Prediction drift", 
+                         "url":"Vantage/etr1732651148787.md"
+                         }
+                      , 
+                      { 
+                         "id":"jrp1732651191166", 
+                         "title":"Performance drift", 
+                         "url":"Vantage/jrp1732651191166.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vdi1732651243512", 
+                   "title":"Model partitions", 
+                   "url":"Vantage/vdi1732651243512.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"nwv1725409283494", 
+             "title":"Dataset templates", 
+             "url":"Vantage/nwv1725409283494.md", 
+             "children":[
+                { 
+                   "id":"frd1725409311264", 
+                   "title":"Create dataset template", 
+                   "url":"Vantage/frd1725409311264.md"
+                   }
+                , 
+                { 
+                   "id":"hkj1732652834413", 
+                   "title":"Datasets", 
+                   "description":"Datasets are used for training or evaluation.", 
+                   "url":"Vantage/hkj1732652834413.md", 
+                   "children":[
+                      { 
+                         "id":"xfu1732652871944", 
+                         "title":"Create dataset", 
+                         "url":"Vantage/xfu1732652871944.md"
+                         }
+                      , 
+                      { 
+                         "id":"lak1732652726174", 
+                         "title":"Job", 
+                         "description":"ModelOps dataset job template.", 
+                         "url":"Vantage/lak1732652726174.md"
+                         }
+                      , 
+                      { 
+                         "id":"aql1732653182894", 
+                         "title":"Dataset details", 
+                         "url":"Vantage/aql1732653182894.md", 
+                         "children":[
+                            { 
+                               "id":"dni1732653221914", 
+                               "title":"Details", 
+                               "description":"ModelOps dataset details.", 
+                               "url":"Vantage/dni1732653221914.md"
+                               }
+                            , 
+                            { 
+                               "id":"xeb1732653278990", 
+                               "title":"Activity", 
+                               "url":"Vantage/xeb1732653278990.md", 
+                               "children":[
+                                  { 
+                                     "id":"hsb1732653311789", 
+                                     "title":"Statistics", 
+                                     "url":"Vantage/hsb1732653311789.md"
+                                     }
+
+                                  ]
+
+                               }
+
+                            ]
+
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"dqr1725409439891", 
+             "title":"Deployments", 
+             "url":"Vantage/dqr1725409439891.md", 
+             "children":[
+                { 
+                   "id":"qpb1732653357149", 
+                   "title":"Deployment details", 
+                   "url":"Vantage/qpb1732653357149.md", 
+                   "children":[
+                      { 
+                         "id":"ujq1732653385548", 
+                         "title":"Properties", 
+                         "url":"Vantage/ujq1732653385548.md"
+                         }
+                      , 
+                      { 
+                         "id":"nvo1732653410921", 
+                         "title":"Jobs", 
+                         "description":"ModleOps deployment job details.", 
+                         "url":"Vantage/nvo1732653410921.md"
+                         }
+                      , 
+                      { 
+                         "id":"bri1732653485626", 
+                         "title":"Testing (Docker RESTful Deployments)", 
+                         "url":"Vantage/bri1732653485626.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jfa1725409457472", 
+             "title":"Jobs", 
+             "url":"Vantage/jfa1725409457472.md", 
+             "children":[
+                { 
+                   "id":"qmn1732653540220", 
+                   "title":"View job details", 
+                   "url":"Vantage/qmn1732653540220.md"
+                   }
+                , 
+                { 
+                   "id":"tgu1732653570157", 
+                   "title":"Job events", 
+                   "url":"Vantage/tgu1732653570157.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rtz1725409474295", 
+             "title":"Alerts", 
+             "url":"Vantage/rtz1725409474295.md", 
+             "children":[
+                { 
+                   "id":"can1732653630612", 
+                   "title":"Alert details", 
+                   "url":"Vantage/can1732653630612.md", 
+                   "children":[
+                      { 
+                         "id":"hdx1732656986435", 
+                         "title":"Alerts", 
+                         "url":"Vantage/hdx1732656986435.md"
+                         }
+                      , 
+                      { 
+                         "id":"uro1732657007321", 
+                         "title":"Silences", 
+                         "url":"Vantage/uro1732657007321.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"psi1732657063130", 
+             "title":"Feature engineering", 
+             "url":"Vantage/psi1732657063130.md", 
+             "children":[
+                { 
+                   "id":"xgm1732657104092", 
+                   "title":"Create feature engineering task", 
+                   "url":"Vantage/xgm1732657104092.md"
+                   }
+                , 
+                { 
+                   "id":"hkt1732657162141", 
+                   "title":"Run feature engineering task", 
+                   "description":"View a task's running progress.", 
+                   "url":"Vantage/hkt1732657162141.md"
+                   }
+                , 
+                { 
+                   "id":"kpk1732657235913", 
+                   "title":"Deploy feature engineering task", 
+                   "url":"Vantage/kpk1732657235913.md"
+                   }
+                , 
+                { 
+                   "id":"xli1732657281828", 
+                   "title":"Feature engineering job task", 
+                   "url":"Vantage/xli1732657281828.md"
+                   }
+                , 
+                { 
+                   "id":"zyw1732657344552", 
+                   "title":"Feature engineering details", 
+                   "url":"Vantage/zyw1732657344552.md", 
+                   "children":[
+                      { 
+                         "id":"lok1732657374725", 
+                         "title":"Lifecycle", 
+                         "description":"Feature engineering lifecycle details.", 
+                         "url":"Vantage/lok1732657374725.md"
+                         }
+                      , 
+                      { 
+                         "id":"bix1732657425434", 
+                         "title":"Artifacts", 
+                         "url":"Vantage/bix1732657425434.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"tvn1694118411267", 
+       "title":"Data migration", 
+       "url":"Vantage/tvn1694118411267.md"
+       }
+    , 
+    { 
        "id":"qpv1707514841101", 
        "title":"User defined functions", 
        "description":"Connect to a third-party application for security.", 
@@ -1014,9 +1871,22 @@
              "description":"Enable SAS on VantageCloud Lake.", 
              "url":"Vantage/ose1712360610524.md"
              }
+          , 
+          { 
+             "id":"ijt1712360637589", 
+             "title":"Thales", 
+             "description":"Enable Thales on VantageCloud Lake", 
+             "url":"Vantage/ijt1712360637589.md"
+             }
 
           ]
 
+       }
+    , 
+    { 
+       "id":"pau1694118340856", 
+       "title":"Notifications", 
+       "url":"Vantage/pau1694118340856.md"
        }
     , 
     { 
@@ -1030,6 +1900,12 @@
              "title":"General settings", 
              "description":"Set your user preferences.", 
              "url":"Vantage/ohx1694115234984.md"
+             }
+          , 
+          { 
+             "id":"bus1694115262415", 
+             "title":"Reset your password", 
+             "url":"Vantage/bus1694115262415.md"
              }
           , 
           { 
