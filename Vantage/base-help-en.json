@@ -186,6 +186,7 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"Add an identity provider", 
+                   "description":"Supported identity provider types.", 
                    "icon":"counter_1", 
                    "url":"Vantage/whf1680184025148.md", 
                    "children":[
@@ -442,6 +443,7 @@
                                   { 
                                      "id":"bbw1687364943833", 
                                      "title":"Set up authorization", 
+                                     "description":"Authorize source and target data transfers.", 
                                      "url":"Vantage/bbw1687364943833.md"
                                      }
                                   , 
@@ -997,6 +999,7 @@
     { 
        "id":"qya1694122121061", 
        "title":"ModelOps", 
+       "description":"Import, define, train, and deploy models.", 
        "url":"Vantage/qya1694122121061.md", 
        "children":[
           { 
