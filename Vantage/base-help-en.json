@@ -739,7 +739,7 @@
                       { 
                          "id":"fwh1695165071175", 
                          "title":"Protect a restore point", 
-                         "description":"Protect a saved backup job", 
+                         "description":"Protect a saved backup job.", 
                          "url":"Vantage/fwh1695165071175.md"
                          }
                       , 
@@ -748,6 +748,21 @@
                          "title":"Restore data (AWS and Azure only)", 
                          "description":"Restore data from a restore point.", 
                          "url":"Vantage/kqr1640280954140.md"
+                         }
+                      , 
+                      { 
+                         "id":"qkl1744735483272", 
+                         "title":"Restore job settings", 
+                         "url":"Vantage/qkl1744735483272.md", 
+                         "children":[
+                            { 
+                               "id":"csm1744735504461", 
+                               "title":"Run as copy", 
+                               "url":"Vantage/csm1744735504461.md"
+                               }
+
+                            ]
+
                          }
                       , 
                       { 
@@ -1367,7 +1382,7 @@
           , 
           { 
              "id":"bvr1694122081407", 
-             "title":"Dashboard", 
+             "title":"ModelOps Dashboard", 
              "description":"Access projects to work with models.", 
              "url":"Vantage/bvr1694122081407.md", 
              "children":[
@@ -1404,13 +1419,13 @@
           , 
           { 
              "id":"lja1725389137828", 
-             "title":"Settings", 
+             "title":"ModelOps Project Settings", 
              "description":"Check project connection health and set notifications", 
              "url":"Vantage/lja1725389137828.md", 
              "children":[
                 { 
                    "id":"wkm1725389190945", 
-                   "title":"Dataset Connections", 
+                   "title":"Dataset connections", 
                    "description":"Control data used for dataset templates and training models", 
                    "url":"Vantage/wkm1725389190945.md", 
                    "children":[
@@ -1454,7 +1469,7 @@
              "children":[
                 { 
                    "id":"lvk1725408215354", 
-                   "title":"Models", 
+                   "title":"Working with models", 
                    "url":"Vantage/lvk1725408215354.md", 
                    "children":[
                       { 
@@ -1526,7 +1541,7 @@
                 , 
                 { 
                    "id":"kll1732650698482", 
-                   "title":"Retire", 
+                   "title":"Retire model", 
                    "url":"Vantage/kll1732650698482.md"
                    }
                 , 
