@@ -211,14 +211,23 @@
                    "title":"Create realms", 
                    "description":"Authenticate users and admins by using realms.", 
                    "icon":"counter_2", 
-                   "url":"Vantage/ruf1680184116601.md"
-                   }
-                , 
-                { 
-                   "id":"jbj1680184191443", 
-                   "title":"Associate realms with environments", 
-                   "icon":"counter_3", 
-                   "url":"Vantage/jbj1680184191443.md"
+                   "url":"Vantage/ruf1680184116601.md", 
+                   "children":[
+                      { 
+                         "id":"jbj1680184191443", 
+                         "title":"Associate realms with environments", 
+                         "icon":"counter_3", 
+                         "url":"Vantage/jbj1680184191443.md"
+                         }
+                      , 
+                      { 
+                         "id":"nfu1744756750773", 
+                         "title":"Associate realms with organization admins", 
+                         "url":"Vantage/nfu1744756750773.md"
+                         }
+
+                      ]
+
                    }
                 , 
                 { 
@@ -226,12 +235,6 @@
                    "title":"Single sign-on FAQ", 
                    "description":"Find answers to common SSO questions.", 
                    "url":"Vantage/qma1680184498880.md"
-                   }
-                , 
-                { 
-                   "id":"nfu1744756750773", 
-                   "title":"Associate realms with an org admin", 
-                   "url":"Vantage/nfu1744756750773.md"
                    }
 
                 ]
