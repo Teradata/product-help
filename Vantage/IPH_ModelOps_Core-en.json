@@ -1,6 +1,7 @@
 {  "items":{ 
     "id":"qya1694122121061", 
     "title":"ModelOps", 
+    "description":"Import, define, train, and deploy models.", 
     "url":"Vantage/qya1694122121061.md", 
     "children":[
        { 
@@ -12,9 +13,33 @@
        , 
        { 
           "id":"bvr1694122081407", 
-          "title":"Dashboard", 
+          "title":"ModelOps Dashboard", 
           "description":"Access projects to work with models.", 
-          "url":"Vantage/bvr1694122081407.md"
+          "url":"Vantage/bvr1694122081407.md", 
+          "children":[
+             { 
+                "id":"vtz1725408102228", 
+                "title":"Create projects", 
+                "description":"Create projects for your models.", 
+                "url":"Vantage/vtz1725408102228.md"
+                }
+             , 
+             { 
+                "id":"wlq1732650137676", 
+                "title":"Git details", 
+                "description":"View Git pull history information.", 
+                "url":"Vantage/wlq1732650137676.md"
+                }
+             , 
+             { 
+                "id":"xfm1725407885906", 
+                "title":"Session details", 
+                "description":"Use session details to configure tmo CLI.", 
+                "url":"Vantage/xfm1725407885906.md"
+                }
+
+             ]
+
           }
        , 
        { 
@@ -25,50 +50,21 @@
           }
        , 
        { 
-          "id":"xfm1725407885906", 
-          "title":"Session details", 
-          "description":"Use session details to configure tmo CLI.", 
-          "url":"Vantage/xfm1725407885906.md"
-          }
-       , 
-       { 
-          "id":"rsm1725408063081", 
-          "title":"Projects", 
-          "description":"Use projects to train, evaluate, and deploy models", 
-          "url":"Vantage/rsm1725408063081.md", 
-          "children":[
-             { 
-                "id":"vtz1725408102228", 
-                "title":"Create projects", 
-                "url":"Vantage/vtz1725408102228.md"
-                }
-             , 
-             { 
-                "id":"wlq1732650137676", 
-                "title":"Git details", 
-                "description":"View Git pull history information.", 
-                "url":"Vantage/wlq1732650137676.md"
-                }
-
-             ]
-
-          }
-       , 
-       { 
           "id":"lja1725389137828", 
-          "title":"Project Settings", 
+          "title":"ModelOps Project Settings", 
           "description":"Check project connection health and set notifications", 
           "url":"Vantage/lja1725389137828.md", 
           "children":[
              { 
                 "id":"wkm1725389190945", 
-                "title":"Dataset Connections", 
+                "title":"Dataset connections", 
                 "description":"Control data used for dataset templates and training models", 
                 "url":"Vantage/wkm1725389190945.md", 
                 "children":[
                    { 
                       "id":"vpe1725389258480", 
                       "title":"Add dataset connection", 
+                      "description":"Create a connection for models", 
                       "url":"Vantage/vpe1725389258480.md"
                       }
                    , 
@@ -92,16 +88,8 @@
              { 
                 "id":"kbm1725407652402", 
                 "title":"Services", 
-                "url":"Vantage/kbm1725407652402.md", 
-                "children":[
-                   { 
-                      "id":"cun1725407710390", 
-                      "title":"Agent logs", 
-                      "url":"Vantage/cun1725407710390.md"
-                      }
-
-                   ]
-
+                "description":"Organization admins can view logs for supported services.", 
+                "url":"Vantage/kbm1725407652402.md"
                 }
 
              ]
@@ -111,11 +99,13 @@
        { 
           "id":"fqd1725408187193", 
           "title":"Models", 
+          "description":"Complete steps to deploy and monitor a model.", 
           "url":"Vantage/fqd1725408187193.md", 
           "children":[
              { 
                 "id":"lvk1725408215354", 
-                "title":"Models", 
+                "title":"Working with models", 
+                "description":"High-level view of models in your environment.", 
                 "url":"Vantage/lvk1725408215354.md", 
                 "children":[
                    { 
@@ -143,6 +133,7 @@
              { 
                 "id":"tuy1725408308401", 
                 "title":"Model Details", 
+                "description":"View and change model information.", 
                 "url":"Vantage/tuy1725408308401.md"
                 }
 
@@ -152,55 +143,63 @@
        , 
        { 
           "id":"qdk1725408417926", 
-          "title":"Model Versions", 
+          "title":"Model versions", 
+          "description":"Initiate lifecycle tasks, compare models, view artifacts", 
           "url":"Vantage/qdk1725408417926.md", 
           "children":[
              { 
+                "id":"wnt1743340516346", 
+                "title":"Import model", 
+                "description":"Options to import models listed here", 
+                "url":"Vantage/wnt1743340516346.md"
+                }
+             , 
+             { 
                 "id":"etl1725408512818", 
                 "title":"Train model", 
+                "description":"Set up properties to train a model.", 
                 "url":"Vantage/etl1725408512818.md"
                 }
              , 
              { 
                 "id":"wzw1732650597340", 
                 "title":"Evaluate model", 
+                "description":"Evaluate trained model using dataset and template.", 
                 "url":"Vantage/wzw1732650597340.md"
                 }
              , 
              { 
                 "id":"zum1732650629250", 
                 "title":"Deploy model", 
+                "description":"Deploy model to production.", 
                 "url":"Vantage/zum1732650629250.md"
                 }
              , 
              { 
                 "id":"yfx1732650662039", 
-                "title":"Job", 
+                "title":"Jobs", 
+                "description":"See the model lifecycle jobs.", 
                 "url":"Vantage/yfx1732650662039.md"
                 }
              , 
              { 
                 "id":"kll1732650698482", 
-                "title":"Retire", 
+                "title":"Retire model", 
+                "description":"Remove model versions from production.", 
                 "url":"Vantage/kll1732650698482.md"
-                }
-             , 
-             { 
-                "id":"xhw1725408779878", 
-                "title":"Model versions", 
-                "url":"Vantage/xhw1725408779878.md"
                 }
              , 
              { 
                 "id":"xtq1725408819410", 
                 "title":"Commit history", 
-                "description":"View version details impacted by a commit.", 
+                "description":"View timeline for the model's code changes.", 
                 "url":"Vantage/xtq1725408819410.md"
                 }
              , 
              { 
                 "id":"sdn1725408878969", 
                 "title":"Alert configuration", 
+                "description":"Alerts are generated using threshold values.", 
                 "url":"Vantage/sdn1725408878969.md", 
                 "children":[
                    { 
@@ -216,6 +215,7 @@
              { 
                 "id":"nbx1732650777635", 
                 "title":"Models compare", 
+                "description":"See benefits of running the model comparison report.", 
                 "url":"Vantage/nbx1732650777635.md", 
                 "children":[
                    { 
@@ -235,29 +235,34 @@
        { 
           "id":"vbi1732650867021", 
           "title":"Model lifecycle", 
+          "description":"Machine learning models involve an iterative process", 
           "url":"Vantage/vbi1732650867021.md", 
           "children":[
              { 
                 "id":"xrx1732650913270", 
                 "title":"Lifecycle", 
+                "description":"Details of the model lifecycle.", 
                 "url":"Vantage/xrx1732650913270.md"
                 }
              , 
              { 
                 "id":"jpa1732650962934", 
                 "title":"Artifacts", 
+                "description":"Use artifacts to study training and evaluation processes.", 
                 "url":"Vantage/jpa1732650962934.md"
                 }
              , 
              { 
                 "id":"vbl1732651027548", 
                 "title":"Evaluation report", 
+                "description":"Evaluate a model to mark a champion model.", 
                 "url":"Vantage/vbl1732651027548.md"
                 }
              , 
              { 
                 "id":"rhi1732651074130", 
                 "title":"Model monitoring", 
+                "description":"Model drift is important to model monitoring.", 
                 "url":"Vantage/rhi1732651074130.md", 
                 "children":[
                    { 
@@ -285,6 +290,7 @@
              { 
                 "id":"vdi1732651243512", 
                 "title":"Model partitions", 
+                "description":"Model versions can use specific data partitions.", 
                 "url":"Vantage/vdi1732651243512.md"
                 }
 
@@ -295,12 +301,24 @@
        { 
           "id":"nwv1725409283494", 
           "title":"Dataset templates", 
+          "description":"These templates provide foundation to create datasets.", 
           "url":"Vantage/nwv1725409283494.md", 
           "children":[
              { 
                 "id":"frd1725409311264", 
                 "title":"Create dataset template", 
-                "url":"Vantage/frd1725409311264.md"
+                "description":"Set properties including a default dataset connection.", 
+                "url":"Vantage/frd1725409311264.md", 
+                "children":[
+                   { 
+                      "id":"fby1743624401813", 
+                      "title":"Compute statistics", 
+                      "description":"Compute feature or target statistics for dataset template.", 
+                      "url":"Vantage/fby1743624401813.md"
+                      }
+
+                   ]
+
                 }
              , 
              { 
@@ -364,11 +382,13 @@
        { 
           "id":"dqr1725409439891", 
           "title":"Deployments", 
+          "description":"See deployment types supported by ModelOps.", 
           "url":"Vantage/dqr1725409439891.md", 
           "children":[
              { 
                 "id":"qpb1732653357149", 
                 "title":"Deployment details", 
+                "description":"Deployment details differ by type.", 
                 "url":"Vantage/qpb1732653357149.md", 
                 "children":[
                    { 
@@ -401,17 +421,20 @@
        { 
           "id":"jfa1725409457472", 
           "title":"Jobs", 
+          "description":"See model lifecycle and feature engineering jobs.", 
           "url":"Vantage/jfa1725409457472.md", 
           "children":[
              { 
                 "id":"qmn1732653540220", 
                 "title":"View job details", 
+                "description":"View errors, warnings, lifecycle events.", 
                 "url":"Vantage/qmn1732653540220.md"
                 }
              , 
              { 
                 "id":"tgu1732653570157", 
                 "title":"Job events", 
+                "description":"View job events by type for additional details.", 
                 "url":"Vantage/tgu1732653570157.md"
                 }
 
@@ -422,11 +445,13 @@
        { 
           "id":"rtz1725409474295", 
           "title":"Alerts", 
+          "description":"View alerts, monitor model peformance against key metrics.", 
           "url":"Vantage/rtz1725409474295.md", 
           "children":[
              { 
                 "id":"can1732653630612", 
                 "title":"Alert details", 
+                "description":"Alert instances include metric descriptions and expressions.", 
                 "url":"Vantage/can1732653630612.md", 
                 "children":[
                    { 
@@ -452,11 +477,13 @@
        { 
           "id":"psi1732657063130", 
           "title":"Feature engineering", 
+          "description":"Complete data preparation tasks to run a model.", 
           "url":"Vantage/psi1732657063130.md", 
           "children":[
              { 
                 "id":"xgm1732657104092", 
                 "title":"Create feature engineering task", 
+                "description":"Create feature engineering task for your model.", 
                 "url":"Vantage/xgm1732657104092.md"
                 }
              , 
@@ -470,18 +497,21 @@
              { 
                 "id":"kpk1732657235913", 
                 "title":"Deploy feature engineering task", 
+                "description":"Configure schedule details, deploy a task.", 
                 "url":"Vantage/kpk1732657235913.md"
                 }
              , 
              { 
                 "id":"xli1732657281828", 
-                "title":"Feature engineering job task", 
+                "title":"Jobs", 
+                "description":"Read about and view feature engineering jobs.", 
                 "url":"Vantage/xli1732657281828.md"
                 }
              , 
              { 
                 "id":"zyw1732657344552", 
                 "title":"Feature engineering details", 
+                "description":"Details include events, artifacts generated by a task.", 
                 "url":"Vantage/zyw1732657344552.md", 
                 "children":[
                    { 
@@ -494,6 +524,7 @@
                    { 
                       "id":"bix1732657425434", 
                       "title":"Artifacts", 
+                      "description":"View files generated by feature engineering tasks.", 
                       "url":"Vantage/bix1732657425434.md"
                       }
 
