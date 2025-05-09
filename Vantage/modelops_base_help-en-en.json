@@ -1,6 +1,4 @@
-{
-  "items": [
-    {
+{  "items":{ 
     "id":"qya1694122121061", 
     "title":"ModelOps", 
     "description":"Import, define, train, and deploy models.", 
