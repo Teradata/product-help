@@ -180,6 +180,14 @@
              }
           , 
           { 
+             "id":"drx1745278688634", 
+             "title":"ModelOps bereitstellen und überwachen", 
+             "description":"KI- und ML-Modelle verwalten, um Ihre Anwendungsfälle zu operationalisieren.", 
+             "icon":"product_modelops", 
+             "url":"VantageCloud_Learn/de/drx1745278688634.md"
+             }
+          , 
+          { 
              "id":"uvi1714845877298", 
              "title":"Ressourcenverbrauch überwachen", 
              "description":"Überprüfen Sie die Speicher- und Rechenressourcen der Umgebung und legen Sie Warnungen fest.", 
@@ -201,7 +209,7 @@
           { 
              "id":"bnn1707271398245", 
              "title":"Neuheiten", 
-             "description":"Erfahren Sie mehr über neue Funktionen und aktuelle Änderungen.", 
+             "description":"Erfahren Sie mehr über neue Merkmale und aktuelle Änderungen.", 
              "icon":"new_releases", 
              "url":"VantageCloud_Learn/de/bnn1707271398245.md", 
              "childrenUrl":"https://docs.teradata.com/access/sources/dita/topic?dita:mapPath=phg1621910019905.ditamap&dita:ditavalPath=pny1626732985837.ditaval&dita:topicPath=lpz1632246643646.dita"

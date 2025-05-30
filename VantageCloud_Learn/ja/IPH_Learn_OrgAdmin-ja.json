@@ -35,8 +35,8 @@
        "children":[
           { 
              "id":"lam1707187864117", 
-             "title":"最初のクエリを実行する", 
-             "description":"エディタを使用して、最初のVantageクエリを実行します。", 
+             "title":"最初のクエリーを実行する", 
+             "description":"エディタを使用して、最初のVantageクエリーを実行します。", 
              "icon":"script_sql_outlined;covalent", 
              "url":"VantageCloud_Learn/ja/lam1707187864117.md", 
              "childrenUrl":"ahj1695153106508"
@@ -180,9 +180,17 @@
              }
           , 
           { 
+             "id":"drx1745278688634", 
+             "title":"ModelOpsをデプロイして監視する", 
+             "description":"AIモデルとMLモデルを管理してユース ケースを運用可能にします。", 
+             "icon":"product_modelops", 
+             "url":"VantageCloud_Learn/ja/drx1745278688634.md"
+             }
+          , 
+          { 
              "id":"uvi1714845877298", 
              "title":"リソースの消費を監視する", 
-             "description":"環境のストレージとコンピューティング リソースを確認し、アラートを設定します。", 
+             "description":"環境のストレージとコンピュート リソースを確認し、アラートを設定します。", 
              "icon":"show_chart", 
              "url":"VantageCloud_Learn/ja/uvi1714845877298.md", 
              "childrenUrl":"onj1682104977691"

@@ -180,6 +180,14 @@
              }
           , 
           { 
+             "id":"drx1745278688634", 
+             "title":"Desplegar y supervisar ModelOps", 
+             "description":"Gestione modelos de IA y aprendizaje automático para operacionalizar sus casos de uso.", 
+             "icon":"product_modelops", 
+             "url":"VantageCloud_Learn/es/drx1745278688634.md"
+             }
+          , 
+          { 
              "id":"uvi1714845877298", 
              "title":"Supervisar el consumo de recursos", 
              "description":"Revise el almacenamiento del entorno y los recursos computacionales, y establezca alertas.", 
@@ -201,7 +209,7 @@
           { 
              "id":"bnn1707271398245", 
              "title":"Novedades", 
-             "description":"Obtenga información sobre las nuevas funciones y los cambios más recientes.", 
+             "description":"Obtenga información sobre las nuevas características y los cambios más recientes.", 
              "icon":"new_releases", 
              "url":"VantageCloud_Learn/es/bnn1707271398245.md", 
              "childrenUrl":"https://docs.teradata.com/access/sources/dita/topic?dita:mapPath=phg1621910019905.ditamap&dita:ditavalPath=pny1626732985837.ditaval&dita:topicPath=lpz1632246643646.dita"
