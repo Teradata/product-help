@@ -183,7 +183,7 @@
              "id":"drx1745278688634", 
              "title":"ModelOpsをデプロイして監視する", 
              "description":"AIモデルとMLモデルを管理してユース ケースを運用可能にします。", 
-             "icon":"product_modelops", 
+             "icon":"product_modelops;covalent", 
              "url":"VantageCloud_Learn/ja/drx1745278688634.md"
              }
           , 
