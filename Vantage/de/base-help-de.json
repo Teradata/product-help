@@ -34,12 +34,11 @@
                    }
                 , 
                 { 
-                   "id":"ahx1707271934625", 
-                   "title":"Technische Dokumentation", 
-                   "description":"Schauen Sie sich die VantageCloud Lake-Referenzhandbücher, Kurzanleitungen und Tutorials an.", 
+                   "id":"nhn1706907203900", 
+                   "title":"Dokumentation", 
+                   "description":"Zeigen Sie die VantageCloud Lake-Dokumentation an.", 
                    "icon":"library_books", 
-                   "url":"Vantage/de/ahx1707271934625.md", 
-                   "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
+                   "url":"Vantage/de/nhn1706907203900.md"
                    }
 
                 ]
@@ -187,6 +186,7 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"Identitätsanbieter hinzufügen", 
+                   "description":"Unterstützte Identitätsanbietertypen.", 
                    "icon":"counter_1", 
                    "url":"Vantage/de/whf1680184025148.md", 
                    "children":[
@@ -209,6 +209,7 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"Bereiche erstellen", 
+                   "description":"Benutzer und Administratoren mithilfe von Bereichen authentifizieren.", 
                    "icon":"counter_2", 
                    "url":"Vantage/de/ruf1680184116601.md"
                    }
@@ -218,6 +219,13 @@
                    "title":"Bereiche mit Umgebungen verknüpfen", 
                    "icon":"counter_3", 
                    "url":"Vantage/de/jbj1680184191443.md"
+                   }
+                , 
+                { 
+                   "id":"nfu1744756750773", 
+                   "title":"Bereiche mit Organisationsadministratoren verknüpfen", 
+                   "icon":"counter_4", 
+                   "url":"Vantage/de/nfu1744756750773.md"
                    }
                 , 
                 { 
@@ -252,7 +260,16 @@
              "id":"qiv1640281527006", 
              "title":"Eine Umgebung erstellen", 
              "description":"Erstellen Sie eine Umgebung für Ihre Organisation.", 
-             "url":"Vantage/de/qiv1640281527006.md"
+             "url":"Vantage/de/qiv1640281527006.md", 
+             "children":[
+                { 
+                   "id":"cql1739481888655", 
+                   "title":"CMEK-Schlüsselressourcenanforderungen", 
+                   "url":"Vantage/de/cql1739481888655.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -314,7 +331,7 @@
                       , 
                       { 
                          "id":"wdz1640281743091", 
-                         "title":"Compute group access", 
+                         "title":"Zugriff auf Computing-Gruppe", 
                          "description":"Fügen Sie Benutzer zu einer Computing-Gruppe hinzu.", 
                          "url":"Vantage/de/wdz1640281743091.md"
                          }
@@ -411,8 +428,8 @@
           , 
           { 
              "id":"jwm1694121113608", 
-             "title":"Laden von Daten", 
-             "description":"Laden oder greifen Sie auf Daten zu.", 
+             "title":"Daten verwalten", 
+             "description":"Laden, verschieben, kopieren und schützen Sie Daten.", 
              "url":"Vantage/de/jwm1694121113608.md", 
              "children":[
                 { 
@@ -443,6 +460,7 @@
                                   { 
                                      "id":"bbw1687364943833", 
                                      "title":"Autorisierung einrichten", 
+                                     "description":"Autorisieren Sie die Übertragung von Quell- und Zieldaten.", 
                                      "url":"Vantage/de/bbw1687364943833.md"
                                      }
                                   , 
@@ -491,7 +509,7 @@
                       , 
                       { 
                          "id":"lzm1640282103875", 
-                         "title":"Management", 
+                         "title":"Verwaltung", 
                          "description":"QueryGrid-Konfigurationsaufgaben.", 
                          "url":"Vantage/de/lzm1640282103875.md", 
                          "children":[
@@ -603,81 +621,96 @@
                       ]
 
                    }
-
-                ]
-
-             }
-          , 
-          { 
-             "id":"jrq1640280690304", 
-             "title":"Datensicherung", 
-             "description":"Schützen Sie Daten mit Sicherungs- und Wiederherstellungsoptionen.", 
-             "url":"Vantage/de/jrq1640280690304.md", 
-             "children":[
-                { 
-                   "id":"qmb1659046927155", 
-                   "title":"Sicherungsplan erstellen", 
-                   "description":"Erstellen oder Ändern eines Sicherungsplans", 
-                   "url":"Vantage/de/qmb1659046927155.md"
-                   }
                 , 
                 { 
-                   "id":"tyu1695326821997", 
-                   "title":"Manuelles Starten eines Sicherungsauftrags", 
-                   "description":"Starten eines Sicherungsauftrags unabhängig von geplanten Aufträgen", 
-                   "url":"Vantage/de/tyu1695326821997.md"
-                   }
-                , 
-                { 
-                   "id":"fwh1695165071175", 
-                   "title":"Schützen eines Wiederherstellungspunkts", 
-                   "description":"Schützen eines gespeicherten Sicherungsauftrags", 
-                   "url":"Vantage/de/fwh1695165071175.md"
-                   }
-                , 
-                { 
-                   "id":"kqr1640280954140", 
-                   "title":"Daten wiederherstellen (nur für AWS und Azure)", 
-                   "description":"Daten aus einem Wiederherstellungspunkt wiederherstellen.", 
-                   "url":"Vantage/de/kqr1640280954140.md"
-                   }
-                , 
-                { 
-                   "id":"sus1659047241965", 
-                   "title":"Anzeigen der Historie des Sicherungsplans", 
-                   "description":"Anzeigen vergangener und aktueller Sicherungs- und Wiederherstellungsaufträge", 
-                   "url":"Vantage/de/sus1659047241965.md"
-                   }
-                , 
-                { 
-                   "id":"nni1694461234790", 
-                   "title":"Notfallwiederherstellung (nur für AWS)", 
-                   "description":"Ihre Daten nach Ausfällen wiederherstellen.", 
-                   "url":"Vantage/de/nni1694461234790.md", 
+                   "id":"jrq1640280690304", 
+                   "title":"Datensicherung", 
+                   "description":"Schützen Sie Daten mit Sicherungs- und Wiederherstellungsoptionen.", 
+                   "url":"Vantage/de/jrq1640280690304.md", 
                    "children":[
                       { 
-                         "id":"uux1694461279489", 
-                         "title":"Einen Notfallwiederherstellungsplan erstellen", 
-                         "description":"Einen Wiederherstellungsplan für die vollständige Umgebung erstellen.", 
-                         "url":"Vantage/de/uux1694461279489.md"
+                         "id":"qmb1659046927155", 
+                         "title":"Sicherungsplan erstellen", 
+                         "description":"Erstellen oder Ändern eines Sicherungsplans", 
+                         "url":"Vantage/de/qmb1659046927155.md"
                          }
                       , 
                       { 
-                         "id":"cqv1694469814376", 
-                         "title":"Einen Notfallwiederherstellungsplan verwalten", 
-                         "description":"Daten in einem Wiederherstellungsplan bearbeiten, testen und wiederherstellen.", 
-                         "url":"Vantage/de/cqv1694469814376.md"
+                         "id":"tyu1695326821997", 
+                         "title":"Manuelles Starten eines Sicherungsauftrags", 
+                         "description":"Starten eines Sicherungsauftrags unabhängig von geplanten Aufträgen", 
+                         "url":"Vantage/de/tyu1695326821997.md"
+                         }
+                      , 
+                      { 
+                         "id":"fwh1695165071175", 
+                         "title":"Schützen eines Wiederherstellungspunkts", 
+                         "description":"Einen gespeicherten Sicherungsauftrag schützen.", 
+                         "url":"Vantage/de/fwh1695165071175.md"
+                         }
+                      , 
+                      { 
+                         "id":"kqr1640280954140", 
+                         "title":"Daten wiederherstellen (nur für AWS und Azure)", 
+                         "description":"Daten aus einem Wiederherstellungspunkt wiederherstellen.", 
+                         "url":"Vantage/de/kqr1640280954140.md"
+                         }
+                      , 
+                      { 
+                         "id":"qkl1744735483272", 
+                         "title":"Einstellungen des Wiederherstellungsauftrags", 
+                         "url":"Vantage/de/qkl1744735483272.md", 
+                         "children":[
+                            { 
+                               "id":"csm1744735504461", 
+                               "title":"Als Kopie ausführen", 
+                               "url":"Vantage/de/csm1744735504461.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"sus1659047241965", 
+                         "title":"Anzeigen der Historie des Sicherungsplans", 
+                         "description":"Anzeigen vergangener und aktueller Sicherungs- und Wiederherstellungsaufträge", 
+                         "url":"Vantage/de/sus1659047241965.md"
+                         }
+                      , 
+                      { 
+                         "id":"nni1694461234790", 
+                         "title":"Notfallwiederherstellung (nur für AWS)", 
+                         "description":"Ihre Daten nach Ausfällen wiederherstellen.", 
+                         "url":"Vantage/de/nni1694461234790.md", 
+                         "children":[
+                            { 
+                               "id":"uux1694461279489", 
+                               "title":"Einen Notfallwiederherstellungsplan erstellen", 
+                               "description":"Einen Wiederherstellungsplan für die vollständige Umgebung erstellen.", 
+                               "url":"Vantage/de/uux1694461279489.md"
+                               }
+                            , 
+                            { 
+                               "id":"cqv1694469814376", 
+                               "title":"Einen Notfallwiederherstellungsplan verwalten", 
+                               "description":"Daten in einem Wiederherstellungsplan bearbeiten, testen und wiederherstellen.", 
+                               "url":"Vantage/de/cqv1694469814376.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"iom1694462056775", 
+                         "title":"Häufig gestellte Fragen zur Datensicherung", 
+                         "description":"Antworten auf häufig gestellte Fragen.", 
+                         "url":"Vantage/de/iom1694462056775.md"
                          }
 
                       ]
 
-                   }
-                , 
-                { 
-                   "id":"iom1694462056775", 
-                   "title":"Häufig gestellte Fragen zur Datensicherung", 
-                   "description":"Antworten auf häufig gestellte Fragen.", 
-                   "url":"Vantage/de/iom1694462056775.md"
                    }
 
                 ]
@@ -723,14 +756,14 @@
              "children":[
                 { 
                    "id":"qly1682524108665", 
-                   "title":"How compute resources are consumed", 
+                   "title":"Wie Computing-Ressourcen verbraucht werden", 
                    "description":"Erfahren Sie, wie der Verbrauch gemessen wird.", 
                    "url":"Vantage/de/qly1682524108665.md"
                    }
                 , 
                 { 
                    "id":"qze1682528646873", 
-                   "title":"Review compute consumption", 
+                   "title":"Computing-Verbrauch überprüfen", 
                    "description":"Zeigen Sie die verbleibenden Verbrauchseinheiten an.", 
                    "url":"Vantage/de/qze1682528646873.md"
                    }
@@ -768,7 +801,7 @@
                 , 
                 { 
                    "id":"vky1682545736669", 
-                   "title":"Review storage consumption", 
+                   "title":"Speicherverbrauch überprüfen", 
                    "description":"Zeigen Sie Block- und Objektspeicher an.", 
                    "url":"Vantage/de/vky1682545736669.md"
                    }
@@ -851,7 +884,7 @@
                 , 
                 { 
                    "id":"iql1691540875799", 
-                   "title":"Explore in-database analytics functions", 
+                   "title":"Datenbankinterne Analysefunktionen kennenlernen", 
                    "description":"Suchen Sie Funktionen und erstellen Sie Abfragen.", 
                    "url":"Vantage/de/iql1691540875799.md", 
                    "children":[
@@ -927,7 +960,7 @@
              "children":[
                 { 
                    "id":"dvp1707442265467", 
-                   "title":"Request an interface endpoint", 
+                   "title":"Schnittstellenendpunkt anfordern", 
                    "description":"Erstellen Sie eine Anfrage für einen privaten Link für die Datenkopie.", 
                    "url":"Vantage/de/dvp1707442265467.md"
                    }
@@ -945,7 +978,7 @@
                 { 
                    "id":"jbt1706483040706", 
                    "title":"Copy Manager verwalten", 
-                   "description":"Aktionen zur Verwaltung des Copy Managers", 
+                   "description":"Aktionen zur Verwaltung des Copy Managers.", 
                    "url":"Vantage/de/jbt1706483040706.md"
                    }
                 , 
@@ -996,6 +1029,538 @@
        }
     , 
     { 
+       "id":"qya1694122121061", 
+       "title":"ModelOps", 
+       "description":"Importieren, definieren, trainieren und implementieren Sie Modelle.", 
+       "url":"Vantage/de/qya1694122121061.md", 
+       "children":[
+          { 
+             "id":"xko1736182740981", 
+             "title":"ModelOps in einer aktiven Umgebung aktivieren", 
+             "description":"Richten Sie ModelOps in der VantageCloud Lake Console ein.", 
+             "url":"Vantage/de/xko1736182740981.md"
+             }
+          , 
+          { 
+             "id":"bvr1694122081407", 
+             "title":"ModelOps-Dashboard", 
+             "description":"Greifen Sie auf Projekte zu, um mit Modellen zu arbeiten.", 
+             "url":"Vantage/de/bvr1694122081407.md", 
+             "children":[
+                { 
+                   "id":"vtz1725408102228", 
+                   "title":"Projekte erstellen", 
+                   "description":"Projekte für Ihre Modelle erstellen.", 
+                   "url":"Vantage/de/vtz1725408102228.md"
+                   }
+                , 
+                { 
+                   "id":"wlq1732650137676", 
+                   "title":"Git-Details", 
+                   "description":"Zeigen Sie Informationen zum Git-Pull-Verlauf an.", 
+                   "url":"Vantage/de/wlq1732650137676.md"
+                   }
+                , 
+                { 
+                   "id":"xfm1725407885906", 
+                   "title":"Sitzungsdetails", 
+                   "description":"Verwenden Sie Sitzungsdetails, um tmo-CLI zu konfigurieren.", 
+                   "url":"Vantage/de/xfm1725407885906.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jue1725407850414", 
+             "title":"Kontoeinstellungen", 
+             "description":"ModelOps-Benutzererfahrung anpassen", 
+             "url":"Vantage/de/jue1725407850414.md"
+             }
+          , 
+          { 
+             "id":"lja1725389137828", 
+             "title":"ModelOps-Projekteinstellungen", 
+             "description":"Integrität der Projektverbindung prüfen und Benachrichtigungen einrichten", 
+             "url":"Vantage/de/lja1725389137828.md", 
+             "children":[
+                { 
+                   "id":"wkm1725389190945", 
+                   "title":"Dataset-Verbindungen", 
+                   "description":"Kontrolldaten für Dataset-Vorlagen und Trainingsmodelle", 
+                   "url":"Vantage/de/wkm1725389190945.md", 
+                   "children":[
+                      { 
+                         "id":"vpe1725389258480", 
+                         "title":"Dataset-Verbindung hinzufügen", 
+                         "description":"Eine Verbindung für Modelle erstellen", 
+                         "url":"Vantage/de/vpe1725389258480.md"
+                         }
+                      , 
+                      { 
+                         "id":"qmz1732650253991", 
+                         "title":"Überprüfungen der Integrität von Dataset-Verbindungen", 
+                         "url":"Vantage/de/qmz1732650253991.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"xnp1725389370171", 
+                   "title":"Benachrichtigungen", 
+                   "description":"Geben Sie an, wer über Warnungen und Bereitstellungen benachrichtigt werden soll.", 
+                   "url":"Vantage/de/xnp1725389370171.md"
+                   }
+                , 
+                { 
+                   "id":"kbm1725407652402", 
+                   "title":"Dienste", 
+                   "description":"Organisationsadministratoren können Protokolle für unterstützte Dienste anzeigen.", 
+                   "url":"Vantage/de/kbm1725407652402.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"fqd1725408187193", 
+             "title":"Modelle", 
+             "description":"Schritte für die Bereitstellung und Überwachung eines Modells ausführen.", 
+             "url":"Vantage/de/fqd1725408187193.md", 
+             "children":[
+                { 
+                   "id":"lvk1725408215354", 
+                   "title":"Mit Modellen arbeiten", 
+                   "description":"Vereinfachte Übersicht über die Modelle in Ihrer Umgebung.", 
+                   "url":"Vantage/de/lvk1725408215354.md", 
+                   "children":[
+                      { 
+                         "id":"akl1725408274100", 
+                         "title":"BYOM definieren", 
+                         "url":"Vantage/de/akl1725408274100.md"
+                         }
+                      , 
+                      { 
+                         "id":"nro1732650484867", 
+                         "title":"BYOM importieren", 
+                         "url":"Vantage/de/nro1732650484867.md"
+                         }
+                      , 
+                      { 
+                         "id":"jbg1732650538946", 
+                         "title":"Python/R-Modell importieren", 
+                         "url":"Vantage/de/jbg1732650538946.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"tuy1725408308401", 
+                   "title":"Modelldetails", 
+                   "description":"Modellinformationen anzeigen und ändern.", 
+                   "url":"Vantage/de/tuy1725408308401.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"qdk1725408417926", 
+             "title":"Modellversionen", 
+             "description":"Lebenszyklusaufgaben initiieren, Modelle vergleichen, Artefakte anzeigen", 
+             "url":"Vantage/de/qdk1725408417926.md", 
+             "children":[
+                { 
+                   "id":"wnt1743340516346", 
+                   "title":"Modell importieren", 
+                   "description":"Hier sind Optionen zum Importieren von Modellen aufgelistet", 
+                   "url":"Vantage/de/wnt1743340516346.md"
+                   }
+                , 
+                { 
+                   "id":"etl1725408512818", 
+                   "title":"Modell trainieren", 
+                   "description":"Eigenschaften zum Trainieren eines Modells einrichten.", 
+                   "url":"Vantage/de/etl1725408512818.md"
+                   }
+                , 
+                { 
+                   "id":"wzw1732650597340", 
+                   "title":"Modell bewerten", 
+                   "description":"Trainiertes Modell mithilfe von Dataset und Vorlage bewerten.", 
+                   "url":"Vantage/de/wzw1732650597340.md"
+                   }
+                , 
+                { 
+                   "id":"zum1732650629250", 
+                   "title":"Modell bereitstellen", 
+                   "description":"Modell in der Produktion bereitstellen.", 
+                   "url":"Vantage/de/zum1732650629250.md"
+                   }
+                , 
+                { 
+                   "id":"yfx1732650662039", 
+                   "title":"Aufträge", 
+                   "description":"Die Modelllebenszyklusaufträge anzeigen.", 
+                   "url":"Vantage/de/yfx1732650662039.md"
+                   }
+                , 
+                { 
+                   "id":"kll1732650698482", 
+                   "title":"Modell stilllegen", 
+                   "description":"Modellversionen aus der Produktion entfernen.", 
+                   "url":"Vantage/de/kll1732650698482.md"
+                   }
+                , 
+                { 
+                   "id":"xtq1725408819410", 
+                   "title":"Commit-Verlauf", 
+                   "description":"Sehen Sie sich die Zeitachse für die Code-Änderungen des Modells an.", 
+                   "url":"Vantage/de/xtq1725408819410.md"
+                   }
+                , 
+                { 
+                   "id":"sdn1725408878969", 
+                   "title":"Konfiguration der Warnungen", 
+                   "description":"Warnungen werden unter Verwendung von Schwellenwerten generiert.", 
+                   "url":"Vantage/de/sdn1725408878969.md", 
+                   "children":[
+                      { 
+                         "id":"xtb1725408993090", 
+                         "title":"Konfiguration/Regel der Warnungen erstellen", 
+                         "url":"Vantage/de/xtb1725408993090.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"nbx1732650777635", 
+                   "title":"Modellvergleich", 
+                   "description":"Die Vorteile des Ausführens des Modellvergleichsberichts ansehen.", 
+                   "url":"Vantage/de/nbx1732650777635.md", 
+                   "children":[
+                      { 
+                         "id":"sjz1732650818560", 
+                         "title":"Bericht zum Modellvergleich", 
+                         "url":"Vantage/de/sjz1732650818560.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"vbi1732650867021", 
+             "title":"Lebenszyklus des Modells", 
+             "description":"Modelle für maschinelles Lernen beinhalten einen iterativen Prozess", 
+             "url":"Vantage/de/vbi1732650867021.md", 
+             "children":[
+                { 
+                   "id":"xrx1732650913270", 
+                   "title":"Lebenszyklus", 
+                   "description":"Details des Modelllebenszyklus.", 
+                   "url":"Vantage/de/xrx1732650913270.md"
+                   }
+                , 
+                { 
+                   "id":"jpa1732650962934", 
+                   "title":"Artefakte", 
+                   "description":"Artefakte zum Untersuchen von Trainings- und Bewertungsprozessen verwenden.", 
+                   "url":"Vantage/de/jpa1732650962934.md"
+                   }
+                , 
+                { 
+                   "id":"vbl1732651027548", 
+                   "title":"Bewertungsbericht", 
+                   "description":"Ein Modell bewerten, um das beste Modell zu ermitteln.", 
+                   "url":"Vantage/de/vbl1732651027548.md"
+                   }
+                , 
+                { 
+                   "id":"rhi1732651074130", 
+                   "title":"Modellüberwachung", 
+                   "description":"Die Modellabweichung ist für die Modellüberwachung wichtig.", 
+                   "url":"Vantage/de/rhi1732651074130.md", 
+                   "children":[
+                      { 
+                         "id":"xxa1732651110275", 
+                         "title":"Merkmalsabweichung", 
+                         "url":"Vantage/de/xxa1732651110275.md"
+                         }
+                      , 
+                      { 
+                         "id":"etr1732651148787", 
+                         "title":"Prognoseabweichung", 
+                         "url":"Vantage/de/etr1732651148787.md"
+                         }
+                      , 
+                      { 
+                         "id":"jrp1732651191166", 
+                         "title":"Leistungsabweichung", 
+                         "url":"Vantage/de/jrp1732651191166.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vdi1732651243512", 
+                   "title":"Modellpartitionen", 
+                   "description":"Modellversionen können bestimmte Datenpartitionen verwenden.", 
+                   "url":"Vantage/de/vdi1732651243512.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"nwv1725409283494", 
+             "title":"Dataset-Vorlagen", 
+             "description":"Diese Vorlagen bieten die Grundlage für die Erstellung von Datasets.", 
+             "url":"Vantage/de/nwv1725409283494.md", 
+             "children":[
+                { 
+                   "id":"frd1725409311264", 
+                   "title":"Dataset-Vorlage erstellen", 
+                   "description":"Einstellungen einschließlich einer Standardverbindung für Datasets festlegen.", 
+                   "url":"Vantage/de/frd1725409311264.md"
+                   }
+                , 
+                { 
+                   "id":"hkj1732652834413", 
+                   "title":"Datasets", 
+                   "description":"Datasets werden zum Trainieren oder Bewerten verwendet.", 
+                   "url":"Vantage/de/hkj1732652834413.md", 
+                   "children":[
+                      { 
+                         "id":"xfu1732652871944", 
+                         "title":"Dataset erstellen", 
+                         "url":"Vantage/de/xfu1732652871944.md"
+                         }
+                      , 
+                      { 
+                         "id":"lak1732652726174", 
+                         "title":"Auftrag", 
+                         "description":"Auftragsvorlage für ModelOps-Dataset.", 
+                         "url":"Vantage/de/lak1732652726174.md"
+                         }
+                      , 
+                      { 
+                         "id":"aql1732653182894", 
+                         "title":"Dataset-Details", 
+                         "url":"Vantage/de/aql1732653182894.md", 
+                         "children":[
+                            { 
+                               "id":"dni1732653221914", 
+                               "title":"Details", 
+                               "description":"Details zum ModelOps-Dataset.", 
+                               "url":"Vantage/de/dni1732653221914.md"
+                               }
+                            , 
+                            { 
+                               "id":"xeb1732653278990", 
+                               "title":"Aktivität", 
+                               "url":"Vantage/de/xeb1732653278990.md", 
+                               "children":[
+                                  { 
+                                     "id":"hsb1732653311789", 
+                                     "title":"Statistik", 
+                                     "url":"Vantage/de/hsb1732653311789.md"
+                                     }
+
+                                  ]
+
+                               }
+
+                            ]
+
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"dqr1725409439891", 
+             "title":"Bereitstellungen", 
+             "description":"Die von ModelOps unterstützen Bereitstellungstypen ansehen.", 
+             "url":"Vantage/de/dqr1725409439891.md", 
+             "children":[
+                { 
+                   "id":"qpb1732653357149", 
+                   "title":"Bereitstellungsdetails", 
+                   "description":"Die Bereitstellungsdetails unterscheiden sich je nach Typ.", 
+                   "url":"Vantage/de/qpb1732653357149.md", 
+                   "children":[
+                      { 
+                         "id":"ujq1732653385548", 
+                         "title":"Eigenschaften", 
+                         "url":"Vantage/de/ujq1732653385548.md"
+                         }
+                      , 
+                      { 
+                         "id":"nvo1732653410921", 
+                         "title":"Aufträge", 
+                         "description":"Auftragsvorlage für ModleOps-Bereitstellung.", 
+                         "url":"Vantage/de/nvo1732653410921.md"
+                         }
+                      , 
+                      { 
+                         "id":"bri1732653485626", 
+                         "title":"Testen (Docker RESTful-Bereitstellungen)", 
+                         "url":"Vantage/de/bri1732653485626.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"jfa1725409457472", 
+             "title":"Aufträge", 
+             "description":"Modelllebenszyklus und Aufträge für Merkmalsengineering ansehen.", 
+             "url":"Vantage/de/jfa1725409457472.md", 
+             "children":[
+                { 
+                   "id":"qmn1732653540220", 
+                   "title":"Auftragsdetails anzeigen", 
+                   "description":"Fehler, Warnungen und Lebenszyklusereignisse anzeigen.", 
+                   "url":"Vantage/de/qmn1732653540220.md"
+                   }
+                , 
+                { 
+                   "id":"tgu1732653570157", 
+                   "title":"Auftragsereignisse", 
+                   "description":"Für weitere Details die Auftragsereignisse nach Typ anzeigen.", 
+                   "url":"Vantage/de/tgu1732653570157.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rtz1725409474295", 
+             "title":"Warnungen", 
+             "description":"Warnungen anzeigen, Modellleistung anhand von wichtigen Metriken überwachen.", 
+             "url":"Vantage/de/rtz1725409474295.md", 
+             "children":[
+                { 
+                   "id":"can1732653630612", 
+                   "title":"Warnungsdetails", 
+                   "description":"Warninstanzen umfassen Beschreibungen und Ausdrücke der Metriken.", 
+                   "url":"Vantage/de/can1732653630612.md", 
+                   "children":[
+                      { 
+                         "id":"hdx1732656986435", 
+                         "title":"Warnungen", 
+                         "url":"Vantage/de/hdx1732656986435.md"
+                         }
+                      , 
+                      { 
+                         "id":"uro1732657007321", 
+                         "title":"Ruhemodi", 
+                         "url":"Vantage/de/uro1732657007321.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"psi1732657063130", 
+             "title":"Merkmalsentwicklung", 
+             "description":"Datenaufbereitungsaufgaben durchführen, um ein Modell auszuführen.", 
+             "url":"Vantage/de/psi1732657063130.md", 
+             "children":[
+                { 
+                   "id":"xgm1732657104092", 
+                   "title":"Merkmalsentwicklungsaufgabe erstellen", 
+                   "description":"Eine Aufgabe für Merkmalsengineering für Ihr Modell erstellen.", 
+                   "url":"Vantage/de/xgm1732657104092.md"
+                   }
+                , 
+                { 
+                   "id":"hkt1732657162141", 
+                   "title":"Merkmalsentwicklungsaufgabe ausführen", 
+                   "description":"Zeigen Sie den Ausführungsfortschritt einer Aufgabe an.", 
+                   "url":"Vantage/de/hkt1732657162141.md"
+                   }
+                , 
+                { 
+                   "id":"kpk1732657235913", 
+                   "title":"Merkmalsentwicklungsaufgabe bereitstellen", 
+                   "description":"Zeitplandetails konfigurieren, eine Aufgabe bereitstellen.", 
+                   "url":"Vantage/de/kpk1732657235913.md"
+                   }
+                , 
+                { 
+                   "id":"xli1732657281828", 
+                   "title":"Aufträge", 
+                   "description":"Informationen zu Aufträgen für Merkmalsengineering lesen und diese Aufträge anzeigen.", 
+                   "url":"Vantage/de/xli1732657281828.md"
+                   }
+                , 
+                { 
+                   "id":"zyw1732657344552", 
+                   "title":"Details der Merkmalsentwicklungsaufgabe", 
+                   "description":"Die Details umfassen Ereignisse und die von einer Aufgabe generierten Artefakte.", 
+                   "url":"Vantage/de/zyw1732657344552.md", 
+                   "children":[
+                      { 
+                         "id":"lok1732657374725", 
+                         "title":"Lebenszyklus", 
+                         "description":"Details des Merkmalsentwicklungs-Lebenszyklus.", 
+                         "url":"Vantage/de/lok1732657374725.md"
+                         }
+                      , 
+                      { 
+                         "id":"bix1732657425434", 
+                         "title":"Artefakte", 
+                         "description":"Dateien anzeigen, die von Aufgaben für Merkmalsengineering generiert wurden.", 
+                         "url":"Vantage/de/bix1732657425434.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"qpv1707514841101", 
        "title":"Benutzerdefinierte Funktionen", 
        "description":"Verbinden Sie sich mit einer Drittanbieteranwendung aus Sicherheitsgründen.", 
@@ -1003,7 +1568,7 @@
        "children":[
           { 
              "id":"aql1707516911931", 
-             "title":"Integrität", 
+             "title":"Protegrity", 
              "description":"Aktivieren Sie Protegrity auf VantageCloud Lake.", 
              "url":"Vantage/de/aql1707516911931.md"
              }
@@ -1027,7 +1592,7 @@
        "children":[
           { 
              "id":"ohx1694115234984", 
-             "title":"General settings", 
+             "title":"Allgemeine Einstellungen", 
              "description":"Legen Sie Ihre Benutzereinstellungen fest.", 
              "url":"Vantage/de/ohx1694115234984.md"
              }
