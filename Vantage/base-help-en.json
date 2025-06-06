@@ -774,12 +774,14 @@
                       { 
                          "id":"xpf1742341027956", 
                          "title":"Manage vector store", 
+                         "description":"Edit or delete vector store users and data.", 
                          "url":"Vantage/xpf1742341027956.md"
                          }
                       , 
                       { 
                          "id":"dpw1742341058646", 
                          "title":"Edit vector store", 
+                         "description":"Update data and parameters.", 
                          "url":"Vantage/dpw1742341058646.md"
                          }
                       , 
