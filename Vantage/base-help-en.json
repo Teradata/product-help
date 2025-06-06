@@ -712,6 +712,87 @@
                       ]
 
                    }
+                , 
+                { 
+                   "id":"fsd1742339949986", 
+                   "title":"Vector store", 
+                   "description":"Why use a vector store and how to enable.", 
+                   "url":"Vantage/fsd1742339949986.md", 
+                   "children":[
+                      { 
+                         "id":"drc1742340305540", 
+                         "title":"Create vector store", 
+                         "description":"How to create a vector store.", 
+                         "url":"Vantage/drc1742340305540.md", 
+                         "children":[
+                            { 
+                               "id":"nly1742946843656", 
+                               "title":"Create vector store: Definition", 
+                               "icon":"counter_1", 
+                               "url":"Vantage/nly1742946843656.md"
+                               }
+                            , 
+                            { 
+                               "id":"dai1742946866871", 
+                               "title":"Create vector store: Data sources", 
+                               "icon":"counter_2", 
+                               "url":"Vantage/dai1742946866871.md"
+                               }
+                            , 
+                            { 
+                               "id":"smv1742946887645", 
+                               "title":"Create vector store: Settings", 
+                               "icon":"counter_3", 
+                               "url":"Vantage/smv1742946887645.md", 
+                               "children":[
+                                  { 
+                                     "id":"ymq1742947367911", 
+                                     "title":"Index settings", 
+                                     "url":"Vantage/ymq1742947367911.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"ujc1742947175120", 
+                                     "title":"Search settings", 
+                                     "url":"Vantage/ujc1742947175120.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"aha1749084955590", 
+                                     "title":"General settings", 
+                                     "url":"Vantage/aha1749084955590.md"
+                                     }
+
+                                  ]
+
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"xpf1742341027956", 
+                         "title":"Manage vector store", 
+                         "url":"Vantage/xpf1742341027956.md"
+                         }
+                      , 
+                      { 
+                         "id":"dpw1742341058646", 
+                         "title":"Edit vector store", 
+                         "url":"Vantage/dpw1742341058646.md"
+                         }
+                      , 
+                      { 
+                         "id":"xqf1748474867488", 
+                         "title":"Vector store FAQ", 
+                         "description":"Find answers to common questions.", 
+                         "url":"Vantage/xqf1748474867488.md"
+                         }
+
+                      ]
+
+                   }
 
                 ]
 
