@@ -291,6 +291,12 @@
                    "description":"Complete the Private Link configuration.", 
                    "url":"Vantage/hyl1696627580794.md"
                    }
+                , 
+                { 
+                   "id":"tlg1750449622665", 
+                   "title":"Create a private endpoint in the Google Cloud Portal", 
+                   "url":"Vantage/tlg1750449622665.md"
+                   }
 
                 ]
 
