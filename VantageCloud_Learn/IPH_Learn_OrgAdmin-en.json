@@ -141,6 +141,14 @@
              "url":"VantageCloud_Learn/sbv1729897674850.md", 
              "childrenUrl":"ajr1640280560519"
              }
+          , 
+          { 
+             "id":"euz1750877420901", 
+             "title":"Vector store", 
+             "icon":"database_search", 
+             "url":"VantageCloud_Learn/euz1750877420901.md", 
+             "childrenUrl":"fsd1742339949986"
+             }
 
           ]
 
@@ -182,10 +190,9 @@
           { 
              "id":"drx1745278688634", 
              "title":"Deploy and monitor ModelOps", 
-             "description":"Manage AI and ML models to operationalize your use cases.", 
+             "description":"Manage your AI and ML models to operationalize your use cases.", 
              "icon":"product_modelops;covalent", 
-             "url":"VantageCloud_Learn/drx1745278688634.md",
-             "childrenUrl":"qya1694122121061"
+             "url":"VantageCloud_Learn/drx1745278688634.md"
              }
           , 
           { 
