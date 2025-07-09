@@ -145,7 +145,7 @@
           { 
              "id":"euz1750877420901", 
              "title":"Vector store", 
-			 "description":"Create a database that stores data as vectors."
+			 "description":"Create a database that stores data as vectors.",
              "icon":"database_search;covalent", 
              "url":"VantageCloud_Learn/euz1750877420901.md", 
              "childrenUrl":"fsd1742339949986"
