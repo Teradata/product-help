@@ -1,7 +1,5 @@
 Welcome to Teradata Vantage!
 
-**Note**: VantageCloud Enterprise 3.0.0 supports Database Engine 20.0, TLS 1.3, and OTF. See [https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Welcome-to-VantageCloud-Enterprise](https://docs.teradata.com/r/Teradata-VantageCloud-Enterprise/Welcome-to-VantageCloud-Enterprise "VantageCloud Enterprise 3.0.0 User Guide")for more details.
-
 ## ![Editor](../Images/editor-icn-overview.png) [Editor](../Editor/Editor-Overview-GS.md)
 
 Create database tables, run ad-hoc queries, and upload data.
