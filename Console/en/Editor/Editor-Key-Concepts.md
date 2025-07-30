@@ -1,27 +1,26 @@
 
 Use Editor to do the following:
 
--   Create, edit, run, and save SQL commands and scripts for your databases.
+-   Create, edit, run, and save SQL commands and scripts.
 
--   Open and upload scripts from other sources.
+-   Browse database objects.
 
--   Browse object stores.
+-   Export results in Excel, CSV, or JSON format up to 10,000 table rows.
 
--   Run SQL commands leveraging NOS to load CSV, JSON, and Parquet data from an external object store into a local table.
-
--   Download results in CSV or JSON format, up to 10,000 table rows.
+-   Select **Add to starred** to include a database or user in the list of starred objects.
 
 -   Copy results to the clipboard.
 
+-   Review the status and details of previously run queries.
 
-There are implicit and explicit queries. Implicit queries run in the background. Explicit queries run in the foreground. A query session is tied to the tab that is open, so volatile tables will be maintained as long as the session is configured for.
 
-**Note:** Editor scripts and queries are saved to your browser. If you clear the browser history or use another browser, you will not see your scripts.
+A query session is tied to the tab that is open, so volatile tables will be maintained as long as the session is configured. 
+
+**Note:** Editor scripts, results, and history are saved to your browser. If you clear the browser history or use another browser, you will not be viewable. Scripts, results, and history can all be saved or exported from the Editor.
 
 
 **Resources**
 
 * [Teradata Vantage™ - Database Introduction](https://docs.teradata.com/search/all?query=Teradata+Vantage%25E2%2584%25A2+-+Database+Introduction&content-lang=en-US)
-* [Editor](https://docs.teradata.com/search/all?query=Editor&content-lang=en-US)
 * [NOS](https://docs.teradata.com/r/Teradata-VantageTM-Native-Object-Store-Getting-Started-Guide/June-2022)
-* [Risks](https://docs.teradata.com/search/all?query=Risks&content-lang=en-US)
+  
