@@ -245,6 +245,13 @@
              "description":"View current access tokens in your organization.", 
              "url":"Vantage/mwx1694115292045.md"
              }
+          , 
+          { 
+             "id":"ebv1753222218275", 
+             "title":"Disable public URL", 
+             "description":"Enhance network security at the console level.", 
+             "url":"Vantage/ebv1753222218275.md"
+             }
 
           ]
 
@@ -324,7 +331,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"Create a compute group", 
-                         "description":"Explore compute group types.", 
+                         "description":"Learn about compute groups.", 
                          "url":"Vantage/xrr1658772541186.md"
                          }
                       , 
@@ -391,7 +398,7 @@
                          "children":[
                             { 
                                "id":"tws1731526438164", 
-                               "title":"DBC (root) user", 
+                               "title":"Root (DBC) user", 
                                "url":"Vantage/tws1731526438164.md"
                                }
                             , 
@@ -446,9 +453,16 @@
                    "children":[
                       { 
                          "id":"cdg1689098187313", 
-                         "title":"Connectivity and components", 
-                         "description":"QueryGrid connectors and connectivity options.", 
+                         "title":"Connectivity", 
+                         "description":"QueryGrid connectivity options.", 
                          "url":"Vantage/cdg1689098187313.md"
+                         }
+                      , 
+                      { 
+                         "id":"qxt1753318913933", 
+                         "title":"Components", 
+                         "description":"Learn about the QueryGrid components.", 
+                         "url":"Vantage/qxt1753318913933.md"
                          }
                       , 
                       { 
@@ -496,6 +510,13 @@
                                      "title":"Create foreign server", 
                                      "description":"Set up the foreign server.", 
                                      "url":"Vantage/bbo1735955417476.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"wpq1753318483091", 
+                                     "title":"User mapping for Hive and Spark", 
+                                     "description":"Understand user mapping when target is unsecured.", 
+                                     "url":"Vantage/wpq1753318483091.md"
                                      }
 
                                   ]
@@ -623,6 +644,13 @@
                             ]
 
                          }
+                      , 
+                      { 
+                         "id":"uah1721690770470", 
+                         "title":"QueryGrid FAQ", 
+                         "description":"Answers to common QueryGrid questions.", 
+                         "url":"Vantage/uah1721690770470.md"
+                         }
 
                       ]
 
@@ -637,7 +665,7 @@
                       { 
                          "id":"qmb1659046927155", 
                          "title":"Create a backup plan", 
-                         "description":"Create or modify a backup plan", 
+                         "description":"Create or modify a backup plan.", 
                          "url":"Vantage/qmb1659046927155.md"
                          }
                       , 
@@ -1074,7 +1102,7 @@
                 { 
                    "id":"ani1706483842546", 
                    "title":"Manage copy agent", 
-                   "description":"Actions to maintain the copy agent", 
+                   "description":"Actions to maintain the copy agent.", 
                    "url":"Vantage/ani1706483842546.md"
                    }
 
