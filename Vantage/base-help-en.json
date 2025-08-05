@@ -1220,6 +1220,7 @@
                       { 
                          "id":"qmz1732650253991", 
                          "title":"Dataset connection health checks", 
+                         "description":"Verify modules are configured correctly.", 
                          "url":"Vantage/qmz1732650253991.md"
                          }
 
@@ -1267,7 +1268,7 @@
                       { 
                          "id":"nro1732650484867", 
                          "title":"Import BYOM", 
-                         "description":"Import with no exisiting model versions.", 
+                         "description":"Import with no existing model versions.", 
                          "url":"Vantage/nro1732650484867.md"
                          }
                       , 
