@@ -20,9 +20,9 @@
 
 This section goes over several hands-on tutorials that can be followed for getting up and running quickly with working examples with the Management Console Public APIs.
 
-* [Postman Tutorial](./appendix/postman/tutorial.md)
-* [NodeJS Tutorial](./appendix/nodejs/tutorial.md)
-* [Python Tutorial](./appendix/python/tutorial.md)
+* [Postman Tutorial](https://community.postman.com/t/postman-api-testing-tutorial-for-beginner/64511)
+* [NodeJS Tutorial](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+* [Python Tutorial](https://docs.python.org/3/tutorial/index.html)
 
 ## Overview
 
