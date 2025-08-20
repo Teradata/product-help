@@ -61,25 +61,27 @@
                 { 
                    "id":"wvr1709157903898", 
                    "title":"Create your environment", 
-                   "description":"Create your first primary cluster and database.", 
                    "icon":"counter_1", 
                    "url":"Vantage/wvr1709157903898.md", 
                    "children":[
                       { 
                          "id":"leq1721069053027", 
                          "title":"Primary cluster", 
+                         "icon":"Counter_1", 
                          "url":"Vantage/leq1721069053027.md"
                          }
                       , 
                       { 
                          "id":"czl1721069081260", 
                          "title":"Database credentials", 
+                         "icon":"counter_2", 
                          "url":"Vantage/czl1721069081260.md"
                          }
                       , 
                       { 
                          "id":"keu1721069101205", 
                          "title":"Advanced options", 
+                         "icon":"counter_3", 
                          "url":"Vantage/keu1721069101205.md"
                          }
 
@@ -90,7 +92,6 @@
                 { 
                    "id":"cqk1721231159841", 
                    "title":"Manage network connectivity", 
-                   "description":"Allow connections to your environment.", 
                    "icon":"counter_2", 
                    "url":"Vantage/cqk1721231159841.md", 
                    "children":[
@@ -113,7 +114,6 @@
                 { 
                    "id":"ahj1695153106508", 
                    "title":"Run your first query", 
-                   "description":"Use the Editor to run your first Vantage query.", 
                    "icon":"counter_3", 
                    "url":"Vantage/ahj1695153106508.md", 
                    "children":[
@@ -138,7 +138,7 @@
                 { 
                    "id":"myu1722373703045", 
                    "title":"Additional tasks", 
-                   "description":"What to do next", 
+                   "description":"What to do next.", 
                    "url":"Vantage/myu1722373703045.md"
                    }
 
@@ -186,7 +186,6 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"Add an identity provider", 
-                   "description":"Supported identity provider types.", 
                    "icon":"counter_1", 
                    "url":"Vantage/whf1680184025148.md", 
                    "children":[
@@ -209,7 +208,6 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"Create realms", 
-                   "description":"Authenticate users and admins by using realms.", 
                    "icon":"counter_2", 
                    "url":"Vantage/ruf1680184116601.md"
                    }
@@ -245,6 +243,13 @@
              "description":"View current access tokens in your organization.", 
              "url":"Vantage/mwx1694115292045.md"
              }
+          , 
+          { 
+             "id":"ebv1753222218275", 
+             "title":"Disable public URL", 
+             "description":"Enhance network security at the console level.", 
+             "url":"Vantage/ebv1753222218275.md"
+             }
 
           ]
 
@@ -265,6 +270,7 @@
                 { 
                    "id":"cql1739481888655", 
                    "title":"CMEK key resource requirements", 
+                   "description":"Public cloud private key requirements.", 
                    "url":"Vantage/cql1739481888655.md"
                    }
 
@@ -288,13 +294,14 @@
                 { 
                    "id":"hyl1696627580794", 
                    "title":"Create a private endpoint in the Azure Portal", 
-                   "description":"Complete the Private Link configuration.", 
+                   "description":"Complete the Azure Private Link configuration.", 
                    "url":"Vantage/hyl1696627580794.md"
                    }
                 , 
                 { 
                    "id":"tlg1750449622665", 
                    "title":"Create a private endpoint in the Google Cloud Portal", 
+                   "description":"Complete the Private Service Connect configuration.", 
                    "url":"Vantage/tlg1750449622665.md"
                    }
 
@@ -324,7 +331,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"Create a compute group", 
-                         "description":"Explore compute group types.", 
+                         "description":"Learn about compute groups.", 
                          "url":"Vantage/xrr1658772541186.md"
                          }
                       , 
@@ -386,12 +393,12 @@
                       { 
                          "id":"rhw1723830545389", 
                          "title":"Create a database administrator", 
-                         "description":"Steps to create additional DBAs.", 
+                         "icon":"counter_1", 
                          "url":"Vantage/rhw1723830545389.md", 
                          "children":[
                             { 
                                "id":"tws1731526438164", 
-                               "title":"DBC (root) user", 
+                               "title":"Root (DBC) user", 
                                "url":"Vantage/tws1731526438164.md"
                                }
                             , 
@@ -414,6 +421,7 @@
                       { 
                          "id":"xnm1723830877831", 
                          "title":"Notify the database administrator", 
+                         "icon":"counter_2", 
                          "url":"Vantage/xnm1723830877831.md"
                          }
 
@@ -446,9 +454,16 @@
                    "children":[
                       { 
                          "id":"cdg1689098187313", 
-                         "title":"Connectivity and components", 
-                         "description":"QueryGrid connectors and connectivity options.", 
+                         "title":"Connectivity", 
+                         "description":"QueryGrid connectivity options.", 
                          "url":"Vantage/cdg1689098187313.md"
+                         }
+                      , 
+                      { 
+                         "id":"qxt1753318913933", 
+                         "title":"Components", 
+                         "description":"Learn about the QueryGrid components.", 
+                         "url":"Vantage/qxt1753318913933.md"
                          }
                       , 
                       { 
@@ -496,6 +511,13 @@
                                      "title":"Create foreign server", 
                                      "description":"Set up the foreign server.", 
                                      "url":"Vantage/bbo1735955417476.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"wpq1753318483091", 
+                                     "title":"User mapping for Hive and Spark", 
+                                     "description":"Understand user mapping when target is unsecured.", 
+                                     "url":"Vantage/wpq1753318483091.md"
                                      }
 
                                   ]
@@ -623,6 +645,13 @@
                             ]
 
                          }
+                      , 
+                      { 
+                         "id":"uah1721690770470", 
+                         "title":"QueryGrid FAQ", 
+                         "description":"Answers to common QueryGrid questions.", 
+                         "url":"Vantage/uah1721690770470.md"
+                         }
 
                       ]
 
@@ -637,14 +666,14 @@
                       { 
                          "id":"qmb1659046927155", 
                          "title":"Create a backup plan", 
-                         "description":"Create or modify a backup plan", 
+                         "description":"Create or modify a backup plan.", 
                          "url":"Vantage/qmb1659046927155.md"
                          }
                       , 
                       { 
                          "id":"tyu1695326821997", 
                          "title":"Start a backup job manually", 
-                         "description":"Start a backup job aside from any scheduled jobs", 
+                         "description":"Start a backup job aside from any scheduled jobs.", 
                          "url":"Vantage/tyu1695326821997.md"
                          }
                       , 
@@ -665,6 +694,7 @@
                       { 
                          "id":"qkl1744735483272", 
                          "title":"Restore job settings", 
+                         "description":"Options to restore job settings.", 
                          "url":"Vantage/qkl1744735483272.md", 
                          "children":[
                             { 
@@ -680,7 +710,7 @@
                       { 
                          "id":"sus1659047241965", 
                          "title":"View backup plan history", 
-                         "description":"View past and current backup and restore jobs", 
+                         "description":"View past and current backup and restore jobs.", 
                          "url":"Vantage/sus1659047241965.md"
                          }
                       , 
@@ -947,14 +977,14 @@
           { 
              "id":"juo1640281123239", 
              "title":"Browse database objects", 
-             "description":"Connect to and browse an environment", 
+             "description":"Connect to and browse an environment.", 
              "url":"Vantage/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
              "title":"Query your data", 
-             "description":"Run queries in Editor", 
+             "description":"Run queries in Editor.", 
              "url":"Vantage/dgd1640281158386.md", 
              "children":[
                 { 
@@ -967,7 +997,7 @@
                 { 
                    "id":"vkk1692059193535", 
                    "title":"Build a query", 
-                   "description":"Build a query using generated SQL", 
+                   "description":"Build a query using generated SQL.", 
                    "url":"Vantage/vkk1692059193535.md"
                    }
                 , 
@@ -994,7 +1024,7 @@
           { 
              "id":"xxs1694723933787", 
              "title":"SQL and database reference", 
-             "description":"SQL commands, functions, and database functionality", 
+             "description":"SQL commands, functions, and database functionality.", 
              "url":"Vantage/xxs1694723933787.md"
              }
           , 
@@ -1074,7 +1104,7 @@
                 { 
                    "id":"ani1706483842546", 
                    "title":"Manage copy agent", 
-                   "description":"Actions to maintain the copy agent", 
+                   "description":"Actions to maintain the copy agent.", 
                    "url":"Vantage/ani1706483842546.md"
                    }
 
@@ -1085,13 +1115,13 @@
           { 
              "id":"otq1703818370684", 
              "title":"Use data copy", 
-             "description":"Create and manage a copy plan", 
+             "description":"Create and manage a copy plan.", 
              "url":"Vantage/otq1703818370684.md", 
              "children":[
                 { 
                    "id":"pwa1703818612067", 
                    "title":"Create a copy plan", 
-                   "description":"Plan names, settings, and objects to select", 
+                   "description":"Plan names, settings, and objects to select.", 
                    "url":"Vantage/pwa1703818612067.md"
                    }
                 , 
@@ -1183,13 +1213,14 @@
                       { 
                          "id":"vpe1725389258480", 
                          "title":"Add dataset connection", 
-                         "description":"Create a connection for models", 
+                         "description":"Create a connection for models.", 
                          "url":"Vantage/vpe1725389258480.md"
                          }
                       , 
                       { 
                          "id":"qmz1732650253991", 
                          "title":"Dataset connection health checks", 
+                         "description":"Verify modules are configured correctly.", 
                          "url":"Vantage/qmz1732650253991.md"
                          }
 
@@ -1230,18 +1261,21 @@
                       { 
                          "id":"akl1725408274100", 
                          "title":"Define BYOM", 
+                         "description":"Define without importing versions.", 
                          "url":"Vantage/akl1725408274100.md"
                          }
                       , 
                       { 
                          "id":"nro1732650484867", 
                          "title":"Import BYOM", 
+                         "description":"Import with no existing model versions.", 
                          "url":"Vantage/nro1732650484867.md"
                          }
                       , 
                       { 
                          "id":"jbg1732650538946", 
                          "title":"Import Python/R model", 
+                         "description":"Add a Python or R model.", 
                          "url":"Vantage/jbg1732650538946.md"
                          }
 
@@ -1269,56 +1303,56 @@
                 { 
                    "id":"wnt1743340516346", 
                    "title":"Import model", 
-                   "description":"Options to import models listed here", 
+                   "icon":"counter_1", 
                    "url":"Vantage/wnt1743340516346.md"
                    }
                 , 
                 { 
                    "id":"etl1725408512818", 
                    "title":"Train model", 
-                   "description":"Set up properties to train a model.", 
+                   "icon":"counter_2", 
                    "url":"Vantage/etl1725408512818.md"
                    }
                 , 
                 { 
                    "id":"wzw1732650597340", 
                    "title":"Evaluate model", 
-                   "description":"Evaluate trained model using dataset and template.", 
+                   "icon":"counter_3", 
                    "url":"Vantage/wzw1732650597340.md"
                    }
                 , 
                 { 
                    "id":"zum1732650629250", 
                    "title":"Deploy model", 
-                   "description":"Deploy model to production.", 
+                   "icon":"counter_4", 
                    "url":"Vantage/zum1732650629250.md"
                    }
                 , 
                 { 
                    "id":"yfx1732650662039", 
                    "title":"Jobs", 
-                   "description":"See the model lifecycle jobs.", 
+                   "icon":"counter_5", 
                    "url":"Vantage/yfx1732650662039.md"
                    }
                 , 
                 { 
                    "id":"kll1732650698482", 
                    "title":"Retire model", 
-                   "description":"Remove model versions from production.", 
+                   "icon":"counter_6", 
                    "url":"Vantage/kll1732650698482.md"
                    }
                 , 
                 { 
                    "id":"xtq1725408819410", 
                    "title":"Commit history", 
-                   "description":"View timeline for the model's code changes.", 
+                   "icon":"counter_7", 
                    "url":"Vantage/xtq1725408819410.md"
                    }
                 , 
                 { 
                    "id":"sdn1725408878969", 
                    "title":"Alert configuration", 
-                   "description":"Alerts are generated using threshold values.", 
+                   "icon":"counter_8", 
                    "url":"Vantage/sdn1725408878969.md", 
                    "children":[
                       { 
@@ -1334,7 +1368,7 @@
                 { 
                    "id":"nbx1732650777635", 
                    "title":"Models compare", 
-                   "description":"See benefits of running the model comparison report.", 
+                   "icon":"counter_9", 
                    "url":"Vantage/nbx1732650777635.md", 
                    "children":[
                       { 
@@ -1387,18 +1421,21 @@
                       { 
                          "id":"xxa1732651110275", 
                          "title":"Feature drift", 
+                         "description":"Understand and monitor dataset statistic changes.", 
                          "url":"Vantage/xxa1732651110275.md"
                          }
                       , 
                       { 
                          "id":"etr1732651148787", 
                          "title":"Prediction drift", 
+                         "description":"Check for model deviations.", 
                          "url":"Vantage/etr1732651148787.md"
                          }
                       , 
                       { 
                          "id":"jrp1732651191166", 
                          "title":"Performance drift", 
+                         "description":"View performance metrics over time.", 
                          "url":"Vantage/jrp1732651191166.md"
                          }
 
@@ -1439,6 +1476,7 @@
                       { 
                          "id":"xfu1732652871944", 
                          "title":"Create dataset", 
+                         "description":"Follow steps and select dataset options.", 
                          "url":"Vantage/xfu1732652871944.md"
                          }
                       , 
@@ -1452,6 +1490,7 @@
                       { 
                          "id":"aql1732653182894", 
                          "title":"Dataset details", 
+                         "description":"Job parameters, evaluation, and statistics.", 
                          "url":"Vantage/aql1732653182894.md", 
                          "children":[
                             { 
@@ -1464,6 +1503,7 @@
                             { 
                                "id":"xeb1732653278990", 
                                "title":"Activity", 
+                               "description":"Review job and model details.", 
                                "url":"Vantage/xeb1732653278990.md", 
                                "children":[
                                   { 
@@ -1503,6 +1543,7 @@
                       { 
                          "id":"ujq1732653385548", 
                          "title":"Properties", 
+                         "description":"Understand the different deployment properties.", 
                          "url":"Vantage/ujq1732653385548.md"
                          }
                       , 
@@ -1516,6 +1557,7 @@
                       { 
                          "id":"bri1732653485626", 
                          "title":"Testing (Docker RESTful Deployments)", 
+                         "description":"Learn how you can test deployments.", 
                          "url":"Vantage/bri1732653485626.md"
                          }
 
@@ -1566,12 +1608,14 @@
                       { 
                          "id":"hdx1732656986435", 
                          "title":"Alerts", 
+                         "description":"Snooze one or all alerts.", 
                          "url":"Vantage/hdx1732656986435.md"
                          }
                       , 
                       { 
                          "id":"uro1732657007321", 
                          "title":"Silences", 
+                         "description":"Resume alerts.", 
                          "url":"Vantage/uro1732657007321.md"
                          }
 
@@ -1592,35 +1636,35 @@
                 { 
                    "id":"xgm1732657104092", 
                    "title":"Create feature engineering task", 
-                   "description":"Create feature engineering task for your model.", 
+                   "icon":"counter_1", 
                    "url":"Vantage/xgm1732657104092.md"
                    }
                 , 
                 { 
                    "id":"hkt1732657162141", 
                    "title":"Run feature engineering task", 
-                   "description":"View a task's running progress.", 
+                   "icon":"counter_2", 
                    "url":"Vantage/hkt1732657162141.md"
                    }
                 , 
                 { 
                    "id":"kpk1732657235913", 
                    "title":"Deploy feature engineering task", 
-                   "description":"Configure schedule details, deploy a task.", 
+                   "icon":"counter_3", 
                    "url":"Vantage/kpk1732657235913.md"
                    }
                 , 
                 { 
                    "id":"xli1732657281828", 
                    "title":"Jobs", 
-                   "description":"Read about and view feature engineering jobs.", 
+                   "icon":"counter_4", 
                    "url":"Vantage/xli1732657281828.md"
                    }
                 , 
                 { 
                    "id":"zyw1732657344552", 
                    "title":"Feature engineering details", 
-                   "description":"Details include events, artifacts generated by a task.", 
+                   "icon":"counter_5", 
                    "url":"Vantage/zyw1732657344552.md", 
                    "children":[
                       { 
