@@ -141,6 +141,15 @@
              "url":"VantageCloud_Learn/fr/sbv1729897674850.md", 
              "childrenUrl":"ajr1640280560519"
              }
+          , 
+          { 
+             "id":"euz1750877420901", 
+             "title":"Magasin de vecteurs", 
+             "description":"Créez une base de données qui stocke les données sous forme de vecteurs.", 
+             "icon":"database_search;covalent", 
+             "url":"VantageCloud_Learn/fr/euz1750877420901.md", 
+             "childrenUrl":"fsd1742339949986"
+             }
 
           ]
 
@@ -182,9 +191,10 @@
           { 
              "id":"drx1745278688634", 
              "title":"Déployer et surveiller ModelOps", 
-             "description":"Pour opérationnaliser vos cas d'utilisation, gérez les modèles d'IA et d'apprentissage automatique.", 
+             "description":"Pour opérationnaliser vos cas d'utilisation, gérez vos modèles d'IA et d'apprentissage automatique.", 
              "icon":"product_modelops;covalent", 
-             "url":"VantageCloud_Learn/fr/drx1745278688634.md"
+             "url":"VantageCloud_Learn/fr/drx1745278688634.md", 
+             "childrenUrl":"qya1694122121061"
              }
           , 
           { 
