@@ -61,25 +61,27 @@
                 { 
                    "id":"wvr1709157903898", 
                    "title":"Crear el entorno", 
-                   "description":"Cree su clúster principal y su base de datos iniciales.", 
                    "icon":"counter_1", 
                    "url":"Vantage/es/wvr1709157903898.md", 
                    "children":[
                       { 
                          "id":"leq1721069053027", 
                          "title":"Clúster principal", 
+                         "icon":"Counter_1", 
                          "url":"Vantage/es/leq1721069053027.md"
                          }
                       , 
                       { 
                          "id":"czl1721069081260", 
                          "title":"Credenciales de base de datos", 
+                         "icon":"counter_2", 
                          "url":"Vantage/es/czl1721069081260.md"
                          }
                       , 
                       { 
                          "id":"keu1721069101205", 
                          "title":"Opciones avanzadas", 
+                         "icon":"counter_3", 
                          "url":"Vantage/es/keu1721069101205.md"
                          }
 
@@ -90,7 +92,6 @@
                 { 
                    "id":"cqk1721231159841", 
                    "title":"Administrar la conectividad de la red", 
-                   "description":"Permita conexiones a su entorno.", 
                    "icon":"counter_2", 
                    "url":"Vantage/es/cqk1721231159841.md", 
                    "children":[
@@ -113,7 +114,6 @@
                 { 
                    "id":"ahj1695153106508", 
                    "title":"Ejecutar la primera consulta", 
-                   "description":"Use el Editor para ejecutar su primera consulta de Vantage.", 
                    "icon":"counter_3", 
                    "url":"Vantage/es/ahj1695153106508.md", 
                    "children":[
@@ -138,7 +138,7 @@
                 { 
                    "id":"myu1722373703045", 
                    "title":"Tareas adicionales", 
-                   "description":"Qué hacer a continuación", 
+                   "description":"Qué hacer a continuación.", 
                    "url":"Vantage/es/myu1722373703045.md"
                    }
 
@@ -186,7 +186,6 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"Agregar un proveedor de identidad", 
-                   "description":"Tipos de proveedor de identidad admitidos.", 
                    "icon":"counter_1", 
                    "url":"Vantage/es/whf1680184025148.md", 
                    "children":[
@@ -209,7 +208,6 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"Crear dominios", 
-                   "description":"Autentique usuarios y administradores mediante el uso de dominios.", 
                    "icon":"counter_2", 
                    "url":"Vantage/es/ruf1680184116601.md"
                    }
@@ -245,6 +243,13 @@
              "description":"Vea los tokens de acceso actuales en su organización.", 
              "url":"Vantage/es/mwx1694115292045.md"
              }
+          , 
+          { 
+             "id":"ebv1753222218275", 
+             "title":"Deshabilitar URL pública", 
+             "description":"Mejore la seguridad de red en el nivel de consola.", 
+             "url":"Vantage/es/ebv1753222218275.md"
+             }
 
           ]
 
@@ -265,6 +270,7 @@
                 { 
                    "id":"cql1739481888655", 
                    "title":"Requisitos de recurso de clave CMEK", 
+                   "description":"Requisitos de clave privada para la nube pública.", 
                    "url":"Vantage/es/cql1739481888655.md"
                    }
 
@@ -288,8 +294,15 @@
                 { 
                    "id":"hyl1696627580794", 
                    "title":"Crear un endpoint privado en Azure Portal", 
-                   "description":"Complete la configuración de Private Link.", 
+                   "description":"Complete la configuración de Azure Private Link.", 
                    "url":"Vantage/es/hyl1696627580794.md"
+                   }
+                , 
+                { 
+                   "id":"tlg1750449622665", 
+                   "title":"Crear un endpoint privado en el portal de Google Cloud", 
+                   "description":"Complete la configuración de Private Service Connect.", 
+                   "url":"Vantage/es/tlg1750449622665.md"
                    }
 
                 ]
@@ -318,7 +331,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"Crear un grupo de cálculo", 
-                         "description":"Explorar tipos de grupo de cálculo.", 
+                         "description":"Información acerca de los grupos computacionales.", 
                          "url":"Vantage/es/xrr1658772541186.md"
                          }
                       , 
@@ -380,12 +393,12 @@
                       { 
                          "id":"rhw1723830545389", 
                          "title":"Crear un administrador de base de datos", 
-                         "description":"Pasos para crear DBA adicionales.", 
+                         "icon":"counter_1", 
                          "url":"Vantage/es/rhw1723830545389.md", 
                          "children":[
                             { 
                                "id":"tws1731526438164", 
-                               "title":"Usuario DBC (raíz)", 
+                               "title":"Usuario raíz (DBC)", 
                                "url":"Vantage/es/tws1731526438164.md"
                                }
                             , 
@@ -408,6 +421,7 @@
                       { 
                          "id":"xnm1723830877831", 
                          "title":"Notificar al administrador de base de datos", 
+                         "icon":"counter_2", 
                          "url":"Vantage/es/xnm1723830877831.md"
                          }
 
@@ -440,9 +454,16 @@
                    "children":[
                       { 
                          "id":"cdg1689098187313", 
-                         "title":"Conectividad y componentes", 
-                         "description":"Conectores y opciones de conectividad de QueryGrid.", 
+                         "title":"Conectividad", 
+                         "description":"Opciones de conectividad de QueryGrid.", 
                          "url":"Vantage/es/cdg1689098187313.md"
+                         }
+                      , 
+                      { 
+                         "id":"qxt1753318913933", 
+                         "title":"Componentes", 
+                         "description":"Información acerca de los componentes de QueryGrid.", 
+                         "url":"Vantage/es/qxt1753318913933.md"
                          }
                       , 
                       { 
@@ -490,6 +511,13 @@
                                      "title":"Crear servidor externo", 
                                      "description":"Configure el servidor externo.", 
                                      "url":"Vantage/es/bbo1735955417476.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"wpq1753318483091", 
+                                     "title":"Asignación de usuarios para Hive y Spark", 
+                                     "description":"Descripción de la asignación de usuarios cuando el objetivo no está protegido.", 
+                                     "url":"Vantage/es/wpq1753318483091.md"
                                      }
 
                                   ]
@@ -617,6 +645,13 @@
                             ]
 
                          }
+                      , 
+                      { 
+                         "id":"uah1721690770470", 
+                         "title":"Preguntas frecuentes sobre QueryGrid", 
+                         "description":"Respuestas a preguntas comunes de QueryGrid.", 
+                         "url":"Vantage/es/uah1721690770470.md"
+                         }
 
                       ]
 
@@ -631,14 +666,14 @@
                       { 
                          "id":"qmb1659046927155", 
                          "title":"Crear un plan de copia de seguridad", 
-                         "description":"Crear o modificar un plan de copia de seguridad", 
+                         "description":"Cree o modifique un plan de copia de seguridad.", 
                          "url":"Vantage/es/qmb1659046927155.md"
                          }
                       , 
                       { 
                          "id":"tyu1695326821997", 
                          "title":"Iniciar un trabajo de copia de seguridad manualmente", 
-                         "description":"Iniciar un trabajo de copia de seguridad además de cualquier trabajo programado", 
+                         "description":"Inicie un trabajo de copia de seguridad a partir de cualquier trabajo programado.", 
                          "url":"Vantage/es/tyu1695326821997.md"
                          }
                       , 
@@ -659,6 +694,7 @@
                       { 
                          "id":"qkl1744735483272", 
                          "title":"Configuración de trabajo de restauración", 
+                         "description":"Opciones para restaurar la configuración de un trabajo.", 
                          "url":"Vantage/es/qkl1744735483272.md", 
                          "children":[
                             { 
@@ -674,7 +710,7 @@
                       { 
                          "id":"sus1659047241965", 
                          "title":"Ver el historial de un plan de copia de seguridad", 
-                         "description":"Ver trabajos de copia de seguridad y restauración pasados y actuales", 
+                         "description":"Vea trabajos de copia de seguridad y restauración pasados y actuales.", 
                          "url":"Vantage/es/sus1659047241965.md"
                          }
                       , 
@@ -707,6 +743,89 @@
                          "title":"P+F de protección de datos", 
                          "description":"Respuestas a preguntas comunes.", 
                          "url":"Vantage/es/iom1694462056775.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"fsd1742339949986", 
+                   "title":"Almacén de vectores", 
+                   "description":"Por qué usar un almacén de vectores y cómo habilitarlo.", 
+                   "url":"Vantage/es/fsd1742339949986.md", 
+                   "children":[
+                      { 
+                         "id":"drc1742340305540", 
+                         "title":"Crear almacén de vectores", 
+                         "description":"Cómo crear un almacén de vectores.", 
+                         "url":"Vantage/es/drc1742340305540.md", 
+                         "children":[
+                            { 
+                               "id":"nly1742946843656", 
+                               "title":"Crear almacén de vectores: Definición", 
+                               "icon":"counter_1", 
+                               "url":"Vantage/es/nly1742946843656.md"
+                               }
+                            , 
+                            { 
+                               "id":"dai1742946866871", 
+                               "title":"Crear almacén de vectores: Fuentes de datos", 
+                               "icon":"counter_2", 
+                               "url":"Vantage/es/dai1742946866871.md"
+                               }
+                            , 
+                            { 
+                               "id":"smv1742946887645", 
+                               "title":"Crear almacén de vectores: Configuración", 
+                               "icon":"counter_3", 
+                               "url":"Vantage/es/smv1742946887645.md", 
+                               "children":[
+                                  { 
+                                     "id":"ymq1742947367911", 
+                                     "title":"Configuración del índice", 
+                                     "url":"Vantage/es/ymq1742947367911.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"ujc1742947175120", 
+                                     "title":"Configuración de búsqueda", 
+                                     "url":"Vantage/es/ujc1742947175120.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"aha1749084955590", 
+                                     "title":"Configuración general", 
+                                     "url":"Vantage/es/aha1749084955590.md"
+                                     }
+
+                                  ]
+
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"xpf1742341027956", 
+                         "title":"Gestionar almacén de vectores", 
+                         "description":"Edite o elimine usuarios y datos de un almacén de vectores.", 
+                         "url":"Vantage/es/xpf1742341027956.md"
+                         }
+                      , 
+                      { 
+                         "id":"dpw1742341058646", 
+                         "title":"Editar almacén de vectores", 
+                         "description":"Actualice datos y parámetros.", 
+                         "url":"Vantage/es/dpw1742341058646.md"
+                         }
+                      , 
+                      { 
+                         "id":"xqf1748474867488", 
+                         "title":"Preguntas frecuentes sobre almacenes de vectores", 
+                         "description":"Encontrar respuestas a preguntas comunes.", 
+                         "url":"Vantage/es/xqf1748474867488.md"
                          }
 
                       ]
@@ -858,14 +977,14 @@
           { 
              "id":"juo1640281123239", 
              "title":"Examinar objetos de base de datos", 
-             "description":"Conectarse a un entorno y examinarlo", 
+             "description":"Conéctese a un entorno y explórelo.", 
              "url":"Vantage/es/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
              "title":"Consultar los datos", 
-             "description":"Ejecutar consultas en el Editor", 
+             "description":"Ejecute consultas en el Editor.", 
              "url":"Vantage/es/dgd1640281158386.md", 
              "children":[
                 { 
@@ -878,7 +997,7 @@
                 { 
                    "id":"vkk1692059193535", 
                    "title":"Crear una consulta", 
-                   "description":"Crear una consulta utilizando SQL generado", 
+                   "description":"Cree una consulta utilizando SQL generado.", 
                    "url":"Vantage/es/vkk1692059193535.md"
                    }
                 , 
@@ -905,7 +1024,7 @@
           { 
              "id":"xxs1694723933787", 
              "title":"Referencia de SQL y bases de datos", 
-             "description":"Comandos SQL, funciones y funcionalidad de base de datos", 
+             "description":"Comandos SQL, funciones y funcionalidad de base de datos.", 
              "url":"Vantage/es/xxs1694723933787.md"
              }
           , 
@@ -985,7 +1104,7 @@
                 { 
                    "id":"ani1706483842546", 
                    "title":"Gestionar el agente de copia", 
-                   "description":"Acciones para mantener el agente de copia", 
+                   "description":"Acciones para mantener el agente de copia.", 
                    "url":"Vantage/es/ani1706483842546.md"
                    }
 
@@ -996,13 +1115,13 @@
           { 
              "id":"otq1703818370684", 
              "title":"Usar una copia de datos", 
-             "description":"Crear y gestionar un plan de copia", 
+             "description":"Cree y gestione un plan de copia.", 
              "url":"Vantage/es/otq1703818370684.md", 
              "children":[
                 { 
                    "id":"pwa1703818612067", 
                    "title":"Crear un plan de copia", 
-                   "description":"Nombres de plan, configuraciones y objetos para seleccionar", 
+                   "description":"Nombres de plan, configuraciones y objetos para seleccionar.", 
                    "url":"Vantage/es/pwa1703818612067.md"
                    }
                 , 
@@ -1094,13 +1213,14 @@
                       { 
                          "id":"vpe1725389258480", 
                          "title":"Agregar conexión de conjunto de datos", 
-                         "description":"Crear una conexión para modelos", 
+                         "description":"Cree una conexión para modelos.", 
                          "url":"Vantage/es/vpe1725389258480.md"
                          }
                       , 
                       { 
                          "id":"qmz1732650253991", 
                          "title":"Comprobaciones de estado de conexión de conjunto de datos", 
+                         "description":"Compruebe que los módulos están configurados correctamente.", 
                          "url":"Vantage/es/qmz1732650253991.md"
                          }
 
@@ -1141,18 +1261,21 @@
                       { 
                          "id":"akl1725408274100", 
                          "title":"Definir BYOM", 
+                         "description":"Defina sin importar versiones.", 
                          "url":"Vantage/es/akl1725408274100.md"
                          }
                       , 
                       { 
                          "id":"nro1732650484867", 
                          "title":"Importar BYOM", 
+                         "description":"Importe sin versiones de modelo existentes.", 
                          "url":"Vantage/es/nro1732650484867.md"
                          }
                       , 
                       { 
                          "id":"jbg1732650538946", 
                          "title":"Importar Python/Modelo R", 
+                         "description":"Agregue un modelo Python o R.", 
                          "url":"Vantage/es/jbg1732650538946.md"
                          }
 
@@ -1180,56 +1303,56 @@
                 { 
                    "id":"wnt1743340516346", 
                    "title":"Importar modelo", 
-                   "description":"Opciones para importar los modelos indicados aquí", 
+                   "icon":"counter_1", 
                    "url":"Vantage/es/wnt1743340516346.md"
                    }
                 , 
                 { 
                    "id":"etl1725408512818", 
                    "title":"Entrenar modelo", 
-                   "description":"Configure propiedades para entrenar un modelo.", 
+                   "icon":"counter_2", 
                    "url":"Vantage/es/etl1725408512818.md"
                    }
                 , 
                 { 
                    "id":"wzw1732650597340", 
                    "title":"Evaluar modelo", 
-                   "description":"Evalúe el modelo entrenado utilizando un conjunto de datos y una plantilla.", 
+                   "icon":"counter_3", 
                    "url":"Vantage/es/wzw1732650597340.md"
                    }
                 , 
                 { 
                    "id":"zum1732650629250", 
                    "title":"Desplegar modelo", 
-                   "description":"Despliegue el modelo en producción.", 
+                   "icon":"counter_4", 
                    "url":"Vantage/es/zum1732650629250.md"
                    }
                 , 
                 { 
                    "id":"yfx1732650662039", 
                    "title":"Trabajos", 
-                   "description":"Vea los trabajos del ciclo de vida del modelo.", 
+                   "icon":"counter_5", 
                    "url":"Vantage/es/yfx1732650662039.md"
                    }
                 , 
                 { 
                    "id":"kll1732650698482", 
                    "title":"Retirar el modelo", 
-                   "description":"Elimine las versiones del modelo de producción.", 
+                   "icon":"counter_6", 
                    "url":"Vantage/es/kll1732650698482.md"
                    }
                 , 
                 { 
                    "id":"xtq1725408819410", 
                    "title":"Historial de confirmación", 
-                   "description":"Ver la cronología de los cambios de código del modelo.", 
+                   "icon":"counter_7", 
                    "url":"Vantage/es/xtq1725408819410.md"
                    }
                 , 
                 { 
                    "id":"sdn1725408878969", 
                    "title":"Configuración de alerta", 
-                   "description":"Las alertas se generan utilizando valores de umbral.", 
+                   "icon":"counter_8", 
                    "url":"Vantage/es/sdn1725408878969.md", 
                    "children":[
                       { 
@@ -1245,7 +1368,7 @@
                 { 
                    "id":"nbx1732650777635", 
                    "title":"Comparación de modelos", 
-                   "description":"Vea los beneficios de ejecutar el informe de comparación de modelos.", 
+                   "icon":"counter_9", 
                    "url":"Vantage/es/nbx1732650777635.md", 
                    "children":[
                       { 
@@ -1298,18 +1421,21 @@
                       { 
                          "id":"xxa1732651110275", 
                          "title":"Desviación de característica", 
+                         "description":"Descripción y supervisión de cambios en las estadísticas de conjuntos de datos.", 
                          "url":"Vantage/es/xxa1732651110275.md"
                          }
                       , 
                       { 
                          "id":"etr1732651148787", 
                          "title":"Desviación de predicción", 
+                         "description":"Compruebe si hay desviaciones de modelos.", 
                          "url":"Vantage/es/etr1732651148787.md"
                          }
                       , 
                       { 
                          "id":"jrp1732651191166", 
                          "title":"Desviación de rendimiento", 
+                         "description":"Vea métricas de rendimiento a lo largo del tiempo.", 
                          "url":"Vantage/es/jrp1732651191166.md"
                          }
 
@@ -1350,6 +1476,7 @@
                       { 
                          "id":"xfu1732652871944", 
                          "title":"Crear conjunto de datos", 
+                         "description":"Siga los pasos y seleccione las opciones de conjuntos de datos.", 
                          "url":"Vantage/es/xfu1732652871944.md"
                          }
                       , 
@@ -1363,6 +1490,7 @@
                       { 
                          "id":"aql1732653182894", 
                          "title":"Detalles del conjunto de datos", 
+                         "description":"Parámetros de trabajo, evaluación y estadísticas.", 
                          "url":"Vantage/es/aql1732653182894.md", 
                          "children":[
                             { 
@@ -1375,6 +1503,7 @@
                             { 
                                "id":"xeb1732653278990", 
                                "title":"Actividad", 
+                               "description":"Revise los detalles del trabajo y del modelo.", 
                                "url":"Vantage/es/xeb1732653278990.md", 
                                "children":[
                                   { 
@@ -1414,6 +1543,7 @@
                       { 
                          "id":"ujq1732653385548", 
                          "title":"Propiedades", 
+                         "description":"Descripción de las diferentes propiedades de implementación.", 
                          "url":"Vantage/es/ujq1732653385548.md"
                          }
                       , 
@@ -1427,6 +1557,7 @@
                       { 
                          "id":"bri1732653485626", 
                          "title":"Prueba (despliegues de Docker RESTful)", 
+                         "description":"Información acerca de cómo probar implementaciones.", 
                          "url":"Vantage/es/bri1732653485626.md"
                          }
 
@@ -1477,12 +1608,14 @@
                       { 
                          "id":"hdx1732656986435", 
                          "title":"Alertas", 
+                         "description":"Posponga una o todas las alertas.", 
                          "url":"Vantage/es/hdx1732656986435.md"
                          }
                       , 
                       { 
                          "id":"uro1732657007321", 
                          "title":"Silencios", 
+                         "description":"Reanude las alertas.", 
                          "url":"Vantage/es/uro1732657007321.md"
                          }
 
@@ -1503,35 +1636,35 @@
                 { 
                    "id":"xgm1732657104092", 
                    "title":"Crear tarea de ingeniería de características", 
-                   "description":"Cree una tarea de ingeniería de características para su modelo.", 
+                   "icon":"counter_1", 
                    "url":"Vantage/es/xgm1732657104092.md"
                    }
                 , 
                 { 
                    "id":"hkt1732657162141", 
                    "title":"Ejecutar tarea de ingeniería de características", 
-                   "description":"Vea el progreso de la ejecución de una tarea.", 
+                   "icon":"counter_2", 
                    "url":"Vantage/es/hkt1732657162141.md"
                    }
                 , 
                 { 
                    "id":"kpk1732657235913", 
                    "title":"Desplegar tarea de ingeniería de características", 
-                   "description":"Configure los detalles de la planificación y despliegue una tarea.", 
+                   "icon":"counter_3", 
                    "url":"Vantage/es/kpk1732657235913.md"
                    }
                 , 
                 { 
                    "id":"xli1732657281828", 
                    "title":"Trabajos", 
-                   "description":"Obtenga información sobre trabajos de ingeniería de características y véalos.", 
+                   "icon":"counter_4", 
                    "url":"Vantage/es/xli1732657281828.md"
                    }
                 , 
                 { 
                    "id":"zyw1732657344552", 
                    "title":"Detalles de ingeniería de características", 
-                   "description":"Los detalles incluyen eventos y artefactos generados por una tarea.", 
+                   "icon":"counter_5", 
                    "url":"Vantage/es/zyw1732657344552.md", 
                    "children":[
                       { 

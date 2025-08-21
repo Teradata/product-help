@@ -61,25 +61,27 @@
                 { 
                    "id":"wvr1709157903898", 
                    "title":"環境を作成する", 
-                   "description":"最初のプライマリ クラスタとデータベースを作成します。", 
                    "icon":"counter_1", 
                    "url":"Vantage/ja/wvr1709157903898.md", 
                    "children":[
                       { 
                          "id":"leq1721069053027", 
                          "title":"プライマリ クラスタ", 
+                         "icon":"Counter_1", 
                          "url":"Vantage/ja/leq1721069053027.md"
                          }
                       , 
                       { 
                          "id":"czl1721069081260", 
                          "title":"データベース資格情報", 
+                         "icon":"counter_2", 
                          "url":"Vantage/ja/czl1721069081260.md"
                          }
                       , 
                       { 
                          "id":"keu1721069101205", 
                          "title":"詳細オプション", 
+                         "icon":"counter_3", 
                          "url":"Vantage/ja/keu1721069101205.md"
                          }
 
@@ -90,7 +92,6 @@
                 { 
                    "id":"cqk1721231159841", 
                    "title":"ネットワーク接続を管理する", 
-                   "description":"環境への接続を許可します。", 
                    "icon":"counter_2", 
                    "url":"Vantage/ja/cqk1721231159841.md", 
                    "children":[
@@ -113,7 +114,6 @@
                 { 
                    "id":"ahj1695153106508", 
                    "title":"最初のクエリーを実行する", 
-                   "description":"エディタを使用して、最初のVantageクエリーを実行します。", 
                    "icon":"counter_3", 
                    "url":"Vantage/ja/ahj1695153106508.md", 
                    "children":[
@@ -138,7 +138,7 @@
                 { 
                    "id":"myu1722373703045", 
                    "title":"追加タスク", 
-                   "description":"次に行うべきこと", 
+                   "description":"次に行うこと", 
                    "url":"Vantage/ja/myu1722373703045.md"
                    }
 
@@ -186,7 +186,6 @@
                 { 
                    "id":"whf1680184025148", 
                    "title":"IDプロバイダの追加", 
-                   "description":"サポート対象のIDプロバイダのタイプ。", 
                    "icon":"counter_1", 
                    "url":"Vantage/ja/whf1680184025148.md", 
                    "children":[
@@ -209,7 +208,6 @@
                 { 
                    "id":"ruf1680184116601", 
                    "title":"レルムの作成", 
-                   "description":"レルムを使ってユーザーと管理者を認証します。", 
                    "icon":"counter_2", 
                    "url":"Vantage/ja/ruf1680184116601.md"
                    }
@@ -245,6 +243,13 @@
              "description":"組織内の現在のアクセス トークンを表示します。", 
              "url":"Vantage/ja/mwx1694115292045.md"
              }
+          , 
+          { 
+             "id":"ebv1753222218275", 
+             "title":"パブリックURLを無効にする", 
+             "description":"コンソール レベルでのネットワーク セキュリティを強化します。", 
+             "url":"Vantage/ja/ebv1753222218275.md"
+             }
 
           ]
 
@@ -265,6 +270,7 @@
                 { 
                    "id":"cql1739481888655", 
                    "title":"CMEKキー リソース要件", 
+                   "description":"パブリック クラウドのプライベート キー要件。", 
                    "url":"Vantage/ja/cql1739481888655.md"
                    }
 
@@ -288,8 +294,15 @@
                 { 
                    "id":"hyl1696627580794", 
                    "title":"Azureポータルでプライベート エンドポイントを作成する", 
-                   "description":"プライベート リンクの構成を完了します。", 
+                   "description":"Azureプライベート リンクの構成を完了します。", 
                    "url":"Vantage/ja/hyl1696627580794.md"
+                   }
+                , 
+                { 
+                   "id":"tlg1750449622665", 
+                   "title":"Google Cloudポータルでプライベート エンドポイントを作成する", 
+                   "description":"Private Service Connectの構成を完了します。", 
+                   "url":"Vantage/ja/tlg1750449622665.md"
                    }
 
                 ]
@@ -318,7 +331,7 @@
                       { 
                          "id":"xrr1658772541186", 
                          "title":"コンピューティング グループの作成", 
-                         "description":"コンピューティング グループのタイプについて探索します。", 
+                         "description":"コンピュート グループについて学びます。", 
                          "url":"Vantage/ja/xrr1658772541186.md"
                          }
                       , 
@@ -380,12 +393,12 @@
                       { 
                          "id":"rhw1723830545389", 
                          "title":"データベース管理者を作成する", 
-                         "description":"追加のDBAを作成する手順", 
+                         "icon":"counter_1", 
                          "url":"Vantage/ja/rhw1723830545389.md", 
                          "children":[
                             { 
                                "id":"tws1731526438164", 
-                               "title":"DBC (ルート) ユーザー", 
+                               "title":"ルート (DBC) ユーザー", 
                                "url":"Vantage/ja/tws1731526438164.md"
                                }
                             , 
@@ -408,6 +421,7 @@
                       { 
                          "id":"xnm1723830877831", 
                          "title":"データベース管理者に通知する", 
+                         "icon":"counter_2", 
                          "url":"Vantage/ja/xnm1723830877831.md"
                          }
 
@@ -440,9 +454,16 @@
                    "children":[
                       { 
                          "id":"cdg1689098187313", 
-                         "title":"接続とコンポーネント", 
-                         "description":"QueryGridコネクタと接続オプションです。", 
+                         "title":"接続", 
+                         "description":"QueryGridの接続オプション。", 
                          "url":"Vantage/ja/cdg1689098187313.md"
+                         }
+                      , 
+                      { 
+                         "id":"qxt1753318913933", 
+                         "title":"コンポーネント", 
+                         "description":"QueryGridコンポーネントについて学びます。", 
+                         "url":"Vantage/ja/qxt1753318913933.md"
                          }
                       , 
                       { 
@@ -490,6 +511,13 @@
                                      "title":"外部サーバーを作成する", 
                                      "description":"外部サーバーをセットアップします。", 
                                      "url":"Vantage/ja/bbo1735955417476.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"wpq1753318483091", 
+                                     "title":"HiveとSparkのユーザー マッピング", 
+                                     "description":"ターゲットが安全でない場合のユーザー マッピングについて理解します。", 
+                                     "url":"Vantage/ja/wpq1753318483091.md"
                                      }
 
                                   ]
@@ -617,6 +645,13 @@
                             ]
 
                          }
+                      , 
+                      { 
+                         "id":"uah1721690770470", 
+                         "title":"QueryGridでよくある質問", 
+                         "description":"QueryGridでよくある質問の回答。", 
+                         "url":"Vantage/ja/uah1721690770470.md"
+                         }
 
                       ]
 
@@ -631,14 +666,14 @@
                       { 
                          "id":"qmb1659046927155", 
                          "title":"バックアップ計画の作成", 
-                         "description":"バックアップ計画を作成または変更する", 
+                         "description":"バックアップ計画を作成または変更します。", 
                          "url":"Vantage/ja/qmb1659046927155.md"
                          }
                       , 
                       { 
                          "id":"tyu1695326821997", 
                          "title":"バックアップ ジョブを手動で開始する", 
-                         "description":"スケジュール済みジョブとは別にバックアップ ジョブを開始する", 
+                         "description":"スケジュール済みジョブとは別にバックアップ ジョブを開始します。", 
                          "url":"Vantage/ja/tyu1695326821997.md"
                          }
                       , 
@@ -659,6 +694,7 @@
                       { 
                          "id":"qkl1744735483272", 
                          "title":"復元ジョブの設定", 
+                         "description":"復元ジョブの設定オプション。", 
                          "url":"Vantage/ja/qkl1744735483272.md", 
                          "children":[
                             { 
@@ -674,7 +710,7 @@
                       { 
                          "id":"sus1659047241965", 
                          "title":"バックアップ計画履歴を表示する", 
-                         "description":"過去と現在のバックアップと復元のジョブを表示する", 
+                         "description":"過去と現在のバックアップと復元のジョブを表示します。", 
                          "url":"Vantage/ja/sus1659047241965.md"
                          }
                       , 
@@ -707,6 +743,89 @@
                          "title":"データ保護に関するよくある質問", 
                          "description":"よくある質問とその回答です。", 
                          "url":"Vantage/ja/iom1694462056775.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"fsd1742339949986", 
+                   "title":"ベクトル ストア", 
+                   "description":"ベクトル ストアを使用する理由および有効にする方法。", 
+                   "url":"Vantage/ja/fsd1742339949986.md", 
+                   "children":[
+                      { 
+                         "id":"drc1742340305540", 
+                         "title":"ベクトル ストアを作成する", 
+                         "description":"ベクトル ストアの作成方法。", 
+                         "url":"Vantage/ja/drc1742340305540.md", 
+                         "children":[
+                            { 
+                               "id":"nly1742946843656", 
+                               "title":"ベクトル ストアを作成する:定義", 
+                               "icon":"counter_1", 
+                               "url":"Vantage/ja/nly1742946843656.md"
+                               }
+                            , 
+                            { 
+                               "id":"dai1742946866871", 
+                               "title":"ベクトル ストアを作成する:データ ソース", 
+                               "icon":"counter_2", 
+                               "url":"Vantage/ja/dai1742946866871.md"
+                               }
+                            , 
+                            { 
+                               "id":"smv1742946887645", 
+                               "title":"ベクトル ストアを作成する:設定", 
+                               "icon":"counter_3", 
+                               "url":"Vantage/ja/smv1742946887645.md", 
+                               "children":[
+                                  { 
+                                     "id":"ymq1742947367911", 
+                                     "title":"インデックス設定", 
+                                     "url":"Vantage/ja/ymq1742947367911.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"ujc1742947175120", 
+                                     "title":"検索設定", 
+                                     "url":"Vantage/ja/ujc1742947175120.md"
+                                     }
+                                  , 
+                                  { 
+                                     "id":"aha1749084955590", 
+                                     "title":"一般設定", 
+                                     "url":"Vantage/ja/aha1749084955590.md"
+                                     }
+
+                                  ]
+
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"xpf1742341027956", 
+                         "title":"ベクトル ストアを管理する", 
+                         "description":"ベクトル ストアのユーザーとデータを編集または削除します。", 
+                         "url":"Vantage/ja/xpf1742341027956.md"
+                         }
+                      , 
+                      { 
+                         "id":"dpw1742341058646", 
+                         "title":"ベクトル ストアを編集する", 
+                         "description":"データとパラメータを更新します。", 
+                         "url":"Vantage/ja/dpw1742341058646.md"
+                         }
+                      , 
+                      { 
+                         "id":"xqf1748474867488", 
+                         "title":"ベクトル ストアでよくある質問", 
+                         "description":"よくある質問とその回答をご確認ください。", 
+                         "url":"Vantage/ja/xqf1748474867488.md"
                          }
 
                       ]
@@ -858,14 +977,14 @@
           { 
              "id":"juo1640281123239", 
              "title":"データベース オブジェクトを参照する", 
-             "description":"環境に接続して参照する", 
+             "description":"環境に接続して参照します。", 
              "url":"Vantage/ja/juo1640281123239.md"
              }
           , 
           { 
              "id":"dgd1640281158386", 
              "title":"データのクエリー", 
-             "description":"エディタでクエリーを実行する", 
+             "description":"エディタでクエリーを実行します。", 
              "url":"Vantage/ja/dgd1640281158386.md", 
              "children":[
                 { 
@@ -878,7 +997,7 @@
                 { 
                    "id":"vkk1692059193535", 
                    "title":"クエリーを構築する", 
-                   "description":"生成されたSQLを使用してクエリーを構築する", 
+                   "description":"生成されたSQLを使用してクエリーを構築します。", 
                    "url":"Vantage/ja/vkk1692059193535.md"
                    }
                 , 
@@ -905,7 +1024,7 @@
           { 
              "id":"xxs1694723933787", 
              "title":"SQLとデータベースの参照", 
-             "description":"SQLコマンド、関数、データベース機能", 
+             "description":"SQLコマンド、関数、データベース機能。", 
              "url":"Vantage/ja/xxs1694723933787.md"
              }
           , 
@@ -985,7 +1104,7 @@
                 { 
                    "id":"ani1706483842546", 
                    "title":"コピー エージェントを編集する", 
-                   "description":"コピー エージェントを維持するためのアクション", 
+                   "description":"コピー エージェントを維持するためのアクション。", 
                    "url":"Vantage/ja/ani1706483842546.md"
                    }
 
@@ -996,13 +1115,13 @@
           { 
              "id":"otq1703818370684", 
              "title":"データ コピーを使用する", 
-             "description":"コピー計画を作成および管理する", 
+             "description":"コピー計画を作成および管理します。", 
              "url":"Vantage/ja/otq1703818370684.md", 
              "children":[
                 { 
                    "id":"pwa1703818612067", 
                    "title":"コピー計画を作成する", 
-                   "description":"選択する計画名、設定、およびオブジェクト", 
+                   "description":"選択する計画名、設定、およびオブジェクト。", 
                    "url":"Vantage/ja/pwa1703818612067.md"
                    }
                 , 
@@ -1094,13 +1213,14 @@
                       { 
                          "id":"vpe1725389258480", 
                          "title":"データセット接続を追加する", 
-                         "description":"モデル用の接続を作成する", 
+                         "description":"モデル用の接続を作成します。", 
                          "url":"Vantage/ja/vpe1725389258480.md"
                          }
                       , 
                       { 
                          "id":"qmz1732650253991", 
                          "title":"データセット接続のヘルスチェック", 
+                         "description":"モジュールが正しく構成されていることを確認します。", 
                          "url":"Vantage/ja/qmz1732650253991.md"
                          }
 
@@ -1141,18 +1261,21 @@
                       { 
                          "id":"akl1725408274100", 
                          "title":"BYOMを定義する", 
+                         "description":"バージョンをインポートせずに定義します。", 
                          "url":"Vantage/ja/akl1725408274100.md"
                          }
                       , 
                       { 
                          "id":"nro1732650484867", 
                          "title":"BYOMをインポート", 
+                         "description":"既存のモデル バージョンがない状態でインポートします。", 
                          "url":"Vantage/ja/nro1732650484867.md"
                          }
                       , 
                       { 
                          "id":"jbg1732650538946", 
                          "title":"Python/Rモデルをインポート", 
+                         "description":"PythonまたはRモデルを追加します。", 
                          "url":"Vantage/ja/jbg1732650538946.md"
                          }
 
@@ -1180,56 +1303,56 @@
                 { 
                    "id":"wnt1743340516346", 
                    "title":"モデルをインポート", 
-                   "description":"モデルをインポートするオプションはここに表示されます", 
+                   "icon":"counter_1", 
                    "url":"Vantage/ja/wnt1743340516346.md"
                    }
                 , 
                 { 
                    "id":"etl1725408512818", 
                    "title":"モデルをトレーニングする", 
-                   "description":"モデルをトレーニングするためのプロパティをセットアップします。", 
+                   "icon":"counter_2", 
                    "url":"Vantage/ja/etl1725408512818.md"
                    }
                 , 
                 { 
                    "id":"wzw1732650597340", 
                    "title":"モデルを評価する", 
-                   "description":"データセットとテンプレートを使ってトレーニング済みモデルを評価します。", 
+                   "icon":"counter_3", 
                    "url":"Vantage/ja/wzw1732650597340.md"
                    }
                 , 
                 { 
                    "id":"zum1732650629250", 
                    "title":"モデルをデプロイする", 
-                   "description":"モデルを実働環境にデプロイします。", 
+                   "icon":"counter_4", 
                    "url":"Vantage/ja/zum1732650629250.md"
                    }
                 , 
                 { 
                    "id":"yfx1732650662039", 
                    "title":"ジョブ", 
-                   "description":"モデル ライフサイクル ジョブを参照してください。", 
+                   "icon":"counter_5", 
                    "url":"Vantage/ja/yfx1732650662039.md"
                    }
                 , 
                 { 
                    "id":"kll1732650698482", 
                    "title":"モデルをリタイアさせる", 
-                   "description":"実働環境からモデル バージョンを削除します。", 
+                   "icon":"counter_6", 
                    "url":"Vantage/ja/kll1732650698482.md"
                    }
                 , 
                 { 
                    "id":"xtq1725408819410", 
                    "title":"コミット履歴", 
-                   "description":"モデルのコード変更予定を表示します。", 
+                   "icon":"counter_7", 
                    "url":"Vantage/ja/xtq1725408819410.md"
                    }
                 , 
                 { 
                    "id":"sdn1725408878969", 
                    "title":"アラート構成", 
-                   "description":"しきい値を使用してアラートを生成します。", 
+                   "icon":"counter_8", 
                    "url":"Vantage/ja/sdn1725408878969.md", 
                    "children":[
                       { 
@@ -1245,7 +1368,7 @@
                 { 
                    "id":"nbx1732650777635", 
                    "title":"モデル比較", 
-                   "description":"モデル比較レポートを実行するメリットを参照してください。", 
+                   "icon":"counter_9", 
                    "url":"Vantage/ja/nbx1732650777635.md", 
                    "children":[
                       { 
@@ -1298,18 +1421,21 @@
                       { 
                          "id":"xxa1732651110275", 
                          "title":"特徴量ドリフト", 
+                         "description":"データセットの統計変化を理解し、監視します。", 
                          "url":"Vantage/ja/xxa1732651110275.md"
                          }
                       , 
                       { 
                          "id":"etr1732651148787", 
                          "title":"予測ドリフト", 
+                         "description":"モデル偏差をチェックします。", 
                          "url":"Vantage/ja/etr1732651148787.md"
                          }
                       , 
                       { 
                          "id":"jrp1732651191166", 
                          "title":"パフォーマンスドリフト", 
+                         "description":"パフォーマンス メトリックの経時変化を表示します。", 
                          "url":"Vantage/ja/jrp1732651191166.md"
                          }
 
@@ -1350,6 +1476,7 @@
                       { 
                          "id":"xfu1732652871944", 
                          "title":"データセットを作成する", 
+                         "description":"手順に従ってデータセット オプションを選択します。", 
                          "url":"Vantage/ja/xfu1732652871944.md"
                          }
                       , 
@@ -1363,6 +1490,7 @@
                       { 
                          "id":"aql1732653182894", 
                          "title":"データセットの詳細", 
+                         "description":"ジョブのパラメータ、評価、統計。", 
                          "url":"Vantage/ja/aql1732653182894.md", 
                          "children":[
                             { 
@@ -1375,6 +1503,7 @@
                             { 
                                "id":"xeb1732653278990", 
                                "title":"アクティビティ", 
+                               "description":"ジョブとモデルの詳細を確認します。", 
                                "url":"Vantage/ja/xeb1732653278990.md", 
                                "children":[
                                   { 
@@ -1414,6 +1543,7 @@
                       { 
                          "id":"ujq1732653385548", 
                          "title":"プロパティ", 
+                         "description":"さまざまなデプロイメント プロパティについて理解します。", 
                          "url":"Vantage/ja/ujq1732653385548.md"
                          }
                       , 
@@ -1427,6 +1557,7 @@
                       { 
                          "id":"bri1732653485626", 
                          "title":"テスト (Docker RESTfulデプロイ)", 
+                         "description":"デプロイメントのテスト方法を学びます。", 
                          "url":"Vantage/ja/bri1732653485626.md"
                          }
 
@@ -1477,12 +1608,14 @@
                       { 
                          "id":"hdx1732656986435", 
                          "title":"アラート", 
+                         "description":"1つまたはすべてのアラートをスヌーズします。", 
                          "url":"Vantage/ja/hdx1732656986435.md"
                          }
                       , 
                       { 
                          "id":"uro1732657007321", 
                          "title":"サイレンス", 
+                         "description":"アラートを再開します。", 
                          "url":"Vantage/ja/uro1732657007321.md"
                          }
 
@@ -1503,35 +1636,35 @@
                 { 
                    "id":"xgm1732657104092", 
                    "title":"特徴量エンジニアリング タスクを作成する", 
-                   "description":"モデルの特徴量エンジニアリング タスクを作成します。", 
+                   "icon":"counter_1", 
                    "url":"Vantage/ja/xgm1732657104092.md"
                    }
                 , 
                 { 
                    "id":"hkt1732657162141", 
                    "title":"特徴量エンジニアリング タスクを実行する", 
-                   "description":"タスクの進捗状況を表示します。", 
+                   "icon":"counter_2", 
                    "url":"Vantage/ja/hkt1732657162141.md"
                    }
                 , 
                 { 
                    "id":"kpk1732657235913", 
                    "title":"特徴量エンジニアリング タスクをデプロイする", 
-                   "description":"スケジュールの詳細を構成し、タスクをデプロイします。", 
+                   "icon":"counter_3", 
                    "url":"Vantage/ja/kpk1732657235913.md"
                    }
                 , 
                 { 
                    "id":"xli1732657281828", 
                    "title":"ジョブ", 
-                   "description":"特徴量エンジニアリング ジョブについて学び、ジョブを表示します。", 
+                   "icon":"counter_4", 
                    "url":"Vantage/ja/xli1732657281828.md"
                    }
                 , 
                 { 
                    "id":"zyw1732657344552", 
                    "title":"特徴量エンジニアリングの詳細", 
-                   "description":"詳細には、イベントやタスクによって生成されたアーティファクトが含まれます。", 
+                   "icon":"counter_5", 
                    "url":"Vantage/ja/zyw1732657344552.md", 
                    "children":[
                       { 
