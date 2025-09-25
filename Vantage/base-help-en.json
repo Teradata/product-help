@@ -250,6 +250,13 @@
              "description":"Enhance network security at the console level.", 
              "url":"Vantage/ebv1753222218275.md"
              }
+          , 
+          { 
+             "id":"cjb1756493809177", 
+             "title":"Open analytics framework authorization sign in", 
+             "description":"OAF Auth sign in generates JWTs & accesses OAF REST APIs.", 
+             "url":"Vantage/cjb1756493809177.md"
+             }
 
           ]
 
