@@ -22,18 +22,6 @@
              "url":"VantageCloud_Learn/ahx1707271934625.md", 
              "childrenUrl":"https://docs.teradata.com/p/VantageCloud/Lake"
              }
- , 
-          { 
-             "id":"fooo", 
-             "title":"Some new card", 
-             "description":"Lorem ipsum", 
-             "icon":"library_books", 
-             "url":"VantageCloud_Learn/ahx1707271934625.md", 
-             "childrenUrl":"https:/www.google.com"
-             }
-          ]
-
-       }
     , 
     { 
        "id":"xwq1729895742653", 
