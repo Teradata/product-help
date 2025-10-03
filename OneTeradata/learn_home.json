@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "id": "home-toolkit",
+            "title": "Teradata AI development toolkit",
+            "description": "Use prebuilt notebooks to integrate with vector store and build models ready for production.",
+            "url": "",
+            "children": [
+                {
+                    "id": "home-notebooks",
+                    "title": "Welcome to VantageCloud Lake",
+                    "description": "Explore your data, build AI/ML models, and share your work.",
+                    "icon": "book_outlined",
+                    "url": "",
+                    "childrenUrl": "/notebooks"
+                },
+                {
+                    "id": "home-vectorstore",
+                    "title": "Vector store",
+                    "description": "Convert data for semantic search integration and RAG applications.",
+                    "icon": "variable_outlined",
+                    "url": "",
+                    "childrenUrl": "/vector-store"
+                },
+                {
+                    "id": "home-modelops",
+                    "title": "ModelOps",
+                    "description": "Deploy, monitor, and manage your AI/ML models.",
+                    "icon": "product_modelops;covalent",
+                    "url": "",
+                    "childrenUrl": "/modelops"
+                }
+            ]
+        }
+    ]
+}

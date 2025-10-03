@@ -1,0 +1,44 @@
+{
+    "items": [
+        {
+            "id": "integrations-learnmore",
+            "title": "Learn more",
+            "description": "See documentation and learning resources.",
+            "url": "",
+            "children": [
+                {
+                    "id": "learn-gitea",
+                    "title": "Version your Git code with Gitea",
+                    "description": "Self-host your Git repositories for code reviews, collaboration, package registry, and CI/CD.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.gitea.com/"
+                },
+                {
+                    "id": "learn-createairflow",
+                    "title": "Create workflows with Airflow",
+                    "description": "Configure and schedule workflows using notebook scripts as components.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
+                },
+                {
+                    "id": "learn-runairflow",
+                    "title": "Run Airflow workflows with ModelOps",
+                    "description": "Accelerate the end-to-end process of developing, deploying, and managing models.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+                },
+                {
+                    "id": "learn-devpi",
+                    "title": "Manage Python packages with devpi",
+                    "description": "Drive packaging, testing, and release activities with Python.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://devpi.net/docs/devpi/devpi/stable/%2Bd/index.html"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,168 @@
+{
+    "items": [
+        {
+            "id": "learning-learnmore",
+            "title": "Learn more",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "notebooks",
+                    "title": "Notebooks",
+                    "description": "",
+                    "icon": "book_outined",
+                    "url": "",
+					"children": [
+						{
+							"id": "notebooks-discover",
+							"title": "Discover Teradata noteooks",
+							"description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/notebooks"
+						},
+						{
+							"id": "notebooks-ingest",
+							"title": "Ingest and explore data",
+							"description": "See how to analyze the data, create new features, and experiment with different models.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/notebooks"
+						},
+						{
+							"id": "notebooks-explore",
+							"title": "Explore using vectors in notebooks",
+							"description": "Learn about searching for and retrieving vectors for your models.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/notebooks"
+						},
+						{
+							"id": "notebooks-sample",
+							"title": "Try sample Teradata notebooks",
+							"description": "Experiment with analytic functions in notebooks pre-built for use cases.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/notebooks"
+						}
+					]
+				},
+                {
+                    "id": "modelops",
+                    "title": "ModelOps",
+                    "description": "",
+                    "icon": "product_modelops;covalent",
+                    "url": "",
+					"children": [
+						{
+							"id": "modelops-learn",
+							"title": "Learn about ModelOps",
+							"description": "Learn how to deploy, monitor, and manage your machine learning models.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=qya1694122121061"
+						},
+						{
+							"id": "modelops-build",
+							"title": "Build projects, add datasets, and select models",
+							"description": "A project contains the models, datasets, and other resources to train, evaluate, and deploy models.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=vtz1725408102228"
+						},
+						{
+							"id": "modelops-define",
+							"title": "Define models",
+							"description": "Use models from specific Git repositories or bring your own Python, R, or SAS model.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=fqd1725408187193"
+						},
+						{
+							"id": "modelops-train",
+							"title": "Train, evaluate, and deploy models",
+							"description": "Evaluate, compare, and approve new model versions for multiple environments.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=etl1725408512818"
+						},
+						{
+							"id": "modelops-monitor",
+							"title": "Monitor model deployments",
+							"description": "Create predictions and monitor use case performance.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=rhi1732651074130"
+						},
+						{
+							"id": "modelops-airflow",
+							"title": "Work with Airflow",
+							"description": "Author, schedule, and monitor batch-oriented workflows.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+						}
+					]
+				},
+                {
+                    "id": "vectorstore",
+                    "title": "Vector store",
+                    "description": "",
+                    "icon": "variable;covalent",
+                    "url": "",
+					"children": [
+						{
+							"id": "vectorstore-learn",
+							"title": "Learn about vector store",
+							"description": "See how you can use semantic relationships and similarity to enable your AI/ML applications.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+						},
+						{
+							"id": "vectorstore-create",
+							"title": "Create a vector store collection",
+							"description": "Convert data for semantic search integration and RAG applications.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+						},
+						{
+							"id": "vectorstore-explore",
+							"title": "Explore using vectors in notebooks",
+							"description": "Learn about searching for and retrieving vectors for your models.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+						},
+						{
+							"id": "vectorstore-test",
+							"title": "Test collections in the playground",
+							"description": "Ask questions and test the similarity search for each collection.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+						}
+					]
+				},
+                {
+                    "id": "useraccess",
+                    "title": "User access",
+                    "description": "",
+                    "icon": "admin_panel_settings_outlined",
+                    "url": "",
+					"children": [
+						{
+							"id": "users-add",
+							"title": "Add users",
+							"description": "Onboard your colleagues.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "."
+						}
+					]
+				}
+            ]
+        }
+    ]
+}

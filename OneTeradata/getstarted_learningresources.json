@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "id": "learning-getstarted",
+            "title": "Get started",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "learning-tour",
+                    "title": "Take a tour",
+                    "description": "Learn your way around.",
+                    "icon": "tour_outlined",
+                    "url": "",
+                    "childrenUrl": " pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
+                },
+                {
+                    "id": "learning-samplenotebooks",
+                    "title": "Try sample Teradata notebooks",
+                    "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
+                    "icon": "play_lesson_outlined",
+                    "url": "",
+                    "childrenUrl": "/notebooks"
+                },
+                {
+                    "id": "learning-vectornotebook",
+                    "title": "Explore using vectors in notebooks",
+                    "description": "Learn about searching for and retrieving vectors for your models.",
+                    "icon": "variable_outlined;covalent",
+                    "url": "",
+                    "childrenUrl": "/notebooks"
+                }
+            ]
+        }
+    ]
+}
