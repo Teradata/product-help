@@ -11,15 +11,15 @@
                     "title": "Take a tour",
                     "description": "Learn your way around.",
                     "icon": "tour",
-                    "url": "",
+                    "url": "pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)",
                     "childrenUrl": "pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
                 },
                 {
                     "id": "learning-samplenotebooks",
                     "title": "Try sample Teradata notebooks",
                     "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
-                    "icon": "play_lessonr",
-                    "url": "",
+                    "icon": "play_lesson",
+                    "url": "/notebooks",
                     "childrenUrl": "/notebooks"
                 },
                 {
@@ -27,7 +27,7 @@
                     "title": "Explore using vectors in notebooks",
                     "description": "Learn about searching for and retrieving vectors for your models.",
                     "icon": "variable_outlined;covalent",
-                    "url": "",
+                    "url": "/notebooks",
                     "childrenUrl": "/notebooks"
                 }
             ]
