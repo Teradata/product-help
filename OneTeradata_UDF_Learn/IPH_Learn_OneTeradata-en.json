@@ -1,61 +1,36 @@
-{  "items":[
-    { 
-       "id":"eca1753816934741", 
-       "title":"Section 1", 
-       "url":"Name-of-Output-Folder/eca1753816934741.md", 
-       "children":[
-          { 
-             "id":"imv1753816959798", 
-             "title":"Header 1", 
-             "url":"Name-of-Output-Folder/imv1753816959798.md"
-             }
-          , 
-          { 
-             "id":"ico1753817101639", 
-             "title":"Header 2", 
-             "url":"Name-of-Output-Folder/ico1753817101639.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"tlv1753817122200", 
-       "title":"Section 2", 
-       "url":"Name-of-Output-Folder/tlv1753817122200.md", 
-       "children":[
-          { 
-             "id":"syd1753817584950", 
-             "title":"Header 1", 
-             "url":"Name-of-Output-Folder/syd1753817584950.md"
-             }
-          , 
-          { 
-             "id":"lev1753817606669", 
-             "title":"Header 2", 
-             "url":"Name-of-Output-Folder/lev1753817606669.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"dvf1753817559848", 
-       "title":"Get help", 
-       "url":"Name-of-Output-Folder/dvf1753817559848.md", 
-       "children":[
-          { 
-             "id":"lhf1753817630532", 
-             "title":"Header 1", 
-             "url":"Name-of-Output-Folder/lhf1753817630532.md"
-             }
-
-          ]
-
-       }
-
+{
+    "items": [
+        {
+            "id": "learning-getstarted",
+            "title": "Get started",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "learning-tour",
+                    "title": "Take a tour",
+                    "description": "Learn your way around.",
+                    "icon": "tour_outlined",
+                    "url": "",
+                    "childrenUrl": "pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
+                },
+                {
+                    "id": "learning-samplenotebooks",
+                    "title": "Try sample Teradata notebooks",
+                    "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
+                    "icon": "play_lesson_outlined",
+                    "url": "",
+                    "childrenUrl": "/notebooks"
+                },
+                {
+                    "id": "learning-vectornotebook",
+                    "title": "Explore using vectors in notebooks",
+                    "description": "Learn about searching for and retrieving vectors for your models.",
+                    "icon": "variable_outlined;covalent",
+                    "url": "",
+                    "childrenUrl": "/notebooks"
+                }
+            ]
+        }
     ]
-
- }
+}
