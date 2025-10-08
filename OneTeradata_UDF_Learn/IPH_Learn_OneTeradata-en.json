@@ -10,7 +10,7 @@
                     "id": "learning-tour",
                     "title": "Take a tour",
                     "description": "Learn your way around.",
-                    "icon": "tour_outlined",
+                    "icon": "tour",
                     "url": "",
                     "childrenUrl": "pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
                 },
@@ -18,7 +18,7 @@
                     "id": "learning-samplenotebooks",
                     "title": "Try sample Teradata notebooks",
                     "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
-                    "icon": "play_lesson_outlined",
+                    "icon": "play_lessonr",
                     "url": "",
                     "childrenUrl": "/notebooks"
                 },
