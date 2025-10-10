@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "id": "integrations-apps",
+            "title": "Integrations",
+            "description": "Accelerate your work with these additional tools.",
+            "url": "",
+            "children": [
+                {
+                    "id": "apps-gitea",
+                    "title": "Git code versioning with Gitea",
+                    "description": "For persistence and version control of your projects.",
+                    "icon": "gitea",
+                    "url": ""
+                },
+                {
+                    "id": "apps-airflow",
+                    "title": "Create workflows with Airflow",
+                    "description": "Orchestration tool for configuring and scheduling project pipelines.",
+                    "icon": "airflow",
+                    "url": ""
+                },
+                {
+                    "id": "apps-devpi",
+                    "title": "Manage Python packages with devpi",
+                    "description": "Use devpi to securely manage your private Python packages from Pypi.",
+                    "icon": "devpi",
+                    "url": ""
+                }
+            ]
+        },
+		
+		
+		
+		
+    ]
+}
