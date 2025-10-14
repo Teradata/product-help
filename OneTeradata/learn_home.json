@@ -10,7 +10,7 @@
                     "id": "home-notebooks",
                     "title": "Welcome to VantageCloud Lake",
                     "description": "Explore your data, build AI/ML models, and share your work.",
-                    "icon": "book_outlined",
+                    "icon": "book",
                     "url": "",
                     "childrenUrl": "/notebooks"
                 },
@@ -18,7 +18,7 @@
                     "id": "home-vectorstore",
                     "title": "Vector store",
                     "description": "Convert data for semantic search integration and RAG applications.",
-                    "icon": "variable_outlined",
+                    "icon": "variable_outlined;covalent",
                     "url": "",
                     "childrenUrl": "/vector-store"
                 },
