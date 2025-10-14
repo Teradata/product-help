@@ -8,7 +8,7 @@
             "children": [
                 {
                     "id": "home-notebooks",
-                    "title": "Welcome to VantageCloud Lake",
+                    "title": "Notebooks",
                     "description": "Explore your data, build AI/ML models, and share your work.",
                     "icon": "book_outlined",
                     "url": "",
