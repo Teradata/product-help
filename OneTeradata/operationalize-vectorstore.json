@@ -1,0 +1,29 @@
+{
+    "items": [
+        {
+            "id": "vectorstore-overview",
+            "title": "Operationalize your collection",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "vectorstore-optimize",
+                    "title": "Optimize vector search",
+                    "description": "Use the playground to test and optimize similarity search performance for this collection.",
+                    "icon": "variable_outlined;covalent",
+                    "url": "",
+                    "childrenUrl": "/playground"
+                },
+                {
+                    "id": "vectorstore-load",
+                    "title": "Load data",
+                    "description": "Add new or updated documents to the collection to expand and improve the search performance.",
+                    "icon": "database",
+                    "url": "",
+                    "childrenUrl": "/data-sources"
+                }
+                }
+            ]
+        }
+    ]
+}
