@@ -8,22 +8,22 @@
             "children": [
                 {
                     "id": "apps-gitea",
-                    "title": "Git code versioning with Gitea",
-                    "description": "For persistence and version control of your projects.",
+                    "title": "Version your Git code with Gitea",
+                    "description": "Use Gitea for persistence and version control of your projects.",
                     "icon": "gitea",
                     "url": ""
                 },
                 {
                     "id": "apps-airflow",
                     "title": "Create workflows with Airflow",
-                    "description": "Orchestration tool for configuring and scheduling project pipelines.",
+                    "description": "Configure and schedule project pipelines with this orchestration tool.",
                     "icon": "airflow",
                     "url": ""
                 },
                 {
                     "id": "apps-devpi",
                     "title": "Manage Python packages with devpi",
-                    "description": "Use devpi to securely manage your private Python packages from Pypi.",
+                    "description": "Use devpi to manage your private Python packages from PyPI.",
                     "icon": "devpi",
                     "url": ""
                 }
