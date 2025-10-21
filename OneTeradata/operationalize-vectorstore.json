@@ -10,7 +10,7 @@
                     "id": "vectorstore-optimize",
                     "title": "Optimize vector search",
                     "description": "Use the playground to test and optimize similarity search performance for this collection.",
-                    "icon": "category",
+                    "icon": "category_outlined;covalent",
                     "url": "",
                     "childrenUrl": "/playground"
                 },
@@ -18,7 +18,7 @@
                     "id": "vectorstore-load",
                     "title": "Load data",
                     "description": "Add new or updated documents to the collection to expand and improve the search performance.",
-                    "icon": "database",
+                    "icon": "database_outlined;covalent",
                     "url": "",
                     "childrenUrl": "/data-sources"
                 },
@@ -26,9 +26,9 @@
                     "id": "vectorstore-rag",
                     "title": "Create RAG applications",
                     "description": "Build a Retrieval-Augmented Generation appliction with this collection and test AI-powered search experiences",
-                    "icon": "book",
+                    "icon": "book_outlined;covalent",
                     "url": "",
-                    "childrenUrl": "/notebooks"
+                    "childrenUrl": "/recent-chats"
                 }
             ]
         }
