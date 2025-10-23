@@ -1080,7 +1080,7 @@
        "children":[
           { 
              "id":"bcw1700511770060", 
-             "title":"Set up Data copy", 
+             "title":"Provision Data copy", 
              "description":"Add an environment, copy manager, and agent.", 
              "url":"Vantage/bcw1700511770060.md", 
              "children":[
@@ -1090,6 +1090,13 @@
                    "description":"Create a private link request for Data copy.", 
                    "url":"Vantage/dvp1707442265467.md"
                    }
+                , 
+                { 
+                   "id":"aho1759183229977", 
+                   "title":"Connect your environments", 
+                   "description":"Connect the established source and target environments.", 
+                   "url":"Vantage/aho1759183229977.md"
+                   }
 
                 ]
 
@@ -1098,7 +1105,7 @@
           { 
              "id":"zuh1706652286181", 
              "title":"Manage data copy", 
-             "description":"Edit the copy manager or copy agent", 
+             "description":"Edit the copy manager or copy agent.", 
              "url":"Vantage/zuh1706652286181.md", 
              "children":[
                 { 
@@ -1196,13 +1203,6 @@
 
                 ]
 
-             }
-          , 
-          { 
-             "id":"jue1725407850414", 
-             "title":"Account settings", 
-             "description":"Customize your ModelOps user experience", 
-             "url":"Vantage/jue1725407850414.md"
              }
           , 
           { 
@@ -1718,6 +1718,13 @@
              "title":"SAS", 
              "description":"Enable SAS on VantageCloud Lake.", 
              "url":"Vantage/ose1712360610524.md"
+             }
+          , 
+          { 
+             "id":"ijt1712360637589", 
+             "title":"Thales", 
+             "description":"Enable Thales on VantageCloud Lake", 
+             "url":"Vantage/ijt1712360637589.md"
              }
 
           ]
