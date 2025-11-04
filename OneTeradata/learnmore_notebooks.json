@@ -1,0 +1,41 @@
+{
+    "items": [
+        {
+            "id": "launcher-notebooks",
+            "title": "Learn More",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "launcher-discover-notebooks",
+                    "title": "Discover Teradata notebooks",
+                    "description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
+                    "icon": "",
+                    "url": ""
+                },
+                {
+                    "id": "launcher-vectors",
+                    "title": "Explore using vectors in notebooks",
+                    "description": "Learn about searching for and retrieving vectors for your models.",
+                    "icon": "",
+                    "url": ""
+                },
+                {
+                    "id": "launcher-explore-data",
+                    "title": "Ingest and explore data",
+                    "description": "See how to analyze the data, create new features, and experiment with different models.",
+                    "icon": "",
+                    "url": ""
+
+                },
+                {
+                    "id": "launcher-try-sample",
+                    "title": "Try sample Teradata notebooks",
+                    "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
+                    "icon": "",
+                    "url": ""
+                }
+            ]
+        }	
+    ]
+}
