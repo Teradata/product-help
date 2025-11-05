@@ -11,21 +11,24 @@
                     "title": "Version your Git code with Gitea",
                     "description": "Use Gitea for persistence and version control of your projects.",
                     "icon": "gitea",
-                    "url": "git/"
+                    "url": "",
+                    "childrenUrl": "/git"
                 },
                 {
                     "id": "apps-airflow",
                     "title": "Create workflows with Airflow",
                     "description": "Configure and schedule project pipelines with this orchestration tool.",
                     "icon": "airflow",
-                    "url": "airflow/"
+                    "url": "",
+                    "childrenUrl": "/airflow"
                 },
                 {
                     "id": "apps-devpi",
                     "title": "Manage Python packages with devpi",
                     "description": "Use devpi to manage your private Python packages from PyPI.",
                     "icon": "devpi",
-                    "url": "pypi/"
+                    "url": "",
+                    "childrenUrl": "/pypi"
                 }
             ]
         },
@@ -40,28 +43,32 @@
                     "title": "Version your Git code with Gitea",
                     "description": "Self-host your Git repositories for code reviews, collaboration, package registry, and CI/CD.",
                     "icon": "",
-                    "url": "https://docs.gitea.com/"
+                    "url": "",
+                    "childrenUrl": "https://docs.gitea.com/"
                 },
                 {
                     "id": "learn-createairflow",
                     "title": "Create workflows with Airflow",
                     "description": "Configure and schedule workflows using notebook scripts as components.",
                     "icon": "",
-                    "url": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
+                    "url": "",
+                    "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
                 },
                 {
                     "id": "learn-runairflow",
                     "title": "Run Airflow workflows with ModelOps",
                     "description": "Accelerate the end-to-end process of developing, deploying, and managing models.",
                     "icon": "",
-                    "url": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+                    "url": "",
+                    "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
                 },
                 {
                     "id": "learn-devpi",
                     "title": "Manage Python packages with devpi",
                     "description": "Drive packaging, testing, and release activities with Python.",
                     "icon": "",
-                    "url": "https://devpi.net/docs/devpi/devpi/stable/%2Bd/index.html"
+                    "url": "",
+                    "childrenUrl": "https://devpi.net/docs/devpi/devpi/stable/%2Bd/index.html"
                 }
             ]
         }		
