@@ -250,6 +250,13 @@
              "description":"Netzwerksicherheit auf der Konsolenebene verbessern.", 
              "url":"Vantage/de/ebv1753222218275.md"
              }
+          , 
+          { 
+             "id":"cjb1756493809177", 
+             "title":"Anmeldung für Open Analytics Framework-Autorisierung", 
+             "description":"Die OAF-Authentifizierung generiert JWTs und greift auf OAF-REST-APIs zu.", 
+             "url":"Vantage/de/cjb1756493809177.md"
+             }
 
           ]
 
@@ -1073,7 +1080,7 @@
        "children":[
           { 
              "id":"bcw1700511770060", 
-             "title":"Datenkopie einrichten", 
+             "title":"Datenkopie bereitstellen", 
              "description":"Umgebung, Copy Manager und Agent hinzufügen.", 
              "url":"Vantage/de/bcw1700511770060.md", 
              "children":[
@@ -1083,6 +1090,13 @@
                    "description":"Erstellen Sie eine Anfrage für einen privaten Link für die Datenkopie.", 
                    "url":"Vantage/de/dvp1707442265467.md"
                    }
+                , 
+                { 
+                   "id":"aho1759183229977", 
+                   "title":"Umgebungen verbinden", 
+                   "description":"Verbinden Sie die eingerichteten Quell- und Zielumgebungen miteinander.", 
+                   "url":"Vantage/de/aho1759183229977.md"
+                   }
 
                 ]
 
@@ -1091,7 +1105,7 @@
           { 
              "id":"zuh1706652286181", 
              "title":"Datenkopie verwalten", 
-             "description":"Copy Manager oder Copy Agent bearbeiten", 
+             "description":"Bearbeiten Sie den Copy Manager oder Copy Agent.", 
              "url":"Vantage/de/zuh1706652286181.md", 
              "children":[
                 { 
@@ -1189,13 +1203,6 @@
 
                 ]
 
-             }
-          , 
-          { 
-             "id":"jue1725407850414", 
-             "title":"Kontoeinstellungen", 
-             "description":"ModelOps-Benutzererfahrung anpassen", 
-             "url":"Vantage/de/jue1725407850414.md"
              }
           , 
           { 
@@ -1711,6 +1718,13 @@
              "title":"SAS", 
              "description":"Aktivieren Sie SAS auf VantageCloud Lake.", 
              "url":"Vantage/de/ose1712360610524.md"
+             }
+          , 
+          { 
+             "id":"ijt1712360637589", 
+             "title":"Thales", 
+             "description":"Thales auf VantageCloud Lake aktivieren", 
+             "url":"Vantage/de/ijt1712360637589.md"
              }
 
           ]

@@ -250,6 +250,13 @@
              "description":"コンソール レベルでのネットワーク セキュリティを強化します。", 
              "url":"Vantage/ja/ebv1753222218275.md"
              }
+          , 
+          { 
+             "id":"cjb1756493809177", 
+             "title":"Open Analytics Framework認証サインイン", 
+             "description":"OAF認証サインインはJWTを生成し、OAF REST APIにアクセスします。", 
+             "url":"Vantage/ja/cjb1756493809177.md"
+             }
 
           ]
 
@@ -1073,7 +1080,7 @@
        "children":[
           { 
              "id":"bcw1700511770060", 
-             "title":"データ コピーをセットアップする", 
+             "title":"データ コピーをプロビジョニングする", 
              "description":"環境、コピー マネージャ、エージェントを追加します。", 
              "url":"Vantage/ja/bcw1700511770060.md", 
              "children":[
@@ -1083,6 +1090,13 @@
                    "description":"データ コピーのプライベート リンク リクエストを作成します。", 
                    "url":"Vantage/ja/dvp1707442265467.md"
                    }
+                , 
+                { 
+                   "id":"aho1759183229977", 
+                   "title":"環境を接続する", 
+                   "description":"確立されたソース環境とターゲット環境を接続します。", 
+                   "url":"Vantage/ja/aho1759183229977.md"
+                   }
 
                 ]
 
@@ -1091,7 +1105,7 @@
           { 
              "id":"zuh1706652286181", 
              "title":"データ コピーを管理する", 
-             "description":"コピー マネージャまたはコピー エージェントを編集する", 
+             "description":"コピー マネージャまたはコピー エージェントを編集します。", 
              "url":"Vantage/ja/zuh1706652286181.md", 
              "children":[
                 { 
@@ -1189,13 +1203,6 @@
 
                 ]
 
-             }
-          , 
-          { 
-             "id":"jue1725407850414", 
-             "title":"アカウント設定", 
-             "description":"ModelOpsユーザーエクスペリエンスをカスタマイズする", 
-             "url":"Vantage/ja/jue1725407850414.md"
              }
           , 
           { 
@@ -1712,6 +1719,13 @@
              "description":"VantageCloud LakeでSASを有効にします。", 
              "url":"Vantage/ja/ose1712360610524.md"
              }
+          , 
+          { 
+             "id":"ijt1712360637589", 
+             "title":"Thales", 
+             "description":"VantageCloud LakeでThalesを有効にする", 
+             "url":"Vantage/ja/ijt1712360637589.md"
+             }
 
           ]
 
@@ -1751,7 +1765,7 @@
     { 
        "id":"bkm1640280721917", 
        "title":"ユースケース", 
-       "description":"ユース ケースを実行してVantageCloud Lakeの機能を探ります。", 
+       "description":"ユースケースを実行してVantageCloud Lakeの機能を探ります。", 
        "icon":"book", 
        "url":"Vantage/ja/bkm1640280721917.md", 
        "childrenUrl":"VantageCloudLakeUseCases/ja/use-cases-ja.json"
