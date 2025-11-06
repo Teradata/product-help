@@ -12,7 +12,7 @@
                     "description": "Use Gitea for persistence and version control of your projects.",
                     "icon": "gitea",
                     "url": "",
-                    "childrenUrl": "/git"
+                    "childrenUrl": "/one-td/git"
                 },
                 {
                     "id": "apps-airflow",
@@ -20,7 +20,7 @@
                     "description": "Configure and schedule project pipelines with this orchestration tool.",
                     "icon": "airflow",
                     "url": "",
-                    "childrenUrl": "/airflow"
+                    "childrenUrl": "/one-td/airflow"
                 },
                 {
                     "id": "apps-devpi",
@@ -28,7 +28,7 @@
                     "description": "Use devpi to manage your private Python packages from PyPI.",
                     "icon": "devpi",
                     "url": "",
-                    "childrenUrl": "/pypi"
+                    "childrenUrl": "/one-td/pypi"
                 }
             ]
         },
