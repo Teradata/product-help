@@ -10,7 +10,7 @@
                     "id": "notebooks",
                     "title": "Notebooks",
                     "description": "",
-                    "icon": "book_outined",
+                    "icon": "book",
                     "url": "",
 					"children": [
 						{
@@ -60,7 +60,7 @@
 							"description": "Learn how to deploy, monitor, and manage your machine learning models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=qya1694122121061"
+							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=qya1694122121061"
 						},
 						{
 							"id": "modelops-build",
@@ -68,7 +68,7 @@
 							"description": "A project contains the models, datasets, and other resources to train, evaluate, and deploy models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=vtz1725408102228"
+							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=vtz1725408102228"
 						},
 						{
 							"id": "modelops-define",
@@ -76,7 +76,7 @@
 							"description": "Use models from specific Git repositories or bring your own Python, R, or SAS model.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=fqd1725408187193"
+							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=fqd1725408187193"
 						},
 						{
 							"id": "modelops-train",
@@ -84,7 +84,7 @@
 							"description": "Evaluate, compare, and approve new model versions for multiple environments.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=etl1725408512818"
+							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=etl1725408512818"
 						},
 						{
 							"id": "modelops-monitor",
@@ -92,7 +92,7 @@
 							"description": "Create predictions and monitor use case performance.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops							?help_panel_opened=true&help_panel_id=rhi1732651074130"
+							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=rhi1732651074130"
 						},
 						{
 							"id": "modelops-airflow",
@@ -149,7 +149,7 @@
                     "id": "useraccess",
                     "title": "User access",
                     "description": "",
-                    "icon": "admin_panel_settings_outlined",
+                    "icon": "admin_panel_settings",
                     "url": "",
 					"children": [
 						{

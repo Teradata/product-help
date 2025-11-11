@@ -10,7 +10,7 @@
                     "id": "learning-feedback",
                     "title": "feedback",
                     "description": "",
-                    "icon": "rate_review_outlined",
+                    "icon": "rate_review",
                     "url": "",
                     "childrenUrl": "pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
                 },
@@ -18,7 +18,7 @@
                     "id": "learning-documentation",
                     "title": "Documentation",
                     "description": "",
-                    "icon": "docs_outlined",
+                    "icon": "docs",
                     "url": "",
                     "childrenUrl": "https://docs.teradata.com"
                 },
@@ -26,7 +26,7 @@
                     "id": "learning-support",
                     "title": "Support",
                     "description": "",
-                    "icon": "support_outlined",
+                    "icon": "support",
                     "url": "",
                     "childrenUrl": "https://support.teradata.com"
                 }
