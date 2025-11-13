@@ -20,7 +20,7 @@
                     "description": "Use Gitea for persistence and version control of your projects.",
                     "icon": "gitea",
                     "url": "",
-                    "childrenUrl": "/one-td/git"
+                    "childrenUrl": "/one-td/git/user/oauth2/PingIDP"
                 },
                 {
                     "id": "apps-airflow",
@@ -28,7 +28,7 @@
                     "description": "Configure and schedule project pipelines with this orchestration tool.",
                     "icon": "airflow",
                     "url": "",
-                    "childrenUrl": "/one-td/airflow"
+                    "childrenUrl": "/one-td/airflow/login/PingIDP"
                 },
                 {
                     "id": "apps-devpi",
