@@ -19,7 +19,7 @@
 							"description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/notebooks"
+							"childrenUrl": "notebooks-page;/notebooks"
 						},
 						{
 							"id": "notebooks-ingest",
@@ -27,7 +27,7 @@
 							"description": "See how to analyze the data, create new features, and experiment with different models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/notebooks"
+							"childrenUrl": "notebooks-page;/notebooks"
 						},
 						{
 							"id": "notebooks-explore",
@@ -35,7 +35,7 @@
 							"description": "Learn about searching for and retrieving vectors for your models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/notebooks"
+							"childrenUrl": "notebooks-page;/notebooks"
 						},
 						{
 							"id": "notebooks-sample",
@@ -43,7 +43,7 @@
 							"description": "Experiment with analytic functions in notebooks pre-built for use cases.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/notebooks"
+							"childrenUrl": "notebooks-page;/notebooks"
 						}
 					]
 				},
@@ -60,7 +60,7 @@
 							"description": "Learn how to deploy, monitor, and manage your machine learning models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=qya1694122121061"
+							"childrenUrl": "modelops-page;/one-td/modelops"
 						},
 						{
 							"id": "modelops-build",
@@ -68,7 +68,7 @@
 							"description": "A project contains the models, datasets, and other resources to train, evaluate, and deploy models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=vtz1725408102228"
+							"childrenUrl": "modelops-page;/one-td/modelops"
 						},
 						{
 							"id": "modelops-define",
@@ -76,7 +76,7 @@
 							"description": "Use models from specific Git repositories or bring your own Python, R, or SAS model.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=fqd1725408187193"
+							"childrenUrl": "modelops-page;/one-td/modelops"
 						},
 						{
 							"id": "modelops-train",
@@ -84,7 +84,7 @@
 							"description": "Evaluate, compare, and approve new model versions for multiple environments.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=etl1725408512818"
+							"childrenUrl": "modelops-page;/one-td/modelops"
 						},
 						{
 							"id": "modelops-monitor",
@@ -92,7 +92,7 @@
 							"description": "Create predictions and monitor use case performance.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/model-ops?help_panel_opened=true&help_panel_id=rhi1732651074130"
+							"childrenUrl": "modelops-page;/one-td/modelops"
 						},
 						{
 							"id": "modelops-airflow",
@@ -117,7 +117,7 @@
 							"description": "See how you can use semantic relationships and similarity to enable your AI/ML applications.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+							"childrenUrl": "vector-store-page;/vector-store"
 						},
 						{
 							"id": "vectorstore-create",
@@ -125,7 +125,7 @@
 							"description": "Convert data for semantic search integration and RAG applications.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+							"childrenUrl": "vector-store-page;/vector-store"
 						},
 						{
 							"id": "vectorstore-explore",
@@ -133,7 +133,7 @@
 							"description": "Learn about searching for and retrieving vectors for your models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+							"childrenUrl": "vector-store-page;/vector-store"
 						},
 						{
 							"id": "vectorstore-test",
@@ -141,7 +141,7 @@
 							"description": "Ask questions and test the similarity search for each collection.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "/vector-store?help_panel_opened=true&help_panel_id=xxxxx"
+							"childrenUrl": "vector-store-page;/vector-store"
 						}
 					]
 				},

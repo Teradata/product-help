@@ -47,7 +47,7 @@
 	}
     , 
     { 
-       "id":"", 
+       "id":"notebooks-page", 
        "title":"Notebooks", 
 	   "description":"Explore your data and build AI/ML models.",
 	   "icon":"book_outlined",
@@ -55,7 +55,7 @@
 	}
     , 
     { 
-       "id":"", 
+       "id":"vector-store-page", 
        "title":"Vector store", 
 	   "icon":"variable_outlined",
 	   "description":"Convert data for semantic search and RAG applications.",
@@ -63,7 +63,7 @@
 	}
     , 
     { 
-       "id":"", 
+       "id":"modelops-page", 
        "title":"ModelOps", 
 	   "icon":"product_modelops",
 	   "description":"Deploy, monitor, and manage your AI/ML models",
