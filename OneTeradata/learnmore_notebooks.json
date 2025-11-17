@@ -11,14 +11,16 @@
                     "title": "Discover Teradata notebooks",
                     "description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
                     "icon": "",
-                    "url": ""
+                    "url": "", 
+                    "childrenUrl": "/notebooks/getting_started_teradata.ipynb"
                 },
                 {
                     "id": "launcher-vectors",
                     "title": "Explore using vectors in notebooks",
                     "description": "Learn about searching for and retrieving vectors for your models.",
                     "icon": "",
-                    "url": ""
+                    "url": "",
+                    "childrenUrl": "/notebooks/using_vector_store.ipynb"
                 },
                 {
                     "id": "launcher-explore-data",
