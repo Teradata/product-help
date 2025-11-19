@@ -2,7 +2,7 @@
     { 
        "id":"", 
        "title":"Get started", 
-	   "description":"New to OneTerdata? Start here.",
+	   "description":"New to OneTeradata? Start here.",
 	   "icon":"rocket_launch",
        "url":"",
       "children":[
