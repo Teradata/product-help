@@ -24,7 +24,7 @@
                 },
                 {
                     "id": "learning-vectornotebook",
-                    "title": "Explore using vectors in notebooks",
+                    "title": "Use vectors in a notebook",
                     "description": "Learn about searching for and retrieving vectors for your models.",
                     "icon": "variable_outlined;covalent",
                     "url": "",
