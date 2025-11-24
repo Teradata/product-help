@@ -20,7 +20,7 @@
                     "description": "Use Gitea for persistence and version control of your projects.",
                     "icon": "gitea",
                     "url": "",
-                    "childrenUrl": "/one-td/git"
+                    "childrenUrl": "/one-td/git/"
                 },
                 {
                     "id": "apps-airflow",
