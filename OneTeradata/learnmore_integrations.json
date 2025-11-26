@@ -9,7 +9,7 @@
                 {
                     "id": "apps-unstructured",
                     "title": "Transform data with Unstructured",
-                    "description": "Bring your Unstructured collections into vecto store.",
+                    "description": "Bring your Unstructured collections into vector store.",
                     "icon": "unstructured",
                     "url": "",
                     "childrenUrl": "/one-td/unstructured"
