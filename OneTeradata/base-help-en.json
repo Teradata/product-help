@@ -2,7 +2,7 @@
     { 
        "id":"", 
        "title":"Get started", 
-	   "description":"New to OneTeradata? Start here.",
+	   "description":"New to AI Studio? Start here.",
 	   "icon":"rocket_launch",
        "url":"",
       "children":[
@@ -17,7 +17,7 @@
     , 
     { 
        "id":"", 
-       "title":"OneTeradata", 
+       "title":"AI Studio", 
 	   "description":"Get insights faster.",
        "url":"",
        "children":[
