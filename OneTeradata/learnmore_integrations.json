@@ -7,14 +7,6 @@
             "url": "",
             "children": [
                 {
-                    "id": "apps-unstructured",
-                    "title": "Transform data with Unstructured",
-                    "description": "Bring your Unstructured collections into vector store.",
-                    "icon": "unstructured",
-                    "url": "",
-                    "childrenUrl": "/one-td/unstructured"
-                },
-                {
                     "id": "apps-gitea",
                     "title": "Version your Git code with Gitea",
                     "description": "Use Gitea for persistence and version control of your projects.",
@@ -46,14 +38,6 @@
             "description": "See documentation and learning resources.",
             "url": "",
             "children": [
-                {
-                    "id": "learn-unstructured",
-                    "title": "Transform data with Unstructured",
-                    "description": "Learn how to use Unstructured documents for RAG applications, agentic AI, and fine-tuning your models.",
-                    "icon": "",
-                    "url": "",
-                    "childrenUrl": "https://docs.unstructured.io/welcome"
-                },
                 {
                     "id": "learn-gitea",
                     "title": "Version your Git code with Gitea",
