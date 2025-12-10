@@ -20,7 +20,7 @@
                     "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
                     "icon": "play_lesson",
                     "url": "",
-                    "childrenUrl": "notebooks-page;/notebooks"
+                    "childrenUrl": "notebooks-page;/notebooks/Getting_Started_with_Teradata_Notebooks.ipynb"
                 },
                 {
                     "id": "learning-vectornotebook",

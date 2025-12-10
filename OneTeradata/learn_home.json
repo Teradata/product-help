@@ -12,7 +12,7 @@
                     "description": "Explore your data, build AI/ML models, and share your work.",
                     "icon": "book",
                     "url": "",
-                    "childrenUrl": "/notebooks"
+                    "childrenUrl": "notebooks;/notebooksGetting_Started_with_Teradata_Notebooks.ipynb"
                 },
                 {
                     "id": "home-vectorstore",

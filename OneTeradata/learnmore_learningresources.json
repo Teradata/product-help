@@ -19,7 +19,7 @@
 							"description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "notebooks-page;/notebooks"
+							"childrenUrl": "notebooks-page;/notebooks/Getting_Started_with_Teradata_Notebooks.ipynb"
 						},
 						{
 							"id": "notebooks-ingest",
@@ -43,7 +43,7 @@
 							"description": "Experiment with analytic functions in notebooks pre-built for use cases.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "notebooks-page;/notebooks"
+							"childrenUrl": "notebooks-page;/notebooks/Getting_Started_with_Teradata_Notebooks.ipynb"
 						}
 					]
 				},
