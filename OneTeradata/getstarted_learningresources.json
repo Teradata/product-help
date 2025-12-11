@@ -12,7 +12,7 @@
                     "description": "Learn your way around.",
                     "icon": "tour",
                     "url": "",
-                    "childrenUrl": "pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
+                    "childrenUrl": "pendo;pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
                 },
                 {
                     "id": "learning-samplenotebooks",
