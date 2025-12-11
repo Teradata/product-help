@@ -1,75 +1,144 @@
-{  "items":[
-    { 
-       "id":"", 
-       "title":"Get started", 
-	   "description":"New to AI Studio? Start here.",
-	   "icon":"rocket_launch",
-       "url":"",
-      "children":[
-          { 
-             "id":"", 
-             "title":"Learning resources", 
-			 "description":"Take a tour, try samples, and find documentation.",
-             "url":""
-             }
+{
+  "items": [
+    {
+      "id": "693867f0f4351bf5ec42584f",
+      "title": "AI Studio",
+      "description": "AI Studio in-product help",
+      "url": "en/693867f0f4351bf5ec42584f.md",
+      "children": [
+        {
+          "id": "one-teradata-explanation-welcome-homepage-help",
+          "title": "Welcome to AI Studio!",
+          "url": "en/one-teradata-explanation-welcome-homepage-help.md",
+          "children": [
+            {
+              "id": "one-teradata-explanation-ask-ai-help",
+              "title": "AI Assistant",
+              "url": "en/one-teradata-explanation-ask-ai-help.md"
+            },
+            {
+              "id": "one-teradata-landing-page-learn-more-resources-help",
+              "title": "Learning resources",
+              "url": "en/one-teradata-landing-page-learn-more-resources-help.md"
+            },
+            {
+              "id": "one-teradata-reference-account-settings-help",
+              "title": "Account settings",
+              "url": "en/one-teradata-reference-account-settings-help.md"
+            }
           ]
-       }
-    , 
-    { 
-       "id":"", 
-       "title":"AI Studio", 
-	   "description":"Get insights faster.",
-       "url":"",
-       "children":[
-          { 
-             "id":"", 
-             "title":"Account settings", 
-			 "description":"Set your defaults and preferences.",
-             "url":""
-             },
-
-          { 
-             "id":"", 
-             "title":"Integrations", 
-			 "description":"Accelerate your work with more tools.",
-			 "icon":"apps_outlined",
-             "url":""
-             }
+        },
+        {
+          "id": "notebooks-explanation-overview-help",
+          "title": "Notebooks",
+          "url": "en/notebooks-explanation-overview-help.md"
+        },
+        {
+          "id": "vector-store-explanation-overview-help-",
+          "title": "Vector store Overview",
+          "description": "Vector store landing page and overview",
+          "url": "en/vector-store-explanation-overview-help-.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-overview-help-",
+              "title": "Create vector store collection",
+              "url": "en/vector-store-explanation-overview-help-.md",
+              "children": [
+                {
+                  "id": "vector-store-explanation-create-collection-definition-help",
+                  "title": "Vector store Definition",
+                  "url": "en/vector-store-explanation-create-collection-definition-help.md"
+                },
+                {
+                  "id": "vector-store-explanation-create-collection-chunking-help",
+                  "title": "Vector store Chunking",
+                  "url": "en/vector-store-explanation-create-collection-chunking-help.md",
+                  "children": [
+                    {
+                      "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
+                      "title": "Vector store Selecting Chunking",
+                      "url": "en/vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking.md"
+                    }
+                  ]
+                },
+                {
+                  "id": "vector-store-reference-create-collection-embedding-help",
+                  "title": "Vector store Embedding",
+                  "url": "en/vector-store-reference-create-collection-embedding-help.md",
+                  "children": [
+                    {
+                      "id": "vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding",
+                      "title": "Vector store Selecting Embedding",
+                      "url": "en/vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding.md"
+                    }
+                  ]
+                },
+                {
+                  "id": "vector-store-reference-create-collection-language-model-help",
+                  "title": "Vector store Select Language Model",
+                  "url": "en/vector-store-reference-create-collection-language-model-help.md"
+                },
+                {
+                  "id": "vector-store-explanation-create-collection-indexing-search-settings-help",
+                  "title": "Vector store Indexing and Search Settings",
+                  "url": "en/vector-store-explanation-create-collection-indexing-search-settings-help.md",
+                  "children": [
+                    {
+                      "id": "vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm",
+                      "title": "Vector store Selecting Algorithm",
+                      "url": "en/vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm.md"
+                    }
+                  ]
+                },
+                {
+                  "id": "vector-store-explanation-create-collection-data-sources-help",
+                  "title": "Vector store Data Sources",
+                  "url": "en/vector-store-explanation-create-collection-data-sources-help.md",
+                  "children": [
+                    {
+                      "id": "vector-store-explanation-create-collection-data-sources-error-help",
+                      "title": "Vector store Data Sources Error",
+                      "url": "en/vector-store-explanation-create-collection-data-sources-error-help.md"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-manage-collection-overview-help",
+              "title": "Manage Vector store Overview",
+              "url": "en/vector-store-explanation-manage-collection-overview-help.md"
+            },
+            {
+              "id": "vector-store-explanation-manage-collection-playground-help",
+              "title": "Manage Collections Playground",
+              "url": "en/vector-store-explanation-manage-collection-playground-help.md"
+            }
           ]
-	}
-    , 
-    { 
-       "id":"", 
-       "title":"Ask Terry", 
-	   "description":"Your AI assitant.",
-	   "icon":"chat_add_on_outlined",
-       "url":""
-	}
-    , 
-    { 
-       "id":"notebooks-page", 
-       "title":"Notebooks", 
-	   "description":"Explore your data and build AI/ML models.",
-	   "icon":"book_outlined",
-       "url":""
-	}
-    , 
-    { 
-       "id":"vector-store-page", 
-       "title":"Vector store", 
-	   "icon":"variable_outlined",
-	   "description":"Convert data for semantic search and RAG applications.",
-       "url":""
-	}
-    , 
-    { 
-       "id":"modelops-page", 
-       "title":"ModelOps", 
-	   "icon":"product_modelops",
-	   "description":"Deploy, monitor, and manage your AI/ML models",
-       "url":""
-	}
-
-    ]
-
- }
+        },
+        {
+          "id": "modelops-explanation-ai-model-gateway-overview-help",
+          "title": "AI Model Gateway Overview",
+          "url": "en/modelops-explanation-ai-model-gateway-overview-help.md",
+          "children": [
+            {
+              "id": "modelops-explanation-select-model-to-add-help",
+              "title": "Choose a model",
+              "url": "en/modelops-explanation-select-model-to-add-help.md"
+            },
+            {
+              "id": "modelops-procedure-add-model-help",
+              "title": "Add a model",
+              "url": "en/modelops-procedure-add-model-help.md"
+            },
+            {
+              "id": "modelops-procedure-automl-model-details-help",
+              "title": "Add model details",
+              "url": "en/modelops-procedure-automl-model-details-help.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
