@@ -12,7 +12,7 @@
                     "description": "",
                     "icon": "rate_review",
                     "url": "",
-                    "childrenUrl": "pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
+                    "childrenUrl": "pendo;pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
                 },
                 {
                     "id": "learning-documentation",
