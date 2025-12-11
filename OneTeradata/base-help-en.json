@@ -1,142 +1,136 @@
 {
   "items": [
     {
-      "id": "693867f0f4351bf5ec42584f",
-      "title": "AI Studio",
-      "description": "AI Studio in-product help",
-      "url": "en/693867f0f4351bf5ec42584f.md",
+      "id": "one-teradata-explanation-welcome-homepage-help",
+      "title": "Welcome to AI Studio!",
+      "description": "Start your AI Studio journey!",
+      "url": "OneTeradata/en/one-teradata-explanation-welcome-homepage-help.md",
       "children": [
         {
-          "id": "one-teradata-explanation-welcome-homepage-help",
-          "title": "Welcome to AI Studio!",
-          "url": "en/one-teradata-explanation-welcome-homepage-help.md",
-          "children": [
-            {
-              "id": "one-teradata-explanation-ask-ai-help",
-              "title": "AI Assistant",
-              "url": "en/one-teradata-explanation-ask-ai-help.md"
-            },
-            {
-              "id": "one-teradata-landing-page-learn-more-resources-help",
-              "title": "Learning resources",
-              "url": "en/one-teradata-landing-page-learn-more-resources-help.md"
-            },
-            {
-              "id": "one-teradata-reference-account-settings-help",
-              "title": "Account settings",
-              "url": "en/one-teradata-reference-account-settings-help.md"
-            }
-          ]
+          "id": "one-teradata-explanation-ask-ai-help",
+          "title": "AI Assistant",
+          "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md"
         },
         {
-          "id": "notebooks-explanation-overview-help",
-          "title": "Notebooks",
-          "url": "en/notebooks-explanation-overview-help.md"
+          "id": "one-teradata-landing-page-learn-more-resources-help",
+          "title": "Learning resources",
+          "url": "OneTeradata/en/one-teradata-landing-page-learn-more-resources-help.md"
         },
+        {
+          "id": "one-teradata-reference-account-settings-help",
+          "title": "Account settings",
+          "description": "Set your personal preferences. ",
+          "url": "OneTeradata/en/one-teradata-reference-account-settings-help.md"
+        }
+      ]
+    },
+    {
+      "id": "notebooks-explanation-overview-help",
+      "title": "Notebooks",
+      "url": "OneTeradata/en/notebooks-explanation-overview-help.md"
+    },
+    {
+      "id": "vector-store-explanation-overview-help-",
+      "title": "Vector store Overview",
+      "description": "Vector store landing page and overview.",
+      "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
+      "children": [
         {
           "id": "vector-store-explanation-overview-help-",
-          "title": "Vector store Overview",
-          "description": "Vector store landing page and overview",
-          "url": "en/vector-store-explanation-overview-help-.md",
+          "title": "Create vector store collection",
+          "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
           "children": [
             {
-              "id": "vector-store-explanation-overview-help-",
-              "title": "Create vector store collection",
-              "url": "en/vector-store-explanation-overview-help-.md",
+              "id": "vector-store-explanation-create-collection-definition-help",
+              "title": "Vector store Definition",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-definition-help.md"
+            },
+            {
+              "id": "vector-store-explanation-create-collection-chunking-help",
+              "title": "Vector store Chunking",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-chunking-help.md",
               "children": [
                 {
-                  "id": "vector-store-explanation-create-collection-definition-help",
-                  "title": "Vector store Definition",
-                  "url": "en/vector-store-explanation-create-collection-definition-help.md"
-                },
-                {
-                  "id": "vector-store-explanation-create-collection-chunking-help",
-                  "title": "Vector store Chunking",
-                  "url": "en/vector-store-explanation-create-collection-chunking-help.md",
-                  "children": [
-                    {
-                      "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
-                      "title": "Vector store Selecting Chunking",
-                      "url": "en/vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking.md"
-                    }
-                  ]
-                },
-                {
-                  "id": "vector-store-reference-create-collection-embedding-help",
-                  "title": "Vector store Embedding",
-                  "url": "en/vector-store-reference-create-collection-embedding-help.md",
-                  "children": [
-                    {
-                      "id": "vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding",
-                      "title": "Vector store Selecting Embedding",
-                      "url": "en/vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding.md"
-                    }
-                  ]
-                },
-                {
-                  "id": "vector-store-reference-create-collection-language-model-help",
-                  "title": "Vector store Select Language Model",
-                  "url": "en/vector-store-reference-create-collection-language-model-help.md"
-                },
-                {
-                  "id": "vector-store-explanation-create-collection-indexing-search-settings-help",
-                  "title": "Vector store Indexing and Search Settings",
-                  "url": "en/vector-store-explanation-create-collection-indexing-search-settings-help.md",
-                  "children": [
-                    {
-                      "id": "vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm",
-                      "title": "Vector store Selecting Algorithm",
-                      "url": "en/vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm.md"
-                    }
-                  ]
-                },
-                {
-                  "id": "vector-store-explanation-create-collection-data-sources-help",
-                  "title": "Vector store Data Sources",
-                  "url": "en/vector-store-explanation-create-collection-data-sources-help.md",
-                  "children": [
-                    {
-                      "id": "vector-store-explanation-create-collection-data-sources-error-help",
-                      "title": "Vector store Data Sources Error",
-                      "url": "en/vector-store-explanation-create-collection-data-sources-error-help.md"
-                    }
-                  ]
+                  "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
+                  "title": "Vector store Selecting Chunking",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking.md"
                 }
               ]
             },
             {
-              "id": "vector-store-explanation-manage-collection-overview-help",
-              "title": "Manage Vector store Overview",
-              "url": "en/vector-store-explanation-manage-collection-overview-help.md"
+              "id": "vector-store-reference-create-collection-embedding-help",
+              "title": "Vector store Embedding",
+              "url": "OneTeradata/en/vector-store-reference-create-collection-embedding-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding",
+                  "title": "Vector store Selecting Embedding",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding.md"
+                }
+              ]
             },
             {
-              "id": "vector-store-explanation-manage-collection-playground-help",
-              "title": "Manage Collections Playground",
-              "url": "en/vector-store-explanation-manage-collection-playground-help.md"
+              "id": "vector-store-reference-create-collection-language-model-help",
+              "title": "Vector store Select Language Model",
+              "url": "OneTeradata/en/vector-store-reference-create-collection-language-model-help.md"
+            },
+            {
+              "id": "vector-store-explanation-create-collection-indexing-search-settings-help",
+              "title": "Vector store Indexing and Search Settings",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-indexing-search-settings-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm",
+                  "title": "Vector store Selecting Algorithm",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-create-collection-data-sources-help",
+              "title": "Vector store Data Sources",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-help.md",
+              "children": [
+                {
+                  "id": "vector-store-explanation-create-collection-data-sources-error-help",
+                  "title": "Vector store Data Sources Error",
+                  "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-error-help.md"
+                }
+              ]
             }
           ]
         },
         {
-          "id": "modelops-explanation-ai-model-gateway-overview-help",
-          "title": "AI Model Gateway Overview",
-          "url": "en/modelops-explanation-ai-model-gateway-overview-help.md",
-          "children": [
-            {
-              "id": "modelops-explanation-select-model-to-add-help",
-              "title": "Choose a model",
-              "url": "en/modelops-explanation-select-model-to-add-help.md"
-            },
-            {
-              "id": "modelops-procedure-add-model-help",
-              "title": "Add a model",
-              "url": "en/modelops-procedure-add-model-help.md"
-            },
-            {
-              "id": "modelops-procedure-automl-model-details-help",
-              "title": "Add model details",
-              "url": "en/modelops-procedure-automl-model-details-help.md"
-            }
-          ]
+          "id": "vector-store-explanation-manage-collection-overview-help",
+          "title": "Manage Vector store Overview",
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-overview-help.md"
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-playground-help",
+          "title": "Manage Collections Playground",
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-playground-help.md"
+        }
+      ]
+    },
+    {
+      "id": "modelops-explanation-ai-model-gateway-overview-help",
+      "title": "AI Model Gateway Overview",
+      "url": "OneTeradata/en/modelops-explanation-ai-model-gateway-overview-help.md",
+      "children": [
+        {
+          "id": "modelops-explanation-select-model-to-add-help",
+          "title": "Choose a model",
+          "url": "OneTeradata/en/modelops-explanation-select-model-to-add-help.md"
+        },
+        {
+          "id": "modelops-procedure-add-model-help",
+          "title": "Add a model",
+          "url": "OneTeradata/en/modelops-procedure-add-model-help.md"
+        },
+        {
+          "id": "modelops-procedure-automl-model-details-help",
+          "title": "Add model details",
+          "url": "OneTeradata/en/modelops-procedure-automl-model-details-help.md"
         }
       ]
     }
