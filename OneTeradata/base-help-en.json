@@ -1,11 +1,7 @@
 {
   "items": [
-    {
-      "id": "693867f0f4351bf5ec42584f",
-      "title": "AI Studio",
-      "description": "AI Studio in-product help",
-      "url": "en/693867f0f4351bf5ec42584f.md",
-      "children": [
+    
+      
         {
           "id": "one-teradata-explanation-welcome-homepage-help",
           "title": "Welcome to AI Studio!",
@@ -37,7 +33,7 @@
           "id": "vector-store-explanation-overview-help-",
           "title": "Vector store Overview",
           "description": "Vector store landing page and overview",
-          "url": "en/vector-store-explanation-overview-help-.md",
+          "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
           "children": [
             {
               "id": "vector-store-explanation-overview-help-",
@@ -139,6 +135,4 @@
           ]
         }
       ]
-    }
-  ]
-}
+ }
