@@ -12,7 +12,7 @@
                     "description": "Use the playground to test and optimize similarity search performance for this collection.",
                     "icon": "category",
                     "url": "",
-                    "childrenUrl": "/playground"
+                    "childrenUrl": "playground"
                 },
                 {
                     "id": "vectorstore-load",
@@ -20,7 +20,7 @@
                     "description": "Add new or updated documents to the collection to expand and improve the search performance.",
                     "icon": "database_outlined;covalent",
                     "url": "",
-                    "childrenUrl": "/data-sources"
+                    "childrenUrl": "data-sources"
                 },
                 {
                     "id": "vectorstore-rag",
@@ -28,7 +28,7 @@
                     "description": "Build a Retrieval-Augmented Generation appliction with this collection and test AI-powered search experiences",
                     "icon": "book",
                     "url": "",
-                    "childrenUrl": "/recent-chats"
+                    "childrenUrl": "notebooks;using_vector_store.ipynb"
                 }
             ]
         }
