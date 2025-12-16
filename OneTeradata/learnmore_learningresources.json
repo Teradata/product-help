@@ -15,7 +15,7 @@
 					"children": [
 						{
 							"id": "notebooks-discover",
-							"title": "Discover Teradata noteooks",
+							"title": "Discover Teradata notebooks",
 							"description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
 							"icon": "",
 							"url": "",
