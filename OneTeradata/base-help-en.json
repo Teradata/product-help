@@ -3,6 +3,7 @@
     {
       "id": "sample-topic-for-testing",
       "title": "Sample Topic",
+      "icon": "foobar",
       "description": "Sample topic -- used for testing",
       "url": "OneTeradata/en/sample-topic-for-testing.md",
       "childrenUrl": "custom;child url goes here&foo.bar(\"blah\")"
@@ -37,11 +38,14 @@
     {
       "id": "notebooks-explanation-overview-help",
       "title": "Notebooks",
+      "icon": "book",
+      "description": "Explore your data, build AI/ML models, and share your work.",
       "url": "OneTeradata/en/notebooks-explanation-overview-help.md"
     },
     {
       "id": "vector-store-explanation-overview-help-",
       "title": "Vector store",
+      "icon": "variable_outlined;covalent",
       "description": "Vector store landing page and overview.",
       "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
       "children": [
@@ -125,11 +129,14 @@
     {
       "id": "modelops-explanation-ai-model-gateway-overview-help",
       "title": "ModelOps",
+      "icon": "product_modelops;covalent",
+      "description": "Deploy, monitor, and manage your AI/ML models.",
       "url": "OneTeradata/en/modelops-explanation-ai-model-gateway-overview-help.md",
       "children": [
         {
           "id": "modelops-explanation-select-model-to-add-help",
           "title": "Choose a model",
+          "description": "Deploy, monitor, and manage your AI/ML models.",
           "url": "OneTeradata/en/modelops-explanation-select-model-to-add-help.md"
         },
         {
