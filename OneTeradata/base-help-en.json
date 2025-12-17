@@ -1,14 +1,24 @@
 {
   "items": [
     {
+      "id": "sample-topic-for-testing",
+      "title": "Sample Topic",
+      "description": "Sample topic -- used for testing",
+      "url": "OneTeradata/en/sample-topic-for-testing.md",
+      "childrenUrl": "custom;child url goes here&foo.bar(\"blah\")"
+    },
+    {
       "id": "one-teradata-explanation-welcome-homepage-help",
       "title": "Welcome to AI Studio!",
+      "icon": "",
       "description": "Start your AI Studio journey!",
       "url": "OneTeradata/en/one-teradata-explanation-welcome-homepage-help.md",
       "children": [
         {
           "id": "one-teradata-explanation-ask-ai-help",
           "title": "AI Assistant",
+          "icon": "",
+          "description": "Chat with the integrated AI Assistant, Terry!",
           "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md"
         },
         {
@@ -31,7 +41,7 @@
     },
     {
       "id": "vector-store-explanation-overview-help-",
-      "title": "Vector store Overview",
+      "title": "Vector store",
       "description": "Vector store landing page and overview.",
       "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
       "children": [
@@ -93,7 +103,7 @@
               "children": [
                 {
                   "id": "vector-store-explanation-create-collection-data-sources-error-help",
-                  "title": "Vector store Data Sources Error",
+                  "title": "Vector store data source error",
                   "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-error-help.md"
                 }
               ]
@@ -102,7 +112,7 @@
         },
         {
           "id": "vector-store-explanation-manage-collection-overview-help",
-          "title": "Manage Vector store Overview",
+          "title": "Manage vector store",
           "url": "OneTeradata/en/vector-store-explanation-manage-collection-overview-help.md"
         },
         {
@@ -114,7 +124,7 @@
     },
     {
       "id": "modelops-explanation-ai-model-gateway-overview-help",
-      "title": "AI Model Gateway Overview",
+      "title": "ModelOps",
       "url": "OneTeradata/en/modelops-explanation-ai-model-gateway-overview-help.md",
       "children": [
         {
