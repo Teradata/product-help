@@ -23,12 +23,12 @@
                     "childrenUrl": "data-sources"
                 },
                 {
-                    "id": "vectorstore-rag",
-                    "title": "Create RAG applications",
-                    "description": "Build a Retrieval-Augmented Generation appliction with this collection and test AI-powered search experiences",
-                    "icon": "book",
+                    "id": "vectorstore-addusers",
+                    "title": "Add users",
+                    "description": "Grant users access to your collection allowing them to run a semantic search or build RAG applications.",
+                    "icon": "person",
                     "url": "",
-                    "childrenUrl": "notebooks;using_vector_store.ipynb"
+                    "childrenUrl": "users"
                 }
             ]
         }
