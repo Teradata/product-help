@@ -1,14 +1,6 @@
 {
   "items": [
-    {
-      "id": "sample-topic-for-testing",
-      "title": "Sample Topic",
-      "icon": "foobar",
-      "description": "Sample topic -- used for testing",
-      "url": "OneTeradata/en/sample-topic-for-testing.md",
-      "childrenUrl": "custom;child url goes here&foo.bar(\"blah\")"
-    },
-    {
+     {
       "id": "one-teradata-explanation-welcome-homepage-help",
       "title": "Welcome to AI Studio!",
       "icon": "",
