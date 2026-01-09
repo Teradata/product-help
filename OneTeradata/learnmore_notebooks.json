@@ -12,7 +12,7 @@
                     "description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
                     "icon": "",
                     "url": "", 
-                    "childrenUrl": "notebooks;getting_started_teradata.ipynb"
+                    "childrenUrl": "notebooks-explanation-overview-help;notebooks;getting_started_teradata.ipynb"
                 },
                 {
                     "id": "launcher-vectors",
