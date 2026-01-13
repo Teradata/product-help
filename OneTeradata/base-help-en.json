@@ -1,6 +1,6 @@
 {
   "items": [
-     {
+    {
       "id": "one-teradata-explanation-welcome-homepage-help",
       "title": "Welcome to AI Studio!",
       "icon": "",
@@ -139,7 +139,36 @@
         {
           "id": "modelops-procedure-automl-model-details-help",
           "title": "Add model details",
-          "url": "OneTeradata/en/modelops-procedure-automl-model-details-help.md"
+          "url": "OneTeradata/en/modelops-procedure-automl-model-details-help.md",
+          "children": [
+            {
+              "id": "modelops-explanation-model-details-help",
+              "title": "About model details ",
+              "url": "OneTeradata/en/modelops-explanation-model-details-help.md"
+            }
+          ]
+        },
+        {
+          "id": "modelops-explanation-model-usage-help",
+          "title": "Track Model Usage",
+          "url": "OneTeradata/en/modelops-explanation-model-usage-help.md"
+        },
+        {
+          "id": "modelops-procedure-create-virtual-key-help-",
+          "title": "Create a Virtual Key",
+          "url": "OneTeradata/en/modelops-procedure-create-virtual-key-help-.md",
+          "children": [
+            {
+              "id": "modelops-explanation-virtual-key-details-help",
+              "title": "View Virtual Key Details",
+              "url": "OneTeradata/en/modelops-explanation-virtual-key-details-help.md"
+            },
+            {
+              "id": "modelops-procedure-regenerate-virtual-key-help",
+              "title": "Regenerate Virtual Key",
+              "url": "OneTeradata/en/modelops-procedure-regenerate-virtual-key-help.md"
+            }
+          ]
         }
       ]
     }
