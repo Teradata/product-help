@@ -20,7 +20,7 @@
                     "description": "Convert data for semantic search integration and RAG applications.",
                     "icon": "variable_outlined;covalent",
                     "url": "",
-                    "childrenUrl": "vectorstore"
+                    "childrenUrl": "vector-store"
                 },
                 {
                     "id": "home-modelops",
