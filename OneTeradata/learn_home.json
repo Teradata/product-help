@@ -20,7 +20,7 @@
                     "description": "Convert data for semantic search integration and RAG applications.",
                     "icon": "variable_outlined;covalent",
                     "url": "",
-                    "childrenUrl": "vector-store"
+                    "childrenUrl": "vectorstore"
                 },
                 {
                     "id": "home-modelops",
@@ -28,7 +28,7 @@
                     "description": "Deploy, monitor, and manage your AI/ML models.",
                     "icon": "product_modelops;covalent",
                     "url": "",
-                    "childrenUrl": "one-td/modelops"
+                    "childrenUrl": "modelops"
                 }
             ]
         }
