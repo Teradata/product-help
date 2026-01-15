@@ -33,7 +33,6 @@
 				{
                     "id": "home-learningresources",
                     "title": "Learning resources",
-					"description": "Get started and learn how to use the AI toolkit.", 
                     "icon": "school",
                     "url": "",
                     "childrenUrl": "learn"
