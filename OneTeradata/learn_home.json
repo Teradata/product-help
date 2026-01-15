@@ -29,6 +29,13 @@
                     "icon": "product_modelops;covalent",
                     "url": "",
                     "childrenUrl": "modelops"
+                },
+				{
+                    "id": "home-learningresources",
+                    "title": "Learning resources",
+                    "icon": "school",
+                    "url": "",
+                    "childrenUrl": "learn"
                 }
             ]
         }
