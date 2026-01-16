@@ -1,6 +1,12 @@
 {
   "items": [
     {
+      "id": "sample-topic-for-testing",
+      "title": "Sample topic for testing - Default title new",
+      "description": "Default description",
+      "url": "OneTeradata/en/sample-topic-for-testing.md"
+    },
+    {
       "id": "one-teradata-explanation-welcome-homepage-help",
       "title": "Welcome to AI Studio!",
       "icon": "",
