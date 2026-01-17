@@ -1,8 +1,8 @@
 {
   "items": [
     {
-      "id": "sample-topic-for-testing",
-      "title": "Sample topic for testing - Default title new",
+      "id": "foo",
+      "title": "Sample topic ",
       "description": "Default description",
       "url": "OneTeradata/en/sample-topic-for-testing.md"
     },
@@ -84,7 +84,14 @@
             {
               "id": "vector-store-reference-create-collection-language-model-help",
               "title": "Vector store Select Language Model",
-              "url": "OneTeradata/en/vector-store-reference-create-collection-language-model-help.md"
+              "url": "OneTeradata/en/vector-store-reference-create-collection-language-model-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-language-model-learn-more-selecting-language",
+                  "title": "Vector store Selecting Language Models",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-language-model-learn-more-selecting-language.md"
+                }
+              ]
             },
             {
               "id": "vector-store-explanation-create-collection-indexing-search-settings-help",
@@ -104,6 +111,11 @@
               "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-help.md",
               "children": [
                 {
+                  "id": "vector-store-procedure-create-collection-data-sources-learn-more-selecting-data",
+                  "title": "Vector store Selecting Data",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-data-sources-learn-more-selecting-data.md"
+                },
+                {
                   "id": "vector-store-explanation-create-collection-data-sources-error-help",
                   "title": "Vector store data source error",
                   "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-error-help.md"
@@ -115,7 +127,53 @@
         {
           "id": "vector-store-explanation-manage-collection-overview-help",
           "title": "Manage vector store",
-          "url": "OneTeradata/en/vector-store-explanation-manage-collection-overview-help.md"
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-overview-help.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-active-help",
+              "title": "Vector store Active Collections",
+              "url": "OneTeradata/en/vector-store-explanation-manage-collection-active-help.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-edit-index-help",
+              "title": "Edit Indexes in Vector store Collections",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-edit-index-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-indexing-settings-learn-more",
+                  "title": "Edit Collections Indexing Learn More",
+                  "url": "OneTeradata/en/vector-store-procedure-manage-collection-indexing-settings-learn-more.md"
+                },
+                {
+                  "id": "vector-store-procedure-manage-collection-search-settings-learn-more",
+                  "title": "Edit Collections Search Learn More",
+                  "url": "OneTeradata/en/vector-store-procedure-manage-collection-search-settings-learn-more.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-manage-collection-chunking-overview-help",
+              "title": "Chunking Overview",
+              "url": "OneTeradata/en/vector-store-explanation-manage-collection-chunking-overview-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-edit-chunking-help",
+                  "title": "Edit Chunking in Vector store Collections",
+                  "url": "OneTeradata/en/vector-store-procedure-manage-collection-edit-chunking-help.md"
+                },
+                {
+                  "id": "vector-store-explanation-manage-collection-chunking-edit-definition-help",
+                  "title": "Edit Definition for Chunking",
+                  "url": "OneTeradata/en/vector-store-explanation-manage-collection-chunking-edit-definition-help.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vector-store-procedure-manage-collection-change-embedding-help",
+          "title": "Change Embeddings in Vector store Collections",
+          "url": "OneTeradata/en/vector-store-procedure-manage-collection-change-embedding-help.md"
         },
         {
           "id": "vector-store-explanation-manage-collection-playground-help",
