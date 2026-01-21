@@ -1,0 +1,1 @@
+Add metadata columns for the vector collection based on your requirements. The embeddings will change and you can check the performance in the Playground.

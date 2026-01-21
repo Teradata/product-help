@@ -1,6 +1,1 @@
-Create Vector store > Definition - Navigation
-
-
-
-<Place holder for Help content>
-
+Ensure your upload file size is not more than 100 MB to avoid upload errors. In case of an error, select the unessential files and select X to drop it from data sources. If it’s a single file, reduce the file size and retry.

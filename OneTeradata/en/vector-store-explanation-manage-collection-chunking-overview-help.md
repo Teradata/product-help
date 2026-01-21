@@ -1,5 +1,3 @@
-Manage Vector store > Definition - Navigation
+Modify the chunking method used between Basic and SherpaLLM.
 
-
-
-<Place holder for Help content>
+Note: Each chunk is of 512 characters.

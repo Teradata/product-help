@@ -1,5 +1,8 @@
-Create Vector store > Definition - Navigation
+Teradata supports these indexing and search algorithms:
 
+•VectorDistance: Computes similarity or dissimilarity between vectors.
 
+•KMeans: Groups data into clusters for efficient retrieval.
 
-<Place holder for Help content>
+•HNSW: Uses graph-based search for fast nearest-neighbor retrieval in large datasets or at scale.
+

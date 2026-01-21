@@ -1,0 +1,3 @@
+The playground allows you test your vector collection and assess the accuracy of the results, 
+
+If required, you can modify the chunking methods, embedding models, search threshold, chat completion models in the vector collection settings to increase the accuracy of the top K results. Ideally, the results should be an actual natural language response based on the top K results using the specified chat completion model.

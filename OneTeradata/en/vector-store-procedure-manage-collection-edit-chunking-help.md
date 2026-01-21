@@ -1,5 +1,1 @@
-Manage Vector store > Definition - Navigation
-
-
-
-<Place holder for Help content>
+Modify the chunking method you chose while creating the vector collection. Once done, save the changes to update the vector collection.
