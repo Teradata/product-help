@@ -75,9 +75,9 @@
               "url": "OneTeradata/en/vector-store-reference-create-collection-embedding-help.md",
               "children": [
                 {
-                  "id": "vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding",
+                  "id": "vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding",
                   "title": "Vector Collections Selecting Embedding",
-                  "url": "OneTeradata/en/vector-store-procedure-create-collection-emnbedding-learn-more-selecting-embedding.md"
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding.md"
                 }
               ]
             },
