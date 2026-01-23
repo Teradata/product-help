@@ -12,13 +12,13 @@ Based on your account privileges, you can:
 - View Details and then edit
 - Re-attempt a failed vector collection after verifying the corresponding error
 
-The following are the various statues:
+The following are the various statuses:
 
 - Ready: Ready to use vector collection.
 - Creating: Creation in progress for the vector collection.
 - Failed: The vector collection creation failed with error. View the error details and make necessary correction before retrying.
 
-
+You can sort the vector collections based on status.
 
 
 

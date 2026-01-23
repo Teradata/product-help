@@ -1,2 +1,3 @@
-Basic chunking uses simple, fixed-size or recursive text splitting.  
-SherpaLLM chunking is a context-aware method that uses document structure and semantics. This creates more meaningful chunks and improves retrieval-augmented generation (RAG) performance.
+Modify the name and description for the vector collection. Ensure, the name is unique.
+
+Note: You can only edit the definition for vector collections you have access to.

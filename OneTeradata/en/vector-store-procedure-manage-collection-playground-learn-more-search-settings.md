@@ -1,1 +1,8 @@
-Use the playground tab to test the accuracy of your vector collection. Enter the phrase and based on the data available, the vector collection returns answers along with the source for the answer. Ideally, the results should be an actual natural language response based on the top K results using the specified chat completion model.
+Teradata supports these indexing and search algorithms:
+
+•VectorDistance: Computes similarity or dissimilarity between vectors.
+
+•KMeans: Groups data into clusters for efficient retrieval.
+
+•HNSW: Uses graph-based search for fast nearest-neighbor retrieval in large datasets or at scale.
+

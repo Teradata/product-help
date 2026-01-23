@@ -29,7 +29,7 @@
     {
       "id": "one-teradata-explanation-ask-ai-help",
       "title": "AI Assistant",
-      "description": "Chat with the integrated AI Assistant, Terry!",
+      "description": "Your AI assistant for easier, smarter data management.",
       "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md"
     },
     {
@@ -48,7 +48,7 @@
       "children": [
         {
           "id": "vector-store-explanation-overview-help-",
-          "title": "Create Vector Collection",
+          "title": "Create a Vector Collection",
           "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
           "children": [
             {
@@ -58,60 +58,60 @@
             },
             {
               "id": "vector-store-explanation-create-collection-chunking-help",
-              "title": "Vector Collections Chunking",
+              "title": "Create a Vector Collection - Chunking",
               "url": "OneTeradata/en/vector-store-explanation-create-collection-chunking-help.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
-                  "title": "Vector Collections Selecting Chunking",
+                  "title": "Create a Vector Collection - Selecting a Chunking Method",
                   "url": "OneTeradata/en/vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking.md"
                 }
               ]
             },
             {
               "id": "vector-store-reference-create-collection-embedding-help",
-              "title": "Vector Collections Embeddings",
+              "title": "Create a Vector Collection - Embeddings",
               "url": "OneTeradata/en/vector-store-reference-create-collection-embedding-help.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding",
-                  "title": "Vector Collections Selecting Embedding",
+                  "title": "Create a Vector Collection - Selecting an Embedding Model",
                   "url": "OneTeradata/en/vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding.md"
                 }
               ]
             },
             {
               "id": "vector-store-reference-create-collection-language-model-help",
-              "title": "Vector Collections Select Language Model",
+              "title": "Create a Vector Collection - Language Models",
               "url": "OneTeradata/en/vector-store-reference-create-collection-language-model-help.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-language-model-learn-more-selecting-language",
-                  "title": "Vector Collections Selecting Language Models",
+                  "title": "Create a Vector Collection - Selecting a Language Model",
                   "url": "OneTeradata/en/vector-store-procedure-create-collection-language-model-learn-more-selecting-language.md"
                 }
               ]
             },
             {
               "id": "vector-store-explanation-create-collection-indexing-search-settings-help",
-              "title": "Vector store Indexing and Search Settings",
+              "title": "Create a Vector Collection - Index and Search Settings",
               "url": "OneTeradata/en/vector-store-explanation-create-collection-indexing-search-settings-help.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm",
-                  "title": "Vector Collections Selecting Algorithm",
+                  "title": "Create a Vector Collection - Selecting an Algorithm",
                   "url": "OneTeradata/en/vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm.md"
                 }
               ]
             },
             {
               "id": "vector-store-explanation-create-collection-data-sources-help",
-              "title": "Vector store Data Sources",
+              "title": "Create a Vector Collection - Data Sources",
               "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-help.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-data-sources-learn-more-selecting-data",
-                  "title": "Vector Collections Selecting Data",
+                  "title": "Create a Vector Collection - Selecting Data Types",
                   "url": "OneTeradata/en/vector-store-procedure-create-collection-data-sources-learn-more-selecting-data.md"
                 },
                 {
@@ -130,22 +130,22 @@
           "children": [
             {
               "id": "vector-store-explanation-manage-collection-active-help",
-              "title": "Vector Collections Active Collections",
+              "title": "Manage Vector Collections - Active Collections",
               "url": "OneTeradata/en/vector-store-explanation-manage-collection-active-help.md"
             },
             {
               "id": "vector-store-procedure-manage-collection-edit-index-help",
-              "title": "Edit Indexes in Vector store Collections",
+              "title": "Manage Vector Collections - Edit Indexing",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-edit-index-help.md",
               "children": [
                 {
                   "id": "vector-store-procedure-manage-collection-indexing-settings-learn-more",
-                  "title": "Edit Collections Indexing Learn More",
+                  "title": "Manage Vector Collections - Indexing and search - Edit Search Algorithms",
                   "url": "OneTeradata/en/vector-store-procedure-manage-collection-indexing-settings-learn-more.md"
                 },
                 {
                   "id": "vector-store-procedure-manage-collection-search-settings-learn-more",
-                  "title": "Edit Collections Search Learn More",
+                  "title": "Manage Vector Collections - Edit Search Settings",
                   "url": "OneTeradata/en/vector-store-procedure-manage-collection-search-settings-learn-more.md"
                 }
               ]
@@ -171,22 +171,22 @@
         },
         {
           "id": "vector-store-procedure-manage-collection-change-embedding-help",
-          "title": "Change Embeddings in Vector store Collections",
+          "title": "Manage Vector Collections - Change Embeddings",
           "url": "OneTeradata/en/vector-store-procedure-manage-collection-change-embedding-help.md"
         },
         {
           "id": "vector-store-explanation-manage-collection-data-sources-help",
-          "title": "Manage Data Sources",
+          "title": "Manage Vector Collections - Data Sources",
           "url": "OneTeradata/en/vector-store-explanation-manage-collection-data-sources-help.md",
           "children": [
             {
               "id": "vector-store-explanation-manage-collection-add-data-help",
-              "title": "Add Data in Vector Collections",
+              "title": "Manage Vector Collections - Add Data",
               "url": "OneTeradata/en/vector-store-explanation-manage-collection-add-data-help.md"
             },
             {
               "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables",
-              "title": "Vector Collections Add Data Tables",
+              "title": "Manage Vector Collections - Add Data Tables",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables.md"
             },
             {
@@ -196,36 +196,36 @@
             },
             {
               "id": "vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns",
-              "title": "Vector Collections Add Metadata Columns",
+              "title": "Manage Vector Collections - Add Data - Add Metadata Columns",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns.md"
             },
             {
               "id": "vector-store-procedure-manage-collection-add-data-learn-more-key-columns",
-              "title": "Vector Collections Add Data Key Columns",
+              "title": "Manage Vector Collections - Add Data - Add Data Key Columns",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-key-columns.md"
             }
           ]
         },
         {
           "id": "vector-store-explanation-manage-collection-playground-help",
-          "title": "Manage Collections Playground",
+          "title": "Manage Vector Collections - Playground",
           "url": "OneTeradata/en/vector-store-explanation-manage-collection-playground-help.md",
           "children": [
             {
               "id": "vector-store-procedure-manage-collection-playground-learn-more-using-playground",
-              "title": "Vector Collections Using Playground",
+              "title": "Manage Vector Collections - Using the Playground",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-playground-learn-more-using-playground.md"
             },
             {
               "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
-              "title": "Vector Collections Play Ground Search Settings",
+              "title": "Manage Vector Collections - Playground - Search Settings",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-playground-learn-more-search-settings.md"
             }
           ]
         },
         {
           "id": "vector-store-explanation-manage-collection-users-help",
-          "title": "Manage Users in Vector Collections",
+          "title": "Manage Vector Collections - Users",
           "url": "OneTeradata/en/vector-store-explanation-manage-collection-users-help.md"
         }
       ]
