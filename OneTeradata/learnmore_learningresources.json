@@ -27,7 +27,7 @@
 							"description": "See how to analyze the data, create new features, and experiment with different models.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "notebooks"
+							"childrenUrl": "notebooks;Demo/Getting_Started/Data_Loading/Data_Loading_SQL.ipynb"
 						},
 						{
 							"id": "notebooks-explore",
