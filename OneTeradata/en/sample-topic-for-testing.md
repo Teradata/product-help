@@ -10,6 +10,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit venenatis
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit venenatis dapibus. Morbi ac felis risus. Praesent facilisis, diam interdum interdum ornare, ipsum dolor semper magna, quis rutrum justo elit sed massa.
 
+
+
+![modelops-home-page](images/modelops-home-page.png)
+
+Click this icon (
+
+![Modelops icon](images/product_modelops.svg)
+
+  ) to continue
+
 # Tables
 
 Regular table w/zebra stripes

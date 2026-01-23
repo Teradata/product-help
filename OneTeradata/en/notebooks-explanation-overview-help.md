@@ -9,7 +9,7 @@ You can create and share documents containing live code, equations, visualizatio
 - Enable version control and share for team reproduction and validation
 - Use in conjunction with AI/ML platforms (such as TensorFlow, PyTorch, and Teradata AI Factory)
 
-Select a notebook resource to begin (define this).
+Select a notebook resource to begin.
 
 
 

@@ -14,13 +14,6 @@
       "url": "OneTeradata/en/one-teradata-explanation-welcome-homepage-help.md",
       "children": [
         {
-          "id": "one-teradata-explanation-ask-ai-help",
-          "title": "AI Assistant",
-          "icon": "",
-          "description": "Chat with the integrated AI Assistant, Terry!",
-          "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md"
-        },
-        {
           "id": "one-teradata-landing-page-learn-more-resources-help",
           "title": "Learning resources",
           "url": "OneTeradata/en/one-teradata-landing-page-learn-more-resources-help.md"
@@ -34,9 +27,15 @@
       ]
     },
     {
+      "id": "one-teradata-explanation-ask-ai-help",
+      "title": "AI Assistant",
+      "description": "Chat with the integrated AI Assistant, Terry!",
+      "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md"
+    },
+    {
       "id": "notebooks-explanation-overview-help",
       "title": "Notebooks",
-      "icon": "book",
+      "icon": "book;covalent",
       "description": "Explore your data, build AI/ML models, and share your work.",
       "url": "OneTeradata/en/notebooks-explanation-overview-help.md"
     },
@@ -288,6 +287,7 @@
     {
       "id": "integrations",
       "title": "Integrations",
+      "icon": "apps;covalent",
       "description": "Support your workflow with additional tools",
       "url": "OneTeradata/en/integrations.md"
     }
