@@ -231,11 +231,11 @@
       ]
     },
     {
-      "id": "modelops-explanation-ai-model-gateway-overview-help",
+      "id": "modelops-explanation-ai-model-hub-overview-help",
       "title": "ModelOps",
       "icon": "product_modelops;covalent",
       "description": "Deploy, monitor, and manage your AI/ML models.",
-      "url": "OneTeradata/en/modelops-explanation-ai-model-gateway-overview-help.md",
+      "url": "OneTeradata/en/modelops-explanation-ai-model-hub-overview-help.md",
       "children": [
         {
           "id": "modelops-explanation-select-model-to-add-help",
@@ -245,7 +245,7 @@
         },
         {
           "id": "modelops-procedure-add-model-help",
-          "title": "Add a model",
+          "title": "Add a Model",
           "url": "OneTeradata/en/modelops-procedure-add-model-help.md"
         },
         {
@@ -255,7 +255,7 @@
           "children": [
             {
               "id": "modelops-explanation-model-details-help",
-              "title": "About model details ",
+              "title": "About Model Details ",
               "url": "OneTeradata/en/modelops-explanation-model-details-help.md"
             }
           ]
@@ -266,9 +266,9 @@
           "url": "OneTeradata/en/modelops-explanation-model-usage-help.md"
         },
         {
-          "id": "modelops-procedure-create-virtual-key-help-",
+          "id": "modelops-procedure-create-virtual-key-help",
           "title": "Create a Virtual Key",
-          "url": "OneTeradata/en/modelops-procedure-create-virtual-key-help-.md",
+          "url": "OneTeradata/en/modelops-procedure-create-virtual-key-help.md",
           "children": [
             {
               "id": "modelops-explanation-virtual-key-details-help",
