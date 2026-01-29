@@ -1,12 +1,6 @@
 {
   "items": [
     {
-      "id": "foo",
-      "title": "Sample topic ",
-      "description": "Default description",
-      "url": "OneTeradata/en/sample-topic-for-testing.md"
-    },
-    {
       "id": "one-teradata-explanation-welcome-homepage-help",
       "title": "Welcome to AI Studio!",
       "icon": "",
@@ -30,7 +24,29 @@
       "id": "one-teradata-explanation-ask-ai-help",
       "title": "AI Assistant",
       "description": "Your AI assistant for easier, smarter data management.",
-      "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md"
+      "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md",
+      "children": [
+        {
+          "id": "before-using-terry",
+          "title": "Before using Terry",
+          "url": "OneTeradata/en/before-using-terry.md"
+        },
+        {
+          "id": "get-started-with-terry",
+          "title": "Get started with Terry",
+          "url": "OneTeradata/en/get-started-with-terry.md"
+        },
+        {
+          "id": "structure-your-conversation",
+          "title": "Structure your conversation with Terry",
+          "url": "OneTeradata/en/structure-your-conversation.md"
+        },
+        {
+          "id": "conversation-flow-structure",
+          "title": "Start a conversation with Terry",
+          "url": "OneTeradata/en/conversation-flow-structure.md"
+        }
+      ]
     },
     {
       "id": "notebooks-explanation-overview-help",
@@ -231,58 +247,11 @@
       ]
     },
     {
-      "id": "modelops-explanation-ai-model-hub-overview-help",
+      "id": "modelops-overview",
       "title": "ModelOps",
       "icon": "product_modelops;covalent",
       "description": "Deploy, monitor, and manage your AI/ML models.",
-      "url": "OneTeradata/en/modelops-explanation-ai-model-hub-overview-help.md",
-      "children": [
-        {
-          "id": "modelops-explanation-select-model-to-add-help",
-          "title": "Choose a model",
-          "description": "Deploy, monitor, and manage your AI/ML models.",
-          "url": "OneTeradata/en/modelops-explanation-select-model-to-add-help.md"
-        },
-        {
-          "id": "modelops-procedure-add-model-help",
-          "title": "Add a Model",
-          "url": "OneTeradata/en/modelops-procedure-add-model-help.md"
-        },
-        {
-          "id": "modelops-procedure-automl-model-details-help",
-          "title": "Add model details",
-          "url": "OneTeradata/en/modelops-procedure-automl-model-details-help.md",
-          "children": [
-            {
-              "id": "modelops-explanation-model-details-help",
-              "title": "About Model Details ",
-              "url": "OneTeradata/en/modelops-explanation-model-details-help.md"
-            }
-          ]
-        },
-        {
-          "id": "modelops-explanation-model-usage-help",
-          "title": "Track Model Usage",
-          "url": "OneTeradata/en/modelops-explanation-model-usage-help.md"
-        },
-        {
-          "id": "modelops-procedure-create-virtual-key-help",
-          "title": "Create a Virtual Key",
-          "url": "OneTeradata/en/modelops-procedure-create-virtual-key-help.md",
-          "children": [
-            {
-              "id": "modelops-explanation-virtual-key-details-help",
-              "title": "View Virtual Key Details",
-              "url": "OneTeradata/en/modelops-explanation-virtual-key-details-help.md"
-            },
-            {
-              "id": "modelops-procedure-regenerate-virtual-key-help",
-              "title": "Regenerate Virtual Key",
-              "url": "OneTeradata/en/modelops-procedure-regenerate-virtual-key-help.md"
-            }
-          ]
-        }
-      ]
+      "url": "OneTeradata/en/modelops-overview.md"
     },
     {
       "id": "integrations",
