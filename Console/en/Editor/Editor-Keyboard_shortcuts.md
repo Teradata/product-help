@@ -1,6 +1,6 @@
 # Keyboard shortcuts
 
-You can display the keyboard shortcuts using **Editor** then ![](../Images/MoreOptions.png) by using `Shift + /`.  
+You can display the keyboard shortcuts using **Editor** then ![](../Images/MoreOptions.png) or by using `Shift + /`.  
 
 ## Mac
 
