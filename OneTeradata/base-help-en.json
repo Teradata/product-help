@@ -247,11 +247,11 @@
       ]
     },
     {
-      "id": "modelops-explanation-ai-model-hub-overview-help",
+      "id": "modelops-overview",
       "title": "ModelOps",
       "icon": "product_modelops;covalent",
       "description": "Deploy, monitor, and manage your AI/ML models.",
-      "url": "OneTeradata/en/modelops-explanation-ai-model-hub-overview-help.md"
+      "url": "OneTeradata/en/modelops-overview.md"
     },
     {
       "id": "integrations",
