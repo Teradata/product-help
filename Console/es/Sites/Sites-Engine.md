@@ -1,13 +1,18 @@
-Los administradores de sitio y los superadministradores de sitio pueden seleccionar Cambiar para realizar operaciones del Motor SQL, como iniciar y detener la base de datos y ajustar el tamaño de la instancia.
+Database administrators can select **Change** to perform SQL Engine operations, such as starting and stopping the database and scaling the instance size.
 
-Ten en cuenta que:
+[Elasticity](#Elasticity)
 
--   Tu sitio no estará disponible durante estas operaciones, por lo que debes programarlas para que se realicen cuando el impacto en los usuarios sea mínimo.
--   El escalado vertical u horizontal y la ampliación del volumen son acciones que pueden conllevar costes adicionales.
--   Después de ampliar el volumen de almacenamiento, no podrás reducirlo.
+Keep in mind that:
 
-Sugerencia: El icono de la tarjeta Motor SQL avanzado detiene el giro al terminar la operación.
+- Your site isn't available during these operations, so schedule them at a time that minimally impacts users.
+- Scaling up, out, or expanding volume may incur additional costs.
+- After you expand storage volume you can't decrease it.
 
-**Elasticidad**
+**Tip:** The icon in the Advanced SQL Engine card stops spinning when the operation finishes.
 
-**Parar/Iniciar**: la parada y el inicio de la instancia no afectan a los costes de almacenamiento. **Escalar verticalmente/reducir verticalmente:** Ajusta el tamaño de la instancia. El escalado vertical conlleva costes adicionales. **Escalar horizontalmente/reducir horizontalmente**: Ajusta la cantidad de instancias. El escalado horizontal conlleva costes adicionales. **Ampliar almacenamiento:** Aumenta el volumen de EBS (almacenamiento permanente sin procesar) en incrementos de 1 TB. Una vez aumentado el almacenamiento, no podrás reducirlo.
+#### Elasticity
+
+**Stop/Start**: Storage costs are not affected by stopping or starting the instance.
+**Scale Up/Down:** Adjust the instance size. Scaling up incurs additional cost.
+**Scale Out/In**: Adjust the instance quantity. Scaling out incurs additional cost.
+**Expand Storage:** Increase the EBS volume (raw, permanent storage) in 1 TB increments. After you expand storage, you cannot decrease it.

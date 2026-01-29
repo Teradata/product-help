@@ -1,65 +1,69 @@
-﻿{
+{
 	"items": [{
         "id": "notificationSettings",
-        "title": "Configuración de notificaciones",
-        "description": "Activa o desactiva las opciones de configuración de notificaciones pertinentes",
-        "url": "Console/es/Account/Notification-Settings.md"
+        "title": "Notification Settings",
+        "description": "Enable or disable necessary notification settings",
+        "url": "Console/en/Account/Notification-Settings.md"
     },
     {
         "id": "identityProviders",
-        "title": "Proveedor de identidad",
-        "description": "Configura un proveedor de identidad para la autenticación SSO",
-        "url": "Console/es/IdentityProviders/Identity-Providers-Configure.md"
+        "title": "Identity Provider",
+        "description": "Configure an identity provider for SSO authentication",
+        "url": "Console/en/IdentityProviders/Identity-Providers-Configure.md"
     },
     {
         "id": "sites",
-        "title": "Sitios",
-        "description": "Revisa tu lista de sitios de producción, desarrollo y pruebas",
-        "url": "Console/es/Sites/Sites-Overview.md",
+        "title": "Sites",
+        "description": "Review the list of your production, development, and testing sites",
+        "url": "Console/en/Sites/Sites-Overview.md",
         "children": [{
                 "id": "siteConsumption",
-                "title": "Consumo",
-                "url": "Console/es/Sites/Sites-Consumption.md"
+                "title": "Consumption",
+                "url": "Console/en/Sites/Sites-Consumption.md"
+                {
+                "id": "siteEngine",
+                "title": "Engine",
+                "url": "Console/en/Sites/Sites-Engine.md"
             }
         ]
     },
     {
         "id": "dataProtectionPages",
-        "title": "Protección de datos",
-        "description": "Revisa y crea páginas de protección de datos",
-        "url": "Console/es/DataProtectionPages/Data-Protection-Pages.md",
+        "title": "Data Protection",
+        "description": "Review and create data protection pages",
+        "url": "Console/en/DataProtectionPages/Data-Protection-Pages.md",
         "children": [{
                 "id": "dataRestoration",
-                "title": "Restauración de datos",
-                "url": "Console/es/DataProtectionPages/Data-Restoration.md"
+                "title": "Data Restoration",
+                "url": "Console/en/DataProtectionPages/Data-Restoration.md"
              }
          ]
     },
     { 
         "id":"editorPages", 
         "title":"Editor", 
-        "description":"Escriba y ejecute consultas SQL.", 
-        "url":"Console/es/Editor/Editor-Getting-Started.md", 
+        "description":"Write and run SQL queries.", 
+        "url":"Console/en/Editor/Editor-Getting-Started.md", 
         "children":[
            { 
               "id":"editorKeyConcepts", 
-              "title":"Conceptos clave del Editor", 
-              "description":"Descripción, componentes y características del Editor", 
-              "url":"Console/es/Editor/Editor-Key-Concepts.md"
+              "title":"Editor key concepts", 
+              "description":"Editor description, components, and characteristics", 
+              "url":"Console/en/Editor/Editor-Key-Concepts.md"
               }
            , 
            { 
               "id":"editorConnection", 
-              "title":"Conexión a un sitio", 
-              "description":"Consideraciones para conectarse a una cuenta", 
-              "url":"Console/es/Editor/Editor-Connection.md"
+              "title":"Connect to a site", 
+              "description":"Considerations for connecting to an account", 
+              "url":"Console/en/Editor/Editor-Connection.md"
               }
            , 
            { 
               "id":"editorRunScript", 
-              "title":"Crear y ejecutar una secuencia de comandos o una instrucción SQL", 
-              "description":"Consideraciones para ejecutar SQL", 
-              "url":"Console/es/Editor/Editor-Run-Script.md"
+              "title":"Create and run a SQL statement or script", 
+              "description":"Considerations for running SQL", 
+              "url":"Console/en/Editor/Editor-Run-Script.md"
               } 
            ]
  
@@ -67,21 +71,21 @@
      , 
     {
         "id": "queryWriteData",
-        "title": "Consulta y escribe datos",
-        "description": "Integración del almacén de objetos nativo con el almacenamiento de objetos en la nube",
-        "url": "Console/es/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
+        "title": "Query and Write Data",
+        "description": "Native Object Store integration with cloud object storage",
+        "url": "Console/en/DataSources/Query-Write-Data-Cloud-Object-Storage.md"
     },
     {
         "id": "additionalResources",
-        "title": "Recursos adicionales",
-        "description": "Enlaces útiles para empezar a utilizar Vantage",
-        "url": "Console/es/Resources/Additional-Resources.md"
+        "title": "Additional Resources",
+        "description": "Useful links to help you get started with Vantage",
+        "url": "Console/en/Resources/Additional-Resources.md"
     },
     {
         "id": "apiUserGuide",
-        "title": "Guía del usuario de la API",
-        "description": "Revisar el acceso a la API GraphQL y los patrones de uso",
-        "url": "Console/es/API/Api_User_Guide.md"
+        "title": "API User Guide",
+        "description": "Review GraphQL API access and use patterns",
+        "url": "Console/en/API/Api_User_Guide.md"
     }
 	]
 }
