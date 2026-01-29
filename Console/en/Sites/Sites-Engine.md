@@ -1,15 +1,16 @@
-Site Admins and Super Site Admins can select Change to perform SQL Engine operations, such as starting and stopping the database and scaling the instance size.
+Database administrators can select **Change** to perform SQL Engine operations, such as starting and stopping the database and scaling the instance size.
 
+[Elasticity](#Elasticity)
 
 Keep in mind that:
 
 - Your site isn't available during these operations, so schedule them at a time that minimally impacts users.
-- Scaling up or out and expanding volume may incur additional costs.
+- Scaling up, out, or expanding volume may incur additional costs.
 - After you expand storage volume you can't decrease it.
 
-Tip: The icon in the Advanced SQL Engine card stops spinning when the operation finishes.
+**Tip:** The icon in the Advanced SQL Engine card stops spinning when the operation finishes.
 
-**Elasticity**
+#### Elasticity
 
 **Stop/Start**: Storage costs are not affected by stopping or starting the instance.
 **Scale Up/Down:** Adjust the instance size. Scaling up incurs additional cost.
