@@ -12,7 +12,7 @@ Keep in mind that:
 
 #### Elasticity
 
-**Stop/Start**: Storage costs are not affected by stopping or starting the instance.
-**Scale Up/Down:** Adjust the instance size. Scaling up incurs additional cost.
-**Scale Out/In**: Adjust the instance quantity. Scaling out incurs additional cost.
-**Expand Storage:** Increase the EBS volume (raw, permanent storage) in 1 TB increments. After you expand storage, you cannot decrease it.
+- **Stop/Start**: Storage costs are not affected by stopping or starting the instance.
+- **Scale Up/Down:** Adjust the instance size. Scaling up incurs additional cost.
+- **Scale Out/In**: Adjust the instance quantity. Scaling out incurs additional cost.
+- **Expand Storage:** Increase the EBS volume (raw, permanent storage) in 1 TB increments. After you expand storage, you cannot decrease it.
