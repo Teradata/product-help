@@ -20,6 +20,12 @@
                 "id": "siteConsumption",
                 "title": "Consumption",
                 "url": "Console/en/Sites/Sites-Consumption.md"
+                }
+           , 
+           { 
+                "id": "siteEngine",
+                "title": "Engine",
+                "url": "Console/en/Sites/Sites-Engine.md"
             }
         ]
     },
