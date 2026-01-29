@@ -1,3 +1,7 @@
+An identity provider stores, secures, and authenticates the digital identities of users. 
+
+VantageCloud Enterprise supports OpenID Connect and SAML 2.0 authentication protocols. The information you need from your identity provider depends on the authentication protocol you use.
+
 Add a SAML 2.0- or OIDC-compliant identity provider for SSO with the following considerations:
 
 - **Domain**: Domain of the email client
