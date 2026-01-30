@@ -236,6 +236,11 @@
               "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
               "title": "Manage Vector Collections - Playground - Search Settings",
               "url": "OneTeradata/en/vector-store-procedure-manage-collection-playground-learn-more-search-settings.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-using-playground",
+              "title": "Manage Vector Collections - Using the Playground",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-playground-learn-more-using-playground.md"
             }
           ]
         },
