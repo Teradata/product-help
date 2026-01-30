@@ -161,7 +161,24 @@
 							"childrenUrl": ""
 						}
 					]
-				}
+				},
+                {
+                    "id": "mcp",
+                    "title": "MCP TEST",
+                    "description": "",
+                    "icon": "admin_panel_settings",
+                    "url": "",
+					"children": [
+						{
+							"id": "mcp-test",
+							"title": "TEST",
+							"description": "TEST",
+							"icon": "",
+							"url": "",
+							"childrenUrl": ""
+						}
+					]
+				}				
             ]
         }
     ]

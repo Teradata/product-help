@@ -30,6 +30,14 @@
                     "url": "",
                     "childrenUrl": "modelops"
                 },
+                {
+                    "id": "home-mcp",
+                    "title": "MCP test",
+                    "description": "TEST",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "mcp-server"
+                },		
 				{
                     "id": "home-learningresources",
                     "title": "Learning resources",
