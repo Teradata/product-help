@@ -29,17 +29,7 @@
                     "icon": "variable_outlined;covalent",
                     "url": "",
                     "childrenUrl": "notebooks;using_vector_store.ipynb"
-                },
-				                {
-                    "id": "sample",
-                    "title": "Sample card",
-                    "description": "For testing only",
-                    "icon": "variable_outlined;covalent",
-                    "url": "",
-                    "childrenUrl": ""
-                }
-
-            ]
+                }            ]
         }
     ]
 }
