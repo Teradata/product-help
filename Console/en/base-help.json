@@ -48,6 +48,13 @@
         "url":"Console/en/Editor/Editor-Getting-Started.md", 
         "children":[
            { 
+              "id":"editorKeyboardShortcuts", 
+              "title":"Editor keyboard shortcuts", 
+              "description":"Editor shortcuts for keyboard.", 
+              "url":"Console/en/Editor/Editor-Keyboard_shortcuts.md"
+              }
+           , 
+		   { 
               "id":"editorKeyConcepts", 
               "title":"Editor key concepts", 
               "description":"Editor description, components, and characteristics", 
