@@ -20,25 +20,8 @@
                     "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
                     "icon": "play_lesson",
                     "url": "",
-                    "childrenUrl": "notebooks;getting_started_teradata.ipynb"
-                },
-                {
-                    "id": "learning-vectornotebook",
-                    "title": "Use vectors in a notebook",
-                    "description": "Learn about searching for and retrieving vectors for your models.",
-                    "icon": "variable_outlined;covalent",
-                    "url": "",
-                    "childrenUrl": "notebooks;using_vector_store.ipynb"
-                },
-                {
-                    "id": "learning-mcp",
-                    "title": "MCP TEST",
-                    "description": "MCP TEST",
-                    "icon": "play_lesson",
-                    "url": "",
-                    "childrenUrl": "some-help-topic;mcp-server"
-                }
-				
+                    "childrenUrl": "notebooks;intro_to_teradata_notebooks.ipynb"
+                }				
 			]
         }
     ]

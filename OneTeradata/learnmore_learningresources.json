@@ -20,31 +20,8 @@
 							"icon": "",
 							"url": "",
 							"childrenUrl": "notebooks;Getting_Started_with_Teradata_Notebooks.ipynb"
-						},
-						{
-							"id": "notebooks-ingest",
-							"title": "Ingest and explore data",
-							"description": "See how to analyze the data, create new features, and experiment with different models.",
-							"icon": "",
-							"url": "",
-							"childrenUrl": "notebooks;Demo/Getting_Started/Data_Loading/Data_Loading_SQL.ipynb"
-						},
-						{
-							"id": "notebooks-explore",
-							"title": "Explore using vectors in notebooks",
-							"description": "Learn about searching for and retrieving vectors for your models.",
-							"icon": "",
-							"url": "",
-							"childrenUrl": "notebooks"
-						},
-						{
-							"id": "notebooks-sample",
-							"title": "Try sample Teradata notebooks",
-							"description": "Experiment with analytic functions in notebooks pre-built for use cases.",
-							"icon": "",
-							"url": "",
-							"childrenUrl": "notebooks;Getting_Started_with_Teradata_Notebooks.ipynb"
 						}
+						
 					]
 				},
                 {
@@ -161,24 +138,7 @@
 							"childrenUrl": ""
 						}
 					]
-				},
-                {
-                    "id": "mcp",
-                    "title": "MCP TEST",
-                    "description": "",
-                    "icon": "admin_panel_settings",
-                    "url": "",
-					"children": [
-						{
-							"id": "mcp-test",
-							"title": "TEST",
-							"description": "TEST",
-							"icon": "",
-							"url": "",
-							"childrenUrl": "vectorstore-help-page;mcp-server"
-						}
-					]
-				}				
+				}
             ]
         }
     ]
