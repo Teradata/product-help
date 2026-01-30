@@ -22,18 +22,6 @@
                 "url": "Console/en/Sites/Sites-Consumption.md"
                 }
            , 
-		   { 
-              "id": "siteConsumptionUnits",
-              "title": "Consumption Units",
-              "url": "Console/en/Sites/Sites-Consumption-Units.md"
-              }
-           , 
-		   { 
-              "id": "siteConsumptionMonthlyUnits",
-              "title": "Consumption Montly Units",
-              "url": "Console/en/Sites/Sites-Consumption-Monthly-Units.md"
-              }
-           , 
            { 
                 "id": "siteEngine",
                 "title": "Engine",
