@@ -29,7 +29,17 @@
                     "icon": "variable_outlined;covalent",
                     "url": "",
                     "childrenUrl": "notebooks;using_vector_store.ipynb"
-                }            ]
+                },
+                {
+                    "id": "learning-mcp",
+                    "title": "MCP TEST",
+                    "description": "MCP TEST",
+                    "icon": "play_lesson",
+                    "url": "",
+                    "childrenUrl": "some-help-topic;mcp-server"
+                }
+				
+			]
         }
     ]
 }
