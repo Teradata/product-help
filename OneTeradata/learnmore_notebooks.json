@@ -10,8 +10,8 @@
                     "id": "launcher-try-sample",
                     "title": "Try sample Teradata notebooks",
                     "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
-                    "icon": "",
-                    "url": "intro_to_teradata_notebooks.ipynb"
+                    "icon": "play_lesson",
+                    "childrenUrl": "getting_started_teradata.ipynb"
                 }
             ]
         }	
