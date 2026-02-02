@@ -19,7 +19,7 @@
 							"description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "notebooks;Getting_Started_with_Teradata_Notebooks.ipynb"
+							"childrenUrl": "notebooks;getting_started_teradata.ipynb"
 						}
 						
 					]
