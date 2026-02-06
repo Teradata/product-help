@@ -51,7 +51,7 @@
     {
       "id": "notebooks-explanation-overview-help",
       "title": "Notebooks",
-      "icon": "book;covalent",
+      "icon": "book",
       "description": "Explore your data, build AI/ML models, and share your work.",
       "url": "OneTeradata/en/notebooks-explanation-overview-help.md"
     },
