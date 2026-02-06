@@ -257,7 +257,7 @@
     {
       "id": "integrations",
       "title": "Integrations",
-      "icon": "apps;covalent",
+      "icon": "apps",
       "description": "Support your workflow with additional tools",
       "url": "OneTeradata/en/integrations.md"
     }
