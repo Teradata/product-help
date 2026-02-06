@@ -1,7 +1,5 @@
 Database administrators can select **Change** to perform SQL Engine operations, such as starting and stopping the database and scaling the instance size.
 
-[Elasticity](#Elasticity)
-
 Keep in mind that:
 
 - Your site isn't available during these operations, so schedule them at a time that minimally impacts users.
