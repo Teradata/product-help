@@ -975,6 +975,13 @@
        "url":"Vantage/xbg1640280430669.md", 
        "children":[
           { 
+             "id":"vhi1769038518892", 
+             "title":"Keyboard shortcuts", 
+             "description":"See the keyboard shortcuts", 
+             "url":"Vantage/vhi1769038518892.md"
+             }
+          , 
+          { 
              "id":"mor1695159014369", 
              "title":"Load data", 
              "description":"Load or access data.", 
