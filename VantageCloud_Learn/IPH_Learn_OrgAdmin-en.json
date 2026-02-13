@@ -188,6 +188,15 @@
              "childrenUrl":"mxq1680183881642"
              }
           , 
+		  { 
+             "id":"yyz1710373675172", 
+             "title":"Add database administrators", 
+             "description":"Add other database administrators to the environment.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
+             }
+          ,
           { 
              "id":"uvi1714845877298", 
              "title":"Monitor resource consumption", 
