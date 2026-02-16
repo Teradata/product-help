@@ -34,16 +34,16 @@
                     "id": "home-mcp",
                     "title": "MCP server",
                     "description": "Get started configuring the MCP server tools.",
-                    "icon": "school",
+                    "icon": "build_circle",
                     "url": "",
-                    "childrenUrl": "learn"
+                    "childrenUrl": "mcp-server"
                 },
 		{
                     "id": "home-learningresources",
                     "title": "Learning resources",
-                    "icon": "build_circle",
+                    "icon": "school",
                     "url": "",
-                    "childrenUrl": "mcp-server "
+                    "childrenUrl": "learn"
                 }
             ]
         }
