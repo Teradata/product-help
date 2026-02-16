@@ -31,11 +31,19 @@
                     "childrenUrl": "modelops"
                 },
 		{
-                    "id": "home-learningresources",
-                    "title": "Learning resources",
+                    "id": "home-mcp",
+                    "title": "MCP server",
+                    "description": "Get started configuring the MCP server tools.",
                     "icon": "school",
                     "url": "",
                     "childrenUrl": "learn"
+                },
+		{
+                    "id": "home-learningresources",
+                    "title": "Learning resources",
+                    "icon": "build_circle",
+                    "url": "",
+                    "childrenUrl": "mcp-server "
                 }
             ]
         }
