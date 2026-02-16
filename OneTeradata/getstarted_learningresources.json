@@ -26,6 +26,7 @@
                     "id": "learning-mcp",
                     "title": "Try out the MCP server",
                     "description": "[CONTENT TBD] - Link to MCP sample notebook",
+					"icon": "build_circle",
                     "url": "",
                     "childrenUrl": "notebooks;Get started/2_use_enterprise_mcp_server.ipynb"
                 },
