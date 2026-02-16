@@ -19,7 +19,7 @@
 							"description": "Get started with a sample notebook and see how to add computations, visualizations, SQL commands, and more.",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "notebooks;Get started\1_intro_to_teradata_notebooks.ipynb"
+							"childrenUrl": "notebooks;Get started/1_intro_to_teradata_notebooks.ipynb"
 						}
 						
 					]
@@ -135,17 +135,10 @@
 							"description": "[CONTENT TBD] - Link to MCP sample notebook",
 							"icon": "",
 							"url": "",
-							"childrenUrl": "notebooks;Get started\2_use_enterprise_mcp_server.ipynb"
-
-                }				
-
-
-
-
+							"childrenUrl": "notebooks;Get started/2_use_enterprise_mcp_server.ipynb"
 						}
 					]
-				}
-,
+				},
                 {
                     "id": "useraccess",
                     "title": "User access",
