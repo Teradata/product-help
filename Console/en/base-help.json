@@ -5,21 +5,12 @@
         "description": "Enable or disable necessary notification settings",
         "url": "Console/en/Account/Notification-Settings.md"
     },
-	{
-
-		"id": "identityProviders",
-		"title": "Identity Provider",
-		"description": "Configure an identity provider for SSO authentication",
-		"url": "Console/en/IdentityProviders/Identity-Providers-Configure.md"
-		}
-	,
-	{
-		"id": "rolemapping",
-		"title": "Role mapping",
-		"description": "Connect end users with defined role privileges",
-		"url": "Console/en/Roles/role-mapping.md"
-		}
-	,	
+    {
+        "id": "identityProviders",
+        "title": "Identity Provider",
+        "description": "Configure an identity provider for SSO authentication",
+        "url": "Console/en/IdentityProviders/Identity-Providers-Configure.md"
+    },
     {
         "id": "sites",
         "title": "Sites",
