@@ -5,21 +5,27 @@
         "description": "Enable or disable necessary notification settings",
         "url": "Console/en/Account/Notification-Settings.md"
     },
-    {
+        {
         "id": "accessControl",
         "title": "Access control",
         "description": "",
         "url": "",
 		"children" : [
     {
-        "id": "identityProviders",
-        "title": "Identity Provider",
-        "description": "Configure an identity provider for SSO authentication",
-        "url": "Console/en/IdentityProviders/Identity-Providers-Configure.md"
-    }
-		
-		]
-    },
+			"id": "identityProviders",
+    		"title": "Identity Provider",
+	    	"description": "Configure an identity provider for SSO authentication",
+		    "url": "Console/en/IdentityProviders/Identity-Providers-Configure.md"
+		}
+	,
+	{
+		    "id": "rolemapping",
+		    "title": "Role mapping",
+	    	"description": "Connect end users with defined role privileges",
+		    "url": "Console/en/Roles/role-mapping.md"
+		}
+    ]
+},
     {
         "id": "sites",
         "title": "Sites",
@@ -56,18 +62,21 @@
         "description":"Write and run SQL queries.", 
         "url":"Console/en/Editor/Editor-Getting-Started.md", 
         "children":[
-           { 
-              "id":"editorKeyboardShortcuts", 
-              "title":"Editor keyboard shortcuts", 
-              "description":"Editor shortcuts for keyboard.", 
-              "url":"Console/en/Editor/Editor-Keyboard_shortcuts.md"
-              }
-           , 
+        
 		   { 
               "id":"editorKeyConcepts", 
               "title":"Editor key concepts", 
               "description":"Editor description, components, and characteristics", 
-              "url":"Console/en/Editor/Editor-Key-Concepts.md"
+              "url":"Console/en/Editor/Editor-Key-Concepts.md",
+              "children" : [
+   { 
+                "id":"editorKeyboardShortcuts", 
+                "title":"Editor keyboard shortcuts", 
+                "description":"Editor shortcuts for keyboard.", 
+                "url":"Console/en/Editor/Editor-Keyboard_shortcuts.md"
+              }
+              ]
+                
               }
            , 
            { 
