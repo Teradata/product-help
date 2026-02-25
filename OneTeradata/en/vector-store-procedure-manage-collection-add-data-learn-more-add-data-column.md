@@ -1,0 +1,1 @@
+Only available if you have changed data or the embedding model. In the confirmation, select the appropriate choice.

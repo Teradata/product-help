@@ -1,0 +1,265 @@
+{
+  "items": [
+    {
+      "id": "one-teradata-explanation-welcome-homepage-help",
+      "title": "Welcome to AI Studio!",
+      "icon": "",
+      "description": "Start your AI Studio journey!",
+      "url": "OneTeradata/en/one-teradata-explanation-welcome-homepage-help.md",
+      "children": [
+        {
+          "id": "one-teradata-landing-page-learn-more-resources-help",
+          "title": "Learning resources",
+          "url": "OneTeradata/en/one-teradata-landing-page-learn-more-resources-help.md"
+        },
+        {
+          "id": "one-teradata-reference-account-settings-help",
+          "title": "Account settings",
+          "description": "Set your personal preferences. ",
+          "url": "OneTeradata/en/one-teradata-reference-account-settings-help.md"
+        }
+      ]
+    },
+    {
+      "id": "one-teradata-explanation-ask-ai-help",
+      "title": "AI Assistant",
+      "description": "Your AI assistant for easier, smarter data management.",
+      "url": "OneTeradata/en/one-teradata-explanation-ask-ai-help.md",
+      "children": [
+        {
+          "id": "before-using-terry",
+          "title": "Before using Terry",
+          "url": "OneTeradata/en/before-using-terry.md"
+        },
+        {
+          "id": "get-started-with-terry",
+          "title": "Get started with Terry",
+          "url": "OneTeradata/en/get-started-with-terry.md"
+        },
+        {
+          "id": "structure-your-conversation",
+          "title": "Structure your conversation with Terry",
+          "url": "OneTeradata/en/structure-your-conversation.md"
+        },
+        {
+          "id": "conversation-flow-structure",
+          "title": "Start a conversation with Terry",
+          "url": "OneTeradata/en/conversation-flow-structure.md"
+        }
+      ]
+    },
+    {
+      "id": "notebooks-explanation-overview-help",
+      "title": "Notebooks",
+      "icon": "book",
+      "description": "Explore your data, build AI/ML models, and share your work.",
+      "url": "OneTeradata/en/notebooks-explanation-overview-help.md"
+    },
+    {
+      "id": "vector-store-explanation-overview-help-",
+      "title": "Vector store",
+      "icon": "variable_outlined;covalent",
+      "description": "Vector store landing page and overview.",
+      "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
+      "children": [
+        {
+          "id": "vector-store-explanation-overview-help-",
+          "title": "Create a Vector Collection",
+          "url": "OneTeradata/en/vector-store-explanation-overview-help-.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-create-collection-definition-help",
+              "title": "Define the vector store",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-definition-help.md"
+            },
+            {
+              "id": "vector-store-explanation-create-collection-chunking-help",
+              "title": "Vector store chunking",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-chunking-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
+                  "title": "Select a chunking method",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-reference-create-collection-embedding-help",
+              "title": "Embed a model",
+              "url": "OneTeradata/en/vector-store-reference-create-collection-embedding-help.md",
+              "childrenUrl": "",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding",
+                  "title": "Select an embedding model",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-reference-create-collection-language-model-help",
+              "title": "Add a language model",
+              "url": "OneTeradata/en/vector-store-reference-create-collection-language-model-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-language-model-learn-more-selecting-language",
+                  "title": "Select a language model",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-language-model-learn-more-selecting-language.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-create-collection-indexing-search-settings-help",
+              "title": "Index and search settings",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-indexing-search-settings-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm",
+                  "title": "Select an algorithm",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-create-collection-data-sources-help",
+              "title": "Vector store data sources",
+              "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-create-collection-data-sources-learn-more-selecting-data",
+                  "title": "Select a data type",
+                  "url": "OneTeradata/en/vector-store-procedure-create-collection-data-sources-learn-more-selecting-data.md"
+                },
+                {
+                  "id": "vector-store-explanation-create-collection-data-sources-error-help",
+                  "title": "Data source error",
+                  "url": "OneTeradata/en/vector-store-explanation-create-collection-data-sources-error-help.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-overview-help",
+          "title": "Manage vector store",
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-overview-help.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-active-help",
+              "title": "Active vector collections",
+              "url": "OneTeradata/en/vector-store-explanation-manage-collection-active-help.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-edit-index-help",
+              "title": "Edit vector indexing",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-edit-index-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-indexing-settings-learn-more",
+                  "title": "Edit search algorithms",
+                  "url": "OneTeradata/en/vector-store-procedure-manage-collection-indexing-settings-learn-more.md"
+                },
+                {
+                  "id": "vector-store-procedure-manage-collection-search-settings-learn-more",
+                  "title": "Edit search settings",
+                  "url": "OneTeradata/en/vector-store-procedure-manage-collection-search-settings-learn-more.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-manage-collection-chunking-overview-help",
+              "title": "Manage chunking",
+              "url": "OneTeradata/en/vector-store-explanation-manage-collection-chunking-overview-help.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-edit-chunking-help",
+                  "title": "Edit chunking",
+                  "url": "OneTeradata/en/vector-store-procedure-manage-collection-edit-chunking-help.md"
+                },
+                {
+                  "id": "vector-store-explanation-manage-collection-chunking-edit-definition-help",
+                  "title": "Edit chunking definition",
+                  "url": "OneTeradata/en/vector-store-explanation-manage-collection-chunking-edit-definition-help.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vector-store-procedure-manage-collection-change-embedding-help",
+          "title": "Change vector embeddings",
+          "url": "OneTeradata/en/vector-store-procedure-manage-collection-change-embedding-help.md"
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-data-sources-help",
+          "title": "Manage vector data sources",
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-data-sources-help.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-add-data-help",
+              "title": "Add collection data",
+              "url": "OneTeradata/en/vector-store-explanation-manage-collection-add-data-help.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables",
+              "title": "Add data tables",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-column",
+              "title": "Add data columns",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-add-data-column.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns",
+              "title": "Add metadata columns",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-key-columns",
+              "title": "Add data key columns",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-add-data-learn-more-key-columns.md"
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-playground-help",
+          "title": "Vector store playground",
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-playground-help.md",
+          "children": [
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-using-playground",
+              "title": "Use a playground",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-playground-learn-more-using-playground.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
+              "title": "Manage playground search settings",
+              "url": "OneTeradata/en/vector-store-procedure-manage-collection-playground-learn-more-search-settings.md"
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-users-help",
+          "title": "Manage vector store users",
+          "url": "OneTeradata/en/vector-store-explanation-manage-collection-users-help.md"
+        }
+      ]
+    },
+    {
+      "id": "modelops-overview",
+      "title": "ModelOps",
+      "icon": "product_modelops;covalent",
+      "description": "Deploy, monitor, and manage your AI/ML models.",
+      "url": "OneTeradata/en/modelops-overview.md"
+    },
+    {
+      "id": "integrations",
+      "title": "Integrations",
+      "icon": "apps",
+      "description": "Support your workflow with additional tools",
+      "url": "OneTeradata/en/integrations.md"
+    }
+  ]
+}
