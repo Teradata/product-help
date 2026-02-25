@@ -1,8 +1,9 @@
 {  "items":[
     { 
-       "id":"one-teradata-explanation-welcome-homepage-help", 
-       "title":"Welcome to AI Studio!", 
-       "description":"Start your AI Studio journey!", 
+ "id":"one-teradata-explanation-welcome-homepage-help", 
+ "title":"Welcome to AI Studio!", 
+  "description":"Start your AI Studio journey!", 
+  "url":"OneTeradata/en/uky1771952406117.md", 
        "children":[
           { 
              "id":"one-teradata-landing-page-learn-more-resources-help", 
