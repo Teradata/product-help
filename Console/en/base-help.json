@@ -63,46 +63,19 @@
 		}
     ]
 },
-    { 
-        "id":"editorPages", 
-        "title":"Editor", 
-        "description":"Write and run SQL queries.", 
-        "url":"Console/en/Editor/Editor-Getting-Started.md", 
-        "children":[
-        
-		   { 
-              "id":"editorKeyConcepts", 
-              "title":"Editor key concepts", 
-              "description":"Editor description, components, and characteristics.", 
-              "url":"Console/en/Editor/Editor-Key-Concepts.md",
-              "children" : [
-   { 
-                "id":"editorKeyboardShortcuts", 
-                "title":"Editor keyboard shortcuts", 
-                "description":"Editor shortcuts for keyboard.", 
-                "url":"Console/en/Editor/Editor-Keyboard_shortcuts.md"
-              }
-              ]
-                
-              }
-           , 
-           { 
-              "id":"editorConnection", 
-              "title":"Connect to a site", 
-              "description":"Considerations for connecting to an account.", 
-              "url":"Console/en/Editor/Editor-Connection.md"
-              }
-           , 
-           { 
-              "id":"editorRunScript", 
-              "title":"Create and run a SQL statement or script.", 
-              "description":"Considerations for running SQL", 
-              "url":"Console/en/Editor/Editor-Run-Script.md"
-              } 
-           ]
+     {
+        "id": "computeEngines",
+        "title": "Compute engines",
+        "description": "compute engines.",
+        "url": "Console/en/Resources/compute-engine.md"
  
-        }
-     , 
+        }, 
+          {
+        "id": "queryGrid",
+        "title": "Querygrid",
+        "description": "Share data between Teradata and external systems.",
+        "url": "Console/en/API/queryGrid.md"
+    },
     {
         "id": "queryWriteData",
         "title": "Query and Write Data",
