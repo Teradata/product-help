@@ -7,6 +7,14 @@
             "url": "",
             "children": [
                 {
+                    "id": "apps-unstructured",
+                    "title": "Ingest unstructured data with Unstructured.io",
+                    "description": "Connect to Unstructured.io and convert data into embeddings.",
+                    "icon": "unstructured",
+                    "url": "",
+                    "childrenUrl": "https://unstructured.io"
+                },                
+				{
                     "id": "apps-gitea",
                     "title": "Version your Git code with Gitea",
                     "description": "Use Gitea for persistence and version control of your projects.",
@@ -38,7 +46,15 @@
             "description": "See documentation and learning resources.",
             "url": "",
             "children": [
-                {
+                 {
+                    "id": "learn-unstructured",
+                    "title": "Transform data with Unstructured",
+                    "description": "Learn how to ingest and process unstructured documents for retrieval-augmented generation (RAG), agentic AI, and model fine-tuning.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.unstructured.io/welcome"
+                },           
+				{
                     "id": "learn-gitea",
                     "title": "Version your Git code with Gitea",
                     "description": "Self-host your Git repositories for code reviews, collaboration, package registry, and CI/CD.",
