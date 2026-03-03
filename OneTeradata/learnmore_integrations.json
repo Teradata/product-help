@@ -8,8 +8,8 @@
             "children": [
                 {
                     "id": "apps-unstructured",
-                    "title": "Ingest unstructured data with Unstructured.io",
-                    "description": "Connect to Unstructured.io and convert data into embeddings.",
+                    "title": "Leverage more data with Unstructured",
+                    "description": "Automate large-scale data transformation and ingestion for unstructured files.",
                     "icon": "unstructured",
                     "url": "",
                     "childrenUrl": "https://unstructured.io"
@@ -49,7 +49,7 @@
                  {
                     "id": "learn-unstructured",
                     "title": "Transform data with Unstructured",
-                    "description": "Learn how to ingest and process unstructured documents for retrieval-augmented generation (RAG), agentic AI, and model fine-tuning.",
+                    "description": "Learn how to turn your unstructured documents into structured, AI-ready data at scale.",
                     "icon": "",
                     "url": "",
                     "childrenUrl": "https://docs.unstructured.io/welcome"
