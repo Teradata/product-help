@@ -188,15 +188,15 @@
              "childrenUrl":"mxq1680183881642"
              }
           , 
-          { 
-             "id":"drx1745278688634", 
-             "title":"ModelOpsをデプロイして監視する", 
-             "description":"AIモデルとMLモデルを管理してユース ケースを運用可能にします。", 
-             "icon":"product_modelops;covalent", 
-             "url":"VantageCloud_Learn/ja/drx1745278688634.md", 
-             "childrenUrl":"qya1694122121061"
+		  { 
+             "id":"yyz1710373675172", 
+             "title":"データベース管理者を追加する", 
+             "description":"他のデータベース管理者を環境に追加します。", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/ja/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
              }
-          , 
+          ,
           { 
              "id":"uvi1714845877298", 
              "title":"リソースの消費を監視する", 

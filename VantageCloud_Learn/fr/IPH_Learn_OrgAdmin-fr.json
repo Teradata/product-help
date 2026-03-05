@@ -188,15 +188,15 @@
              "childrenUrl":"mxq1680183881642"
              }
           , 
-          { 
-             "id":"drx1745278688634", 
-             "title":"Déployer et surveiller ModelOps", 
-             "description":"Pour opérationnaliser vos cas d'utilisation, gérez vos modèles d'IA et d'apprentissage automatique.", 
-             "icon":"product_modelops;covalent", 
-             "url":"VantageCloud_Learn/fr/drx1745278688634.md", 
-             "childrenUrl":"qya1694122121061"
+		  { 
+             "id":"yyz1710373675172", 
+             "title":"Ajouter des administrateurs de base de données", 
+             "description":"Ajoutez d'autres administrateurs de base de données à l'environnement.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/fr/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
              }
-          , 
+          ,
           { 
              "id":"uvi1714845877298", 
              "title":"Surveiller la consommation des ressources", 
