@@ -94,7 +94,7 @@
 		}
         ,
 	{
-		    "id": "userProvisioning",
+		    "id": "userprovisioning",
 		    "title": "User provisioning",
 	    	"description": "Sync users and groups from your identity provider.",
 		    "url": "Console/en/UserProvisioning/user-provisioning.md"
