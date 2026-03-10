@@ -120,23 +120,6 @@
 							"childrenUrl": "notebooks;Get started/2_use_enterprise_mcp_server.ipynb"
 						}
 					]
-				},
-                {
-                    "id": "useraccess",
-                    "title": "User access",
-                    "description": "",
-                    "icon": "admin_panel_settings",
-                    "url": "",
-					"children": [
-						{
-							"id": "users-add",
-							"title": "Add users",
-							"description": "Onboard your colleagues.",
-							"icon": "",
-							"url": "",
-							"childrenUrl": ""
-						}
-					]
 				}
             ]
         }
