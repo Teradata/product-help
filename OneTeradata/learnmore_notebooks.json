@@ -1,19 +1,4 @@
 {
     "items": [
-        {
-            "id": "launcher-notebooks",
-            "title": "Learn More",
-            "description": "",
-            "url": "",
-            "children": [
-                {
-                    "id": "launcher-try-sample",
-                    "title": "Try sample Teradata notebooks",
-                    "description": "Experiment with analytic functions in notebooks pre-built for use cases.",
-                    "icon": "play_lesson",
-                    "childrenUrl": "getting_started_teradata.ipynb"
-                }
-            ]
-        }	
     ]
 }
