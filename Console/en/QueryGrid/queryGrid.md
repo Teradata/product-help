@@ -1,1 +1,0 @@
-QueryGrid  in Enterprise
