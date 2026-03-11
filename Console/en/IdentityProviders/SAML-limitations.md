@@ -1,1 +1,0 @@
-Limitations with SAML 2.0 as your identity provider.
