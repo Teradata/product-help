@@ -114,7 +114,7 @@
 						{
 							"id": "mcp-try",
 							"title": "Try out the MCP server",
-							"description": "[CONTENT TBD] - Link to MCP sample notebook",
+							"description": "Learn how to use of Teradata enterprise MCP (Model Context Protocol) server using REST APIs.",
 							"icon": "",
 							"url": "",
 							"childrenUrl": "notebooks;Getting-Started/use_enterprise_mcp_server.ipynb"
