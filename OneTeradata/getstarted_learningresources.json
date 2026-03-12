@@ -20,7 +20,7 @@
                     "description": "Learn how to use of Teradata enterprise MCP (Model Context Protocol) server using REST APIs.",
 					"icon": "build_circle",
                     "url": "",
-                    "childrenUrl": "notebooks;Getting-Started/use_enterprise_mcp_server.ipynb"
+                    "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
                 }
 			]
         }
