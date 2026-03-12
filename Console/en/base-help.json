@@ -48,7 +48,7 @@
        }
     , 
     { 
-       "id":"sites", 
+       "id":"Sites", 
        "title":"Sites", 
        "description":"Review the list of your production, development, and testing sites", 
        "url":"Console/en/dzn1772742154425.md", 
