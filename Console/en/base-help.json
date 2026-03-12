@@ -7,10 +7,44 @@
        }
     , 
     { 
-       "id":"identityProviders", 
-       "title":"Identity Provider", 
-       "description":"Configure an identity provider for SSO authentication", 
-       "url":"Console/en/qqk1772742151787.md"
+       "id":"editorPages", 
+       "title":"Editor", 
+       "description":"Write and run SQL queries.", 
+       "url":"Console/en/buf1772742119142.md", 
+       "children":[
+          { 
+             "id":"editorKeyConcepts", 
+             "title":"Editor key concepts", 
+             "description":"Editor description, components, and characteristics", 
+             "url":"Console/en/ufh1772742191084.md", 
+             "children":[
+                { 
+                   "id":"editorKeyboardShortcuts", 
+                   "title":"Editor keyboard shortcuts", 
+                   "description":"Editor shortcuts for keyboard.", 
+                   "url":"Console/en/ctq1772742124748.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"editorConnection", 
+             "title":"Connect to a site", 
+             "description":"Considerations for connecting to an account", 
+             "url":"Console/en/ghn1772742163011.md"
+             }
+          , 
+          { 
+             "id":"editorRunScript", 
+             "title":"Create and run a SQL statement or script", 
+             "description":"Considerations for running SQL", 
+             "url":"Console/en/cwy1772742140232.md"
+             }
+
+          ]
+
        }
     , 
     { 
@@ -32,21 +66,40 @@
              "description":"Database administrators can select Change to perform SQL Engine operations, such as starting and stopping the database and scaling the instance size.", 
              "url":"Console/en/cgt1772742188107.md"
              }
+          , 
+          { 
+             "id":"dataSources_sites", 
+             "title":"Data sources", 
+             "url":"Console/en/sch1773260781698.md"
+             }
 
           ]
 
        }
     , 
     { 
-       "id":"dataProtectionPages", 
-       "title":"Data Protection", 
-       "description":"Review and create data protection pages", 
+       "id":"Data-Protection-Pages", 
+       "title":"Data protection", 
+       "description":"Review and create data protection pages.", 
        "url":"Console/en/val1772742176500.md", 
        "children":[
           { 
-             "id":"dataRestoration", 
+             "id":"Data-Restoration", 
              "title":"Data Restoration", 
              "url":"Console/en/xbl1772742157125.md"
+             }
+          , 
+          { 
+             "id":"retainedCopies", 
+             "title":"Retained copies", 
+             "description":"View saved copies of backups.", 
+             "url":"Console/en/urz1773268539067.md"
+             }
+          , 
+          { 
+             "id":"History-Of-Backup-Jobs", 
+             "title":"Backup history", 
+             "url":"Console/en/tfp1773271525915.md"
              }
 
           ]
@@ -54,41 +107,10 @@
        }
     , 
     { 
-       "id":"editorPages", 
-       "title":"Editor", 
-       "description":"Write and run SQL queries.", 
-       "url":"Console/en/buf1772742119142.md", 
-       "children":[
-          { 
-             "id":"editorKeyboardShortcuts", 
-             "title":"Editor keyboard shortcuts", 
-             "description":"Editor shortcuts for keyboard.", 
-             "url":"Console/en/ctq1772742124748.md"
-             }
-          , 
-          { 
-             "id":"editorKeyConcepts", 
-             "title":"Editor key concepts", 
-             "description":"Editor description, components, and characteristics", 
-             "url":"Console/en/ufh1772742191084.md"
-             }
-          , 
-          { 
-             "id":"editorConnection", 
-             "title":"Connect to a site", 
-             "description":"Considerations for connecting to an account", 
-             "url":"Console/en/ghn1772742163011.md"
-             }
-          , 
-          { 
-             "id":"editorRunScript", 
-             "title":"Create and run a SQL statement or script", 
-             "description":"Considerations for running SQL", 
-             "url":"Console/en/cwy1772742140232.md"
-             }
-
-          ]
-
+       "id":"identityProviders", 
+       "title":"Identity Provider", 
+       "description":"Configure an identity provider for SSO authentication", 
+       "url":"Console/en/qqk1772742151787.md"
        }
     , 
     { 
