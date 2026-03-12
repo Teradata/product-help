@@ -78,13 +78,13 @@
        }
     , 
     { 
-       "id":"Data-Protection-Pages", 
+       "id":"dataProtectionPages", 
        "title":"Data protection", 
        "description":"Review and create data protection pages.", 
        "url":"Console/en/val1772742176500.md", 
        "children":[
           { 
-             "id":"Data-Restoration", 
+             "id":"dataRestoration", 
              "title":"Data Restoration", 
              "url":"Console/en/xbl1772742157125.md"
              }
@@ -97,9 +97,9 @@
              }
           , 
           { 
-             "id":"History-Of-Backup-Jobs", 
+             "id":"backupHistory", 
              "title":"Backup history", 
-             "description":"View backup jobs that have previously run.", 
+             "description":"View jobs that were previously run.", 
              "url":"Console/en/tfp1773271525915.md"
              }
 
