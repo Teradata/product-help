@@ -110,90 +110,10 @@
        }
     , 
     { 
-       "id":"accessControl", 
-       "title":"Access control", 
-       "description":"Manage access for sites, users, and roles.", 
-       "url":"Console/en/dwu1773263960669.md", 
-       "children":[
-          { 
-             "id":"SAMLlimitations", 
-             "title":"SAML limitations", 
-             "description":"IdP features not supported by SAML 2.0.", 
-             "url":"Console/en/jul1773264295095.md"
-             }
-          , 
-          { 
-             "id":"userProvisioning", 
-             "title":"User provisioning", 
-             "description":"Sync users and groups from your identity provider.", 
-             "url":"Console/en/jod1773264560379.md"
-             }
-          , 
-          { 
-             "id":"rolemapping", 
-             "title":"Role mapping", 
-             "url":"Console/en/nyi1773264780390.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"identityProviders", 
        "title":"Identity Provider", 
        "description":"Configure an identity provider for SSO authentication.", 
        "url":"Console/en/qqk1772742151787.md"
-       }
-    , 
-    { 
-       "id":"computeEngine", 
-       "title":"Compute engine", 
-       "description":"Optimize compute and storage resources.", 
-       "url":"Console/en/hgc1773266257356.md", 
-       "children":[
-          { 
-             "id":"createComputeEngine", 
-             "title":"Create a compute engine", 
-             "url":"Console/en/rvc1773266385820.md"
-             }
-          , 
-          { 
-             "id":"configureComputeEngine", 
-             "title":"Configure a compute engine", 
-             "url":"Console/en/hhf1773266448257.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"consumption", 
-       "title":"Consumption", 
-       "url":"Console/en/bsj1773266990885.md", 
-       "children":[
-          { 
-             "id":"consumptionMonthly", 
-             "title":"Consumption monthly", 
-             "url":"Console/en/xex1773267091450.md"
-             }
-          , 
-          { 
-             "id":"xwb1773267379466", 
-             "title":"Consumption department view", 
-             "url":"Console/en/xwb1773267379466.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
-       "id":"queryGrid", 
-       "title":"QueryGrid", 
-       "description":"Share data between Teradata and external systems.", 
-       "url":"Console/en/gup1773266496605.md"
        }
     , 
     { 
