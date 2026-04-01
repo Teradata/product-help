@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "vectorstore-overview",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "vectorstore-optimize",
+          "title": "ベクトル検索を最適化する",
+          "description": "プレイグランドを使用して、このコレクションの類似度検索のパフォーマンスをテストおよび最適化します。",
+          "icon": "category",
+          "url": "",
+          "childrenUrl": "プレイグランド"
+        },
+        {
+          "id": "vectorstore-load",
+          "title": "データをロードする",
+          "description": "コレクションに新規または更新された文書を追加し、検索パフォーマンスを拡張および改善します。",
+          "icon": "database_outlined;covalent",
+          "url": "",
+          "childrenUrl": "data-sources"
+        },
+        {
+          "id": "vectorstore-addusers",
+          "title": "ユーザーを追加する",
+          "description": "ユーザーにコレクションへのアクセス権を付与し、セマンティック検索の実行やRAGアプリケーションの構築を可能にします。",
+          "icon": "person",
+          "url": "",
+          "childrenUrl": "ユーザー"
+        }
+      ]
+    }
+  ]
+}

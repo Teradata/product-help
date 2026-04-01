@@ -1,0 +1,127 @@
+{
+  "items": [
+    {
+      "id": "learning-learnmore",
+      "title": "En savoir plus",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "modelops",
+          "title": "ModelOps",
+          "description": "",
+          "icon": "product_modelops;covalent",
+          "url": "",
+          "children": [
+            {
+              "id": "modelops-learn",
+              "title": "En savoir plus sur ModelOps",
+              "description": "Apprenez à déployer, surveiller et gérer vos modèles d'apprentissage automatique.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-build",
+              "title": "Générer des projets, ajouter des ensembles de données et sélectionner des modèles",
+              "description": "Un projet contient les modèles, les ensembles de données et autres ressources nécessaires pour entraîner, évaluer et déployer des modèles.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-define",
+              "title": "Définir des modèles",
+              "description": "Utilisez des modèles provenant de référentiels Git spécifiques ou intégrez votre propre modèle Python, R ou SAS.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-train",
+              "title": "Entraîner, évaluer et déployer des modèles",
+              "description": "Évaluez, comparez et approuvez les nouvelles versions de modèles pour différents environnements.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-monitor",
+              "title": "Surveiller les déploiements de modèles",
+              "description": "Créez des prédictions et surveillez les performances des cas d'utilisation.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-airflow",
+              "title": "Utiliser Airflow",
+              "description": "Concevez, planifiez et surveillez les flux de travail par lots.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+            }
+          ]
+        },
+        {
+          "id": "vectorstore",
+          "title": "Magasin de vecteurs",
+          "description": "",
+          "icon": "variable;covalent",
+          "url": "",
+          "children": [
+            {
+              "id": "vectorstore-learn",
+              "title": "En savoir plus sur le magasin de vecteurs",
+              "description": "Découvrez comment utiliser les relations sémantiques et la similarité pour activer vos applications d'IA ou de ML.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-create",
+              "title": "Créer une collection de magasins de vecteurs",
+              "description": "Convertissez les données pour l'intégration de la recherche sémantique et les applications RAG.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-explore",
+              "title": "Explorer l'utilisation des vecteurs dans les blocs-notes",
+              "description": "Découvrez comment rechercher et récupérer des vecteurs pour vos modèles.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-test",
+              "title": "Tester les collections dans le terrain de jeu",
+              "description": "Posez des questions et testez la recherche de similarité pour chaque collection.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            }
+          ]
+        },
+        {
+          "id": "mcpserver",
+          "title": "Serveur MCP",
+          "description": "",
+          "icon": "build_circle",
+          "url": "",
+          "children": [
+            {
+              "id": "mcp-try",
+              "title": "Essayer le serveur MCP",
+              "description": "Apprenez à utiliser le serveur Teradata Enterprise MCP (Model Context Protocol) à l'aide des API REST.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

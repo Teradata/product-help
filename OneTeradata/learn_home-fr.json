@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": "home-toolkit",
+      "title": "Kit d'outils de développement d'IA de Teradata",
+      "description": "Utilisez des blocs-notes prédéfinis à intégrer au magasin de vecteurs et générez des modèles prêts pour la production.",
+      "url": "",
+      "children": [
+        {
+          "id": "home-notebooks",
+          "title": "Blocs-notes",
+          "description": "Explorez vos données, générez des modèles d'IA ou de ML et partagez votre travail.",
+          "icon": "book",
+          "url": "",
+          "childrenUrl": "blocs-notes"
+        },
+        {
+          "id": "home-vectorstore",
+          "title": "Magasin de vecteurs",
+          "description": "Convertissez les données pour l'intégration de la recherche sémantique et les applications RAG.",
+          "icon": "variable_outlined;covalent",
+          "url": "",
+          "childrenUrl": "vector-store"
+        },
+        {
+          "id": "home-modelops",
+          "title": "ModelOps",
+          "description": "Déployez, surveillez et gérez vos modèles d'IA ou de ML.",
+          "icon": "product_modelops;covalent",
+          "url": "",
+          "childrenUrl": "modelops"
+        },
+        {
+          "id": "home-mcp",
+          "title": "Serveur MCP",
+          "description": "Commencez par configurer les outils du serveur MCP.",
+          "icon": "build_circle",
+          "url": "",
+          "childrenUrl": "mcp-server"
+        },
+        {
+          "id": "home-learningresources",
+          "title": "Ressources d'apprentissage",
+          "icon": "school",
+          "url": "",
+          "childrenUrl": "apprendre"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "learning-additional",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "learning-feedback",
+          "title": "Commentaires",
+          "description": "",
+          "icon": "rate_review",
+          "url": "",
+          "childrenUrl": "pendo;pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
+        },
+        {
+          "id": "learning-documentation",
+          "title": "Documentation",
+          "description": "",
+          "icon": "docs",
+          "url": "",
+          "childrenUrl": "https://docs.teradata.com"
+        },
+        {
+          "id": "learning-support",
+          "title": "Assistance",
+          "description": "",
+          "icon": "support",
+          "url": "",
+          "childrenUrl": "https://support.teradata.com"
+        }
+      ]
+    }
+  ]
+}

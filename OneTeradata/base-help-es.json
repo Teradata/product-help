@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "id": "one-teradata-explanation-welcome-homepage-help",
+      "title": "Te damos la bienvenida a AI Studio",
+      "description": "Comienza tu viaje con AI Studio",
+      "url": "OneTeradata/es/dvp1772561082809.md",
+      "children": [
+        {
+          "id": "one-teradata-landing-page-learn-more-resources-help",
+          "title": "Recursos de aprendizaje",
+          "description": "Encuentra información sobre tareas comunes, acceso a la ayuda y documentación, solicitud de sugerencias a Terry y tarjetas de acceso rápido a las herramientas de AI Studio.",
+          "url": "OneTeradata/es/vnq1772561072064.md"
+        },
+        {
+          "id": "one-teradata-reference-account-settings-help",
+          "title": "Configuración de la cuenta",
+          "description": "Establece tus preferencias personales.",
+          "url": "OneTeradata/es/evo1772561048412.md"
+        }
+      ]
+    },
+    {
+      "id": "one-teradata-explanation-ask-ai-help",
+      "title": "Asistente de IA",
+      "description": "Tu asistente de IA para una administración de datos más sencilla e inteligente.",
+      "url": "OneTeradata/es/mxn1772561125368.md",
+      "children": [
+        {
+          "id": "before-using-terry",
+          "title": "Antes de usar Terry",
+          "description": "Contenido no disponible para vista previa privada.",
+          "url": "OneTeradata/es/abs1772561144227.md"
+        },
+        {
+          "id": "get-started-with-terry",
+          "title": "Comenzar con Terry",
+          "description": "Contenido no disponible para vista previa privada.",
+          "url": "OneTeradata/es/qxm1772561115166.md"
+        },
+        {
+          "id": "structure-your-conversation",
+          "title": "Estructura tu conversación con Terry",
+          "description": "Contenido no disponible para vista previa privada.",
+          "url": "OneTeradata/es/gxa1772561021277.md"
+        },
+        {
+          "id": "conversation-flow-structure",
+          "title": "Comienza tu conversación con Terry",
+          "description": "Contenido no disponible para vista previa privada.",
+          "url": "OneTeradata/es/wmh1772561109792.md"
+        }
+      ]
+    },
+    {
+      "id": "notebooks-explanation-overview-help",
+      "title": "Cuadernos",
+      "description": "Explora tus datos, desarrolla modelos de ML/IA y comparte tu trabajo.",
+      "icon": "book",
+      "url": "OneTeradata/es/rtz1772561128025.md"
+    },
+    {
+      "id": "vector-store-explanation-overview-help-",
+      "title": "Crear una colección de vectores",
+      "description": "El almacén de vectores de Teradata Enterprise es una base de datos especializada diseñada para almacenar y gestionar vectores de alta dimensionalidad, es decir, representaciones numéricas de datos como texto e imágenes. En vez de basarse en coincidencias exactas de palabras clave, las colecciones de vectores realizan búsquedas semánticas mediante el almacenamiento de datos como vectores. Los casos de uso clave incluyen:",
+      "url": "OneTeradata/es/ycv1772561149578.md",
+      "children": [
+        {
+          "id": "vector-store-explanation-manage-collection-overview-help",
+          "title": "Gestionar almacén de vectores",
+          "description": "Mira los diversos parámetros que usaste al crear la colección de vectores seleccionada.",
+          "url": "OneTeradata/es/hrd1772561055965.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-active-help",
+              "title": "Colecciones de vectores activas",
+              "description": "Como un administrador o analista de datos, puedes administrar las colecciones de vectores que hayas creado o a las que hayas tenido acceso.",
+              "url": "OneTeradata/es/eyj1772561035027.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-edit-index-help",
+              "title": "Editar indexación de vectores",
+              "description": "De forma predeterminada, ves las opciones de búsqueda e indexación que estableciste al crear la colección de vectores.",
+              "url": "OneTeradata/es/pxl1772561040369.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-indexing-settings-learn-more",
+                  "title": "Editar algoritmos de búsqueda",
+                  "description": "Teradata admite estos algoritmos de búsqueda e indexación:",
+                  "url": "OneTeradata/es/wlq1772561043034.md"
+                },
+                {
+                  "id": "vector-store-procedure-manage-collection-search-settings-learn-more",
+                  "title": "Editar la configuración de búsqueda",
+                  "description": "Después de indexar, consultas el almacén de vectores para recuperar datos relevantes. El sistema compara tu consulta con los vectores almacenados y devuelve coincidencias de Top-k. Los resultados dependen del tipo de almacén de vectores:",
+                  "url": "OneTeradata/es/hpr1772561032356.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-manage-collection-chunking-overview-help",
+              "title": "Administrar fragmentaciones",
+              "description": "Modifica el método de fragmentación usado entre Básico y SherpaLLM.",
+              "url": "OneTeradata/es/vpo1772561058663.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-edit-chunking-help",
+                  "title": "Editar fragmentación",
+                  "description": "Modifica el método de fragmentación que seleccionaste al crear la colección de vectores. Cuando termines, guarda los cambios para actualizarla.",
+                  "url": "OneTeradata/es/tlx1772561090346.md"
+                },
+                {
+                  "id": "vector-store-explanation-manage-collection-chunking-edit-definition-help",
+                  "title": "Editar definición de fragmentación",
+                  "description": "Modifica el nombre y la descripción para la colección de vectores. Asegúrate de que el nombre sea exclusivo.",
+                  "url": "OneTeradata/es/wjg1772561112493.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vector-store-procedure-manage-collection-change-embedding-help",
+          "title": "Cambiar las incrustaciones de vectores",
+          "description": "Selecciona el modelo de incrustación requerido que deseas usar. Los modelos disponibles son:",
+          "url": "OneTeradata/es/cia1772561077401.md"
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-data-sources-help",
+          "title": "Administrar los orígenes de datos de vectores",
+          "description": "Puedes agregar un nuevo origen de datos o quitar uno existente, y guardar la colección de vectores.",
+          "url": "OneTeradata/es/xuf1772561069376.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-add-data-help",
+              "title": "Agregar datos de la colección",
+              "description": "Selecciona los archivos PDF para convertir en vectores. Puedes arrastrar y soltar los archivos PDF.",
+              "url": "OneTeradata/es/ble1772561061324.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables",
+              "title": "Agregar tablas de datos",
+              "description": "Selecciona los archivos PDF para convertir en vectores.",
+              "url": "OneTeradata/es/rgl1772561117839.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-column",
+              "title": "Agregar columnas de datos",
+              "description": "Solo disponible si cambiaste los datos o el modelo de incrustación. En la confirmación, selecciona la opción adecuada.",
+              "url": "OneTeradata/es/qbs1772561141510.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns",
+              "title": "Agregar columnas de metadatos",
+              "description": "Agrega columnas de metadatos para la colección de vectores según tus requisitos. Las incrustaciones cambiarán y podrás comprobar su desempeño en el playground.",
+              "url": "OneTeradata/es/emw1772561098428.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-key-columns",
+              "title": "Agregar columnas clave de datos",
+              "description": "Asegúrate de estar agregando los datos correctos para evitar un impacto no deseado al incrustar modelos y, en consecuencia, resultados. Puedes agregar datos sin procesar o incrustaciones existentes.",
+              "url": "OneTeradata/es/ifd1772561138849.md"
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-playground-help",
+          "title": "Playground de almacenamiento de vectores",
+          "description": "Usa el playground para probar la precisión de tu colección de vectores.",
+          "url": "OneTeradata/es/img1772561026669.md",
+          "children": [
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-using-playground",
+              "title": "Usar un playground",
+              "description": "El playground te permite probar tu colección de vectores y evaluar la precisión de los resultados.",
+              "url": "OneTeradata/es/qgl1772561095714.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
+              "title": "Administrar la configuración de búsqueda del playground",
+              "description": "Teradata admite estos algoritmos de búsqueda e indexación:",
+              "url": "OneTeradata/es/rec1772561136176.md"
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-users-help",
+          "title": "Administrar usuarios del almacén de vectores",
+          "description": "Puedes agregar nuevos usuarios o buscar los existentes desde esta página. Con filtros, puedes buscar usuarios según el nivel de acceso o nombre.",
+          "url": "OneTeradata/es/bgm1772561023975.md"
+        }
+      ]
+    },
+    {
+      "id": "modelops-overview",
+      "title": "ModelOps",
+      "description": "Despliega, supervisa y administra tus modelos de ML/IA.",
+      "icon": "product_modelops;covalent",
+      "url": "OneTeradata/es/ihh1772561045736.md"
+    },
+    {
+      "id": "integrations",
+      "title": "Integraciones",
+      "description": "Brindar soporte a tu flujo de trabajo con herramientas adicionales",
+      "icon": "apps",
+      "url": "OneTeradata/es/haf1772561107072.md"
+    },
+    {
+      "id": "mcp-server-explanation-overview-help",
+      "title": "MCP",
+      "url": "OneTeradata/es/ian1773256449953.md"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "items": [
+    {
+      "id": "ai-apps",
+      "title": "KI-Apps",
+      "description": "Starten Sie die Apps, die Sie täglich nutzen, oder entdecken Sie weitere Apps, die mit AI Studio verfügbar sind.",
+      "url": "",
+      "children": [
+        {
+          "id": "apps-cim",
+          "title": "Manager für Kundeninteraktion",
+          "description": "Gestalten Sie personalisierte Kundeninteraktionen mithilfe einer zentralen Kampagnen- und Analyseverwaltung.",
+          "icon": "cim-icon"
+        },
+        {
+          "id": "apps-mdm",
+          "title": "Masterdatenverwaltung",
+          "description": "Erstellen Sie zuverlässige und präzise Masterdaten, um unternehmensweite Analysen und Entscheidungen auf einer einheitlichen Grundlage zu ermöglichen.",
+          "icon": "mdm-icon"
+        },
+        {
+          "id": "apps-vcx",
+          "title": "Vantage-Kundenerlebnis",
+          "description": "Bieten Sie personalisierte Erlebnisse in Echtzeit, indem Sie Kundendaten und Erkenntnisse kanalübergreifend zusammenführen.",
+          "icon": "vcx-icon"
+        }
+      ]
+    },
+    {
+      "id": "ai-apps-learnmore",
+      "title": "Weitere Informationen",
+      "description": "Informieren Sie sich, welche Apps verfügbar sind, welche Aufgaben die einzelnen Apps erfüllen und wie sie in Ihren Arbeitsablauf passen.",
+      "url": "",
+      "children": [
+        {
+          "id": "learn-cim",
+          "title": "Manager für Kundeninteraktion",
+          "description": "Mit zentraler Steuerung und Analyse können Sie personalisierte Interaktionen planen, durchführen und auswerten.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://www.teradata.com/insights/brochures/customer-interaction-manager "
+        },
+        {
+          "id": "learn-mdm",
+          "title": "Masterdatenverwaltung",
+          "description": "Bauen Sie eine zuverlässige Masterdatenbasis auf, um die Konsistenz zwischen Systemen und Analysen zu verbessern.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://www.teradata.com/insights/brochures/master-data-management "
+        },
+        {
+          "id": "learn-vcx",
+          "title": "Vantage-Kundenerlebnis",
+          "description": "Erfahren Sie, wie VCX Kundendaten und Erkenntnisse zusammenführt, um personalisierte Erlebnisse in Echtzeit über alle Kanäle hinweg zu ermöglichen.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://www.teradata.com/insights/brochures/vantage-customer-experience"
+        }
+      ]
+    }
+  ]
+}
