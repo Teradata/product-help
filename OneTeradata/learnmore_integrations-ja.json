@@ -12,7 +12,7 @@
           "description": "大規模なデータ変換とVector Storeへの取り込みを自動化します。",
           "icon": "unstructured",
           "url": "",
-          "childrenUrl": "https://unstructured.io"
+          "childrenUrl": "/one-td/unstructured"
         },
         {
           "id": "apps-gitea",
