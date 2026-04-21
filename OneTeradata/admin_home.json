@@ -1,0 +1,48 @@
+{
+    "items": [
+        {
+            "id": "ai-apps",
+            "title": "Title here",
+            "description": "Description here.",
+            "url": "",
+            "children": [
+                {
+                    "id": "unique-id",
+                    "title": "Oversee sites and deployments",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "icon": "icon"
+                },
+                {
+                    "id": "unique-id",
+                    "title": "Govern data & workloads",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "icon": "icon"
+                },
+                {
+                    "id": "unique-id",
+                    "title": "Manage users & access",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "icon": "icon"
+                },
+                {
+                    "id": "unique-id",
+                    "title": "Enable AI & experimentation",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "icon": "icon"
+                },
+                {
+                    "id": "unique-id",
+                    "title": "Manage compute & capacity",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "icon": "icon"
+                },
+                {
+                    "id": "unique-id",
+                    "title": "Monitor usage & cost",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "icon": "icon"
+                }
+            ]
+        }
+    ]
+}
