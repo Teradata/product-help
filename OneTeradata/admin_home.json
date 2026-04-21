@@ -2,45 +2,45 @@
     "items": [
         {
             "id": "ai-apps",
-            "title": "Title here",
-            "description": "Description here.",
+            "title": "",
+            "description": "",
             "url": "",
             "children": [
                 {
-                    "id": "unique-id",
-                    "title": "Oversee sites and deployments",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
+                    "id": "sites-card",
+                    "title": "Manage sites",
+                    "description": "View and control sites to get jobs started and keep them efficient.",
+                    "icon": "server_outlined"
+                },
+                {
+                    "id": "govern-data-card",
+                    "title": "Put your data to work",
+                    "description": "Prepare, manage, and protect data for AI applications, analytics, and business insights.",
+                    "icon": "settings_backup_restore_outlined"
+                },
+                {
+                    "id": "manage-users-card",
+                    "title": "Set up your team",
+                    "description": "Control roles and permissions to keep data users’ work focused and  secure.",
+                    "icon": "connected_identity_outlined"
+                },
+                {
+                    "id": "enable-ai-card",
+                    "title": "Explore AI Studio",
+                    "description": "Set up and use the AI toolkit to build and use agents and more AI applications. ",
                     "icon": "icon"
                 },
                 {
-                    "id": "unique-id",
-                    "title": "Govern data & workloads",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
-                    "icon": "icon"
+                    "id": "manage-compute-card",
+                    "title": "Control computing resources",
+                    "description": "Set up and manage compute, node pools, and AI tokens to keep work on track and within budget.",
+                    "icon": "engine_outlined"
                 },
                 {
-                    "id": "unique-id",
-                    "title": "Manage users & access",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
-                    "icon": "icon"
-                },
-                {
-                    "id": "unique-id",
-                    "title": "Enable AI & experimentation",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
-                    "icon": "icon"
-                },
-                {
-                    "id": "unique-id",
-                    "title": "Manage compute & capacity",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
-                    "icon": "icon"
-                },
-                {
-                    "id": "unique-id",
-                    "title": "Monitor usage & cost",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rhoncus magna neque, vel viverra lectus tempus id.",
-                    "icon": "icon"
+                    "id": "monitor-usage-card",
+                    "title": "Track usage",
+                    "description": "See charts, tables, and more information to help you understand and improve compute use.",
+                    "icon": "monitoring_outlined"
                 }
             ]
         }
