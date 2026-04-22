@@ -12,7 +12,7 @@
           "description": "Automatiza la ingesta y transformación de datos a gran escala en el almacén de vectores.",
           "icon": "unstructured",
           "url": "",
-          "childrenUrl": "/one-td/unstructured"
+          "childrenUrl": "https://unstructured.io"
         },
         {
           "id": "apps-gitea",

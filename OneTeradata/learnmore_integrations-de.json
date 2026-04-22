@@ -12,7 +12,7 @@
           "description": "Automatisieren Sie die Transformation und Erfassung großer Datenmengen für den Vektorspeicher.",
           "icon": "unstructured",
           "url": "",
-          "childrenUrl": "/one-td/unstructured"
+          "childrenUrl": "https://unstructured.io"
         },
         {
           "id": "apps-gitea",

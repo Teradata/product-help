@@ -12,7 +12,7 @@
                     "description": "Automate large-scale data transformation and ingestion to Vector store.",
                     "icon": "unstructured",
                     "url": "",
-                    "childrenUrl": "/one-td/unstructured"
+                    "childrenUrl": "https://unstructured.io"
                 },                
 				{
                     "id": "apps-gitea",

@@ -12,7 +12,7 @@
           "description": "Automatisez la transformation et l'ingestion de données à grande échelle dans le magasin de vecteur.",
           "icon": "unstructured",
           "url": "",
-          "childrenUrl": "/ne-td/unstructured"
+          "childrenUrl": "https://unstructured.io"
         },
         {
           "id": "apps-gitea",
