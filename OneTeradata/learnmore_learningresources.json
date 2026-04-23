@@ -7,6 +7,23 @@
             "url": "",
             "children": [
                 {
+                    "id": "notebooks",
+                    "title": "Notebooks",
+                    "description": "",
+                    "icon": "book",
+                    "url": "",
+					"children": [
+						{
+							"id": "notebooks-tour",
+							"title": "Try out Teradata Notebooks",
+							"description": "Take a tour and learn your way around.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "pendo;pendo.showGuideById(ZTbYUKLpD7q2Mp4Bbea31LZDYnA)"
+						}
+					]
+				},
+                {
                     "id": "modelops",
                     "title": "ModelOps",
                     "description": "",
