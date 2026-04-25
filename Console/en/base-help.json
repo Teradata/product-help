@@ -30,6 +30,20 @@
              }
           , 
           { 
+             "id":"rdc1776860739113", 
+             "title":"Settings", 
+             "description":"Editor settings to customize objects display and more", 
+             "url":"Console/en/rdc1776860739113.md"
+             }
+          , 
+          { 
+             "id":"wes1776862928100", 
+             "title":"Filter and Sort Result Sets", 
+             "description":"Use filters and sort through result sets", 
+             "url":"Console/en/wes1776862928100.md"
+             }
+          , 
+          { 
              "id":"editorConnection", 
              "title":"Connect to a site", 
              "description":"Considerations for connecting to an account", 
@@ -110,13 +124,6 @@
        }
     , 
     { 
-       "id":"identityProviders", 
-       "title":"Identity Provider", 
-       "description":"Configure an identity provider for SSO authentication.", 
-       "url":"Console/en/qqk1772742151787.md"
-       }
-    , 
-    { 
        "id":"queryWriteData", 
        "title":"Query and Write Data", 
        "description":"Native Object Store integration with cloud object storage", 
@@ -132,7 +139,7 @@
     , 
     { 
        "id":"apiUserGuide", 
-       "title":"API User Guide", 
+       "title":"API user guide", 
        "description":"Review GraphQL API access and use patterns", 
        "url":"Console/en/bfl1772742179826.md"
        }
