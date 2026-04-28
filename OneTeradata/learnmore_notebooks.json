@@ -1,19 +1,25 @@
 {
     "items": [
-	        {
+         {
             "id": "launcher-notebooks",
             "title": "Learn More",
             "description": "",
-            "url": "",
             "children": [
                 {
-                    "id": "launcher-notebooks",
-                    "title": "Learn about Teradata notebooks",
-                    "description": "Create and share documents containing live code, equations, visualizations, and narrative text",
-                    "icon": "play_lesson",
-                    "childrenUrl": "notebooks-explanation-overview-help"
+                    "id": "Kx7mR4nQ2wP9vL3j",
+                    "title": "Get started with Notebooks",
+                    "description": "Learn how to connect to Teradata Vantage from Notebooks using the SQL and Python kernels.",
+                    "icon": "terminal",
+                    "childrenUrl": "notebook;/GettingStarted/get_started_with_notebook.ipynb"
+                },
+                {
+                    "id": "Kx7mR4nQ2wP9vL3k",
+                    "title": "Build your first AI agent",
+                    "description": "Learn how to create and deploy your first AI agent using Teradata Vantage.",
+                    "icon": "robot",
+                    "childrenUrl": "notebook;/GettingStarted/build_your_first_ai_agent.ipynb"
                 }
             ]
         }
     ]
-}
+} 
