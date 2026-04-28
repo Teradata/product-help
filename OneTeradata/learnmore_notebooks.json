@@ -9,21 +9,21 @@
                     "id": "Kx7mR4nQ2wP9vL3j",
                     "title": "Get started with Teradata Notebooks",
                     "description": "Learn how to connect to Teradata Vantage from Teradata Notebooks using the SQL and Python Kernels.",
-                    "icon": "terminal_outlined",
+                    "icon": "terminal",
                     "childrenUrl": "notebooks;GettingStarted/get_started_with_notebooks.ipynb"
                 },
                 {
                     "id": "Kx7mR4nQ2wP9vL3k",
                     "title": "Build your first AI agent",
                     "description": "Learn how to create your first AI agent to interact with Teradata using natural language and LangChain.",
-                    "icon": "smart_toy_outlined",
+                    "icon": "smart_toy",
                     "childrenUrl": "notebooks;GettingStarted/build_your_first_ai_agent.ipynb"
                 },
                 {
                     "id": "Kx7mR4nQ2wP9vL3l",
                     "title": "Explore demo use cases",
                     "description": "Discover over 150+ ready-to-use AI and ML use cases across multiple industries and analytical functions.",
-                    "icon": "analytics_outlined",
+                    "icon": "analytics",
                     "childrenUrl": "notebooks;Demo/getting_started_index.ipynb"
                 }
             ]
