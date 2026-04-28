@@ -8,14 +8,14 @@
                 {
                     "id": "Kx7mR4nQ2wP9vL3j",
                     "title": "Get started with Notebooks",
-                    "description": "Learn how to connect to Teradata Vantage from Notebooks using the SQL and Python kernels.",
+                    "description": "Learn how to connect to Teradata Vantage from Notebooks using the SQL and Python Kernels.",
                     "icon": "terminal",
                     "childrenUrl": "notebook;/GettingStarted/get_started_with_notebook.ipynb"
                 },
                 {
                     "id": "Kx7mR4nQ2wP9vL3k",
                     "title": "Build your first AI agent",
-                    "description": "Learn how to create and deploy your first AI agent using Teradata Vantage.",
+                    "description": "Learn how to create your first AI agent using Teradata Vantage.",
                     "icon": "robot",
                     "childrenUrl": "notebook;/GettingStarted/build_your_first_ai_agent.ipynb"
                 }
