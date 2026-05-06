@@ -15,8 +15,8 @@
 					"children": [
 						{
 							"id": "notebooks-tour",
-							"title": "Try out Teradata Notebooks",
-							"description": "Take a tour and learn your way around.",
+							"title": "Tour Teradata notebooks",
+							"description": "Get a guided walk-through of how to use notebooks, from selecting resources to running code cells.",
 							"icon": "",
 							"url": "",
 							"childrenUrl": "pendo;pendo.showGuideById(ZTbYUKLpD7q2Mp4Bbea31LZDYnA)"
@@ -131,7 +131,7 @@
 						{
 							"id": "mcp-try",
 							"title": "Try out the MCP server",
-							"description": "Learn how to use of Teradata enterprise MCP (Model Context Protocol) server using REST APIs.",
+							"description": "Learn how to connect to Teradata Enterprise MCP (Model Context Protocol).",
 							"icon": "",
 							"url": "",
 							"childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"

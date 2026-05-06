@@ -16,8 +16,8 @@
                 },
                 {
                     "id": "Kx7mR4nQ2wP9vL3j",
-                    "title": "Get started with notebooks",
-                    "description": "Learn how to connect to your data from Teradata notebooks using SQL and Python Kernels.",
+                    "title": "Get started with Teradata Notebooks",
+                    "description": "Learn how to connect to your data from Teradata Notebooks using SQL and Python Kernels.",
                     "icon": "terminal",
                     "childrenUrl": "notebooks;GettingStarted/get_started_with_notebooks.ipynb"
                 },
