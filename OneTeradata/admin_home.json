@@ -28,7 +28,7 @@
                     "id": "enable-ai-card",
                     "title": "Explore AI Studio",
                     "description": "Set up and use the AI toolkit to build and use agents and more AI applications. ",
-                    "icon": "icon"
+                    "icon": "model_training_outlined"
                 },
                 {
                     "id": "manage-compute-card",
