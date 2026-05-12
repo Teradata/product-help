@@ -3,7 +3,7 @@
        "id":"one-teradata-explanation-welcome-homepage-help", 
        "title":"Welcome to AI Studio!", 
        "description":"Start your AI Studio journey!", 
-       "url":"OneTeradata/en/one-teradata-explanation-welcome-homepage-help.md", 
+       "url":"OneTeradata/en/dvp1772561082809.md", 
        "children":[
           { 
              "id":"one-teradata-landing-page-learn-more-resources-help", 
@@ -27,7 +27,7 @@
        "id":"one-teradata-explanation-ask-ai-help", 
        "title":"AI Assistant", 
        "description":"Your AI assistant for easier, smarter data management.", 
-       "url":"OneTeradata/en/one-teradata-explanation-ask-ai-help.md", 
+       "url":"OneTeradata/en/mxn1772561125368.md", 
        "children":[
           { 
              "id":"before-using-terry", 
