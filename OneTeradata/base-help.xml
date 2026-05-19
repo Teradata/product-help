@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <items>
+      <id>one-teradata-explanation-welcome-homepage-help</id>
+      <title>Welcome to AI Studio!</title>
+      <description>Start your AI Studio journey!</description>
+      <url>OneTeradata/en/dvp1772561082809.md</url>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>one-teradata-landing-page-learn-more-resources-help</id>
+         <title>Learning Resources</title>
+         <description>Find information on common tasks, access to help and documentation, prompt suggestions for Tera, and quick access cards to the AI Studio tools.</description>
+         <url>OneTeradata/en/vnq1772561072064.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>one-teradata-reference-account-settings-help</id>
+         <title>Account settings</title>
+         <description>Set your personal preferences.</description>
+         <url>OneTeradata/en/evo1772561048412.md</url>
+      </children>
+   </items>
+   <items>
+      <id>one-teradata-explanation-ask-ai-help</id>
+      <title>Tera</title>
+      <description>AI assistant for easier, smarter data management.</description>
+      <url>OneTeradata/en/mxn1772561125368.md</url>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>before-using-terry</id>
+         <title>Before to Use Tera</title>
+         <description>Content not available for private preview.</description>
+         <url>OneTeradata/en/abs1772561144227.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>get-started-with-terry</id>
+         <title>Get started with Tera</title>
+         <description>Content not available for private preview.</description>
+         <url>OneTeradata/en/qxm1772561115166.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>structure-your-conversation</id>
+         <title>Structure your Conversation with Tera</title>
+         <description>Content not available for private preview.</description>
+         <url>OneTeradata/en/gxa1772561021277.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>conversation-flow-structure</id>
+         <title>Start a Conversation with Tera</title>
+         <description>Content not available for private preview.</description>
+         <url>OneTeradata/en/wmh1772561109792.md</url>
+      </children>
+   </items>
+   <items>
+      <id>notebooks-explanation-overview-help</id>
+      <title>Notebooks</title>
+      <description>Explore data, build AI/ML models, and share work.</description>
+      <icon>book</icon>
+      <url>OneTeradata/en/rtz1772561128025.md</url>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>crn1778131516774</id>
+         <title>Resource Settings</title>
+         <description>Node pools</description>
+         <url>OneTeradata/en/crn1778131516774.md</url>
+         <children json:force-array="true">
+            <id>xhv1778132422077</id>
+            <title>Select Node Pool</title>
+            <url>OneTeradata/en/xhv1778132422077.md</url>
+            <children json:force-array="true">
+               <id>vzi1778132810791</id>
+               <title>Configure Resources for Regular Nodes</title>
+               <url>OneTeradata/en/vzi1778132810791.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>axj1778133448257</id>
+               <title>Configure Resources for GPU Nodes</title>
+               <url>OneTeradata/en/axj1778133448257.md</url>
+            </children>
+         </children>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>tkz1778187299597</id>
+         <title>File Explorer</title>
+         <url>OneTeradata/en/tkz1778187299597.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>xce1778192262401</id>
+         <title>Cell Types</title>
+         <url>OneTeradata/en/xce1778192262401.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>ium1778193540612</id>
+         <title>Kernel</title>
+         <url>OneTeradata/en/ium1778193540612.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>gdp1778193924969</id>
+         <title>How to Get Classic Experience</title>
+         <url>OneTeradata/en/gdp1778193924969.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>hfh1778195239933</id>
+         <title>Teradata Native Notebooks vs Jupyter Notebooks</title>
+         <url>OneTeradata/en/hfh1778195239933.md</url>
+      </children>
+   </items>
+   <items>
+      <id>vector-store-explanation-overview-help-</id>
+      <title>Vector Store</title>
+      <description>Teradata Enterprise Vector collection is a specialized database designed to store and manage high-dimensional vectors, that is, numerical representations of data like text and images. Rather than rely on exact keyword matches, vector collections use a semantic search by storing data as vectors. The key use cases include:</description>
+      <url>OneTeradata/en/ycv1772561149578.md</url>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>ewt1777443721947</id>
+         <title>Create a Vector Collection</title>
+         <url>OneTeradata/en/ewt1777443721947.md</url>
+         <children json:force-array="true">
+            <id>vector-store-explanation-create-collection-definition-help</id>
+            <title>Vector Collection Target</title>
+            <description>Create Vector store &gt; Definition - Navigation</description>
+            <url>OneTeradata/en/idy1772561130707.md</url>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-create-collection-chunking-help</id>
+            <title>Vector store chunking</title>
+            <description>Chunking is the process of breaking down large documents or data into smaller, manageable, and semantically meaningful pieces called Chunks</description>
+            <url>OneTeradata/en/zyt1772561029668.md</url>
+            <children json:force-array="true">
+               <id>vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking</id>
+               <title>Select a chunking method</title>
+               <description>You can choose either Basic or Unstructured for your vector collection.</description>
+               <url>OneTeradata/en/ubq1772561037679.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-reference-create-collection-embedding-help</id>
+            <title>Embed a model</title>
+            <description>An embedding model converts text, images, or audio into numerical vectors that represent meaning. These vectors are stored in a vector database, allowing AI to find semantically similar items using mathematical comparisons.</description>
+            <url>OneTeradata/en/ezv1772561103807.md</url>
+            <children json:force-array="true">
+               <id>vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding</id>
+               <title>Select an embedding model</title>
+               <description>To choose an embedding model for your vector collection, first define your domain, language, task, and then shortlist models using benchmarks.</description>
+               <url>OneTeradata/en/xkt1772561063979.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-reference-create-collection-language-model-help</id>
+            <title>Add a language model</title>
+            <description>The language models (also known as chat models) are used to create a natural language response during retrieval. When you ask a natural language question to the data, the Language Model uses the top k results returned by the efficient search algorithm and gives an accurate natural language response.</description>
+            <url>OneTeradata/en/kii1772561066663.md</url>
+            <children json:force-array="true">
+               <id>vector-store-procedure-create-collection-language-model-learn-more-selecting-language</id>
+               <title>Select a language model</title>
+               <description>While creating a vector collection, you can select a language from available AWS models or defer it to later.</description>
+               <url>OneTeradata/en/jbn1772561146914.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-create-collection-indexing-search-settings-help</id>
+            <title>Index and search settings</title>
+            <description>You can select the Search algorithms and also set search settings from this page.</description>
+            <url>OneTeradata/en/ekz1772561133494.md</url>
+            <children json:force-array="true">
+               <id>vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm</id>
+               <title>Select an algorithm</title>
+               <description>Teradata Vector collections supports a variety of algorithms for indexing and searching within vector stores:</description>
+               <url>OneTeradata/en/lvc1772561101121.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-create-collection-data-sources-help</id>
+            <title>Vector store data sources</title>
+            <description>You can select various types of raw data as data sources and convert into vector embeddings using a large language model (embedding) model.</description>
+            <url>OneTeradata/en/hub1772561080089.md</url>
+            <children json:force-array="true">
+               <id>vector-store-procedure-create-collection-data-sources-learn-more-selecting-data</id>
+               <title>Select a data type</title>
+               <description>You can create vector collections from different types of data:</description>
+               <url>OneTeradata/en/aij1772561093027.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-explanation-create-collection-data-sources-error-help</id>
+               <title>Data source error</title>
+               <description>Ensure your upload file size is not more than 100 MB to avoid upload errors. In case of an error, select the unessential files and select X to drop it from data sources. If it's a single file, reduce the file size and retry.</description>
+               <url>OneTeradata/en/eiv1772561074714.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-manage-collection-overview-help</id>
+            <title>Manage vector store</title>
+            <description>View the various parameters that you have used while creating the selected vector collection.</description>
+            <url>OneTeradata/en/hrd1772561055965.md</url>
+            <children json:force-array="true">
+               <id>vector-store-explanation-manage-collection-active-help</id>
+               <title>Active vector collections</title>
+               <description>As a data analyst or administrator, you can manage the vector collections that you have created or have access to.</description>
+               <url>OneTeradata/en/eyj1772561035027.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-edit-index-help</id>
+               <title>Edit vector indexing</title>
+               <description>By default, you see the indexing and search options that you have set while creating the vector collection.</description>
+               <url>OneTeradata/en/pxl1772561040369.md</url>
+               <children json:force-array="true">
+                  <id>vector-store-procedure-manage-collection-indexing-settings-learn-more</id>
+                  <title>Edit search algorithms</title>
+                  <description>Teradata supports these indexing and search algorithms:</description>
+                  <url>OneTeradata/en/wlq1772561043034.md</url>
+               </children>
+               <children json:force-array="true">
+                  <id>vector-store-procedure-manage-collection-search-settings-learn-more</id>
+                  <title>Edit search settings</title>
+                  <description>After indexing, you query the vector store to retrieve relevant data. The system compares your query to stored vectors and returns top k matches. The results depend on the vector store type:</description>
+                  <url>OneTeradata/en/hpr1772561032356.md</url>
+               </children>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-explanation-manage-collection-chunking-overview-help</id>
+               <title>Manage chunking</title>
+               <description>Modify the chunking method used between Basic and SherpaLLM.</description>
+               <url>OneTeradata/en/vpo1772561058663.md</url>
+               <children json:force-array="true">
+                  <id>vector-store-procedure-manage-collection-edit-chunking-help</id>
+                  <title>Edit chunking</title>
+                  <description>Modify the chunking method you chose while creating the vector collection. Once done, save the changes to update the vector collection.</description>
+                  <url>OneTeradata/en/tlx1772561090346.md</url>
+               </children>
+               <children json:force-array="true">
+                  <id>vector-store-explanation-manage-collection-chunking-edit-definition-help</id>
+                  <title>Edit definition</title>
+                  <description>Modify the name and description for the vector collection. Ensure, the name is unique.</description>
+                  <url>OneTeradata/en/wjg1772561112493.md</url>
+               </children>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-procedure-manage-collection-change-embedding-help</id>
+            <title>Change vector embeddings</title>
+            <description>Select the required embedding model that you want to use. The available models are:</description>
+            <url>OneTeradata/en/cia1772561077401.md</url>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-manage-collection-data-sources-help</id>
+            <title>Manage vector data sources</title>
+            <description>You can add a new data source or remove an existing data source and save the vector collection.</description>
+            <url>OneTeradata/en/xuf1772561069376.md</url>
+            <children json:force-array="true">
+               <id>vector-store-explanation-manage-collection-add-data-help</id>
+               <title>Add collection data</title>
+               <description>Select the PDF files to convert into vectors. You can drag and drop the PDF files.</description>
+               <url>OneTeradata/en/ble1772561061324.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables</id>
+               <title>Add data tables</title>
+               <description>Select the PDF files to convert into vectors.</description>
+               <url>OneTeradata/en/rgl1772561117839.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-add-data-learn-more-add-data-column</id>
+               <title>Add data columns</title>
+               <description>Only available if you have changed data or the embedding model. In the confirmation, select the appropriate choice.</description>
+               <url>OneTeradata/en/qbs1772561141510.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns</id>
+               <title>Add metadata columns</title>
+               <description>Add metadata columns for the vector collection based on your requirements. The embeddings will change and you can check the performance in the Playground.</description>
+               <url>OneTeradata/en/emw1772561098428.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-add-data-learn-more-key-columns</id>
+               <title>Add data key columns</title>
+               <description>Ensure you are adding correct data to avoid unwanted impact to the embedding models and thus results. You can add raw data or existing embeddings.</description>
+               <url>OneTeradata/en/ifd1772561138849.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-manage-collection-playground-help</id>
+            <title>Vector store playground</title>
+            <description>Use the playground to test the accuracy of your vector collection.</description>
+            <url>OneTeradata/en/img1772561026669.md</url>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-playground-learn-more-using-playground</id>
+               <title>Use a playground</title>
+               <description>The playground allows you test your vector collection and assess the accuracy of the results,</description>
+               <url>OneTeradata/en/qgl1772561095714.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>vector-store-procedure-manage-collection-playground-learn-more-search-settings</id>
+               <title>Manage playground search settings</title>
+               <description>Teradata supports these indexing and search algorithms:</description>
+               <url>OneTeradata/en/rec1772561136176.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>vector-store-explanation-manage-collection-users-help</id>
+            <title>Manage vector store users</title>
+            <description>You can add new users or search the existing users, from this page. Using filters, you can search users based on name and access levels.</description>
+            <url>OneTeradata/en/bgm1772561023975.md</url>
+         </children>
+      </children>
+   </items>
+   <items>
+      <id>icl1777458080858</id>
+      <title>AgentOps</title>
+      <url>OneTeradata/en/icl1777458080858.md</url>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>qjm1776663474608</id>
+         <title>AgentOps Operations</title>
+         <url>OneTeradata/en/qjm1776663474608.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>jgg1776663763228</id>
+         <title>Dashboard in AgentOps</title>
+         <url>OneTeradata/en/jgg1776663763228.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>sco1776664350046</id>
+         <title>Registry of AgentOps</title>
+         <url>OneTeradata/en/sco1776664350046.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>crw1776664567949</id>
+         <title>Importing an Agent using Git</title>
+         <url>OneTeradata/en/crw1776664567949.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>pyr1776665595427</id>
+         <title>Importing Local Files for an Agent</title>
+         <url>OneTeradata/en/pyr1776665595427.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>bhv1776665996931</id>
+         <title>Versions of Agents</title>
+         <url>OneTeradata/en/bhv1776665996931.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>bnw1776666226748</id>
+         <title>Lifecycle of AgentOps</title>
+         <url>OneTeradata/en/bnw1776666226748.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>xfl1776666758600</id>
+         <title>Agent Deployment using Import Agent</title>
+         <url>OneTeradata/en/xfl1776666758600.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>mey1776667720139</id>
+         <title>Using the Deployment Tab</title>
+         <url>OneTeradata/en/mey1776667720139.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>exf1776668005387</id>
+         <title>Using Various Tabs in Agent Deployment</title>
+         <url>OneTeradata/en/exf1776668005387.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>wdf1776668901429</id>
+         <title>Deploying an Agent</title>
+         <url>OneTeradata/en/wdf1776668901429.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>ued1776670194828</id>
+         <title>Playground in AgentOps</title>
+         <url>OneTeradata/en/ued1776670194828.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>ixh1776670679638</id>
+         <title>Observability in AgentOps</title>
+         <url>OneTeradata/en/ixh1776670679638.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>wdb1776671690197</id>
+         <title>Observability Traces</title>
+         <url>OneTeradata/en/wdb1776671690197.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>txj1776671861132</id>
+         <title>Spans in Observability</title>
+         <url>OneTeradata/en/txj1776671861132.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>mwe1776672060318</id>
+         <title>View Observability Metrics</title>
+         <url>OneTeradata/en/mwe1776672060318.md</url>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>ltw1776672263683</id>
+         <title>Observability is Disabled</title>
+         <url>OneTeradata/en/ltw1776672263683.md</url>
+      </children>
+   </items>
+   <items>
+      <id>modelops-overview</id>
+      <title>ModelOps</title>
+      <description>Deploy, monitor, and manage your AI/ML models.</description>
+      <icon>product_modelops;covalent</icon>
+      <url>OneTeradata/en/ihh1772561045736.md</url>
+   </items>
+   <items>
+      <id>modelops-explanation-ai-model-hub-overview-help</id>
+      <title>AI Model Hub</title>
+      <description>Access, manage, and monitor foundation models for your organization.</description>
+      <url>OneTeradata/en/ugc1778495114925.md</url>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>modelops-explanation-explore-models-help</id>
+         <title>Explore Models</title>
+         <description>View, search, and manage AI models registered in AI Model Hub.</description>
+         <url>OneTeradata/en/eoz1778496909062.md</url>
+         <children json:force-array="true">
+            <id>modelops-explanation-model-details-help</id>
+            <title>View Model Details</title>
+            <description>View model details.</description>
+            <url>OneTeradata/en/gzd1778500761517.md</url>
+         </children>
+         <children json:force-array="true">
+            <id>modelops-explanation-model-usage-help</id>
+            <title>View Model Usage</title>
+            <description>Access API endpoint to connect to a model.</description>
+            <url>OneTeradata/en/kvm1778501432600.md</url>
+         </children>
+         <children json:force-array="true">
+            <id>modelops-procedure-add-model-help</id>
+            <title>Add a Model</title>
+            <description>Add a new AI model.</description>
+            <url>OneTeradata/en/fdy1778502087907.md</url>
+            <children json:force-array="true">
+               <id>modelops-procedure-add-model-aws-help</id>
+               <title>Add an Amazon Bedrock Model</title>
+               <description>Register a new Amazon Bedrock model.</description>
+               <url>OneTeradata/en/uft1778520449688.md</url>
+            </children>
+         </children>
+         <children json:force-array="true">
+            <id>modelops-explanation-explore-virtual-keys-help</id>
+            <title>Virtual Keys</title>
+            <description>Manage secure, governed access to AI models without exposing provider credentials.</description>
+            <url>OneTeradata/en/ney1778521452913.md</url>
+            <children json:force-array="true">
+               <id>modelops-procedure-create-virtual-key-help</id>
+               <title>Create a Virtual Key</title>
+               <description>Create a virtual key to give a user or application secure access to AI models.</description>
+               <url>OneTeradata/en/vez1778522194050.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>modelops-explanation-virtual-key-details-help</id>
+               <title>View Virtual Key Details</title>
+               <description>View the virtual key details.</description>
+               <url>OneTeradata/en/umu1778524506279.md</url>
+            </children>
+            <children json:force-array="true">
+               <id>modelops-explanation-virtual-key-json-help</id>
+               <title>View Virtual Key JSON</title>
+               <description>Shows the full virtual key configuration as read-only JSON.</description>
+               <url>OneTeradata/en/nlk1778524743588.md</url>
+            </children>
+         </children>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>modelops-procedure-configure-playground-help</id>
+         <title>Configure Playground</title>
+         <description>Configure Playground, test prompts, and compare model behavior.</description>
+         <url>OneTeradata/en/saq1778516078241.md</url>
+         <children json:force-array="true">
+            <id>modelops-procedure-adjust-chat-parameters-help</id>
+            <title>Adjust Chat Parameters</title>
+            <description>Tune how a model responds based on your use case.</description>
+            <url>OneTeradata/en/wdn1778518249826.md</url>
+         </children>
+      </children>
+      <children xmlns:json="http://json.org/" json:force-array="true">
+         <id>modelops-explanation-observability-help</id>
+         <title>Observability</title>
+         <description>Monitor AI model usage and performance across your organization.</description>
+         <url>OneTeradata/en/kdm1778519288505.md</url>
+      </children>
+   </items>
+   <items>
+      <id>integrations</id>
+      <title>Integrations</title>
+      <description>Support your workflow with additional tools</description>
+      <icon>apps</icon>
+      <url>OneTeradata/en/haf1772561107072.md</url>
+   </items>
+   <items>
+      <id>mcp-server-explanation-overview-help</id>
+      <title>Enterprise MCP Server</title>
+      <description>Access information available on Enterprise MCP home page.</description>
+      <url>OneTeradata/en/ian1773256449953.md</url>
+   </items>
+</root>
