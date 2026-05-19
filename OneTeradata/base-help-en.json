@@ -1,0 +1,644 @@
+{  "items":[
+    { 
+       "id":"one-teradata-explanation-welcome-homepage-help", 
+       "title":"Welcome to AI Studio!", 
+       "description":"Start your AI Studio journey!", 
+       "url":"OneTeradata/en/dvp1772561082809.md", 
+       "children":[
+          { 
+             "id":"one-teradata-landing-page-learn-more-resources-help", 
+             "title":"Learning Resources", 
+             "description":"Find information on common tasks, access to help and documentation, prompt suggestions for Tera, and quick access cards to the AI Studio tools.", 
+             "url":"OneTeradata/en/vnq1772561072064.md"
+             }
+          , 
+          { 
+             "id":"one-teradata-reference-account-settings-help", 
+             "title":"Account settings", 
+             "description":"Set your personal preferences.", 
+             "url":"OneTeradata/en/evo1772561048412.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"one-teradata-explanation-ask-ai-help", 
+       "title":"Tera", 
+       "description":"AI assistant for easier, smarter data management.", 
+       "url":"OneTeradata/en/mxn1772561125368.md", 
+       "children":[
+          { 
+             "id":"before-using-terry", 
+             "title":"Before to Use Tera", 
+             "description":"Content not available for private preview.", 
+             "url":"OneTeradata/en/abs1772561144227.md"
+             }
+          , 
+          { 
+             "id":"get-started-with-terry", 
+             "title":"Get started with Tera", 
+             "description":"Content not available for private preview.", 
+             "url":"OneTeradata/en/qxm1772561115166.md"
+             }
+          , 
+          { 
+             "id":"structure-your-conversation", 
+             "title":"Structure your Conversation with Tera", 
+             "description":"Content not available for private preview.", 
+             "url":"OneTeradata/en/gxa1772561021277.md"
+             }
+          , 
+          { 
+             "id":"conversation-flow-structure", 
+             "title":"Start a Conversation with Tera", 
+             "description":"Content not available for private preview.", 
+             "url":"OneTeradata/en/wmh1772561109792.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"notebooks-explanation-overview-help", 
+       "title":"Notebooks", 
+       "description":"Explore data, build AI/ML models, and share work.", 
+       "icon":"book", 
+       "url":"OneTeradata/en/rtz1772561128025.md", 
+       "children":[
+          { 
+             "id":"crn1778131516774", 
+             "title":"Resource Settings", 
+             "description":"Node pools", 
+             "url":"OneTeradata/en/crn1778131516774.md", 
+             "children":[
+                { 
+                   "id":"xhv1778132422077", 
+                   "title":"Select Node Pool", 
+                   "url":"OneTeradata/en/xhv1778132422077.md", 
+                   "children":[
+                      { 
+                         "id":"vzi1778132810791", 
+                         "title":"Configure Resources for Regular Nodes", 
+                         "url":"OneTeradata/en/vzi1778132810791.md"
+                         }
+                      , 
+                      { 
+                         "id":"axj1778133448257", 
+                         "title":"Configure Resources for GPU Nodes", 
+                         "url":"OneTeradata/en/axj1778133448257.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"tkz1778187299597", 
+             "title":"File Explorer", 
+             "url":"OneTeradata/en/tkz1778187299597.md"
+             }
+          , 
+          { 
+             "id":"xce1778192262401", 
+             "title":"Cell Types", 
+             "url":"OneTeradata/en/xce1778192262401.md"
+             }
+          , 
+          { 
+             "id":"ium1778193540612", 
+             "title":"Kernel", 
+             "url":"OneTeradata/en/ium1778193540612.md"
+             }
+          , 
+          { 
+             "id":"gdp1778193924969", 
+             "title":"How to Get Classic Experience", 
+             "url":"OneTeradata/en/gdp1778193924969.md"
+             }
+          , 
+          { 
+             "id":"hfh1778195239933", 
+             "title":"Teradata Native Notebooks vs Jupyter Notebooks", 
+             "url":"OneTeradata/en/hfh1778195239933.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"vector-store-explanation-overview-help-", 
+       "title":"Vector Store", 
+       "description":"Teradata Enterprise Vector collection is a specialized database designed to store and manage high-dimensional vectors, that is, numerical representations of data like text and images. Rather than rely on exact keyword matches, vector collections use a semantic search by storing data as vectors. The key use cases include:", 
+       "url":"OneTeradata/en/ycv1772561149578.md", 
+       "children":[
+          { 
+             "id":"ewt1777443721947", 
+             "title":"Create a Vector Collection", 
+             "url":"OneTeradata/en/ewt1777443721947.md", 
+             "children":[
+                { 
+                   "id":"vector-store-explanation-create-collection-definition-help", 
+                   "title":"Vector Collection Target", 
+                   "description":"Create Vector store > Definition - Navigation", 
+                   "url":"OneTeradata/en/idy1772561130707.md"
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-create-collection-chunking-help", 
+                   "title":"Vector store chunking", 
+                   "description":"Chunking is the process of breaking down large documents or data into smaller, manageable, and semantically meaningful pieces called Chunks", 
+                   "url":"OneTeradata/en/zyt1772561029668.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking", 
+                         "title":"Select a chunking method", 
+                         "description":"You can choose either Basic or Unstructured for your vector collection.", 
+                         "url":"OneTeradata/en/ubq1772561037679.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-reference-create-collection-embedding-help", 
+                   "title":"Embed a model", 
+                   "description":"An embedding model converts text, images, or audio into numerical vectors that represent meaning. These vectors are stored in a vector database, allowing AI to find semantically similar items using mathematical comparisons.", 
+                   "url":"OneTeradata/en/ezv1772561103807.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-procedure-create-collection-embedding-learn-more-selecting-embedding", 
+                         "title":"Select an embedding model", 
+                         "description":"To choose an embedding model for your vector collection, first define your domain, language, task, and then shortlist models using benchmarks.", 
+                         "url":"OneTeradata/en/xkt1772561063979.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-reference-create-collection-language-model-help", 
+                   "title":"Add a language model", 
+                   "description":"The language models (also known as chat models) are used to create a natural language response during retrieval. When you ask a natural language question to the data, the Language Model uses the top k results returned by the efficient search algorithm and gives an accurate natural language response.", 
+                   "url":"OneTeradata/en/kii1772561066663.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-procedure-create-collection-language-model-learn-more-selecting-language", 
+                         "title":"Select a language model", 
+                         "description":"While creating a vector collection, you can select a language from available AWS models or defer it to later.", 
+                         "url":"OneTeradata/en/jbn1772561146914.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-create-collection-indexing-search-settings-help", 
+                   "title":"Index and search settings", 
+                   "description":"You can select the Search algorithms and also set search settings from this page.", 
+                   "url":"OneTeradata/en/ekz1772561133494.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm", 
+                         "title":"Select an algorithm", 
+                         "description":"Teradata Vector collections supports a variety of algorithms for indexing and searching within vector stores:", 
+                         "url":"OneTeradata/en/lvc1772561101121.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-create-collection-data-sources-help", 
+                   "title":"Vector store data sources", 
+                   "description":"You can select various types of raw data as data sources and convert into vector embeddings using a large language model (embedding) model.", 
+                   "url":"OneTeradata/en/hub1772561080089.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-procedure-create-collection-data-sources-learn-more-selecting-data", 
+                         "title":"Select a data type", 
+                         "description":"You can create vector collections from different types of data:", 
+                         "url":"OneTeradata/en/aij1772561093027.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-explanation-create-collection-data-sources-error-help", 
+                         "title":"Data source error", 
+                         "description":"Ensure your upload file size is not more than 100 MB to avoid upload errors. In case of an error, select the unessential files and select X to drop it from data sources. If it's a single file, reduce the file size and retry.", 
+                         "url":"OneTeradata/en/eiv1772561074714.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-manage-collection-overview-help", 
+                   "title":"Manage vector store", 
+                   "description":"View the various parameters that you have used while creating the selected vector collection.", 
+                   "url":"OneTeradata/en/hrd1772561055965.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-explanation-manage-collection-active-help", 
+                         "title":"Active vector collections", 
+                         "description":"As a data analyst or administrator, you can manage the vector collections that you have created or have access to.", 
+                         "url":"OneTeradata/en/eyj1772561035027.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-procedure-manage-collection-edit-index-help", 
+                         "title":"Edit vector indexing", 
+                         "description":"By default, you see the indexing and search options that you have set while creating the vector collection.", 
+                         "url":"OneTeradata/en/pxl1772561040369.md", 
+                         "children":[
+                            { 
+                               "id":"vector-store-procedure-manage-collection-indexing-settings-learn-more", 
+                               "title":"Edit search algorithms", 
+                               "description":"Teradata supports these indexing and search algorithms:", 
+                               "url":"OneTeradata/en/wlq1772561043034.md"
+                               }
+                            , 
+                            { 
+                               "id":"vector-store-procedure-manage-collection-search-settings-learn-more", 
+                               "title":"Edit search settings", 
+                               "description":"After indexing, you query the vector store to retrieve relevant data. The system compares your query to stored vectors and returns top k matches. The results depend on the vector store type:", 
+                               "url":"OneTeradata/en/hpr1772561032356.md"
+                               }
+
+                            ]
+
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-explanation-manage-collection-chunking-overview-help", 
+                         "title":"Manage chunking", 
+                         "description":"Modify the chunking method used between Basic and SherpaLLM.", 
+                         "url":"OneTeradata/en/vpo1772561058663.md", 
+                         "children":[
+                            { 
+                               "id":"vector-store-procedure-manage-collection-edit-chunking-help", 
+                               "title":"Edit chunking", 
+                               "description":"Modify the chunking method you chose while creating the vector collection. Once done, save the changes to update the vector collection.", 
+                               "url":"OneTeradata/en/tlx1772561090346.md"
+                               }
+                            , 
+                            { 
+                               "id":"vector-store-explanation-manage-collection-chunking-edit-definition-help", 
+                               "title":"Edit definition", 
+                               "description":"Modify the name and description for the vector collection. Ensure, the name is unique.", 
+                               "url":"OneTeradata/en/wjg1772561112493.md"
+                               }
+
+                            ]
+
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-procedure-manage-collection-change-embedding-help", 
+                   "title":"Change vector embeddings", 
+                   "description":"Select the required embedding model that you want to use. The available models are:", 
+                   "url":"OneTeradata/en/cia1772561077401.md"
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-manage-collection-data-sources-help", 
+                   "title":"Manage vector data sources", 
+                   "description":"You can add a new data source or remove an existing data source and save the vector collection.", 
+                   "url":"OneTeradata/en/xuf1772561069376.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-explanation-manage-collection-add-data-help", 
+                         "title":"Add collection data", 
+                         "description":"Select the PDF files to convert into vectors. You can drag and drop the PDF files.", 
+                         "url":"OneTeradata/en/ble1772561061324.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables", 
+                         "title":"Add data tables", 
+                         "description":"Select the PDF files to convert into vectors.", 
+                         "url":"OneTeradata/en/rgl1772561117839.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-procedure-manage-collection-add-data-learn-more-add-data-column", 
+                         "title":"Add data columns", 
+                         "description":"Only available if you have changed data or the embedding model. In the confirmation, select the appropriate choice.", 
+                         "url":"OneTeradata/en/qbs1772561141510.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns", 
+                         "title":"Add metadata columns", 
+                         "description":"Add metadata columns for the vector collection based on your requirements. The embeddings will change and you can check the performance in the Playground.", 
+                         "url":"OneTeradata/en/emw1772561098428.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-procedure-manage-collection-add-data-learn-more-key-columns", 
+                         "title":"Add data key columns", 
+                         "description":"Ensure you are adding correct data to avoid unwanted impact to the embedding models and thus results. You can add raw data or existing embeddings.", 
+                         "url":"OneTeradata/en/ifd1772561138849.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-manage-collection-playground-help", 
+                   "title":"Vector store playground", 
+                   "description":"Use the playground to test the accuracy of your vector collection.", 
+                   "url":"OneTeradata/en/img1772561026669.md", 
+                   "children":[
+                      { 
+                         "id":"vector-store-procedure-manage-collection-playground-learn-more-using-playground", 
+                         "title":"Use a playground", 
+                         "description":"The playground allows you test your vector collection and assess the accuracy of the results,", 
+                         "url":"OneTeradata/en/qgl1772561095714.md"
+                         }
+                      , 
+                      { 
+                         "id":"vector-store-procedure-manage-collection-playground-learn-more-search-settings", 
+                         "title":"Manage playground search settings", 
+                         "description":"Teradata supports these indexing and search algorithms:", 
+                         "url":"OneTeradata/en/rec1772561136176.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"vector-store-explanation-manage-collection-users-help", 
+                   "title":"Manage vector store users", 
+                   "description":"You can add new users or search the existing users, from this page. Using filters, you can search users based on name and access levels.", 
+                   "url":"OneTeradata/en/bgm1772561023975.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"icl1777458080858", 
+       "title":"AgentOps", 
+       "url":"OneTeradata/en/icl1777458080858.md", 
+       "children":[
+          { 
+             "id":"qjm1776663474608", 
+             "title":"AgentOps Operations", 
+             "url":"OneTeradata/en/qjm1776663474608.md"
+             }
+          , 
+          { 
+             "id":"jgg1776663763228", 
+             "title":"Dashboard in AgentOps", 
+             "url":"OneTeradata/en/jgg1776663763228.md"
+             }
+          , 
+          { 
+             "id":"sco1776664350046", 
+             "title":"Registry of AgentOps", 
+             "url":"OneTeradata/en/sco1776664350046.md"
+             }
+          , 
+          { 
+             "id":"crw1776664567949", 
+             "title":"Importing an Agent using Git", 
+             "url":"OneTeradata/en/crw1776664567949.md"
+             }
+          , 
+          { 
+             "id":"pyr1776665595427", 
+             "title":"Importing Local Files for an Agent", 
+             "url":"OneTeradata/en/pyr1776665595427.md"
+             }
+          , 
+          { 
+             "id":"bhv1776665996931", 
+             "title":"Versions of Agents", 
+             "url":"OneTeradata/en/bhv1776665996931.md"
+             }
+          , 
+          { 
+             "id":"bnw1776666226748", 
+             "title":"Lifecycle of AgentOps", 
+             "url":"OneTeradata/en/bnw1776666226748.md"
+             }
+          , 
+          { 
+             "id":"xfl1776666758600", 
+             "title":"Agent Deployment using Import Agent", 
+             "url":"OneTeradata/en/xfl1776666758600.md"
+             }
+          , 
+          { 
+             "id":"mey1776667720139", 
+             "title":"Using the Deployment Tab", 
+             "url":"OneTeradata/en/mey1776667720139.md"
+             }
+          , 
+          { 
+             "id":"exf1776668005387", 
+             "title":"Using Various Tabs in Agent Deployment", 
+             "url":"OneTeradata/en/exf1776668005387.md"
+             }
+          , 
+          { 
+             "id":"wdf1776668901429", 
+             "title":"Deploying an Agent", 
+             "url":"OneTeradata/en/wdf1776668901429.md"
+             }
+          , 
+          { 
+             "id":"ued1776670194828", 
+             "title":"Playground in AgentOps", 
+             "url":"OneTeradata/en/ued1776670194828.md"
+             }
+          , 
+          { 
+             "id":"ixh1776670679638", 
+             "title":"Observability in AgentOps", 
+             "url":"OneTeradata/en/ixh1776670679638.md"
+             }
+          , 
+          { 
+             "id":"wdb1776671690197", 
+             "title":"Observability Traces", 
+             "url":"OneTeradata/en/wdb1776671690197.md"
+             }
+          , 
+          { 
+             "id":"txj1776671861132", 
+             "title":"Spans in Observability", 
+             "url":"OneTeradata/en/txj1776671861132.md"
+             }
+          , 
+          { 
+             "id":"mwe1776672060318", 
+             "title":"View Observability Metrics", 
+             "url":"OneTeradata/en/mwe1776672060318.md"
+             }
+          , 
+          { 
+             "id":"ltw1776672263683", 
+             "title":"Observability is Disabled", 
+             "url":"OneTeradata/en/ltw1776672263683.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"modelops-overview", 
+       "title":"ModelOps", 
+       "description":"Deploy, monitor, and manage your AI/ML models.", 
+       "icon":"product_modelops;covalent", 
+       "url":"OneTeradata/en/ihh1772561045736.md"
+       }
+    , 
+    { 
+       "id":"modelops-explanation-ai-model-hub-overview-help", 
+       "title":"AI Model Hub", 
+       "description":"Access, manage, and monitor foundation models for your organization.", 
+       "url":"OneTeradata/en/ugc1778495114925.md", 
+       "children":[
+          { 
+             "id":"modelops-explanation-explore-models-help", 
+             "title":"Explore Models", 
+             "description":"View, search, and manage AI models registered in AI Model Hub.", 
+             "url":"OneTeradata/en/eoz1778496909062.md", 
+             "children":[
+                { 
+                   "id":"modelops-explanation-model-details-help", 
+                   "title":"View Model Details", 
+                   "description":"View model details.", 
+                   "url":"OneTeradata/en/gzd1778500761517.md"
+                   }
+                , 
+                { 
+                   "id":"modelops-explanation-model-usage-help", 
+                   "title":"View Model Usage", 
+                   "description":"Access API endpoint to connect to a model.", 
+                   "url":"OneTeradata/en/kvm1778501432600.md"
+                   }
+                , 
+                { 
+                   "id":"modelops-procedure-add-model-help", 
+                   "title":"Add a Model", 
+                   "description":"Add a new AI model.", 
+                   "url":"OneTeradata/en/fdy1778502087907.md", 
+                   "children":[
+                      { 
+                         "id":"modelops-procedure-add-model-aws-help", 
+                         "title":"Add an Amazon Bedrock Model", 
+                         "description":"Register a new Amazon Bedrock model.", 
+                         "url":"OneTeradata/en/uft1778520449688.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"modelops-explanation-explore-virtual-keys-help", 
+                   "title":"Virtual Keys", 
+                   "description":"Manage secure, governed access to AI models without exposing provider credentials.", 
+                   "url":"OneTeradata/en/ney1778521452913.md", 
+                   "children":[
+                      { 
+                         "id":"modelops-procedure-create-virtual-key-help", 
+                         "title":"Create a Virtual Key", 
+                         "description":"Create a virtual key to give a user or application secure access to AI models.", 
+                         "url":"OneTeradata/en/vez1778522194050.md"
+                         }
+                      , 
+                      { 
+                         "id":"modelops-explanation-virtual-key-details-help", 
+                         "title":"View Virtual Key Details", 
+                         "description":"View the virtual key details.", 
+                         "url":"OneTeradata/en/umu1778524506279.md"
+                         }
+                      , 
+                      { 
+                         "id":"modelops-explanation-virtual-key-json-help", 
+                         "title":"View Virtual Key JSON", 
+                         "description":"Shows the full virtual key configuration as read-only JSON.", 
+                         "url":"OneTeradata/en/nlk1778524743588.md"
+                         }
+
+                      ]
+
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"modelops-procedure-configure-playground-help", 
+             "title":"Configure Playground", 
+             "description":"Configure Playground, test prompts, and compare model behavior.", 
+             "url":"OneTeradata/en/saq1778516078241.md", 
+             "children":[
+                { 
+                   "id":"modelops-procedure-adjust-chat-parameters-help", 
+                   "title":"Adjust Chat Parameters", 
+                   "description":"Tune how a model responds based on your use case.", 
+                   "url":"OneTeradata/en/wdn1778518249826.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"modelops-explanation-observability-help", 
+             "title":"Observability", 
+             "description":"Monitor AI model usage and performance across your organization.", 
+             "url":"OneTeradata/en/kdm1778519288505.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
+       "id":"integrations", 
+       "title":"Integrations", 
+       "description":"Support your workflow with additional tools", 
+       "icon":"apps", 
+       "url":"OneTeradata/en/haf1772561107072.md"
+       }
+    , 
+    { 
+       "id":"mcp-server-explanation-overview-help", 
+       "title":"Enterprise MCP Server", 
+       "description":"Access information available on Enterprise MCP home page.", 
+       "url":"OneTeradata/en/ian1773256449953.md"
+       }
+
+    ]
+
+ }
