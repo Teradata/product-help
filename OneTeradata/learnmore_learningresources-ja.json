@@ -1,0 +1,127 @@
+{
+  "items": [
+    {
+      "id": "learning-learnmore",
+      "title": "詳細情報",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "modelops",
+          "title": "ModelOps",
+          "description": "",
+          "icon": "product_modelops;covalent",
+          "url": "",
+          "children": [
+            {
+              "id": "modelops-learn",
+              "title": "ModelOpsについて",
+              "description": "機械学習モデルのデプロイ、監視、および管理方法について学びます。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-build",
+              "title": "プロジェクトを作成し、データセットを追加し、モデルを選択する",
+              "description": "プロジェクトには、モデルの学習、評価、およびデプロイに必要なモデル、データセット、その他のリソースが含まれています。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-define",
+              "title": "モデルを定義する",
+              "description": "特定のGitリポジトリにあるモデルを使用するか、Python、R、またはSASのモデルを自分で用意します。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-train",
+              "title": "モデルをトレーニング、評価、デプロイする",
+              "description": "複数の環境で、新しいモデル バージョンを評価、比較、承認します。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-monitor",
+              "title": "モデルのデプロイを監視する",
+              "description": "予測を作成し、ユース ケースのパフォーマンスを監視します。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-airflow",
+              "title": "Airflowで作業する",
+              "description": "バッチ処理型のワークフローを作成、スケジュール設定、監視します。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+            }
+          ]
+        },
+        {
+          "id": "vectorstore",
+          "title": "Vector Store",
+          "description": "",
+          "icon": "variable;covalent",
+          "url": "",
+          "children": [
+            {
+              "id": "vectorstore-learn",
+              "title": "Vector Storeについて",
+              "description": "セマンティック関係や類似度を活用して、AI/MLアプリケーションをどのように有効化できるかをご確認ください。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-create",
+              "title": "Vector Storeコレクションを作成する",
+              "description": "セマンティック検索統合およびRAGアプリケーション向けにデータを変換します。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-explore",
+              "title": "ベクトルを使用して、ノートブックを探索する",
+              "description": "自モデル用のベクトルの検索と取得方法について学びます。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-test",
+              "title": "プレイグランドでコレクションをテストする",
+              "description": "質問をしたり、各コレクションの類似度検索をテストしたりします。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            }
+          ]
+        },
+        {
+          "id": "mcpserver",
+          "title": "MCPサーバー",
+          "description": "",
+          "icon": "build_circle",
+          "url": "",
+          "children": [
+            {
+              "id": "mcp-try",
+              "title": "MCPサーバーを試す",
+              "description": "REST APIを使用して Teradata Enterprise MCP (Model Context Protocol) サーバーを利用する方法を学びます。",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

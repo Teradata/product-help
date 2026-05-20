@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": "home-toolkit",
+      "title": "Teradata AI開発ツールキット",
+      "description": "事前構築済みNotebookを使用してVector Storeと連携し、本番環境対応のモデルを構築します。",
+      "url": "",
+      "children": [
+        {
+          "id": "home-notebooks",
+          "title": "Notebook",
+          "description": "データを探索し、AI/MLモデルを構築し、成果を共有しましょう。",
+          "icon": "book",
+          "url": "",
+          "childrenUrl": "Notebook"
+        },
+        {
+          "id": "home-vectorstore",
+          "title": "Vector Store",
+          "description": "セマンティック検索統合およびRAGアプリケーション向けにデータを変換します。",
+          "icon": "variable_outlined;covalent",
+          "url": "",
+          "childrenUrl": "vector-store"
+        },
+        {
+          "id": "home-modelops",
+          "title": "ModelOps",
+          "description": "AI/MLモデルのデプロイ、監視、および管理を行います。",
+          "icon": "product_modelops;covalent",
+          "url": "",
+          "childrenUrl": "modelops"
+        },
+        {
+          "id": "home-mcp",
+          "title": "MCPサーバー",
+          "description": "MCPサーバー ツールの設定を始めましょう。",
+          "icon": "build_circle",
+          "url": "",
+          "childrenUrl": "mcp-server"
+        },
+        {
+          "id": "home-learningresources",
+          "title": "学習リソース",
+          "icon": "school",
+          "url": "",
+          "childrenUrl": "learn"
+        }
+      ]
+    }
+  ]
+}

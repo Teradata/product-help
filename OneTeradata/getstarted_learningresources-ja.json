@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "learning-getstarted",
+      "title": "スタートガイド",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "learning-tour",
+          "title": "ツアーを開始する",
+          "description": "概要を学びましょう。",
+          "icon": "tour",
+          "url": "",
+          "childrenUrl": "pendo;pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
+        },
+        {
+          "id": "learning-mcp",
+          "title": "MCPサーバーを試す",
+          "description": "REST APIを使用して Teradata Enterprise MCP (Model Context Protocol) サーバーを利用する方法を学びます。",
+          "icon": "build_circle",
+          "url": "",
+          "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+        }
+      ]
+    }
+  ]
+}

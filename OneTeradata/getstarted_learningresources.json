@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "id": "learning-getstarted",
+            "title": "Get started",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "learning-tour",
+                    "title": "Take a tour",
+                    "description": "Learn your way around Teradata's AI stack, from exploring data to operationalizing agents.",
+                    "icon": "tour",
+                    "url": "",
+                    "childrenUrl": "pendo;pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
+                },
+                {
+                    "id": "Kx7mR4nQ2wP9vL3j",
+                    "title": "Get started with notebooks",
+                    "description": "Learn how to connect to your data from Teradata notebooks using SQL and Python Kernels.",
+                    "icon": "terminal",
+                    "childrenUrl": "notebooks;GettingStarted/get_started_with_notebooks.ipynb"
+                },
+                {
+                     "id": "Kx7mR4nQ2wP9vL3l",
+                    "title": "Explore demo use cases",
+                    "description": "Start with one of 150 prebuilt AI and ML use cases for different industries and analytical functions.",
+                    "icon": "analytics",
+                    "childrenUrl": "notebooks;Demo/getting_started_index.ipynb"
+                }
+			]
+        }
+    ]
+}

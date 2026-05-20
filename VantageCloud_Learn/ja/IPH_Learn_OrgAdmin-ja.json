@@ -141,6 +141,15 @@
              "url":"VantageCloud_Learn/ja/sbv1729897674850.md", 
              "childrenUrl":"ajr1640280560519"
              }
+          , 
+          { 
+             "id":"euz1750877420901", 
+             "title":"ベクトル ストア", 
+             "description":"データをベクトルとして保存するデータベースを作成します。", 
+             "icon":"database_search;covalent", 
+             "url":"VantageCloud_Learn/ja/euz1750877420901.md", 
+             "childrenUrl":"fsd1742339949986"
+             }
 
           ]
 
@@ -179,14 +188,15 @@
              "childrenUrl":"mxq1680183881642"
              }
           , 
-          { 
-             "id":"drx1745278688634", 
-             "title":"ModelOpsをデプロイして監視する", 
-             "description":"AIモデルとMLモデルを管理してユース ケースを運用可能にします。", 
-             "icon":"product_modelops;covalent", 
-             "url":"VantageCloud_Learn/ja/drx1745278688634.md"
+		  { 
+             "id":"yyz1710373675172", 
+             "title":"データベース管理者を追加する", 
+             "description":"他のデータベース管理者を環境に追加します。", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/ja/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
              }
-          , 
+          ,
           { 
              "id":"uvi1714845877298", 
              "title":"リソースの消費を監視する", 

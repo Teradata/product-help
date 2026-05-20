@@ -1,0 +1,92 @@
+{
+    "items": [
+        {
+            "id": "integrations-apps",
+            "title": "Integrations",
+            "description": "Accelerate your work with these additional tools.",
+            "url": "",
+            "children": [
+                {
+                    "id": "apps-unstructured",
+                    "title": "Leverage more data types with Unstructured",
+                    "description": "Automate large-scale data transformation and ingestion to Vector store.",
+                    "icon": "unstructured",
+                    "url": "",
+                    "childrenUrl": "https://unstructured.io"
+                },                
+				{
+                    "id": "apps-gitea",
+                    "title": "Version your Git code with Gitea",
+                    "description": "Use Gitea for persistence and version control of your projects.",
+                    "icon": "gitea",
+                    "url": "",
+                    "childrenUrl": "/one-td/git/"
+                },
+                {
+                    "id": "apps-airflow",
+                    "title": "Create workflows with Airflow",
+                    "description": "Configure and schedule project pipelines with this orchestration tool.",
+                    "icon": "airflow",
+                    "url": "",
+                    "childrenUrl": "/one-td/airflow/login/PingIDP"
+                },
+                {
+                    "id": "apps-devpi",
+                    "title": "Manage Python packages with devpi",
+                    "description": "Use devpi to manage your private Python packages from PyPI.",
+                    "icon": "devpi",
+                    "url": "",
+                    "childrenUrl": "/one-td/pypi"
+                }
+            ]
+        },
+		{
+            "id": "integrations-learnmore",
+            "title": "Learn more",
+            "description": "See documentation and learning resources.",
+            "url": "",
+            "children": [
+                 {
+                    "id": "learn-unstructured",
+                    "title": "Transform data with Unstructured",
+                    "description": "Learn how to turn your unstructured documents into structured, AI-ready data at scale.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.unstructured.io/welcome"
+                },           
+				{
+                    "id": "learn-gitea",
+                    "title": "Version your Git code with Gitea",
+                    "description": "Self-host your Git repositories for code reviews, collaboration, package registry, and CI/CD.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.gitea.com/"
+                },
+                {
+                    "id": "learn-createairflow",
+                    "title": "Create workflows with Airflow",
+                    "description": "Configure and schedule workflows using notebook scripts as components.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
+                },
+                {
+                    "id": "learn-runairflow",
+                    "title": "Run Airflow workflows with ModelOps",
+                    "description": "Accelerate the end-to-end process of developing, deploying, and managing models.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+                },
+                {
+                    "id": "learn-devpi",
+                    "title": "Manage Python packages with devpi",
+                    "description": "Drive packaging, testing, and release activities with Python.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://devpi.net/docs/devpi/devpi/stable/%2Bd/index.html"
+                }
+            ]
+        }		
+    ]
+}

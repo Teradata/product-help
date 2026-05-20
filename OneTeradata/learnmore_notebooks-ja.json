@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "launcher-notebooks",
+      "title": "詳細情報",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "launcher-notebooks",
+          "title": "Teradata Notebookについて",
+          "description": "ライブ コード、数式、ビジュアル データ、および説明文を含むドキュメントを作成して、共有する",
+          "icon": "play_lesson",
+          "childrenUrl": "notebooks-explanation-overview-help"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "items": [
+    {
+      "id": "learning-learnmore",
+      "title": "Weitere Informationen",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "modelops",
+          "title": "ModelOps",
+          "description": "",
+          "icon": "product_modelops;covalent",
+          "url": "",
+          "children": [
+            {
+              "id": "modelops-learn",
+              "title": "Informationen zu ModelOps",
+              "description": "Erfahren Sie, wie Sie Ihre Modelle für maschinelles Lernen bereitstellen, überwachen und verwalten.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-build",
+              "title": "Projekte erstellen, Datasets hinzufügen und Modelle auswählen",
+              "description": "Ein Projekt enthält die Modelle, Datasets und sonstigen Ressourcen, die zum Trainieren, Bewerten und Bereitstellen von Modellen benötigt werden.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-define",
+              "title": "Modelle definieren",
+              "description": "Verwenden Sie Modelle aus bestimmten Git-Repositorys oder stellen Sie Ihr eigenes Python-, R- oder SAS-Modell bereit.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-train",
+              "title": "Modelle trainieren, bewerten und bereitstellen",
+              "description": "Bewerten, vergleichen und genehmigen Sie neue Modellversionen für verschiedene Umgebungen.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-monitor",
+              "title": "Modellbereitstellungen überwachen",
+              "description": "Erstellen Sie Prognosen und überwachen Sie die Leistung von Anwendungsfällen.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "modelops-page;one-td/modelops"
+            },
+            {
+              "id": "modelops-airflow",
+              "title": "Arbeiten mit Airflow",
+              "description": "Erstellen, planen und überwachen Sie stapelorientierte Arbeitsabläufe.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+            }
+          ]
+        },
+        {
+          "id": "vectorstore",
+          "title": "Vektorspeicher",
+          "description": "",
+          "icon": "variable;covalent",
+          "url": "",
+          "children": [
+            {
+              "id": "vectorstore-learn",
+              "title": "Informationen zum Vektorspeicher",
+              "description": "Erfahren Sie, wie Sie semantische Beziehungen und Ähnlichkeiten nutzen können, um Ihre KI-/ML-Anwendungen zu optimieren.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-create",
+              "title": "Vektorspeichersammlung erstellen",
+              "description": "Konvertieren Sie Daten für die Integration in die semantische Suche und RAG-Anwendungen.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-explore",
+              "title": "Einsatz von Vektoren in Notebooks erkunden",
+              "description": "Informieren Sie sich über das Suchen und Abrufen von Vektoren für Ihre Modelle.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            },
+            {
+              "id": "vectorstore-test",
+              "title": "Sammlungen in der Testumgebung testen",
+              "description": "Stellen Sie Fragen und testen Sie die Ähnlichkeitssuche für jede Sammlung.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "vectorstore-help-page;vector-store"
+            }
+          ]
+        },
+        {
+          "id": "mcpserver",
+          "title": "MCP-Server",
+          "description": "",
+          "icon": "build_circle",
+          "url": "",
+          "children": [
+            {
+              "id": "mcp-try",
+              "title": "MCP-Server ausprobieren",
+              "description": "Erfahren Sie, wie Sie den Teradata Enterprise MCP-Server (Model Context Protocol) mithilfe von REST-APIs nutzen.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

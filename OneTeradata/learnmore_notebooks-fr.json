@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "launcher-notebooks",
+      "title": "En savoir plus",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "launcher-notebooks",
+          "title": "En savoir plus sur les blocs-notes Teradata",
+          "description": "Créer et partager des documents contenant du code dynamique, des équations, des visualisations et du texte narratif",
+          "icon": "play_lesson",
+          "childrenUrl": "notebooks-explanation-overview-help"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+    "items": [
+        {
+            "id": "ai-apps",
+            "title": "",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "sites-card",
+                    "title": "Manage sites",
+                    "description": "View and control sites to get jobs started and keep them efficient.",
+                    "icon": "server_outlined"
+                },
+                {
+                    "id": "govern-data-card",
+                    "title": "Put your data to work",
+                    "description": "Prepare, manage, and protect data for AI applications, analytics, and business insights.",
+                    "icon": "settings_backup_restore_outlined"
+                },
+                {
+                    "id": "manage-users-card",
+                    "title": "Set up your team",
+                    "description": "Control roles and permissions to keep data users’ work focused and  secure.",
+                    "icon": "connected_identity_outlined"
+                },
+                {
+                    "id": "enable-ai-card",
+                    "title": "Explore AI Studio",
+                    "description": "Set up and use the AI toolkit to build and use agents and more AI applications. ",
+                    "icon": "model_training_outlined"
+                },
+                {
+                    "id": "manage-compute-card",
+                    "title": "Control computing resources",
+                    "description": "Set up and manage compute, node pools, and AI tokens to keep work on track and within budget.",
+                    "icon": "engine_outlined"
+                },
+                {
+                    "id": "monitor-usage-card",
+                    "title": "Track usage",
+                    "description": "See charts, tables, and more information to help you understand and improve compute use.",
+                    "icon": "monitoring_outlined"
+                }
+            ]
+        }
+    ]
+}

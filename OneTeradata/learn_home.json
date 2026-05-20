@@ -1,0 +1,51 @@
+{
+    "items": [
+        {
+            "id": "home-toolkit",
+            "title": "Teradata AI development toolkit",
+            "description": "Use prebuilt notebooks to integrate with vector store and build models ready for production.",
+            "url": "",
+            "children": [
+                {
+                    "id": "home-notebooks",
+                    "title": "Notebooks",
+                    "description": "Explore your data, build AI/ML models, and share your work.",
+                    "icon": "book",
+                    "url": "",
+                    "childrenUrl": "notebooks"
+                },
+                {
+                    "id": "home-vectorstore",
+                    "title": "Vector store",
+                    "description": "Convert data for semantic search integration and RAG applications.",
+                    "icon": "variable_outlined;covalent",
+                    "url": "",
+                    "childrenUrl": "vector-store"
+                },
+                {
+                    "id": "home-modelops",
+                    "title": "ModelOps",
+                    "description": "Deploy, monitor, and manage your AI/ML models.",
+                    "icon": "product_modelops;covalent",
+                    "url": "",
+                    "childrenUrl": "modelops"
+                },
+		{
+                    "id": "home-mcp",
+                    "title": "MCP server",
+                    "description": "Get started configuring the MCP server tools.",
+                    "icon": "build_circle",
+                    "url": "",
+                    "childrenUrl": "mcp-server"
+                },
+		{
+                    "id": "home-learningresources",
+                    "title": "Learning resources",
+                    "icon": "school",
+                    "url": "",
+                    "childrenUrl": "learn"
+                }
+            ]
+        }
+    ]
+}

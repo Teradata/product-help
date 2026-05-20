@@ -141,6 +141,15 @@
              "url":"VantageCloud_Learn/de/sbv1729897674850.md", 
              "childrenUrl":"ajr1640280560519"
              }
+          , 
+          { 
+             "id":"euz1750877420901", 
+             "title":"Vektorspeicher", 
+             "description":"Erstellen Sie eine Datenbank, in der Daten als Vektoren gespeichert werden.", 
+             "icon":"database_search;covalent", 
+             "url":"VantageCloud_Learn/de/euz1750877420901.md", 
+             "childrenUrl":"fsd1742339949986"
+             }
 
           ]
 
@@ -179,14 +188,15 @@
              "childrenUrl":"mxq1680183881642"
              }
           , 
-          { 
-             "id":"drx1745278688634", 
-             "title":"ModelOps bereitstellen und überwachen", 
-             "description":"KI- und ML-Modelle verwalten, um Ihre Anwendungsfälle zu operationalisieren.", 
-             "icon":"product_modelops;covalent", 
-             "url":"VantageCloud_Learn/de/drx1745278688634.md"
+		  { 
+             "id":"yyz1710373675172", 
+             "title":"Datenbankadministratoren hinzufügen", 
+             "description":"Fügen Sie weitere Datenbankadministratoren zur Umgebung hinzu.", 
+             "icon":"person", 
+             "url":"VantageCloud_Learn/de/yyz1710373675172.md", 
+             "childrenUrl":"mmq1721237123997"
              }
-          , 
+          ,
           { 
              "id":"uvi1714845877298", 
              "title":"Ressourcenverbrauch überwachen", 

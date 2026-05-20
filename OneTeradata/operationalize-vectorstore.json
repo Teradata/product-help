@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "id": "vectorstore-overview",
+            "title": "",
+            "description": "",
+            "url": "",
+            "children": [
+                {
+                    "id": "vectorstore-optimize",
+                    "title": "Optimize vector search",
+                    "description": "Use the playground to test and optimize similarity search performance for this collection.",
+                    "icon": "category",
+                    "url": "",
+                    "childrenUrl": "playground"
+                },
+                {
+                    "id": "vectorstore-load",
+                    "title": "Load data",
+                    "description": "Add new or updated documents to the collection to expand and improve the search performance.",
+                    "icon": "database_outlined;covalent",
+                    "url": "",
+                    "childrenUrl": "data-sources"
+                },
+                {
+                    "id": "vectorstore-addusers",
+                    "title": "Add users",
+                    "description": "Grant users access to your collection allowing them to run a semantic search or build RAG applications.",
+                    "icon": "person",
+                    "url": "",
+                    "childrenUrl": "users"
+                }
+            ]
+        }
+    ]
+}

@@ -1,1 +1,0 @@
-Review the history of snapshots, including action, status, and time. By default, snapshots are sorted by the most recent action.

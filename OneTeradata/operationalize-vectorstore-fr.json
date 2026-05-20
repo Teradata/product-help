@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "vectorstore-overview",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "vectorstore-optimize",
+          "title": "Optimiser la recherche vectorielle",
+          "description": "Testez et optimisez les performances de la recherche de similarité pour cette collection à l'aide du terrain de jeu.",
+          "icon": "category",
+          "url": "",
+          "childrenUrl": "terrain de jeu"
+        },
+        {
+          "id": "vectorstore-load",
+          "title": "Charger les données",
+          "description": "Ajoutez des documents nouveaux ou mis à jour à la collection pour enrichir et améliorer les performances de recherche.",
+          "icon": "database_outlined;covalent",
+          "url": "",
+          "childrenUrl": "data-sources"
+        },
+        {
+          "id": "vectorstore-addusers",
+          "title": "Ajouter des utilisateurs",
+          "description": "Accordez aux utilisateurs l'accès à votre collection leur permettant d'effectuer une recherche sémantique ou de générer des applications RAG.",
+          "icon": "person",
+          "url": "",
+          "childrenUrl": "utilisateurs"
+        }
+      ]
+    }
+  ]
+}

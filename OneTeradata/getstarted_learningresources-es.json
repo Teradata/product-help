@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "learning-getstarted",
+      "title": "Comenzar",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "learning-tour",
+          "title": "Haz una visita guiada",
+          "description": "Familiarízate.",
+          "icon": "tour",
+          "url": "",
+          "childrenUrl": "pendo;pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
+        },
+        {
+          "id": "learning-mcp",
+          "title": "Prueba el servidor MCP",
+          "description": "Aprende cómo usar el servidor MCP (Protocolo de contexto de modelo) de Teradata Enterprise usando API REST.",
+          "icon": "build_circle",
+          "url": "",
+          "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+        }
+      ]
+    }
+  ]
+}

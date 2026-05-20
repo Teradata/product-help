@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": "launcher-notebooks",
+      "title": "Más información",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "launcher-notebooks",
+          "title": "Aprende acerca de los cuadernos de Teradata",
+          "description": "Crea y comparte documentos que contienen código activo, ecuaciones, visualizaciones y texto explicativo",
+          "icon": "play_lesson",
+          "childrenUrl": "notebooks-explanation-overview-help"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "items": [
+    {
+      "id": "home-toolkit",
+      "title": "Teradata-Toolkit für die KI-Entwicklung",
+      "description": "Verwenden Sie vorgefertigte Notebooks, um sie in den Vektorspeicher zu integrieren und produktionsreife Modelle zu erstellen.",
+      "url": "",
+      "children": [
+        {
+          "id": "home-notebooks",
+          "title": "Notebooks",
+          "description": "Erforschen Sie Ihre Daten, erstellen Sie KI-/ML-Modelle und teilen Sie Ihre Arbeit.",
+          "icon": "book",
+          "url": "",
+          "childrenUrl": "Notebooks"
+        },
+        {
+          "id": "home-vectorstore",
+          "title": "Vektorspeicher",
+          "description": "Konvertieren Sie Daten für die Integration in die semantische Suche und RAG-Anwendungen.",
+          "icon": "variable_outlined;covalent",
+          "url": "",
+          "childrenUrl": "vector-store"
+        },
+        {
+          "id": "home-modelops",
+          "title": "ModelOps",
+          "description": "Implementieren, überwachen und verwalten Sie Ihre KI-/ML-Modelle.",
+          "icon": "product_modelops;covalent",
+          "url": "",
+          "childrenUrl": "modelops"
+        },
+        {
+          "id": "home-mcp",
+          "title": "MCP-Server",
+          "description": "Beginnen Sie mit der Konfiguration der MCP-Server-Tools.",
+          "icon": "build_circle",
+          "url": "",
+          "childrenUrl": "mcp-server"
+        },
+        {
+          "id": "home-learningresources",
+          "title": "Lernressourcen",
+          "icon": "school",
+          "url": "",
+          "childrenUrl": "lernen"
+        }
+      ]
+    }
+  ]
+}

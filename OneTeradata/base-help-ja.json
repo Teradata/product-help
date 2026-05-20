@@ -1,0 +1,214 @@
+{
+  "items": [
+    {
+      "id": "one-teradata-explanation-welcome-homepage-help",
+      "title": "AI Studioへようこそ!",
+      "description": "AI Studioの旅を始めましょう!",
+      "url": "OneTeradata/ja/dvp1772561082809.md",
+      "children": [
+        {
+          "id": "one-teradata-landing-page-learn-more-resources-help",
+          "title": "学習リソース",
+          "description": "一般的なタスクに関する情報、ヘルプやドキュメントへのアクセス、Terryへの迅速な提案、AI Studioツールへのクイック アクセス カードを見つけてください。",
+          "url": "OneTeradata/ja/vnq1772561072064.md"
+        },
+        {
+          "id": "one-teradata-reference-account-settings-help",
+          "title": "アカウント設定",
+          "description": "個人設定を設定します。",
+          "url": "OneTeradata/ja/evo1772561048412.md"
+        }
+      ]
+    },
+    {
+      "id": "one-teradata-explanation-ask-ai-help",
+      "title": "AIアシスタント",
+      "description": "データ管理をより簡単かつスマートにするAIアシスタント。",
+      "url": "OneTeradata/ja/mxn1772561125368.md",
+      "children": [
+        {
+          "id": "before-using-terry",
+          "title": "Terryを使用する前に",
+          "description": "プライベート プレビューではコンテンツを表示できません。",
+          "url": "OneTeradata/ja/abs1772561144227.md"
+        },
+        {
+          "id": "get-started-with-terry",
+          "title": "Terryを開始する",
+          "description": "プライベート プレビューではコンテンツを表示できません。",
+          "url": "OneTeradata/ja/qxm1772561115166.md"
+        },
+        {
+          "id": "structure-your-conversation",
+          "title": "Terryとの会話を構造化する",
+          "description": "プライベート プレビューではコンテンツを表示できません。",
+          "url": "OneTeradata/ja/gxa1772561021277.md"
+        },
+        {
+          "id": "conversation-flow-structure",
+          "title": "Terryと会話を開始する",
+          "description": "プライベート プレビューではコンテンツを表示できません。",
+          "url": "OneTeradata/ja/wmh1772561109792.md"
+        }
+      ]
+    },
+    {
+      "id": "notebooks-explanation-overview-help",
+      "title": "Notebook",
+      "description": "データを探索し、AI/MLモデルを構築し、成果を共有しましょう。",
+      "icon": "book",
+      "url": "OneTeradata/ja/rtz1772561128025.md"
+    },
+    {
+      "id": "vector-store-explanation-overview-help-",
+      "title": "ベクトル コレクションを作成する",
+      "description": "Teradata Enterpriseベクトル コレクションとは、高次元のベクトル、つまりテキスト、画像といったデータの数値表現を保存・管理するために設計された特殊なデータベースのことです。ベクトル コレクションは、キーワードの完全一致に依存するのではなく、データをベクトルとして保存することでセマンティック検索を使用します。主なユース ケース:",
+      "url": "OneTeradata/ja/ycv1772561149578.md",
+      "children": [
+        {
+          "id": "vector-store-explanation-manage-collection-overview-help",
+          "title": "Vector Storeを管理する",
+          "description": "選択したベクトル コレクションの作成時に使用したさまざまなパラメータを表示します。",
+          "url": "OneTeradata/ja/hrd1772561055965.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-active-help",
+              "title": "アクティブなベクトル コレクション",
+              "description": "データアナリストや管理者として、自分が作成した、またはアクセス権を持つベクトル コレクションを管理することができます。",
+              "url": "OneTeradata/ja/eyj1772561035027.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-edit-index-help",
+              "title": "ベクトル インデックス作成を編集する",
+              "description": "デフォルトでは、ベクトル コレクションの作成時に設定したインデックス作成および検索オプションが表示されます。",
+              "url": "OneTeradata/ja/pxl1772561040369.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-indexing-settings-learn-more",
+                  "title": "検索アルゴリズムを編集する",
+                  "description": "Teradataは以下のインデックス作成および検索アルゴリズムをサポートしています:",
+                  "url": "OneTeradata/ja/wlq1772561043034.md"
+                },
+                {
+                  "id": "vector-store-procedure-manage-collection-search-settings-learn-more",
+                  "title": "検索設定を編集する",
+                  "description": "インデックス作成後、Vector Storeに対してクエリーを実行し、関連するデータを取得します。システムは、クエリーと保存されているベクトルを照合し、一致度の高い上位k件を返します。結果はVector Storeのタイプによって異なります。",
+                  "url": "OneTeradata/ja/hpr1772561032356.md"
+                }
+              ]
+            },
+            {
+              "id": "vector-store-explanation-manage-collection-chunking-overview-help",
+              "title": "チャンクを管理する",
+              "description": "BasicとSherpaLLMの間で使用されるチャンク方法を変更します。",
+              "url": "OneTeradata/ja/vpo1772561058663.md",
+              "children": [
+                {
+                  "id": "vector-store-procedure-manage-collection-edit-chunking-help",
+                  "title": "チャンクを編集する",
+                  "description": "ベクトル コレクションの作成時に選択したチャンク方法を変更します。行った変更を保存して、ベクトル コレクションを更新します。",
+                  "url": "OneTeradata/ja/tlx1772561090346.md"
+                },
+                {
+                  "id": "vector-store-explanation-manage-collection-chunking-edit-definition-help",
+                  "title": "チャンク定義を編集する",
+                  "description": "ベクトル コレクションの名前と説明を変更します。名前は一意にしてください。",
+                  "url": "OneTeradata/ja/wjg1772561112493.md"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "vector-store-procedure-manage-collection-change-embedding-help",
+          "title": "ベクトル埋め込みを変更する",
+          "description": "使用する必要な埋め込みモデルを選択してください。利用可能なモデルは以下のとおりです:",
+          "url": "OneTeradata/ja/cia1772561077401.md"
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-data-sources-help",
+          "title": "ベクトル データ ソースを管理する",
+          "description": "新しいデータ ソースを追加し、既存のデータ ソースを削除して、ベクトル コレクションを保存できます。",
+          "url": "OneTeradata/ja/xuf1772561069376.md",
+          "children": [
+            {
+              "id": "vector-store-explanation-manage-collection-add-data-help",
+              "title": "コレクション データを追加する",
+              "description": "ベクトルに変換するPDFファイルを選択します。PDFファイルをドラッグ アンド ドロップできます。",
+              "url": "OneTeradata/ja/ble1772561061324.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-tables",
+              "title": "データ テーブルを追加する",
+              "description": "ベクトルに変換するPDFファイルを選択します。",
+              "url": "OneTeradata/ja/rgl1772561117839.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-add-data-column",
+              "title": "データ カラムを追加する",
+              "description": "データまたは埋め込みモデルを変更した場合にのみ利用できます。確認時に適切な選択肢を選択してください。",
+              "url": "OneTeradata/ja/qbs1772561141510.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns",
+              "title": "メタデータ カラムを追加する",
+              "description": "要件に基づいて、ベクトル コレクションのメタデータ カラムを追加します。埋め込みが変更され、プレイグランドでパフォーマンスを確認できます。",
+              "url": "OneTeradata/ja/emw1772561098428.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-add-data-learn-more-key-columns",
+              "title": "データ キー カラムを追加する",
+              "description": "埋め込みモデルやその結果に望ましくない影響を与えないように、正しいデータを追加していることを確認してください。生データまたは既存の埋め込みを追加できます。",
+              "url": "OneTeradata/ja/ifd1772561138849.md"
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-playground-help",
+          "title": "Vector Store プレイグランド",
+          "description": "プレイグランドを使用して、ベクトル コレクションの精度をテストします。",
+          "url": "OneTeradata/ja/img1772561026669.md",
+          "children": [
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-using-playground",
+              "title": "プレイグランドを使用する",
+              "description": "このプレイグランドでは、ベクトル コレクションをテストし、結果の精度を確認することができます。",
+              "url": "OneTeradata/ja/qgl1772561095714.md"
+            },
+            {
+              "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
+              "title": "プレイグランドの検索設定を管理する",
+              "description": "Teradataは以下のインデックス作成および検索アルゴリズムをサポートしています:",
+              "url": "OneTeradata/ja/rec1772561136176.md"
+            }
+          ]
+        },
+        {
+          "id": "vector-store-explanation-manage-collection-users-help",
+          "title": "Vector Store ユーザーを管理する",
+          "description": "このページから新規ユーザーを追加したり、既存ユーザーを検索したりできます。フィルタを使用して、名前とアクセス レベルに基づいてユーザーを検索できます。",
+          "url": "OneTeradata/ja/bgm1772561023975.md"
+        }
+      ]
+    },
+    {
+      "id": "modelops-overview",
+      "title": "ModelOps",
+      "description": "AI/MLモデルのデプロイ、監視、および管理を行います。",
+      "icon": "product_modelops;covalent",
+      "url": "OneTeradata/ja/ihh1772561045736.md"
+    },
+    {
+      "id": "integrations",
+      "title": "統合",
+      "description": "追加のツールでワークフローをサポートする",
+      "icon": "apps",
+      "url": "OneTeradata/ja/haf1772561107072.md"
+    },
+    {
+      "id": "mcp-server-explanation-overview-help",
+      "title": "MCP",
+      "url": "OneTeradata/ja/ian1773256449953.md"
+    }
+  ]
+}

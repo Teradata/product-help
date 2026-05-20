@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "id": "integrations-apps",
+      "title": "Integrationen",
+      "description": "Beschleunigen Sie Ihre Arbeit mit diesen zusätzlichen Tools.",
+      "url": "",
+      "children": [
+        {
+          "id": "apps-unstructured",
+          "title": "Mit „Unstrukturiert“ weitere Datentypen nutzen",
+          "description": "Automatisieren Sie die Transformation und Erfassung großer Datenmengen für den Vektorspeicher.",
+          "icon": "unstructured",
+          "url": "",
+          "childrenUrl": "https://unstructured.io"
+        },
+        {
+          "id": "apps-gitea",
+          "title": "Git-Code mit Gitea versionieren",
+          "description": "Nutzen Sie Gitea für die Speicherung und Versionsverwaltung Ihrer Projekte.",
+          "icon": "gitea",
+          "url": "",
+          "childrenUrl": "/one-td/git/"
+        },
+        {
+          "id": "apps-airflow",
+          "title": "Arbeitsabläufe mit Airflow erstellen",
+          "description": "Konfigurieren und planen Sie Projekt-Pipelines mit diesem Orchestrierungstool.",
+          "icon": "airflow",
+          "url": "",
+          "childrenUrl": "/one-td/airflow/login/PingIDP"
+        },
+        {
+          "id": "apps-devpi",
+          "title": "Python-Pakete mit devpi verwalten",
+          "description": "Verwenden Sie devpi, um Ihre privaten Python-Pakete über PyPI zu verwalten.",
+          "icon": "devpi",
+          "url": "",
+          "childrenUrl": "/one-td/pypi"
+        }
+      ]
+    },
+    {
+      "id": "integrations-learnmore",
+      "title": "Weitere Informationen",
+      "description": "Weitere Informationen finden Sie in der Dokumentation und in den Lernressourcen.",
+      "url": "",
+      "children": [
+        {
+          "id": "learn-unstructured",
+          "title": "Mit „Unstrukturiert“ Daten umwandeln",
+          "description": "Erfahren Sie, wie Sie Ihre unstrukturierten Dokumente in großem Umfang in strukturierte, KI-fähige Daten umwandeln können.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://docs.unstructured.io/welcome"
+        },
+        {
+          "id": "learn-gitea",
+          "title": "Git-Code mit Gitea versionieren",
+          "description": "Hosten Sie Ihre Git-Repositorys selbst für die Codeüberprüfung, Zusammenarbeit, Paketverwaltung und CI/CD.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://docs.gitea.com/"
+        },
+        {
+          "id": "learn-createairflow",
+          "title": "Arbeitsabläufe mit Airflow erstellen",
+          "description": "Konfigurieren und planen Sie Arbeitsabläufe mithilfe von Notebook-Skripten als Komponenten.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
+        },
+        {
+          "id": "learn-runairflow",
+          "title": "Airflow-Arbeitsabläufe mit ModelOps ausführen",
+          "description": "Beschleunigen Sie den gesamten Prozess der Entwicklung, Bereitstellung und Verwaltung von Modellen.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+        },
+        {
+          "id": "learn-devpi",
+          "title": "Python-Pakete mit devpi verwalten",
+          "description": "Steuern Sie Paketierungs-, Test- und Freigabeprozesse mit Python.",
+          "icon": "",
+          "url": "",
+          "childrenUrl": "https://devpi.net/docs/devpi/devpi/stable/%2Bd/index.html"
+        }
+      ]
+    }
+  ]
+}
