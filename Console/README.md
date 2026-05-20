@@ -6,4 +6,4 @@ The folders, such as, **de,es,fr,ja,** contains tranlsated IPH topics in respect
 
 
 ________________________________________
-©2023 Teradata. All Rights Reserved. https://www.teradata.com/
+©2026 Teradata. All Rights Reserved. https://www.teradata.com/
