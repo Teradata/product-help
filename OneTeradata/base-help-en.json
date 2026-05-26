@@ -135,7 +135,7 @@
     , 
     { 
        "id":"vector-store-explanation-overview-help-", 
-       "title":"Vector Store", 
+       "title":"Vector store", 
        "description":"Teradata Enterprise Vector collection is a specialized database designed to store and manage high-dimensional vectors, that is, numerical representations of data like text and images. Rather than rely on exact keyword matches, vector collections use a semantic search by storing data as vectors. The key use cases include:", 
        "url":"OneTeradata/en/ycv1772561149578.md", 
        "children":[
@@ -153,7 +153,7 @@
                 , 
                 { 
                    "id":"vector-store-explanation-create-collection-chunking-help", 
-                   "title":"Vector store chunking", 
+                   "title":"Vector collection chunking", 
                    "description":"Chunking is the process of breaking down large documents or data into smaller, manageable, and semantically meaningful pieces called Chunks", 
                    "url":"OneTeradata/en/zyt1772561029668.md", 
                    "children":[
@@ -221,7 +221,7 @@
                 , 
                 { 
                    "id":"vector-store-explanation-create-collection-data-sources-help", 
-                   "title":"Vector store data sources", 
+                   "title":"Vector collection data sources", 
                    "description":"You can select various types of raw data as data sources and convert into vector embeddings using a large language model (embedding) model.", 
                    "url":"OneTeradata/en/hub1772561080089.md", 
                    "children":[
@@ -245,7 +245,7 @@
                 , 
                 { 
                    "id":"vector-store-explanation-manage-collection-overview-help", 
-                   "title":"Manage vector store", 
+                   "title":"Manage vector collection", 
                    "description":"View the various parameters that you have used while creating the selected vector collection.", 
                    "url":"OneTeradata/en/hrd1772561055965.md", 
                    "children":[
@@ -362,7 +362,7 @@
                 , 
                 { 
                    "id":"vector-store-explanation-manage-collection-playground-help", 
-                   "title":"Vector store playground", 
+                   "title":"Vector collection playground", 
                    "description":"Use the playground to test the accuracy of your vector collection.", 
                    "url":"OneTeradata/en/img1772561026669.md", 
                    "children":[
@@ -386,7 +386,7 @@
                 , 
                 { 
                    "id":"vector-store-explanation-manage-collection-users-help", 
-                   "title":"Manage vector store users", 
+                   "title":"Manage vector collection users", 
                    "description":"You can add new users or search the existing users, from this page. Using filters, you can search users based on name and access levels.", 
                    "url":"OneTeradata/en/bgm1772561023975.md"
                    }
@@ -406,85 +406,91 @@
        "children":[
           { 
              "id":"qjm1776663474608", 
-             "title":"AgentOps Operations", 
+             "title":"AgentOps Dashboard", 
              "url":"OneTeradata/en/qjm1776663474608.md"
              }
           , 
           { 
              "id":"jgg1776663763228", 
-             "title":"Dashboard in AgentOps", 
+             "title":"AgentOps Dashboard", 
              "url":"OneTeradata/en/jgg1776663763228.md"
              }
           , 
           { 
              "id":"sco1776664350046", 
-             "title":"Registry of AgentOps", 
+             "title":"Agent Registry", 
              "url":"OneTeradata/en/sco1776664350046.md"
              }
           , 
           { 
              "id":"crw1776664567949", 
-             "title":"Importing an Agent using Git", 
+             "title":"Import agent using GIT", 
              "url":"OneTeradata/en/crw1776664567949.md"
              }
           , 
           { 
              "id":"pyr1776665595427", 
-             "title":"Importing Local Files for an Agent", 
+             "title":"Import local agent files", 
              "url":"OneTeradata/en/pyr1776665595427.md"
              }
           , 
           { 
+             "id":"jdi1779772504174", 
+             "title":"File package structure", 
+             "url":"OneTeradata/en/jdi1779772504174.md"
+             }
+          , 
+          { 
              "id":"bhv1776665996931", 
-             "title":"Versions of Agents", 
+             "title":"Agent versions", 
              "url":"OneTeradata/en/bhv1776665996931.md"
              }
           , 
           { 
              "id":"bnw1776666226748", 
-             "title":"Lifecycle of AgentOps", 
+             "title":"AgentOps lifecycle", 
              "url":"OneTeradata/en/bnw1776666226748.md"
              }
           , 
           { 
              "id":"xfl1776666758600", 
-             "title":"Agent Deployment using Import Agent", 
+             "title":"Deploy agent using Import Agent", 
              "url":"OneTeradata/en/xfl1776666758600.md"
              }
           , 
           { 
              "id":"mey1776667720139", 
-             "title":"Using the Deployment Tab", 
+             "title":"Deployment", 
              "url":"OneTeradata/en/mey1776667720139.md"
              }
           , 
           { 
              "id":"exf1776668005387", 
-             "title":"Using Various Tabs in Agent Deployment", 
+             "title":"Agent Deployment tabs", 
              "url":"OneTeradata/en/exf1776668005387.md"
              }
           , 
           { 
              "id":"wdf1776668901429", 
-             "title":"Deploying an Agent", 
+             "title":"Deploy an agent", 
              "url":"OneTeradata/en/wdf1776668901429.md"
              }
           , 
           { 
              "id":"ued1776670194828", 
-             "title":"Playground in AgentOps", 
+             "title":"Playground", 
              "url":"OneTeradata/en/ued1776670194828.md"
              }
           , 
           { 
              "id":"ixh1776670679638", 
-             "title":"Observability in AgentOps", 
+             "title":"Observability", 
              "url":"OneTeradata/en/ixh1776670679638.md"
              }
           , 
           { 
              "id":"wdb1776671690197", 
-             "title":"Observability Traces", 
+             "title":"Traces in Observability", 
              "url":"OneTeradata/en/wdb1776671690197.md"
              }
           , 
