@@ -120,23 +120,9 @@
                 , 
                 { 
                    "id":"jbg1732650538946", 
-                   "title":"Import Python/R model", 
+                   "title":"Import Python model", 
                    "description":"Add a Python or R model.", 
                    "url":"Vantage/jbg1732650538946.md"
-                   }
-                , 
-                { 
-                   "id":"shj1752707656763", 
-                   "title":"Nvidia NIM models", 
-                   "description":"View pre-loaded Nvidia NIM modes.", 
-                   "url":"Vantage/shj1752707656763.md"
-                   }
-                , 
-                { 
-                   "id":"hdv1752709503338", 
-                   "title":"Access a Nvidia NIM model", 
-                   "description":"Select a NIM model from the dedicated NIM project.", 
-                   "url":"Vantage/hdv1752709503338.md"
                    }
 
                 ]
@@ -301,13 +287,6 @@
 
                 ]
 
-             }
-          , 
-          { 
-             "id":"vdi1732651243512", 
-             "title":"Model partitions", 
-             "description":"Model versions can use specific data partitions.", 
-             "url":"Vantage/vdi1732651243512.md"
              }
           , 
           { 
