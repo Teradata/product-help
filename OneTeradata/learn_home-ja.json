@@ -12,7 +12,7 @@
           "description": "データを探索し、AI/MLモデルを構築し、成果を共有しましょう。",
           "icon": "book",
           "url": "",
-          "childrenUrl": "Notebook"
+          "childrenUrl": "notebooks"
         },
         {
           "id": "home-vectorstore",

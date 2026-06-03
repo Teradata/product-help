@@ -12,7 +12,7 @@
           "description": "Explorez vos données, générez des modèles d'IA ou de ML et partagez votre travail.",
           "icon": "book",
           "url": "",
-          "childrenUrl": "blocs-notes"
+          "childrenUrl": "notebooks"
         },
         {
           "id": "home-vectorstore",
