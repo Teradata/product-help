@@ -132,6 +132,7 @@
           { 
              "id":"configureComputeEngine", 
              "title":"Configure network settings", 
+             "description":"First configure network settings", 
              "url":"Console/en/hhf1773266448257.md"
              }
           , 
