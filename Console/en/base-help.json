@@ -130,15 +130,16 @@
        "url":"Console/en/hgc1773266257356.md", 
        "children":[
           { 
-             "id":"createComputeEngine", 
-             "title":"Create a compute engine", 
-             "url":"Console/en/rvc1773266385820.md"
-             }
-          , 
-          { 
              "id":"configureComputeEngine", 
              "title":"Configure network settings", 
              "url":"Console/en/hhf1773266448257.md"
+             }
+          , 
+          { 
+             "id":"createComputeEngine", 
+             "title":"Create elastic compute", 
+             "description":"Define the elastic compute and set advanced options", 
+             "url":"Console/en/rvc1773266385820.md"
              }
 
           ]
