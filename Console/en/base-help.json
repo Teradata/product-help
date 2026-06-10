@@ -124,9 +124,31 @@
        }
     , 
     { 
+       "id":"computeEngine", 
+       "title":"Elastic compute", 
+       "description":"Optimize compute and storage resources.", 
+       "url":"Console/en/hgc1773266257356.md", 
+       "children":[
+          { 
+             "id":"createComputeEngine", 
+             "title":"Create a compute engine", 
+             "url":"Console/en/rvc1773266385820.md"
+             }
+          , 
+          { 
+             "id":"configureComputeEngine", 
+             "title":"Configure network settings", 
+             "url":"Console/en/hhf1773266448257.md"
+             }
+
+          ]
+
+       }
+    , 
+    { 
        "id":"queryWriteData", 
        "title":"Query and Write Data", 
-       "description":"Native Object Store integration with cloud object storage", 
+       "description":"Native Object Store integration with cloud object storage.", 
        "url":"Console/en/dwc1772742185433.md"
        }
     , 
@@ -140,7 +162,7 @@
     { 
        "id":"apiUserGuide", 
        "title":"API user guide", 
-       "description":"Review GraphQL API access and use patterns", 
+       "description":"Review GraphQL API access and use patterns.", 
        "url":"Console/en/bfl1772742179826.md"
        }
 
