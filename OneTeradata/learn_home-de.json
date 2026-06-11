@@ -12,7 +12,7 @@
           "description": "Erforschen Sie Ihre Daten, erstellen Sie KI-/ML-Modelle und teilen Sie Ihre Arbeit.",
           "icon": "book",
           "url": "",
-          "childrenUrl": "Notebooks"
+          "childrenUrl": "notebooks"
         },
         {
           "id": "home-vectorstore",
@@ -43,7 +43,7 @@
           "title": "Lernressourcen",
           "icon": "school",
           "url": "",
-          "childrenUrl": "lernen"
+          "childrenUrl": "learn"
         }
       ]
     }

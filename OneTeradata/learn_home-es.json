@@ -12,7 +12,7 @@
           "description": "Explora tus datos, desarrolla modelos de ML/IA y comparte tu trabajo.",
           "icon": "book",
           "url": "",
-          "childrenUrl": "cuadernos"
+          "childrenUrl": "notebooks"
         },
         {
           "id": "home-vectorstore",
@@ -43,7 +43,7 @@
           "title": "Recursos de aprendizaje",
           "icon": "school",
           "url": "",
-          "childrenUrl": "aprender"
+          "childrenUrl": "learn"
         }
       ]
     }
