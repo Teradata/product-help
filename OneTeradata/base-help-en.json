@@ -31,29 +31,29 @@
        "children":[
           { 
              "id":"before-using-terry", 
-             "title":"Before to Use Tera", 
-             "description":"Content not available for private preview.", 
+             "title":"Before you use Tera", 
+             "description":"What you must know before using Tera.", 
              "url":"OneTeradata/en/abs1772561144227.md"
              }
           , 
           { 
              "id":"get-started-with-terry", 
              "title":"Get started with Tera", 
-             "description":"Content not available for private preview.", 
+             "description":"Learn how to fine tune your prompts for better output from Tera.", 
              "url":"OneTeradata/en/qxm1772561115166.md"
              }
           , 
           { 
              "id":"structure-your-conversation", 
-             "title":"Structure your Conversation with Tera", 
-             "description":"Content not available for private preview.", 
+             "title":"Structure your conversation", 
+             "description":"Structure your conversation, start a new chat, and export charts and tables.", 
              "url":"OneTeradata/en/gxa1772561021277.md"
              }
           , 
           { 
              "id":"conversation-flow-structure", 
-             "title":"Start a Conversation with Tera", 
-             "description":"Content not available for private preview.", 
+             "title":"Start a conversation with Tera", 
+             "description":"Start a conversation with Tera.", 
              "url":"OneTeradata/en/wmh1772561109792.md"
              }
 
@@ -70,24 +70,24 @@
        "children":[
           { 
              "id":"crn1778131516774", 
-             "title":"Resource Settings", 
+             "title":"Resource settings", 
              "description":"Node pools", 
              "url":"OneTeradata/en/crn1778131516774.md", 
              "children":[
                 { 
                    "id":"xhv1778132422077", 
-                   "title":"Select Node Pool", 
+                   "title":"Select a node pool", 
                    "url":"OneTeradata/en/xhv1778132422077.md", 
                    "children":[
                       { 
                          "id":"vzi1778132810791", 
-                         "title":"Configure Resources for Regular Nodes", 
+                         "title":"Configure resources for regular nodes", 
                          "url":"OneTeradata/en/vzi1778132810791.md"
                          }
                       , 
                       { 
                          "id":"axj1778133448257", 
-                         "title":"Configure Resources for GPU Nodes", 
+                         "title":"Configure resources for GPU nodes", 
                          "url":"OneTeradata/en/axj1778133448257.md"
                          }
 
@@ -101,13 +101,19 @@
           , 
           { 
              "id":"tkz1778187299597", 
-             "title":"File Explorer", 
+             "title":"File explorer", 
              "url":"OneTeradata/en/tkz1778187299597.md"
              }
           , 
           { 
+             "id":"mmf1780893664622", 
+             "title":"Data explorer", 
+             "url":"OneTeradata/en/mmf1780893664622.md"
+             }
+          , 
+          { 
              "id":"xce1778192262401", 
-             "title":"Cell Types", 
+             "title":"Cell types", 
              "url":"OneTeradata/en/xce1778192262401.md"
              }
           , 
@@ -119,13 +125,13 @@
           , 
           { 
              "id":"gdp1778193924969", 
-             "title":"How to Get Classic Experience", 
+             "title":"How to get classic experience", 
              "url":"OneTeradata/en/gdp1778193924969.md"
              }
           , 
           { 
              "id":"hfh1778195239933", 
-             "title":"Teradata Native Notebooks vs Jupyter Notebooks", 
+             "title":"Teradata native notebooks vs Jupyter notebooks", 
              "url":"OneTeradata/en/hfh1778195239933.md"
              }
 
@@ -389,6 +395,21 @@
                    "title":"Manage vector collection users", 
                    "description":"You can add new users or search the existing users, from this page. Using filters, you can search users based on name and access levels.", 
                    "url":"OneTeradata/en/bgm1772561023975.md"
+                   }
+
+                ]
+
+             }
+          , 
+          { 
+             "id":"rvr1780629988102", 
+             "title":"Unstructured connector Learn more", 
+             "url":"OneTeradata/en/rvr1780629988102.md", 
+             "children":[
+                { 
+                   "id":"yrq1780630301285", 
+                   "title":"Learn about new Unstructured OEM integration", 
+                   "url":"OneTeradata/en/yrq1780630301285.md"
                    }
 
                 ]
