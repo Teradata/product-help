@@ -227,7 +227,7 @@
                 , 
                 { 
                    "id":"vector-store-explanation-create-collection-data-sources-help", 
-                   "title":"Vector collection data sources", 
+                   "title":"Vector collection data source", 
                    "description":"You can select various types of raw data as data sources and convert into vector embeddings using a large language model (embedding) model.", 
                    "url":"OneTeradata/en/hub1772561080089.md", 
                    "children":[
@@ -277,7 +277,7 @@
                             , 
                             { 
                                "id":"vector-store-procedure-manage-collection-search-settings-learn-more", 
-                               "title":"Edit search settings", 
+                               "title":"Search settings", 
                                "description":"After indexing, you query the vector store to retrieve relevant data. The system compares your query to stored vectors and returns top k matches. The results depend on the vector store type:", 
                                "url":"OneTeradata/en/hpr1772561032356.md"
                                }
