@@ -7,7 +7,7 @@
        "children":[
           { 
              "id":"one-teradata-landing-page-learn-more-resources-help", 
-             "title":"Learning Resources", 
+             "title":"Learning resources", 
              "description":"Find information on common tasks, access to help and documentation, prompt suggestions for Tera, and quick access cards to the AI Studio tools.", 
              "url":"OneTeradata/en/vnq1772561072064.md"
              }
@@ -547,39 +547,39 @@
     , 
     { 
        "id":"modelops-explanation-ai-model-hub-overview-help", 
-       "title":"AI Model Hub", 
+       "title":"AI model hub", 
        "description":"Access, manage, and monitor foundation models for your organization.", 
        "url":"OneTeradata/en/ugc1778495114925.md", 
        "children":[
           { 
              "id":"modelops-explanation-explore-models-help", 
-             "title":"Explore Models", 
+             "title":"Explore models", 
              "description":"View, search, and manage AI models registered in AI Model Hub.", 
              "url":"OneTeradata/en/eoz1778496909062.md", 
              "children":[
                 { 
                    "id":"modelops-explanation-model-details-help", 
-                   "title":"View Model Details", 
+                   "title":"View model details", 
                    "description":"View model details.", 
                    "url":"OneTeradata/en/gzd1778500761517.md"
                    }
                 , 
                 { 
                    "id":"modelops-explanation-model-usage-help", 
-                   "title":"View Model Usage", 
+                   "title":"View model usage", 
                    "description":"Access API endpoint to connect to a model.", 
                    "url":"OneTeradata/en/kvm1778501432600.md"
                    }
                 , 
                 { 
                    "id":"modelops-procedure-add-model-help", 
-                   "title":"Add a Model", 
+                   "title":"Add a model", 
                    "description":"Add a new AI model.", 
                    "url":"OneTeradata/en/fdy1778502087907.md", 
                    "children":[
                       { 
                          "id":"modelops-procedure-add-model-aws-help", 
-                         "title":"Add an Amazon Bedrock Model", 
+                         "title":"Add an Amazon Bedrock model", 
                          "description":"Register a new Amazon Bedrock model.", 
                          "url":"OneTeradata/en/uft1778520449688.md"
                          }
@@ -590,27 +590,27 @@
                 , 
                 { 
                    "id":"modelops-explanation-explore-virtual-keys-help", 
-                   "title":"Virtual Keys", 
+                   "title":"Virtual keys", 
                    "description":"Manage secure, governed access to AI models without exposing provider credentials.", 
                    "url":"OneTeradata/en/ney1778521452913.md", 
                    "children":[
                       { 
                          "id":"modelops-procedure-create-virtual-key-help", 
-                         "title":"Create a Virtual Key", 
+                         "title":"Create a virtual key", 
                          "description":"Create a virtual key to give a user or application secure access to AI models.", 
                          "url":"OneTeradata/en/vez1778522194050.md"
                          }
                       , 
                       { 
                          "id":"modelops-explanation-virtual-key-details-help", 
-                         "title":"View Virtual Key Details", 
+                         "title":"View virtual key details", 
                          "description":"View the virtual key details.", 
                          "url":"OneTeradata/en/umu1778524506279.md"
                          }
                       , 
                       { 
                          "id":"modelops-explanation-virtual-key-json-help", 
-                         "title":"View Virtual Key JSON", 
+                         "title":"View virtual key JSON", 
                          "description":"Shows the full virtual key configuration as read-only JSON.", 
                          "url":"OneTeradata/en/nlk1778524743588.md"
                          }
@@ -625,13 +625,13 @@
           , 
           { 
              "id":"modelops-procedure-configure-playground-help", 
-             "title":"Configure Playground", 
+             "title":"Configure playground", 
              "description":"Configure Playground, test prompts, and compare model behavior.", 
              "url":"OneTeradata/en/saq1778516078241.md", 
              "children":[
                 { 
                    "id":"modelops-procedure-adjust-chat-parameters-help", 
-                   "title":"Adjust Chat Parameters", 
+                   "title":"Adjust chat parameters", 
                    "description":"Tune how a model responds based on your use case.", 
                    "url":"OneTeradata/en/wdn1778518249826.md"
                    }
@@ -661,8 +661,8 @@
     , 
     { 
        "id":"mcp-server-explanation-overview-help", 
-       "title":"Enterprise MCP Server", 
-       "description":"Access information available on Enterprise MCP home page.", 
+       "title":"Enterprise MCP server", 
+       "description":"Access information available on Enterprise MCP home page to get started.", 
        "url":"OneTeradata/en/ian1773256449953.md"
        }
 
