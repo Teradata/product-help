@@ -14,14 +14,14 @@
         },
         {
           "id": "apps-mdm",
-          "title": "マスター データ管理",
+          "title": "Master Data Management",
           "description": "信頼性が高く正確なマスター データを作成し、企業全体で一貫性のある分析と意思決定をサポートします。",
           "icon": "mdm-icon"
         },
         {
           "id": "apps-vcx",
-          "title": "Vantage カスタマー エクスペリエンス",
-          "description": "チャンネルを横断して顧客データとインサイトを統合し、リアルタイムでカスタマイズされたエクスペリエンスを提供します。",
+          "title": "Vantage Customer Experience",
+          "description": "チャンネルを横断して顧客データとインサイトを統合し、リアルタイムでパーソナライズされた体験を提供します。",
           "icon": "vcx-icon"
         }
       ]
@@ -29,20 +29,20 @@
     {
       "id": "ai-apps-learnmore",
       "title": "詳細情報",
-      "description": "利用可能なアプリ、各アプリで何が解決できるか、ご利用のワークフローにどのようにして組み込めるかをご覧ください。",
+      "description": "利用可能なアプリや各アプリで解決できる課題、ワークフローへの適用方法を確認できます。",
       "url": "",
       "children": [
         {
           "id": "learn-cim",
           "title": "Customer Interaction Manager",
-          "description": "一元化されたオーケストレーションと分析を使用して、カスタマイズされたインタラクションを計画、実行、評価します。",
+          "description": "一元化されたオーケストレーションと分析を使用して、パーソナライズされたインタラクションを計画、実行、評価します。",
           "icon": "",
           "url": "",
           "childrenUrl": "https://www.teradata.com/insights/brochures/customer-interaction-manager "
         },
         {
           "id": "learn-mdm",
-          "title": "マスター データ管理",
+          "title": "Master Data Management",
           "description": "マスター データの信頼性の高い基盤を構築し、システムと分析全体の一貫性を高めます。",
           "icon": "",
           "url": "",
@@ -50,8 +50,8 @@
         },
         {
           "id": "learn-vcx",
-          "title": "Vantage カスタマー エクスペリエンス",
-          "description": "VCXがどのようにして顧客データとインサイトを統合し、チャンネルを横断してリアルタイムのカスタマイズされたエクスペリエンスを実現するかをご覧ください。",
+          "title": "Vantage Customer Experience",
+          "description": "VCXが顧客データとインサイトを統合し、チャンネルを横断してリアルタイムでパーソナライズされた顧客体験を実現する仕組みを確認できます。",
           "icon": "",
           "url": "",
           "childrenUrl": "https://www.teradata.com/insights/brochures/vantage-customer-experience"

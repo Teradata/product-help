@@ -2,25 +2,31 @@
   "items": [
     {
       "id": "learning-getstarted",
-      "title": "スタートガイド",
+      "title": "スタート ガイド",
       "description": "",
       "url": "",
       "children": [
         {
           "id": "learning-tour",
-          "title": "ツアーを開始する",
-          "description": "概要を学びましょう。",
+          "title": "ツアーを開始",
+          "description": "データの探索からエージェントの運用まで、TeradataのAIスタックの活用方法を学びます。",
           "icon": "tour",
           "url": "",
           "childrenUrl": "pendo;pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
         },
         {
-          "id": "learning-mcp",
-          "title": "MCPサーバーを試す",
-          "description": "REST APIを使用して Teradata Enterprise MCP (Model Context Protocol) サーバーを利用する方法を学びます。",
-          "icon": "build_circle",
-          "url": "",
-          "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+          "id": "Kx7mR4nQ2wP9vL3j",
+          "title": "Notebookの利用を開始",
+          "description": "SQLおよびPythonカーネルを使用して、Teradata Notebookからデータに接続する方法を学びます。",
+          "icon": "terminal",
+          "childrenUrl": "notebooks;GettingStarted/get_started_with_notebooks.ipynb"
+        },
+        {
+          "id": "Kx7mR4nQ2wP9vL3l",
+          "title": "デモ ユース ケースを試す",
+          "description": "業界別および分析機能別に用意された 150 種類の事前構築済みAI/MLユースケースから開始できます。",
+          "icon": "analytics",
+          "childrenUrl": "notebooks;Demo/getting_started_index.ipynb"
         }
       ]
     }

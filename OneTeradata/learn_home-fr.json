@@ -3,12 +3,12 @@
     {
       "id": "home-toolkit",
       "title": "Kit d'outils de développement d'IA de Teradata",
-      "description": "Utilisez des blocs-notes prédéfinis à intégrer au magasin de vecteurs et générez des modèles prêts pour la production.",
+      "description": "Utilisez des notebooks prédéfinis à intégrer au magasin de vecteurs et générez des modèles prêts pour la production.",
       "url": "",
       "children": [
         {
           "id": "home-notebooks",
-          "title": "Blocs-notes",
+          "title": "Notebooks",
           "description": "Explorez vos données, générez des modèles d'IA ou de ML et partagez votre travail.",
           "icon": "book",
           "url": "",

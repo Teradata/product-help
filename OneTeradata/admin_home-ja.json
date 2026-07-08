@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "ai-apps",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "sites-card",
+          "title": "サイトを管理",
+          "description": "ジョブの開始や効率的な運用のために、サイトを監視・管理します。",
+          "icon": "server_outlined"
+        },
+        {
+          "id": "govern-data-card",
+          "title": "データを活用",
+          "description": "AIアプリケーション、分析、ビジネス インサイト用のデータを準備、管理、保護します。",
+          "icon": "settings_backup_restore_outlined"
+        },
+        {
+          "id": "manage-users-card",
+          "title": "チームを設定",
+          "description": "データ利用者が安全かつ適切に作業できるように、ロールと権限を管理します。",
+          "icon": "connected_identity_outlined"
+        },
+        {
+          "id": "enable-ai-card",
+          "title": "AI Studioを活用",
+          "description": "AIツールキットを設定し、エージェントやその他のAIアプリケーションを構築・活用します。 ",
+          "icon": "model_training_outlined"
+        },
+        {
+          "id": "manage-compute-card",
+          "title": "コンピューティング リソースを管理",
+          "description": "コンピュート、ノード プール、AIトークンを設定・管理し、作業を計画どおりに進めながら予算内に収まるようにします。",
+          "icon": "engine_outlined"
+        },
+        {
+          "id": "monitor-usage-card",
+          "title": "使用状況を追跡",
+          "description": "グラフ、表などの情報を参照して、コンピューティングの使用状況を把握し、最適化します。",
+          "icon": "monitoring_outlined"
+        }
+      ]
+    }
+  ]
+}

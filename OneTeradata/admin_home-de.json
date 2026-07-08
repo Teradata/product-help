@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "ai-apps",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "sites-card",
+          "title": "Sites verwalten",
+          "description": "Zeigen Sie Sites an und kontrollieren Sie sie, um Aufträge zu starten und für eine effiziente Bearbeitung zu sorgen.",
+          "icon": "server_outlined"
+        },
+        {
+          "id": "govern-data-card",
+          "title": "Lassen Sie Ihre Daten arbeiten",
+          "description": "Bereiten Sie Daten für KI-Anwendungen, Analysen und geschäftliche Einblicke vor, verwalten und schützen Sie sie.",
+          "icon": "settings_backup_restore_outlined"
+        },
+        {
+          "id": "manage-users-card",
+          "title": "Stellen Sie Ihr Team zusammen",
+          "description": "Kontrollieren Sie Rollen und Berechtigungen, damit die Arbeit der Datenbenutzer fokussiert und sicher bleibt.",
+          "icon": "connected_identity_outlined"
+        },
+        {
+          "id": "enable-ai-card",
+          "title": "AI Studio erkunden",
+          "description": "Richten Sie das KI-Toolkit ein und verwenden Sie es, um Agenten und weitere KI-Anwendungen zu erstellen und einzusetzen. ",
+          "icon": "model_training_outlined"
+        },
+        {
+          "id": "manage-compute-card",
+          "title": "Computing-Ressourcen kontrollieren",
+          "description": "Richten Sie Computing, Knoten-Pools und KI-Token ein und verwalten Sie sie, damit Sie bei der Arbeit auf Kurs und innerhalb des Budgets bleiben.",
+          "icon": "engine_outlined"
+        },
+        {
+          "id": "monitor-usage-card",
+          "title": "Nutzung verfolgen",
+          "description": "Lassen Sie sich Diagramme, Tabellen und weitere Informationen anzeigen, damit Sie die Computing-Nutzung verstehen und verbessern können.",
+          "icon": "monitoring_outlined"
+        }
+      ]
+    }
+  ]
+}

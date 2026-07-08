@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "ai-apps",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "sites-card",
+          "title": "Administrar sitios",
+          "description": "Vea y controle los sitios para iniciar trabajos y mantener su eficiencia.",
+          "icon": "server_outlined"
+        },
+        {
+          "id": "govern-data-card",
+          "title": "Ponga sus datos a trabajar",
+          "description": "Prepare, gestione y proteja los datos para aplicaciones de IA, analíticas y análisis de negocio.",
+          "icon": "settings_backup_restore_outlined"
+        },
+        {
+          "id": "manage-users-card",
+          "title": "Configurar su equipo",
+          "description": "Controle los roles y permisos para mantener el trabajo de los usuarios de datos enfocado y seguro.",
+          "icon": "connected_identity_outlined"
+        },
+        {
+          "id": "enable-ai-card",
+          "title": "Explorar AI Studio",
+          "description": "Configure y utilice el kit de herramientas de IA para crear y utilizar agentes y otras aplicaciones de IA. ",
+          "icon": "model_training_outlined"
+        },
+        {
+          "id": "manage-compute-card",
+          "title": "Controlar recursos computacionales",
+          "description": "Configure y administre la computación, los grupos de nodos y los tokens de IA para mantener el trabajo en curso y dentro del presupuesto.",
+          "icon": "engine_outlined"
+        },
+        {
+          "id": "monitor-usage-card",
+          "title": "Realizar un seguimiento del uso",
+          "description": "Consulte gráficos, tablas y más información para comprender y optimizar el uso de la computación.",
+          "icon": "monitoring_outlined"
+        }
+      ]
+    }
+  ]
+}

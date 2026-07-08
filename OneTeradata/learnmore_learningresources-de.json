@@ -2,10 +2,27 @@
   "items": [
     {
       "id": "learning-learnmore",
-      "title": "Weitere Informationen",
+      "title": "Erkunden",
       "description": "",
       "url": "",
       "children": [
+        {
+          "id": "notebooks",
+          "title": "Notebooks",
+          "description": "",
+          "icon": "book",
+          "url": "",
+          "children": [
+            {
+              "id": "notebooks-tour",
+              "title": "Tour zu Teradata-Notebooks",
+              "description": "Sie erhalten Schritt für Schritt Anleitungen zur Verwendung von Notebooks, von der Auswahl von Ressourcen bis zur Ausführung von Codezellen.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "pendo;pendo.showGuideById(ZTbYUKLpD7q2Mp4Bbea31LZDYnA)"
+            }
+          ]
+        },
         {
           "id": "modelops",
           "title": "ModelOps",
@@ -114,7 +131,7 @@
             {
               "id": "mcp-try",
               "title": "MCP-Server ausprobieren",
-              "description": "Erfahren Sie, wie Sie den Teradata Enterprise MCP-Server (Model Context Protocol) mithilfe von REST-APIs nutzen.",
+              "description": "Erfahren Sie, wie Sie eine Verbindung zum Teradata Enterprise MCP-Server (Model Context Protocol) aufbauen.",
               "icon": "",
               "url": "",
               "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"

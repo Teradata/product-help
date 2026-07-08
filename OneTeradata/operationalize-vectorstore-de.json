@@ -12,7 +12,7 @@
           "description": "Nutzen Sie die Testumgebung, um die Leistung der Ähnlichkeitssuche für diese Sammlung zu testen und zu optimieren.",
           "icon": "category",
           "url": "",
-          "childrenUrl": "Testumgebung"
+          "childrenUrl": "playground"
         },
         {
           "id": "vectorstore-load",
@@ -28,7 +28,7 @@
           "description": "Gewähren Sie Benutzern Zugriff auf Ihre Sammlung, damit diese eine semantische Suche durchführen oder RAG-Anwendungen erstellen können.",
           "icon": "person",
           "url": "",
-          "childrenUrl": "Benutzer"
+          "childrenUrl": "users"
         }
       ]
     }

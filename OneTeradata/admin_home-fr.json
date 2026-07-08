@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "ai-apps",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "sites-card",
+          "title": "Gestion des sites",
+          "description": "Affichez et contrôlez les sites pour lancer les tâches et optimiser leur efficacité.",
+          "icon": "server_outlined"
+        },
+        {
+          "id": "govern-data-card",
+          "title": "Mise à contribution de vos données",
+          "description": "Préparez, gérez et protégez les données pour les applications d'IA, les analyses et les informations métiers.",
+          "icon": "settings_backup_restore_outlined"
+        },
+        {
+          "id": "manage-users-card",
+          "title": "Création de votre équipe",
+          "description": "Contrôlez les rôles et les autorisations pour garantir la précision et la sécurité du travail des utilisateurs de données.",
+          "icon": "connected_identity_outlined"
+        },
+        {
+          "id": "enable-ai-card",
+          "title": "Exploration d'AI Studio",
+          "description": "Configurez et utilisez le kit d'outils d'IA pour créer et utiliser des agents et d'autres applications d'IA. ",
+          "icon": "model_training_outlined"
+        },
+        {
+          "id": "manage-compute-card",
+          "title": "Contrôle des ressources de calcul",
+          "description": "Configurez et gérez des ressources de calcul, des pools de nœuds et des jetons d'IA pour assurer le suivi des tâches et maîtriser votre budget.",
+          "icon": "engine_outlined"
+        },
+        {
+          "id": "monitor-usage-card",
+          "title": "Suivi de l'utilisation",
+          "description": "Consultez les graphiques, les tableaux et d'autres informations pour vous aider à comprendre et à optimiser l'utilisation de vos ressources de calcul.",
+          "icon": "monitoring_outlined"
+        }
+      ]
+    }
+  ]
+}

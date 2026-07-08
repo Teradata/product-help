@@ -65,7 +65,7 @@
         {
           "id": "learn-createairflow",
           "title": "Créer des flux de travail avec Airflow",
-          "description": "Configurez et planifiez des flux de travail en utilisant des scripts de blocs-notes comme composants.",
+          "description": "Configurez et planifiez des flux de travail en utilisant des scripts de notebook comme composants.",
           "icon": "",
           "url": "",
           "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"

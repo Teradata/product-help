@@ -9,18 +9,24 @@
         {
           "id": "learning-tour",
           "title": "Tour starten",
-          "description": "Machen Sie sich mit der Umgebung vertraut.",
+          "description": "Lernen Sie Schritt für Schritt den KI-Stack von Teradata kennen, vom Erkunden von Daten bis zum Operationalisieren von Agenten.",
           "icon": "tour",
           "url": "",
           "childrenUrl": "pendo;pendo.showGuideById(9kYEP0-r-LtnbSJP5j05Y8qutrs)"
         },
         {
-          "id": "learning-mcp",
-          "title": "MCP-Server ausprobieren",
-          "description": "Erfahren Sie, wie Sie den Teradata Enterprise MCP-Server (Model Context Protocol) mithilfe von REST-APIs nutzen.",
-          "icon": "build_circle",
-          "url": "",
-          "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
+          "id": "Kx7mR4nQ2wP9vL3j",
+          "title": "Erste Schritte mit Notebooks",
+          "description": "Erfahren Sie, wie Sie Ihre Daten von Teradata-Notebooks mit SQL und Python-Kerneln verbinden.",
+          "icon": "terminal",
+          "childrenUrl": "notebooks;GettingStarted/get_started_with_notebooks.ipynb"
+        },
+        {
+          "id": "Kx7mR4nQ2wP9vL3l",
+          "title": "Demo-Anwendungsfälle erkunden",
+          "description": "Beginnen Sie mit einem der 150 vorgefertigten KI- und ML-Anwendungsfälle für verschiedene Branchen und Analysefunktionen.",
+          "icon": "analytics",
+          "childrenUrl": "notebooks;Demo/getting_started_index.ipynb"
         }
       ]
     }

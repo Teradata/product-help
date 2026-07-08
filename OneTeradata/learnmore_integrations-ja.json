@@ -3,37 +3,37 @@
     {
       "id": "integrations-apps",
       "title": "統合",
-      "description": "これらの追加のツールで作業を加速します。",
+      "description": "追加のツールで作業を効率化します。",
       "url": "",
       "children": [
         {
           "id": "apps-unstructured",
-          "title": "非構造化でより多くのデータ タイプを活用する",
-          "description": "大規模なデータ変換とVector Storeへの取り込みを自動化します。",
+          "title": "Unstructuredを活用してより多様なデータ型に対応",
+          "description": "大規模なデータ変換とベクトルストアへの取り込みを自動化します。",
           "icon": "unstructured",
           "url": "",
           "childrenUrl": "https://unstructured.io"
         },
         {
           "id": "apps-gitea",
-          "title": "GiteaでGitコードをバージョン管理する",
-          "description": "Giteaを使用して、プロジェクトの維持とバージョン管理を行います。",
+          "title": "GiteaでGitコードをバージョン管理",
+          "description": "プロジェクトの維持とバージョン管理を行います。 ",
           "icon": "gitea",
           "url": "",
           "childrenUrl": "/one-td/git/"
         },
         {
           "id": "apps-airflow",
-          "title": "Airflowでワークフローを作成する",
-          "description": "このオーケストレーション ツールを使用して、プロジェクト パイプラインを設定し、スケジュールします。",
+          "title": "Airflowでワークフローを作成",
+          "description": "プロジェクトのパイプラインとスケジュールを設定します。",
           "icon": "airflow",
           "url": "",
           "childrenUrl": "/one-td/airflow/login/PingIDP"
         },
         {
           "id": "apps-devpi",
-          "title": "devpiでPythonパッケージを管理する",
-          "description": "devpiを使って、PyPIのプライベートなPythonパッケージを管理します。",
+          "title": "devpiでPythonパッケージを管理",
+          "description": "PyPIのプライベートなPythonパッケージを管理します。",
           "icon": "devpi",
           "url": "",
           "childrenUrl": "/one-td/pypi"
@@ -48,39 +48,39 @@
       "children": [
         {
           "id": "learn-unstructured",
-          "title": "非構造化でデータを変換する",
-          "description": "非構造化文書をAI対応の構造化データへと大規模に変換する方法を学習します。",
+          "title": "Unstructuredを使用してデータを変換",
+          "description": "UnstructuredなドキュメントをAI活用に適した構造化データへ変換する方法を学びます。",
           "icon": "",
           "url": "",
           "childrenUrl": "https://docs.unstructured.io/welcome"
         },
         {
           "id": "learn-gitea",
-          "title": "GiteaでGitコードをバージョン管理する",
-          "description": "コード レビュー、コラボレーション、パッケージ レジストリ、そしてCI/CDのために、Gitリポジトリを自前で運用します。",
+          "title": "GiteaでGitコードをバージョン管理",
+          "description": "コード レビュー、コラボレーション、パッケージ レジストリ、CI/CDのために、Gitリポジトリを独自に運用します。",
           "icon": "",
           "url": "",
           "childrenUrl": "https://docs.gitea.com/"
         },
         {
           "id": "learn-createairflow",
-          "title": "Airflowでワークフローを作成する",
-          "description": "ノートブック スクリプトをコンポーネントとして使用して、ワークフローを設定およびスケジュールします。",
+          "title": "Airflowでワークフローを作成",
+          "description": "Notebookのスクリプトをコンポーネントとして使用し、ワークフローを構成してスケジュールします。",
           "icon": "",
           "url": "",
           "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
         },
         {
           "id": "learn-runairflow",
-          "title": "ModelOpsでAirflowワークフローを実行する",
-          "description": "モデルの開発、デプロイ、管理というエンドツーエンドのプロセスを加速させます。",
+          "title": "ModelOpsでAirflowワークフローを実行",
+          "description": "モデルの開発からデプロイ、管理までのエンドツーエンドのプロセスを加速させます。",
           "icon": "",
           "url": "",
           "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
         },
         {
           "id": "learn-devpi",
-          "title": "devpiでPythonパッケージを管理する",
+          "title": "devpiでPythonパッケージを管理",
           "description": "Pythonを使用して、パッケージング、テスト、およびリリース業務を推進します。",
           "icon": "",
           "url": "",

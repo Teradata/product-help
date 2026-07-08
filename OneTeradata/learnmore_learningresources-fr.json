@@ -2,10 +2,27 @@
   "items": [
     {
       "id": "learning-learnmore",
-      "title": "En savoir plus",
+      "title": "Explorer",
       "description": "",
       "url": "",
       "children": [
+        {
+          "id": "notebooks",
+          "title": "Notebooks",
+          "description": "",
+          "icon": "book",
+          "url": "",
+          "children": [
+            {
+              "id": "notebooks-tour",
+              "title": "Visite guidée des notebooks Teradata",
+              "description": "Suivez une visite guidée expliquant comment utiliser les notebooks, de la sélection des ressources à l'exécution des cellules de code.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "pendo;pendo.showGuideById(ZTbYUKLpD7q2Mp4Bbea31LZDYnA)"
+            }
+          ]
+        },
         {
           "id": "modelops",
           "title": "ModelOps",
@@ -88,7 +105,7 @@
             },
             {
               "id": "vectorstore-explore",
-              "title": "Explorer l'utilisation des vecteurs dans les blocs-notes",
+              "title": "Explorer l'utilisation des vecteurs dans les notebooks",
               "description": "Découvrez comment rechercher et récupérer des vecteurs pour vos modèles.",
               "icon": "",
               "url": "",
@@ -114,7 +131,7 @@
             {
               "id": "mcp-try",
               "title": "Essayer le serveur MCP",
-              "description": "Apprenez à utiliser le serveur Teradata Enterprise MCP (Model Context Protocol) à l'aide des API REST.",
+              "description": "Découvrez comment vous connecter au serveur Teradata Enterprise MCP (Model Context Protocol).",
               "icon": "",
               "url": "",
               "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"

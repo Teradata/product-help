@@ -2,10 +2,27 @@
   "items": [
     {
       "id": "learning-learnmore",
-      "title": "Más información",
+      "title": "Explorar",
       "description": "",
       "url": "",
       "children": [
+        {
+          "id": "notebooks",
+          "title": "Notebooks",
+          "description": "",
+          "icon": "book",
+          "url": "",
+          "children": [
+            {
+              "id": "notebooks-tour",
+              "title": "Haga una visita guiada por los notebooks de Teradata",
+              "description": "Realice un recorrido paso a paso sobre cómo usar los notebooks, desde la selección de recursos hasta la ejecución de celdas de código.",
+              "icon": "",
+              "url": "",
+              "childrenUrl": "pendo;pendo.showGuideById(ZTbYUKLpD7q2Mp4Bbea31LZDYnA)"
+            }
+          ]
+        },
         {
           "id": "modelops",
           "title": "ModelOps",
@@ -15,8 +32,8 @@
           "children": [
             {
               "id": "modelops-learn",
-              "title": "Aprende acerca de ModelOps",
-              "description": "Aprende a desplegar, supervisar y gestionar tus modelos de aprendizaje automático.",
+              "title": "Aprenda acerca de ModelOps",
+              "description": "Aprenda a desplegar, supervisar y gestionar sus modelos de aprendizaje automático.",
               "icon": "",
               "url": "",
               "childrenUrl": "modelops-page;one-td/modelops"
@@ -32,7 +49,7 @@
             {
               "id": "modelops-define",
               "title": "Definir modelos",
-              "description": "Usa modelos de repositorios de Git específicos o aporta tu propio modelo de SAS, Python o R.",
+              "description": "Use modelos de repositorios de Git específicos o aporte su propio modelo de SAS, Python o R.",
               "icon": "",
               "url": "",
               "childrenUrl": "modelops-page;one-td/modelops"
@@ -40,7 +57,7 @@
             {
               "id": "modelops-train",
               "title": "Entrenar, evaluar y desplegar modelos",
-              "description": "Evalúa, compara y prueba nuevas versiones de modelos para varios entornos.",
+              "description": "Evalúe, compare y pruebe nuevas versiones de modelos para varios entornos.",
               "icon": "",
               "url": "",
               "childrenUrl": "modelops-page;one-td/modelops"
@@ -48,7 +65,7 @@
             {
               "id": "modelops-monitor",
               "title": "Supervisar despliegues de modelos",
-              "description": "Crea predicciones y supervisa el desempeño del caso de uso.",
+              "description": "Cree predicciones y supervise el desempeño del caso de uso.",
               "icon": "",
               "url": "",
               "childrenUrl": "modelops-page;one-td/modelops"
@@ -56,7 +73,7 @@
             {
               "id": "modelops-airflow",
               "title": "Trabajar con Airflow",
-              "description": "Crea, programa y supervisa flujos de trabajo orientados a lotes.",
+              "description": "Cree, programe y supervise flujos de trabajo orientados a lotes.",
               "icon": "",
               "url": "",
               "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
@@ -72,8 +89,8 @@
           "children": [
             {
               "id": "vectorstore-learn",
-              "title": "Aprende sobre el almacén de vectores",
-              "description": "Consulta cómo puedes usar relaciones semánticas y similitud para habilitar tus aplicaciones de IA/ML.",
+              "title": "Aprenda sobre el almacén de vectores",
+              "description": "Vea cómo puede usar relaciones semánticas y similitud para habilitar sus aplicaciones de IA/ML.",
               "icon": "",
               "url": "",
               "childrenUrl": "vectorstore-help-page;vector-store"
@@ -81,15 +98,15 @@
             {
               "id": "vectorstore-create",
               "title": "Crear una colección de almacenes de vectores",
-              "description": "Convierte los datos de las aplicaciones de RAG y la integración de búsqueda semántica.",
+              "description": "Convierta los datos de las aplicaciones de RAG y la integración de búsqueda semántica.",
               "icon": "",
               "url": "",
               "childrenUrl": "vectorstore-help-page;vector-store"
             },
             {
               "id": "vectorstore-explore",
-              "title": "Explorar con vectores en cuadernos",
-              "description": "Aprende cómo buscar vectores o recuperarlos de tus modelos.",
+              "title": "Explorar con vectores en notebooks",
+              "description": "Aprenda cómo buscar vectores o recuperarlos de sus modelos.",
               "icon": "",
               "url": "",
               "childrenUrl": "vectorstore-help-page;vector-store"
@@ -97,7 +114,7 @@
             {
               "id": "vectorstore-test",
               "title": "Probar colecciones en el playground",
-              "description": "Haz preguntas y prueba la búsqueda de similitud para esta colección.",
+              "description": "Haga preguntas y pruebe la búsqueda de similitud para esta colección.",
               "icon": "",
               "url": "",
               "childrenUrl": "vectorstore-help-page;vector-store"
@@ -113,8 +130,8 @@
           "children": [
             {
               "id": "mcp-try",
-              "title": "Prueba el servidor MCP",
-              "description": "Aprende cómo usar el servidor MCP (Protocolo de contexto de modelo) de Teradata Enterprise usando API REST.",
+              "title": "Pruebe el servidor MCP",
+              "description": "Aprenda cómo conectarse al MCP (Protocolo de contexto de modelo) de Teradata Enterprise.",
               "icon": "",
               "url": "",
               "childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"

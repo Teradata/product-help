@@ -12,7 +12,7 @@
           "description": "Testez et optimisez les performances de la recherche de similarité pour cette collection à l'aide du terrain de jeu.",
           "icon": "category",
           "url": "",
-          "childrenUrl": "terrain de jeu"
+          "childrenUrl": "playground"
         },
         {
           "id": "vectorstore-load",
@@ -28,7 +28,7 @@
           "description": "Accordez aux utilisateurs l'accès à votre collection leur permettant d'effectuer une recherche sémantique ou de générer des applications RAG.",
           "icon": "person",
           "url": "",
-          "childrenUrl": "utilisateurs"
+          "childrenUrl": "users"
         }
       ]
     }
