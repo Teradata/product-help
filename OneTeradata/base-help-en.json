@@ -403,12 +403,12 @@
           , 
           { 
              "id":"rvr1780629988102", 
-             "title":"Unstructured connector Learn more", 
+             "title":"Using Unstructured", 
              "url":"OneTeradata/en/rvr1780629988102.md", 
              "children":[
                 { 
                    "id":"yrq1780630301285", 
-                   "title":"Learn about new Unstructured OEM integration", 
+                   "title":"Unstructured integration", 
                    "url":"OneTeradata/en/yrq1780630301285.md"
                    }
 
@@ -423,7 +423,6 @@
     { 
        "id":"icl1777458080858", 
        "title":"AgentOps", 
-       "description":"Initialize, activate, monitor, and terminate agents.",
        "url":"OneTeradata/en/icl1777458080858.md", 
        "children":[
           { 
@@ -434,7 +433,7 @@
           , 
           { 
              "id":"jgg1776663763228", 
-             "title":"AgentOps Dashboard", 
+             "title":"View Agents", 
              "url":"OneTeradata/en/jgg1776663763228.md"
              }
           , 
