@@ -1,0 +1,55 @@
+{
+    "items": [
+        {
+            "id": "plg-usecases",
+            "title": "",
+            "description": "To get started, select a guided tour and see what’s possible in AI Studio.",
+            "url": "",
+            "children": [
+                {
+                    "id": "banking-churn-usecase",
+                    "title": "Banking Churn Prediction",
+                    "description": "Predict banking churn and automate action in real time.",
+                    "icon": "ssid_chart"
+                },
+                {
+                    "id": "unified-customer-360-usecase",
+                    "title": "Unified Customer 360",
+                    "description": "Combine customer data into a single, actionable profile using conversational AI.",
+                    "icon": "spatial_tracking_outlined"
+                },
+                {
+                    "id": "agent-lifecycle-usecase",
+                    "title": "Agent Lifecycle",
+                    "description": "Build, deploy, and track AI agent performance end-to-end.",
+                    "icon": "smart_toy_outlined"
+                },
+                {
+                    "id": "fraud-detection-usecase",
+                    "title": "Fraud Detection at Scale",
+                    "description": "Detect suspicious transactions with elastic compute.",
+                    "icon": "policy_outlined"
+                },
+                {
+                    "id": "customer-360-analytics-usecase",
+                    "title": "Customer 360 Analytics",
+                    "description": "Explore customer segmentation, revenue risk, and support insights.",
+                    "icon": "table_search"
+                },
+                {
+                    "id": "monitor-usage-card",
+                    "title": "Track usage",
+                    "description": "See charts, tables, and more information to help you understand and improve compute use.",
+                    "icon": "monitoring_outlined"
+                }
+            ]
+        },
+		{
+		    "id": "explore",
+            "title": "Explore on your own",
+            "description": "Go straight to AI Studio",
+            "url": "",
+			"childrenUrl": "./"
+		}	
+    ]
+}
