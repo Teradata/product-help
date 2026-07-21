@@ -72,7 +72,7 @@
               "children": [
                 {
                   "id": "vzi1778132810791",
-                  "title": "Configurer les ressources pour les nœuds réguliers ou GPU",
+                  "title": "Configurer les ressources pour les nœuds réguliers",
                   "url": "OneTeradata/fr/vzi1778132810791.md"
                 },
                 {
@@ -119,7 +119,7 @@
     {
       "id": "vector-store-explanation-overview-help-",
       "title": "Magasin de vecteurs",
-      "description": "La collection de vecteurs Teradata Enterprise est une base de données spécialisée conçue pour stocker et gérer des vecteurs de grande dimension, c'est-à-dire des représentations numériques de données telles que du texte et des images. Au lieu de s'appuyer sur des correspondances exactes de mots-clés, les collections de vecteurs utilisent une recherche sémantique en stockant les données sous forme de vecteurs. Principaux cas d'utilisation :",
+      "description": "La collection vectorielle Teradata Enterprise est une base de données spécialisée conçue pour stocker et gérer des vecteurs de grande dimension, c'est-à-dire des représentations numériques de données telles que du texte et des images. Au lieu de s'appuyer sur des correspondances exactes de mots-clés, les collections vectorielles utilisent une recherche sémantique en stockant les données sous forme de vecteurs. Principaux cas d'utilisation :",
       "url": "OneTeradata/fr/ycv1772561149578.md",
       "children": [
         {
@@ -184,7 +184,7 @@
                 {
                   "id": "vector-store-procedure-create-collection-indexing-search-learn-more-selecting-algorithm",
                   "title": "Sélectionner un algorithme",
-                  "description": "Les collections de vecteurs Teradata prennent en charge divers algorithmes d'indexation et de recherche dans les magasins de vecteurs :",
+                  "description": "Les collections vectorielles Teradata prennent en charge divers algorithmes d'indexation et de recherche dans les magasins de vecteurs :",
                   "url": "OneTeradata/fr/lvc1772561101121.md"
                 }
               ]
@@ -198,7 +198,7 @@
                 {
                   "id": "vector-store-procedure-create-collection-data-sources-learn-more-selecting-data",
                   "title": "Sélectionner un type de données",
-                  "description": "Vous pouvez créer des collections de vecteurs à partir de différents types de données :",
+                  "description": "Vous pouvez créer des collections vectorielles à partir de différents types de données :",
                   "url": "OneTeradata/fr/aij1772561093027.md"
                 },
                 {
@@ -217,8 +217,8 @@
               "children": [
                 {
                   "id": "vector-store-explanation-manage-collection-active-help",
-                  "title": "Collections de vecteurs actives",
-                  "description": "En tant qu'analyste ou administrateur de données, vous pouvez gérer les collections de vecteurs que vous avez créées ou auxquelles vous avez accès.",
+                  "title": "Collections vectorielles actives",
+                  "description": "En tant qu'analyste ou administrateur de données, vous pouvez gérer les collections vectorielles que vous avez créées ou auxquelles vous avez accès.",
                   "url": "OneTeradata/fr/eyj1772561035027.md"
                 },
                 {
@@ -337,12 +337,12 @@
         },
         {
           "id": "rvr1780629988102",
-          "title": "Connecteur non structuré - En savoir plus",
+          "title": "Utilisation d'Unstructured",
           "url": "OneTeradata/fr/rvr1780629988102.md",
           "children": [
             {
               "id": "yrq1780630301285",
-              "title": "Découvrir la nouvelle intégration OEM non structurée",
+              "title": "Intégration d'Unstructured",
               "url": "OneTeradata/fr/yrq1780630301285.md"
             }
           ]
@@ -361,7 +361,7 @@
         },
         {
           "id": "jgg1776663763228",
-          "title": "Tableau de bord AgentOps",
+          "title": "Afficher les agents",
           "url": "OneTeradata/fr/jgg1776663763228.md"
         },
         {
@@ -455,14 +455,14 @@
     },
     {
       "id": "modelops-explanation-ai-model-hub-overview-help",
-      "title": "Plate-forme de modèles d'IA",
+      "title": "Plateforme de modèles d'IA",
       "description": "Accédez aux modèles de référence pour votre organisation, gérez-les et surveillez-les.",
       "url": "OneTeradata/fr/ugc1778495114925.md",
       "children": [
         {
           "id": "modelops-explanation-explore-models-help",
           "title": "Découvrir les modèles",
-          "description": "Affichez, recherchez et gérez les modèles d'IA enregistrés dans la plate-forme de modèles d'IA.",
+          "description": "Affichez, recherchez et gérez les modèles d'IA enregistrés dans la plateforme de modèles d'IA.",
           "url": "OneTeradata/fr/eoz1778496909062.md",
           "children": [
             {
@@ -550,7 +550,7 @@
     },
     {
       "id": "mcp-server-explanation-overview-help",
-      "title": "Serveur Enterprise MCP",
+      "title": "Serveur MCP d'entreprise",
       "description": "Accédez aux informations disponibles sur la page d'accueil du serveur Enterprise MCP pour commencer.",
       "url": "OneTeradata/fr/ian1773256449953.md"
     }

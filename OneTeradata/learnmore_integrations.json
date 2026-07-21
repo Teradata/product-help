@@ -8,7 +8,7 @@
             "children": [
                 {
                     "id": "apps-unstructured",
-                    "title": "Leverage more data types with Unstructured",
+                    "title": "Leverage more data types with Unstructured.",
                     "description": "Automate large-scale data transformation and ingestion to Vector store.",
                     "icon": "unstructured",
                     "url": "",

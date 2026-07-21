@@ -135,13 +135,13 @@
             },
             {
               "id": "vector-store-explanation-create-collection-chunking-help",
-              "title": "Aufteilung von Vektorsammlungen",
-              "description": "Aufteilung ist der Vorgang, bei dem umfangreiche Dokumente oder Daten in kleinere, überschaubare und semantisch aussagekräftige Einheiten, sogenannte Aufteilungen, unterteilt werden",
+              "title": "Chunking von Vektorsammlungen",
+              "description": "Chunking ist der Vorgang, bei dem umfangreiche Dokumente oder Daten in kleinere, überschaubare und semantisch aussagekräftige Einheiten, sogenannte Chunks, unterteilt werden",
               "url": "OneTeradata/de/zyt1772561029668.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
-                  "title": "Aufteilungsmethode auswählen",
+                  "title": "Chunking-Methode auswählen",
                   "description": "Sie können für Ihre Vektorsammlung entweder „Basis“ oder „Unstrukturiert“ wählen.",
                   "url": "OneTeradata/de/ubq1772561037679.md"
                 }
@@ -243,14 +243,14 @@
                 },
                 {
                   "id": "vector-store-explanation-manage-collection-chunking-overview-help",
-                  "title": "Aufteilung verwalten",
-                  "description": "Wechseln Sie für die verwendete Aufteilungsmethode zwischen „Basis“ und „SherpaLLM“.",
+                  "title": "Chunking verwalten",
+                  "description": "Wechseln Sie für die verwendete Chunking-Methode zwischen „Basis“ und „SherpaLLM“.",
                   "url": "OneTeradata/de/vpo1772561058663.md",
                   "children": [
                     {
                       "id": "vector-store-procedure-manage-collection-edit-chunking-help",
-                      "title": "Aufteilung bearbeiten",
-                      "description": "Ändern Sie die bei der Erstellung der Vektorsammlung gewählte Aufteilungsmethode. Speichern Sie anschließend die Änderungen, um die Vektorsammlung zu aktualisieren.",
+                      "title": "Chunking bearbeiten",
+                      "description": "Ändern Sie die bei der Erstellung der Vektorsammlung gewählte Chunking-Methode. Speichern Sie anschließend die Änderungen, um die Vektorsammlung zu aktualisieren.",
                       "url": "OneTeradata/de/tlx1772561090346.md"
                     },
                     {
@@ -337,12 +337,12 @@
         },
         {
           "id": "rvr1780629988102",
-          "title": "Unstructured-Verbindung – weitere Informationen",
+          "title": "Verwenden von „Unstructured“",
           "url": "OneTeradata/de/rvr1780629988102.md",
           "children": [
             {
               "id": "yrq1780630301285",
-              "title": "Informationen zur neuen Unstructured-OEM-Integration",
+              "title": "Integration von „Unstructured“",
               "url": "OneTeradata/de/yrq1780630301285.md"
             }
           ]
@@ -361,7 +361,7 @@
         },
         {
           "id": "jgg1776663763228",
-          "title": "AgentOps-Dashboard",
+          "title": "Agenten anzeigen",
           "url": "OneTeradata/de/jgg1776663763228.md"
         },
         {
@@ -455,14 +455,14 @@
     },
     {
       "id": "modelops-explanation-ai-model-hub-overview-help",
-      "title": "KI-Modell-Hub",
+      "title": "AI Model Hub",
       "description": "Greifen Sie auf grundlegende Modelle für Ihre Organisation zu, verwalten und überwachen Sie sie.",
       "url": "OneTeradata/de/ugc1778495114925.md",
       "children": [
         {
           "id": "modelops-explanation-explore-models-help",
           "title": "Modelle erkunden",
-          "description": "Zeigen Sie im KI-Modell-Hub registrierte KI-Modelle an, durchsuchen und verwalten Sie sie.",
+          "description": "Zeigen Sie im AI Model Hub registrierte KI-Modelle an, durchsuchen und verwalten Sie sie.",
           "url": "OneTeradata/de/eoz1778496909062.md",
           "children": [
             {

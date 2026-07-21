@@ -135,13 +135,13 @@
             },
             {
               "id": "vector-store-explanation-create-collection-chunking-help",
-              "title": "Fragmentación de colección de vectores",
-              "description": "La fragmentación es el proceso de descomponer documentos o datos grandes en partes más pequeñas y administrables, que son significativas en términos semánticos, denominadas fragmentos.",
+              "title": "Segmentación de colección de vectores",
+              "description": "La segmentación es el proceso de descomponer documentos o datos grandes en partes más pequeñas y administrables, que son significativas en términos semánticos, denominadas segmentos.",
               "url": "OneTeradata/es/zyt1772561029668.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
-                  "title": "Seleccionar un método de fragmentación",
+                  "title": "Seleccionar un método de segmentación",
                   "description": "Puede elegir Básico o Unstructured para su colección de vectores.",
                   "url": "OneTeradata/es/ubq1772561037679.md"
                 }
@@ -243,14 +243,14 @@
                 },
                 {
                   "id": "vector-store-explanation-manage-collection-chunking-overview-help",
-                  "title": "Administrar fragmentaciones",
-                  "description": "Modifique el método de fragmentación usado entre Básico y SherpaLLM.",
+                  "title": "Administrar segmentaciones",
+                  "description": "Modifique el método de segmentación usado entre Básico y SherpaLLM.",
                   "url": "OneTeradata/es/vpo1772561058663.md",
                   "children": [
                     {
                       "id": "vector-store-procedure-manage-collection-edit-chunking-help",
-                      "title": "Editar fragmentación",
-                      "description": "Modifique el método de fragmentación que seleccionó al crear la colección de vectores. Cuando termine, guarde los cambios para actualizarla.",
+                      "title": "Editar segmentación",
+                      "description": "Modifique el método de segmentación que seleccionó al crear la colección de vectores. Cuando termine, guarde los cambios para actualizarla.",
                       "url": "OneTeradata/es/tlx1772561090346.md"
                     },
                     {
@@ -296,7 +296,7 @@
                 {
                   "id": "vector-store-procedure-manage-collection-add-data-learn-more-metadata-columns",
                   "title": "Agregar columnas de metadatos",
-                  "description": "Agregue columnas de metadatos para la colección de vectores según sus requisitos. Las incrustaciones cambiarán y podrá comprobar su desempeño en el playground.",
+                  "description": "Agregue columnas de metadatos para la colección de vectores según sus requisitos. Las incrustaciones cambiarán y podrá comprobar su desempeño en el área de pruebas.",
                   "url": "OneTeradata/es/emw1772561098428.md"
                 },
                 {
@@ -309,19 +309,19 @@
             },
             {
               "id": "vector-store-explanation-manage-collection-playground-help",
-              "title": "Playground de colección de vectores",
-              "description": "Use el playground para probar la precisión de su colección de vectores.",
+              "title": "Área de pruebas de colección de vectores",
+              "description": "Use el área de pruebas para probar la precisión de su colección de vectores.",
               "url": "OneTeradata/es/img1772561026669.md",
               "children": [
                 {
                   "id": "vector-store-procedure-manage-collection-playground-learn-more-using-playground",
-                  "title": "Usar un playground",
-                  "description": "El playground le permite probar su colección de vectores y evaluar la precisión de los resultados.",
+                  "title": "Usar una área de pruebas",
+                  "description": "El área de pruebas le permite probar su colección de vectores y evaluar la precisión de los resultados.",
                   "url": "OneTeradata/es/qgl1772561095714.md"
                 },
                 {
                   "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
-                  "title": "Administrar la configuración de búsqueda del playground",
+                  "title": "Administrar la configuración de búsqueda del área de pruebas",
                   "description": "Teradata admite estos algoritmos de búsqueda e indexación:",
                   "url": "OneTeradata/es/rec1772561136176.md"
                 }
@@ -337,12 +337,12 @@
         },
         {
           "id": "rvr1780629988102",
-          "title": "Más información del conector de Unstructured",
+          "title": "Uso de Unstructured",
           "url": "OneTeradata/es/rvr1780629988102.md",
           "children": [
             {
               "id": "yrq1780630301285",
-              "title": "Más información sobre la nueva integración OEM de Unstructured",
+              "title": "Integración de Unstructured",
               "url": "OneTeradata/es/yrq1780630301285.md"
             }
           ]
@@ -361,7 +361,7 @@
         },
         {
           "id": "jgg1776663763228",
-          "title": "Cuadro de mando de AgentOps",
+          "title": "Ver agentes",
           "url": "OneTeradata/es/jgg1776663763228.md"
         },
         {
@@ -416,7 +416,7 @@
         },
         {
           "id": "ued1776670194828",
-          "title": "Playground",
+          "title": "Área de pruebas",
           "url": "OneTeradata/es/ued1776670194828.md"
         },
         {
@@ -521,8 +521,8 @@
         },
         {
           "id": "modelops-procedure-configure-playground-help",
-          "title": "Configurar playground",
-          "description": "Configure un playground, pruebe solicitudes y compare el comportamiento de los modelos.",
+          "title": "Configurar área de pruebas",
+          "description": "Configure una área de pruebas, pruebe solicitudes y compare el comportamiento de los modelos.",
           "url": "OneTeradata/es/saq1778516078241.md",
           "children": [
             {
@@ -550,7 +550,7 @@
     },
     {
       "id": "mcp-server-explanation-overview-help",
-      "title": "Servidor Enterprise MCP",
+      "title": "Servidor MCP empresarial",
       "description": "Acceda a la información disponible en la página de inicio de Enterprise MCP para comenzar.",
       "url": "OneTeradata/es/ian1773256449953.md"
     }
