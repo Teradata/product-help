@@ -10,7 +10,7 @@
                     "id": "apps-unstructured",
                     "title": "Leverage more data types with Unstructured.",
                     "description": "Automate large-scale data transformation and ingestion to Vector store.",
-                    "description": "Unstructured is supported on AI Studio 1.3 and later.",
+                    "note": "Unstructured is supported on AI Studio 1.3 and later.",
                     "icon": "unstructured",
                     "url": "",
                     "childrenUrl": "/one-td/unstructured/app/start"
@@ -51,7 +51,7 @@
                     "id": "learn-unstructured",
                     "title": "Transform data with Unstructured",
                     "description": "Learn how to turn your unstructured documents into structured, AI-ready data at scale.",
-                    "description": "Unstructured is supported on AI Studio 1.3 and later.",
+                    "note": "Unstructured is supported on AI Studio 1.3 and later.",
                     "icon": "",
                     "url": "",
                     "childrenUrl": "https://docs.unstructured.io/welcome"
