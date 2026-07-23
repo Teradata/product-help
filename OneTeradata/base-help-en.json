@@ -423,6 +423,7 @@
     { 
        "id":"icl1777458080858", 
        "title":"AgentOps", 
+       "description":"Create, deploy, monitor, and manage agents.",
        "url":"OneTeradata/en/icl1777458080858.md", 
        "children":[
           { 
