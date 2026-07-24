@@ -243,14 +243,14 @@
                 },
                 {
                   "id": "vector-store-explanation-manage-collection-chunking-overview-help",
-                  "title": "チャンクを管理",
-                  "description": "BasicとSherpaLLMの間で使用されるチャンク方法を変更します。",
+                  "title": "チャンク化を管理",
+                  "description": "BasicとSherpaLLMの間で使用されるチャンク化の方法を変更します。",
                   "url": "OneTeradata/ja/vpo1772561058663.md",
                   "children": [
                     {
                       "id": "vector-store-procedure-manage-collection-edit-chunking-help",
-                      "title": "チャンクを編集",
-                      "description": "ベクトル コレクションの作成時に選択したチャンク方法を変更します。行った変更を保存して、ベクトル コレクションを更新します。",
+                      "title": "チャンク化を編集",
+                      "description": "ベクトル コレクションの作成時に選択したチャンク化の方法を変更します。行った変更を保存して、ベクトル コレクションを更新します。",
                       "url": "OneTeradata/ja/tlx1772561090346.md"
                     },
                     {
@@ -322,7 +322,7 @@
                 {
                   "id": "vector-store-procedure-manage-collection-playground-learn-more-search-settings",
                   "title": "プレイグラウンドの検索設定を管理",
-                  "description": "Teradataは以下のインデックス作成および検索アルゴリズムをサポートしています:",
+                  "description": "Teradataは、以下のインデックス作成および検索アルゴリズムをサポートしています。",
                   "url": "OneTeradata/ja/rec1772561136176.md"
                 }
               ]
@@ -337,12 +337,12 @@
         },
         {
           "id": "rvr1780629988102",
-          "title": "Unstructuredコネクタの詳細",
+          "title": "Unstructuredの使用",
           "url": "OneTeradata/ja/rvr1780629988102.md",
           "children": [
             {
               "id": "yrq1780630301285",
-              "title": "新しいUnstructured OEM統合を学ぶ",
+              "title": "Unstructuredの統合",
               "url": "OneTeradata/ja/yrq1780630301285.md"
             }
           ]
@@ -361,7 +361,7 @@
         },
         {
           "id": "jgg1776663763228",
-          "title": "AgentOpsダッシュボード",
+          "title": "エージェントの表示",
           "url": "OneTeradata/ja/jgg1776663763228.md"
         },
         {
