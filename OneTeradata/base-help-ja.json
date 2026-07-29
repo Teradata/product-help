@@ -352,6 +352,7 @@
     {
       "id": "icl1777458080858",
       "title": "AgentOps",
+      "description": "エージェントを作成、デプロイ、監視、および管理します。",
       "url": "OneTeradata/ja/icl1777458080858.md",
       "children": [
         {
