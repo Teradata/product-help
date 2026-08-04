@@ -440,19 +440,22 @@
           { 
              "id":"sco1776664350046", 
              "title":"Agent Registry", 
-             "url":"OneTeradata/en/sco1776664350046.md"
-             }
-          , 
-          { 
-             "id":"crw1776664567949", 
-             "title":"Import agent using GIT", 
-             "url":"OneTeradata/en/crw1776664567949.md"
-             }
-          , 
-          { 
-             "id":"pyr1776665595427", 
-             "title":"Import local agent files", 
-             "url":"OneTeradata/en/pyr1776665595427.md"
+             "url":"OneTeradata/en/sco1776664350046.md", 
+             "children":[
+                { 
+                   "id":"crw1776664567949", 
+                   "title":"Import agent using GIT", 
+                   "url":"OneTeradata/en/crw1776664567949.md"
+                   }
+                , 
+                { 
+                   "id":"pyr1776665595427", 
+                   "title":"Import local agent files", 
+                   "url":"OneTeradata/en/pyr1776665595427.md"
+                   }
+
+                ]
+
              }
           , 
           { 
@@ -531,6 +534,69 @@
              "id":"ltw1776672263683", 
              "title":"Observability is Disabled", 
              "url":"OneTeradata/en/ltw1776672263683.md"
+             }
+          , 
+          { 
+             "id":"cty1785742562254", 
+             "title":"Evaluate agents", 
+             "url":"OneTeradata/en/cty1785742562254.md", 
+             "children":[
+                { 
+                   "id":"ysi1785742716295", 
+                   "title":"Create experiments for evaluation", 
+                   "url":"OneTeradata/en/ysi1785742716295.md"
+                   }
+                , 
+                { 
+                   "id":"jff1785743909126", 
+                   "title":"View experiment results", 
+                   "url":"OneTeradata/en/jff1785743909126.md"
+                   }
+                , 
+                { 
+                   "id":"ndp1785744057348", 
+                   "title":"View experiment configuration", 
+                   "url":"OneTeradata/en/ndp1785744057348.md"
+                   }
+                , 
+                { 
+                   "id":"pyo1785744225326", 
+                   "title":"Dataset feedback", 
+                   "url":"OneTeradata/en/pyo1785744225326.md"
+                   }
+                , 
+                { 
+                   "id":"spx1785744324927", 
+                   "title":"Dataset feedback for Traces", 
+                   "url":"OneTeradata/en/spx1785744324927.md"
+                   }
+                , 
+                { 
+                   "id":"rse1785744427542", 
+                   "title":"Datasets for agent evaluation", 
+                   "url":"OneTeradata/en/rse1785744427542.md"
+                   }
+                , 
+                { 
+                   "id":"ejm1785744709921", 
+                   "title":"Add new datasets for evaluation", 
+                   "url":"OneTeradata/en/ejm1785744709921.md"
+                   }
+                , 
+                { 
+                   "id":"ocf1785744883291", 
+                   "title":"View dataset details", 
+                   "url":"OneTeradata/en/ocf1785744883291.md"
+                   }
+                , 
+                { 
+                   "id":"cvu1785745122971", 
+                   "title":"Evaluate lifecycle", 
+                   "url":"OneTeradata/en/cvu1785745122971.md"
+                   }
+
+                ]
+
              }
 
           ]
