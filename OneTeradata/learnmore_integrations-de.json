@@ -8,11 +8,11 @@
       "children": [
         {
           "id": "apps-unstructured",
-          "title": "Mit „Unstrukturiert“ weitere Datentypen nutzen",
-          "description": "Automatisieren Sie die Transformation und Erfassung großer Datenmengen für den Vektorspeicher.",
+          "title": "Nutzen Sie mit Unstructured weitere Datentypen.",
+          "description": "Automatisieren Sie die Transformation und Erfassung großer Datenmengen für den Vektorspeicher (AI Studio 1.3 und höher).",
           "icon": "unstructured",
           "url": "",
-          "childrenUrl": "https://unstructured.io"
+          "childrenUrl": "/one-td/unstructured/app/start"
         },
         {
           "id": "apps-gitea",
@@ -48,8 +48,8 @@
       "children": [
         {
           "id": "learn-unstructured",
-          "title": "Mit „Unstrukturiert“ Daten umwandeln",
-          "description": "Erfahren Sie, wie Sie Ihre unstrukturierten Dokumente in großem Umfang in strukturierte, KI-fähige Daten umwandeln können.",
+          "title": "Mit Unstructured Daten transformieren",
+          "description": "Erfahren Sie, wie Sie Ihre unstrukturierten Dokumente in großem Umfang in strukturierte, KI-fähige Daten umwandeln können (AI Studio 1.3 und höher).",
           "icon": "",
           "url": "",
           "childrenUrl": "https://docs.unstructured.io/welcome"

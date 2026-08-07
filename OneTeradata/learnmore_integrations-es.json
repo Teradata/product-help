@@ -8,11 +8,11 @@
       "children": [
         {
           "id": "apps-unstructured",
-          "title": "Aproveche más tipos de datos con Unstructured",
-          "description": "Automatice la ingesta y transformación de datos a gran escala en el almacén de vectores.",
+          "title": "Aproveche más tipos de datos con Unstructured.",
+          "description": "Automatice la ingesta y transformación de datos a gran escala en el almacén de vectores (AI Studio 1.3 y versiones posteriores).",
           "icon": "unstructured",
           "url": "",
-          "childrenUrl": "https://unstructured.io"
+          "childrenUrl": "/one-td/unstructured/app/start"
         },
         {
           "id": "apps-gitea",
@@ -49,7 +49,7 @@
         {
           "id": "learn-unstructured",
           "title": "Transforme los datos con Unstructured",
-          "description": "Aprenda cómo convertir sus documentos desestructurados en datos estructurados, listos para IA a escala.",
+          "description": "Aprenda cómo convertir sus documentos no estructurados en datos estructurados, listos para IA a escala (AI Studio 1.3 y versiones posteriores).",
           "icon": "",
           "url": "",
           "childrenUrl": "https://docs.unstructured.io/welcome"

@@ -142,7 +142,7 @@
                 {
                   "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
                   "title": "Sélectionner une méthode de segmentation",
-                  "description": "Vous pouvez choisir entre De base et Non structuré pour votre collection de vecteurs.",
+                  "description": "Vous pouvez choisir entre De base ou Unstructured pour votre collection de vecteurs.",
                   "url": "OneTeradata/fr/ubq1772561037679.md"
                 }
               ]

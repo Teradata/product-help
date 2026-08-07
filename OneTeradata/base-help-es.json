@@ -135,13 +135,13 @@
             },
             {
               "id": "vector-store-explanation-create-collection-chunking-help",
-              "title": "Segmentación de colección de vectores",
-              "description": "La segmentación es el proceso de descomponer documentos o datos grandes en partes más pequeñas y administrables, que son significativas en términos semánticos, denominadas segmentos.",
+              "title": "Fragmentación de colección de vectores",
+              "description": "La fragmentación es el proceso de descomponer documentos o datos grandes en partes más pequeñas y administrables, que son significativas en términos semánticos, denominadas fragmentos.",
               "url": "OneTeradata/es/zyt1772561029668.md",
               "children": [
                 {
                   "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
-                  "title": "Seleccionar un método de segmentación",
+                  "title": "Seleccionar un método de fragmentación",
                   "description": "Puede elegir Básico o Unstructured para su colección de vectores.",
                   "url": "OneTeradata/es/ubq1772561037679.md"
                 }
@@ -243,14 +243,14 @@
                 },
                 {
                   "id": "vector-store-explanation-manage-collection-chunking-overview-help",
-                  "title": "Administrar segmentaciones",
-                  "description": "Modifique el método de segmentación usado entre Básico y SherpaLLM.",
+                  "title": "Administrar fragmentaciones",
+                  "description": "Modifique el método de fragmentación usado entre Básico y SherpaLLM.",
                   "url": "OneTeradata/es/vpo1772561058663.md",
                   "children": [
                     {
                       "id": "vector-store-procedure-manage-collection-edit-chunking-help",
-                      "title": "Editar segmentación",
-                      "description": "Modifique el método de segmentación que seleccionó al crear la colección de vectores. Cuando termine, guarde los cambios para actualizarla.",
+                      "title": "Editar fragmentación",
+                      "description": "Modifique el método de fragmentación que seleccionó al crear la colección de vectores. Cuando termine, guarde los cambios para actualizarla.",
                       "url": "OneTeradata/es/tlx1772561090346.md"
                     },
                     {

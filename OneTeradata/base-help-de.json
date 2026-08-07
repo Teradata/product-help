@@ -142,7 +142,7 @@
                 {
                   "id": "vector-store-procedure-create-collection-chunking-learn-more-selecting-chunking",
                   "title": "Chunking-Methode auswählen",
-                  "description": "Sie können für Ihre Vektorsammlung entweder „Basis“ oder „Unstrukturiert“ wählen.",
+                  "description": "Sie können für Ihre Vektorsammlung entweder „Basis“ oder „Unstructured“ wählen.",
                   "url": "OneTeradata/de/ubq1772561037679.md"
                 }
               ]
