@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+    <prop action="include" att="audience"/>
+    <prop action="include" att="rev"/>
+    <prop action="include" att="platform"/>
+    <prop action="include" att="product"/>
+    <prop action="include" att="otherprops"/>
+    <prop action="exclude" att="audience" val="ie"/>
+    <prop action="exclude" att="product" val="tempfilter"/>
+</val>
