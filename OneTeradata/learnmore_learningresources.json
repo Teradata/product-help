@@ -82,7 +82,7 @@
 				},
                 {
                     "id": "vectorstore",
-                    "title": "Vector store",
+                    "title": "Vector Store",
                     "description": "",
                     "icon": "variable;covalent",
                     "url": "",
@@ -123,7 +123,7 @@
 				},
                 {
                     "id": "mcpserver",
-                    "title": "MCP server",
+                    "title": "MCP Server",
                     "description": "",
                     "icon": "build_circle",
                     "url": "",
