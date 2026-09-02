@@ -9,15 +9,15 @@
                 {
                     "id": "home-notebooks",
                     "title": "Notebooks",
-                    "description": "Explore your data, build AI/ML models, and share your work.",
+                    "description": "Explore data, build AI/ML models, and share your work.",
                     "icon": "book",
                     "url": "",
                     "childrenUrl": "notebooks"
                 },
                 {
                     "id": "home-vectorstore",
-                    "title": "Vector store",
-                    "description": "Convert data for semantic search integration and RAG applications.",
+                    "title": "Vector Store",
+                    "description": "Prepare data for semantic search and RAG applications.",
                     "icon": "variable_outlined;covalent",
                     "url": "",
                     "childrenUrl": "vector-store"
@@ -30,10 +30,26 @@
                     "url": "",
                     "childrenUrl": "modelops"
                 },
+				{
+                    "id": "home-agentops",
+                    "title": "AgentOps",
+                    "description": "Deploy, monitor, and manage agentic applications.",
+                    "icon": "product_agentOps_outlne_32;covalent",
+                    "url": "",
+                    "childrenUrl": "agentops"
+                },
+                {
+                    "id": "home-aimodelgateway",
+                    "title": "AI Model Gateway",
+                    "description": "Access and manage foundational models to drive AI solutions.",
+                    "icon": "product_aimodelhub_outline_32;covalent",
+                    "url": "",
+                    "childrenUrl": "ai-model-gateway"
+                },
 		{
                     "id": "home-mcp",
-                    "title": "MCP server",
-                    "description": "Get started configuring the MCP server tools.",
+                    "title": "MCP Server",
+                    "description": "Enable agents and apps to query Vantage securely through a single MCP server endpoint.",
                     "icon": "build_circle",
                     "url": "",
                     "childrenUrl": "mcp-server"
