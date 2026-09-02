@@ -34,7 +34,7 @@
                     "id": "home-agentops",
                     "title": "AgentOps",
                     "description": "Deploy, monitor, and manage agentic applications.",
-                    "icon": "product_agentOps_outlne_32;covalent",
+                    "icon": "product_agentOps;covalent",
                     "url": "",
                     "childrenUrl": "agentops"
                 },
@@ -42,7 +42,7 @@
                     "id": "home-aimodelgateway",
                     "title": "AI Model Gateway",
                     "description": "Access and manage foundational models to drive AI solutions.",
-                    "icon": "product_aimodelhub_outline_32;covalent",
+                    "icon": "product_aimodelhub;covalent",
                     "url": "",
                     "childrenUrl": "ai-model-gateway"
                 },
