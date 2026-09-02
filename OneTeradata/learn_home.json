@@ -49,7 +49,7 @@
 		{
                     "id": "home-mcp",
                     "title": "MCP Server",
-                    "description": "Enable agents and apps to query Vantage securely through a single MCP server endpoint.",
+                    "description": "Query Vantage securely through a single MCP server endpoint.",
                     "icon": "build_circle",
                     "url": "",
                     "childrenUrl": "mcp-server"
