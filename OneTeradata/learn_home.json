@@ -26,7 +26,7 @@
                     "id": "home-modelops",
                     "title": "ModelOps",
                     "description": "Deploy, monitor, and manage your AI/ML models.",
-                    "icon": "product_modelops;covalent",
+                    "icon": "product_modelops_outlined;covalent",
                     "url": "",
                     "childrenUrl": "modelops"
                 },
@@ -34,7 +34,7 @@
                     "id": "home-agentops",
                     "title": "AgentOps",
                     "description": "Deploy, monitor, and manage agentic applications.",
-                    "icon": "product_agentOps;covalent",
+                    "icon": "product_agentops_outlined;covalent",
                     "url": "",
                     "childrenUrl": "agentops"
                 },
