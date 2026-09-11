@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "ai-apps",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "sites-card",
+          "title": "管理站点",
+          "description": "查看和控制站点，以启动作业并保持其高效运行。",
+          "icon": "server_outlined"
+        },
+        {
+          "id": "govern-data-card",
+          "title": "将您的数据投入实际应用",
+          "description": "为 AI 应用、分析和业务洞察准备、管理和保护数据。",
+          "icon": "settings_backup_restore_outlined"
+        },
+        {
+          "id": "manage-users-card",
+          "title": "设置您的团队",
+          "description": "控制角色和权限，以确保数据用户的工作既聚焦又安全。",
+          "icon": "connected_identity_outlined"
+        },
+        {
+          "id": "enable-ai-card",
+          "title": "探索 AI Studio",
+          "description": "设置并使用 AI 工具包，以构建和使用代理以及更多 AI 应用程序。 ",
+          "icon": "model_training_outlined"
+        },
+        {
+          "id": "manage-compute-card",
+          "title": "控制计算资源",
+          "description": "设置并管理计算资源、节点池和 AI 令牌，以确保工作按计划推进并且不超出预算。",
+          "icon": "engine_outlined"
+        },
+        {
+          "id": "monitor-usage-card",
+          "title": "跟踪使用情况",
+          "description": "查看图表、表格及更多信息，以帮助您了解并优化计算资源的使用情况。",
+          "icon": "monitoring_outlined"
+        }
+      ]
+    }
+  ]
+}
