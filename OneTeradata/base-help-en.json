@@ -594,6 +594,12 @@
                    "title":"Evaluate lifecycle", 
                    "url":"OneTeradata/en/cvu1785745122971.md"
                    }
+                , 
+                { 
+                   "id":"ovs1785830036247", 
+                   "title":"Create experiments learn more", 
+                   "url":"OneTeradata/en/ovs1785830036247.md"
+                   }
 
                 ]
 
@@ -617,6 +623,89 @@
        "description":"Access, manage, and monitor foundation models for your organization.", 
        "url":"OneTeradata/en/ugc1778495114925.md", 
        "children":[
+          { 
+             "id":"ai-model-hub-explanation-dashboard-help", 
+             "title":"Dashboard", 
+             "description":"View a Dashboard of Available AI Models", 
+             "url":"OneTeradata/en/ift1790515062740.md"
+             }
+          , 
+          { 
+             "id":"ai-model-hub-explanation-model-registry-help", 
+             "title":"Model registry", 
+             "description":"Import supported models, review their current status, and open a model to deploy or manage it.", 
+             "url":"OneTeradata/en/trv1790523871233.md", 
+             "children":[
+                { 
+                   "id":"ai-model-hub-task-import-model-help", 
+                   "title":"Import model", 
+                   "description":"Import a supported model from Hugging Face or the configured local object store.", 
+                   "url":"OneTeradata/en/ecc1790524485875.md", 
+                   "children":[
+                      { 
+                         "id":"zup1790525165558", 
+                         "title":"Import from Hugging Face", 
+                         "description":"Import a model from Hugging Face.", 
+                         "url":"OneTeradata/en/zup1790525165558.md"
+                         }
+                      , 
+                      { 
+                         "id":"oqb1790527201218", 
+                         "title":"Import from Storage", 
+                         "description":"Import a model from local Object Storage.", 
+                         "url":"OneTeradata/en/oqb1790527201218.md"
+                         }
+
+                      ]
+
+                   }
+                , 
+                { 
+                   "id":"ai-model-hub-explanation-model-details-help", 
+                   "title":"View Model details", 
+                   "description":"Review the selected model, its source, import information, current status, and available actions.", 
+                   "url":"OneTeradata/en/kep1790527639787.md"
+                   }
+                , 
+                { 
+                   "id":"ai-model-hub-task-configure-resources-help", 
+                   "title":"Deploy model: Configure resources", 
+                   "description":"Configure the number of model replicas and the resources assigned to each replica.", 
+                   "url":"OneTeradata/en/axw1790528514307.md"
+                   }
+                , 
+                { 
+                   "id":"ai-model-hub-task-custom-arguments-help", 
+                   "title":"Deploy model: Custom arguments", 
+                   "description":"Pass key-value runtime settings to the model server.", 
+                   "url":"OneTeradata/en/sxt1790528830941.md"
+                   }
+                , 
+                { 
+                   "id":"ai-model-hub-task-publish-model-help", 
+                   "title":"Deploy model: Publish to AI model gateway", 
+                   "description":"Specify how the deployed model appears in AI Model Gateway.", 
+                   "url":"OneTeradata/en/rmr1790529104734.md"
+                   }
+                , 
+                { 
+                   "id":"ai-model-hub-explanation-model-summary-help", 
+                   "title":"Deploy model: Summary", 
+                   "description":"Review the complete configuration before deploying the model.", 
+                   "url":"OneTeradata/en/mid1790529307573.md"
+                   }
+                , 
+                { 
+                   "id":"ai-model-hub-explanation-deployed-model-details-help", 
+                   "title":"View deployed model details", 
+                   "description":"Review the deployed model and its AI Model Gateway publication status.", 
+                   "url":"OneTeradata/en/aai1790529626001.md"
+                   }
+
+                ]
+
+             }
+          , 
           { 
              "id":"modelops-explanation-explore-models-help", 
              "title":"Explore models", 
