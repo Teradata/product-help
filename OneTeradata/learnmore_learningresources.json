@@ -138,6 +138,31 @@
 						}
 					]
 				}
+				{
+                    "id": "opf-ray",
+                    "title": "Open Python Framework",
+                    "description": "",
+                    "icon": "report_outlined;covalent",
+                    "url": "",
+					"children": [
+						{
+							"id": "opf-create",
+							"title": "Create your first Ray cluster",
+							"description": "Find the right notebook and get started",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "https://docs.teradata.com/access?resourceid=create-first-ray-cluster"
+						}
+						{
+							"id": "opf-con-run",
+							"title": "Connect and run your first workload",
+							"description": "Learn how to get cluster status and endpoints.",
+							"icon": "",
+							"url": "",
+							"childrenUrl": "https://docs.teradata.com/access?resourceid=opf-ray-run-workload"
+						}
+					]
+				}
             ]
         }
     ]
