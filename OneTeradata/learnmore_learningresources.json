@@ -152,7 +152,7 @@
 							"icon": "",
 							"url": "",
 							"childrenUrl": "https://docs.teradata.com/access?resourceid=create-first-ray-cluster"
-						}
+						},
 						{
 							"id": "opf-con-run",
 							"title": "Connect and run your first workload",
