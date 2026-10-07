@@ -2,8 +2,8 @@
     "items": [
         {
             "id": "plg-usecases",
-            "title": "",
-            "description": "To get started, select a guided tour and see what’s possible in AI Studio.",
+            "title": "Explore Use Cases",
+            "description": "To get started, select a guided tour and see what’s possible in Tera.",
             "url": "",
             "children": [
                 {
@@ -16,13 +16,16 @@
                     "id": "unified-customer-360-usecase",
                     "title": "Unified Customer 360",
                     "description": "Combine customer data into a single, actionable profile using conversational AI.",
-                    "icon": "spatial_tracking"
+                    "icon": "spatial_tracking",
+					"pendoTourId": "pendo;x8jA8kYAIksGm5sMasday5WEtbc"
+					
                 },
                 {
                     "id": "agent-lifecycle-usecase",
-                    "title": "Agent Lifecycle",
+                    "title": "Agent Workflow",
                     "description": "Build, deploy, and track AI agent performance end-to-end.",
-                    "icon": "smart_toy"
+                    "icon": "smart_toy",
+					"pendoTourId": "rzSvp4DbjyIYG2bIYJcCy-3xyaE"
                 },
                 {
                     "id": "fraud-detection-usecase",
@@ -36,20 +39,39 @@
                     "description": "Explore customer segmentation, revenue risk, and support insights.",
                     "icon": "table_search;covalent"
                 },
-                {
-                    "id": "monitor-usage-card",
-                    "title": "Track usage",
-                    "description": "See charts, tables, and more information to help you understand and improve compute use.",
-                    "icon": "monitoring"
-                }
             ]
         },
 		{
-		    "id": "explore",
-            "title": "Explore on your own",
-            "description": "Go straight to AI Studio",
+		    "id": "additoinal_links",
+            "title": "",
+            "description": "",
             "url": "",
-			"childrenUrl": "./"
+            "children": [			
+			  {
+                    "id": "learning-feedback",
+                    "title": "Feedback",
+                    "description": "",
+                    "icon": "rate_review",
+                    "url": "",
+                    "childrenUrl": "pendo;pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
+                },
+                {
+                    "id": "learning-documentation",
+                    "title": "Documentation",
+                    "description": "",
+                    "icon": "docs",
+                    "url": "",
+                    "childrenUrl": "https://docs.teradata.com"
+                },
+                {
+                    "id": "learning-support",
+                    "title": "Support",
+                    "description": "",
+                    "icon": "support",
+                    "url": "",
+                    "childrenUrl": "https://support.teradata.com"
+                }
+			]
 		}	
     ]
 }
