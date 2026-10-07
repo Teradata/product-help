@@ -16,13 +16,16 @@
                     "id": "unified-customer-360-usecase",
                     "title": "Unified Customer 360",
                     "description": "Combine customer data into a single, actionable profile using conversational AI.",
-                    "icon": "spatial_tracking"
+                    "icon": "spatial_tracking",
+					"childrenUrl":"pendo;x8jA8kYAIksGm5sMasday5WEtbc"
+					
                 },
                 {
                     "id": "agent-lifecycle-usecase",
-                    "title": "Agent Lifecycle",
+                    "title": "Agent Workflow",
                     "description": "Build, deploy, and track AI agent performance end-to-end.",
-                    "icon": "smart_toy"
+                    "icon": "smart_toy",
+					"childrenUrl":"pendo;rzSvp4DbjyIYG2bIYJcCy-3xyaE"
                 },
                 {
                     "id": "fraud-detection-usecase",
