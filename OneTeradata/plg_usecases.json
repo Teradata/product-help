@@ -1,77 +1,76 @@
 {
-    "items": [
+  "items": [
+    {
+      "id": "plg-usecases",
+      "title": "Explore Use Cases",
+      "description": "To get started, select a guided tour and see what’s possible in Tera.",
+      "url": "",
+      "children": [
         {
-            "id": "plg-usecases",
-            "title": "Explore Use Cases",
-            "description": "To get started, select a guided tour and see what’s possible in Tera.",
-            "url": "",
-            "children": [
-                {
-                    "id": "banking-churn-usecase",
-                    "title": "Banking Churn Prediction",
-                    "description": "Predict banking churn and automate action in real time.",
-                    "icon": "ssid_chart"
-                },
-                {
-                    "id": "unified-customer-360-usecase",
-                    "title": "Unified Customer 360",
-                    "description": "Combine customer data into a single, actionable profile using conversational AI.",
-                    "icon": "spatial_tracking",
-					"pendoTourId": "pendo;x8jA8kYAIksGm5sMasday5WEtbc"
-					
-                },
-                {
-                    "id": "agent-lifecycle-usecase",
-                    "title": "Agent Workflow",
-                    "description": "Build, deploy, and track AI agent performance end-to-end.",
-                    "icon": "smart_toy",
-					"pendoTourId": "rzSvp4DbjyIYG2bIYJcCy-3xyaE"
-                },
-                {
-                    "id": "fraud-detection-usecase",
-                    "title": "Fraud Detection at Scale",
-                    "description": "Detect suspicious transactions with elastic compute.",
-                    "icon": "policy"
-                },
-                {
-                    "id": "customer-360-analytics-usecase",
-                    "title": "Customer 360 Analytics",
-                    "description": "Explore customer segmentation, revenue risk, and support insights.",
-                    "icon": "table_search;covalent"
-                },
-            ]
+          "id": "banking-churn-usecase",
+          "title": "Banking Churn Prediction",
+          "description": "Predict banking churn and automate action in real time.",
+          "icon": "ssid_chart"
         },
-		{
-		    "id": "additoinal_links",
-            "title": "",
-            "description": "",
-            "url": "",
-            "children": [			
-			  {
-                    "id": "learning-feedback",
-                    "title": "Feedback",
-                    "description": "",
-                    "icon": "rate_review",
-                    "url": "",
-                    "childrenUrl": "pendo;pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
-                },
-                {
-                    "id": "learning-documentation",
-                    "title": "Documentation",
-                    "description": "",
-                    "icon": "docs",
-                    "url": "",
-                    "childrenUrl": "https://docs.teradata.com"
-                },
-                {
-                    "id": "learning-support",
-                    "title": "Support",
-                    "description": "",
-                    "icon": "support",
-                    "url": "",
-                    "childrenUrl": "https://support.teradata.com"
-                }
-			]
-		}	
-    ]
-}
+        {
+          "id": "unified-customer-360-usecase",
+          "title": "Unified Customer 360",
+          "description": "Combine customer data into a single, actionable profile using conversational AI.",
+          "icon": "spatial_tracking",
+          "pendoTourId": "pendo;x8jA8kYAIksGm5sMasday5WEtbc"
+        },
+        {
+          "id": "agent-lifecycle-usecase",
+          "title": "Agent Workflow",
+          "description": "Build, deploy, and track AI agent performance end-to-end.",
+          "icon": "smart_toy",
+          "pendoTourId": "rzSvp4DbjyIYG2bIYJcCy-3xyaE"
+        },
+        {
+          "id": "fraud-detection-usecase",
+          "title": "Fraud Detection at Scale",
+          "description": "Detect suspicious transactions with elastic compute.",
+          "icon": "policy"
+        },
+        {
+          "id": "customer-360-analytics-usecase",
+          "title": "Customer 360 Analytics",
+          "description": "Explore customer segmentation, revenue risk, and support insights.",
+          "icon": "table_search;covalent"
+        }
+      ]
+    },
+    {
+      "id": "additoinal_links",
+      "title": "",
+      "description": "",
+      "url": "",
+      "children": [
+        {
+          "id": "learning-feedback",
+          "title": "Feedback",
+          "description": "",
+          "icon": "rate_review",
+          "url": "",
+          "childrenUrl": "pendo;pendo.showGuideById(AtbmOMq-cS_YXbFhurU-qTxA25o)"
+        },
+        {
+          "id": "learning-documentation",
+          "title": "Documentation",
+          "description": "",
+          "icon": "docs",
+          "url": "",
+          "childrenUrl": "https://docs.teradata.com"
+        },
+        {
+          "id": "learning-support",
+          "title": "Support",
+          "description": "",
+          "icon": "support",
+          "url": "",
+          "childrenUrl": "https://support.teradata.com"
+        }
+      ]
+    }
+  ]
+} 
