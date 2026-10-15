@@ -30,7 +30,7 @@
           "id": "fraud-detection-usecase",
           "title": "Fraud Detection at Scale",
           "description": "Detect suspicious transactions with elastic compute.",
-          "icon": "policy"
+          "icon": "policy",
 		  "pendoTourId": "tbd"
         }
       ]
