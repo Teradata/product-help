@@ -31,13 +31,8 @@
           "title": "Fraud Detection at Scale",
           "description": "Detect suspicious transactions with elastic compute.",
           "icon": "policy"
+		  "pendoTourId": "tbd"
         },
-        {
-          "id": "customer-360-analytics-usecase",
-          "title": "Customer 360 Analytics",
-          "description": "Explore customer segmentation, revenue risk, and support insights.",
-          "icon": "table_search;covalent"
-        }
       ]
     },
     {
