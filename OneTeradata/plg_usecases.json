@@ -2,33 +2,33 @@
   "items": [
     {
       "id": "plg-usecases",
-      "title": "Explore Use Cases",
+      "title": "Use Cases",
       "description": "To get started, select a guided tour and see what’s possible in Tera.",
       "url": "",
       "children": [
         {
           "id": "banking-churn-usecase",
-          "title": "Banking Churn Prediction",
+          "title": "Banking churn prediction",
           "description": "Predict banking churn and automate action in real time.",
           "icon": "ssid_chart"
         },
         {
           "id": "unified-customer-360-usecase",
-          "title": "Unified Customer 360",
+          "title": "Customer 360",
           "description": "Combine customer data into a single, actionable profile using conversational AI.",
           "icon": "spatial_tracking",
           "pendoTourId": "9tgbfn9wftIQkJcDIChhPE3mtLM"
         },
         {
           "id": "agent-lifecycle-usecase",
-          "title": "Agent Workflow",
+          "title": "Agent workflow",
           "description": "Build, deploy, and track AI agent performance end-to-end.",
           "icon": "smart_toy",
           "pendoTourId": "rzSvp4DbjyIYG2bIYJcCy-3xyaE"
         },
         {
           "id": "fraud-detection-usecase",
-          "title": "Fraud Detection at Scale",
+          "title": "Fraud detection at scale",
           "description": "Detect suspicious transactions with elastic compute.",
           "icon": "policy",
 		  "pendoTourId": "tbd"
