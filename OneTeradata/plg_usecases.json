@@ -32,7 +32,7 @@
           "description": "Detect suspicious transactions with elastic compute.",
           "icon": "policy"
 		  "pendoTourId": "tbd"
-        },
+        }
       ]
     },
     {
