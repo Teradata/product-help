@@ -104,7 +104,7 @@
     { 
        "id":"vector-store-explanation-overview-help-", 
        "title":"Vector store", 
-       "description":"Teradata Enterprise Vector collection is a specialized database designed to store and manage high-dimensional vectors, that is, numerical representations of data like text and images. Rather than rely on exact keyword matches, vector collections use a semantic search by storing data as vectors. The key use cases include:", 
+       "description":"Create and manage high-dimensional vectors collections and perform multiple types of searches.", 
        "url":"OneTeradata/en/ycv1772561149578.md", 
        "children":[
           { 
