@@ -780,7 +780,44 @@
        "id":"mcp-server-explanation-overview-help", 
        "title":"Enterprise MCP server", 
        "description":"Access information available on Enterprise MCP home page to get started.", 
-       "url":"OneTeradata/en/ian1773256449953.md"
+       "url":"OneTeradata/en/ian1773256449953.md", 
+       "children":[
+          { 
+             "id":"mcp-server-management-explanation-help", 
+             "title":"Server Management", 
+             "url":"OneTeradata/en/lmq1792734091990.md", 
+             "children":[
+                { 
+                   "id":"mcp-server-deploy-mcp-metadata-help", 
+                   "title":"Deploy MCP", 
+                   "url":"OneTeradata/en/sox1792734392034.md"
+                   }
+                , 
+                { 
+                   "id":"mcp-server-deploy-mcp-resources-help", 
+                   "title":"Resource Settings", 
+                   "description":"Resource Settings", 
+                   "url":"OneTeradata/en/pva1792747088840.md"
+                   }
+                , 
+                { 
+                   "id":"mcp-server-deploy-mcp-scaling-help", 
+                   "title":"Set Replica Limits", 
+                   "url":"OneTeradata/en/bef1792749351234.md"
+                   }
+                , 
+                { 
+                   "id":"mcp-server-deploy-mcp-summary-help", 
+                   "title":"Deployment Summary", 
+                   "url":"OneTeradata/en/oqg1792749497777.md"
+                   }
+
+                ]
+
+             }
+
+          ]
+
        }
 
     ]
