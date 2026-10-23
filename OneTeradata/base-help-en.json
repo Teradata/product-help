@@ -385,6 +385,7 @@
     { 
        "id":"icl1777458080858", 
        "title":"AgentOps", 
+       "description":"Create, deploy, test, and manage your agents.",
        "url":"OneTeradata/en/icl1777458080858.md", 
        "children":[
           { 
