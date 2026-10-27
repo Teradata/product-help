@@ -10,7 +10,8 @@
           "id": "banking-churn-usecase",
           "title": "Banking Churn Prediction",
           "description": "Predict banking churn and automate action in real time.",
-          "icon": "ssid_chart"
+          "icon": "ssid_chart",
+		  "pendoTourId": "AobyO4vkqzOCQry1SZvX3hz0Xvs"
         },
         {
           "id": "unified-customer-360-usecase",
