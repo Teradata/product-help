@@ -24,44 +24,6 @@
        }
     , 
     { 
-       "id":"one-teradata-explanation-ask-ai-help", 
-       "title":"Tera", 
-       "description":"AI assistant for easier, smarter data management.", 
-       "url":"OneTeradata/en/mxn1772561125368.md", 
-       "children":[
-          { 
-             "id":"before-using-terry", 
-             "title":"Before you use Tera", 
-             "description":"What you must know before using Tera.", 
-             "url":"OneTeradata/en/abs1772561144227.md"
-             }
-          , 
-          { 
-             "id":"get-started-with-terry", 
-             "title":"Get started with Tera", 
-             "description":"Learn how to fine tune your prompts for better output from Tera.", 
-             "url":"OneTeradata/en/qxm1772561115166.md"
-             }
-          , 
-          { 
-             "id":"structure-your-conversation", 
-             "title":"Structure your conversation", 
-             "description":"Structure your conversation, start a new chat, and export charts and tables.", 
-             "url":"OneTeradata/en/gxa1772561021277.md"
-             }
-          , 
-          { 
-             "id":"conversation-flow-structure", 
-             "title":"Start a conversation with Tera", 
-             "description":"Start a conversation with Tera.", 
-             "url":"OneTeradata/en/wmh1772561109792.md"
-             }
-
-          ]
-
-       }
-    , 
-    { 
        "id":"notebooks-explanation-overview-help", 
        "title":"Notebooks", 
        "description":"Explore data, build AI/ML models, and share work.", 
@@ -142,7 +104,7 @@
     { 
        "id":"vector-store-explanation-overview-help-", 
        "title":"Vector store", 
-       "description":"Teradata Enterprise Vector collection is a specialized database designed to store and manage high-dimensional vectors, that is, numerical representations of data like text and images. Rather than rely on exact keyword matches, vector collections use a semantic search by storing data as vectors. The key use cases include:", 
+       "description":"Create and manage high-dimensional vectors collections and perform multiple types of searches.", 
        "url":"OneTeradata/en/ycv1772561149578.md", 
        "children":[
           { 
@@ -423,6 +385,7 @@
     { 
        "id":"icl1777458080858", 
        "title":"AgentOps", 
+       "description":"Create, deploy, test, and manage your agents.",
        "url":"OneTeradata/en/icl1777458080858.md", 
        "children":[
           { 
