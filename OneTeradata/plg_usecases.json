@@ -26,13 +26,6 @@
           "description": "Build, deploy, and track AI agent performance end-to-end.",
           "icon": "smart_toy",
           "pendoTourId": "rzSvp4DbjyIYG2bIYJcCy-3xyaE"
-        },
-        {
-          "id": "fraud-detection-usecase",
-          "title": "Fraud detection at scale",
-          "description": "Detect suspicious transactions with Elastic Compute.",
-          "icon": "policy",
-		  "pendoTourId": "tbd"
         }
       ]
     },
