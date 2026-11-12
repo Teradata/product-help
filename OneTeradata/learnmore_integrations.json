@@ -30,6 +30,14 @@
                     "url": "",
                     "childrenUrl": "/one-td/airflow/login/PingIDP"
                 },
+               {
+                    "id": "apps-karini",
+                    "title": "Build Agents with Karini",
+                    "description": "Use Karini's visual workflow editor to connect LLMs, tools, and data sources by dragging blocks onto a canvas.",
+                    "icon": "karini",
+                    "url": "",
+                    "childrenUrl": "/one-td/karini/recipe"
+                },
                 {
                     "id": "apps-devpi",
                     "title": "Manage Python packages with devpi",
@@ -77,6 +85,14 @@
                     "icon": "",
                     "url": "",
                     "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+                },
+                {
+                    "id": "learn-karini",
+                    "title": "Build Agents with Karini",
+                    "description": "Use Karini's visual workflow editor to connect LLMs, tools, and data sources by dragging blocks onto a canvas.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.karini.ai/"
                 },
                 {
                     "id": "learn-devpi",
