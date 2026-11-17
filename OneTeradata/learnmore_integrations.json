@@ -9,7 +9,7 @@
                 {
                     "id": "apps-unstructured",
                     "title": "Leverage more data types with Unstructured.",
-                    "description": "Automate large-scale data transformation and ingestion to Vector store (AI Studio 1.3 and later).",
+                    "description": "Automate large-scale data transformation and ingestion to Vector store.",
                     "icon": "unstructured",
                     "url": "",
                     "childrenUrl": "/one-td/unstructured/app/start"
@@ -30,6 +30,14 @@
                     "url": "",
                     "childrenUrl": "/one-td/airflow/login/PingIDP"
                 },
+               {
+                    "id": "apps-karini",
+                    "title": "Build Agents with Karini",
+                    "description": "Use Karini's visual workflow editor to connect LLMs, tools, and data sources by dragging blocks onto a canvas.",
+                    "icon": "karini",
+                    "url": "",
+                    "childrenUrl": "/one-td/karini/recipe"
+                },
                 {
                     "id": "apps-devpi",
                     "title": "Manage Python packages with devpi",
@@ -49,7 +57,7 @@
                  {
                     "id": "learn-unstructured",
                     "title": "Transform data with Unstructured",
-                    "description": "Learn how to turn your unstructured documents into structured, AI-ready data at scale (AI Studio 1.3 and later).",
+                    "description": "Learn how to turn your unstructured documents into structured, AI-ready data at scale.",
                     "icon": "",
                     "url": "",
                     "childrenUrl": "https://docs.unstructured.io/welcome"
@@ -77,6 +85,14 @@
                     "icon": "",
                     "url": "",
                     "childrenUrl": "https://developers.teradata.com/quickstarts/analyze-data/execute-airflow-workflows-with-clearscape-analytics-modelops-model-factory-solution/"
+                },
+                {
+                    "id": "learn-karini",
+                    "title": "Build Agents with Karini",
+                    "description": "Use Karini's visual workflow editor to connect LLMs, tools, and data sources by dragging blocks onto a canvas.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.karini.ai/"
                 },
                 {
                     "id": "learn-devpi",
