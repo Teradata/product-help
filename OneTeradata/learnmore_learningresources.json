@@ -137,7 +137,7 @@
 							"childrenUrl": "notebooks;Getting-Started/teradata-mcp-rest-workflow.ipynb"
 						}
 					]
-				}
+				},
 				{
                     "id": "opf-ray",
                     "title": "Open Python Framework",
