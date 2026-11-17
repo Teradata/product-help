@@ -31,6 +31,14 @@
                     "childrenUrl": "/one-td/airflow/login/PingIDP"
                 },
                 {
+                    "id": "apps-karini",
+                    "title": "Build Agents with Karini",
+                    "description": "Use Karini's visual workflow editor to connect LLMs, tools, and data sources by dragging blocks onto a canvas.",
+                    "icon": "karini",
+                    "url": "",
+                    "childrenUrl": "/one-td/karini/recipe"
+                },
+                {
                     "id": "apps-devpi",
                     "title": "Manage Python packages with devpi",
                     "description": "Use devpi to manage your private Python packages from PyPI.",
@@ -69,6 +77,14 @@
                     "icon": "",
                     "url": "",
                     "childrenUrl": "https://airflow.apache.org/docs/apache-airflow/stable/index.html"
+                },
+                {
+                    "id": "learn-karini",
+                    "title": "Build Agents with Karini",
+                    "description": "Use Karini's visual workflow editor to connect LLMs, tools, and data sources by dragging blocks onto a canvas.",
+                    "icon": "",
+                    "url": "",
+                    "childrenUrl": "https://docs.karini.ai/"
                 },
                 {
                     "id": "learn-runairflow",

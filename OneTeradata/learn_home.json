@@ -31,14 +31,6 @@
                     "childrenUrl": "modelops"
                 },
 				{
-                    "id": "home-agentops",
-                    "title": "AgentOps",
-                    "description": "Deploy, monitor, and manage agentic applications.",
-                    "icon": "product_agentops_outlined;covalent",
-                    "url": "",
-                    "childrenUrl": "agentops"
-                },
-                {
                     "id": "home-aimodelgateway",
                     "title": "AI Model Gateway",
                     "description": "Access and manage foundational models to drive AI solutions.",
