@@ -21,38 +21,6 @@
       ]
     },
     {
-      "id": "one-teradata-explanation-ask-ai-help",
-      "title": "Tera",
-      "description": "Asistente de IA para una administración de datos más sencilla e inteligente.",
-      "url": "OneTeradata/es/mxn1772561125368.md",
-      "children": [
-        {
-          "id": "before-using-terry",
-          "title": "Antes de usar Tera",
-          "description": "Lo que debe saber antes de usar Tera.",
-          "url": "OneTeradata/es/abs1772561144227.md"
-        },
-        {
-          "id": "get-started-with-terry",
-          "title": "Primeros pasos con Tera",
-          "description": "Aprenda a afinar sus solicitudes para obtener mejores resultados con Tera.",
-          "url": "OneTeradata/es/qxm1772561115166.md"
-        },
-        {
-          "id": "structure-your-conversation",
-          "title": "Estructure su conversación",
-          "description": "Estructure su conversación, inicie un nuevo chat y exporte gráficos y tablas.",
-          "url": "OneTeradata/es/gxa1772561021277.md"
-        },
-        {
-          "id": "conversation-flow-structure",
-          "title": "Inicie una conversación con Tera",
-          "description": "Inicie una conversación con Tera.",
-          "url": "OneTeradata/es/wmh1772561109792.md"
-        }
-      ]
-    },
-    {
       "id": "notebooks-explanation-overview-help",
       "title": "Notebooks",
       "description": "Explore los datos, desarrolle modelos de ML/IA y comparta el trabajo.",
@@ -119,7 +87,7 @@
     {
       "id": "vector-store-explanation-overview-help-",
       "title": "Almacén de vectores",
-      "description": "El almacén de vectores de Teradata Enterprise es una base de datos especializada diseñada para almacenar y gestionar vectores de alta dimensionalidad, es decir, representaciones numéricas de datos como texto e imágenes. En vez de basarse en coincidencias exactas de palabras clave, las colecciones de vectores realizan búsquedas semánticas mediante el almacenamiento de datos como vectores. Los casos de uso clave incluyen:",
+      "description": "Cree y gestione colecciones de vectores de alta dimensión y realice múltiples tipos de búsquedas.",
       "url": "OneTeradata/es/ycv1772561149578.md",
       "children": [
         {
@@ -352,7 +320,7 @@
     {
       "id": "icl1777458080858",
       "title": "AgentOps",
-      "description": "Cree, despliegue, supervise y gestione agentes.",
+      "description": "Cree, despliegue, pruebe y gestione sus agentes.",
       "url": "OneTeradata/es/icl1777458080858.md",
       "children": [
         {
@@ -368,17 +336,19 @@
         {
           "id": "sco1776664350046",
           "title": "Registro de agente",
-          "url": "OneTeradata/es/sco1776664350046.md"
-        },
-        {
-          "id": "crw1776664567949",
-          "title": "Importar agente mediante GIT",
-          "url": "OneTeradata/es/crw1776664567949.md"
-        },
-        {
-          "id": "pyr1776665595427",
-          "title": "Importar archivos locales de agente",
-          "url": "OneTeradata/es/pyr1776665595427.md"
+          "url": "OneTeradata/es/sco1776664350046.md",
+          "children": [
+            {
+              "id": "crw1776664567949",
+              "title": "Importar agente mediante GIT",
+              "url": "OneTeradata/es/crw1776664567949.md"
+            },
+            {
+              "id": "pyr1776665595427",
+              "title": "Importar archivos locales de agente",
+              "url": "OneTeradata/es/pyr1776665595427.md"
+            }
+          ]
         },
         {
           "id": "jdi1779772504174",
@@ -444,6 +414,63 @@
           "id": "ltw1776672263683",
           "title": "La observabilidad está deshabilitada",
           "url": "OneTeradata/es/ltw1776672263683.md"
+        },
+        {
+          "id": "cty1785742562254",
+          "title": "Evaluar agentes",
+          "url": "OneTeradata/es/cty1785742562254.md",
+          "children": [
+            {
+              "id": "ysi1785742716295",
+              "title": "Crear experimentos para evaluación",
+              "url": "OneTeradata/es/ysi1785742716295.md"
+            },
+            {
+              "id": "jff1785743909126",
+              "title": "Ver resultados del experimento",
+              "url": "OneTeradata/es/jff1785743909126.md"
+            },
+            {
+              "id": "ndp1785744057348",
+              "title": "Ver configuración del experimento",
+              "url": "OneTeradata/es/ndp1785744057348.md"
+            },
+            {
+              "id": "pyo1785744225326",
+              "title": "Comentarios sobre el conjunto de datos",
+              "url": "OneTeradata/es/pyo1785744225326.md"
+            },
+            {
+              "id": "spx1785744324927",
+              "title": "Comentarios sobre el conjunto de datos para Rastreos",
+              "url": "OneTeradata/es/spx1785744324927.md"
+            },
+            {
+              "id": "rse1785744427542",
+              "title": "Conjuntos de datos para la evaluación de agentes",
+              "url": "OneTeradata/es/rse1785744427542.md"
+            },
+            {
+              "id": "ejm1785744709921",
+              "title": "Agregar nuevos conjuntos de datos para evaluación",
+              "url": "OneTeradata/es/ejm1785744709921.md"
+            },
+            {
+              "id": "ocf1785744883291",
+              "title": "Ver detalles del conjunto de datos",
+              "url": "OneTeradata/es/ocf1785744883291.md"
+            },
+            {
+              "id": "cvu1785745122971",
+              "title": "Ciclo de vida de la evaluación",
+              "url": "OneTeradata/es/cvu1785745122971.md"
+            },
+            {
+              "id": "ovs1785830036247",
+              "title": "Crear experimentos - Más información",
+              "url": "OneTeradata/es/ovs1785830036247.md"
+            }
+          ]
         }
       ]
     },
@@ -460,6 +487,76 @@
       "description": "Acceda, administre y supervise modelos fundacionales para su organización.",
       "url": "OneTeradata/es/ugc1778495114925.md",
       "children": [
+        {
+          "id": "ai-model-hub-explanation-dashboard-help",
+          "title": "Cuadro de mando",
+          "description": "Consultar cuadro de mando de los modelos de IA disponibles",
+          "url": "OneTeradata/es/ift1790515062740.md"
+        },
+        {
+          "id": "ai-model-hub-explanation-model-registry-help",
+          "title": "Registro de modelo",
+          "description": "Importe los modelos admitidos, revise su estatus actual y abra un modelo para desplegarlo o gestionarlo.",
+          "url": "OneTeradata/es/trv1790523871233.md",
+          "children": [
+            {
+              "id": "ai-model-hub-task-import-model-help",
+              "title": "Importar modelo",
+              "description": "Importe un modelo compatible desde Hugging Face o desde el almacén de objetos local configurado.",
+              "url": "OneTeradata/es/ecc1790524485875.md",
+              "children": [
+                {
+                  "id": "zup1790525165558",
+                  "title": "Importar desde Hugging Face",
+                  "description": "Importe un modelo desde Hugging Face.",
+                  "url": "OneTeradata/es/zup1790525165558.md"
+                },
+                {
+                  "id": "oqb1790527201218",
+                  "title": "Importar desde almacenamiento",
+                  "description": "Importe un modelo desde el almacenamiento de objetos local.",
+                  "url": "OneTeradata/es/oqb1790527201218.md"
+                }
+              ]
+            },
+            {
+              "id": "ai-model-hub-explanation-model-details-help",
+              "title": "Ver detalles del modelo",
+              "description": "Revise el modelo seleccionado, su fuente, la información de importación, el estatus actual y las acciones disponibles.",
+              "url": "OneTeradata/es/kep1790527639787.md"
+            },
+            {
+              "id": "ai-model-hub-task-configure-resources-help",
+              "title": "Desplegar modelo: Configurar recursos",
+              "description": "Configure el número de réplicas del modelo y los recursos asignados a cada réplica.",
+              "url": "OneTeradata/es/axw1790528514307.md"
+            },
+            {
+              "id": "ai-model-hub-task-custom-arguments-help",
+              "title": "Desplegar modelo: Argumentos personalizados",
+              "description": "Pase la configuración de tiempo de ejecución de clave-valor al servidor del modelo.",
+              "url": "OneTeradata/es/sxt1790528830941.md"
+            },
+            {
+              "id": "ai-model-hub-task-publish-model-help",
+              "title": "Desplegar modelo: Publicar en la puerta de enlace de modelos de IA",
+              "description": "Especifique cómo aparece el modelo desplegado en AI Model Gateway.",
+              "url": "OneTeradata/es/rmr1790529104734.md"
+            },
+            {
+              "id": "ai-model-hub-explanation-model-summary-help",
+              "title": "Desplegar modelo: Resumen",
+              "description": "Revise la configuración completa antes de desplegar el modelo.",
+              "url": "OneTeradata/es/mid1790529307573.md"
+            },
+            {
+              "id": "ai-model-hub-explanation-deployed-model-details-help",
+              "title": "Ver detalles del modelo desplegado",
+              "description": "Revise el modelo desplegado y su estatus de publicación en AI Model Gateway.",
+              "url": "OneTeradata/es/aai1790529626001.md"
+            }
+          ]
+        },
         {
           "id": "modelops-explanation-explore-models-help",
           "title": "Explorar modelos",

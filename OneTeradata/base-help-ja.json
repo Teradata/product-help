@@ -21,38 +21,6 @@
       ]
     },
     {
-      "id": "one-teradata-explanation-ask-ai-help",
-      "title": "Tera",
-      "description": "データ管理をより簡単かつスマートにするAIアシスタントです。",
-      "url": "OneTeradata/ja/mxn1772561125368.md",
-      "children": [
-        {
-          "id": "before-using-terry",
-          "title": "Teraを使用する前に",
-          "description": "Teraを使用する前に知っておくべきことです。",
-          "url": "OneTeradata/ja/abs1772561144227.md"
-        },
-        {
-          "id": "get-started-with-terry",
-          "title": "Teraの利用を開始",
-          "description": "Teraからより良い結果を得るために、プロンプトを調整する方法を学びます。",
-          "url": "OneTeradata/ja/qxm1772561115166.md"
-        },
-        {
-          "id": "structure-your-conversation",
-          "title": "会話を整理",
-          "description": "会話の整理、新しいチャットの開始、グラフや表のエクスポートを行います。",
-          "url": "OneTeradata/ja/gxa1772561021277.md"
-        },
-        {
-          "id": "conversation-flow-structure",
-          "title": "Teraとの会話を開始",
-          "description": "Teraと会話を開始します。",
-          "url": "OneTeradata/ja/wmh1772561109792.md"
-        }
-      ]
-    },
-    {
       "id": "notebooks-explanation-overview-help",
       "title": "Notebook",
       "description": "データを活用してAI/MLモデルを構築し、成果を共有します。",
@@ -119,7 +87,7 @@
     {
       "id": "vector-store-explanation-overview-help-",
       "title": "ベクトルストア",
-      "description": "Teradata Enterpriseベクトル コレクションは、テキストや画像などのデータの数値表現である高次元ベクトルを保存・管理するために設計された専用データベースです。ベクトル コレクションは、キーワードの完全一致に依存するのではなく、データをベクトルとして保存することでセマンティック検索を実現します。主なユース ケース:",
+      "description": "高次元ベクトル コレクションを作成および管理し、複数の種類の検索を実行します。",
       "url": "OneTeradata/ja/ycv1772561149578.md",
       "children": [
         {
@@ -266,7 +234,7 @@
             {
               "id": "vector-store-procedure-manage-collection-change-embedding-help",
               "title": "ベクトル埋め込みを変更",
-              "description": "使用する埋め込みモデルを選択してください。利用可能なモデルは以下のとおりです:",
+              "description": "使用する埋め込みモデルを選択してください。利用可能なモデルは以下のとおりです。",
               "url": "OneTeradata/ja/cia1772561077401.md"
             },
             {
@@ -352,7 +320,7 @@
     {
       "id": "icl1777458080858",
       "title": "AgentOps",
-      "description": "エージェントを作成、デプロイ、監視、および管理します。",
+      "description": "エージェントを作成、デプロイ、テスト、および管理します。",
       "url": "OneTeradata/ja/icl1777458080858.md",
       "children": [
         {
@@ -368,17 +336,19 @@
         {
           "id": "sco1776664350046",
           "title": "エージェント レジストリ",
-          "url": "OneTeradata/ja/sco1776664350046.md"
-        },
-        {
-          "id": "crw1776664567949",
-          "title": "GITからエージェントをインポート",
-          "url": "OneTeradata/ja/crw1776664567949.md"
-        },
-        {
-          "id": "pyr1776665595427",
-          "title": "ローカル エージェント ファイルをインポート",
-          "url": "OneTeradata/ja/pyr1776665595427.md"
+          "url": "OneTeradata/ja/sco1776664350046.md",
+          "children": [
+            {
+              "id": "crw1776664567949",
+              "title": "GITからエージェントをインポート",
+              "url": "OneTeradata/ja/crw1776664567949.md"
+            },
+            {
+              "id": "pyr1776665595427",
+              "title": "ローカル エージェント ファイルをインポート",
+              "url": "OneTeradata/ja/pyr1776665595427.md"
+            }
+          ]
         },
         {
           "id": "jdi1779772504174",
@@ -442,8 +412,65 @@
         },
         {
           "id": "ltw1776672263683",
-          "title": "可観測性は無効です",
+          "title": "可観測性が無効になっています",
           "url": "OneTeradata/ja/ltw1776672263683.md"
+        },
+        {
+          "id": "cty1785742562254",
+          "title": "エージェント評価",
+          "url": "OneTeradata/ja/cty1785742562254.md",
+          "children": [
+            {
+              "id": "ysi1785742716295",
+              "title": "評価用の実験を作成する",
+              "url": "OneTeradata/ja/ysi1785742716295.md"
+            },
+            {
+              "id": "jff1785743909126",
+              "title": "実験の結果を表示する",
+              "url": "OneTeradata/ja/jff1785743909126.md"
+            },
+            {
+              "id": "ndp1785744057348",
+              "title": "実験の構成を表示する",
+              "url": "OneTeradata/ja/ndp1785744057348.md"
+            },
+            {
+              "id": "pyo1785744225326",
+              "title": "データセットへのフィードバック",
+              "url": "OneTeradata/ja/pyo1785744225326.md"
+            },
+            {
+              "id": "spx1785744324927",
+              "title": "トレースに対するデータセットのフィードバック",
+              "url": "OneTeradata/ja/spx1785744324927.md"
+            },
+            {
+              "id": "rse1785744427542",
+              "title": "エージェント評価用データセット",
+              "url": "OneTeradata/ja/rse1785744427542.md"
+            },
+            {
+              "id": "ejm1785744709921",
+              "title": "評価用の新しいデータセットを追加する",
+              "url": "OneTeradata/ja/ejm1785744709921.md"
+            },
+            {
+              "id": "ocf1785744883291",
+              "title": "データセットの詳細を表示する",
+              "url": "OneTeradata/ja/ocf1785744883291.md"
+            },
+            {
+              "id": "cvu1785745122971",
+              "title": "ライフサイクルを評価する",
+              "url": "OneTeradata/ja/cvu1785745122971.md"
+            },
+            {
+              "id": "ovs1785830036247",
+              "title": "実験の作成についての詳細",
+              "url": "OneTeradata/ja/ovs1785830036247.md"
+            }
+          ]
         }
       ]
     },
@@ -461,8 +488,78 @@
       "url": "OneTeradata/ja/ugc1778495114925.md",
       "children": [
         {
+          "id": "ai-model-hub-explanation-dashboard-help",
+          "title": "ダッシュボード",
+          "description": "利用可能なAIモデルのダッシュボードを表示する",
+          "url": "OneTeradata/ja/ift1790515062740.md"
+        },
+        {
+          "id": "ai-model-hub-explanation-model-registry-help",
+          "title": "モデル レジストリ",
+          "description": "サポートされているモデルをインポートし、現在のステータスを確認してから、モデルを開いてデプロイまたは管理します。",
+          "url": "OneTeradata/ja/trv1790523871233.md",
+          "children": [
+            {
+              "id": "ai-model-hub-task-import-model-help",
+              "title": "モデルをインポート",
+              "description": "Hugging Faceまたは設定済みのローカル オブジェクト ストアから、サポートされているモデルをインポートします。",
+              "url": "OneTeradata/ja/ecc1790524485875.md",
+              "children": [
+                {
+                  "id": "zup1790525165558",
+                  "title": "Hugging Faceからインポート",
+                  "description": "Hugging Faceからモデルをインポートします。",
+                  "url": "OneTeradata/ja/zup1790525165558.md"
+                },
+                {
+                  "id": "oqb1790527201218",
+                  "title": "ストレージからインポート",
+                  "description": "ローカル オブジェクト ストレージからモデルをインポートします。",
+                  "url": "OneTeradata/ja/oqb1790527201218.md"
+                }
+              ]
+            },
+            {
+              "id": "ai-model-hub-explanation-model-details-help",
+              "title": "モデルの詳細を表示する",
+              "description": "選択したモデル、取得元、インポート情報、現在のステータス、利用可能なアクションを確認します。",
+              "url": "OneTeradata/ja/kep1790527639787.md"
+            },
+            {
+              "id": "ai-model-hub-task-configure-resources-help",
+              "title": "モデルのデプロイ: リソースを構成",
+              "description": "モデルのレプリカ数と、各レプリカに割り当てるリソースを設定します。",
+              "url": "OneTeradata/ja/axw1790528514307.md"
+            },
+            {
+              "id": "ai-model-hub-task-custom-arguments-help",
+              "title": "モデルのデプロイ: カスタム引数",
+              "description": "ランタイム設定をキーと値のペア形式でモデル サーバーに渡します。",
+              "url": "OneTeradata/ja/sxt1790528830941.md"
+            },
+            {
+              "id": "ai-model-hub-task-publish-model-help",
+              "title": "モデルのデプロイ: AIモデル ゲートウェイに公開",
+              "description": "デプロイされたモデルをAIモデル ゲートウェイでどのように表示するかを指定します。",
+              "url": "OneTeradata/ja/rmr1790529104734.md"
+            },
+            {
+              "id": "ai-model-hub-explanation-model-summary-help",
+              "title": "モデルのデプロイ: サマリー",
+              "description": "モデルをデプロイする前に、構成内容を確認します。",
+              "url": "OneTeradata/ja/mid1790529307573.md"
+            },
+            {
+              "id": "ai-model-hub-explanation-deployed-model-details-help",
+              "title": "デプロイされたモデルの詳細を表示する",
+              "description": "デプロイされたモデルと、AIモデル ゲートウェイでの公開状況を確認してください。",
+              "url": "OneTeradata/ja/aai1790529626001.md"
+            }
+          ]
+        },
+        {
           "id": "modelops-explanation-explore-models-help",
-          "title": "モデルを探索",
+          "title": "モデルを参照する",
           "description": "AIモデル ハブに登録されているAIモデルの表示、検索、管理を行います。",
           "url": "OneTeradata/ja/eoz1778496909062.md",
           "children": [

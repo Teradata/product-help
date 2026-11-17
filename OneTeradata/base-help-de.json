@@ -21,38 +21,6 @@
       ]
     },
     {
-      "id": "one-teradata-explanation-ask-ai-help",
-      "title": "Tera",
-      "description": "KI-Assistent für eine einfachere und intelligentere Datenverwaltung.",
-      "url": "OneTeradata/de/mxn1772561125368.md",
-      "children": [
-        {
-          "id": "before-using-terry",
-          "title": "Bevor Sie Tera verwenden",
-          "description": "Was Sie wissen müssen, bevor Sie Tera verwenden.",
-          "url": "OneTeradata/de/abs1772561144227.md"
-        },
-        {
-          "id": "get-started-with-terry",
-          "title": "Erste Schritte mit Tera",
-          "description": "Erfahren Sie, wie Sie Ihre Prompts optimieren, um eine bessere Ausgabe von Tera zu erhalten.",
-          "url": "OneTeradata/de/qxm1772561115166.md"
-        },
-        {
-          "id": "structure-your-conversation",
-          "title": "Konversation strukturieren",
-          "description": "Strukturieren Sie Ihre Konversation, starten Sie einen neuen Chat und exportieren Sie Diagramme und Tabellen.",
-          "url": "OneTeradata/de/gxa1772561021277.md"
-        },
-        {
-          "id": "conversation-flow-structure",
-          "title": "Konversation mit Tera starten",
-          "description": "Beginnen Sie eine Konversation mit Tera.",
-          "url": "OneTeradata/de/wmh1772561109792.md"
-        }
-      ]
-    },
-    {
       "id": "notebooks-explanation-overview-help",
       "title": "Notebooks",
       "description": "Erforschen Sie Daten, erstellen Sie KI-/ML-Modelle und teilen Sie Arbeit.",
@@ -119,7 +87,7 @@
     {
       "id": "vector-store-explanation-overview-help-",
       "title": "Vektorspeicher",
-      "description": "Die Teradata Enterprise-Vektorsammlung ist eine spezialisierte Datenbank, die für die Speicherung und Verwaltung hochdimensionaler Vektoren konzipiert ist, d. h. numerischer Darstellungen von Daten wie Text und Bildern. Anstatt sich auf exakte Übereinstimmungen von Schlüsselwörtern zu stützen, nutzen Vektorsammlungen eine semantische Suche, indem sie Daten als Vektoren speichern. Zu den wichtigsten Anwendungsfällen gehören:",
+      "description": "Erstellen und verwalten Sie Sammlungen hochdimensionaler Vektoren und führen Sie verschiedene Suchvorgänge durch.",
       "url": "OneTeradata/de/ycv1772561149578.md",
       "children": [
         {
@@ -352,7 +320,7 @@
     {
       "id": "icl1777458080858",
       "title": "AgentOps",
-      "description": "Sie können Agenten erstellen, bereitstellen, überwachen und verwalten.",
+      "description": "Sie können Agenten erstellen, bereitstellen, testen und verwalten.",
       "url": "OneTeradata/de/icl1777458080858.md",
       "children": [
         {
@@ -368,17 +336,19 @@
         {
           "id": "sco1776664350046",
           "title": "Agentenregistrierung",
-          "url": "OneTeradata/de/sco1776664350046.md"
-        },
-        {
-          "id": "crw1776664567949",
-          "title": "Agenten mit GIT importieren",
-          "url": "OneTeradata/de/crw1776664567949.md"
-        },
-        {
-          "id": "pyr1776665595427",
-          "title": "Dateien lokaler Agenten importieren",
-          "url": "OneTeradata/de/pyr1776665595427.md"
+          "url": "OneTeradata/de/sco1776664350046.md",
+          "children": [
+            {
+              "id": "crw1776664567949",
+              "title": "Agenten mit GIT importieren",
+              "url": "OneTeradata/de/crw1776664567949.md"
+            },
+            {
+              "id": "pyr1776665595427",
+              "title": "Dateien lokaler Agenten importieren",
+              "url": "OneTeradata/de/pyr1776665595427.md"
+            }
+          ]
         },
         {
           "id": "jdi1779772504174",
@@ -422,28 +392,85 @@
         },
         {
           "id": "ixh1776670679638",
-          "title": "Observability",
+          "title": "Beobachtbarkeit",
           "url": "OneTeradata/de/ixh1776670679638.md"
         },
         {
           "id": "wdb1776671690197",
-          "title": "Ablaufverfolgungen in Observability",
+          "title": "Ablaufverfolgungen in Beobachtbarkeit",
           "url": "OneTeradata/de/wdb1776671690197.md"
         },
         {
           "id": "txj1776671861132",
-          "title": "Spannen in Observability",
+          "title": "Spannen in Beobachtbarkeit",
           "url": "OneTeradata/de/txj1776671861132.md"
         },
         {
           "id": "mwe1776672060318",
-          "title": "Observability-Metriken anzeigen",
+          "title": "Beobachtbarkeit-Metriken anzeigen",
           "url": "OneTeradata/de/mwe1776672060318.md"
         },
         {
           "id": "ltw1776672263683",
-          "title": "Observability ist deaktiviert",
+          "title": "Beobachtbarkeit ist deaktiviert",
           "url": "OneTeradata/de/ltw1776672263683.md"
+        },
+        {
+          "id": "cty1785742562254",
+          "title": "Agenten bewerten",
+          "url": "OneTeradata/de/cty1785742562254.md",
+          "children": [
+            {
+              "id": "ysi1785742716295",
+              "title": "Experimente zur Bewertung erstellen",
+              "url": "OneTeradata/de/ysi1785742716295.md"
+            },
+            {
+              "id": "jff1785743909126",
+              "title": "Experimentergebnisse anzeigen",
+              "url": "OneTeradata/de/jff1785743909126.md"
+            },
+            {
+              "id": "ndp1785744057348",
+              "title": "Experimentkonfiguration anzeigen",
+              "url": "OneTeradata/de/ndp1785744057348.md"
+            },
+            {
+              "id": "pyo1785744225326",
+              "title": "Feedback zum Dataset",
+              "url": "OneTeradata/de/pyo1785744225326.md"
+            },
+            {
+              "id": "spx1785744324927",
+              "title": "Feedback zum Dataset für Ablaufverfolgungen",
+              "url": "OneTeradata/de/spx1785744324927.md"
+            },
+            {
+              "id": "rse1785744427542",
+              "title": "Datasets zur Agentenbewertung",
+              "url": "OneTeradata/de/rse1785744427542.md"
+            },
+            {
+              "id": "ejm1785744709921",
+              "title": "Neue Datasets zur Bewertung hinzufügen",
+              "url": "OneTeradata/de/ejm1785744709921.md"
+            },
+            {
+              "id": "ocf1785744883291",
+              "title": "Dataset-Details anzeigen",
+              "url": "OneTeradata/de/ocf1785744883291.md"
+            },
+            {
+              "id": "cvu1785745122971",
+              "title": "Bewertungslebenszyklus",
+              "url": "OneTeradata/de/cvu1785745122971.md"
+            },
+            {
+              "id": "ovs1785830036247",
+              "title": "Experimente erstellen: Weitere Informationen",
+              "url": "OneTeradata/de/ovs1785830036247.md"
+            }
+          ]
         }
       ]
     },
@@ -460,6 +487,76 @@
       "description": "Greifen Sie auf grundlegende Modelle für Ihre Organisation zu, verwalten und überwachen Sie sie.",
       "url": "OneTeradata/de/ugc1778495114925.md",
       "children": [
+        {
+          "id": "ai-model-hub-explanation-dashboard-help",
+          "title": "Dashboard",
+          "description": "Dashboard mit verfügbaren KI-Modellen anzeigen",
+          "url": "OneTeradata/de/ift1790515062740.md"
+        },
+        {
+          "id": "ai-model-hub-explanation-model-registry-help",
+          "title": "Modellregistrierung",
+          "description": "Unterstützte Modelle importieren, deren aktuellen Status überprüfen und ein Modell öffnen, um es bereitzustellen oder zu verwalten.",
+          "url": "OneTeradata/de/trv1790523871233.md",
+          "children": [
+            {
+              "id": "ai-model-hub-task-import-model-help",
+              "title": "Modell importieren",
+              "description": "Importieren Sie ein unterstütztes Modell aus Hugging Face oder dem konfigurierten lokalen Objektspeicher.",
+              "url": "OneTeradata/de/ecc1790524485875.md",
+              "children": [
+                {
+                  "id": "zup1790525165558",
+                  "title": "Import von Hugging Face",
+                  "description": "Importieren Sie ein Modell aus Hugging Face.",
+                  "url": "OneTeradata/de/zup1790525165558.md"
+                },
+                {
+                  "id": "oqb1790527201218",
+                  "title": "Import aus dem Speicher",
+                  "description": "Importieren Sie ein Modell aus dem lokalen Objektspeicher.",
+                  "url": "OneTeradata/de/oqb1790527201218.md"
+                }
+              ]
+            },
+            {
+              "id": "ai-model-hub-explanation-model-details-help",
+              "title": "Modelldetails anzeigen",
+              "description": "Überprüfen Sie das ausgewählte Modell, seine Quelle, Importinformationen, den aktuellen Status und die verfügbaren Aktionen.",
+              "url": "OneTeradata/de/kep1790527639787.md"
+            },
+            {
+              "id": "ai-model-hub-task-configure-resources-help",
+              "title": "Modell bereitstellen: Ressourcen konfigurieren",
+              "description": "Konfigurieren Sie die Anzahl der Modellreplikate und die Ressourcen, die jedem Replikat zugewiesen werden.",
+              "url": "OneTeradata/de/axw1790528514307.md"
+            },
+            {
+              "id": "ai-model-hub-task-custom-arguments-help",
+              "title": "Modell bereitstellen: Benutzerdefinierte Argumente",
+              "description": "Übergeben Sie Schlüssel-Wert-Laufzeiteinstellungen an den Modellserver.",
+              "url": "OneTeradata/de/sxt1790528830941.md"
+            },
+            {
+              "id": "ai-model-hub-task-publish-model-help",
+              "title": "Modell bereitstellen: In KI-Modell-Gateway veröffentlichen",
+              "description": "Legen Sie fest, wie das bereitgestellte Modell im AI Model Gateway angezeigt wird.",
+              "url": "OneTeradata/de/rmr1790529104734.md"
+            },
+            {
+              "id": "ai-model-hub-explanation-model-summary-help",
+              "title": "Modell bereitstellen: Zusammenfassung",
+              "description": "Überprüfen Sie die vollständige Konfiguration, bevor Sie das Modell bereitstellen.",
+              "url": "OneTeradata/de/mid1790529307573.md"
+            },
+            {
+              "id": "ai-model-hub-explanation-deployed-model-details-help",
+              "title": "Details zum bereitgestellten Modell anzeigen",
+              "description": "Überprüfen Sie das bereitgestellte Modell und dessen Veröffentlichungsstatus im AI Model Gateway.",
+              "url": "OneTeradata/de/aai1790529626001.md"
+            }
+          ]
+        },
         {
           "id": "modelops-explanation-explore-models-help",
           "title": "Modelle erkunden",
@@ -536,7 +633,7 @@
         },
         {
           "id": "modelops-explanation-observability-help",
-          "title": "Observability",
+          "title": "Beobachtbarkeit",
           "description": "Überwachen Sie organisationsweit die KI-Modellnutzung und -Leistung.",
           "url": "OneTeradata/de/kdm1778519288505.md"
         }
